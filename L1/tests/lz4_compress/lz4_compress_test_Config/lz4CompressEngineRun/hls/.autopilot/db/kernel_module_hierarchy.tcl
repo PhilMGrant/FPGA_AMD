@@ -36,12 +36,12 @@ set ModuleHierarchy {[{
 		"SubInsts" : [
 		{"Name" : "lz4CompressPart1_4096_1_U0","ID" : "21","Type" : "sequential",
 			"SubInsts" : [
-			{"Name" : "grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_114","ID" : "22","Type" : "sequential",
+			{"Name" : "grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140","ID" : "22","Type" : "sequential",
 				"SubLoops" : [
 				{"Name" : "lz4_divide","ID" : "23","Type" : "pipeline"},]},]},
 		{"Name" : "lz4CompressPart2_U0","ID" : "24","Type" : "sequential",
 			"SubInsts" : [
-			{"Name" : "grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91","ID" : "25","Type" : "sequential",
+			{"Name" : "grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93","ID" : "25","Type" : "sequential",
 				"SubLoops" : [
 				{"Name" : "lz4_compress","ID" : "26","Type" : "pipeline"},]},]},]},]
 }]}

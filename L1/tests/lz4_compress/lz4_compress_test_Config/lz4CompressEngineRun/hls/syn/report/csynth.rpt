@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'lz4CompressEngineRun'
 ================================================================
 + General Information: 
-    * Date:           Mon Oct 27 14:15:45 2025
+    * Date:           Mon Oct 27 14:49:42 2025
     * Version:        2024.2 (Build 5238294 on Nov  8 2024)
     * Project:        lz4CompressEngineRun
     * Solution:       hls (Vivado IP Flow Target)
@@ -19,7 +19,7 @@
     |                               Modules                              | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |           |    |           |            |     |
     |                               & Loops                              | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|   BRAM    | DSP|     FF    |     LUT    | URAM|
     +--------------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+-----------+----+-----------+------------+-----+
-    |+ lz4CompressEngineRun*                                             |     -|  0.00|        -|          -|         -|        -|     -|  dataflow|  106 (37%)|   -|  5091 (4%)|  8641 (16%)|    -|
+    |+ lz4CompressEngineRun*                                             |     -|  0.00|        -|          -|         -|        -|     -|  dataflow|  108 (38%)|   -|  5189 (4%)|  8756 (16%)|    -|
     | + lzCompress_6_4_65536_6_1_4096_64_s                               |     -|  0.00|        -|          -|         -|        -|     -|        no|   96 (34%)|   -|  2349 (2%)|   4283 (8%)|    -|
     |  + lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush            |     -|  1.44|     1026|  7.182e+03|         -|     1026|     -|        no|          -|   -|   15 (~0%)|    41 (~0%)|    -|
     |   o dict_flush                                                     |     -|  6.30|     1024|  7.168e+03|         1|        1|  1024|       yes|          -|   -|          -|           -|    -|
@@ -39,9 +39,9 @@
     |  + lzBooster_255_16384_64_Pipeline_lz_booster                      |     -|  0.33|        -|          -|         -|        -|     -|        no|          -|   -|  305 (~0%)|    637 (1%)|    -|
     |   o lz_booster                                                     |     -|  6.30|        -|          -|         6|        3|     -|       yes|          -|   -|          -|           -|    -|
     |  o lz_booster_left_bytes                                           |     -|  6.30|       64|    448.000|         1|        -|    64|        no|          -|   -|          -|           -|    -|
-    | + lz4Compress_4096_1_s*                                            |     -|  0.00|        -|          -|         -|        -|     -|  dataflow|    2 (~0%)|   -|  1155 (1%)|   2278 (4%)|    -|
-    |  + lz4CompressPart1_4096_1_s                                       |     -|  0.00|        -|          -|         -|        -|     -|        no|          -|   -|  378 (~0%)|    766 (1%)|    -|
-    |   + lz4CompressPart1_4096_1_Pipeline_lz4_divide                    |     -|  1.23|        -|          -|         -|        -|     -|        no|          -|   -|  206 (~0%)|   344 (~0%)|    -|
+    | + lz4Compress_4096_1_s*                                            |     -|  0.00|        -|          -|         -|        -|     -|  dataflow|     4 (1%)|   -|  1253 (1%)|   2393 (4%)|    -|
+    |  + lz4CompressPart1_4096_1_s                                       |     -|  0.00|        -|          -|         -|        -|     -|        no|          -|   -|  476 (~0%)|    847 (1%)|    -|
+    |   + lz4CompressPart1_4096_1_Pipeline_lz4_divide                    |     -|  1.23|        -|          -|         -|        -|     -|        no|          -|   -|  270 (~0%)|   380 (~0%)|    -|
     |    o lz4_divide                                                    |     -|  6.30|        -|          -|         2|        2|     -|       yes|          -|   -|          -|           -|    -|
     |  + lz4CompressPart2                                                |     -|  0.60|        -|          -|         -|        -|     -|        no|          -|   -|  416 (~0%)|   1271 (2%)|    -|
     |   + lz4CompressPart2_Pipeline_lz4_compress                         |     -|  0.60|        -|          -|         -|        -|     -|        no|          -|   -|  378 (~0%)|   1151 (2%)|    -|
@@ -444,338 +444,343 @@
 |     new_match_loc_4_fu_542_p2                                      |     |        | new_match_loc_4         | add       | fabric                   | 0       |
 |  + lz4Compress_4096_1_s                                            | 0   |        |                         |           |                          |         |
 |   + lz4CompressPart1_4096_1_s                                      | 0   |        |                         |           |                          |         |
-|     icmp_ln51_fu_129_p2                                            |     |        | icmp_ln51               | seteq     | auto                     | 0       |
-|     sub_fu_135_p2                                                  |     |        | sub                     | add       | fabric                   | 0       |
-|     icmp_ln117_fu_179_p2                                           |     |        | icmp_ln117              | seteq     | auto                     | 0       |
-|     is_max_lit_fu_185_p2                                           |     |        | is_max_lit              | seteq     | auto                     | 0       |
-|     icmp_ln123_fu_191_p2                                           |     |        | icmp_ln123              | setne     | auto                     | 0       |
-|     lit_count_flag_fu_196_p2                                       |     |        | lit_count_flag          | or        | auto                     | 0       |
-|     tmpValue_1_fu_213_p3                                           |     |        | tmpValue_1              | select    | auto_sel                 | 0       |
+|     icmp_ln51_fu_158_p2                                            |     |        | icmp_ln51               | seteq     | auto                     | 0       |
+|     has_next_value_fu_173_p2                                       |     |        | has_next_value          | setne     | auto                     | 0       |
+|     sub_fu_179_p2                                                  |     |        | sub                     | add       | fabric                   | 0       |
+|     icmp_ln143_fu_223_p2                                           |     |        | icmp_ln143              | seteq     | auto                     | 0       |
+|     is_max_lit_fu_229_p2                                           |     |        | is_max_lit              | seteq     | auto                     | 0       |
+|     icmp_ln149_fu_235_p2                                           |     |        | icmp_ln149              | setne     | auto                     | 0       |
+|     lit_count_flag_fu_240_p2                                       |     |        | lit_count_flag          | or        | auto                     | 0       |
+|     tmpValue_1_fu_257_p3                                           |     |        | tmpValue_1              | select    | auto_sel                 | 0       |
 |    + lz4CompressPart1_4096_1_Pipeline_lz4_divide                   | 0   |        |                         |           |                          |         |
-|      icmp_ln70_fu_176_p2                                           |     |        | icmp_ln70               | setlt     | auto                     | 0       |
-|      has_match_reg_fu_201_p2                                       |     |        | has_match_reg           | setne     | auto                     | 0       |
-|      lit_overflow_reg_fu_217_p2                                    |     |        | lit_overflow_reg        | seteq     | auto                     | 0       |
-|      icmp_ln88_fu_223_p2                                           |     |        | icmp_ln88               | setlt     | auto                     | 0       |
-|      lit_count_3_fu_238_p2                                         |     |        | lit_count_3             | add       | fabric                   | 0       |
-|      match_len_fu_248_p2                                           |     |        | match_len               | add       | fabric                   | 0       |
-|      select_ln113_fu_271_p3                                        |     |        | select_ln113            | select    | auto_sel                 | 0       |
-|      i_11_fu_281_p2                                                |     |        | i_11                    | add       | fabric                   | 0       |
+|      icmp_ln81_fu_234_p2                                           |     |        | icmp_ln81               | setlt     | auto                     | 0       |
+|      has_match_reg_fu_259_p2                                       |     |        | has_match_reg           | setne     | auto                     | 0       |
+|      lit_overflow_reg_fu_275_p2                                    |     |        | lit_overflow_reg        | seteq     | auto                     | 0       |
+|      icmp_ln100_fu_281_p2                                          |     |        | icmp_ln100              | setlt     | auto                     | 0       |
+|      xor_ln100_1_fu_286_p2                                         |     |        | xor_ln100_1             | xor       | auto                     | 0       |
+|      xor_ln100_fu_292_p2                                           |     |        | xor_ln100               | xor       | auto                     | 0       |
+|      or_ln100_fu_298_p2                                            |     |        | or_ln100                | or        | auto                     | 0       |
+|      lit_count_3_fu_314_p2                                         |     |        | lit_count_3             | add       | fabric                   | 0       |
+|      match_len_fu_324_p2                                           |     |        | match_len               | add       | fabric                   | 0       |
+|      select_ln139_fu_347_p3                                        |     |        | select_ln139            | select    | auto_sel                 | 0       |
+|      i_11_fu_357_p2                                                |     |        | i_11                    | add       | fabric                   | 0       |
 |   + lz4CompressPart2                                               | 0   |        |                         |           |                          |         |
 |    + lz4CompressPart2_Pipeline_lz4_compress                        | 0   |        |                         |           |                          |         |
-|      icmp_ln182_fu_333_p2                                          |     |        | icmp_ln182              | setlt     | auto                     | 0       |
-|      xor_ln182_fu_338_p2                                           |     |        | xor_ln182               | xor       | auto                     | 0       |
-|      or_ln182_fu_344_p2                                            |     |        | or_ln182                | or        | auto                     | 0       |
-|      should_write_fu_350_p2                                        |     |        | should_write            | setlt     | auto                     | 0       |
-|      icmp_ln201_fu_375_p2                                          |     |        | icmp_ln201              | seteq     | auto                     | 0       |
-|      icmp_ln201_1_fu_431_p2                                        |     |        | icmp_ln201_1            | seteq     | auto                     | 0       |
-|      is_special_end_1_fu_436_p2                                    |     |        | is_special_end_1        | and       | auto                     | 0       |
-|      or_ln202_fu_381_p2                                            |     |        | or_ln202                | or        | auto                     | 0       |
-|      is_normal_end_1_fu_387_p2                                     |     |        | is_normal_end_1         | seteq     | auto                     | 0       |
-|      lit_len_ge_15_1_fu_393_p2                                     |     |        | lit_len_ge_15_1         | setgt     | auto                     | 0       |
-|      lit_len_gt_0_1_fu_399_p2                                      |     |        | lit_len_gt_0_1          | setne     | auto                     | 0       |
-|      match_len_ge_15_1_fu_405_p2                                   |     |        | match_len_ge_15_1       | setgt     | auto                     | 0       |
-|      match_offset_plus_one_1_fu_441_p2                             |     |        | match_offset_plus_one_1 | add       | fabric                   | 0       |
-|      match_len_ge_255_fu_545_p2                                    |     |        | match_len_ge_255        | setgt     | auto                     | 0       |
-|      outValue_10_fu_555_p3                                         |     |        | outValue_10             | select    | auto_sel                 | 0       |
-|      match_length_15_fu_563_p2                                     |     |        | match_length_15         | add       | fabric                   | 0       |
-|      xor_ln338_fu_569_p2                                           |     |        | xor_ln338               | xor       | auto                     | 0       |
-|      readOffsetFlag_8_fu_575_p2                                    |     |        | readOffsetFlag_8        | or        | auto                     | 0       |
-|      match_length_16_fu_580_p3                                     |     |        | match_length_16         | select    | auto_sel                 | 0       |
-|      select_ln153_fu_588_p3                                        |     |        | select_ln153            | select    | auto_sel                 | 0       |
-|      select_ln330_fu_622_p3                                        |     |        | select_ln330            | select    | auto_sel                 | 0       |
-|      readOffsetFlag_7_fu_630_p2                                    |     |        | readOffsetFlag_7        | xor       | auto                     | 0       |
-|      write_lit_length_2_fu_484_p2                                  |     |        | write_lit_length_2      | add       | fabric                   | 0       |
-|      icmp_ln310_fu_490_p2                                          |     |        | icmp_ln310              | seteq     | auto                     | 0       |
-|      next_state_2_fu_660_p3                                        |     |        | next_state_2            | select    | auto_sel                 | 0       |
-|      readOffsetFlag_6_fu_668_p2                                    |     |        | readOffsetFlag_6        | and       | auto                     | 0       |
-|      next_state_3_fu_673_p3                                        |     |        | next_state_3            | select    | auto_sel                 | 0       |
-|      lit_len_ge_255_fu_697_p2                                      |     |        | lit_len_ge_255          | setgt     | auto                     | 0       |
-|      outValue_6_fu_707_p3                                          |     |        | outValue_6              | select    | auto_sel                 | 0       |
-|      lit_length_5_fu_715_p2                                        |     |        | lit_length_5            | add       | fabric                   | 0       |
-|      lit_length_6_fu_721_p3                                        |     |        | lit_length_6            | select    | auto_sel                 | 0       |
-|      select_ln152_fu_729_p3                                        |     |        | select_ln152            | select    | auto_sel                 | 0       |
-|      inIdx_3_fu_755_p2                                             |     |        | inIdx_3                 | add       | fabric                   | 0       |
-|      inIdx_4_fu_760_p3                                             |     |        | inIdx_4                 | select    | auto_sel                 | 0       |
-|      or_ln246_fu_767_p2                                            |     |        | or_ln246                | or        | auto                     | 0       |
-|      lit_ending_fu_773_p2                                          |     |        | lit_ending              | or        | auto                     | 0       |
-|      lit_token_fu_782_p3                                           |     |        | lit_token               | select    | auto_sel                 | 0       |
-|      lit_token_1_fu_790_p3                                         |     |        | lit_token_1             | select    | auto_sel                 | 0       |
-|      match_token_1_fu_801_p3                                       |     |        | match_token_1           | select    | auto_sel                 | 0       |
-|      lit_length_2_fu_817_p2                                        |     |        | lit_length_2            | add       | fabric                   | 0       |
-|      lit_length_3_fu_822_p3                                        |     |        | lit_length_3            | select    | auto_sel                 | 0       |
-|      lit_length_4_fu_829_p3                                        |     |        | lit_length_4            | select    | auto_sel                 | 0       |
-|      select_ln270_1_fu_837_p3                                      |     |        | select_ln270_1          | select    | auto_sel                 | 0       |
-|      or_ln270_fu_845_p2                                            |     |        | or_ln270                | or        | auto                     | 0       |
-|      next_state_tmp_fu_851_p3                                      |     |        | next_state_tmp          | select    | auto_sel                 | 0       |
-|      match_length_13_fu_863_p2                                     |     |        | match_length_13         | add       | fabric                   | 0       |
-|      match_length_14_fu_868_p3                                     |     |        | match_length_14         | select    | auto_sel                 | 0       |
-|      compressedSize_2_fu_421_p2                                    |     |        | compressedSize_2        | add       | fabric                   | 0       |
+|      icmp_ln208_fu_335_p2                                          |     |        | icmp_ln208              | setlt     | auto                     | 0       |
+|      xor_ln208_fu_340_p2                                           |     |        | xor_ln208               | xor       | auto                     | 0       |
+|      or_ln208_fu_346_p2                                            |     |        | or_ln208                | or        | auto                     | 0       |
+|      should_write_fu_352_p2                                        |     |        | should_write            | setlt     | auto                     | 0       |
+|      icmp_ln227_fu_377_p2                                          |     |        | icmp_ln227              | seteq     | auto                     | 0       |
+|      icmp_ln227_1_fu_433_p2                                        |     |        | icmp_ln227_1            | seteq     | auto                     | 0       |
+|      is_special_end_1_fu_438_p2                                    |     |        | is_special_end_1        | and       | auto                     | 0       |
+|      or_ln228_fu_383_p2                                            |     |        | or_ln228                | or        | auto                     | 0       |
+|      is_normal_end_1_fu_389_p2                                     |     |        | is_normal_end_1         | seteq     | auto                     | 0       |
+|      lit_len_ge_15_1_fu_395_p2                                     |     |        | lit_len_ge_15_1         | setgt     | auto                     | 0       |
+|      lit_len_gt_0_1_fu_401_p2                                      |     |        | lit_len_gt_0_1          | setne     | auto                     | 0       |
+|      match_len_ge_15_1_fu_407_p2                                   |     |        | match_len_ge_15_1       | setgt     | auto                     | 0       |
+|      match_offset_plus_one_1_fu_443_p2                             |     |        | match_offset_plus_one_1 | add       | fabric                   | 0       |
+|      match_len_ge_255_fu_547_p2                                    |     |        | match_len_ge_255        | setgt     | auto                     | 0       |
+|      outValue_10_fu_557_p3                                         |     |        | outValue_10             | select    | auto_sel                 | 0       |
+|      match_length_15_fu_565_p2                                     |     |        | match_length_15         | add       | fabric                   | 0       |
+|      xor_ln364_fu_571_p2                                           |     |        | xor_ln364               | xor       | auto                     | 0       |
+|      readOffsetFlag_8_fu_577_p2                                    |     |        | readOffsetFlag_8        | or        | auto                     | 0       |
+|      match_length_16_fu_582_p3                                     |     |        | match_length_16         | select    | auto_sel                 | 0       |
+|      select_ln179_fu_590_p3                                        |     |        | select_ln179            | select    | auto_sel                 | 0       |
+|      select_ln356_fu_624_p3                                        |     |        | select_ln356            | select    | auto_sel                 | 0       |
+|      readOffsetFlag_7_fu_632_p2                                    |     |        | readOffsetFlag_7        | xor       | auto                     | 0       |
+|      write_lit_length_2_fu_486_p2                                  |     |        | write_lit_length_2      | add       | fabric                   | 0       |
+|      icmp_ln336_fu_492_p2                                          |     |        | icmp_ln336              | seteq     | auto                     | 0       |
+|      next_state_2_fu_662_p3                                        |     |        | next_state_2            | select    | auto_sel                 | 0       |
+|      readOffsetFlag_6_fu_670_p2                                    |     |        | readOffsetFlag_6        | and       | auto                     | 0       |
+|      next_state_3_fu_675_p3                                        |     |        | next_state_3            | select    | auto_sel                 | 0       |
+|      lit_len_ge_255_fu_699_p2                                      |     |        | lit_len_ge_255          | setgt     | auto                     | 0       |
+|      outValue_6_fu_709_p3                                          |     |        | outValue_6              | select    | auto_sel                 | 0       |
+|      lit_length_5_fu_717_p2                                        |     |        | lit_length_5            | add       | fabric                   | 0       |
+|      lit_length_6_fu_723_p3                                        |     |        | lit_length_6            | select    | auto_sel                 | 0       |
+|      select_ln178_fu_731_p3                                        |     |        | select_ln178            | select    | auto_sel                 | 0       |
+|      inIdx_3_fu_757_p2                                             |     |        | inIdx_3                 | add       | fabric                   | 0       |
+|      inIdx_4_fu_762_p3                                             |     |        | inIdx_4                 | select    | auto_sel                 | 0       |
+|      or_ln272_fu_769_p2                                            |     |        | or_ln272                | or        | auto                     | 0       |
+|      lit_ending_fu_775_p2                                          |     |        | lit_ending              | or        | auto                     | 0       |
+|      lit_token_fu_784_p3                                           |     |        | lit_token               | select    | auto_sel                 | 0       |
+|      lit_token_1_fu_792_p3                                         |     |        | lit_token_1             | select    | auto_sel                 | 0       |
+|      match_token_1_fu_803_p3                                       |     |        | match_token_1           | select    | auto_sel                 | 0       |
+|      lit_length_2_fu_819_p2                                        |     |        | lit_length_2            | add       | fabric                   | 0       |
+|      lit_length_3_fu_824_p3                                        |     |        | lit_length_3            | select    | auto_sel                 | 0       |
+|      lit_length_4_fu_831_p3                                        |     |        | lit_length_4            | select    | auto_sel                 | 0       |
+|      select_ln296_1_fu_839_p3                                      |     |        | select_ln296_1          | select    | auto_sel                 | 0       |
+|      or_ln296_fu_847_p2                                            |     |        | or_ln296                | or        | auto                     | 0       |
+|      next_state_tmp_fu_853_p3                                      |     |        | next_state_tmp          | select    | auto_sel                 | 0       |
+|      match_length_13_fu_865_p2                                     |     |        | match_length_13         | add       | fabric                   | 0       |
+|      match_length_14_fu_870_p3                                     |     |        | match_length_14         | select    | auto_sel                 | 0       |
+|      compressedSize_2_fu_423_p2                                    |     |        | compressedSize_2        | add       | fabric                   | 0       |
 +--------------------------------------------------------------------+-----+--------+-------------------------+-----------+--------------------------+---------+
 
 
 ================================================================
 == Storage Report
 ================================================================
-+---------------------------------------+---------------+-------------+------+------+--------+------------------+--------+---------+------------------+
-| Name                                  | Usage         | Type        | BRAM | URAM | Pragma | Variable         | Impl   | Latency | Bitwidth, Depth, |
-|                                       |               |             |      |      |        |                  |        |         | Banks            |
-+---------------------------------------+---------------+-------------+------+------+--------+------------------+--------+---------+------------------+
-| + lz4CompressEngineRun                |               |             | 106  | 0    |        |                  |        |         |                  |
-|   compressdStream_U                   | fifo channel  | stream      |      |      |        | compressdStream  | srl    | 0       | 32, 8, 1         |
-|   input_size_c2_U                     | fifo channel  | scalar prop |      |      |        | input_size_c2    | srl    | 0       | 32, 2, 1         |
-|   bestMatchStream_U                   | fifo channel  | stream      |      |      |        | bestMatchStream  | srl    | 0       | 32, 8, 1         |
-|   input_size_c1_U                     | fifo channel  | scalar prop |      |      |        | input_size_c1    | srl    | 0       | 32, 2, 1         |
-|   boosterStream_U                     | fifo channel  | stream      |      |      |        | boosterStream    | srl    | 0       | 32, 8, 1         |
-|   input_size_c_U                      | fifo channel  | scalar prop |      |      |        | input_size_c     | srl    | 0       | 32, 2, 1         |
-|  + lzCompress_6_4_65536_6_1_4096_64_s |               |             | 96   | 0    |        |                  |        |         |                  |
-|    dict_U                             | ram_t2p array |             | 48   |      | yes    | dict             | bram   | 1       | 432, 2048, 1     |
-|    dict_1_U                           | ram_t2p array |             | 48   |      | yes    | dict_1           | bram   | 1       | 432, 2048, 1     |
-|  + lzBooster_255_16384_64_s           |               |             | 8    | 0    |        |                  |        |         |                  |
-|    local_mem_U                        | ram_2p array  |             | 8    |      | yes    | local_mem        | bram   | 1       | 8, 16384, 1      |
-|  + lz4Compress_4096_1_s               |               |             | 2    | 0    |        |                  |        |         |                  |
-|    lit_outStream_U                    | fifo channel  | stream      | 2    |      |        | lit_outStream    | memory | 0       | 8, 4096, 1       |
-|    lenOffset_Stream_U                 | fifo channel  | stream      |      |      |        | lenOffset_Stream | srl    | 0       | 64, 32, 1        |
-|    input_size_c_U                     | fifo channel  | scalar prop |      |      |        | input_size_c     | srl    | 0       | 32, 2, 1         |
-+---------------------------------------+---------------+-------------+------+------+--------+------------------+--------+---------+------------------+
++---------------------------------------+---------------+-------------+------+------+--------+------------------+------+---------+------------------+
+| Name                                  | Usage         | Type        | BRAM | URAM | Pragma | Variable         | Impl | Latency | Bitwidth, Depth, |
+|                                       |               |             |      |      |        |                  |      |         | Banks            |
++---------------------------------------+---------------+-------------+------+------+--------+------------------+------+---------+------------------+
+| + lz4CompressEngineRun                |               |             | 108  | 0    |        |                  |      |         |                  |
+|   compressdStream_U                   | fifo channel  | stream      |      |      |        | compressdStream  | srl  | 0       | 32, 8, 1         |
+|   input_size_c2_U                     | fifo channel  | scalar prop |      |      |        | input_size_c2    | srl  | 0       | 32, 2, 1         |
+|   bestMatchStream_U                   | fifo channel  | stream      |      |      |        | bestMatchStream  | srl  | 0       | 32, 8, 1         |
+|   input_size_c1_U                     | fifo channel  | scalar prop |      |      |        | input_size_c1    | srl  | 0       | 32, 2, 1         |
+|   boosterStream_U                     | fifo channel  | stream      |      |      |        | boosterStream    | srl  | 0       | 32, 8, 1         |
+|   input_size_c_U                      | fifo channel  | scalar prop |      |      |        | input_size_c     | srl  | 0       | 32, 2, 1         |
+|  + lzCompress_6_4_65536_6_1_4096_64_s |               |             | 96   | 0    |        |                  |      |         |                  |
+|    dict_U                             | ram_t2p array |             | 48   |      | yes    | dict             | bram | 1       | 432, 2048, 1     |
+|    dict_1_U                           | ram_t2p array |             | 48   |      | yes    | dict_1           | bram | 1       | 432, 2048, 1     |
+|  + lzBooster_255_16384_64_s           |               |             | 8    | 0    |        |                  |      |         |                  |
+|    local_mem_U                        | ram_2p array  |             | 8    |      | yes    | local_mem        | bram | 1       | 8, 16384, 1      |
+|  + lz4Compress_4096_1_s               |               |             | 4    | 0    |        |                  |      |         |                  |
+|    lit_outStream_U                    | fifo channel  | stream      | 4    |      |        | lit_outStream    | bram | 0       | 8, 8192, 1       |
+|    lenOffset_Stream_U                 | fifo channel  | stream      |      |      |        | lenOffset_Stream | srl  | 0       | 64, 64, 1        |
+|    input_size_c_U                     | fifo channel  | scalar prop |      |      |        | input_size_c     | srl  | 0       | 32, 2, 1         |
++---------------------------------------+---------------+-------------+------+------+--------+------------------+------+---------+------------------+
 
 
 ================================================================
 == Pragma Report
 ================================================================
 * Valid Pragma Syntax
-+-----------------+------------------------------------------------------+------------------------------------------------------------------------+
-| Type            | Options                                              | Location                                                               |
-+-----------------+------------------------------------------------------+------------------------------------------------------------------------+
-| unroll          |                                                      | ../../../include/hw/compress_utils.hpp:42 in countsetbits              |
-| pipeline        | II = 2                                               | ../../../include/hw/lz4_compress.hpp:71 in lz4compresspart1            |
-| loop_flatten    | off                                                  | ../../../include/hw/lz4_compress.hpp:72 in lz4compresspart1            |
-| pipeline        | II = 4                                               | ../../../include/hw/lz4_compress.hpp:183 in lz4compresspart2           |
-| loop_flatten    | off                                                  | ../../../include/hw/lz4_compress.hpp:184 in lz4compresspart2           |
-| stream          | variable = lit_outStream depth = MAX_LIT_COUNT       | ../../../include/hw/lz4_compress.hpp:395 in lz4compress                |
-| stream          | variable = lenOffset_Stream depth = c_gmemBurstSize  | ../../../include/hw/lz4_compress.hpp:396 in lz4compress                |
-| bind_storage    | variable = lenOffset_Stream type = FIFO impl = SRL   | ../../../include/hw/lz4_compress.hpp:398 in lz4compress                |
-| dataflow        |                                                      | ../../../include/hw/lz4_compress.hpp:400 in lz4compress                |
-| stream          | variable = compressdStream depth = 8                 | ../../../include/hw/lz4_compress.hpp:427 in hlslz4core                 |
-| stream          | variable = bestMatchStream depth = 8                 | ../../../include/hw/lz4_compress.hpp:428 in hlslz4core                 |
-| stream          | variable = boosterStream depth = 8                   | ../../../include/hw/lz4_compress.hpp:429 in hlslz4core                 |
-| bind_storage    | variable = compressdStream type = FIFO impl = SRL    | ../../../include/hw/lz4_compress.hpp:431 in hlslz4core                 |
-| bind_storage    | variable = boosterStream type = FIFO impl = SRL      | ../../../include/hw/lz4_compress.hpp:432 in hlslz4core                 |
-| dataflow        |                                                      | ../../../include/hw/lz4_compress.hpp:434 in hlslz4core                 |
-| stream          | variable = outStreamEos depth = 2                    | ../../../include/hw/lz4_compress.hpp:463 in hlslz4                     |
-| stream          | variable = inStream depth = c_gmemBurstSize          | ../../../include/hw/lz4_compress.hpp:464 in hlslz4                     |
-| stream          | variable = outStream depth = c_gmemBurstSize         | ../../../include/hw/lz4_compress.hpp:465 in hlslz4                     |
-| bind_storage    | variable = outStreamEos type = FIFO impl = SRL       | ../../../include/hw/lz4_compress.hpp:467 in hlslz4                     |
-| bind_storage    | variable = inStream type = FIFO impl = SRL           | ../../../include/hw/lz4_compress.hpp:468 in hlslz4                     |
-| bind_storage    | variable = outStream type = FIFO impl = SRL          | ../../../include/hw/lz4_compress.hpp:469 in hlslz4                     |
-| dataflow        |                                                      | ../../../include/hw/lz4_compress.hpp:473 in hlslz4                     |
-| unroll          |                                                      | ../../../include/hw/lz4_compress.hpp:478 in hlslz4                     |
-| array_partition | variable = input_block_size dim = 0 complete         | ../../../include/hw/lz4_compress.hpp:513 in lz4compressmm              |
-| array_partition | variable = input_idx dim = 0 complete                | ../../../include/hw/lz4_compress.hpp:514 in lz4compressmm              |
-| array_partition | variable = output_idx dim = 0 complete               | ../../../include/hw/lz4_compress.hpp:515 in lz4compressmm              |
-| array_partition | variable = output_block_size dim = 0 complete        | ../../../include/hw/lz4_compress.hpp:516 in lz4compressmm              |
-| array_partition | variable = max_lit_limit dim = 0 complete            | ../../../include/hw/lz4_compress.hpp:517 in lz4compressmm              |
-| bind_storage    | variable = dict type = RAM_T2P impl = BRAM           | ../../../include/hw/lz_compress.hpp:67 in lzcompress                   |
-| unroll          |                                                      | ../../../include/hw/lz_compress.hpp:70 in lzcompress                   |
-| pipeline        | II = 1                                               | ../../../include/hw/lz_compress.hpp:76 in lzcompress                   |
-| unroll          | FACTOR = 4                                           | ../../../include/hw/lz_compress.hpp:77 in lzcompress                   |
-| loop_tripcount  | min = LZ_DICT_SIZE max = LZ_DICT_SIZE                | ../../../include/hw/lz_compress.hpp:78 in lzcompress                   |
-| array_partition | variable = present_window complete                   | ../../../include/hw/lz_compress.hpp:83 in lzcompress                   |
-| pipeline        | off                                                  | ../../../include/hw/lz_compress.hpp:85 in lzcompress                   |
-| pipeline        | II = 3                                               | ../../../include/hw/lz_compress.hpp:94 in lzcompress                   |
-| loop_flatten    | off                                                  | ../../../include/hw/lz_compress.hpp:95 in lzcompress                   |
-| dependence      | variable = dict inter false                          | ../../../include/hw/lz_compress.hpp:96 in lzcompress                   |
-| unroll          |                                                      | ../../../include/hw/lz_compress.hpp:104 in lzcompress                  |
-| unroll          |                                                      | ../../../include/hw/lz_compress.hpp:129 in lzcompress                  |
-| array_partition | variable = present_window_reg complete               | ../../../include/hw/lz_compress.hpp:141 in lzcompress                  |
-| unroll          |                                                      | ../../../include/hw/lz_compress.hpp:143 in lzcompress                  |
-| unroll          |                                                      | ../../../include/hw/lz_compress.hpp:159 in lzcompress                  |
-| unroll          |                                                      | ../../../include/hw/lz_compress.hpp:167 in lzcompress                  |
-| unroll          |                                                      | ../../../include/hw/lz_compress.hpp:190 in lzcompress                  |
-| pipeline        |                                                      | ../../../include/hw/lz_compress.hpp:206 in lzcompress                  |
-| pipeline        |                                                      | ../../../include/hw/lz_compress.hpp:213 in lzcompress                  |
-| bind_storage    | variable = dict type = RAM_T2P impl = URAM           | ../../../include/hw/lz_compress.hpp:259 in lzcompress                  |
-| array_partition | variable = present_window complete                   | ../../../include/hw/lz_compress.hpp:263 in lzcompress                  |
-| stream          | variable = lclBufStream depth = c_fifo_depth         | ../../../include/hw/lz_compress.hpp:265 in lzcompress                  |
-| bind_storage    | variable = lclBufStream type = fifo impl = srl       | ../../../include/hw/lz_compress.hpp:266 in lzcompress                  |
-| unroll          |                                                      | ../../../include/hw/lz_compress.hpp:280 in lzcompress                  |
-| pipeline        | II = 1                                               | ../../../include/hw/lz_compress.hpp:286 in lzcompress                  |
-| unroll          | FACTOR = 4                                           | ../../../include/hw/lz_compress.hpp:287 in lzcompress                  |
-| loop_tripcount  | min = LZ_DICT_SIZE max = LZ_DICT_SIZE                | ../../../include/hw/lz_compress.hpp:288 in lzcompress                  |
-| pipeline        | II = 1                                               | ../../../include/hw/lz_compress.hpp:306 in lzcompress                  |
-| pipeline        | II = 1                                               | ../../../include/hw/lz_compress.hpp:314 in lzcompress                  |
-| array_partition | variable = present_window_reg complete               | ../../../include/hw/lz_compress.hpp:327 in lzcompress                  |
-| pipeline        | II = 4                                               | ../../../include/hw/lz_compress.hpp:331 in lzcompress                  |
-| loop_flatten    | off                                                  | ../../../include/hw/lz_compress.hpp:332 in lzcompress                  |
-| dependence      | variable = dict inter false                          | ../../../include/hw/lz_compress.hpp:334 in lzcompress                  |
-| unroll          |                                                      | ../../../include/hw/lz_compress.hpp:346 in lzcompress                  |
-| unroll          |                                                      | ../../../include/hw/lz_compress.hpp:371 in lzcompress                  |
-| unroll          |                                                      | ../../../include/hw/lz_compress.hpp:383 in lzcompress                  |
-| unroll          |                                                      | ../../../include/hw/lz_compress.hpp:399 in lzcompress                  |
-| unroll          |                                                      | ../../../include/hw/lz_compress.hpp:407 in lzcompress                  |
-| unroll          |                                                      | ../../../include/hw/lz_compress.hpp:431 in lzcompress                  |
-| pipeline        | II = 1                                               | ../../../include/hw/lz_compress.hpp:448 in lzcompress                  |
-| pipeline        | II = 1                                               | ../../../include/hw/lz_compress.hpp:454 in lzcompress                  |
-| unroll          |                                                      | ../../../include/hw/lz_optional.hpp:67 in lz77divide                   |
-| pipeline        | off                                                  | ../../../include/hw/lz_optional.hpp:68 in lz77divide                   |
-| unroll          |                                                      | ../../../include/hw/lz_optional.hpp:73 in lz77divide                   |
-| pipeline        | off                                                  | ../../../include/hw/lz_optional.hpp:74 in lz77divide                   |
-| loop_tripcount  | min = 1048576 max = 1048576                          | ../../../include/hw/lz_optional.hpp:89 in lz77divide                   |
-| pipeline        | II = 1                                               | ../../../include/hw/lz_optional.hpp:90 in lz77divide                   |
-| dependence      | variable = lcl_dyn_ltree inter false                 | ../../../include/hw/lz_optional.hpp:91 in lz77divide                   |
-| dependence      | variable = lcl_dyn_dtree inter false                 | ../../../include/hw/lz_optional.hpp:92 in lz77divide                   |
-| pipeline        | off                                                  | ../../../include/hw/lz_optional.hpp:123 in lz77divide                  |
-| pipeline        | off                                                  | ../../../include/hw/lz_optional.hpp:127 in lz77divide                  |
-| bind_storage    | variable = lcl_dyn_ltree type = ram_2p impl = LUTRAM | ../../../include/hw/lz_optional.hpp:151 in lz77dividestream            |
-| bind_storage    | variable = lcl_dyn_dtree type = ram_2p impl = LUTRAM | ../../../include/hw/lz_optional.hpp:152 in lz77dividestream            |
-| loop_tripcount  | min = 1048576 max = 1048576                          | ../../../include/hw/lz_optional.hpp:170 in lz77dividestream            |
-| pipeline        | II = 2                                               | ../../../include/hw/lz_optional.hpp:171 in lz77dividestream            |
-| dependence      | variable = lcl_dyn_ltree inter false                 | ../../../include/hw/lz_optional.hpp:172 in lz77dividestream            |
-| dependence      | variable = lcl_dyn_dtree inter false                 | ../../../include/hw/lz_optional.hpp:173 in lz77dividestream            |
-| pipeline        | II = 1                                               | ../../../include/hw/lz_optional.hpp:231 in lz77dividestream            |
-| pipeline        | II = 1                                               | ../../../include/hw/lz_optional.hpp:238 in lz77dividestream            |
-| loop_tripcount  | min = 1048576 max = 1048576                          | ../../../include/hw/lz_optional.hpp:270 in lz77dividestatic            |
-| pipeline        | II = 1                                               | ../../../include/hw/lz_optional.hpp:271 in lz77dividestatic            |
-| array_partition | variable = compare_window                            | ../../../include/hw/lz_optional.hpp:330 in lzbestmatchfilter           |
-| unroll          |                                                      | ../../../include/hw/lz_optional.hpp:334 in lzbestmatchfilter           |
-| pipeline        | II = 1                                               | ../../../include/hw/lz_optional.hpp:340 in lzbestmatchfilter           |
-| unroll          |                                                      | ../../../include/hw/lz_optional.hpp:344 in lzbestmatchfilter           |
-| pipeline        | off                                                  | ../../../include/hw/lz_optional.hpp:368 in lzbestmatchfilter           |
-| pipeline        | II = 1                                               | ../../../include/hw/lz_optional.hpp:394 in lzbestmatchfilter           |
-| stream          | variable = lclBufStream depth = c_fifo_depth         | ../../../include/hw/lz_optional.hpp:449 in lzbooster                   |
-| bind_storage    | variable = lclBufStream type = fifo impl = srl       | ../../../include/hw/lz_optional.hpp:450 in lzbooster                   |
-| pipeline        | II = 1                                               | ../../../include/hw/lz_optional.hpp:474 in lzbooster                   |
-| pipeline        | II = 1                                               | ../../../include/hw/lz_optional.hpp:482 in lzbooster                   |
-| dependence      | variable = local_mem inter false                     | ../../../include/hw/lz_optional.hpp:484 in lzbooster                   |
-| pipeline        | II = 1                                               | ../../../include/hw/lz_optional.hpp:557 in lzbooster                   |
-| bind_storage    | variable = local_mem type = ram_2p impl = bram       | ../../../include/hw/lz_optional.hpp:589 in lzbooster                   |
-| pipeline        | II = 3                                               | ../../../include/hw/lz_optional.hpp:604 in lzbooster                   |
-| dependence      | variable = local_mem inter false                     | ../../../include/hw/lz_optional.hpp:605 in lzbooster                   |
-| pipeline        | off                                                  | ../../../include/hw/lz_optional.hpp:667 in lzbooster                   |
-| pipeline        | II = 1                                               | ../../../include/hw/lz_optional.hpp:691 in lzfilter                    |
-| array_partition | variable = local_buffer dim = 1 complete             | ../../../include/hw/mm2s.hpp:79 in mm2snb                              |
-| bind_storage    | variable = local_buffer type = RAM_2P impl = LUTRAM  | ../../../include/hw/mm2s.hpp:80 in mm2snb                              |
-| array_partition | variable = read_idx dim = 0 complete                 | ../../../include/hw/mm2s.hpp:86 in mm2snb                              |
-| array_partition | variable = write_idx dim = 0 complete                | ../../../include/hw/mm2s.hpp:87 in mm2snb                              |
-| array_partition | variable = read_size dim = 0 complete                | ../../../include/hw/mm2s.hpp:88 in mm2snb                              |
-| unroll          |                                                      | ../../../include/hw/mm2s.hpp:92 in mm2snb                              |
-| pipeline        | II = 1                                               | ../../../include/hw/mm2s.hpp:111 in mm2snb                             |
-| pipeline        | II = 1                                               | ../../../include/hw/mm2s.hpp:125 in mm2snb                             |
-| unroll          |                                                      | ../../../include/hw/mm2s.hpp:127 in mm2snb                             |
-| unroll          |                                                      | ../../../include/hw/mm2s.hpp:136 in mm2snb                             |
-| array_partition | variable = read_idx dim = 0 complete                 | ../../../include/hw/mm2s.hpp:179 in mm2multstreamsimple                |
-| array_partition | variable = read_size dim = 0 complete                | ../../../include/hw/mm2s.hpp:180 in mm2multstreamsimple                |
-| array_partition | variable = input_size dim = 0 complete               | ../../../include/hw/mm2s.hpp:181 in mm2multstreamsimple                |
-| unroll          |                                                      | ../../../include/hw/mm2s.hpp:184 in mm2multstreamsimple                |
-| pipeline        | off                                                  | ../../../include/hw/mm2s.hpp:194 in mm2multstreamsimple                |
-| unroll          |                                                      | ../../../include/hw/mm2s.hpp:222 in mm2multstreamsimple                |
-| pipeline        | II = 1                                               | ../../../include/hw/mm2s.hpp:254 in mm2multstreamdownsizer             |
-| stream          | variable = outStreamV depth = c_depthOutStreamV      | ../../../include/hw/mm2s.hpp:289 in mm2multstreamsize                  |
-| stream          | variable = outStreamVSize depth = 3                  | ../../../include/hw/mm2s.hpp:290 in mm2multstreamsize                  |
-| bind_storage    | variable = outStreamV type = FIFO impl = SRL         | ../../../include/hw/mm2s.hpp:291 in mm2multstreamsize                  |
-| dataflow        |                                                      | ../../../include/hw/mm2s.hpp:293 in mm2multstreamsize                  |
-| unroll          |                                                      | ../../../include/hw/mm2s.hpp:298 in mm2multstreamsize                  |
-| pipeline        | II = 1                                               | ../../../include/hw/mm2s.hpp:346 in mm2singlestream                    |
-| pipeline        | II = 1                                               | ../../../include/hw/mm2s.hpp:381 in mm2streamdownsizer                 |
-| stream          | variable = outStreamV depth = c_depthOutStreamV      | ../../../include/hw/mm2s.hpp:416 in mm2stream                          |
-| stream          | variable = outStreamVSize depth = 2                  | ../../../include/hw/mm2s.hpp:417 in mm2stream                          |
-| bind_storage    | variable = outStreamV type = FIFO impl = SRL         | ../../../include/hw/mm2s.hpp:418 in mm2stream                          |
-| dataflow        |                                                      | ../../../include/hw/mm2s.hpp:420 in mm2stream                          |
-| array_partition | variable = local_buffer dim = 1 complete             | ../../../include/hw/mm2s.hpp:448 in mm2snbroundoff                     |
-| bind_storage    | variable = local_buffer type = RAM_2P impl = LUTRAM  | ../../../include/hw/mm2s.hpp:449 in mm2snbroundoff                     |
-| array_partition | variable = read_idx dim = 0 complete                 | ../../../include/hw/mm2s.hpp:455 in mm2snbroundoff                     |
-| array_partition | variable = write_idx dim = 0 complete                | ../../../include/hw/mm2s.hpp:456 in mm2snbroundoff                     |
-| array_partition | variable = read_size dim = 0 complete                | ../../../include/hw/mm2s.hpp:457 in mm2snbroundoff                     |
-| unroll          |                                                      | ../../../include/hw/mm2s.hpp:461 in mm2snbroundoff                     |
-| pipeline        | II = 1                                               | ../../../include/hw/mm2s.hpp:486 in mm2snbroundoff                     |
-| pipeline        | II = 1                                               | ../../../include/hw/mm2s.hpp:500 in mm2snbroundoff                     |
-| unroll          |                                                      | ../../../include/hw/mm2s.hpp:502 in mm2snbroundoff                     |
-| unroll          |                                                      | ../../../include/hw/mm2s.hpp:511 in mm2snbroundoff                     |
-| pipeline        | II = 1                                               | ../../../include/hw/mm2s.hpp:545 in mm2ssimple                         |
-| pipeline        | II = 1                                               | ../../../include/hw/mm2s.hpp:579 in mm2ssimple                         |
-| pipeline        | II = 1                                               | ../../../include/hw/mm2s.hpp:612 in mm2ssimple                         |
-| pipeline        | II = 1                                               | ../../../include/hw/mm2s.hpp:651 in mm2ssimple                         |
-| pipeline        | II = 1                                               | ../../../include/hw/mm2s.hpp:698 in mm2stream                          |
-| pipeline        | II = 1                                               | ../../../include/hw/s2mm.hpp:89 in s2mmaxi                             |
-| pipeline        | II = 1                                               | ../../../include/hw/s2mm.hpp:129 in stream2mm                          |
-| array_partition | variable = write_size dim = 0 complete               | ../../../include/hw/s2mm.hpp:171 in multstream2mmsize                  |
-| array_partition | variable = base_addr dim = 0 complete                | ../../../include/hw/s2mm.hpp:172 in multstream2mmsize                  |
-| unroll          |                                                      | ../../../include/hw/s2mm.hpp:176 in multstream2mmsize                  |
-| pipeline        | II = 1                                               | ../../../include/hw/s2mm.hpp:194 in multstream2mmsize                  |
-| pipeline        | II = 1                                               | ../../../include/hw/s2mm.hpp:203 in multstream2mmsize                  |
-| pipeline        | II = 1                                               | ../../../include/hw/s2mm.hpp:239 in stream2mmupsizer                   |
-| stream          | variable = outStreamV depth = c_depthOutStreamV      | ../../../include/hw/s2mm.hpp:290 in multstream2mm                      |
-| stream          | variable = outStreamVSize depth = 2                  | ../../../include/hw/s2mm.hpp:291 in multstream2mm                      |
-| bind_storage    | variable = outStreamV type = FIFO impl = SRL         | ../../../include/hw/s2mm.hpp:292 in multstream2mm                      |
-| dataflow        |                                                      | ../../../include/hw/s2mm.hpp:294 in multstream2mm                      |
-| unroll          |                                                      | ../../../include/hw/s2mm.hpp:297 in multstream2mm                      |
-| array_partition | variable = input_size dim = 0 complete               | ../../../include/hw/s2mm.hpp:337 in s2mmnb                             |
-| array_partition | variable = read_size dim = 0 complete                | ../../../include/hw/s2mm.hpp:338 in s2mmnb                             |
-| array_partition | variable = write_size dim = 0 complete               | ../../../include/hw/s2mm.hpp:339 in s2mmnb                             |
-| array_partition | variable = write_idx dim = 0 complete                | ../../../include/hw/s2mm.hpp:340 in s2mmnb                             |
-| array_partition | variable = burst_size dim = 0 complete               | ../../../include/hw/s2mm.hpp:341 in s2mmnb                             |
-| array_partition | variable = local_buffer dim = 1 complete             | ../../../include/hw/s2mm.hpp:345 in s2mmnb                             |
-| bind_storage    | variable = local_buffer type = RAM_2P impl = LUTRAM  | ../../../include/hw/s2mm.hpp:346 in s2mmnb                             |
-| unroll          |                                                      | ../../../include/hw/s2mm.hpp:350 in s2mmnb                             |
-| pipeline        | II = 1                                               | ../../../include/hw/s2mm.hpp:362 in s2mmnb                             |
-| unroll          |                                                      | ../../../include/hw/s2mm.hpp:364 in s2mmnb                             |
-| pipeline        | II = 1                                               | ../../../include/hw/s2mm.hpp:394 in s2mmnb                             |
-| unroll          |                                                      | ../../../include/hw/s2mm.hpp:403 in s2mmnb                             |
-| array_partition | variable = input_size dim = 0 complete               | ../../../include/hw/s2mm.hpp:442 in s2mmnb                             |
-| array_partition | variable = read_size dim = 0 complete                | ../../../include/hw/s2mm.hpp:443 in s2mmnb                             |
-| array_partition | variable = write_size dim = 0 complete               | ../../../include/hw/s2mm.hpp:444 in s2mmnb                             |
-| array_partition | variable = write_idx dim = 0 complete                | ../../../include/hw/s2mm.hpp:445 in s2mmnb                             |
-| array_partition | variable = burst_size dim = 0 complete               | ../../../include/hw/s2mm.hpp:446 in s2mmnb                             |
-| array_partition | variable = local_buffer dim = 1 complete             | ../../../include/hw/s2mm.hpp:450 in s2mmnb                             |
-| bind_storage    | variable = local_buffer type = RAM_2P impl = LUTRAM  | ../../../include/hw/s2mm.hpp:451 in s2mmnb                             |
-| unroll          |                                                      | ../../../include/hw/s2mm.hpp:455 in s2mmnb                             |
-| pipeline        | II = 1                                               | ../../../include/hw/s2mm.hpp:467 in s2mmnb                             |
-| unroll          |                                                      | ../../../include/hw/s2mm.hpp:469 in s2mmnb                             |
-| pipeline        | II = 1                                               | ../../../include/hw/s2mm.hpp:500 in s2mmnb                             |
-| unroll          |                                                      | ../../../include/hw/s2mm.hpp:509 in s2mmnb                             |
-| pipeline        |                                                      | ../../../include/hw/s2mm.hpp:531 in s2mmsizewrite                      |
-| pipeline        |                                                      | ../../../include/hw/s2mm.hpp:537 in s2mmsizewrite                      |
-| pipeline        | II = 1                                               | ../../../include/hw/s2mm.hpp:574 in s2mmeossimple                      |
-| pipeline        | II = 1                                               | ../../../include/hw/s2mm.hpp:585 in s2mmeossimple                      |
-| pipeline        | II = 1                                               | ../../../include/hw/s2mm.hpp:616 in s2mmeosstreamsimple                |
-| pipeline        | II = 1                                               | ../../../include/hw/s2mm.hpp:649 in s2mmwithsize                       |
-| pipeline        | II = 1                                               | ../../../include/hw/s2mm.hpp:685 in s2mmeossimple                      |
-| pipeline        | II = 1                                               | ../../../include/hw/s2mm.hpp:722 in s2mmeossimple                      |
-| pipeline        | II = 1                                               | ../../../include/hw/s2mm.hpp:751 in s2mmsimple                         |
-| pipeline        | II = 1                                               | ../../../include/hw/s2mm.hpp:775 in s2mmstreamsimple                   |
-| pipeline        | II = 1                                               | ../../../include/hw/s2mm.hpp:794 in s2mm                               |
-| pipeline        | II = 1                                               | ../../../include/hw/stream_downsizer.hpp:53 in receivebuffer           |
-| pipeline        | II = 1                                               | ../../../include/hw/stream_downsizer.hpp:86 in bufferdownsizer         |
-| pipeline        | II = 1                                               | ../../../include/hw/stream_downsizer.hpp:149 in bufferdownsizer        |
-| pipeline        | II = 1                                               | ../../../include/hw/stream_downsizer.hpp:187 in bufferdownsizer        |
-| pipeline        | II = 1                                               | ../../../include/hw/stream_downsizer.hpp:224 in bufferdownsizervec     |
-| unroll          |                                                      | ../../../include/hw/stream_downsizer.hpp:229 in bufferdownsizervec     |
-| pipeline        | II = 1                                               | ../../../include/hw/stream_downsizer.hpp:263 in streamdownsizereos     |
-| pipeline        | II = 1                                               | ../../../include/hw/stream_downsizer.hpp:289 in simplestreamdownsizer  |
-| pipeline        | II = 1                                               | ../../../include/hw/stream_downsizer.hpp:315 in streamdownsizersize    |
-| pipeline        | II = 1                                               | ../../../include/hw/stream_downsizer.hpp:341 in streamdownsizersize    |
-| pipeline        | II = 1                                               | ../../../include/hw/stream_downsizer.hpp:386 in streamdownsizer        |
-| pipeline        | II = 1                                               | ../../../include/hw/stream_downsizer.hpp:422 in streamdownsizerp2p     |
-| pipeline        | II = 1                                               | ../../../include/hw/stream_downsizer.hpp:452 in streamdownsizerp2pcomp |
-| pipeline        | II = 1                                               | ../../../include/hw/stream_upsizer.hpp:52 in sendbuffer                |
-| pipeline        | II = 1                                               | ../../../include/hw/stream_upsizer.hpp:86 in bufferupsizer             |
-| pipeline        | II = 1                                               | ../../../include/hw/stream_upsizer.hpp:129 in simpleupsizer            |
-| pipeline        | II = 1                                               | ../../../include/hw/stream_upsizer.hpp:179 in simplestreamupsizer      |
-| pipeline        | II = 1                                               | ../../../include/hw/stream_upsizer.hpp:231 in simplestreamupsizer      |
-| unroll          |                                                      | ../../../include/hw/stream_upsizer.hpp:244 in simplestreamupsizer      |
-| loop_tripcount  | min = 0 max = c_inBytes                              | ../../../include/hw/stream_upsizer.hpp:245 in simplestreamupsizer      |
-| pipeline        | II = 1                                               | ../../../include/hw/stream_upsizer.hpp:286 in streamupsizer            |
-| array_partition | variable = outBuffer_int dim = 1 complete            | ../../../include/hw/stream_upsizer.hpp:327 in upsizereos               |
-| pipeline        | II = 1                                               | ../../../include/hw/stream_upsizer.hpp:334 in upsizereos               |
-| unroll          |                                                      | ../../../include/hw/stream_upsizer.hpp:336 in upsizereos               |
-| pipeline        | II = 1                                               | ../../../include/hw/stream_upsizer.hpp:382 in upsizer_sizestream       |
-| pipeline        | II = 1                                               | ../../../include/hw/stream_upsizer.hpp:428 in streamupsizerp2p         |
-| stream          | variable = compressdStream depth = 8                 | ../lz4_compress_test.cpp:58 in lz4compressenginerun                    |
-| stream          | variable = bestMatchStream depth = 8                 | ../lz4_compress_test.cpp:59 in lz4compressenginerun                    |
-| stream          | variable = boosterStream depth = 8                   | ../lz4_compress_test.cpp:60 in lz4compressenginerun                    |
-| bind_storage    | variable = compressdStream type = FIFO impl = SRL    | ../lz4_compress_test.cpp:62 in lz4compressenginerun                    |
-| bind_storage    | variable = boosterStream type = FIFO impl = SRL      | ../lz4_compress_test.cpp:63 in lz4compressenginerun                    |
-| dataflow        |                                                      | ../lz4_compress_test.cpp:65 in lz4compressenginerun                    |
-+-----------------+------------------------------------------------------+------------------------------------------------------------------------+
++-----------------+---------------------------------------------------------+------------------------------------------------------------------------+
+| Type            | Options                                                 | Location                                                               |
++-----------------+---------------------------------------------------------+------------------------------------------------------------------------+
+| unroll          |                                                         | ../../../include/hw/compress_utils.hpp:42 in countsetbits              |
+| pipeline        | II = 2                                                  | ../../../include/hw/lz4_compress.hpp:82 in lz4compresspart1            |
+| loop_flatten    | off                                                     | ../../../include/hw/lz4_compress.hpp:83 in lz4compresspart1            |
+| pipeline        | II = 4                                                  | ../../../include/hw/lz4_compress.hpp:209 in lz4compresspart2           |
+| loop_flatten    | off                                                     | ../../../include/hw/lz4_compress.hpp:210 in lz4compresspart2           |
+| stream          | variable = lit_outStream depth = MAX_LIT_COUNT * 2      | ../../../include/hw/lz4_compress.hpp:422 in lz4compress                |
+| stream          | variable = lenOffset_Stream depth = c_gmemBurstSize * 2 | ../../../include/hw/lz4_compress.hpp:423 in lz4compress                |
+| bind_storage    | variable = lit_outStream type = FIFO impl = BRAM        | ../../../include/hw/lz4_compress.hpp:425 in lz4compress                |
+| bind_storage    | variable = lenOffset_Stream type = FIFO impl = SRL      | ../../../include/hw/lz4_compress.hpp:426 in lz4compress                |
+| dataflow        |                                                         | ../../../include/hw/lz4_compress.hpp:428 in lz4compress                |
+| stream          | variable = compressdStream depth = 8                    | ../../../include/hw/lz4_compress.hpp:455 in hlslz4core                 |
+| stream          | variable = bestMatchStream depth = 8                    | ../../../include/hw/lz4_compress.hpp:456 in hlslz4core                 |
+| stream          | variable = boosterStream depth = 8                      | ../../../include/hw/lz4_compress.hpp:457 in hlslz4core                 |
+| bind_storage    | variable = compressdStream type = FIFO impl = SRL       | ../../../include/hw/lz4_compress.hpp:459 in hlslz4core                 |
+| bind_storage    | variable = boosterStream type = FIFO impl = SRL         | ../../../include/hw/lz4_compress.hpp:460 in hlslz4core                 |
+| dataflow        |                                                         | ../../../include/hw/lz4_compress.hpp:462 in hlslz4core                 |
+| stream          | variable = outStreamEos depth = 2                       | ../../../include/hw/lz4_compress.hpp:491 in hlslz4                     |
+| stream          | variable = inStream depth = c_gmemBurstSize             | ../../../include/hw/lz4_compress.hpp:492 in hlslz4                     |
+| stream          | variable = outStream depth = c_gmemBurstSize            | ../../../include/hw/lz4_compress.hpp:493 in hlslz4                     |
+| bind_storage    | variable = outStreamEos type = FIFO impl = SRL          | ../../../include/hw/lz4_compress.hpp:495 in hlslz4                     |
+| bind_storage    | variable = inStream type = FIFO impl = SRL              | ../../../include/hw/lz4_compress.hpp:496 in hlslz4                     |
+| bind_storage    | variable = outStream type = FIFO impl = SRL             | ../../../include/hw/lz4_compress.hpp:497 in hlslz4                     |
+| dataflow        |                                                         | ../../../include/hw/lz4_compress.hpp:501 in hlslz4                     |
+| unroll          |                                                         | ../../../include/hw/lz4_compress.hpp:506 in hlslz4                     |
+| array_partition | variable = input_block_size dim = 0 complete            | ../../../include/hw/lz4_compress.hpp:541 in lz4compressmm              |
+| array_partition | variable = input_idx dim = 0 complete                   | ../../../include/hw/lz4_compress.hpp:542 in lz4compressmm              |
+| array_partition | variable = output_idx dim = 0 complete                  | ../../../include/hw/lz4_compress.hpp:543 in lz4compressmm              |
+| array_partition | variable = output_block_size dim = 0 complete           | ../../../include/hw/lz4_compress.hpp:544 in lz4compressmm              |
+| array_partition | variable = max_lit_limit dim = 0 complete               | ../../../include/hw/lz4_compress.hpp:545 in lz4compressmm              |
+| bind_storage    | variable = dict type = RAM_T2P impl = BRAM              | ../../../include/hw/lz_compress.hpp:67 in lzcompress                   |
+| unroll          |                                                         | ../../../include/hw/lz_compress.hpp:70 in lzcompress                   |
+| pipeline        | II = 1                                                  | ../../../include/hw/lz_compress.hpp:76 in lzcompress                   |
+| unroll          | FACTOR = 4                                              | ../../../include/hw/lz_compress.hpp:77 in lzcompress                   |
+| loop_tripcount  | min = LZ_DICT_SIZE max = LZ_DICT_SIZE                   | ../../../include/hw/lz_compress.hpp:78 in lzcompress                   |
+| array_partition | variable = present_window complete                      | ../../../include/hw/lz_compress.hpp:83 in lzcompress                   |
+| pipeline        | off                                                     | ../../../include/hw/lz_compress.hpp:85 in lzcompress                   |
+| pipeline        | II = 3                                                  | ../../../include/hw/lz_compress.hpp:94 in lzcompress                   |
+| loop_flatten    | off                                                     | ../../../include/hw/lz_compress.hpp:95 in lzcompress                   |
+| dependence      | variable = dict inter false                             | ../../../include/hw/lz_compress.hpp:96 in lzcompress                   |
+| unroll          |                                                         | ../../../include/hw/lz_compress.hpp:104 in lzcompress                  |
+| unroll          |                                                         | ../../../include/hw/lz_compress.hpp:129 in lzcompress                  |
+| array_partition | variable = present_window_reg complete                  | ../../../include/hw/lz_compress.hpp:141 in lzcompress                  |
+| unroll          |                                                         | ../../../include/hw/lz_compress.hpp:143 in lzcompress                  |
+| unroll          |                                                         | ../../../include/hw/lz_compress.hpp:159 in lzcompress                  |
+| unroll          |                                                         | ../../../include/hw/lz_compress.hpp:167 in lzcompress                  |
+| unroll          |                                                         | ../../../include/hw/lz_compress.hpp:190 in lzcompress                  |
+| pipeline        |                                                         | ../../../include/hw/lz_compress.hpp:206 in lzcompress                  |
+| pipeline        |                                                         | ../../../include/hw/lz_compress.hpp:213 in lzcompress                  |
+| bind_storage    | variable = dict type = RAM_T2P impl = URAM              | ../../../include/hw/lz_compress.hpp:259 in lzcompress                  |
+| array_partition | variable = present_window complete                      | ../../../include/hw/lz_compress.hpp:263 in lzcompress                  |
+| stream          | variable = lclBufStream depth = c_fifo_depth            | ../../../include/hw/lz_compress.hpp:265 in lzcompress                  |
+| bind_storage    | variable = lclBufStream type = fifo impl = srl          | ../../../include/hw/lz_compress.hpp:266 in lzcompress                  |
+| unroll          |                                                         | ../../../include/hw/lz_compress.hpp:280 in lzcompress                  |
+| pipeline        | II = 1                                                  | ../../../include/hw/lz_compress.hpp:286 in lzcompress                  |
+| unroll          | FACTOR = 4                                              | ../../../include/hw/lz_compress.hpp:287 in lzcompress                  |
+| loop_tripcount  | min = LZ_DICT_SIZE max = LZ_DICT_SIZE                   | ../../../include/hw/lz_compress.hpp:288 in lzcompress                  |
+| pipeline        | II = 1                                                  | ../../../include/hw/lz_compress.hpp:306 in lzcompress                  |
+| pipeline        | II = 1                                                  | ../../../include/hw/lz_compress.hpp:314 in lzcompress                  |
+| array_partition | variable = present_window_reg complete                  | ../../../include/hw/lz_compress.hpp:327 in lzcompress                  |
+| pipeline        | II = 4                                                  | ../../../include/hw/lz_compress.hpp:331 in lzcompress                  |
+| loop_flatten    | off                                                     | ../../../include/hw/lz_compress.hpp:332 in lzcompress                  |
+| dependence      | variable = dict inter false                             | ../../../include/hw/lz_compress.hpp:334 in lzcompress                  |
+| unroll          |                                                         | ../../../include/hw/lz_compress.hpp:346 in lzcompress                  |
+| unroll          |                                                         | ../../../include/hw/lz_compress.hpp:371 in lzcompress                  |
+| unroll          |                                                         | ../../../include/hw/lz_compress.hpp:383 in lzcompress                  |
+| unroll          |                                                         | ../../../include/hw/lz_compress.hpp:399 in lzcompress                  |
+| unroll          |                                                         | ../../../include/hw/lz_compress.hpp:407 in lzcompress                  |
+| unroll          |                                                         | ../../../include/hw/lz_compress.hpp:431 in lzcompress                  |
+| pipeline        | II = 1                                                  | ../../../include/hw/lz_compress.hpp:448 in lzcompress                  |
+| pipeline        | II = 1                                                  | ../../../include/hw/lz_compress.hpp:454 in lzcompress                  |
+| unroll          |                                                         | ../../../include/hw/lz_optional.hpp:67 in lz77divide                   |
+| pipeline        | off                                                     | ../../../include/hw/lz_optional.hpp:68 in lz77divide                   |
+| unroll          |                                                         | ../../../include/hw/lz_optional.hpp:73 in lz77divide                   |
+| pipeline        | off                                                     | ../../../include/hw/lz_optional.hpp:74 in lz77divide                   |
+| loop_tripcount  | min = 1048576 max = 1048576                             | ../../../include/hw/lz_optional.hpp:89 in lz77divide                   |
+| pipeline        | II = 1                                                  | ../../../include/hw/lz_optional.hpp:90 in lz77divide                   |
+| dependence      | variable = lcl_dyn_ltree inter false                    | ../../../include/hw/lz_optional.hpp:91 in lz77divide                   |
+| dependence      | variable = lcl_dyn_dtree inter false                    | ../../../include/hw/lz_optional.hpp:92 in lz77divide                   |
+| pipeline        | off                                                     | ../../../include/hw/lz_optional.hpp:123 in lz77divide                  |
+| pipeline        | off                                                     | ../../../include/hw/lz_optional.hpp:127 in lz77divide                  |
+| bind_storage    | variable = lcl_dyn_ltree type = ram_2p impl = LUTRAM    | ../../../include/hw/lz_optional.hpp:151 in lz77dividestream            |
+| bind_storage    | variable = lcl_dyn_dtree type = ram_2p impl = LUTRAM    | ../../../include/hw/lz_optional.hpp:152 in lz77dividestream            |
+| loop_tripcount  | min = 1048576 max = 1048576                             | ../../../include/hw/lz_optional.hpp:170 in lz77dividestream            |
+| pipeline        | II = 2                                                  | ../../../include/hw/lz_optional.hpp:171 in lz77dividestream            |
+| dependence      | variable = lcl_dyn_ltree inter false                    | ../../../include/hw/lz_optional.hpp:172 in lz77dividestream            |
+| dependence      | variable = lcl_dyn_dtree inter false                    | ../../../include/hw/lz_optional.hpp:173 in lz77dividestream            |
+| pipeline        | II = 1                                                  | ../../../include/hw/lz_optional.hpp:231 in lz77dividestream            |
+| pipeline        | II = 1                                                  | ../../../include/hw/lz_optional.hpp:238 in lz77dividestream            |
+| loop_tripcount  | min = 1048576 max = 1048576                             | ../../../include/hw/lz_optional.hpp:270 in lz77dividestatic            |
+| pipeline        | II = 1                                                  | ../../../include/hw/lz_optional.hpp:271 in lz77dividestatic            |
+| array_partition | variable = compare_window                               | ../../../include/hw/lz_optional.hpp:330 in lzbestmatchfilter           |
+| unroll          |                                                         | ../../../include/hw/lz_optional.hpp:334 in lzbestmatchfilter           |
+| pipeline        | II = 1                                                  | ../../../include/hw/lz_optional.hpp:340 in lzbestmatchfilter           |
+| unroll          |                                                         | ../../../include/hw/lz_optional.hpp:344 in lzbestmatchfilter           |
+| pipeline        | off                                                     | ../../../include/hw/lz_optional.hpp:368 in lzbestmatchfilter           |
+| pipeline        | II = 1                                                  | ../../../include/hw/lz_optional.hpp:394 in lzbestmatchfilter           |
+| stream          | variable = lclBufStream depth = c_fifo_depth            | ../../../include/hw/lz_optional.hpp:449 in lzbooster                   |
+| bind_storage    | variable = lclBufStream type = fifo impl = srl          | ../../../include/hw/lz_optional.hpp:450 in lzbooster                   |
+| pipeline        | II = 1                                                  | ../../../include/hw/lz_optional.hpp:474 in lzbooster                   |
+| pipeline        | II = 1                                                  | ../../../include/hw/lz_optional.hpp:482 in lzbooster                   |
+| dependence      | variable = local_mem inter false                        | ../../../include/hw/lz_optional.hpp:484 in lzbooster                   |
+| pipeline        | II = 1                                                  | ../../../include/hw/lz_optional.hpp:557 in lzbooster                   |
+| bind_storage    | variable = local_mem type = ram_2p impl = bram          | ../../../include/hw/lz_optional.hpp:589 in lzbooster                   |
+| pipeline        | II = 3                                                  | ../../../include/hw/lz_optional.hpp:604 in lzbooster                   |
+| dependence      | variable = local_mem inter false                        | ../../../include/hw/lz_optional.hpp:605 in lzbooster                   |
+| pipeline        | off                                                     | ../../../include/hw/lz_optional.hpp:667 in lzbooster                   |
+| pipeline        | II = 1                                                  | ../../../include/hw/lz_optional.hpp:691 in lzfilter                    |
+| array_partition | variable = local_buffer dim = 1 complete                | ../../../include/hw/mm2s.hpp:79 in mm2snb                              |
+| bind_storage    | variable = local_buffer type = RAM_2P impl = LUTRAM     | ../../../include/hw/mm2s.hpp:80 in mm2snb                              |
+| array_partition | variable = read_idx dim = 0 complete                    | ../../../include/hw/mm2s.hpp:86 in mm2snb                              |
+| array_partition | variable = write_idx dim = 0 complete                   | ../../../include/hw/mm2s.hpp:87 in mm2snb                              |
+| array_partition | variable = read_size dim = 0 complete                   | ../../../include/hw/mm2s.hpp:88 in mm2snb                              |
+| unroll          |                                                         | ../../../include/hw/mm2s.hpp:92 in mm2snb                              |
+| pipeline        | II = 1                                                  | ../../../include/hw/mm2s.hpp:111 in mm2snb                             |
+| pipeline        | II = 1                                                  | ../../../include/hw/mm2s.hpp:125 in mm2snb                             |
+| unroll          |                                                         | ../../../include/hw/mm2s.hpp:127 in mm2snb                             |
+| unroll          |                                                         | ../../../include/hw/mm2s.hpp:136 in mm2snb                             |
+| array_partition | variable = read_idx dim = 0 complete                    | ../../../include/hw/mm2s.hpp:179 in mm2multstreamsimple                |
+| array_partition | variable = read_size dim = 0 complete                   | ../../../include/hw/mm2s.hpp:180 in mm2multstreamsimple                |
+| array_partition | variable = input_size dim = 0 complete                  | ../../../include/hw/mm2s.hpp:181 in mm2multstreamsimple                |
+| unroll          |                                                         | ../../../include/hw/mm2s.hpp:184 in mm2multstreamsimple                |
+| pipeline        | off                                                     | ../../../include/hw/mm2s.hpp:194 in mm2multstreamsimple                |
+| unroll          |                                                         | ../../../include/hw/mm2s.hpp:222 in mm2multstreamsimple                |
+| pipeline        | II = 1                                                  | ../../../include/hw/mm2s.hpp:254 in mm2multstreamdownsizer             |
+| stream          | variable = outStreamV depth = c_depthOutStreamV         | ../../../include/hw/mm2s.hpp:289 in mm2multstreamsize                  |
+| stream          | variable = outStreamVSize depth = 3                     | ../../../include/hw/mm2s.hpp:290 in mm2multstreamsize                  |
+| bind_storage    | variable = outStreamV type = FIFO impl = SRL            | ../../../include/hw/mm2s.hpp:291 in mm2multstreamsize                  |
+| dataflow        |                                                         | ../../../include/hw/mm2s.hpp:293 in mm2multstreamsize                  |
+| unroll          |                                                         | ../../../include/hw/mm2s.hpp:298 in mm2multstreamsize                  |
+| pipeline        | II = 1                                                  | ../../../include/hw/mm2s.hpp:346 in mm2singlestream                    |
+| pipeline        | II = 1                                                  | ../../../include/hw/mm2s.hpp:381 in mm2streamdownsizer                 |
+| stream          | variable = outStreamV depth = c_depthOutStreamV         | ../../../include/hw/mm2s.hpp:416 in mm2stream                          |
+| stream          | variable = outStreamVSize depth = 2                     | ../../../include/hw/mm2s.hpp:417 in mm2stream                          |
+| bind_storage    | variable = outStreamV type = FIFO impl = SRL            | ../../../include/hw/mm2s.hpp:418 in mm2stream                          |
+| dataflow        |                                                         | ../../../include/hw/mm2s.hpp:420 in mm2stream                          |
+| array_partition | variable = local_buffer dim = 1 complete                | ../../../include/hw/mm2s.hpp:448 in mm2snbroundoff                     |
+| bind_storage    | variable = local_buffer type = RAM_2P impl = LUTRAM     | ../../../include/hw/mm2s.hpp:449 in mm2snbroundoff                     |
+| array_partition | variable = read_idx dim = 0 complete                    | ../../../include/hw/mm2s.hpp:455 in mm2snbroundoff                     |
+| array_partition | variable = write_idx dim = 0 complete                   | ../../../include/hw/mm2s.hpp:456 in mm2snbroundoff                     |
+| array_partition | variable = read_size dim = 0 complete                   | ../../../include/hw/mm2s.hpp:457 in mm2snbroundoff                     |
+| unroll          |                                                         | ../../../include/hw/mm2s.hpp:461 in mm2snbroundoff                     |
+| pipeline        | II = 1                                                  | ../../../include/hw/mm2s.hpp:486 in mm2snbroundoff                     |
+| pipeline        | II = 1                                                  | ../../../include/hw/mm2s.hpp:500 in mm2snbroundoff                     |
+| unroll          |                                                         | ../../../include/hw/mm2s.hpp:502 in mm2snbroundoff                     |
+| unroll          |                                                         | ../../../include/hw/mm2s.hpp:511 in mm2snbroundoff                     |
+| pipeline        | II = 1                                                  | ../../../include/hw/mm2s.hpp:545 in mm2ssimple                         |
+| pipeline        | II = 1                                                  | ../../../include/hw/mm2s.hpp:579 in mm2ssimple                         |
+| pipeline        | II = 1                                                  | ../../../include/hw/mm2s.hpp:612 in mm2ssimple                         |
+| pipeline        | II = 1                                                  | ../../../include/hw/mm2s.hpp:651 in mm2ssimple                         |
+| pipeline        | II = 1                                                  | ../../../include/hw/mm2s.hpp:698 in mm2stream                          |
+| pipeline        | II = 1                                                  | ../../../include/hw/s2mm.hpp:89 in s2mmaxi                             |
+| pipeline        | II = 1                                                  | ../../../include/hw/s2mm.hpp:129 in stream2mm                          |
+| array_partition | variable = write_size dim = 0 complete                  | ../../../include/hw/s2mm.hpp:171 in multstream2mmsize                  |
+| array_partition | variable = base_addr dim = 0 complete                   | ../../../include/hw/s2mm.hpp:172 in multstream2mmsize                  |
+| unroll          |                                                         | ../../../include/hw/s2mm.hpp:176 in multstream2mmsize                  |
+| pipeline        | II = 1                                                  | ../../../include/hw/s2mm.hpp:194 in multstream2mmsize                  |
+| pipeline        | II = 1                                                  | ../../../include/hw/s2mm.hpp:203 in multstream2mmsize                  |
+| pipeline        | II = 1                                                  | ../../../include/hw/s2mm.hpp:239 in stream2mmupsizer                   |
+| stream          | variable = outStreamV depth = c_depthOutStreamV         | ../../../include/hw/s2mm.hpp:290 in multstream2mm                      |
+| stream          | variable = outStreamVSize depth = 2                     | ../../../include/hw/s2mm.hpp:291 in multstream2mm                      |
+| bind_storage    | variable = outStreamV type = FIFO impl = SRL            | ../../../include/hw/s2mm.hpp:292 in multstream2mm                      |
+| dataflow        |                                                         | ../../../include/hw/s2mm.hpp:294 in multstream2mm                      |
+| unroll          |                                                         | ../../../include/hw/s2mm.hpp:297 in multstream2mm                      |
+| array_partition | variable = input_size dim = 0 complete                  | ../../../include/hw/s2mm.hpp:337 in s2mmnb                             |
+| array_partition | variable = read_size dim = 0 complete                   | ../../../include/hw/s2mm.hpp:338 in s2mmnb                             |
+| array_partition | variable = write_size dim = 0 complete                  | ../../../include/hw/s2mm.hpp:339 in s2mmnb                             |
+| array_partition | variable = write_idx dim = 0 complete                   | ../../../include/hw/s2mm.hpp:340 in s2mmnb                             |
+| array_partition | variable = burst_size dim = 0 complete                  | ../../../include/hw/s2mm.hpp:341 in s2mmnb                             |
+| array_partition | variable = local_buffer dim = 1 complete                | ../../../include/hw/s2mm.hpp:345 in s2mmnb                             |
+| bind_storage    | variable = local_buffer type = RAM_2P impl = LUTRAM     | ../../../include/hw/s2mm.hpp:346 in s2mmnb                             |
+| unroll          |                                                         | ../../../include/hw/s2mm.hpp:350 in s2mmnb                             |
+| pipeline        | II = 1                                                  | ../../../include/hw/s2mm.hpp:362 in s2mmnb                             |
+| unroll          |                                                         | ../../../include/hw/s2mm.hpp:364 in s2mmnb                             |
+| pipeline        | II = 1                                                  | ../../../include/hw/s2mm.hpp:394 in s2mmnb                             |
+| unroll          |                                                         | ../../../include/hw/s2mm.hpp:403 in s2mmnb                             |
+| array_partition | variable = input_size dim = 0 complete                  | ../../../include/hw/s2mm.hpp:442 in s2mmnb                             |
+| array_partition | variable = read_size dim = 0 complete                   | ../../../include/hw/s2mm.hpp:443 in s2mmnb                             |
+| array_partition | variable = write_size dim = 0 complete                  | ../../../include/hw/s2mm.hpp:444 in s2mmnb                             |
+| array_partition | variable = write_idx dim = 0 complete                   | ../../../include/hw/s2mm.hpp:445 in s2mmnb                             |
+| array_partition | variable = burst_size dim = 0 complete                  | ../../../include/hw/s2mm.hpp:446 in s2mmnb                             |
+| array_partition | variable = local_buffer dim = 1 complete                | ../../../include/hw/s2mm.hpp:450 in s2mmnb                             |
+| bind_storage    | variable = local_buffer type = RAM_2P impl = LUTRAM     | ../../../include/hw/s2mm.hpp:451 in s2mmnb                             |
+| unroll          |                                                         | ../../../include/hw/s2mm.hpp:455 in s2mmnb                             |
+| pipeline        | II = 1                                                  | ../../../include/hw/s2mm.hpp:467 in s2mmnb                             |
+| unroll          |                                                         | ../../../include/hw/s2mm.hpp:469 in s2mmnb                             |
+| pipeline        | II = 1                                                  | ../../../include/hw/s2mm.hpp:500 in s2mmnb                             |
+| unroll          |                                                         | ../../../include/hw/s2mm.hpp:509 in s2mmnb                             |
+| pipeline        |                                                         | ../../../include/hw/s2mm.hpp:531 in s2mmsizewrite                      |
+| pipeline        |                                                         | ../../../include/hw/s2mm.hpp:537 in s2mmsizewrite                      |
+| pipeline        | II = 1                                                  | ../../../include/hw/s2mm.hpp:574 in s2mmeossimple                      |
+| pipeline        | II = 1                                                  | ../../../include/hw/s2mm.hpp:585 in s2mmeossimple                      |
+| pipeline        | II = 1                                                  | ../../../include/hw/s2mm.hpp:616 in s2mmeosstreamsimple                |
+| pipeline        | II = 1                                                  | ../../../include/hw/s2mm.hpp:649 in s2mmwithsize                       |
+| pipeline        | II = 1                                                  | ../../../include/hw/s2mm.hpp:685 in s2mmeossimple                      |
+| pipeline        | II = 1                                                  | ../../../include/hw/s2mm.hpp:722 in s2mmeossimple                      |
+| pipeline        | II = 1                                                  | ../../../include/hw/s2mm.hpp:751 in s2mmsimple                         |
+| pipeline        | II = 1                                                  | ../../../include/hw/s2mm.hpp:775 in s2mmstreamsimple                   |
+| pipeline        | II = 1                                                  | ../../../include/hw/s2mm.hpp:794 in s2mm                               |
+| pipeline        | II = 1                                                  | ../../../include/hw/stream_downsizer.hpp:53 in receivebuffer           |
+| pipeline        | II = 1                                                  | ../../../include/hw/stream_downsizer.hpp:86 in bufferdownsizer         |
+| pipeline        | II = 1                                                  | ../../../include/hw/stream_downsizer.hpp:149 in bufferdownsizer        |
+| pipeline        | II = 1                                                  | ../../../include/hw/stream_downsizer.hpp:187 in bufferdownsizer        |
+| pipeline        | II = 1                                                  | ../../../include/hw/stream_downsizer.hpp:224 in bufferdownsizervec     |
+| unroll          |                                                         | ../../../include/hw/stream_downsizer.hpp:229 in bufferdownsizervec     |
+| pipeline        | II = 1                                                  | ../../../include/hw/stream_downsizer.hpp:263 in streamdownsizereos     |
+| pipeline        | II = 1                                                  | ../../../include/hw/stream_downsizer.hpp:289 in simplestreamdownsizer  |
+| pipeline        | II = 1                                                  | ../../../include/hw/stream_downsizer.hpp:315 in streamdownsizersize    |
+| pipeline        | II = 1                                                  | ../../../include/hw/stream_downsizer.hpp:341 in streamdownsizersize    |
+| pipeline        | II = 1                                                  | ../../../include/hw/stream_downsizer.hpp:386 in streamdownsizer        |
+| pipeline        | II = 1                                                  | ../../../include/hw/stream_downsizer.hpp:422 in streamdownsizerp2p     |
+| pipeline        | II = 1                                                  | ../../../include/hw/stream_downsizer.hpp:452 in streamdownsizerp2pcomp |
+| pipeline        | II = 1                                                  | ../../../include/hw/stream_upsizer.hpp:52 in sendbuffer                |
+| pipeline        | II = 1                                                  | ../../../include/hw/stream_upsizer.hpp:86 in bufferupsizer             |
+| pipeline        | II = 1                                                  | ../../../include/hw/stream_upsizer.hpp:129 in simpleupsizer            |
+| pipeline        | II = 1                                                  | ../../../include/hw/stream_upsizer.hpp:179 in simplestreamupsizer      |
+| pipeline        | II = 1                                                  | ../../../include/hw/stream_upsizer.hpp:231 in simplestreamupsizer      |
+| unroll          |                                                         | ../../../include/hw/stream_upsizer.hpp:244 in simplestreamupsizer      |
+| loop_tripcount  | min = 0 max = c_inBytes                                 | ../../../include/hw/stream_upsizer.hpp:245 in simplestreamupsizer      |
+| pipeline        | II = 1                                                  | ../../../include/hw/stream_upsizer.hpp:286 in streamupsizer            |
+| array_partition | variable = outBuffer_int dim = 1 complete               | ../../../include/hw/stream_upsizer.hpp:327 in upsizereos               |
+| pipeline        | II = 1                                                  | ../../../include/hw/stream_upsizer.hpp:334 in upsizereos               |
+| unroll          |                                                         | ../../../include/hw/stream_upsizer.hpp:336 in upsizereos               |
+| pipeline        | II = 1                                                  | ../../../include/hw/stream_upsizer.hpp:382 in upsizer_sizestream       |
+| pipeline        | II = 1                                                  | ../../../include/hw/stream_upsizer.hpp:428 in streamupsizerp2p         |
+| stream          | variable = compressdStream depth = 8                    | ../lz4_compress_test.cpp:58 in lz4compressenginerun                    |
+| stream          | variable = bestMatchStream depth = 8                    | ../lz4_compress_test.cpp:59 in lz4compressenginerun                    |
+| stream          | variable = boosterStream depth = 8                      | ../lz4_compress_test.cpp:60 in lz4compressenginerun                    |
+| bind_storage    | variable = compressdStream type = FIFO impl = SRL       | ../lz4_compress_test.cpp:62 in lz4compressenginerun                    |
+| bind_storage    | variable = boosterStream type = FIFO impl = SRL         | ../lz4_compress_test.cpp:63 in lz4compressenginerun                    |
+| dataflow        |                                                         | ../lz4_compress_test.cpp:65 in lz4compressenginerun                    |
++-----------------+---------------------------------------------------------+------------------------------------------------------------------------+
 
 * Inferred Pragmas
 +--------------------------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------------------------------------+

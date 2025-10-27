@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'lz4Compress_4096_1_s'" level="0">
-<item name = "Date">Mon Oct 27 14:15:44 2025
+<item name = "Date">Mon Oct 27 14:49:41 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">lz4CompressEngineRun</item>
@@ -50,20 +50,20 @@
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 6, -</column>
-<column name="FIFO">2, -, 361, 235, -</column>
-<column name="Instance">-, -, 794, 2039, -</column>
+<column name="FIFO">4, -, 361, 269, -</column>
+<column name="Instance">-, -, 892, 2120, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, -, -</column>
 <column name="Register">-, -, -, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">~0, 0, 1, 4, 0</specialColumn>
+<specialColumn name="Utilization (%)">1, 0, 1, 4, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="lz4CompressPart1_4096_1_U0">lz4CompressPart1_4096_1_s, 0, 0, 378, 768, 0</column>
+<column name="lz4CompressPart1_4096_1_U0">lz4CompressPart1_4096_1_s, 0, 0, 476, 849, 0</column>
 <column name="lz4CompressPart2_U0">lz4CompressPart2, 0, 0, 416, 1271, 0</column>
 </table>
 </item>
@@ -78,8 +78,8 @@
 <item name = "FIFO"><table name="" hasTotal="1">
 <keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
 <column name="input_size_c_U">0, 99, 0, -, 2, 32, 64</column>
-<column name="lenOffset_Stream_U">0, 99, 0, -, 32, 64, 2048</column>
-<column name="lit_outStream_U">2, 163, 0, -, 4096, 8, 32768</column>
+<column name="lenOffset_Stream_U">0, 99, 0, -, 64, 64, 4096</column>
+<column name="lit_outStream_U">4, 163, 0, -, 8192, 8, 65536</column>
 </table>
 </item>
 <item name = "Expression"><table name="" hasTotal="1">

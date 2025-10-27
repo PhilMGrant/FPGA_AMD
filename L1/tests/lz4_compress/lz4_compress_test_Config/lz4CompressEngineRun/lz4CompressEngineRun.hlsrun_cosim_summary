@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "10/27/25 14:16:08",
- "timestampMillis": "1761545768126",
+ "dateTimestamp": "10/27/25 14:50:01",
+ "timestampMillis": "1761547801812",
  "buildStep": {
-  "cmdId": "bf29fab1-65d3-489d-b21b-8d6478e089b8",
+  "cmdId": "495c68f4-18b9-4318-9fb4-3ce8cae29424",
   "name": "vitis-run",
   "logFile": "D:/Xillinx_Project\\PROJECT\\data_compression\\L1\\tests\\lz4_compress\\lz4_compress_test_Config\\lz4CompressEngineRun\\logs\\lz4CompressEngineRun.steps.log",
   "commandLine": "D:/Xilinx/Vitis/2024.2/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --cosim --config D:\\Xillinx_Project\\PROJECT\\data_compression\\L1\\tests\\lz4_compress\\lz4_compress_test_Config\\user_config.cfg --work_dir lz4CompressEngineRun ",
@@ -33,10 +33,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "10/27/25 14:16:08",
- "timestampMillis": "1761545768127",
+ "dateTimestamp": "10/27/25 14:50:01",
+ "timestampMillis": "1761547801813",
  "status": {
-  "cmdId": "bf29fab1-65d3-489d-b21b-8d6478e089b8",
+  "cmdId": "495c68f4-18b9-4318-9fb4-3ce8cae29424",
   "state": "CS_RUNNING"
  }
 }
@@ -44,8 +44,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "10/27/25 14:16:15",
- "timestampMillis": "1761545775461",
+ "dateTimestamp": "10/27/25 14:50:09",
+ "timestampMillis": "1761547809147",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -80,10 +80,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "10/27/25 14:16:15",
- "timestampMillis": "1761545775463",
+ "dateTimestamp": "10/27/25 14:50:09",
+ "timestampMillis": "1761547809148",
  "buildStep": {
-  "cmdId": "b6916b56-d61b-4738-81a3-ff822e69ec34",
+  "cmdId": "ddc6cc7d-0602-404e-87cf-6f474e0b1e80",
   "name": "",
   "logFile": "D:/Xillinx_Project\\PROJECT\\data_compression\\L1\\tests\\lz4_compress\\lz4_compress_test_Config\\lz4CompressEngineRun\\hls\\hls.log",
   "commandLine": "",
@@ -96,10 +96,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "10/27/25 14:16:15",
- "timestampMillis": "1761545775465",
+ "dateTimestamp": "10/27/25 14:50:09",
+ "timestampMillis": "1761547809150",
  "status": {
-  "cmdId": "b6916b56-d61b-4738-81a3-ff822e69ec34",
+  "cmdId": "ddc6cc7d-0602-404e-87cf-6f474e0b1e80",
   "state": "CS_RUNNING"
  }
 }
@@ -107,8 +107,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "10/27/25 14:16:15",
- "timestampMillis": "1761545775465",
+ "dateTimestamp": "10/27/25 14:50:09",
+ "timestampMillis": "1761547809150",
  "report": {
   "path": "D:/Xillinx_Project\\PROJECT\\data_compression\\L1\\tests\\lz4_compress\\lz4_compress_test_Config\\lz4CompressEngineRun\\hls\\sim\\report\\lz4CompressEngineRun_cosim.rpt",
   "name": "",
@@ -121,8 +121,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "10/27/25 14:16:15",
- "timestampMillis": "1761545775467",
+ "dateTimestamp": "10/27/25 14:50:09",
+ "timestampMillis": "1761547809152",
  "report": {
   "path": "D:/Xillinx_Project\\PROJECT\\data_compression\\L1\\tests\\lz4_compress\\lz4_compress_test_Config\\lz4CompressEngineRun\\hls",
   "name": "",
@@ -135,8 +135,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "10/27/25 14:16:15",
- "timestampMillis": "1761545775468",
+ "dateTimestamp": "10/27/25 14:50:09",
+ "timestampMillis": "1761547809153",
  "report": {
   "path": "D:/Xillinx_Project\\PROJECT\\data_compression\\L1\\tests\\lz4_compress\\lz4_compress_test_Config\\lz4CompressEngineRun\\hls",
   "name": "",
@@ -149,8 +149,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "10/27/25 14:16:15",
- "timestampMillis": "1761545775469",
+ "dateTimestamp": "10/27/25 14:50:09",
+ "timestampMillis": "1761547809154",
  "report": {
   "path": "D:/Xillinx_Project\\PROJECT\\data_compression\\L1\\tests\\lz4_compress\\lz4_compress_test_Config\\lz4CompressEngineRun\\hls",
   "name": "",
@@ -163,8 +163,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "10/27/25 14:16:15",
- "timestampMillis": "1761545775471",
+ "dateTimestamp": "10/27/25 14:50:09",
+ "timestampMillis": "1761547809155",
  "report": {
   "path": "D:/Xillinx_Project\\PROJECT\\data_compression\\L1\\tests\\lz4_compress\\lz4_compress_test_Config\\lz4CompressEngineRun\\hls",
   "name": "",
@@ -177,10 +177,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "10/27/25 14:16:52",
- "timestampMillis": "1761545812204",
+ "dateTimestamp": "10/27/25 14:50:50",
+ "timestampMillis": "1761547850236",
  "status": {
-  "cmdId": "b6916b56-d61b-4738-81a3-ff822e69ec34",
+  "cmdId": "ddc6cc7d-0602-404e-87cf-6f474e0b1e80",
   "state": "CS_PASSED"
  }
 }
@@ -188,10 +188,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "10/27/25 14:16:52",
- "timestampMillis": "1761545812351",
+ "dateTimestamp": "10/27/25 14:50:50",
+ "timestampMillis": "1761547850383",
  "status": {
-  "cmdId": "bf29fab1-65d3-489d-b21b-8d6478e089b8",
+  "cmdId": "495c68f4-18b9-4318-9fb4-3ce8cae29424",
   "state": "CS_PASSED"
  }
 }
@@ -199,8 +199,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "10/27/25 14:16:52",
- "timestampMillis": "1761545812351",
+ "dateTimestamp": "10/27/25 14:50:50",
+ "timestampMillis": "1761547850383",
  "report": {
   "path": "",
   "name": "",
@@ -213,8 +213,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "10/27/25 14:16:52",
- "timestampMillis": "1761545812352",
+ "dateTimestamp": "10/27/25 14:50:50",
+ "timestampMillis": "1761547850384",
  "report": {
   "path": "",
   "name": "",

@@ -8,12 +8,12 @@
 `timescale 1ns/1ps
 //RAW latency 1 
 
-module lz4CompressEngineRun_fifo_w64_d32_S
+module lz4CompressEngineRun_fifo_w64_d64_S
 #(parameter
     MEM_STYLE    = "shiftReg",
     DATA_WIDTH   = 64,
-    ADDR_WIDTH   = 5,
-    DEPTH        = 32)
+    ADDR_WIDTH   = 6,
+    DEPTH        = 64)
 (
     // system signal
     input  wire                  clk,
@@ -47,11 +47,11 @@ localparam
     reg                   full_n = 1'b1; 
 
 //------------------------Instantiation------------------
-    lz4CompressEngineRun_fifo_w64_d32_S_ShiftReg 
+    lz4CompressEngineRun_fifo_w64_d64_S_ShiftReg 
     #(  .DATA_WIDTH (DATA_WIDTH),
         .ADDR_WIDTH (SRL_AWIDTH),
         .DEPTH      (SRL_DEPTH))
-    U_lz4CompressEngineRun_fifo_w64_d32_S_ShiftReg (
+    U_lz4CompressEngineRun_fifo_w64_d64_S_ShiftReg (
         .clk        (clk),
         .we         (push),
         .addr       (addr),
@@ -126,11 +126,11 @@ localparam
 endmodule  
 
 
-module lz4CompressEngineRun_fifo_w64_d32_S_ShiftReg
+module lz4CompressEngineRun_fifo_w64_d64_S_ShiftReg
 #(parameter
     DATA_WIDTH  = 64,
-    ADDR_WIDTH  = 5,
-    DEPTH       = 32)
+    ADDR_WIDTH  = 6,
+    DEPTH       = 64)
 (
     input  wire                  clk,
     input  wire                  we,

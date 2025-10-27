@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush'" level="0">
-<item name = "Date">Mon Oct 27 14:15:37 2025
+<item name = "Date">Mon Oct 27 14:49:33 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">lz4CompressEngineRun</item>

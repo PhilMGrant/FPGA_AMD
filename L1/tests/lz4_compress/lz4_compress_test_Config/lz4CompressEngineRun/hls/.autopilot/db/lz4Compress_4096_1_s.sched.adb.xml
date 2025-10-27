@@ -3,19 +3,19 @@
 
 <trans_list>
 
-<trans id="27" from="1" to="2">
+<trans id="28" from="1" to="2">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="28" from="2" to="3">
+<trans id="29" from="2" to="3">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="29" from="3" to="4">
+<trans id="30" from="3" to="4">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
@@ -44,7 +44,7 @@ entry:1 %input_size_c = alloca i64 1
 </operation>
 
 <operation id="6" st_id="1" stage="1" lat="1">
-<core>FIFO</core>
+<core>FIFO_BRAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
@@ -80,12 +80,12 @@ entry:13 %lenOffset_Stream = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="24" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8" op_3_bw="64" op_4_bw="32" op_5_bw="32" op_6_bw="32">
+<Node id="25" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8" op_3_bw="64" op_4_bw="32" op_5_bw="32" op_6_bw="32">
 <![CDATA[
-entry:17 %call_ln401 = call void @lz4CompressPart1<4096, 1>, i32 %boosterStream, i8 %lit_outStream, i64 %lenOffset_Stream, i32 %input_size, i32 %max_lit_limit, i32 %input_size_c
+entry:18 %call_ln429 = call void @lz4CompressPart1<4096, 1>, i32 %boosterStream, i8 %lit_outStream, i64 %lenOffset_Stream, i32 %input_size, i32 %max_lit_limit, i32 %input_size_c
 
 ]]></Node>
-<StgValue><ssdm name="call_ln401"/></StgValue>
+<StgValue><ssdm name="call_ln429"/></StgValue>
 </operation>
 </state>
 
@@ -98,12 +98,12 @@ entry:17 %call_ln401 = call void @lz4CompressPart1<4096, 1>, i32 %boosterStream,
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="24" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8" op_3_bw="64" op_4_bw="32" op_5_bw="32" op_6_bw="32">
+<Node id="25" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8" op_3_bw="64" op_4_bw="32" op_5_bw="32" op_6_bw="32">
 <![CDATA[
-entry:17 %call_ln401 = call void @lz4CompressPart1<4096, 1>, i32 %boosterStream, i8 %lit_outStream, i64 %lenOffset_Stream, i32 %input_size, i32 %max_lit_limit, i32 %input_size_c
+entry:18 %call_ln429 = call void @lz4CompressPart1<4096, 1>, i32 %boosterStream, i8 %lit_outStream, i64 %lenOffset_Stream, i32 %input_size, i32 %max_lit_limit, i32 %input_size_c
 
 ]]></Node>
-<StgValue><ssdm name="call_ln401"/></StgValue>
+<StgValue><ssdm name="call_ln429"/></StgValue>
 </operation>
 </state>
 
@@ -116,12 +116,12 @@ entry:17 %call_ln401 = call void @lz4CompressPart1<4096, 1>, i32 %boosterStream,
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="25" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="8" op_4_bw="1" op_5_bw="32" op_6_bw="32" op_7_bw="0" op_8_bw="0">
+<Node id="26" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="8" op_4_bw="1" op_5_bw="32" op_6_bw="32" op_7_bw="0" op_8_bw="0">
 <![CDATA[
-entry:18 %call_ln403 = call void @lz4CompressPart2, i8 %lit_outStream, i64 %lenOffset_Stream, i8 %lz4Out, i1 %lz4Out_eos, i32 %lz4OutSize, i32 %input_size_c
+entry:19 %call_ln431 = call void @lz4CompressPart2, i8 %lit_outStream, i64 %lenOffset_Stream, i8 %lz4Out, i1 %lz4Out_eos, i32 %lz4OutSize, i32 %input_size_c
 
 ]]></Node>
-<StgValue><ssdm name="call_ln403"/></StgValue>
+<StgValue><ssdm name="call_ln431"/></StgValue>
 </operation>
 </state>
 
@@ -271,7 +271,7 @@ entry:9 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %lz4
 
 <Node id="18" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="8" op_8_bw="8">
 <![CDATA[
-entry:11 %empty_46 = specchannel i32 @_ssdm_op_SpecChannel, void @lit_outStream_str, i32 1, void @p_str, void @p_str, i32 4096, i32 4096, i8 %lit_outStream, i8 %lit_outStream
+entry:11 %empty_46 = specchannel i32 @_ssdm_op_SpecChannel, void @lit_outStream_str, i32 1, void @p_str, void @p_str, i32 8192, i32 8192, i8 %lit_outStream, i8 %lit_outStream
 
 ]]></Node>
 <StgValue><ssdm name="empty_46"/></StgValue>
@@ -301,7 +301,7 @@ entry:12 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %li
 
 <Node id="21" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="64" op_8_bw="64">
 <![CDATA[
-entry:14 %empty_47 = specchannel i32 @_ssdm_op_SpecChannel, void @lenOffset_Stream_str, i32 1, void @p_str, void @p_str, i32 32, i32 32, i64 %lenOffset_Stream, i64 %lenOffset_Stream
+entry:14 %empty_47 = specchannel i32 @_ssdm_op_SpecChannel, void @lenOffset_Stream_str, i32 1, void @p_str, void @p_str, i32 64, i32 64, i64 %lenOffset_Stream, i64 %lenOffset_Stream
 
 ]]></Node>
 <StgValue><ssdm name="empty_47"/></StgValue>
@@ -329,42 +329,57 @@ entry:15 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %l
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="23" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64">
+<Node id="23" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:16 %specmemcore_ln398 = specmemcore void @_ssdm_op_SpecMemCore, i64 %lenOffset_Stream, i64 666, i64 10, i64 18446744073709551615
+entry:16 %specmemcore_ln425 = specmemcore void @_ssdm_op_SpecMemCore, i8 %lit_outStream, i64 666, i64 8, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln398"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln425"/></StgValue>
 </operation>
 
-<operation id="25" st_id="4" stage="1" lat="2">
-<core></core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="25" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="8" op_4_bw="1" op_5_bw="32" op_6_bw="32" op_7_bw="0" op_8_bw="0">
-<![CDATA[
-entry:18 %call_ln403 = call void @lz4CompressPart2, i8 %lit_outStream, i64 %lenOffset_Stream, i8 %lz4Out, i1 %lz4Out_eos, i32 %lz4OutSize, i32 %input_size_c
-
-]]></Node>
-<StgValue><ssdm name="call_ln403"/></StgValue>
-</operation>
-
-<operation id="26" st_id="4" stage="1" lat="1">
+<operation id="25" st_id="4" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="26" bw="0">
+<Node id="24" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:19 %ret_ln404 = ret
+entry:17 %specmemcore_ln426 = specmemcore void @_ssdm_op_SpecMemCore, i64 %lenOffset_Stream, i64 666, i64 10, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln404"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln426"/></StgValue>
+</operation>
+
+<operation id="26" st_id="4" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="26" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="8" op_4_bw="1" op_5_bw="32" op_6_bw="32" op_7_bw="0" op_8_bw="0">
+<![CDATA[
+entry:19 %call_ln431 = call void @lz4CompressPart2, i8 %lit_outStream, i64 %lenOffset_Stream, i8 %lz4Out, i1 %lz4Out_eos, i32 %lz4OutSize, i32 %input_size_c
+
+]]></Node>
+<StgValue><ssdm name="call_ln431"/></StgValue>
+</operation>
+
+<operation id="27" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="27" bw="0">
+<![CDATA[
+entry:20 %ret_ln432 = ret
+
+]]></Node>
+<StgValue><ssdm name="ret_ln432"/></StgValue>
 </operation>
 </state>
 </state_list>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'lz4CompressEngineRun'" level="0">
-<item name = "Date">Mon Oct 27 14:15:45 2025
+<item name = "Date">Mon Oct 27 14:49:42 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">lz4CompressEngineRun</item>
@@ -53,19 +53,19 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 2, -</column>
 <column name="FIFO">-, -, 594, 405, -</column>
-<column name="Instance">106, -, 4497, 8236, -</column>
+<column name="Instance">108, -, 4595, 8351, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, -, -</column>
 <column name="Register">-, -, -, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">37, 0, 4, 16, 0</specialColumn>
+<specialColumn name="Utilization (%)">38, 0, 4, 16, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="lz4Compress_4096_1_U0">lz4Compress_4096_1_s, 2, 0, 1155, 2280, 0</column>
+<column name="lz4Compress_4096_1_U0">lz4Compress_4096_1_s, 4, 0, 1253, 2395, 0</column>
 <column name="lzBestMatchFilter_6_65536_U0">lzBestMatchFilter_6_65536_s, 0, 0, 505, 664, 0</column>
 <column name="lzBooster_255_16384_64_U0">lzBooster_255_16384_64_s, 8, 0, 488, 1009, 0</column>
 <column name="lzCompress_6_4_65536_6_1_4096_64_U0">lzCompress_6_4_65536_6_1_4096_64_s, 96, 0, 2349, 4283, 0</column>

@@ -8,12 +8,12 @@
 `timescale 1ns/1ps
 //RAW latency 2 
 
-module lz4CompressEngineRun_fifo_w8_d4096_A
+module lz4CompressEngineRun_fifo_w8_d8192_B
 #(parameter
-    MEM_STYLE    = "auto",
+    MEM_STYLE    = "block",
     DATA_WIDTH   = 8,
-    ADDR_WIDTH   = 12,
-    DEPTH        = 4096)
+    ADDR_WIDTH   = 13,
+    DEPTH        = 8192)
 (
     // system signal
     input  wire                  clk,
@@ -57,12 +57,12 @@ localparam
     reg                   dout_vld = 1'b0;
 
 //------------------------Instantiation------------------
-    lz4CompressEngineRun_fifo_w8_d4096_A_ram 
+    lz4CompressEngineRun_fifo_w8_d8192_B_ram 
     #(  .MEM_STYLE  (MEM_STYLE),
         .DATA_WIDTH (DATA_WIDTH),
         .ADDR_WIDTH (MEM_AWIDTH),
         .DEPTH      (MEM_DEPTH)
-    ) U_lz4CompressEngineRun_fifo_w8_d4096_A_ram (
+    ) U_lz4CompressEngineRun_fifo_w8_d8192_B_ram (
         .clk        (clk),
         .reset      (reset),
         .we         (push),
@@ -199,12 +199,12 @@ localparam
 endmodule
 
 
-module lz4CompressEngineRun_fifo_w8_d4096_A_ram
+module lz4CompressEngineRun_fifo_w8_d8192_B_ram
 #(parameter
-    MEM_STYLE   = "auto",
+    MEM_STYLE   = "block",
     DATA_WIDTH  = 8,
-    ADDR_WIDTH  = 12,
-    DEPTH       = 4096)
+    ADDR_WIDTH  = 13,
+    DEPTH       = 8192)
 (
     input  wire                  clk,
     input  wire                  reset,

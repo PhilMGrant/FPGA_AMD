@@ -2367,15 +2367,15 @@
             <item_version>0</item_version>
             <item class_id="48" tracking_level="0" version="0">
               <first>BRAM</first>
-              <second>2</second>
+              <second>4</second>
             </item>
             <item>
               <first>FF</first>
-              <second>1155</second>
+              <second>1253</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>2280</second>
+              <second>2395</second>
             </item>
           </second>
         </item>

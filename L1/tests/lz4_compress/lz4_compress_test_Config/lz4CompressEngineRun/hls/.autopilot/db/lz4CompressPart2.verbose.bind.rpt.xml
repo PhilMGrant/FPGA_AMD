@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'lz4CompressPart2'" level="0">
-<item name = "Date">Mon Oct 27 14:15:35 2025
+<item name = "Date">Mon Oct 27 14:49:31 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">lz4CompressEngineRun</item>
@@ -31,7 +31,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91">lz4CompressPart2_Pipeline_lz4_compress, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93">lz4CompressPart2_Pipeline_lz4_compress, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

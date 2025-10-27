@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'lz4CompressPart2'
 ================================================================
-* Date:           Mon Oct 27 14:15:44 2025
+* Date:           Mon Oct 27 14:49:41 2025
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        lz4CompressEngineRun
@@ -38,7 +38,7 @@
         |                                                  |                                        |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
         |                     Instance                     |                 Module                 |   min   |   max   |    min   |    max   | min | max |                      Type                      |
         +--------------------------------------------------+----------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
-        |grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91  |lz4CompressPart2_Pipeline_lz4_compress  |        ?|        ?|         ?|         ?|    0|    0|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93  |lz4CompressPart2_Pipeline_lz4_compress  |        ?|        ?|         ?|         ?|    0|    0|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +--------------------------------------------------+----------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
 
         * Loop: 
@@ -73,7 +73,7 @@
     +--------------------------------------------------+----------------------------------------+---------+----+-----+------+-----+
     |                     Instance                     |                 Module                 | BRAM_18K| DSP|  FF |  LUT | URAM|
     +--------------------------------------------------+----------------------------------------+---------+----+-----+------+-----+
-    |grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91  |lz4CompressPart2_Pipeline_lz4_compress  |        0|   0|  378|  1151|    0|
+    |grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93  |lz4CompressPart2_Pipeline_lz4_compress  |        0|   0|  378|  1151|    0|
     +--------------------------------------------------+----------------------------------------+---------+----+-----+------+-----+
     |Total                                             |                                        |        0|   0|  378|  1151|    0|
     +--------------------------------------------------+----------------------------------------+---------+----+-----+------+-----+
@@ -121,8 +121,8 @@
     +---------------------------------------------------------------+----+----+-----+-----------+
     |ap_CS_fsm                                                      |   4|   0|    4|          0|
     |ap_done_reg                                                    |   1|   0|    1|          0|
-    |grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_ap_start_reg  |   1|   0|    1|          0|
-    |input_size_3_reg_151                                           |  32|   0|   32|          0|
+    |grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_ap_start_reg  |   1|   0|    1|          0|
+    |input_size_3_reg_153                                           |  32|   0|   32|          0|
     +---------------------------------------------------------------+----+----+-----+-----------+
     |Total                                                          |  38|   0|   38|          0|
     +---------------------------------------------------------------+----+----+-----+-----------+
@@ -146,13 +146,13 @@
 |lit_outStream_dout               |   in|    8|     ap_fifo|     lit_outStream|       pointer|
 |lit_outStream_empty_n            |   in|    1|     ap_fifo|     lit_outStream|       pointer|
 |lit_outStream_read               |  out|    1|     ap_fifo|     lit_outStream|       pointer|
-|lit_outStream_num_data_valid     |   in|   13|     ap_fifo|     lit_outStream|       pointer|
-|lit_outStream_fifo_cap           |   in|   13|     ap_fifo|     lit_outStream|       pointer|
+|lit_outStream_num_data_valid     |   in|   14|     ap_fifo|     lit_outStream|       pointer|
+|lit_outStream_fifo_cap           |   in|   14|     ap_fifo|     lit_outStream|       pointer|
 |lenOffset_Stream_dout            |   in|   64|     ap_fifo|  lenOffset_Stream|       pointer|
 |lenOffset_Stream_empty_n         |   in|    1|     ap_fifo|  lenOffset_Stream|       pointer|
 |lenOffset_Stream_read            |  out|    1|     ap_fifo|  lenOffset_Stream|       pointer|
-|lenOffset_Stream_num_data_valid  |   in|    6|     ap_fifo|  lenOffset_Stream|       pointer|
-|lenOffset_Stream_fifo_cap        |   in|    6|     ap_fifo|  lenOffset_Stream|       pointer|
+|lenOffset_Stream_num_data_valid  |   in|    7|     ap_fifo|  lenOffset_Stream|       pointer|
+|lenOffset_Stream_fifo_cap        |   in|    7|     ap_fifo|  lenOffset_Stream|       pointer|
 |lz4Out_din                       |  out|    8|     ap_fifo|            lz4Out|       pointer|
 |lz4Out_full_n                    |   in|    1|     ap_fifo|            lz4Out|       pointer|
 |lz4Out_write                     |  out|    1|     ap_fifo|            lz4Out|       pointer|

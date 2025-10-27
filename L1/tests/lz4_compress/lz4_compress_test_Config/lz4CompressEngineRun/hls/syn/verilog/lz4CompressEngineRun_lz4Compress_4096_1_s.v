@@ -94,13 +94,13 @@ wire    lz4CompressPart2_U0_input_size_read;
 wire    lit_outStream_full_n;
 wire   [7:0] lit_outStream_dout;
 wire    lit_outStream_empty_n;
-wire   [12:0] lit_outStream_num_data_valid;
-wire   [12:0] lit_outStream_fifo_cap;
+wire   [13:0] lit_outStream_num_data_valid;
+wire   [13:0] lit_outStream_fifo_cap;
 wire    lenOffset_Stream_full_n;
 wire   [63:0] lenOffset_Stream_dout;
 wire    lenOffset_Stream_empty_n;
-wire   [5:0] lenOffset_Stream_num_data_valid;
-wire   [5:0] lenOffset_Stream_fifo_cap;
+wire   [6:0] lenOffset_Stream_num_data_valid;
+wire   [6:0] lenOffset_Stream_fifo_cap;
 wire    input_size_c_full_n;
 wire   [31:0] input_size_c_dout;
 wire    input_size_c_empty_n;
@@ -186,7 +186,7 @@ lz4CompressEngineRun_lz4CompressPart2 lz4CompressPart2_U0(
     .input_size_fifo_cap(input_size_c_fifo_cap)
 );
 
-lz4CompressEngineRun_fifo_w8_d4096_A lit_outStream_U(
+lz4CompressEngineRun_fifo_w8_d8192_B lit_outStream_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .if_read_ce(1'b1),
@@ -201,7 +201,7 @@ lz4CompressEngineRun_fifo_w8_d4096_A lit_outStream_U(
     .if_fifo_cap(lit_outStream_fifo_cap)
 );
 
-lz4CompressEngineRun_fifo_w64_d32_S lenOffset_Stream_U(
+lz4CompressEngineRun_fifo_w64_d64_S lenOffset_Stream_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .if_read_ce(1'b1),

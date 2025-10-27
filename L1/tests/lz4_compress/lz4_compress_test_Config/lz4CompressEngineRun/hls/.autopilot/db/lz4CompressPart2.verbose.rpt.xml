@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'lz4CompressPart2'" level="0">
-<item name = "Date">Mon Oct 27 14:15:44 2025
+<item name = "Date">Mon Oct 27 14:49:41 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">lz4CompressEngineRun</item>
@@ -31,7 +31,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91">lz4CompressPart2_Pipeline_lz4_compress, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93">lz4CompressPart2_Pipeline_lz4_compress, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -62,7 +62,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91">lz4CompressPart2_Pipeline_lz4_compress, 0, 0, 378, 1151, 0</column>
+<column name="grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93">lz4CompressPart2_Pipeline_lz4_compress, 0, 0, 378, 1151, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -101,8 +101,8 @@
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">4, 0, 4, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
-<column name="grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_ap_start_reg">1, 0, 1, 0</column>
-<column name="input_size_3_reg_151">32, 0, 32, 0</column>
+<column name="grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_ap_start_reg">1, 0, 1, 0</column>
+<column name="input_size_3_reg_153">32, 0, 32, 0</column>
 </table>
 </item>
 </section>
@@ -122,13 +122,13 @@
 <column name="lit_outStream_dout">in, 8, ap_fifo, lit_outStream, pointer</column>
 <column name="lit_outStream_empty_n">in, 1, ap_fifo, lit_outStream, pointer</column>
 <column name="lit_outStream_read">out, 1, ap_fifo, lit_outStream, pointer</column>
-<column name="lit_outStream_num_data_valid">in, 13, ap_fifo, lit_outStream, pointer</column>
-<column name="lit_outStream_fifo_cap">in, 13, ap_fifo, lit_outStream, pointer</column>
+<column name="lit_outStream_num_data_valid">in, 14, ap_fifo, lit_outStream, pointer</column>
+<column name="lit_outStream_fifo_cap">in, 14, ap_fifo, lit_outStream, pointer</column>
 <column name="lenOffset_Stream_dout">in, 64, ap_fifo, lenOffset_Stream, pointer</column>
 <column name="lenOffset_Stream_empty_n">in, 1, ap_fifo, lenOffset_Stream, pointer</column>
 <column name="lenOffset_Stream_read">out, 1, ap_fifo, lenOffset_Stream, pointer</column>
-<column name="lenOffset_Stream_num_data_valid">in, 6, ap_fifo, lenOffset_Stream, pointer</column>
-<column name="lenOffset_Stream_fifo_cap">in, 6, ap_fifo, lenOffset_Stream, pointer</column>
+<column name="lenOffset_Stream_num_data_valid">in, 7, ap_fifo, lenOffset_Stream, pointer</column>
+<column name="lenOffset_Stream_fifo_cap">in, 7, ap_fifo, lenOffset_Stream, pointer</column>
 <column name="lz4Out_din">out, 8, ap_fifo, lz4Out, pointer</column>
 <column name="lz4Out_full_n">in, 1, ap_fifo, lz4Out, pointer</column>
 <column name="lz4Out_write">out, 1, ap_fifo, lz4Out, pointer</column>

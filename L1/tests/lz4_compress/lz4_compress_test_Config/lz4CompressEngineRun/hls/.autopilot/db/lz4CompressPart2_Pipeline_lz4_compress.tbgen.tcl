@@ -47,8 +47,8 @@ set portList {
 	{ lit_outStream_dout sc_in sc_lv 8 signal 2 } 
 	{ lit_outStream_empty_n sc_in sc_logic 1 signal 2 } 
 	{ lit_outStream_read sc_out sc_logic 1 signal 2 } 
-	{ lit_outStream_num_data_valid sc_in sc_lv 13 signal 2 } 
-	{ lit_outStream_fifo_cap sc_in sc_lv 13 signal 2 } 
+	{ lit_outStream_num_data_valid sc_in sc_lv 14 signal 2 } 
+	{ lit_outStream_fifo_cap sc_in sc_lv 14 signal 2 } 
 	{ lz4Out_din sc_out sc_lv 8 signal 3 } 
 	{ lz4Out_full_n sc_in sc_logic 1 signal 3 } 
 	{ lz4Out_write sc_out sc_logic 1 signal 3 } 
@@ -58,8 +58,8 @@ set portList {
 	{ lenOffset_Stream_dout sc_in sc_lv 64 signal 1 } 
 	{ lenOffset_Stream_empty_n sc_in sc_logic 1 signal 1 } 
 	{ lenOffset_Stream_read sc_out sc_logic 1 signal 1 } 
-	{ lenOffset_Stream_num_data_valid sc_in sc_lv 6 signal 1 } 
-	{ lenOffset_Stream_fifo_cap sc_in sc_lv 6 signal 1 } 
+	{ lenOffset_Stream_num_data_valid sc_in sc_lv 7 signal 1 } 
+	{ lenOffset_Stream_fifo_cap sc_in sc_lv 7 signal 1 } 
 	{ input_size_4 sc_in sc_lv 32 signal 0 } 
 	{ compressedSize_out sc_out sc_lv 32 signal 5 } 
 	{ compressedSize_out_ap_vld sc_out sc_logic 1 outvld 5 } 
@@ -74,8 +74,8 @@ set NewPortList {[
  	{ "name": "lit_outStream_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "lit_outStream", "role": "dout" }} , 
  	{ "name": "lit_outStream_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "lit_outStream", "role": "empty_n" }} , 
  	{ "name": "lit_outStream_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "lit_outStream", "role": "read" }} , 
- 	{ "name": "lit_outStream_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":13, "type": "signal", "bundle":{"name": "lit_outStream", "role": "num_data_valid" }} , 
- 	{ "name": "lit_outStream_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":13, "type": "signal", "bundle":{"name": "lit_outStream", "role": "fifo_cap" }} , 
+ 	{ "name": "lit_outStream_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "lit_outStream", "role": "num_data_valid" }} , 
+ 	{ "name": "lit_outStream_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "lit_outStream", "role": "fifo_cap" }} , 
  	{ "name": "lz4Out_din", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "lz4Out", "role": "din" }} , 
  	{ "name": "lz4Out_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "lz4Out", "role": "full_n" }} , 
  	{ "name": "lz4Out_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "lz4Out", "role": "write" }} , 
@@ -85,8 +85,8 @@ set NewPortList {[
  	{ "name": "lenOffset_Stream_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "lenOffset_Stream", "role": "dout" }} , 
  	{ "name": "lenOffset_Stream_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "lenOffset_Stream", "role": "empty_n" }} , 
  	{ "name": "lenOffset_Stream_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "lenOffset_Stream", "role": "read" }} , 
- 	{ "name": "lenOffset_Stream_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "lenOffset_Stream", "role": "num_data_valid" }} , 
- 	{ "name": "lenOffset_Stream_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "lenOffset_Stream", "role": "fifo_cap" }} , 
+ 	{ "name": "lenOffset_Stream_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "lenOffset_Stream", "role": "num_data_valid" }} , 
+ 	{ "name": "lenOffset_Stream_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "lenOffset_Stream", "role": "fifo_cap" }} , 
  	{ "name": "input_size_4", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "input_size_4", "role": "default" }} , 
  	{ "name": "compressedSize_out", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "compressedSize_out", "role": "default" }} , 
  	{ "name": "compressedSize_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "compressedSize_out", "role": "ap_vld" }}  ]}
@@ -149,8 +149,8 @@ set PipelineEnableSignalInfo {[
 
 set Spec2ImplPortList { 
 	input_size_4 { ap_none {  { input_size_4 in_data 0 32 } } }
-	lenOffset_Stream { ap_fifo {  { lenOffset_Stream_dout fifo_data_in 0 64 }  { lenOffset_Stream_empty_n fifo_status 0 1 }  { lenOffset_Stream_read fifo_port_we 1 1 }  { lenOffset_Stream_num_data_valid fifo_status_num_data_valid 0 6 }  { lenOffset_Stream_fifo_cap fifo_update 0 6 } } }
-	lit_outStream { ap_fifo {  { lit_outStream_dout fifo_data_in 0 8 }  { lit_outStream_empty_n fifo_status 0 1 }  { lit_outStream_read fifo_port_we 1 1 }  { lit_outStream_num_data_valid fifo_status_num_data_valid 0 13 }  { lit_outStream_fifo_cap fifo_update 0 13 } } }
+	lenOffset_Stream { ap_fifo {  { lenOffset_Stream_dout fifo_data_in 0 64 }  { lenOffset_Stream_empty_n fifo_status 0 1 }  { lenOffset_Stream_read fifo_port_we 1 1 }  { lenOffset_Stream_num_data_valid fifo_status_num_data_valid 0 7 }  { lenOffset_Stream_fifo_cap fifo_update 0 7 } } }
+	lit_outStream { ap_fifo {  { lit_outStream_dout fifo_data_in 0 8 }  { lit_outStream_empty_n fifo_status 0 1 }  { lit_outStream_read fifo_port_we 1 1 }  { lit_outStream_num_data_valid fifo_status_num_data_valid 0 14 }  { lit_outStream_fifo_cap fifo_update 0 14 } } }
 	lz4Out { ap_fifo {  { lz4Out_din fifo_data_in 1 8 }  { lz4Out_full_n fifo_status 0 1 }  { lz4Out_write fifo_port_we 1 1 } } }
 	lz4Out_eos { ap_fifo {  { lz4Out_eos_din fifo_data_in 1 1 }  { lz4Out_eos_full_n fifo_status 0 1 }  { lz4Out_eos_write fifo_port_we 1 1 } } }
 	compressedSize_out { ap_vld {  { compressedSize_out out_data 1 32 }  { compressedSize_out_ap_vld out_vld 1 1 } } }

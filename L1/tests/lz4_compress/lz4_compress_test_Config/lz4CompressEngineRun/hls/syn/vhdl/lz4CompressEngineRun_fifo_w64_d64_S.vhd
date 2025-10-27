@@ -10,12 +10,12 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 --RAW latency 1 
  
-entity lz4CompressEngineRun_fifo_w64_d32_S is 
+entity lz4CompressEngineRun_fifo_w64_d64_S is 
     generic (
         MEM_STYLE         : string  := "shiftReg";
         DATA_WIDTH        : integer := 64;
-        ADDR_WIDTH        : integer := 5;
-        DEPTH             : integer := 32);
+        ADDR_WIDTH        : integer := 6;
+        DEPTH             : integer := 64);
     port (
         clk               : in  std_logic;
         reset             : in  std_logic;
@@ -37,17 +37,17 @@ entity lz4CompressEngineRun_fifo_w64_d32_S is
     );
 end entity;
 
-architecture rtl of lz4CompressEngineRun_fifo_w64_d32_S is
+architecture rtl of lz4CompressEngineRun_fifo_w64_d64_S is
 ------------------------Task and function--------------
 ------------------------Parameter----------------------
 constant SRL_DEPTH  : INTEGER := DEPTH;
 constant SRL_AWIDTH : INTEGER := ADDR_WIDTH;
 ------------------------Component----------------------
-    component lz4CompressEngineRun_fifo_w64_d32_S_ShiftReg is
+    component lz4CompressEngineRun_fifo_w64_d64_S_ShiftReg is
     generic (
         DATA_WIDTH : integer := 64;
-        ADDR_WIDTH : integer := 5;
-        DEPTH      : integer := 32);
+        ADDR_WIDTH : integer := 6;
+        DEPTH      : integer := 64);
     port (
         clk        : in std_logic;
         we         : in std_logic;
@@ -66,7 +66,7 @@ constant SRL_AWIDTH : INTEGER := ADDR_WIDTH;
     signal num_data_valid: UNSIGNED(ADDR_WIDTH downto 0); -- yes 
 begin
 ----------------------- Instantiation -----------------------
-    U_lz4CompressEngineRun_fifo_w64_d32_S_ShiftReg : lz4CompressEngineRun_fifo_w64_d32_S_ShiftReg
+    U_lz4CompressEngineRun_fifo_w64_d64_S_ShiftReg : lz4CompressEngineRun_fifo_w64_d64_S_ShiftReg
     generic map (
         DATA_WIDTH => DATA_WIDTH,
         ADDR_WIDTH => SRL_AWIDTH,
@@ -163,20 +163,20 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.std_logic_unsigned.all;
 
-entity lz4CompressEngineRun_fifo_w64_d32_S_ShiftReg is
+entity lz4CompressEngineRun_fifo_w64_d64_S_ShiftReg is
     generic (
         DATA_WIDTH : integer := 64;
-        ADDR_WIDTH : integer := 5;
-        DEPTH      : integer := 32);
+        ADDR_WIDTH : integer := 6;
+        DEPTH      : integer := 64);
     port (
         clk        : in std_logic;
         we         : in std_logic;
         addr       : in std_logic_vector(ADDR_WIDTH-1 downto 0);
         din        : in std_logic_vector(DATA_WIDTH-1 downto 0);
         dout       : out std_logic_vector(DATA_WIDTH-1 downto 0));
-end lz4CompressEngineRun_fifo_w64_d32_S_ShiftReg;
+end lz4CompressEngineRun_fifo_w64_d64_S_ShiftReg;
 
-architecture rtl of lz4CompressEngineRun_fifo_w64_d32_S_ShiftReg is
+architecture rtl of lz4CompressEngineRun_fifo_w64_d64_S_ShiftReg is
 type SRL_ARRAY is array (0 to DEPTH-1) of std_logic_vector(DATA_WIDTH-1 downto 0);
 signal SRL_SIG : SRL_ARRAY;
 
