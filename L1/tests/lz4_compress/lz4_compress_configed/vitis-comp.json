@@ -1,0 +1,11 @@
+{
+  "name": "lz4_compress_configed",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "lz4_compress_configed"
+  }
+}
