@@ -10,7 +10,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 95 \
+    id 101 \
     name boosterStream \
     type fifo \
     dir I \
@@ -25,7 +25,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 96 \
+    id 102 \
     name lit_outStream \
     type fifo \
     dir O \
@@ -40,7 +40,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 97 \
+    id 103 \
     name lenOffset_Stream \
     type fifo \
     dir O \
@@ -55,7 +55,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 98 \
+    id 104 \
     name input_size \
     type fifo \
     dir I \
@@ -70,7 +70,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 99 \
+    id 105 \
     name max_lit_limit \
     type other \
     dir O \
@@ -85,7 +85,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 100 \
+    id 106 \
     name input_size_c \
     type fifo \
     dir O \

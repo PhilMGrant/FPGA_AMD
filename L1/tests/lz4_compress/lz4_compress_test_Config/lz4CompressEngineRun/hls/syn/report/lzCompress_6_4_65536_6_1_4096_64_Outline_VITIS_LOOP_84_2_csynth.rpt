@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2'
 ================================================================
-* Date:           Mon Oct 27 14:49:33 2025
+* Date:           Mon Oct 27 15:27:23 2025
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        lz4CompressEngineRun
@@ -108,11 +108,11 @@
     |              Name              | FF| LUT| Bits| Const Bits|
     +--------------------------------+---+----+-----+-----------+
     |ap_CS_fsm                       |  2|   0|    2|          0|
-    |arrayidx42_3_promoted170_fu_74  |  8|   0|    8|          0|
-    |arrayidx48_promoted172_fu_78    |  8|   0|    8|          0|
-    |arrayidx54_promoted164_fu_62    |  8|   0|    8|          0|
-    |arrayidx61_promoted166_fu_66    |  8|   0|    8|          0|
-    |arrayidx71_promoted168_fu_70    |  8|   0|    8|          0|
+    |arrayidx42_3_promoted174_fu_74  |  8|   0|    8|          0|
+    |arrayidx48_promoted176_fu_78    |  8|   0|    8|          0|
+    |arrayidx54_promoted168_fu_62    |  8|   0|    8|          0|
+    |arrayidx61_promoted170_fu_66    |  8|   0|    8|          0|
+    |arrayidx71_promoted172_fu_70    |  8|   0|    8|          0|
     |i_1_fu_58                       |  3|   0|    3|          0|
     |present_window_1_fu_86          |  8|   0|    8|          0|
     |present_window_2_fu_90          |  8|   0|    8|          0|
@@ -151,15 +151,15 @@
 |present_window_1_out_ap_vld          |  out|    1|      ap_vld|                                             present_window_1_out|       pointer|
 |present_window_out                   |  out|    8|      ap_vld|                                               present_window_out|       pointer|
 |present_window_out_ap_vld            |  out|    1|      ap_vld|                                               present_window_out|       pointer|
-|arrayidx48_promoted172_out           |  out|    8|      ap_vld|                                       arrayidx48_promoted172_out|       pointer|
-|arrayidx48_promoted172_out_ap_vld    |  out|    1|      ap_vld|                                       arrayidx48_promoted172_out|       pointer|
-|arrayidx42_3_promoted170_out         |  out|    8|      ap_vld|                                     arrayidx42_3_promoted170_out|       pointer|
-|arrayidx42_3_promoted170_out_ap_vld  |  out|    1|      ap_vld|                                     arrayidx42_3_promoted170_out|       pointer|
-|arrayidx71_promoted168_out           |  out|    8|      ap_vld|                                       arrayidx71_promoted168_out|       pointer|
-|arrayidx71_promoted168_out_ap_vld    |  out|    1|      ap_vld|                                       arrayidx71_promoted168_out|       pointer|
-|arrayidx61_promoted166_out           |  out|    8|      ap_vld|                                       arrayidx61_promoted166_out|       pointer|
-|arrayidx61_promoted166_out_ap_vld    |  out|    1|      ap_vld|                                       arrayidx61_promoted166_out|       pointer|
-|arrayidx54_promoted164_out           |  out|    8|      ap_vld|                                       arrayidx54_promoted164_out|       pointer|
-|arrayidx54_promoted164_out_ap_vld    |  out|    1|      ap_vld|                                       arrayidx54_promoted164_out|       pointer|
+|arrayidx48_promoted176_out           |  out|    8|      ap_vld|                                       arrayidx48_promoted176_out|       pointer|
+|arrayidx48_promoted176_out_ap_vld    |  out|    1|      ap_vld|                                       arrayidx48_promoted176_out|       pointer|
+|arrayidx42_3_promoted174_out         |  out|    8|      ap_vld|                                     arrayidx42_3_promoted174_out|       pointer|
+|arrayidx42_3_promoted174_out_ap_vld  |  out|    1|      ap_vld|                                     arrayidx42_3_promoted174_out|       pointer|
+|arrayidx71_promoted172_out           |  out|    8|      ap_vld|                                       arrayidx71_promoted172_out|       pointer|
+|arrayidx71_promoted172_out_ap_vld    |  out|    1|      ap_vld|                                       arrayidx71_promoted172_out|       pointer|
+|arrayidx61_promoted170_out           |  out|    8|      ap_vld|                                       arrayidx61_promoted170_out|       pointer|
+|arrayidx61_promoted170_out_ap_vld    |  out|    1|      ap_vld|                                       arrayidx61_promoted170_out|       pointer|
+|arrayidx54_promoted168_out           |  out|    8|      ap_vld|                                       arrayidx54_promoted168_out|       pointer|
+|arrayidx54_promoted168_out_ap_vld    |  out|    1|      ap_vld|                                       arrayidx54_promoted168_out|       pointer|
 +-------------------------------------+-----+-----+------------+-----------------------------------------------------------------+--------------+
 

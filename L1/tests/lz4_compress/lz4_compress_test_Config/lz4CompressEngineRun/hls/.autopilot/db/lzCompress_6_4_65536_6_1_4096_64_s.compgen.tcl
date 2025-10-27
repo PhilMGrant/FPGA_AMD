@@ -15,7 +15,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 40 \
+    id 46 \
     name inStream \
     type fifo \
     dir I \
@@ -30,7 +30,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 41 \
+    id 47 \
     name compressdStream \
     type fifo \
     dir O \
@@ -45,7 +45,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 42 \
+    id 48 \
     name input_size \
     type other \
     dir I \
@@ -60,7 +60,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 43 \
+    id 49 \
     name input_size_c2 \
     type fifo \
     dir O \

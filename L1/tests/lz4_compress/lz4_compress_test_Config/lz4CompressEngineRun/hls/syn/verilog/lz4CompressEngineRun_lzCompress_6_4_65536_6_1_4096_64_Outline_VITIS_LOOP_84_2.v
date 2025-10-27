@@ -26,16 +26,16 @@ module lz4CompressEngineRun_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_
         present_window_1_out_ap_vld,
         present_window_out,
         present_window_out_ap_vld,
-        arrayidx48_promoted172_out,
-        arrayidx48_promoted172_out_ap_vld,
-        arrayidx42_3_promoted170_out,
-        arrayidx42_3_promoted170_out_ap_vld,
-        arrayidx71_promoted168_out,
-        arrayidx71_promoted168_out_ap_vld,
-        arrayidx61_promoted166_out,
-        arrayidx61_promoted166_out_ap_vld,
-        arrayidx54_promoted164_out,
-        arrayidx54_promoted164_out_ap_vld
+        arrayidx48_promoted176_out,
+        arrayidx48_promoted176_out_ap_vld,
+        arrayidx42_3_promoted174_out,
+        arrayidx42_3_promoted174_out_ap_vld,
+        arrayidx71_promoted172_out,
+        arrayidx71_promoted172_out_ap_vld,
+        arrayidx61_promoted170_out,
+        arrayidx61_promoted170_out_ap_vld,
+        arrayidx54_promoted168_out,
+        arrayidx54_promoted168_out_ap_vld
 );
 
 parameter    ap_ST_fsm_state1 = 2'd1;
@@ -60,16 +60,16 @@ output  [7:0] present_window_1_out;
 output   present_window_1_out_ap_vld;
 output  [7:0] present_window_out;
 output   present_window_out_ap_vld;
-output  [7:0] arrayidx48_promoted172_out;
-output   arrayidx48_promoted172_out_ap_vld;
-output  [7:0] arrayidx42_3_promoted170_out;
-output   arrayidx42_3_promoted170_out_ap_vld;
-output  [7:0] arrayidx71_promoted168_out;
-output   arrayidx71_promoted168_out_ap_vld;
-output  [7:0] arrayidx61_promoted166_out;
-output   arrayidx61_promoted166_out_ap_vld;
-output  [7:0] arrayidx54_promoted164_out;
-output   arrayidx54_promoted164_out_ap_vld;
+output  [7:0] arrayidx48_promoted176_out;
+output   arrayidx48_promoted176_out_ap_vld;
+output  [7:0] arrayidx42_3_promoted174_out;
+output   arrayidx42_3_promoted174_out_ap_vld;
+output  [7:0] arrayidx71_promoted172_out;
+output   arrayidx71_promoted172_out_ap_vld;
+output  [7:0] arrayidx61_promoted170_out;
+output   arrayidx61_promoted170_out_ap_vld;
+output  [7:0] arrayidx54_promoted168_out;
+output   arrayidx54_promoted168_out_ap_vld;
 
 reg ap_done;
 reg ap_idle;
@@ -80,11 +80,11 @@ reg present_window_3_out_ap_vld;
 reg present_window_2_out_ap_vld;
 reg present_window_1_out_ap_vld;
 reg present_window_out_ap_vld;
-reg arrayidx48_promoted172_out_ap_vld;
-reg arrayidx42_3_promoted170_out_ap_vld;
-reg arrayidx71_promoted168_out_ap_vld;
-reg arrayidx61_promoted166_out_ap_vld;
-reg arrayidx54_promoted164_out_ap_vld;
+reg arrayidx48_promoted176_out_ap_vld;
+reg arrayidx42_3_promoted174_out_ap_vld;
+reg arrayidx71_promoted172_out_ap_vld;
+reg arrayidx61_promoted170_out_ap_vld;
+reg arrayidx54_promoted168_out_ap_vld;
 
 (* fsm_encoding = "none" *) reg   [1:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
@@ -95,11 +95,11 @@ reg   [2:0] i_1_fu_58;
 wire   [2:0] add_ln84_fu_242_p2;
 reg    ap_block_state2;
 wire   [2:0] i_load_fu_183_p1;
-reg   [7:0] arrayidx54_promoted164_fu_62;
-reg   [7:0] arrayidx61_promoted166_fu_66;
-reg   [7:0] arrayidx71_promoted168_fu_70;
-reg   [7:0] arrayidx42_3_promoted170_fu_74;
-reg   [7:0] arrayidx48_promoted172_fu_78;
+reg   [7:0] arrayidx54_promoted168_fu_62;
+reg   [7:0] arrayidx61_promoted170_fu_66;
+reg   [7:0] arrayidx71_promoted172_fu_70;
+reg   [7:0] arrayidx42_3_promoted174_fu_74;
+reg   [7:0] arrayidx48_promoted176_fu_78;
 reg   [7:0] present_window_fu_82;
 reg   [7:0] present_window_1_fu_86;
 reg   [7:0] present_window_2_fu_90;
@@ -114,11 +114,11 @@ wire    ap_ce_reg;
 initial begin
 #0 ap_CS_fsm = 2'd1;
 #0 i_1_fu_58 = 3'd0;
-#0 arrayidx54_promoted164_fu_62 = 8'd0;
-#0 arrayidx61_promoted166_fu_66 = 8'd0;
-#0 arrayidx71_promoted168_fu_70 = 8'd0;
-#0 arrayidx42_3_promoted170_fu_74 = 8'd0;
-#0 arrayidx48_promoted172_fu_78 = 8'd0;
+#0 arrayidx54_promoted168_fu_62 = 8'd0;
+#0 arrayidx61_promoted170_fu_66 = 8'd0;
+#0 arrayidx71_promoted172_fu_70 = 8'd0;
+#0 arrayidx42_3_promoted174_fu_74 = 8'd0;
+#0 arrayidx48_promoted176_fu_78 = 8'd0;
 #0 present_window_fu_82 = 8'd0;
 #0 present_window_1_fu_86 = 8'd0;
 #0 present_window_2_fu_90 = 8'd0;
@@ -144,35 +144,35 @@ end
 
 always @ (posedge ap_clk) begin
     if (((i_load_fu_183_p1 == 3'd4) & (1'b0 == ap_block_state2) & (icmp_ln84_fu_186_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
-        arrayidx42_3_promoted170_fu_74 <= inStream_dout;
+        arrayidx42_3_promoted174_fu_74 <= inStream_dout;
         present_window_3_fu_94 <= inStream_dout;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((~(i_load_fu_183_p1 == 3'd3) & ~(i_load_fu_183_p1 == 3'd2) & ~(i_load_fu_183_p1 == 3'd1) & ~(i_load_fu_183_p1 == 3'd4) & (1'b0 == ap_block_state2) & (icmp_ln84_fu_186_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
-        arrayidx48_promoted172_fu_78 <= inStream_dout;
+        arrayidx48_promoted176_fu_78 <= inStream_dout;
         present_window_4_fu_98 <= inStream_dout;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((i_load_fu_183_p1 == 3'd1) & (1'b0 == ap_block_state2) & (icmp_ln84_fu_186_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
-        arrayidx54_promoted164_fu_62 <= inStream_dout;
+        arrayidx54_promoted168_fu_62 <= inStream_dout;
         present_window_fu_82 <= inStream_dout;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((i_load_fu_183_p1 == 3'd2) & (1'b0 == ap_block_state2) & (icmp_ln84_fu_186_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
-        arrayidx61_promoted166_fu_66 <= inStream_dout;
+        arrayidx61_promoted170_fu_66 <= inStream_dout;
         present_window_1_fu_86 <= inStream_dout;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((i_load_fu_183_p1 == 3'd3) & (1'b0 == ap_block_state2) & (icmp_ln84_fu_186_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
-        arrayidx71_promoted168_fu_70 <= inStream_dout;
+        arrayidx71_promoted172_fu_70 <= inStream_dout;
         present_window_2_fu_90 <= inStream_dout;
     end
 end
@@ -219,41 +219,41 @@ end
 
 always @ (*) begin
     if (((1'b0 == ap_block_state2) & (icmp_ln84_fu_186_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
-        arrayidx42_3_promoted170_out_ap_vld = 1'b1;
+        arrayidx42_3_promoted174_out_ap_vld = 1'b1;
     end else begin
-        arrayidx42_3_promoted170_out_ap_vld = 1'b0;
+        arrayidx42_3_promoted174_out_ap_vld = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((1'b0 == ap_block_state2) & (icmp_ln84_fu_186_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
-        arrayidx48_promoted172_out_ap_vld = 1'b1;
+        arrayidx48_promoted176_out_ap_vld = 1'b1;
     end else begin
-        arrayidx48_promoted172_out_ap_vld = 1'b0;
+        arrayidx48_promoted176_out_ap_vld = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((1'b0 == ap_block_state2) & (icmp_ln84_fu_186_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
-        arrayidx54_promoted164_out_ap_vld = 1'b1;
+        arrayidx54_promoted168_out_ap_vld = 1'b1;
     end else begin
-        arrayidx54_promoted164_out_ap_vld = 1'b0;
+        arrayidx54_promoted168_out_ap_vld = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((1'b0 == ap_block_state2) & (icmp_ln84_fu_186_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
-        arrayidx61_promoted166_out_ap_vld = 1'b1;
+        arrayidx61_promoted170_out_ap_vld = 1'b1;
     end else begin
-        arrayidx61_promoted166_out_ap_vld = 1'b0;
+        arrayidx61_promoted170_out_ap_vld = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((1'b0 == ap_block_state2) & (icmp_ln84_fu_186_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
-        arrayidx71_promoted168_out_ap_vld = 1'b1;
+        arrayidx71_promoted172_out_ap_vld = 1'b1;
     end else begin
-        arrayidx71_promoted168_out_ap_vld = 1'b0;
+        arrayidx71_promoted172_out_ap_vld = 1'b0;
     end
 end
 
@@ -347,15 +347,15 @@ always @ (*) begin
     ap_block_state2 = ((icmp_ln84_fu_186_p2 == 1'd0) & (inStream_empty_n == 1'b0));
 end
 
-assign arrayidx42_3_promoted170_out = arrayidx42_3_promoted170_fu_74;
+assign arrayidx42_3_promoted174_out = arrayidx42_3_promoted174_fu_74;
 
-assign arrayidx48_promoted172_out = arrayidx48_promoted172_fu_78;
+assign arrayidx48_promoted176_out = arrayidx48_promoted176_fu_78;
 
-assign arrayidx54_promoted164_out = arrayidx54_promoted164_fu_62;
+assign arrayidx54_promoted168_out = arrayidx54_promoted168_fu_62;
 
-assign arrayidx61_promoted166_out = arrayidx61_promoted166_fu_66;
+assign arrayidx61_promoted170_out = arrayidx61_promoted170_fu_66;
 
-assign arrayidx71_promoted168_out = arrayidx71_promoted168_fu_70;
+assign arrayidx71_promoted172_out = arrayidx71_promoted172_fu_70;
 
 assign i_load_fu_183_p1 = i_1_fu_58;
 

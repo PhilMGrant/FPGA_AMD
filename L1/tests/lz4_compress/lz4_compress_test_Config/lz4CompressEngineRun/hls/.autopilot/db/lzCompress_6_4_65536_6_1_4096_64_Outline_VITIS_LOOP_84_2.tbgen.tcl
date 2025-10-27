@@ -24,11 +24,11 @@ set C_modelArgList {
 	{ present_window_2_out int 8 regular {pointer 1}  }
 	{ present_window_1_out int 8 regular {pointer 1}  }
 	{ present_window_out int 8 regular {pointer 1}  }
-	{ arrayidx48_promoted172_out int 8 regular {pointer 1}  }
-	{ arrayidx42_3_promoted170_out int 8 regular {pointer 1}  }
-	{ arrayidx71_promoted168_out int 8 regular {pointer 1}  }
-	{ arrayidx61_promoted166_out int 8 regular {pointer 1}  }
-	{ arrayidx54_promoted164_out int 8 regular {pointer 1}  }
+	{ arrayidx48_promoted176_out int 8 regular {pointer 1}  }
+	{ arrayidx42_3_promoted174_out int 8 regular {pointer 1}  }
+	{ arrayidx71_promoted172_out int 8 regular {pointer 1}  }
+	{ arrayidx61_promoted170_out int 8 regular {pointer 1}  }
+	{ arrayidx54_promoted168_out int 8 regular {pointer 1}  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
@@ -40,11 +40,11 @@ set C_modelArgMapList {[
  	{ "Name" : "present_window_2_out", "interface" : "wire", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
  	{ "Name" : "present_window_1_out", "interface" : "wire", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
  	{ "Name" : "present_window_out", "interface" : "wire", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "arrayidx48_promoted172_out", "interface" : "wire", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "arrayidx42_3_promoted170_out", "interface" : "wire", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "arrayidx71_promoted168_out", "interface" : "wire", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "arrayidx61_promoted166_out", "interface" : "wire", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "arrayidx54_promoted164_out", "interface" : "wire", "bitwidth" : 8, "direction" : "WRITEONLY"} ]}
+ 	{ "Name" : "arrayidx48_promoted176_out", "interface" : "wire", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "arrayidx42_3_promoted174_out", "interface" : "wire", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "arrayidx71_promoted172_out", "interface" : "wire", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "arrayidx61_promoted170_out", "interface" : "wire", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "arrayidx54_promoted168_out", "interface" : "wire", "bitwidth" : 8, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
 set portNum 29
 set portList { 
@@ -67,16 +67,16 @@ set portList {
 	{ present_window_1_out_ap_vld sc_out sc_logic 1 outvld 4 } 
 	{ present_window_out sc_out sc_lv 8 signal 5 } 
 	{ present_window_out_ap_vld sc_out sc_logic 1 outvld 5 } 
-	{ arrayidx48_promoted172_out sc_out sc_lv 8 signal 6 } 
-	{ arrayidx48_promoted172_out_ap_vld sc_out sc_logic 1 outvld 6 } 
-	{ arrayidx42_3_promoted170_out sc_out sc_lv 8 signal 7 } 
-	{ arrayidx42_3_promoted170_out_ap_vld sc_out sc_logic 1 outvld 7 } 
-	{ arrayidx71_promoted168_out sc_out sc_lv 8 signal 8 } 
-	{ arrayidx71_promoted168_out_ap_vld sc_out sc_logic 1 outvld 8 } 
-	{ arrayidx61_promoted166_out sc_out sc_lv 8 signal 9 } 
-	{ arrayidx61_promoted166_out_ap_vld sc_out sc_logic 1 outvld 9 } 
-	{ arrayidx54_promoted164_out sc_out sc_lv 8 signal 10 } 
-	{ arrayidx54_promoted164_out_ap_vld sc_out sc_logic 1 outvld 10 } 
+	{ arrayidx48_promoted176_out sc_out sc_lv 8 signal 6 } 
+	{ arrayidx48_promoted176_out_ap_vld sc_out sc_logic 1 outvld 6 } 
+	{ arrayidx42_3_promoted174_out sc_out sc_lv 8 signal 7 } 
+	{ arrayidx42_3_promoted174_out_ap_vld sc_out sc_logic 1 outvld 7 } 
+	{ arrayidx71_promoted172_out sc_out sc_lv 8 signal 8 } 
+	{ arrayidx71_promoted172_out_ap_vld sc_out sc_logic 1 outvld 8 } 
+	{ arrayidx61_promoted170_out sc_out sc_lv 8 signal 9 } 
+	{ arrayidx61_promoted170_out_ap_vld sc_out sc_logic 1 outvld 9 } 
+	{ arrayidx54_promoted168_out sc_out sc_lv 8 signal 10 } 
+	{ arrayidx54_promoted168_out_ap_vld sc_out sc_logic 1 outvld 10 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -98,16 +98,16 @@ set NewPortList {[
  	{ "name": "present_window_1_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "present_window_1_out", "role": "ap_vld" }} , 
  	{ "name": "present_window_out", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "present_window_out", "role": "default" }} , 
  	{ "name": "present_window_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "present_window_out", "role": "ap_vld" }} , 
- 	{ "name": "arrayidx48_promoted172_out", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "arrayidx48_promoted172_out", "role": "default" }} , 
- 	{ "name": "arrayidx48_promoted172_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "arrayidx48_promoted172_out", "role": "ap_vld" }} , 
- 	{ "name": "arrayidx42_3_promoted170_out", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "arrayidx42_3_promoted170_out", "role": "default" }} , 
- 	{ "name": "arrayidx42_3_promoted170_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "arrayidx42_3_promoted170_out", "role": "ap_vld" }} , 
- 	{ "name": "arrayidx71_promoted168_out", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "arrayidx71_promoted168_out", "role": "default" }} , 
- 	{ "name": "arrayidx71_promoted168_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "arrayidx71_promoted168_out", "role": "ap_vld" }} , 
- 	{ "name": "arrayidx61_promoted166_out", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "arrayidx61_promoted166_out", "role": "default" }} , 
- 	{ "name": "arrayidx61_promoted166_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "arrayidx61_promoted166_out", "role": "ap_vld" }} , 
- 	{ "name": "arrayidx54_promoted164_out", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "arrayidx54_promoted164_out", "role": "default" }} , 
- 	{ "name": "arrayidx54_promoted164_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "arrayidx54_promoted164_out", "role": "ap_vld" }}  ]}
+ 	{ "name": "arrayidx48_promoted176_out", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "arrayidx48_promoted176_out", "role": "default" }} , 
+ 	{ "name": "arrayidx48_promoted176_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "arrayidx48_promoted176_out", "role": "ap_vld" }} , 
+ 	{ "name": "arrayidx42_3_promoted174_out", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "arrayidx42_3_promoted174_out", "role": "default" }} , 
+ 	{ "name": "arrayidx42_3_promoted174_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "arrayidx42_3_promoted174_out", "role": "ap_vld" }} , 
+ 	{ "name": "arrayidx71_promoted172_out", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "arrayidx71_promoted172_out", "role": "default" }} , 
+ 	{ "name": "arrayidx71_promoted172_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "arrayidx71_promoted172_out", "role": "ap_vld" }} , 
+ 	{ "name": "arrayidx61_promoted170_out", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "arrayidx61_promoted170_out", "role": "default" }} , 
+ 	{ "name": "arrayidx61_promoted170_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "arrayidx61_promoted170_out", "role": "ap_vld" }} , 
+ 	{ "name": "arrayidx54_promoted168_out", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "arrayidx54_promoted168_out", "role": "default" }} , 
+ 	{ "name": "arrayidx54_promoted168_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "arrayidx54_promoted168_out", "role": "ap_vld" }}  ]}
 
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "",
@@ -133,11 +133,11 @@ set RtlHierarchyInfo {[
 			{"Name" : "present_window_2_out", "Type" : "Vld", "Direction" : "O"},
 			{"Name" : "present_window_1_out", "Type" : "Vld", "Direction" : "O"},
 			{"Name" : "present_window_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "arrayidx48_promoted172_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "arrayidx42_3_promoted170_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "arrayidx71_promoted168_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "arrayidx61_promoted166_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "arrayidx54_promoted164_out", "Type" : "Vld", "Direction" : "O"}],
+			{"Name" : "arrayidx48_promoted176_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "arrayidx42_3_promoted174_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "arrayidx71_promoted172_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "arrayidx61_promoted170_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "arrayidx54_promoted168_out", "Type" : "Vld", "Direction" : "O"}],
 		"Loop" : [
 			{"Name" : "VITIS_LOOP_84_2", "PipelineType" : "no",
 				"LoopDec" : {"FSMBitwidth" : "2", "FirstState" : "ap_ST_fsm_state2", "LastState" : ["ap_ST_fsm_state2"], "QuitState" : ["ap_ST_fsm_state2"], "PreState" : ["ap_ST_fsm_state1"], "PostState" : ["ap_ST_fsm_state1"], "OneDepthLoop" : "1", "OneStateBlock": "ap_ST_fsm_state2_blk"}}]}]}
@@ -151,11 +151,11 @@ set ArgLastReadFirstWriteLatency {
 		present_window_2_out {Type O LastRead -1 FirstWrite 1}
 		present_window_1_out {Type O LastRead -1 FirstWrite 1}
 		present_window_out {Type O LastRead -1 FirstWrite 1}
-		arrayidx48_promoted172_out {Type O LastRead -1 FirstWrite 1}
-		arrayidx42_3_promoted170_out {Type O LastRead -1 FirstWrite 1}
-		arrayidx71_promoted168_out {Type O LastRead -1 FirstWrite 1}
-		arrayidx61_promoted166_out {Type O LastRead -1 FirstWrite 1}
-		arrayidx54_promoted164_out {Type O LastRead -1 FirstWrite 1}}}
+		arrayidx48_promoted176_out {Type O LastRead -1 FirstWrite 1}
+		arrayidx42_3_promoted174_out {Type O LastRead -1 FirstWrite 1}
+		arrayidx71_promoted172_out {Type O LastRead -1 FirstWrite 1}
+		arrayidx61_promoted170_out {Type O LastRead -1 FirstWrite 1}
+		arrayidx54_promoted168_out {Type O LastRead -1 FirstWrite 1}}}
 
 set hasDtUnsupportedChannel 0
 
@@ -174,9 +174,9 @@ set Spec2ImplPortList {
 	present_window_2_out { ap_vld {  { present_window_2_out out_data 1 8 }  { present_window_2_out_ap_vld out_vld 1 1 } } }
 	present_window_1_out { ap_vld {  { present_window_1_out out_data 1 8 }  { present_window_1_out_ap_vld out_vld 1 1 } } }
 	present_window_out { ap_vld {  { present_window_out out_data 1 8 }  { present_window_out_ap_vld out_vld 1 1 } } }
-	arrayidx48_promoted172_out { ap_vld {  { arrayidx48_promoted172_out out_data 1 8 }  { arrayidx48_promoted172_out_ap_vld out_vld 1 1 } } }
-	arrayidx42_3_promoted170_out { ap_vld {  { arrayidx42_3_promoted170_out out_data 1 8 }  { arrayidx42_3_promoted170_out_ap_vld out_vld 1 1 } } }
-	arrayidx71_promoted168_out { ap_vld {  { arrayidx71_promoted168_out out_data 1 8 }  { arrayidx71_promoted168_out_ap_vld out_vld 1 1 } } }
-	arrayidx61_promoted166_out { ap_vld {  { arrayidx61_promoted166_out out_data 1 8 }  { arrayidx61_promoted166_out_ap_vld out_vld 1 1 } } }
-	arrayidx54_promoted164_out { ap_vld {  { arrayidx54_promoted164_out out_data 1 8 }  { arrayidx54_promoted164_out_ap_vld out_vld 1 1 } } }
+	arrayidx48_promoted176_out { ap_vld {  { arrayidx48_promoted176_out out_data 1 8 }  { arrayidx48_promoted176_out_ap_vld out_vld 1 1 } } }
+	arrayidx42_3_promoted174_out { ap_vld {  { arrayidx42_3_promoted174_out out_data 1 8 }  { arrayidx42_3_promoted174_out_ap_vld out_vld 1 1 } } }
+	arrayidx71_promoted172_out { ap_vld {  { arrayidx71_promoted172_out out_data 1 8 }  { arrayidx71_promoted172_out_ap_vld out_vld 1 1 } } }
+	arrayidx61_promoted170_out { ap_vld {  { arrayidx61_promoted170_out out_data 1 8 }  { arrayidx61_promoted170_out_ap_vld out_vld 1 1 } } }
+	arrayidx54_promoted168_out { ap_vld {  { arrayidx54_promoted168_out out_data 1 8 }  { arrayidx54_promoted168_out_ap_vld out_vld 1 1 } } }
 }

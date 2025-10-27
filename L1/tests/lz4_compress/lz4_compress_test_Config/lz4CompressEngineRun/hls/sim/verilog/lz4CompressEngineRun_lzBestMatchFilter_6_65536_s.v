@@ -232,7 +232,7 @@ lz4CompressEngineRun_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter grp_l
     .def_WIDTH( 32 ),
     .sel_WIDTH( 3 ),
     .dout_WIDTH( 32 ))
-sparsemux_13_3_32_1_1_U59(
+sparsemux_13_3_32_1_1_U65(
     .din0(grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_compare_window_17_out),
     .din1(grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_compare_window_16_out),
     .din2(grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_compare_window_15_out),

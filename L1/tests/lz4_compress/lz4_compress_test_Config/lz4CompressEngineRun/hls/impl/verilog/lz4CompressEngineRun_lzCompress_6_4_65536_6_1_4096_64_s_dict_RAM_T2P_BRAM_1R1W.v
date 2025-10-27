@@ -17,8 +17,8 @@ module lz4CompressEngineRun_lzCompress_6_4_65536_6_1_4096_64_s_dict_RAM_T2P_BRAM
     reset, clk);
 
 parameter DataWidth = 432;
-parameter AddressWidth = 11;
-parameter AddressRange = 2048;
+parameter AddressWidth = 10;
+parameter AddressRange = 1024;
  
 input[AddressWidth-1:0] address0;
 input ce0;

@@ -2424,11 +2424,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>2349</second>
+              <second>2367</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>4283</second>
+              <second>4055</second>
             </item>
           </second>
         </item>

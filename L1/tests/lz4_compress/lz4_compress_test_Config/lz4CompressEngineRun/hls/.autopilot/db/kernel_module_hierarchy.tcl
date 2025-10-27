@@ -3,19 +3,19 @@ set ModuleHierarchy {[{
 "SubInsts" : [
 	{"Name" : "lzCompress_6_4_65536_6_1_4096_64_U0","ID" : "1","Type" : "sequential",
 		"SubInsts" : [
-		{"Name" : "grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142","ID" : "2","Type" : "sequential",
+		{"Name" : "grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150","ID" : "2","Type" : "sequential",
 			"SubLoops" : [
 			{"Name" : "dict_flush","ID" : "3","Type" : "pipeline"},]},
-		{"Name" : "grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148","ID" : "4","Type" : "sequential",
+		{"Name" : "grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158","ID" : "4","Type" : "sequential",
 			"SubLoops" : [
 			{"Name" : "VITIS_LOOP_84_2","ID" : "5","Type" : "no"},]},
-		{"Name" : "grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164","ID" : "6","Type" : "sequential",
+		{"Name" : "grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174","ID" : "6","Type" : "sequential",
 			"SubLoops" : [
 			{"Name" : "lz_compress","ID" : "7","Type" : "pipeline"},]},
-		{"Name" : "grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185","ID" : "8","Type" : "sequential",
+		{"Name" : "grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197","ID" : "8","Type" : "sequential",
 			"SubLoops" : [
 			{"Name" : "lz_compress_leftover","ID" : "9","Type" : "pipeline"},]},
-		{"Name" : "grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196","ID" : "10","Type" : "sequential",
+		{"Name" : "grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208","ID" : "10","Type" : "sequential",
 			"SubLoops" : [
 			{"Name" : "lz_left_bytes","ID" : "11","Type" : "pipeline"},]},]},
 	{"Name" : "lzBestMatchFilter_6_65536_U0","ID" : "12","Type" : "sequential",

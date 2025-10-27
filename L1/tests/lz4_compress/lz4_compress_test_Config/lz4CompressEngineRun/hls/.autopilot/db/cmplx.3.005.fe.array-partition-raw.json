@@ -1,14 +1,23 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "5 1 3 4",
+    "calls": "3 2 4 6",
     "file": "lz4_compress_test.cpp",
     "fileloc": 47,
     "instructions": 16,
     "name": "lz4CompressEngineRun",
-    "total_instructions": 919
+    "total_instructions": 931
   },
   "1": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "lz4_compress.hpp",
+    "fileloc": 165,
+    "instructions": 136,
+    "name": "lz4CompressPart2",
+    "total_instructions": 136
+  },
+  "2": {
     "basicblocks": 11,
     "calls": "",
     "file": "lz_optional.hpp",
@@ -23,16 +32,22 @@
     },
     "total_instructions": 111
   },
-  "2": {
-    "basicblocks": 15,
-    "calls": "",
-    "file": "lz4_compress.hpp",
-    "fileloc": 165,
-    "instructions": 136,
-    "name": "lz4CompressPart2",
-    "total_instructions": 136
-  },
   "3": {
+    "basicblocks": 21,
+    "calls": "",
+    "file": "lz_compress.hpp",
+    "fileloc": 58,
+    "instructions": 480,
+    "loads": {
+      "L": 11
+    },
+    "name": "lzCompress<6, 4, 65536, 6, 1, 4096, 64>",
+    "stores": {
+      "L": 20
+    },
+    "total_instructions": 480
+  },
+  "4": {
     "basicblocks": 17,
     "calls": "",
     "file": "lz_optional.hpp",
@@ -49,31 +64,7 @@
     },
     "total_instructions": 108
   },
-  "4": {
-    "basicblocks": 1,
-    "calls": "6 2",
-    "file": "lz4_compress.hpp",
-    "fileloc": 411,
-    "instructions": 11,
-    "name": "lz4Compress<4096, 1>",
-    "total_instructions": 216
-  },
   "5": {
-    "basicblocks": 21,
-    "calls": "",
-    "file": "lz_compress.hpp",
-    "fileloc": 58,
-    "instructions": 468,
-    "loads": {
-      "L": 11
-    },
-    "name": "lzCompress<6, 4, 65536, 6, 1, 4096, 64>",
-    "stores": {
-      "L": 16
-    },
-    "total_instructions": 468
-  },
-  "6": {
     "basicblocks": 18,
     "calls": "",
     "file": "lz4_compress.hpp",
@@ -84,5 +75,14 @@
       "L": 1
     },
     "total_instructions": 69
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "5 1",
+    "file": "lz4_compress.hpp",
+    "fileloc": 411,
+    "instructions": 11,
+    "name": "lz4Compress<4096, 1>",
+    "total_instructions": 216
   }
 }

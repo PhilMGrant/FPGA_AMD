@@ -79659,7 +79659,7 @@ lzCompress_func_4:;
 dict_flush:
     for (int i = 0; i < LZ_DICT_SIZE; i++) {
 #pragma HLS PIPELINE II = 1
-#pragma HLS UNROLL FACTOR = 4
+#pragma HLS UNROLL FACTOR = 8
 #pragma HLS LOOP_TRIPCOUNT min = LZ_DICT_SIZE max = LZ_DICT_SIZE
         dict[i] = resetValue;
     }
@@ -79856,7 +79856,7 @@ void lzCompress(hls::stream<IntVectorStream_dt<8, 1> >& inStream, hls::stream<In
         dict_flush:
             for (int i = 0; i < LZ_DICT_SIZE; i++) {
 #pragma HLS PIPELINE II = 1
-#pragma HLS UNROLL FACTOR = 4
+#pragma HLS UNROLL FACTOR = 8
 #pragma HLS LOOP_TRIPCOUNT min = LZ_DICT_SIZE max = LZ_DICT_SIZE
                 dict[i] = resetValue;
             }

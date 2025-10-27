@@ -5,7 +5,11 @@ set SynModuleInfo {
     }
   }
   {SRCNAME {lzCompress<6, 4, 65536, 6, 1, 4096, 64>_Outline_VITIS_LOOP_84_2} MODELNAME lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2 RTLNAME lz4CompressEngineRun_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2}
-  {SRCNAME {lzCompress<6, 4, 65536, 6, 1, 4096, 64>_Pipeline_lz_compress} MODELNAME lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress RTLNAME lz4CompressEngineRun_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress}
+  {SRCNAME {lzCompress<6, 4, 65536, 6, 1, 4096, 64>_Pipeline_lz_compress} MODELNAME lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress RTLNAME lz4CompressEngineRun_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress
+    SUBMODULES {
+      {MODELNAME lz4CompressEngineRun_sparsemux_9_2_432_1_1 RTLNAME lz4CompressEngineRun_sparsemux_9_2_432_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
+    }
+  }
   {SRCNAME {lzCompress<6, 4, 65536, 6, 1, 4096, 64>_Pipeline_lz_compress_leftover} MODELNAME lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover RTLNAME lz4CompressEngineRun_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover
     SUBMODULES {
       {MODELNAME lz4CompressEngineRun_sparsemux_11_3_8_1_1 RTLNAME lz4CompressEngineRun_sparsemux_11_3_8_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}

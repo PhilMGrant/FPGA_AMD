@@ -70,11 +70,11 @@ lzCompress_func_4:;
 #pragma HLS UNROLL
         resetValue.range((i + 1) * c_dictEleWidth - 1, i * c_dictEleWidth + MATCH_LEN * 8) = -1;
     }
-// Initialization of Dictionary - 优化初始化以减少资源使用和改善时序
+// 优化：字典初始化 - 使用更高效的流水线和并行化
 dict_flush:
     for (int i = 0; i < LZ_DICT_SIZE; i++) {
 #pragma HLS PIPELINE II = 1
-#pragma HLS UNROLL FACTOR = 4  // 增加展开因子以提高并行度
+#pragma HLS UNROLL FACTOR = 8  // 进一步增加展开因子以提高并行度
 #pragma HLS LOOP_TRIPCOUNT min = LZ_DICT_SIZE max = LZ_DICT_SIZE
         dict[i] = resetValue;
     }
@@ -280,11 +280,11 @@ void lzCompress(hls::stream<IntVectorStream_dt<8, 1> >& inStream, hls::stream<In
 #pragma HLS UNROLL
                 resetValue.range((i + 1) * c_dictEleWidth - 1, i * c_dictEleWidth + MATCH_LEN * 8) = -1;
             }
-        // Initialization of Dictionary - 优化初始化以减少资源使用和改善时序
+        // 优化：字典初始化 - 使用更高效的流水线和并行化
         dict_flush:
             for (int i = 0; i < LZ_DICT_SIZE; i++) {
 #pragma HLS PIPELINE II = 1
-#pragma HLS UNROLL FACTOR = 4  // 增加展开因子以提高并行度
+#pragma HLS UNROLL FACTOR = 8  // 进一步增加展开因子以提高并行度
 #pragma HLS LOOP_TRIPCOUNT min = LZ_DICT_SIZE max = LZ_DICT_SIZE
                 dict[i] = resetValue;
             }

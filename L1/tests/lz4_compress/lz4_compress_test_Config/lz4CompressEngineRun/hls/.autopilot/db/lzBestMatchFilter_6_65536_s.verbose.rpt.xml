@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'lzBestMatchFilter_6_65536_s'" level="0">
-<item name = "Date">Mon Oct 27 14:49:38 2025
+<item name = "Date">Mon Oct 27 15:27:27 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">lz4CompressEngineRun</item>
@@ -64,7 +64,7 @@
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135">lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter, 0, 0, 263, 401, 0</column>
-<column name="sparsemux_13_3_32_1_1_U59">sparsemux_13_3_32_1_1, 0, 0, 0, 31, 0</column>
+<column name="sparsemux_13_3_32_1_1_U65">sparsemux_13_3_32_1_1, 0, 0, 0, 31, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">

@@ -320,8 +320,8 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
                     case(index2)
                     1: begin //  for dep proc 'lz4CompressEngineRun.lzBestMatchFilter_6_65536_U0'
 // for dep channel 'lz4CompressEngineRun.compressdStream_U' info is :
-// blk sig is {~AESL_inst_lz4CompressEngineRun.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164.compressdStream_blk_n data_FIFO}
-                        if ((~AESL_inst_lz4CompressEngineRun.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164.compressdStream_blk_n)) begin
+// blk sig is {~AESL_inst_lz4CompressEngineRun.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174.compressdStream_blk_n data_FIFO}
+                        if ((~AESL_inst_lz4CompressEngineRun.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174.compressdStream_blk_n)) begin
                             if (~AESL_inst_lz4CompressEngineRun.compressdStream_U.if_empty_n) begin
                                 $display("//      Blocked by empty input FIFO 'lz4CompressEngineRun.compressdStream_U' written by process 'lz4CompressEngineRun.lzBestMatchFilter_6_65536_U0'");
                                 $fdisplay(fp, "Dependence_Channel_path lz4CompressEngineRun.compressdStream_U");

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'lzCompress_6_4_65536_6_1_4096_64_s'" level="0">
-<item name = "Date">Mon Oct 27 14:49:27 2025
+<item name = "Date">Mon Oct 27 15:27:17 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">lz4CompressEngineRun</item>
@@ -31,11 +31,11 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142">lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush, 1026, 1026, 7.182 us, 7.182 us, 1025, 1025, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148">lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2, 6, 6, 42.000 ns, 42.000 ns, 6, 6, no</column>
-<column name="grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164">lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185">lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover, 7, 7, 49.000 ns, 49.000 ns, 6, 6, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196">lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes, 66, 66, 0.462 us, 0.462 us, 65, 65, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150">lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush, 514, 514, 3.598 us, 3.598 us, 513, 513, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158">lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2, 6, 6, 42.000 ns, 42.000 ns, 6, 6, no</column>
+<column name="grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174">lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197">lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover, 7, 7, 49.000 ns, 49.000 ns, 6, 6, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208">lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes, 66, 66, 0.462 us, 0.462 us, 65, 65, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

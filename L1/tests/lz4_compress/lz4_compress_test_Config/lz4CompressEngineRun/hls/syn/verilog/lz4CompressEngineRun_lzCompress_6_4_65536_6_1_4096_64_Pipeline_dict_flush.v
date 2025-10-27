@@ -13,6 +13,22 @@ module lz4CompressEngineRun_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush
         ap_done,
         ap_idle,
         ap_ready,
+        dict_3_address0,
+        dict_3_ce0,
+        dict_3_we0,
+        dict_3_d0,
+        dict_3_address1,
+        dict_3_ce1,
+        dict_3_we1,
+        dict_3_d1,
+        dict_2_address0,
+        dict_2_ce0,
+        dict_2_we0,
+        dict_2_d0,
+        dict_2_address1,
+        dict_2_ce1,
+        dict_2_we1,
+        dict_2_d1,
         dict_1_address0,
         dict_1_ce0,
         dict_1_we0,
@@ -39,19 +55,35 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
-output  [10:0] dict_1_address0;
+output  [9:0] dict_3_address0;
+output   dict_3_ce0;
+output   dict_3_we0;
+output  [431:0] dict_3_d0;
+output  [9:0] dict_3_address1;
+output   dict_3_ce1;
+output   dict_3_we1;
+output  [431:0] dict_3_d1;
+output  [9:0] dict_2_address0;
+output   dict_2_ce0;
+output   dict_2_we0;
+output  [431:0] dict_2_d0;
+output  [9:0] dict_2_address1;
+output   dict_2_ce1;
+output   dict_2_we1;
+output  [431:0] dict_2_d1;
+output  [9:0] dict_1_address0;
 output   dict_1_ce0;
 output   dict_1_we0;
 output  [431:0] dict_1_d0;
-output  [10:0] dict_1_address1;
+output  [9:0] dict_1_address1;
 output   dict_1_ce1;
 output   dict_1_we1;
 output  [431:0] dict_1_d1;
-output  [10:0] dict_address0;
+output  [9:0] dict_address0;
 output   dict_ce0;
 output   dict_we0;
 output  [431:0] dict_d0;
-output  [10:0] dict_address1;
+output  [9:0] dict_address1;
 output   dict_ce1;
 output   dict_we1;
 output  [431:0] dict_d1;
@@ -61,14 +93,14 @@ reg ap_idle;
 (* fsm_encoding = "none" *) reg   [0:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
 reg    ap_block_state1_pp0_stage0_iter0;
-wire   [0:0] tmp_46_fu_118_p3;
+wire   [0:0] tmp_46_fu_178_p3;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
-wire   [63:0] zext_ln75_fu_136_p1;
-wire   [63:0] zext_ln79_fu_160_p1;
-reg   [12:0] i_fu_52;
-wire   [12:0] add_ln75_fu_166_p2;
+wire   [63:0] zext_ln75_fu_196_p1;
+wire   [63:0] zext_ln79_fu_222_p1;
+reg   [12:0] i_fu_58;
+wire   [12:0] add_ln75_fu_230_p2;
 wire    ap_loop_init;
 reg   [12:0] ap_sig_allocacmp_i_3;
 reg    dict_we1_local;
@@ -79,9 +111,17 @@ reg    dict_1_we1_local;
 reg    dict_1_ce1_local;
 reg    dict_1_we0_local;
 reg    dict_1_ce0_local;
-wire   [10:0] lshr_ln_fu_126_p4;
-wire   [9:0] tmp_fu_142_p4;
-wire   [10:0] or_ln_fu_152_p3;
+reg    dict_2_we1_local;
+reg    dict_2_ce1_local;
+reg    dict_2_we0_local;
+reg    dict_2_ce0_local;
+reg    dict_3_we1_local;
+reg    dict_3_ce1_local;
+reg    dict_3_we0_local;
+reg    dict_3_ce0_local;
+wire   [9:0] lshr_ln_fu_186_p4;
+wire   [8:0] tmp_fu_204_p4;
+wire   [9:0] or_ln_fu_214_p3;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -95,7 +135,7 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 1'd1;
-#0 i_fu_52 = 13'd0;
+#0 i_fu_58 = 13'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -136,10 +176,10 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
-        if ((tmp_46_fu_118_p3 == 1'd0)) begin
-            i_fu_52 <= add_ln75_fu_166_p2;
+        if ((tmp_46_fu_178_p3 == 1'd0)) begin
+            i_fu_58 <= add_ln75_fu_230_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            i_fu_52 <= 13'd0;
+            i_fu_58 <= 13'd0;
         end
     end
 end
@@ -153,7 +193,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((tmp_46_fu_118_p3 == 1'd1) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+    if (((tmp_46_fu_178_p3 == 1'd1) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b1;
     end else begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b0;
@@ -169,7 +209,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state1) & (ap_start_int == 1'b0))) begin
+    if (((ap_start_int == 1'b0) & (1'b1 == ap_CS_fsm_state1))) begin
         ap_idle = 1'b1;
     end else begin
         ap_idle = 1'b0;
@@ -188,7 +228,7 @@ always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
         ap_sig_allocacmp_i_3 = 13'd0;
     end else begin
-        ap_sig_allocacmp_i_3 = i_fu_52;
+        ap_sig_allocacmp_i_3 = i_fu_58;
     end
 end
 
@@ -209,7 +249,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((tmp_46_fu_118_p3 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+    if (((tmp_46_fu_178_p3 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
         dict_1_we0_local = 1'b1;
     end else begin
         dict_1_we0_local = 1'b0;
@@ -217,10 +257,74 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((tmp_46_fu_118_p3 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+    if (((tmp_46_fu_178_p3 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
         dict_1_we1_local = 1'b1;
     end else begin
         dict_1_we1_local = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+        dict_2_ce0_local = 1'b1;
+    end else begin
+        dict_2_ce0_local = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+        dict_2_ce1_local = 1'b1;
+    end else begin
+        dict_2_ce1_local = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((tmp_46_fu_178_p3 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+        dict_2_we0_local = 1'b1;
+    end else begin
+        dict_2_we0_local = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((tmp_46_fu_178_p3 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+        dict_2_we1_local = 1'b1;
+    end else begin
+        dict_2_we1_local = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+        dict_3_ce0_local = 1'b1;
+    end else begin
+        dict_3_ce0_local = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+        dict_3_ce1_local = 1'b1;
+    end else begin
+        dict_3_ce1_local = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((tmp_46_fu_178_p3 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+        dict_3_we0_local = 1'b1;
+    end else begin
+        dict_3_we0_local = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((tmp_46_fu_178_p3 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+        dict_3_we1_local = 1'b1;
+    end else begin
+        dict_3_we1_local = 1'b0;
     end
 end
 
@@ -241,7 +345,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((tmp_46_fu_118_p3 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+    if (((tmp_46_fu_178_p3 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
         dict_we0_local = 1'b1;
     end else begin
         dict_we0_local = 1'b0;
@@ -249,7 +353,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((tmp_46_fu_118_p3 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+    if (((tmp_46_fu_178_p3 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
         dict_we1_local = 1'b1;
     end else begin
         dict_we1_local = 1'b0;
@@ -267,7 +371,7 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln75_fu_166_p2 = (ap_sig_allocacmp_i_3 + 13'd4);
+assign add_ln75_fu_230_p2 = (ap_sig_allocacmp_i_3 + 13'd8);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -281,9 +385,9 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign dict_1_address0 = zext_ln79_fu_160_p1;
+assign dict_1_address0 = zext_ln79_fu_222_p1;
 
-assign dict_1_address1 = zext_ln75_fu_136_p1;
+assign dict_1_address1 = zext_ln75_fu_196_p1;
 
 assign dict_1_ce0 = dict_1_ce0_local;
 
@@ -297,9 +401,41 @@ assign dict_1_we0 = dict_1_we0_local;
 
 assign dict_1_we1 = dict_1_we1_local;
 
-assign dict_address0 = zext_ln79_fu_160_p1;
+assign dict_2_address0 = zext_ln79_fu_222_p1;
 
-assign dict_address1 = zext_ln75_fu_136_p1;
+assign dict_2_address1 = zext_ln75_fu_196_p1;
+
+assign dict_2_ce0 = dict_2_ce0_local;
+
+assign dict_2_ce1 = dict_2_ce1_local;
+
+assign dict_2_d0 = 432'd11090678115427290648067406327099816567816485687858739297904344355517527431150386278551834614265618837387151732050401883924453130240;
+
+assign dict_2_d1 = 432'd11090678115427290648067406327099816567816485687858739297904344355517527431150386278551834614265618837387151732050401883924453130240;
+
+assign dict_2_we0 = dict_2_we0_local;
+
+assign dict_2_we1 = dict_2_we1_local;
+
+assign dict_3_address0 = zext_ln79_fu_222_p1;
+
+assign dict_3_address1 = zext_ln75_fu_196_p1;
+
+assign dict_3_ce0 = dict_3_ce0_local;
+
+assign dict_3_ce1 = dict_3_ce1_local;
+
+assign dict_3_d0 = 432'd11090678115427290648067406327099816567816485687858739297904344355517527431150386278551834614265618837387151732050401883924453130240;
+
+assign dict_3_d1 = 432'd11090678115427290648067406327099816567816485687858739297904344355517527431150386278551834614265618837387151732050401883924453130240;
+
+assign dict_3_we0 = dict_3_we0_local;
+
+assign dict_3_we1 = dict_3_we1_local;
+
+assign dict_address0 = zext_ln79_fu_222_p1;
+
+assign dict_address1 = zext_ln75_fu_196_p1;
 
 assign dict_ce0 = dict_ce0_local;
 
@@ -313,16 +449,16 @@ assign dict_we0 = dict_we0_local;
 
 assign dict_we1 = dict_we1_local;
 
-assign lshr_ln_fu_126_p4 = {{ap_sig_allocacmp_i_3[11:1]}};
+assign lshr_ln_fu_186_p4 = {{ap_sig_allocacmp_i_3[11:2]}};
 
-assign or_ln_fu_152_p3 = {{tmp_fu_142_p4}, {1'd1}};
+assign or_ln_fu_214_p3 = {{tmp_fu_204_p4}, {1'd1}};
 
-assign tmp_46_fu_118_p3 = ap_sig_allocacmp_i_3[32'd12];
+assign tmp_46_fu_178_p3 = ap_sig_allocacmp_i_3[32'd12];
 
-assign tmp_fu_142_p4 = {{ap_sig_allocacmp_i_3[11:2]}};
+assign tmp_fu_204_p4 = {{ap_sig_allocacmp_i_3[11:3]}};
 
-assign zext_ln75_fu_136_p1 = lshr_ln_fu_126_p4;
+assign zext_ln75_fu_196_p1 = lshr_ln_fu_186_p4;
 
-assign zext_ln79_fu_160_p1 = or_ln_fu_152_p3;
+assign zext_ln79_fu_222_p1 = or_ln_fu_214_p3;
 
 endmodule //lz4CompressEngineRun_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush

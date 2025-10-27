@@ -270,7 +270,7 @@ end
         .token_out_vec(token_out_vec_0),
         .dl_detect_out(dl_in_vec[0]));
 
-    assign proc_0_data_FIFO_blk[0] = 1'b0 | (~AESL_inst_lz4CompressEngineRun.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164.compressdStream_blk_n) | (~AESL_inst_lz4CompressEngineRun.lzCompress_6_4_65536_6_1_4096_64_U0.input_size_c2_blk_n);
+    assign proc_0_data_FIFO_blk[0] = 1'b0 | (~AESL_inst_lz4CompressEngineRun.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174.compressdStream_blk_n) | (~AESL_inst_lz4CompressEngineRun.lzCompress_6_4_65536_6_1_4096_64_U0.input_size_c2_blk_n);
     assign proc_0_data_PIPO_blk[0] = 1'b0;
     assign proc_0_start_FIFO_blk[0] = 1'b0 | (~AESL_inst_lz4CompressEngineRun.start_for_lzBestMatchFilter_6_65536_U0_U.if_full_n & AESL_inst_lz4CompressEngineRun.lzCompress_6_4_65536_6_1_4096_64_U0.ap_start & ~AESL_inst_lz4CompressEngineRun.lzCompress_6_4_65536_6_1_4096_64_U0.real_start & (trans_in_cnt_0 == trans_out_cnt_0) & ~AESL_inst_lz4CompressEngineRun.start_for_lzBestMatchFilter_6_65536_U0_U.if_read);
     assign proc_0_TLF_FIFO_blk[0] = 1'b0;

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1761550051561">
+  <ports id="1" name="boosterStream" type="PortType" originalName="inStream" coreName="FIFO_SRL" coreId="4294967295" bitwidth="32" iftype="IfTypeRom">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="lz4Out" type="PortType" originalName="outStream" coreId="4294967295" bitwidth="8" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="3" name="max_lit_limit" type="PortType" originalName="max_lit_limit" coreId="4294967295" bitwidth="32" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="4" name="input_size" type="PortType" coreId="4294967295" bitwidth="32" iftype="IfTypeRom">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="5" name="lz4Out_eos" type="PortType" originalName="endOfStream" coreId="4294967295" bitwidth="1" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="6" name="lz4OutSize" type="PortType" originalName="compressdSizeStream" coreId="4294967295" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <edges id="35" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="36" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="37" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="38" source_obj="//@ports.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="39" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@ports.2"/>
+  <edges id="40" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="43" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="44" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="45" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@ports.1"/>
+  <edges id="46" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@ports.4"/>
+  <edges id="47" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@ports.5"/>
+  <edges id="48" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="278" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="279" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <regions anchor_node="-1" region_type="16" typeName="Dataflow" iiViolation="" id="107" RegionName="lz4Compress&lt;4096, 1>">
+    <basic_blocks id="28" name="lz4Compress&lt;4096, 1>" type="BlockType">
+      <node_objs xsi:type="cdfg:CdfgNode" id="8" name="input_size_c" rtlName="input_size_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="80" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="lit_outStream" lineNumber="419" originalName="lit_outStream" fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp" fileDirectory="../." rtlName="lit_outStream_U" coreName="FIFO_BRAM" implIndex="bram" control="yes" opType="fifo" coreId="78" contextFuncName="lz4Compress_4096_1_s" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp" linenumber="419" fileDirectory="D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config" functionName="lz4Compress&amp;lt;4096, 1&amp;gt;"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="lenOffset_Stream" lineNumber="420" originalName="lenOffset_Stream" fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp" fileDirectory="../." rtlName="lenOffset_Stream_U" coreName="FIFO_SRL" implIndex="srl" control="yes" opType="fifo" coreId="80" contextFuncName="lz4Compress_4096_1_s" bitwidth="64" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp" linenumber="420" fileDirectory="D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config" functionName="lz4Compress&amp;lt;4096, 1&amp;gt;"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="_ln429" lineNumber="429" fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp" fileDirectory="../." rtlName="lz4CompressPart1_4096_1_U0" coreId="4294967295" contextFuncName="lz4Compress_4096_1_s" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp" linenumber="429" fileDirectory="D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config" functionName="lz4Compress&amp;lt;4096, 1&amp;gt;"/>
+        <dataInputObjs>boosterStream</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>input_size</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>max_lit_limit</dataOutputObjs>
+        <constName>lz4CompressPart1_4096_1_s</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="_ln431" lineNumber="431" fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp" fileDirectory="../." rtlName="lz4CompressPart2_U0" coreId="4294967295" contextFuncName="lz4Compress_4096_1_s" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp" linenumber="431" fileDirectory="D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config" functionName="lz4Compress&amp;lt;4096, 1&amp;gt;"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>lz4Out</dataOutputObjs>
+        <dataOutputObjs>lz4Out_eos</dataOutputObjs>
+        <dataOutputObjs>lz4OutSize</dataOutputObjs>
+        <constName>lz4CompressPart2</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="_ln432" lineNumber="432" fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp" fileDirectory="../." coreId="4294967295" contextFuncName="lz4Compress_4096_1_s" opcode="ret" nodeLabel="3.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp" linenumber="432" fileDirectory="D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config" functionName="lz4Compress&amp;lt;4096, 1&amp;gt;"/>
+      </node_objs>
+      <fileValidLineNumbers fileName="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp">
+        <validLinenumbers>419</validLinenumbers>
+        <validLinenumbers>420</validLinenumbers>
+        <validLinenumbers>429</validLinenumbers>
+        <validLinenumbers>431</validLinenumbers>
+        <validLinenumbers>432</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <regnodes realName="input_size_c_reg_102">
+    <nodeIds>8</nodeIds>
+  </regnodes>
+  <regnodes realName="lit_outStream_reg_108">
+    <nodeIds>17</nodeIds>
+  </regnodes>
+  <regnodes realName="lenOffset_Stream_reg_114">
+    <nodeIds>20</nodeIds>
+  </regnodes>
+  <expressionNodes realName="input_size_c_fu_64">
+    <nodeIds>8</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="lenOffset_Stream_fu_72">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="lit_outStream_fu_68">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_lz4CompressPart1_4096_1_s_fu_76">
+    <nodeIds>25</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_lz4CompressPart2_fu_89">
+    <nodeIds>26</nodeIds>
+  </moduleNodes>
+  <ioPorts name="boosterStream">
+    <contents name="call">
+      <nodeIds>25</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="input_size">
+    <contents name="call">
+      <nodeIds>25</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="lz4Out">
+    <contents name="call">
+      <nodeIds>26</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="lz4OutSize">
+    <contents name="call">
+      <nodeIds>26</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="lz4Out_eos">
+    <contents name="call">
+      <nodeIds>26</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="max_lit_limit">
+    <contents name="call">
+      <nodeIds>25</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="25" stage="2" latency="2"/>
+    </states>
+    <states id="2">
+      <operations id="25" stage="1" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="26" stage="2" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="2"/>
+      <operations id="27" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="lz4Compress_4096_1_s" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1" mIsDfPipe="true">
+      <basicBlocks>28</basicBlocks>
+      <mDfPipe allPipePinInst="//@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.0/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.1/@pins.0/@inst">
+        <processe_list name="lz4CompressPart1_4096_1_U0" ssdmobj_id="25">
+          <pins>
+            <port name="boosterStream" top_port_object_id="" top_port_object_id_reference="_38" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="lz4CompressPart1_4096_1_U0" ssdmobj_id="25" object_id="_47"/>
+          </pins>
+          <pins>
+            <port name="input_size" top_port_object_id="" top_port_object_id_reference="_41" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="lz4CompressPart1_4096_1_U0" ssdmobj_id="25" object_id="_47"/>
+          </pins>
+          <pins>
+            <port name="max_lit_limit" dir="DirOut" type="SIOType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_40" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="lz4CompressPart1_4096_1_U0" ssdmobj_id="25" object_id="_47"/>
+          </pins>
+        </processe_list>
+        <processe_list name="lz4CompressPart2_U0" ssdmobj_id="26">
+          <pins>
+            <port name="lz4Out" dir="DirOut" top_port_object_id="" top_port_object_id_reference="_39" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="lz4CompressPart2_U0" ssdmobj_id="26" object_id="_55"/>
+          </pins>
+          <pins>
+            <port name="lz4Out_eos" dir="DirOut" top_port_object_id="" top_port_object_id_reference="_42" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="lz4CompressPart2_U0" ssdmobj_id="26" object_id="_55"/>
+          </pins>
+          <pins>
+            <port name="lz4OutSize" dir="DirOut" top_port_object_id="" top_port_object_id_reference="_43" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="lz4CompressPart2_U0" ssdmobj_id="26" object_id="_55"/>
+          </pins>
+        </processe_list>
+        <channel_list depth="8192" bitwidth="8" suggested_type="0" suggested_depth="8192" name="lit_outStream" ssdmobj_id="17" bram_cost="4" uram_cost="0" storage_size="8 8192 1">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="lz4CompressPart1_4096_1_U0" ssdmobj_id="25" object_id="_47"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="lz4CompressPart2_U0" ssdmobj_id="26" object_id="_55"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="64" bitwidth="64" suggested_type="0" suggested_depth="64" name="lenOffset_Stream" ssdmobj_id="20" bram_cost="0" uram_cost="0" storage_size="64 64 1">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="lz4CompressPart1_4096_1_U0" ssdmobj_id="25" object_id="_47"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="lz4CompressPart2_U0" ssdmobj_id="26" object_id="_55"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="32" suggested_type="2" suggested_depth="2" name="input_size_c" ssdmobj_id="8" bram_cost="0" uram_cost="0" storage_size="32 2 1">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="lz4CompressPart1_4096_1_U0" ssdmobj_id="25" object_id="_47"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="lz4CompressPart2_U0" ssdmobj_id="26" object_id="_55"/>
+          </sink>
+        </channel_list>
+      </mDfPipe>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

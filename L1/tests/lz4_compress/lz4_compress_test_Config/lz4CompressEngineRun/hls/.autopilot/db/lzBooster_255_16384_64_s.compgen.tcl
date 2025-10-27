@@ -15,7 +15,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 81 \
+    id 87 \
     name bestMatchStream \
     type fifo \
     dir I \
@@ -30,7 +30,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 82 \
+    id 88 \
     name boosterStream \
     type fifo \
     dir O \
@@ -45,7 +45,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 83 \
+    id 89 \
     name input_size \
     type fifo \
     dir I \
@@ -60,7 +60,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 84 \
+    id 90 \
     name input_size_c \
     type fifo \
     dir O \

@@ -277,7 +277,7 @@ begin
         compare_window_17_out => grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_compare_window_17_out,
         compare_window_17_out_ap_vld => grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_compare_window_17_out_ap_vld);
 
-    sparsemux_13_3_32_1_1_U59 : component lz4CompressEngineRun_sparsemux_13_3_32_1_1
+    sparsemux_13_3_32_1_1_U65 : component lz4CompressEngineRun_sparsemux_13_3_32_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,

@@ -1095,13 +1095,21 @@ endtask
 
 `ifndef POST_SYN
 
-// Dependence Check (WAR) "ap_enable_operation_83"(R:SV3-4) -> "ap_enable_operation_93"(W:SV5-5) @ `AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164
+// Dependence Check (WAR) "ap_enable_operation_89"(R:SV3-4) -> "ap_enable_operation_105"(W:SV5-5) @ `AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174
 
-// Dependence Check (WAR) "ap_enable_operation_84"(R:SV3-4) -> "ap_enable_operation_95"(W:SV5-5) @ `AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164
+// Dependence Check (WAR) "ap_enable_operation_90"(R:SV3-4) -> "ap_enable_operation_103"(W:SV5-5) @ `AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174
 
-// Dependence Check (RAW) "ap_enable_operation_93"(W:SV5-5) -> "ap_enable_operation_74"(R:SV3-4) @ `AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164
+// Dependence Check (WAR) "ap_enable_operation_91"(R:SV3-4) -> "ap_enable_operation_101"(W:SV5-5) @ `AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174
 
-// Dependence Check (RAW) "ap_enable_operation_95"(W:SV5-5) -> "ap_enable_operation_75"(R:SV3-4) @ `AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164
+// Dependence Check (WAR) "ap_enable_operation_92"(R:SV3-4) -> "ap_enable_operation_107"(W:SV5-5) @ `AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174
+
+// Dependence Check (RAW) "ap_enable_operation_101"(W:SV5-5) -> "ap_enable_operation_79"(R:SV3-4) @ `AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174
+
+// Dependence Check (RAW) "ap_enable_operation_103"(W:SV5-5) -> "ap_enable_operation_78"(R:SV3-4) @ `AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174
+
+// Dependence Check (RAW) "ap_enable_operation_105"(W:SV5-5) -> "ap_enable_operation_77"(R:SV3-4) @ `AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174
+
+// Dependence Check (RAW) "ap_enable_operation_107"(W:SV5-5) -> "ap_enable_operation_80"(R:SV3-4) @ `AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174
 
 // Dependence Check (RAW) "ap_enable_operation_46"(W:SV2-2) -> "ap_enable_operation_66"(R:SV3-4) @ `AUTOTB_DUT_INST.lzBooster_255_16384_64_U0.grp_lzBooster_255_16384_64_Pipeline_lz_booster_fu_206
 

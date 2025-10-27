@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush'" level="0">
-<item name = "Date">Mon Oct 27 14:49:33 2025
+<item name = "Date">Mon Oct 27 15:27:22 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">lz4CompressEngineRun</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1026, 1026, 7.182 us, 7.182 us, 1025, 1025, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="">514, 514, 3.598 us, 3.598 us, 513, 513, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- dict_flush">1024, 1024, 1, 1, 1, 1024, yes</column>
+<column name="- dict_flush">512, 512, 1, 1, 1, 512, yes</column>
 </table>
 </item>
 </section>
@@ -78,21 +78,21 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln75_fu_166_p2">+, 0, 0, 14, 13, 3</column>
+<column name="add_ln75_fu_230_p2">+, 0, 0, 14, 13, 4</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_sig_allocacmp_i_3">9, 2, 13, 26</column>
-<column name="i_fu_52">9, 2, 13, 26</column>
+<column name="i_fu_58">9, 2, 13, 26</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
-<column name="i_fu_52">13, 0, 13, 0</column>
+<column name="i_fu_58">13, 0, 13, 0</column>
 </table>
 </item>
 </section>
@@ -108,19 +108,35 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, lzCompress&lt;6, 4, 65536, 6, 1, 4096, 64&gt;_Pipeline_dict_flush, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, lzCompress&lt;6, 4, 65536, 6, 1, 4096, 64&gt;_Pipeline_dict_flush, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, lzCompress&lt;6, 4, 65536, 6, 1, 4096, 64&gt;_Pipeline_dict_flush, return value</column>
-<column name="dict_1_address0">out, 11, ap_memory, dict_1, array</column>
+<column name="dict_3_address0">out, 10, ap_memory, dict_3, array</column>
+<column name="dict_3_ce0">out, 1, ap_memory, dict_3, array</column>
+<column name="dict_3_we0">out, 1, ap_memory, dict_3, array</column>
+<column name="dict_3_d0">out, 432, ap_memory, dict_3, array</column>
+<column name="dict_3_address1">out, 10, ap_memory, dict_3, array</column>
+<column name="dict_3_ce1">out, 1, ap_memory, dict_3, array</column>
+<column name="dict_3_we1">out, 1, ap_memory, dict_3, array</column>
+<column name="dict_3_d1">out, 432, ap_memory, dict_3, array</column>
+<column name="dict_2_address0">out, 10, ap_memory, dict_2, array</column>
+<column name="dict_2_ce0">out, 1, ap_memory, dict_2, array</column>
+<column name="dict_2_we0">out, 1, ap_memory, dict_2, array</column>
+<column name="dict_2_d0">out, 432, ap_memory, dict_2, array</column>
+<column name="dict_2_address1">out, 10, ap_memory, dict_2, array</column>
+<column name="dict_2_ce1">out, 1, ap_memory, dict_2, array</column>
+<column name="dict_2_we1">out, 1, ap_memory, dict_2, array</column>
+<column name="dict_2_d1">out, 432, ap_memory, dict_2, array</column>
+<column name="dict_1_address0">out, 10, ap_memory, dict_1, array</column>
 <column name="dict_1_ce0">out, 1, ap_memory, dict_1, array</column>
 <column name="dict_1_we0">out, 1, ap_memory, dict_1, array</column>
 <column name="dict_1_d0">out, 432, ap_memory, dict_1, array</column>
-<column name="dict_1_address1">out, 11, ap_memory, dict_1, array</column>
+<column name="dict_1_address1">out, 10, ap_memory, dict_1, array</column>
 <column name="dict_1_ce1">out, 1, ap_memory, dict_1, array</column>
 <column name="dict_1_we1">out, 1, ap_memory, dict_1, array</column>
 <column name="dict_1_d1">out, 432, ap_memory, dict_1, array</column>
-<column name="dict_address0">out, 11, ap_memory, dict, array</column>
+<column name="dict_address0">out, 10, ap_memory, dict, array</column>
 <column name="dict_ce0">out, 1, ap_memory, dict, array</column>
 <column name="dict_we0">out, 1, ap_memory, dict, array</column>
 <column name="dict_d0">out, 432, ap_memory, dict, array</column>
-<column name="dict_address1">out, 11, ap_memory, dict, array</column>
+<column name="dict_address1">out, 10, ap_memory, dict, array</column>
 <column name="dict_ce1">out, 1, ap_memory, dict, array</column>
 <column name="dict_we1">out, 1, ap_memory, dict, array</column>
 <column name="dict_d1">out, 432, ap_memory, dict, array</column>

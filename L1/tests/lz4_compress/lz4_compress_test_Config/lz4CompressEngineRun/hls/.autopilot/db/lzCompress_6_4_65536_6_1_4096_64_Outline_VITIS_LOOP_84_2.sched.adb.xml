@@ -47,10 +47,10 @@ newFuncRoot:0 %i_1 = alloca i32 1
 
 <Node id="13" bw="8" op_0_bw="32">
 <![CDATA[
-newFuncRoot:1 %arrayidx54_promoted164 = alloca i32 1
+newFuncRoot:1 %arrayidx54_promoted168 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="arrayidx54_promoted164"/></StgValue>
+<StgValue><ssdm name="arrayidx54_promoted168"/></StgValue>
 </operation>
 
 <operation id="5" st_id="1" stage="1" lat="1">
@@ -62,10 +62,10 @@ newFuncRoot:1 %arrayidx54_promoted164 = alloca i32 1
 
 <Node id="14" bw="8" op_0_bw="32">
 <![CDATA[
-newFuncRoot:2 %arrayidx61_promoted166 = alloca i32 1
+newFuncRoot:2 %arrayidx61_promoted170 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="arrayidx61_promoted166"/></StgValue>
+<StgValue><ssdm name="arrayidx61_promoted170"/></StgValue>
 </operation>
 
 <operation id="6" st_id="1" stage="1" lat="1">
@@ -77,10 +77,10 @@ newFuncRoot:2 %arrayidx61_promoted166 = alloca i32 1
 
 <Node id="15" bw="8" op_0_bw="32">
 <![CDATA[
-newFuncRoot:3 %arrayidx71_promoted168 = alloca i32 1
+newFuncRoot:3 %arrayidx71_promoted172 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="arrayidx71_promoted168"/></StgValue>
+<StgValue><ssdm name="arrayidx71_promoted172"/></StgValue>
 </operation>
 
 <operation id="7" st_id="1" stage="1" lat="1">
@@ -92,10 +92,10 @@ newFuncRoot:3 %arrayidx71_promoted168 = alloca i32 1
 
 <Node id="16" bw="8" op_0_bw="32">
 <![CDATA[
-newFuncRoot:4 %arrayidx42_3_promoted170 = alloca i32 1
+newFuncRoot:4 %arrayidx42_3_promoted174 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="arrayidx42_3_promoted170"/></StgValue>
+<StgValue><ssdm name="arrayidx42_3_promoted174"/></StgValue>
 </operation>
 
 <operation id="8" st_id="1" stage="1" lat="1">
@@ -107,10 +107,10 @@ newFuncRoot:4 %arrayidx42_3_promoted170 = alloca i32 1
 
 <Node id="17" bw="8" op_0_bw="32">
 <![CDATA[
-newFuncRoot:5 %arrayidx48_promoted172 = alloca i32 1
+newFuncRoot:5 %arrayidx48_promoted176 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="arrayidx48_promoted172"/></StgValue>
+<StgValue><ssdm name="arrayidx48_promoted176"/></StgValue>
 </operation>
 
 <operation id="9" st_id="1" stage="1" lat="1">
@@ -389,7 +389,7 @@ for.inc22.split.arrayidx21.exit_crit_edge:0 %store_ln82 = store i8 %present_wind
 
 <Node id="38" bw="0" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-for.inc22.split.arrayidx21.exit_crit_edge:1 %store_ln86 = store i8 %present_window_5, i8 %arrayidx42_3_promoted170
+for.inc22.split.arrayidx21.exit_crit_edge:1 %store_ln86 = store i8 %present_window_5, i8 %arrayidx42_3_promoted174
 
 ]]></Node>
 <StgValue><ssdm name="store_ln86"/></StgValue>
@@ -440,7 +440,7 @@ arrayidx21.case.3:0 %store_ln82 = store i8 %present_window_5, i8 %present_window
 
 <Node id="42" bw="0" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-arrayidx21.case.3:1 %store_ln86 = store i8 %present_window_5, i8 %arrayidx71_promoted168
+arrayidx21.case.3:1 %store_ln86 = store i8 %present_window_5, i8 %arrayidx71_promoted172
 
 ]]></Node>
 <StgValue><ssdm name="store_ln86"/></StgValue>
@@ -491,7 +491,7 @@ arrayidx21.case.2:0 %store_ln82 = store i8 %present_window_5, i8 %present_window
 
 <Node id="46" bw="0" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-arrayidx21.case.2:1 %store_ln86 = store i8 %present_window_5, i8 %arrayidx61_promoted166
+arrayidx21.case.2:1 %store_ln86 = store i8 %present_window_5, i8 %arrayidx61_promoted170
 
 ]]></Node>
 <StgValue><ssdm name="store_ln86"/></StgValue>
@@ -542,7 +542,7 @@ arrayidx21.case.1:0 %store_ln82 = store i8 %present_window_5, i8 %present_window
 
 <Node id="50" bw="0" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-arrayidx21.case.1:1 %store_ln86 = store i8 %present_window_5, i8 %arrayidx54_promoted164
+arrayidx21.case.1:1 %store_ln86 = store i8 %present_window_5, i8 %arrayidx54_promoted168
 
 ]]></Node>
 <StgValue><ssdm name="store_ln86"/></StgValue>
@@ -599,7 +599,7 @@ arrayidx21.case.5:0 %store_ln82 = store i8 %present_window_5, i8 %present_window
 
 <Node id="54" bw="0" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-arrayidx21.case.5:1 %store_ln86 = store i8 %present_window_5, i8 %arrayidx48_promoted172
+arrayidx21.case.5:1 %store_ln86 = store i8 %present_window_5, i8 %arrayidx48_promoted176
 
 ]]></Node>
 <StgValue><ssdm name="store_ln86"/></StgValue>
@@ -683,10 +683,10 @@ arrayidx21.exit:2 %br_ln84 = br void %for.inc22
 
 <Node id="61" bw="8" op_0_bw="8">
 <![CDATA[
-lz_compress.exitStub:0 %arrayidx54_promoted164_load = load i8 %arrayidx54_promoted164
+lz_compress.exitStub:0 %arrayidx54_promoted168_load = load i8 %arrayidx54_promoted168
 
 ]]></Node>
-<StgValue><ssdm name="arrayidx54_promoted164_load"/></StgValue>
+<StgValue><ssdm name="arrayidx54_promoted168_load"/></StgValue>
 </operation>
 
 <operation id="44" st_id="2" stage="1" lat="1">
@@ -699,10 +699,10 @@ lz_compress.exitStub:0 %arrayidx54_promoted164_load = load i8 %arrayidx54_promot
 
 <Node id="62" bw="8" op_0_bw="8">
 <![CDATA[
-lz_compress.exitStub:1 %arrayidx61_promoted166_load = load i8 %arrayidx61_promoted166
+lz_compress.exitStub:1 %arrayidx61_promoted170_load = load i8 %arrayidx61_promoted170
 
 ]]></Node>
-<StgValue><ssdm name="arrayidx61_promoted166_load"/></StgValue>
+<StgValue><ssdm name="arrayidx61_promoted170_load"/></StgValue>
 </operation>
 
 <operation id="45" st_id="2" stage="1" lat="1">
@@ -715,10 +715,10 @@ lz_compress.exitStub:1 %arrayidx61_promoted166_load = load i8 %arrayidx61_promot
 
 <Node id="63" bw="8" op_0_bw="8">
 <![CDATA[
-lz_compress.exitStub:2 %arrayidx71_promoted168_load = load i8 %arrayidx71_promoted168
+lz_compress.exitStub:2 %arrayidx71_promoted172_load = load i8 %arrayidx71_promoted172
 
 ]]></Node>
-<StgValue><ssdm name="arrayidx71_promoted168_load"/></StgValue>
+<StgValue><ssdm name="arrayidx71_promoted172_load"/></StgValue>
 </operation>
 
 <operation id="46" st_id="2" stage="1" lat="1">
@@ -731,10 +731,10 @@ lz_compress.exitStub:2 %arrayidx71_promoted168_load = load i8 %arrayidx71_promot
 
 <Node id="64" bw="8" op_0_bw="8">
 <![CDATA[
-lz_compress.exitStub:3 %arrayidx42_3_promoted170_load = load i8 %arrayidx42_3_promoted170
+lz_compress.exitStub:3 %arrayidx42_3_promoted174_load = load i8 %arrayidx42_3_promoted174
 
 ]]></Node>
-<StgValue><ssdm name="arrayidx42_3_promoted170_load"/></StgValue>
+<StgValue><ssdm name="arrayidx42_3_promoted174_load"/></StgValue>
 </operation>
 
 <operation id="47" st_id="2" stage="1" lat="1">
@@ -747,10 +747,10 @@ lz_compress.exitStub:3 %arrayidx42_3_promoted170_load = load i8 %arrayidx42_3_pr
 
 <Node id="65" bw="8" op_0_bw="8">
 <![CDATA[
-lz_compress.exitStub:4 %arrayidx48_promoted172_load = load i8 %arrayidx48_promoted172
+lz_compress.exitStub:4 %arrayidx48_promoted176_load = load i8 %arrayidx48_promoted176
 
 ]]></Node>
-<StgValue><ssdm name="arrayidx48_promoted172_load"/></StgValue>
+<StgValue><ssdm name="arrayidx48_promoted176_load"/></StgValue>
 </operation>
 
 <operation id="48" st_id="2" stage="1" lat="1">
@@ -923,7 +923,7 @@ lz_compress.exitStub:14 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i8P0A, i
 
 <Node id="76" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8">
 <![CDATA[
-lz_compress.exitStub:15 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %arrayidx48_promoted172_out, i8 %arrayidx48_promoted172_load
+lz_compress.exitStub:15 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %arrayidx48_promoted176_out, i8 %arrayidx48_promoted176_load
 
 ]]></Node>
 <StgValue><ssdm name="write_ln0"/></StgValue>
@@ -939,7 +939,7 @@ lz_compress.exitStub:15 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i8P0A, i
 
 <Node id="77" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8">
 <![CDATA[
-lz_compress.exitStub:16 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %arrayidx42_3_promoted170_out, i8 %arrayidx42_3_promoted170_load
+lz_compress.exitStub:16 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %arrayidx42_3_promoted174_out, i8 %arrayidx42_3_promoted174_load
 
 ]]></Node>
 <StgValue><ssdm name="write_ln0"/></StgValue>
@@ -955,7 +955,7 @@ lz_compress.exitStub:16 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i8P0A, i
 
 <Node id="78" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8">
 <![CDATA[
-lz_compress.exitStub:17 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %arrayidx71_promoted168_out, i8 %arrayidx71_promoted168_load
+lz_compress.exitStub:17 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %arrayidx71_promoted172_out, i8 %arrayidx71_promoted172_load
 
 ]]></Node>
 <StgValue><ssdm name="write_ln0"/></StgValue>
@@ -971,7 +971,7 @@ lz_compress.exitStub:17 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i8P0A, i
 
 <Node id="79" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8">
 <![CDATA[
-lz_compress.exitStub:18 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %arrayidx61_promoted166_out, i8 %arrayidx61_promoted166_load
+lz_compress.exitStub:18 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %arrayidx61_promoted170_out, i8 %arrayidx61_promoted170_load
 
 ]]></Node>
 <StgValue><ssdm name="write_ln0"/></StgValue>
@@ -987,7 +987,7 @@ lz_compress.exitStub:18 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i8P0A, i
 
 <Node id="80" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8">
 <![CDATA[
-lz_compress.exitStub:19 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %arrayidx54_promoted164_out, i8 %arrayidx54_promoted164_load
+lz_compress.exitStub:19 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %arrayidx54_promoted168_out, i8 %arrayidx54_promoted168_load
 
 ]]></Node>
 <StgValue><ssdm name="write_ln0"/></StgValue>

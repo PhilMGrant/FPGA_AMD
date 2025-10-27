@@ -1856,7 +1856,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>sparsemux_13_3_32_1_1_U59</rtlName>
+              <rtlName>sparsemux_13_3_32_1_1_U65</rtlName>
               <control>auto</control>
               <opType>sparsemux</opType>
               <implIndex>compactencoding_dontcare</implIndex>
@@ -4353,7 +4353,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_13_3_32_1_1_U59 (sparsemux_13_3_32_1_1)</first>
+          <first>sparsemux_13_3_32_1_1_U65 (sparsemux_13_3_32_1_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -5081,7 +5081,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_13_3_32_1_1_U59</first>
+          <first>sparsemux_13_3_32_1_1_U65</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -5100,7 +5100,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_13_3_32_1_1_U59 (sparsemux_13_3_32_1_1)</first>
+          <first>sparsemux_13_3_32_1_1_U65 (sparsemux_13_3_32_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>

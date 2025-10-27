@@ -56,7 +56,7 @@ set axilite_register_dict [dict create]
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 132 \
+    id 138 \
     name inStream \
     type fifo \
     dir I \
@@ -71,7 +71,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 133 \
+    id 139 \
     name lz4Out \
     type fifo \
     dir O \
@@ -86,7 +86,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 134 \
+    id 140 \
     name lz4Out_eos \
     type fifo \
     dir O \
@@ -101,7 +101,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 135 \
+    id 141 \
     name lz4OutSize \
     type fifo \
     dir O \
@@ -116,7 +116,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 136 \
+    id 142 \
     name max_lit_limit \
     type other \
     dir O \
@@ -131,7 +131,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 137 \
+    id 143 \
     name input_size \
     type other \
     dir I \
