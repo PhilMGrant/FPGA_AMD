@@ -803,7 +803,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>outValue</originalName>
-              <rtlName>sparsemux_11_3_8_1_1_U29</rtlName>
+              <rtlName>sparsemux_11_3_8_1_1_U35</rtlName>
               <control>auto</control>
               <opType>sparsemux</opType>
               <implIndex>compactencoding_dontcare</implIndex>
@@ -951,7 +951,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.54</m_delay>
+          <m_delay>3.15</m_delay>
           <m_topoIndex>17</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -2127,7 +2127,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_11_3_8_1_1_U29 (sparsemux_11_3_8_1_1)</first>
+          <first>sparsemux_11_3_8_1_1_U35 (sparsemux_11_3_8_1_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -2495,7 +2495,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_11_3_8_1_1_U29</first>
+          <first>sparsemux_11_3_8_1_1_U35</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -2506,7 +2506,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>sparsemux_11_3_8_1_1_U29 (sparsemux_11_3_8_1_1)</first>
+          <first>sparsemux_11_3_8_1_1_U35 (sparsemux_11_3_8_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>

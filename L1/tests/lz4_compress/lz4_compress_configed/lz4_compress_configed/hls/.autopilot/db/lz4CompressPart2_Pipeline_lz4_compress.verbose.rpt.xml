@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'lz4CompressPart2_Pipeline_lz4_compress'" level="0">
-<item name = "Date">Sun Oct 26 16:56:36 2025
+<item name = "Date">Mon Oct 27 16:28:59 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">lz4_compress_configed</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">15.00 ns, 9.168 ns, 1.50 ns</column>
+<column name="ap_clk">7.00 ns, 5.702 ns, 0.70 ns</column>
 </table>
 </item>
 </section>
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- lz4_compress">?, ?, 3, 3, 4, ?, yes</column>
+<column name="- lz4_compress">?, ?, 5, 4, 4, ?, yes</column>
 </table>
 </item>
 </section>
@@ -48,12 +48,12 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 800, -</column>
+<column name="Expression">-, -, 0, 806, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, 0, 331, -</column>
-<column name="Register">-, -, 267, -, -</column>
+<column name="Multiplexer">-, -, 0, 345, -</column>
+<column name="Register">-, -, 378, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, ~0, 2, 0</specialColumn>
 </table>
@@ -78,139 +78,155 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln228_fu_733_p2">+, 0, 0, 16, 16, 3</column>
-<column name="compressedSize_2_fu_916_p2">+, 0, 0, 39, 32, 1</column>
-<column name="inIdx_3_fu_749_p2">+, 0, 0, 39, 32, 32</column>
-<column name="lit_length_2_fu_814_p2">+, 0, 0, 23, 16, 5</column>
-<column name="lit_length_5_fu_692_p2">+, 0, 0, 23, 16, 9</column>
-<column name="match_length_13_fu_862_p2">+, 0, 0, 23, 16, 5</column>
-<column name="match_length_15_fu_515_p2">+, 0, 0, 23, 16, 9</column>
-<column name="match_offset_plus_one_1_fu_423_p2">+, 0, 0, 23, 16, 1</column>
-<column name="sum_with_4_low_fu_739_p2">+, 0, 0, 16, 16, 16</column>
-<column name="write_lit_length_2_fu_617_p2">+, 0, 0, 23, 16, 2</column>
-<column name="ap_block_pp0_stage0_01001_grp2">and, 0, 0, 2, 1, 1</column>
-<column name="ap_block_pp0_stage0_01001_grp3">and, 0, 0, 2, 1, 1</column>
-<column name="ap_block_pp0_stage0_subdone">and, 0, 0, 2, 1, 1</column>
+<column name="add_ln255_fu_507_p2">+, 0, 0, 16, 16, 3</column>
+<column name="compressedSize_2_fu_423_p2">+, 0, 0, 39, 32, 1</column>
+<column name="inIdx_3_fu_757_p2">+, 0, 0, 39, 32, 32</column>
+<column name="lit_length_2_fu_819_p2">+, 0, 0, 23, 16, 5</column>
+<column name="lit_length_5_fu_717_p2">+, 0, 0, 23, 16, 9</column>
+<column name="match_length_13_fu_865_p2">+, 0, 0, 23, 16, 5</column>
+<column name="match_length_15_fu_565_p2">+, 0, 0, 23, 16, 9</column>
+<column name="match_offset_plus_one_1_fu_443_p2">+, 0, 0, 23, 16, 1</column>
+<column name="sum_with_4_low_fu_513_p2">+, 0, 0, 16, 16, 16</column>
+<column name="write_lit_length_2_fu_486_p2">+, 0, 0, 23, 16, 2</column>
+<column name="ap_block_pp0_stage0_11001_grp2">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_pp0_stage1_01001">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_pp0_stage1_01001_grp3">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_pp0_stage1_01001_grp4">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_pp0_stage2_11001_grp1">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state3_pp0_stage2_iter0_grp1">and, 0, 0, 2, 1, 1</column>
-<column name="ap_block_state4_pp0_stage0_iter1_grp3">and, 0, 0, 2, 1, 1</column>
-<column name="ap_condition_149">and, 0, 0, 2, 1, 1</column>
-<column name="ap_condition_711">and, 0, 0, 2, 1, 1</column>
-<column name="ap_condition_721">and, 0, 0, 2, 1, 1</column>
-<column name="ap_condition_725">and, 0, 0, 2, 1, 1</column>
-<column name="ap_condition_730">and, 0, 0, 2, 1, 1</column>
-<column name="ap_condition_733">and, 0, 0, 2, 1, 1</column>
-<column name="ap_condition_737">and, 0, 0, 2, 1, 1</column>
-<column name="ap_condition_740">and, 0, 0, 2, 1, 1</column>
-<column name="ap_condition_743">and, 0, 0, 2, 1, 1</column>
-<column name="ap_condition_746">and, 0, 0, 2, 1, 1</column>
-<column name="ap_condition_749">and, 0, 0, 2, 1, 1</column>
-<column name="ap_predicate_op56_read_state3">and, 0, 0, 2, 1, 1</column>
-<column name="is_special_end_1_fu_387_p2">and, 0, 0, 2, 1, 1</column>
-<column name="readOffsetFlag_6_fu_637_p2">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln182_fu_329_p2">icmp, 0, 0, 39, 32, 32</column>
-<column name="icmp_ln201_1_fu_381_p2">icmp, 0, 0, 23, 16, 10</column>
-<column name="icmp_ln201_fu_375_p2">icmp, 0, 0, 23, 16, 10</column>
-<column name="icmp_ln310_fu_623_p2">icmp, 0, 0, 23, 16, 1</column>
-<column name="is_normal_end_1_fu_399_p2">icmp, 0, 0, 23, 16, 1</column>
-<column name="lit_len_ge_15_1_fu_405_p2">icmp, 0, 0, 39, 32, 4</column>
-<column name="lit_len_ge_255_fu_673_p2">icmp, 0, 0, 23, 16, 8</column>
-<column name="lit_len_gt_0_1_fu_411_p2">icmp, 0, 0, 39, 32, 1</column>
-<column name="match_len_ge_15_1_fu_417_p2">icmp, 0, 0, 23, 16, 4</column>
-<column name="match_len_ge_255_fu_496_p2">icmp, 0, 0, 23, 16, 8</column>
-<column name="should_write_fu_350_p2">icmp, 0, 0, 39, 32, 32</column>
-<column name="ap_block_state4_pp0_stage0_iter1_grp2">or, 0, 0, 2, 1, 1</column>
-<column name="lit_ending_fu_767_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln182_fu_340_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln202_fu_393_p2">or, 0, 0, 16, 16, 16</column>
-<column name="or_ln246_fu_761_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln270_fu_844_p2">or, 0, 0, 2, 1, 1</column>
-<column name="readOffsetFlag_8_fu_527_p2">or, 0, 0, 2, 1, 1</column>
-<column name="inIdx_4_fu_754_p3">select, 0, 0, 32, 1, 32</column>
-<column name="lit_length_3_fu_820_p3">select, 0, 0, 16, 1, 1</column>
-<column name="lit_length_4_fu_828_p3">select, 0, 0, 16, 1, 16</column>
-<column name="lit_length_6_fu_698_p3">select, 0, 0, 16, 1, 16</column>
-<column name="lit_token_1_fu_785_p3">select, 0, 0, 4, 1, 2</column>
-<column name="lit_token_fu_777_p3">select, 0, 0, 4, 1, 4</column>
-<column name="match_length_14_fu_868_p3">select, 0, 0, 16, 1, 16</column>
-<column name="match_length_16_fu_532_p3">select, 0, 0, 16, 1, 16</column>
-<column name="match_token_1_fu_797_p3">select, 0, 0, 4, 1, 2</column>
-<column name="next_state_2_fu_629_p3">select, 0, 0, 4, 1, 1</column>
-<column name="next_state_3_fu_643_p3">select, 0, 0, 3, 1, 3</column>
-<column name="next_state_tmp_fu_850_p3">select, 0, 0, 4, 1, 3</column>
-<column name="outValue_10_fu_506_p3">select, 0, 0, 8, 1, 2</column>
-<column name="outValue_6_fu_683_p3">select, 0, 0, 8, 1, 2</column>
-<column name="select_ln152_fu_706_p3">select, 0, 0, 2, 1, 1</column>
-<column name="select_ln153_fu_540_p3">select, 0, 0, 2, 1, 2</column>
-<column name="select_ln270_1_fu_836_p3">select, 0, 0, 2, 1, 1</column>
-<column name="select_ln330_fu_575_p3">select, 0, 0, 2, 1, 2</column>
+<column name="ap_block_state5_pp0_stage0_iter1_grp2">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state6_pp0_stage1_iter1_grp3">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state6_pp0_stage1_iter1_grp4">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_172">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_779">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_785">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_789">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_794">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_798">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_804">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_808">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_812">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_816">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_819">and, 0, 0, 2, 1, 1</column>
+<column name="ap_predicate_op130_read_state5">and, 0, 0, 2, 1, 1</column>
+<column name="ap_predicate_op61_read_state3">and, 0, 0, 2, 1, 1</column>
+<column name="is_special_end_1_fu_438_p2">and, 0, 0, 2, 1, 1</column>
+<column name="readOffsetFlag_6_fu_670_p2">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln209_fu_335_p2">icmp, 0, 0, 39, 32, 32</column>
+<column name="icmp_ln228_1_fu_433_p2">icmp, 0, 0, 23, 16, 10</column>
+<column name="icmp_ln228_fu_377_p2">icmp, 0, 0, 23, 16, 10</column>
+<column name="icmp_ln337_fu_492_p2">icmp, 0, 0, 23, 16, 1</column>
+<column name="is_normal_end_1_fu_389_p2">icmp, 0, 0, 23, 16, 1</column>
+<column name="lit_len_ge_15_1_fu_395_p2">icmp, 0, 0, 39, 32, 4</column>
+<column name="lit_len_ge_255_fu_699_p2">icmp, 0, 0, 23, 16, 8</column>
+<column name="lit_len_gt_0_1_fu_401_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="match_len_ge_15_1_fu_407_p2">icmp, 0, 0, 23, 16, 4</column>
+<column name="match_len_ge_255_fu_547_p2">icmp, 0, 0, 23, 16, 8</column>
+<column name="should_write_fu_352_p2">icmp, 0, 0, 39, 32, 32</column>
+<column name="lit_ending_fu_775_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln209_fu_346_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln229_fu_383_p2">or, 0, 0, 16, 16, 16</column>
+<column name="or_ln273_fu_769_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln297_fu_847_p2">or, 0, 0, 2, 1, 1</column>
+<column name="readOffsetFlag_8_fu_577_p2">or, 0, 0, 2, 1, 1</column>
+<column name="inIdx_4_fu_762_p3">select, 0, 0, 32, 1, 32</column>
+<column name="lit_length_3_fu_824_p3">select, 0, 0, 16, 1, 1</column>
+<column name="lit_length_4_fu_831_p3">select, 0, 0, 16, 1, 16</column>
+<column name="lit_length_6_fu_723_p3">select, 0, 0, 16, 1, 16</column>
+<column name="lit_token_1_fu_792_p3">select, 0, 0, 4, 1, 2</column>
+<column name="lit_token_fu_784_p3">select, 0, 0, 4, 1, 4</column>
+<column name="match_length_14_fu_870_p3">select, 0, 0, 16, 1, 16</column>
+<column name="match_length_16_fu_582_p3">select, 0, 0, 16, 1, 16</column>
+<column name="match_token_1_fu_803_p3">select, 0, 0, 4, 1, 2</column>
+<column name="next_state_2_fu_662_p3">select, 0, 0, 4, 1, 1</column>
+<column name="next_state_3_fu_675_p3">select, 0, 0, 3, 1, 3</column>
+<column name="next_state_tmp_fu_853_p3">select, 0, 0, 4, 1, 3</column>
+<column name="outValue_10_fu_557_p3">select, 0, 0, 8, 1, 2</column>
+<column name="outValue_6_fu_709_p3">select, 0, 0, 8, 1, 2</column>
+<column name="select_ln179_fu_731_p3">select, 0, 0, 2, 1, 1</column>
+<column name="select_ln180_fu_590_p3">select, 0, 0, 2, 1, 2</column>
+<column name="select_ln297_1_fu_839_p3">select, 0, 0, 2, 1, 1</column>
+<column name="select_ln357_fu_624_p3">select, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
-<column name="readOffsetFlag_7_fu_583_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln182_fu_334_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln338_fu_521_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="readOffsetFlag_7_fu_632_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln209_fu_340_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln365_fu_571_p2">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">20, 4, 1, 4</column>
+<column name="ap_NS_fsm">25, 5, 1, 5</column>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter0">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter0_reg">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
-<column name="ap_phi_mux_outValue_11_phi_fu_223_p14">42, 8, 8, 64</column>
-<column name="compressedSize_fu_164">9, 2, 32, 64</column>
-<column name="extra_match_len_fu_120">9, 2, 1, 2</column>
-<column name="inIdx_fu_112">9, 2, 32, 64</column>
-<column name="is_normal_end_fu_148">9, 2, 1, 2</column>
-<column name="is_special_end_fu_144">9, 2, 1, 2</column>
+<column name="ap_phi_reg_pp0_iter1_outValue_11_reg_222">42, 8, 8, 64</column>
+<column name="compressedSize_fu_166">9, 2, 32, 64</column>
+<column name="extra_match_len_fu_122">9, 2, 1, 2</column>
+<column name="inIdx_fu_114">9, 2, 32, 64</column>
+<column name="is_normal_end_fu_150">9, 2, 1, 2</column>
+<column name="is_special_end_fu_146">9, 2, 1, 2</column>
 <column name="lenOffset_Stream_blk_n">9, 2, 1, 2</column>
-<column name="lit_len_ge_15_fu_152">9, 2, 1, 2</column>
-<column name="lit_len_gt_0_fu_156">9, 2, 1, 2</column>
-<column name="lit_length_fu_124">14, 3, 16, 48</column>
+<column name="lit_len_ge_15_fu_154">9, 2, 1, 2</column>
+<column name="lit_len_gt_0_fu_158">9, 2, 1, 2</column>
+<column name="lit_length_fu_126">14, 3, 16, 48</column>
 <column name="lit_outStream_blk_n">9, 2, 1, 2</column>
 <column name="lz4Out_blk_n">9, 2, 1, 2</column>
 <column name="lz4Out_eos_blk_n">9, 2, 1, 2</column>
-<column name="match_len_ge_15_fu_160">9, 2, 1, 2</column>
-<column name="match_length_fu_128">14, 3, 16, 48</column>
-<column name="match_offset_plus_one_fu_176">9, 2, 16, 32</column>
-<column name="next_state_fu_136">37, 7, 3, 21</column>
-<column name="readOffsetFlag_1_fu_116">9, 2, 1, 2</column>
-<column name="readOffsetFlag_fu_140">37, 7, 1, 7</column>
-<column name="write_lit_length_fu_132">14, 3, 16, 48</column>
+<column name="match_len_ge_15_fu_162">9, 2, 1, 2</column>
+<column name="match_length_fu_130">14, 3, 16, 48</column>
+<column name="match_offset_plus_one_fu_178">9, 2, 16, 32</column>
+<column name="next_state_fu_138">37, 7, 3, 21</column>
+<column name="readOffsetFlag_1_fu_118">9, 2, 1, 2</column>
+<column name="readOffsetFlag_fu_142">37, 7, 1, 7</column>
+<column name="write_lit_length_fu_134">14, 3, 16, 48</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">3, 0, 3, 0</column>
+<column name="ap_CS_fsm">4, 0, 4, 0</column>
 <column name="ap_block_pp0_stage0_subdone_grp0_done_reg">1, 0, 1, 0</column>
-<column name="ap_block_pp0_stage0_subdone_grp2_done_reg">1, 0, 1, 0</column>
-<column name="ap_block_pp0_stage0_subdone_grp3_done_reg">1, 0, 1, 0</column>
+<column name="ap_block_pp0_stage1_subdone_grp3_done_reg">1, 0, 1, 0</column>
+<column name="ap_block_pp0_stage1_subdone_grp4_done_reg">1, 0, 1, 0</column>
 <column name="ap_block_pp0_stage2_subdone_grp0_done_reg">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter0_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="compressedSize_1_reg_1077">32, 0, 32, 0</column>
-<column name="compressedSize_fu_164">32, 0, 32, 0</column>
-<column name="extra_match_len_fu_120">1, 0, 1, 0</column>
-<column name="inIdx_2_reg_1063">32, 0, 32, 0</column>
-<column name="inIdx_fu_112">32, 0, 32, 0</column>
-<column name="is_normal_end_fu_148">1, 0, 1, 0</column>
-<column name="is_special_end_fu_144">1, 0, 1, 0</column>
-<column name="lit_len_ge_15_fu_152">1, 0, 1, 0</column>
-<column name="lit_len_gt_0_fu_156">1, 0, 1, 0</column>
-<column name="lit_len_tmp_fu_172">32, 0, 32, 0</column>
-<column name="lit_length_fu_124">16, 0, 16, 0</column>
-<column name="match_len_ge_15_fu_160">1, 0, 1, 0</column>
-<column name="match_len_tmp_fu_168">16, 0, 16, 0</column>
-<column name="match_length_fu_128">16, 0, 16, 0</column>
-<column name="match_offset_plus_one_fu_176">16, 0, 16, 0</column>
-<column name="next_state_fu_136">3, 0, 32, 29</column>
-<column name="next_state_load_reg_1086">3, 0, 32, 29</column>
-<column name="or_ln182_reg_1073">1, 0, 1, 0</column>
-<column name="readOffsetFlag_1_fu_116">1, 0, 1, 0</column>
-<column name="readOffsetFlag_3_reg_1068">1, 0, 1, 0</column>
-<column name="readOffsetFlag_fu_140">1, 0, 1, 0</column>
-<column name="should_write_reg_1082">1, 0, 1, 0</column>
-<column name="write_lit_length_fu_132">16, 0, 16, 0</column>
+<column name="ap_phi_reg_pp0_iter1_outValue_11_reg_222">8, 0, 8, 0</column>
+<column name="compressedSize_1_reg_1055">32, 0, 32, 0</column>
+<column name="compressedSize_fu_166">32, 0, 32, 0</column>
+<column name="extra_match_len_fu_122">1, 0, 1, 0</column>
+<column name="icmp_ln228_reg_1074">1, 0, 1, 0</column>
+<column name="icmp_ln337_reg_1114">1, 0, 1, 0</column>
+<column name="inIdx_2_reg_1045">32, 0, 32, 0</column>
+<column name="inIdx_fu_114">32, 0, 32, 0</column>
+<column name="is_normal_end_1_reg_1079">1, 0, 1, 0</column>
+<column name="is_normal_end_fu_150">1, 0, 1, 0</column>
+<column name="is_special_end_fu_146">1, 0, 1, 0</column>
+<column name="lit_len_ge_15_1_reg_1084">1, 0, 1, 0</column>
+<column name="lit_len_ge_15_fu_154">1, 0, 1, 0</column>
+<column name="lit_len_gt_0_1_reg_1089">1, 0, 1, 0</column>
+<column name="lit_len_gt_0_fu_158">1, 0, 1, 0</column>
+<column name="lit_len_tmp_2_reg_1109">32, 0, 32, 0</column>
+<column name="lit_len_tmp_fu_174">32, 0, 32, 0</column>
+<column name="lit_length_7_reg_1120">16, 0, 16, 0</column>
+<column name="lit_length_fu_126">16, 0, 16, 0</column>
+<column name="match_len_ge_15_1_reg_1094">1, 0, 1, 0</column>
+<column name="match_len_ge_15_fu_162">1, 0, 1, 0</column>
+<column name="match_len_tmp_3_reg_1103">16, 0, 16, 0</column>
+<column name="match_len_tmp_fu_170">16, 0, 16, 0</column>
+<column name="match_length_fu_130">16, 0, 16, 0</column>
+<column name="match_off_tmp_reg_1068">16, 0, 16, 0</column>
+<column name="match_offset_plus_one_fu_178">16, 0, 16, 0</column>
+<column name="next_state_fu_138">3, 0, 32, 29</column>
+<column name="next_state_load_reg_1099">3, 0, 32, 29</column>
+<column name="or_ln209_reg_1060">1, 0, 1, 0</column>
+<column name="readOffsetFlag_1_fu_118">1, 0, 1, 0</column>
+<column name="readOffsetFlag_3_reg_1050">1, 0, 1, 0</column>
+<column name="readOffsetFlag_fu_142">1, 0, 1, 0</column>
+<column name="should_write_reg_1064">1, 0, 1, 0</column>
+<column name="sum_with_4_low_reg_1126">16, 0, 16, 0</column>
+<column name="write_lit_length_fu_134">16, 0, 16, 0</column>
 </table>
 </item>
 </section>
@@ -229,8 +245,8 @@
 <column name="lit_outStream_dout">in, 8, ap_fifo, lit_outStream, pointer</column>
 <column name="lit_outStream_empty_n">in, 1, ap_fifo, lit_outStream, pointer</column>
 <column name="lit_outStream_read">out, 1, ap_fifo, lit_outStream, pointer</column>
-<column name="lit_outStream_num_data_valid">in, 13, ap_fifo, lit_outStream, pointer</column>
-<column name="lit_outStream_fifo_cap">in, 13, ap_fifo, lit_outStream, pointer</column>
+<column name="lit_outStream_num_data_valid">in, 14, ap_fifo, lit_outStream, pointer</column>
+<column name="lit_outStream_fifo_cap">in, 14, ap_fifo, lit_outStream, pointer</column>
 <column name="lz4Out_din">out, 8, ap_fifo, lz4Out, pointer</column>
 <column name="lz4Out_full_n">in, 1, ap_fifo, lz4Out, pointer</column>
 <column name="lz4Out_write">out, 1, ap_fifo, lz4Out, pointer</column>
@@ -240,8 +256,8 @@
 <column name="lenOffset_Stream_dout">in, 64, ap_fifo, lenOffset_Stream, pointer</column>
 <column name="lenOffset_Stream_empty_n">in, 1, ap_fifo, lenOffset_Stream, pointer</column>
 <column name="lenOffset_Stream_read">out, 1, ap_fifo, lenOffset_Stream, pointer</column>
-<column name="lenOffset_Stream_num_data_valid">in, 6, ap_fifo, lenOffset_Stream, pointer</column>
-<column name="lenOffset_Stream_fifo_cap">in, 6, ap_fifo, lenOffset_Stream, pointer</column>
+<column name="lenOffset_Stream_num_data_valid">in, 7, ap_fifo, lenOffset_Stream, pointer</column>
+<column name="lenOffset_Stream_fifo_cap">in, 7, ap_fifo, lenOffset_Stream, pointer</column>
 <column name="input_size_4">in, 32, ap_none, input_size_4, scalar</column>
 <column name="compressedSize_out">out, 32, ap_vld, compressedSize_out, pointer</column>
 <column name="compressedSize_out_ap_vld">out, 1, ap_vld, compressedSize_out, pointer</column>

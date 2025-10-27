@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter'" level="0">
-<item name = "Date">Sun Oct 26 16:56:33 2025
+<item name = "Date">Mon Oct 27 16:28:56 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">lz4_compress_configed</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">15.00 ns, 10.597 ns, 1.50 ns</column>
+<column name="ap_clk">7.00 ns, 5.951 ns, 0.70 ns</column>
 </table>
 </item>
 </section>
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- lz_bestMatchFilter">?, ?, 2, 1, 1, ?, yes</column>
+<column name="- lz_bestMatchFilter">?, ?, 3, 1, 1, ?, yes</column>
 </table>
 </item>
 </section>
@@ -53,7 +53,7 @@
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, 0, 108, -</column>
-<column name="Register">-, -, 229, -, -</column>
+<column name="Register">-, -, 263, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
 </table>
@@ -88,7 +88,7 @@
 <column name="and_ln355_2_fu_485_p2">and, 0, 0, 2, 1, 1</column>
 <column name="and_ln355_3_fu_491_p2">and, 0, 0, 2, 1, 1</column>
 <column name="and_ln355_fu_473_p2">and, 0, 0, 2, 1, 1</column>
-<column name="ap_block_pp0_stage0_01001_grp1">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state2_pp0_stage0_iter1_grp1">and, 0, 0, 2, 1, 1</column>
 <column name="best_match_1_fu_497_p2">and, 0, 0, 2, 1, 1</column>
 <column name="icmp_ln339_fu_251_p2">icmp, 0, 0, 39, 32, 32</column>
 <column name="icmp_ln355_1_fu_341_p2">icmp, 0, 0, 14, 9, 9</column>
@@ -97,7 +97,7 @@
 <column name="icmp_ln355_4_fu_431_p2">icmp, 0, 0, 14, 9, 9</column>
 <column name="icmp_ln355_5_fu_461_p2">icmp, 0, 0, 14, 9, 9</column>
 <column name="icmp_ln355_fu_311_p2">icmp, 0, 0, 15, 8, 8</column>
-<column name="ap_block_state2_pp0_stage0_iter1_grp1">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_pp0_stage0_01001_grp1">or, 0, 0, 2, 1, 1</column>
 <column name="bestMatchStream_din">select, 0, 0, 32, 1, 32</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 <column name="best_match_fu_317_p2">xor, 0, 0, 2, 1, 2</column>
@@ -111,7 +111,7 @@
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
-<column name="ap_loop_exit_ready_pp0_iter1_reg">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter2">9, 2, 1, 2</column>
 <column name="ap_sig_allocacmp_i_8">9, 2, 32, 64</column>
 <column name="bestMatchStream_blk_n">9, 2, 1, 2</column>
 <column name="compareValue_1_fu_100">9, 2, 32, 64</column>
@@ -129,15 +129,18 @@
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
 <column name="ap_loop_exit_ready_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="best_match_1_reg_615">1, 0, 1, 0</column>
 <column name="compareValue_1_fu_100">32, 0, 32, 0</column>
 <column name="compareValue_2_fu_104">32, 0, 32, 0</column>
 <column name="compareValue_3_fu_108">32, 0, 32, 0</column>
 <column name="compareValue_4_fu_112">32, 0, 32, 0</column>
 <column name="compareValue_fu_96">32, 0, 32, 0</column>
 <column name="i_fu_88">32, 0, 32, 0</column>
-<column name="icmp_ln339_reg_608">1, 0, 1, 0</column>
+<column name="icmp_ln339_reg_605">1, 0, 1, 0</column>
 <column name="outValue_fu_92">32, 0, 32, 0</column>
+<column name="outValue_load_reg_609">32, 0, 32, 0</column>
 </table>
 </item>
 </section>

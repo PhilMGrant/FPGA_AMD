@@ -55,13 +55,13 @@ output   ap_ready;
 input  [7:0] lit_outStream_dout;
 input   lit_outStream_empty_n;
 output   lit_outStream_read;
-input  [13:0] lit_outStream_num_data_valid;
-input  [13:0] lit_outStream_fifo_cap;
+input  [17:0] lit_outStream_num_data_valid;
+input  [17:0] lit_outStream_fifo_cap;
 input  [63:0] lenOffset_Stream_dout;
 input   lenOffset_Stream_empty_n;
 output   lenOffset_Stream_read;
-input  [6:0] lenOffset_Stream_num_data_valid;
-input  [6:0] lenOffset_Stream_fifo_cap;
+input  [10:0] lenOffset_Stream_num_data_valid;
+input  [10:0] lenOffset_Stream_fifo_cap;
 output  [7:0] lz4Out_din;
 input   lz4Out_full_n;
 output   lz4Out_write;
@@ -137,8 +137,8 @@ lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress grp_lz4CompressPart2
     .lit_outStream_dout(lit_outStream_dout),
     .lit_outStream_empty_n(lit_outStream_empty_n),
     .lit_outStream_read(grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lit_outStream_read),
-    .lit_outStream_num_data_valid(14'd0),
-    .lit_outStream_fifo_cap(14'd0),
+    .lit_outStream_num_data_valid(18'd0),
+    .lit_outStream_fifo_cap(18'd0),
     .lz4Out_din(grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lz4Out_din),
     .lz4Out_full_n(lz4Out_full_n),
     .lz4Out_write(grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lz4Out_write),
@@ -148,8 +148,8 @@ lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress grp_lz4CompressPart2
     .lenOffset_Stream_dout(lenOffset_Stream_dout),
     .lenOffset_Stream_empty_n(lenOffset_Stream_empty_n),
     .lenOffset_Stream_read(grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lenOffset_Stream_read),
-    .lenOffset_Stream_num_data_valid(7'd0),
-    .lenOffset_Stream_fifo_cap(7'd0),
+    .lenOffset_Stream_num_data_valid(11'd0),
+    .lenOffset_Stream_fifo_cap(11'd0),
     .input_size_4(input_size_3_reg_153),
     .compressedSize_out(grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_compressedSize_out),
     .compressedSize_out_ap_vld(grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_compressedSize_out_ap_vld)

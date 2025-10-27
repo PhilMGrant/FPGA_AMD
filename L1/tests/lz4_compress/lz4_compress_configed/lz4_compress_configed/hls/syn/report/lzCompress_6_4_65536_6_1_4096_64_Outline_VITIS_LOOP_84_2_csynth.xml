@@ -9,8 +9,8 @@
 <ProductFamily>zynq</ProductFamily>
 <Part>xc7z020-clg484-1</Part>
 <TopModelName>lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2</TopModelName>
-<TargetClockPeriod>15.00</TargetClockPeriod>
-<ClockUncertainty>1.50</ClockUncertainty>
+<TargetClockPeriod>7.00</TargetClockPeriod>
+<ClockUncertainty>0.70</ClockUncertainty>
 <FlowTarget>vivado</FlowTarget>
 </UserAssignments>
 
@@ -18,25 +18,25 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>5.127</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.800</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
 <Best-caseLatency>6</Best-caseLatency>
 <Average-caseLatency>6</Average-caseLatency>
 <Worst-caseLatency>6</Worst-caseLatency>
-<Best-caseRealTimeLatency>90.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>90.000 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>90.000 ns</Worst-caseRealTimeLatency>
+<Best-caseRealTimeLatency>42.000 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>42.000 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>42.000 ns</Worst-caseRealTimeLatency>
 <Interval-min>6</Interval-min>
 <Interval-max>6</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <VITIS_LOOP_84_2>
-<Slack>13.50</Slack>
+<Slack>6.30</Slack>
 <TripCount>5</TripCount>
 <Latency>5</Latency>
-<AbsoluteTimeLatency>75</AbsoluteTimeLatency>
+<AbsoluteTimeLatency>35</AbsoluteTimeLatency>
 <IterationLatency>1</IterationLatency>
 <InstanceList>
 </InstanceList>
@@ -285,8 +285,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>arrayidx48_promoted172_out</name>
-<Object>arrayidx48_promoted172_out</Object>
+<name>arrayidx48_promoted176_out</name>
+<Object>arrayidx48_promoted176_out</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>ap_vld</IOProtocol>
@@ -296,8 +296,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>arrayidx48_promoted172_out_ap_vld</name>
-<Object>arrayidx48_promoted172_out</Object>
+<name>arrayidx48_promoted176_out_ap_vld</name>
+<Object>arrayidx48_promoted176_out</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>ap_vld</IOProtocol>
@@ -307,8 +307,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>arrayidx42_3_promoted170_out</name>
-<Object>arrayidx42_3_promoted170_out</Object>
+<name>arrayidx42_3_promoted174_out</name>
+<Object>arrayidx42_3_promoted174_out</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>ap_vld</IOProtocol>
@@ -318,8 +318,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>arrayidx42_3_promoted170_out_ap_vld</name>
-<Object>arrayidx42_3_promoted170_out</Object>
+<name>arrayidx42_3_promoted174_out_ap_vld</name>
+<Object>arrayidx42_3_promoted174_out</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>ap_vld</IOProtocol>
@@ -329,8 +329,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>arrayidx71_promoted168_out</name>
-<Object>arrayidx71_promoted168_out</Object>
+<name>arrayidx71_promoted172_out</name>
+<Object>arrayidx71_promoted172_out</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>ap_vld</IOProtocol>
@@ -340,8 +340,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>arrayidx71_promoted168_out_ap_vld</name>
-<Object>arrayidx71_promoted168_out</Object>
+<name>arrayidx71_promoted172_out_ap_vld</name>
+<Object>arrayidx71_promoted172_out</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>ap_vld</IOProtocol>
@@ -351,8 +351,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>arrayidx61_promoted166_out</name>
-<Object>arrayidx61_promoted166_out</Object>
+<name>arrayidx61_promoted170_out</name>
+<Object>arrayidx61_promoted170_out</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>ap_vld</IOProtocol>
@@ -362,8 +362,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>arrayidx61_promoted166_out_ap_vld</name>
-<Object>arrayidx61_promoted166_out</Object>
+<name>arrayidx61_promoted170_out_ap_vld</name>
+<Object>arrayidx61_promoted170_out</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>ap_vld</IOProtocol>
@@ -373,8 +373,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>arrayidx54_promoted164_out</name>
-<Object>arrayidx54_promoted164_out</Object>
+<name>arrayidx54_promoted168_out</name>
+<Object>arrayidx54_promoted168_out</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>ap_vld</IOProtocol>
@@ -384,8 +384,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>arrayidx54_promoted164_out_ap_vld</name>
-<Object>arrayidx54_promoted164_out</Object>
+<name>arrayidx54_promoted168_out_ap_vld</name>
+<Object>arrayidx54_promoted168_out</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>ap_vld</IOProtocol>

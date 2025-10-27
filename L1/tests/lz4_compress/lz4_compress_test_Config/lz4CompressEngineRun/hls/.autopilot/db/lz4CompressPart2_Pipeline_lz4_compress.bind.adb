@@ -239,7 +239,7 @@
 						<name>inIdx</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>209</lineNumber>
+						<lineNumber>173</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -255,7 +255,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>209</second>
+										<second>173</second>
 									</item>
 								</second>
 							</item>
@@ -295,7 +295,7 @@
 						<name>readOffsetFlag_1</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>185</lineNumber>
+						<lineNumber>149</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -311,7 +311,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>185</second>
+										<second>149</second>
 									</item>
 								</second>
 							</item>
@@ -351,7 +351,7 @@
 						<name>extra_match_len</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>184</lineNumber>
+						<lineNumber>148</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -367,7 +367,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>184</second>
+										<second>148</second>
 									</item>
 								</second>
 							</item>
@@ -407,7 +407,7 @@
 						<name>lit_length</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>179</lineNumber>
+						<lineNumber>143</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -423,7 +423,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>179</second>
+										<second>143</second>
 									</item>
 								</second>
 							</item>
@@ -463,7 +463,7 @@
 						<name>match_length</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>180</lineNumber>
+						<lineNumber>144</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -479,7 +479,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>180</second>
+										<second>144</second>
 									</item>
 								</second>
 							</item>
@@ -519,7 +519,7 @@
 						<name>write_lit_length</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>181</lineNumber>
+						<lineNumber>145</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -535,7 +535,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>181</second>
+										<second>145</second>
 									</item>
 								</second>
 							</item>
@@ -575,7 +575,7 @@
 						<name>next_state</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>178</lineNumber>
+						<lineNumber>142</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -591,7 +591,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>178</second>
+										<second>142</second>
 									</item>
 								</second>
 							</item>
@@ -631,7 +631,7 @@
 						<name>readOffsetFlag</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>185</lineNumber>
+						<lineNumber>149</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -647,7 +647,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>185</second>
+										<second>149</second>
 									</item>
 								</second>
 							</item>
@@ -687,7 +687,7 @@
 						<name>is_special_end</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>195</lineNumber>
+						<lineNumber>159</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -703,7 +703,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>195</second>
+										<second>159</second>
 									</item>
 								</second>
 							</item>
@@ -743,7 +743,7 @@
 						<name>is_normal_end</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>196</lineNumber>
+						<lineNumber>160</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -759,7 +759,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>196</second>
+										<second>160</second>
 									</item>
 								</second>
 							</item>
@@ -799,7 +799,7 @@
 						<name>lit_len_ge_15</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>197</lineNumber>
+						<lineNumber>161</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -815,7 +815,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>197</second>
+										<second>161</second>
 									</item>
 								</second>
 							</item>
@@ -855,7 +855,7 @@
 						<name>lit_len_gt_0</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>198</lineNumber>
+						<lineNumber>162</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -871,7 +871,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>198</second>
+										<second>162</second>
 									</item>
 								</second>
 							</item>
@@ -911,7 +911,7 @@
 						<name>match_len_ge_15</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>199</lineNumber>
+						<lineNumber>163</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -927,7 +927,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>199</second>
+										<second>163</second>
 									</item>
 								</second>
 							</item>
@@ -967,7 +967,7 @@
 						<name>compressedSize</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>177</lineNumber>
+						<lineNumber>141</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -983,7 +983,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>177</second>
+										<second>141</second>
 									</item>
 								</second>
 							</item>
@@ -1023,7 +1023,7 @@
 						<name>match_len_tmp</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>193</lineNumber>
+						<lineNumber>157</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -1039,7 +1039,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>193</second>
+										<second>157</second>
 									</item>
 								</second>
 							</item>
@@ -1079,7 +1079,7 @@
 						<name>lit_len_tmp</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>192</lineNumber>
+						<lineNumber>156</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -1095,7 +1095,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>192</second>
+										<second>156</second>
 									</item>
 								</second>
 							</item>
@@ -1135,7 +1135,7 @@
 						<name>match_offset_plus_one</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>189</lineNumber>
+						<lineNumber>153</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -1151,7 +1151,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>189</second>
+										<second>153</second>
 									</item>
 								</second>
 							</item>
@@ -1191,7 +1191,7 @@
 						<name>input_size_4_read</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>166</lineNumber>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -1207,7 +1207,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>166</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -1245,10 +1245,10 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>match_offset_plus_one_write_ln189</name>
+						<name>match_offset_plus_one_write_ln153</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>189</lineNumber>
+						<lineNumber>153</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -1264,7 +1264,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>189</second>
+										<second>153</second>
 									</item>
 								</second>
 							</item>
@@ -1302,10 +1302,10 @@
 					<Obj>
 						<type>0</type>
 						<id>32</id>
-						<name>compressedSize_write_ln177</name>
+						<name>compressedSize_write_ln141</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>177</lineNumber>
+						<lineNumber>141</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -1321,7 +1321,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>177</second>
+										<second>141</second>
 									</item>
 								</second>
 							</item>
@@ -1359,10 +1359,10 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>match_len_ge_15_write_ln199</name>
+						<name>match_len_ge_15_write_ln163</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>199</lineNumber>
+						<lineNumber>163</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -1378,7 +1378,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>199</second>
+										<second>163</second>
 									</item>
 								</second>
 							</item>
@@ -1416,10 +1416,10 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>lit_len_gt_0_write_ln198</name>
+						<name>lit_len_gt_0_write_ln162</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>198</lineNumber>
+						<lineNumber>162</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -1435,7 +1435,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>198</second>
+										<second>162</second>
 									</item>
 								</second>
 							</item>
@@ -1473,10 +1473,10 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>lit_len_ge_15_write_ln197</name>
+						<name>lit_len_ge_15_write_ln161</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>197</lineNumber>
+						<lineNumber>161</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -1492,7 +1492,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>197</second>
+										<second>161</second>
 									</item>
 								</second>
 							</item>
@@ -1530,10 +1530,10 @@
 					<Obj>
 						<type>0</type>
 						<id>36</id>
-						<name>is_normal_end_write_ln196</name>
+						<name>is_normal_end_write_ln160</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>196</lineNumber>
+						<lineNumber>160</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -1549,7 +1549,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>196</second>
+										<second>160</second>
 									</item>
 								</second>
 							</item>
@@ -1587,10 +1587,10 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>is_special_end_write_ln195</name>
+						<name>is_special_end_write_ln159</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>195</lineNumber>
+						<lineNumber>159</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -1606,7 +1606,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>195</second>
+										<second>159</second>
 									</item>
 								</second>
 							</item>
@@ -1644,10 +1644,10 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>readOffsetFlag_write_ln185</name>
+						<name>readOffsetFlag_write_ln149</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>185</lineNumber>
+						<lineNumber>149</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -1663,7 +1663,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>185</second>
+										<second>149</second>
 									</item>
 								</second>
 							</item>
@@ -1701,10 +1701,10 @@
 					<Obj>
 						<type>0</type>
 						<id>39</id>
-						<name>next_state_write_ln178</name>
+						<name>next_state_write_ln142</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>178</lineNumber>
+						<lineNumber>142</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -1720,7 +1720,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>178</second>
+										<second>142</second>
 									</item>
 								</second>
 							</item>
@@ -1758,10 +1758,10 @@
 					<Obj>
 						<type>0</type>
 						<id>40</id>
-						<name>write_lit_length_write_ln181</name>
+						<name>write_lit_length_write_ln145</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>181</lineNumber>
+						<lineNumber>145</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -1777,7 +1777,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>181</second>
+										<second>145</second>
 									</item>
 								</second>
 							</item>
@@ -1815,10 +1815,10 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>match_length_write_ln180</name>
+						<name>match_length_write_ln144</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>180</lineNumber>
+						<lineNumber>144</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -1834,7 +1834,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>180</second>
+										<second>144</second>
 									</item>
 								</second>
 							</item>
@@ -1872,10 +1872,10 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>lit_length_write_ln179</name>
+						<name>lit_length_write_ln143</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>179</lineNumber>
+						<lineNumber>143</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -1891,7 +1891,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>179</second>
+										<second>143</second>
 									</item>
 								</second>
 							</item>
@@ -1929,10 +1929,10 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>extra_match_len_write_ln184</name>
+						<name>extra_match_len_write_ln148</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>184</lineNumber>
+						<lineNumber>148</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -1948,7 +1948,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>184</second>
+										<second>148</second>
 									</item>
 								</second>
 							</item>
@@ -1986,10 +1986,10 @@
 					<Obj>
 						<type>0</type>
 						<id>44</id>
-						<name>readOffsetFlag_1_write_ln185</name>
+						<name>readOffsetFlag_1_write_ln149</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>185</lineNumber>
+						<lineNumber>149</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2005,7 +2005,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>185</second>
+										<second>149</second>
 									</item>
 								</second>
 							</item>
@@ -2043,10 +2043,10 @@
 					<Obj>
 						<type>0</type>
 						<id>45</id>
-						<name>inIdx_write_ln209</name>
+						<name>inIdx_write_ln173</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>209</lineNumber>
+						<lineNumber>173</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2062,7 +2062,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>209</second>
+										<second>173</second>
 									</item>
 								</second>
 							</item>
@@ -2100,10 +2100,10 @@
 					<Obj>
 						<type>0</type>
 						<id>46</id>
-						<name>br_ln209</name>
+						<name>br_ln173</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>209</lineNumber>
+						<lineNumber>173</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2119,7 +2119,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>209</second>
+										<second>173</second>
 									</item>
 								</second>
 							</item>
@@ -2159,7 +2159,7 @@
 						<name>inIdx_2</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>264</lineNumber>
+						<lineNumber>228</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2175,7 +2175,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>264</second>
+										<second>228</second>
 									</item>
 								</second>
 							</item>
@@ -2216,7 +2216,7 @@
 						<name>readOffsetFlag_3</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>365</lineNumber>
+						<lineNumber>329</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2232,7 +2232,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>365</second>
+										<second>329</second>
 									</item>
 								</second>
 							</item>
@@ -2273,7 +2273,7 @@
 						<name>compressedSize_1</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>379</lineNumber>
+						<lineNumber>343</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2289,7 +2289,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>379</second>
+										<second>343</second>
 									</item>
 								</second>
 							</item>
@@ -2327,10 +2327,10 @@
 					<Obj>
 						<type>0</type>
 						<id>51</id>
-						<name>icmp_ln209</name>
+						<name>icmp_ln173</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>209</lineNumber>
+						<lineNumber>173</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2346,7 +2346,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>209</second>
+										<second>173</second>
 									</item>
 								</second>
 							</item>
@@ -2384,10 +2384,10 @@
 					<Obj>
 						<type>0</type>
 						<id>52</id>
-						<name>xor_ln209</name>
+						<name>xor_ln173</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>209</lineNumber>
+						<lineNumber>173</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2403,7 +2403,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>209</second>
+										<second>173</second>
 									</item>
 								</second>
 							</item>
@@ -2441,10 +2441,10 @@
 					<Obj>
 						<type>0</type>
 						<id>53</id>
-						<name>or_ln209</name>
+						<name>or_ln173</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>209</lineNumber>
+						<lineNumber>173</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2460,7 +2460,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>209</second>
+										<second>173</second>
 									</item>
 								</second>
 							</item>
@@ -2498,10 +2498,10 @@
 					<Obj>
 						<type>0</type>
 						<id>54</id>
-						<name>br_ln209</name>
+						<name>br_ln173</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>209</lineNumber>
+						<lineNumber>173</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2517,7 +2517,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>209</second>
+										<second>173</second>
 									</item>
 								</second>
 							</item>
@@ -2559,7 +2559,7 @@
 						<name>should_write</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>215</lineNumber>
+						<lineNumber>179</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2575,7 +2575,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>215</second>
+										<second>179</second>
 									</item>
 								</second>
 							</item>
@@ -2613,10 +2613,10 @@
 					<Obj>
 						<type>0</type>
 						<id>59</id>
-						<name>br_ln218</name>
+						<name>br_ln182</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>218</lineNumber>
+						<lineNumber>182</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2632,7 +2632,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>218</second>
+										<second>182</second>
 									</item>
 								</second>
 							</item>
@@ -2674,7 +2674,7 @@
 						<name>nextLenOffsetValue</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>219</lineNumber>
+						<lineNumber>183</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2690,7 +2690,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>219</second>
+										<second>183</second>
 									</item>
 								</second>
 							</item>
@@ -2731,7 +2731,7 @@
 						<name>lit_len_tmp_1</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>223</lineNumber>
+						<lineNumber>187</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2747,7 +2747,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>223</second>
+										<second>187</second>
 									</item>
 								</second>
 							</item>
@@ -2789,7 +2789,7 @@
 						<name>match_len_tmp_1</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>224</lineNumber>
+						<lineNumber>188</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2805,7 +2805,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>224</second>
+										<second>188</second>
 									</item>
 								</second>
 							</item>
@@ -2845,7 +2845,7 @@
 						<name>match_off_tmp</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>225</lineNumber>
+						<lineNumber>189</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2861,7 +2861,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>225</second>
+										<second>189</second>
 									</item>
 								</second>
 							</item>
@@ -2900,10 +2900,10 @@
 					<Obj>
 						<type>0</type>
 						<id>65</id>
-						<name>icmp_ln228</name>
+						<name>icmp_ln192</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>228</lineNumber>
+						<lineNumber>192</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2919,7 +2919,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>228</second>
+										<second>192</second>
 									</item>
 								</second>
 							</item>
@@ -2957,10 +2957,10 @@
 					<Obj>
 						<type>0</type>
 						<id>66</id>
-						<name>icmp_ln228_1</name>
+						<name>icmp_ln192_1</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>228</lineNumber>
+						<lineNumber>192</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2976,7 +2976,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>228</second>
+										<second>192</second>
 									</item>
 								</second>
 							</item>
@@ -3017,7 +3017,7 @@
 						<name>is_special_end_1</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>228</lineNumber>
+						<lineNumber>192</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3033,7 +3033,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>228</second>
+										<second>192</second>
 									</item>
 								</second>
 							</item>
@@ -3071,10 +3071,10 @@
 					<Obj>
 						<type>0</type>
 						<id>68</id>
-						<name>or_ln229</name>
+						<name>or_ln193</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>229</lineNumber>
+						<lineNumber>193</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3090,7 +3090,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>229</second>
+										<second>193</second>
 									</item>
 								</second>
 							</item>
@@ -3131,7 +3131,7 @@
 						<name>is_normal_end_1</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>229</lineNumber>
+						<lineNumber>193</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3147,7 +3147,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>229</second>
+										<second>193</second>
 									</item>
 								</second>
 							</item>
@@ -3188,7 +3188,7 @@
 						<name>lit_len_ge_15_1</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>230</lineNumber>
+						<lineNumber>194</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3204,7 +3204,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>230</second>
+										<second>194</second>
 									</item>
 								</second>
 							</item>
@@ -3245,7 +3245,7 @@
 						<name>lit_len_gt_0_1</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>231</lineNumber>
+						<lineNumber>195</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3261,7 +3261,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>231</second>
+										<second>195</second>
 									</item>
 								</second>
 							</item>
@@ -3302,7 +3302,7 @@
 						<name>match_len_ge_15_1</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>232</lineNumber>
+						<lineNumber>196</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3318,7 +3318,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>232</second>
+										<second>196</second>
 									</item>
 								</second>
 							</item>
@@ -3359,7 +3359,7 @@
 						<name>match_offset_plus_one_1</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>235</lineNumber>
+						<lineNumber>199</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3375,7 +3375,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>235</second>
+										<second>199</second>
 									</item>
 								</second>
 							</item>
@@ -3413,10 +3413,10 @@
 					<Obj>
 						<type>0</type>
 						<id>74</id>
-						<name>match_offset_plus_one_write_ln189</name>
+						<name>match_offset_plus_one_write_ln153</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>189</lineNumber>
+						<lineNumber>153</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3432,7 +3432,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>189</second>
+										<second>153</second>
 									</item>
 								</second>
 							</item>
@@ -3471,10 +3471,10 @@
 					<Obj>
 						<type>0</type>
 						<id>75</id>
-						<name>lit_len_tmp_write_ln192</name>
+						<name>lit_len_tmp_write_ln156</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>192</lineNumber>
+						<lineNumber>156</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3490,7 +3490,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>192</second>
+										<second>156</second>
 									</item>
 								</second>
 							</item>
@@ -3528,10 +3528,10 @@
 					<Obj>
 						<type>0</type>
 						<id>76</id>
-						<name>match_len_tmp_write_ln193</name>
+						<name>match_len_tmp_write_ln157</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>193</lineNumber>
+						<lineNumber>157</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3547,7 +3547,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>193</second>
+										<second>157</second>
 									</item>
 								</second>
 							</item>
@@ -3585,10 +3585,10 @@
 					<Obj>
 						<type>0</type>
 						<id>77</id>
-						<name>match_len_ge_15_write_ln199</name>
+						<name>match_len_ge_15_write_ln163</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>199</lineNumber>
+						<lineNumber>163</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3604,7 +3604,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>199</second>
+										<second>163</second>
 									</item>
 								</second>
 							</item>
@@ -3643,10 +3643,10 @@
 					<Obj>
 						<type>0</type>
 						<id>78</id>
-						<name>lit_len_gt_0_write_ln198</name>
+						<name>lit_len_gt_0_write_ln162</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>198</lineNumber>
+						<lineNumber>162</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3662,7 +3662,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>198</second>
+										<second>162</second>
 									</item>
 								</second>
 							</item>
@@ -3701,10 +3701,10 @@
 					<Obj>
 						<type>0</type>
 						<id>79</id>
-						<name>lit_len_ge_15_write_ln197</name>
+						<name>lit_len_ge_15_write_ln161</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>197</lineNumber>
+						<lineNumber>161</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3720,7 +3720,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>197</second>
+										<second>161</second>
 									</item>
 								</second>
 							</item>
@@ -3759,10 +3759,10 @@
 					<Obj>
 						<type>0</type>
 						<id>80</id>
-						<name>is_normal_end_write_ln196</name>
+						<name>is_normal_end_write_ln160</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>196</lineNumber>
+						<lineNumber>160</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3778,7 +3778,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>196</second>
+										<second>160</second>
 									</item>
 								</second>
 							</item>
@@ -3817,10 +3817,10 @@
 					<Obj>
 						<type>0</type>
 						<id>81</id>
-						<name>is_special_end_write_ln195</name>
+						<name>is_special_end_write_ln159</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>195</lineNumber>
+						<lineNumber>159</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3836,7 +3836,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>195</second>
+										<second>159</second>
 									</item>
 								</second>
 							</item>
@@ -3875,10 +3875,10 @@
 					<Obj>
 						<type>0</type>
 						<id>82</id>
-						<name>br_ln236</name>
+						<name>br_ln200</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>236</lineNumber>
+						<lineNumber>200</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3894,7 +3894,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>236</second>
+										<second>200</second>
 									</item>
 								</second>
 							</item>
@@ -3934,7 +3934,7 @@
 						<name>next_state_load</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>241</lineNumber>
+						<lineNumber>205</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3950,7 +3950,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>241</second>
+										<second>205</second>
 									</item>
 								</second>
 							</item>
@@ -3991,7 +3991,7 @@
 						<name>is_special_end_2</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>273</lineNumber>
+						<lineNumber>237</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4007,7 +4007,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>273</second>
+										<second>237</second>
 									</item>
 								</second>
 							</item>
@@ -4049,7 +4049,7 @@
 						<name>is_normal_end_2</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>273</lineNumber>
+						<lineNumber>237</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4065,7 +4065,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>273</second>
+										<second>237</second>
 									</item>
 								</second>
 							</item>
@@ -4107,7 +4107,7 @@
 						<name>lit_len_ge_15_2</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>297</lineNumber>
+						<lineNumber>261</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4123,7 +4123,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>297</second>
+										<second>261</second>
 									</item>
 								</second>
 							</item>
@@ -4165,7 +4165,7 @@
 						<name>lit_len_gt_0_2</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>297</lineNumber>
+						<lineNumber>261</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4181,7 +4181,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>297</second>
+										<second>261</second>
 									</item>
 								</second>
 							</item>
@@ -4267,7 +4267,7 @@
 						<name>match_len_tmp_3</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>289</lineNumber>
+						<lineNumber>253</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4283,7 +4283,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>289</second>
+										<second>253</second>
 									</item>
 								</second>
 							</item>
@@ -4324,7 +4324,7 @@
 						<name>lit_len_tmp_2</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>283</lineNumber>
+						<lineNumber>247</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4340,7 +4340,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>283</second>
+										<second>247</second>
 									</item>
 								</second>
 							</item>
@@ -4378,10 +4378,10 @@
 					<Obj>
 						<type>0</type>
 						<id>92</id>
-						<name>_ln241</name>
+						<name>_ln205</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>241</lineNumber>
+						<lineNumber>205</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4397,7 +4397,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>241</second>
+										<second>205</second>
 									</item>
 								</second>
 							</item>
@@ -4450,7 +4450,7 @@
 						<name>match_length_load</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>363</lineNumber>
+						<lineNumber>327</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4466,7 +4466,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>363</second>
+										<second>327</second>
 									</item>
 								</second>
 							</item>
@@ -4507,7 +4507,7 @@
 						<name>match_len_ge_255</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>362</lineNumber>
+						<lineNumber>326</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4523,7 +4523,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>362</second>
+										<second>326</second>
 									</item>
 								</second>
 							</item>
@@ -4561,10 +4561,10 @@
 					<Obj>
 						<type>0</type>
 						<id>96</id>
-						<name>trunc_ln363</name>
+						<name>trunc_ln327</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>363</lineNumber>
+						<lineNumber>327</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4580,7 +4580,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>363</second>
+										<second>327</second>
 									</item>
 								</second>
 							</item>
@@ -4620,7 +4620,7 @@
 						<name>outValue_10</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>363</lineNumber>
+						<lineNumber>327</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4636,7 +4636,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>363</second>
+										<second>327</second>
 									</item>
 								</second>
 							</item>
@@ -4678,7 +4678,7 @@
 						<name>match_length_15</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>366</lineNumber>
+						<lineNumber>330</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4694,7 +4694,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>366</second>
+										<second>330</second>
 									</item>
 								</second>
 							</item>
@@ -4732,10 +4732,10 @@
 					<Obj>
 						<type>0</type>
 						<id>99</id>
-						<name>xor_ln365</name>
+						<name>xor_ln329</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>365</lineNumber>
+						<lineNumber>329</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4751,7 +4751,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>365</second>
+										<second>329</second>
 									</item>
 								</second>
 							</item>
@@ -4792,7 +4792,7 @@
 						<name>readOffsetFlag_8</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>365</lineNumber>
+						<lineNumber>329</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4808,7 +4808,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>365</second>
+										<second>329</second>
 									</item>
 								</second>
 							</item>
@@ -4849,7 +4849,7 @@
 						<name>match_length_16</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>365</lineNumber>
+						<lineNumber>329</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4865,7 +4865,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>365</second>
+										<second>329</second>
 									</item>
 								</second>
 							</item>
@@ -4904,10 +4904,10 @@
 					<Obj>
 						<type>0</type>
 						<id>102</id>
-						<name>select_ln180</name>
+						<name>select_ln144</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>180</lineNumber>
+						<lineNumber>144</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4923,7 +4923,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>180</second>
+										<second>144</second>
 									</item>
 								</second>
 							</item>
@@ -4962,10 +4962,10 @@
 					<Obj>
 						<type>0</type>
 						<id>103</id>
-						<name>readOffsetFlag_write_ln185</name>
+						<name>readOffsetFlag_write_ln149</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>185</lineNumber>
+						<lineNumber>149</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4981,7 +4981,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>185</second>
+										<second>149</second>
 									</item>
 								</second>
 							</item>
@@ -5021,10 +5021,10 @@
 					<Obj>
 						<type>0</type>
 						<id>104</id>
-						<name>next_state_write_ln178</name>
+						<name>next_state_write_ln142</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>178</lineNumber>
+						<lineNumber>142</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5040,7 +5040,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>178</second>
+										<second>142</second>
 									</item>
 								</second>
 							</item>
@@ -5080,10 +5080,10 @@
 					<Obj>
 						<type>0</type>
 						<id>105</id>
-						<name>match_length_write_ln180</name>
+						<name>match_length_write_ln144</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>180</lineNumber>
+						<lineNumber>144</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5099,7 +5099,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>180</second>
+										<second>144</second>
 									</item>
 								</second>
 							</item>
@@ -5139,10 +5139,10 @@
 					<Obj>
 						<type>0</type>
 						<id>106</id>
-						<name>br_ln371</name>
+						<name>br_ln335</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>371</lineNumber>
+						<lineNumber>335</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5158,7 +5158,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>371</second>
+										<second>335</second>
 									</item>
 								</second>
 							</item>
@@ -5198,7 +5198,7 @@
 						<name>extra_match_len_load</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>357</lineNumber>
+						<lineNumber>321</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5214,7 +5214,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>357</second>
+										<second>321</second>
 									</item>
 								</second>
 							</item>
@@ -5255,7 +5255,7 @@
 						<name>match_offset_plus_one_load_1</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>355</lineNumber>
+						<lineNumber>319</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5271,7 +5271,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>355</second>
+										<second>319</second>
 									</item>
 								</second>
 							</item>
@@ -5313,7 +5313,7 @@
 						<name>outValue_9</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>355</lineNumber>
+						<lineNumber>319</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5329,7 +5329,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>355</second>
+										<second>319</second>
 									</item>
 								</second>
 							</item>
@@ -5368,10 +5368,10 @@
 					<Obj>
 						<type>0</type>
 						<id>111</id>
-						<name>select_ln357</name>
+						<name>select_ln321</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>357</lineNumber>
+						<lineNumber>321</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5387,7 +5387,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>357</second>
+										<second>321</second>
 									</item>
 								</second>
 							</item>
@@ -5429,7 +5429,7 @@
 						<name>readOffsetFlag_7</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>357</lineNumber>
+						<lineNumber>321</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5445,7 +5445,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>357</second>
+										<second>321</second>
 									</item>
 								</second>
 							</item>
@@ -5483,10 +5483,10 @@
 					<Obj>
 						<type>0</type>
 						<id>113</id>
-						<name>readOffsetFlag_write_ln185</name>
+						<name>readOffsetFlag_write_ln149</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>185</lineNumber>
+						<lineNumber>149</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5502,7 +5502,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>185</second>
+										<second>149</second>
 									</item>
 								</second>
 							</item>
@@ -5542,10 +5542,10 @@
 					<Obj>
 						<type>0</type>
 						<id>114</id>
-						<name>next_state_write_ln178</name>
+						<name>next_state_write_ln142</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>178</lineNumber>
+						<lineNumber>142</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5561,7 +5561,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>178</second>
+										<second>142</second>
 									</item>
 								</second>
 							</item>
@@ -5601,10 +5601,10 @@
 					<Obj>
 						<type>0</type>
 						<id>115</id>
-						<name>br_ln358</name>
+						<name>br_ln322</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>358</lineNumber>
+						<lineNumber>322</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5620,7 +5620,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>358</second>
+										<second>322</second>
 									</item>
 								</second>
 							</item>
@@ -5660,7 +5660,7 @@
 						<name>match_offset_plus_one_load</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>348</lineNumber>
+						<lineNumber>312</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5676,7 +5676,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>348</second>
+										<second>312</second>
 									</item>
 								</second>
 							</item>
@@ -5718,7 +5718,7 @@
 						<name>outValue_8</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>348</lineNumber>
+						<lineNumber>312</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5734,7 +5734,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>348</second>
+										<second>312</second>
 									</item>
 								</second>
 							</item>
@@ -5771,10 +5771,10 @@
 					<Obj>
 						<type>0</type>
 						<id>119</id>
-						<name>readOffsetFlag_write_ln185</name>
+						<name>readOffsetFlag_write_ln149</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>185</lineNumber>
+						<lineNumber>149</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5790,7 +5790,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>185</second>
+										<second>149</second>
 									</item>
 								</second>
 							</item>
@@ -5830,10 +5830,10 @@
 					<Obj>
 						<type>0</type>
 						<id>120</id>
-						<name>next_state_write_ln178</name>
+						<name>next_state_write_ln142</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>178</lineNumber>
+						<lineNumber>142</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5849,7 +5849,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>178</second>
+										<second>142</second>
 									</item>
 								</second>
 							</item>
@@ -5889,10 +5889,10 @@
 					<Obj>
 						<type>0</type>
 						<id>121</id>
-						<name>br_ln351</name>
+						<name>br_ln315</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>351</lineNumber>
+						<lineNumber>315</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5908,7 +5908,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>351</second>
+										<second>315</second>
 									</item>
 								</second>
 							</item>
@@ -5948,7 +5948,7 @@
 						<name>readOffsetFlag_1_load_1</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>337</lineNumber>
+						<lineNumber>301</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5964,7 +5964,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>337</second>
+										<second>301</second>
 									</item>
 								</second>
 							</item>
@@ -6005,7 +6005,7 @@
 						<name>write_lit_length_load</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>335</lineNumber>
+						<lineNumber>299</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6021,7 +6021,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>335</second>
+										<second>299</second>
 									</item>
 								</second>
 							</item>
@@ -6062,7 +6062,7 @@
 						<name>outValue_7</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>334</lineNumber>
+						<lineNumber>298</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6078,7 +6078,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>334</second>
+										<second>298</second>
 									</item>
 								</second>
 							</item>
@@ -6119,7 +6119,7 @@
 						<name>write_lit_length_2</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>335</lineNumber>
+						<lineNumber>299</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6135,7 +6135,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>335</second>
+										<second>299</second>
 									</item>
 								</second>
 							</item>
@@ -6173,10 +6173,10 @@
 					<Obj>
 						<type>0</type>
 						<id>127</id>
-						<name>icmp_ln337</name>
+						<name>icmp_ln301</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>337</lineNumber>
+						<lineNumber>301</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6192,7 +6192,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>337</second>
+										<second>301</second>
 									</item>
 								</second>
 							</item>
@@ -6233,7 +6233,7 @@
 						<name>next_state_2</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>338</lineNumber>
+						<lineNumber>302</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6249,7 +6249,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>338</second>
+										<second>302</second>
 									</item>
 								</second>
 							</item>
@@ -6291,7 +6291,7 @@
 						<name>readOffsetFlag_6</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>337</lineNumber>
+						<lineNumber>301</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6307,7 +6307,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>337</second>
+										<second>301</second>
 									</item>
 								</second>
 							</item>
@@ -6348,7 +6348,7 @@
 						<name>next_state_3</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>337</lineNumber>
+						<lineNumber>301</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6364,7 +6364,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>337</second>
+										<second>301</second>
 									</item>
 								</second>
 							</item>
@@ -6403,10 +6403,10 @@
 					<Obj>
 						<type>0</type>
 						<id>131</id>
-						<name>zext_ln178</name>
+						<name>zext_ln142</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>178</lineNumber>
+						<lineNumber>142</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6422,7 +6422,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>178</second>
+										<second>142</second>
 									</item>
 								</second>
 							</item>
@@ -6459,10 +6459,10 @@
 					<Obj>
 						<type>0</type>
 						<id>132</id>
-						<name>readOffsetFlag_write_ln185</name>
+						<name>readOffsetFlag_write_ln149</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>185</lineNumber>
+						<lineNumber>149</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6478,7 +6478,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>185</second>
+										<second>149</second>
 									</item>
 								</second>
 							</item>
@@ -6518,10 +6518,10 @@
 					<Obj>
 						<type>0</type>
 						<id>133</id>
-						<name>next_state_write_ln178</name>
+						<name>next_state_write_ln142</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>178</lineNumber>
+						<lineNumber>142</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6537,7 +6537,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>178</second>
+										<second>142</second>
 									</item>
 								</second>
 							</item>
@@ -6577,10 +6577,10 @@
 					<Obj>
 						<type>0</type>
 						<id>134</id>
-						<name>write_lit_length_write_ln181</name>
+						<name>write_lit_length_write_ln145</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>181</lineNumber>
+						<lineNumber>145</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6596,7 +6596,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>181</second>
+										<second>145</second>
 									</item>
 								</second>
 							</item>
@@ -6636,10 +6636,10 @@
 					<Obj>
 						<type>0</type>
 						<id>135</id>
-						<name>br_ln343</name>
+						<name>br_ln307</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>343</lineNumber>
+						<lineNumber>307</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6655,7 +6655,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>343</second>
+										<second>307</second>
 									</item>
 								</second>
 							</item>
@@ -6695,7 +6695,7 @@
 						<name>lit_length_load</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>322</lineNumber>
+						<lineNumber>286</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6711,7 +6711,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>322</second>
+										<second>286</second>
 									</item>
 								</second>
 							</item>
@@ -6752,7 +6752,7 @@
 						<name>lit_len_ge_255</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>321</lineNumber>
+						<lineNumber>285</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6768,7 +6768,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>321</second>
+										<second>285</second>
 									</item>
 								</second>
 							</item>
@@ -6806,10 +6806,10 @@
 					<Obj>
 						<type>0</type>
 						<id>139</id>
-						<name>trunc_ln322</name>
+						<name>trunc_ln286</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>322</lineNumber>
+						<lineNumber>286</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6825,7 +6825,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>322</second>
+										<second>286</second>
 									</item>
 								</second>
 							</item>
@@ -6865,7 +6865,7 @@
 						<name>outValue_6</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>322</lineNumber>
+						<lineNumber>286</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6881,7 +6881,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>322</second>
+										<second>286</second>
 									</item>
 								</second>
 							</item>
@@ -6923,7 +6923,7 @@
 						<name>lit_length_5</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>325</lineNumber>
+						<lineNumber>289</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6939,7 +6939,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>325</second>
+										<second>289</second>
 									</item>
 								</second>
 							</item>
@@ -6980,7 +6980,7 @@
 						<name>lit_length_6</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>324</lineNumber>
+						<lineNumber>288</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6996,7 +6996,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>324</second>
+										<second>288</second>
 									</item>
 								</second>
 							</item>
@@ -7035,10 +7035,10 @@
 					<Obj>
 						<type>0</type>
 						<id>143</id>
-						<name>select_ln179</name>
+						<name>select_ln143</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>179</lineNumber>
+						<lineNumber>143</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7054,7 +7054,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>179</second>
+										<second>143</second>
 									</item>
 								</second>
 							</item>
@@ -7093,10 +7093,10 @@
 					<Obj>
 						<type>0</type>
 						<id>144</id>
-						<name>readOffsetFlag_write_ln185</name>
+						<name>readOffsetFlag_write_ln149</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>185</lineNumber>
+						<lineNumber>149</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7112,7 +7112,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>185</second>
+										<second>149</second>
 									</item>
 								</second>
 							</item>
@@ -7152,10 +7152,10 @@
 					<Obj>
 						<type>0</type>
 						<id>145</id>
-						<name>next_state_write_ln178</name>
+						<name>next_state_write_ln142</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>178</lineNumber>
+						<lineNumber>142</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7171,7 +7171,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>178</second>
+										<second>142</second>
 									</item>
 								</second>
 							</item>
@@ -7211,10 +7211,10 @@
 					<Obj>
 						<type>0</type>
 						<id>146</id>
-						<name>lit_length_write_ln179</name>
+						<name>lit_length_write_ln143</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>179</lineNumber>
+						<lineNumber>143</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7230,7 +7230,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>179</second>
+										<second>143</second>
 									</item>
 								</second>
 							</item>
@@ -7270,10 +7270,10 @@
 					<Obj>
 						<type>0</type>
 						<id>147</id>
-						<name>br_ln330</name>
+						<name>br_ln294</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>330</lineNumber>
+						<lineNumber>294</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7289,7 +7289,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>330</second>
+										<second>294</second>
 									</item>
 								</second>
 							</item>
@@ -7329,7 +7329,7 @@
 						<name>readOffsetFlag_1_load</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>273</lineNumber>
+						<lineNumber>237</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7345,7 +7345,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>273</second>
+										<second>237</second>
 									</item>
 								</second>
 							</item>
@@ -7386,7 +7386,7 @@
 						<name>lit_length_7</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>243</lineNumber>
+						<lineNumber>207</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7402,7 +7402,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>243</second>
+										<second>207</second>
 									</item>
 								</second>
 							</item>
@@ -7439,10 +7439,10 @@
 					<Obj>
 						<type>0</type>
 						<id>151</id>
-						<name>add_ln255</name>
+						<name>add_ln219</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>255</lineNumber>
+						<lineNumber>219</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7458,7 +7458,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>255</second>
+										<second>219</second>
 									</item>
 								</second>
 							</item>
@@ -7499,7 +7499,7 @@
 						<name>sum_with_4_low</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>255</lineNumber>
+						<lineNumber>219</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7515,7 +7515,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>255</second>
+										<second>219</second>
 									</item>
 								</second>
 							</item>
@@ -7553,10 +7553,10 @@
 					<Obj>
 						<type>0</type>
 						<id>153</id>
-						<name>zext_ln264</name>
+						<name>zext_ln228</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>264</lineNumber>
+						<lineNumber>228</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7572,7 +7572,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>264</second>
+										<second>228</second>
 									</item>
 								</second>
 							</item>
@@ -7612,7 +7612,7 @@
 						<name>inIdx_3</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>264</lineNumber>
+						<lineNumber>228</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7628,7 +7628,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>264</second>
+										<second>228</second>
 									</item>
 								</second>
 							</item>
@@ -7669,7 +7669,7 @@
 						<name>inIdx_4</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>266</lineNumber>
+						<lineNumber>230</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7685,7 +7685,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>266</second>
+										<second>230</second>
 									</item>
 								</second>
 							</item>
@@ -7724,10 +7724,10 @@
 					<Obj>
 						<type>0</type>
 						<id>156</id>
-						<name>or_ln273</name>
+						<name>or_ln237</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>273</lineNumber>
+						<lineNumber>237</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7743,7 +7743,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>273</second>
+										<second>237</second>
 									</item>
 								</second>
 							</item>
@@ -7784,7 +7784,7 @@
 						<name>lit_ending</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>273</lineNumber>
+						<lineNumber>237</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7800,7 +7800,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>273</second>
+										<second>237</second>
 									</item>
 								</second>
 							</item>
@@ -7838,10 +7838,10 @@
 					<Obj>
 						<type>0</type>
 						<id>158</id>
-						<name>trunc_ln283</name>
+						<name>trunc_ln247</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>283</lineNumber>
+						<lineNumber>247</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7857,7 +7857,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>283</second>
+										<second>247</second>
 									</item>
 								</second>
 							</item>
@@ -7897,7 +7897,7 @@
 						<name>lit_token</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>282</lineNumber>
+						<lineNumber>246</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7913,7 +7913,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>282</second>
+										<second>246</second>
 									</item>
 								</second>
 							</item>
@@ -7955,7 +7955,7 @@
 						<name>lit_token_1</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>280</lineNumber>
+						<lineNumber>244</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7971,7 +7971,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>280</second>
+										<second>244</second>
 									</item>
 								</second>
 							</item>
@@ -8013,7 +8013,7 @@
 						<name>match_token</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>289</lineNumber>
+						<lineNumber>253</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8029,7 +8029,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>289</second>
+										<second>253</second>
 									</item>
 								</second>
 							</item>
@@ -8069,7 +8069,7 @@
 						<name>match_token_1</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>286</lineNumber>
+						<lineNumber>250</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8085,7 +8085,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>286</second>
+										<second>250</second>
 									</item>
 								</second>
 							</item>
@@ -8127,7 +8127,7 @@
 						<name>outValue</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>293</lineNumber>
+						<lineNumber>257</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8143,7 +8143,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>293</second>
+										<second>257</second>
 									</item>
 								</second>
 							</item>
@@ -8185,7 +8185,7 @@
 						<name>lit_length_2</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>262</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8201,7 +8201,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>298</second>
+										<second>262</second>
 									</item>
 								</second>
 							</item>
@@ -8242,7 +8242,7 @@
 						<name>lit_length_3</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>300</lineNumber>
+						<lineNumber>264</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8258,7 +8258,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>300</second>
+										<second>264</second>
 									</item>
 								</second>
 							</item>
@@ -8300,7 +8300,7 @@
 						<name>lit_length_4</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>297</lineNumber>
+						<lineNumber>261</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8316,7 +8316,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>297</second>
+										<second>261</second>
 									</item>
 								</second>
 							</item>
@@ -8355,10 +8355,10 @@
 					<Obj>
 						<type>0</type>
 						<id>167</id>
-						<name>select_ln297_1</name>
+						<name>select_ln261_1</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>297</lineNumber>
+						<lineNumber>261</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8374,7 +8374,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>297</second>
+										<second>261</second>
 									</item>
 								</second>
 							</item>
@@ -8413,10 +8413,10 @@
 					<Obj>
 						<type>0</type>
 						<id>168</id>
-						<name>or_ln297</name>
+						<name>or_ln261</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>297</lineNumber>
+						<lineNumber>261</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8432,7 +8432,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>297</second>
+										<second>261</second>
 									</item>
 								</second>
 							</item>
@@ -8473,7 +8473,7 @@
 						<name>next_state_tmp</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>297</lineNumber>
+						<lineNumber>261</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8489,7 +8489,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>297</second>
+										<second>261</second>
 									</item>
 								</second>
 							</item>
@@ -8528,10 +8528,10 @@
 					<Obj>
 						<type>0</type>
 						<id>170</id>
-						<name>zext_ln296</name>
+						<name>zext_ln260</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>296</lineNumber>
+						<lineNumber>260</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8547,7 +8547,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>296</second>
+										<second>260</second>
 									</item>
 								</second>
 							</item>
@@ -8587,7 +8587,7 @@
 						<name>match_length_13</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>308</lineNumber>
+						<lineNumber>272</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8603,7 +8603,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>308</second>
+										<second>272</second>
 									</item>
 								</second>
 							</item>
@@ -8644,7 +8644,7 @@
 						<name>match_length_14</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>307</lineNumber>
+						<lineNumber>271</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8660,7 +8660,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>307</second>
+										<second>271</second>
 									</item>
 								</second>
 							</item>
@@ -8699,10 +8699,10 @@
 					<Obj>
 						<type>0</type>
 						<id>173</id>
-						<name>readOffsetFlag_write_ln185</name>
+						<name>readOffsetFlag_write_ln149</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>185</lineNumber>
+						<lineNumber>149</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8718,7 +8718,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>185</second>
+										<second>149</second>
 									</item>
 								</second>
 							</item>
@@ -8758,10 +8758,10 @@
 					<Obj>
 						<type>0</type>
 						<id>174</id>
-						<name>next_state_write_ln178</name>
+						<name>next_state_write_ln142</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>178</lineNumber>
+						<lineNumber>142</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8777,7 +8777,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>178</second>
+										<second>142</second>
 									</item>
 								</second>
 							</item>
@@ -8817,10 +8817,10 @@
 					<Obj>
 						<type>0</type>
 						<id>175</id>
-						<name>write_lit_length_write_ln181</name>
+						<name>write_lit_length_write_ln145</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>181</lineNumber>
+						<lineNumber>145</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8836,7 +8836,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>181</second>
+										<second>145</second>
 									</item>
 								</second>
 							</item>
@@ -8875,10 +8875,10 @@
 					<Obj>
 						<type>0</type>
 						<id>176</id>
-						<name>match_length_write_ln180</name>
+						<name>match_length_write_ln144</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>180</lineNumber>
+						<lineNumber>144</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8894,7 +8894,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>180</second>
+										<second>144</second>
 									</item>
 								</second>
 							</item>
@@ -8933,10 +8933,10 @@
 					<Obj>
 						<type>0</type>
 						<id>177</id>
-						<name>lit_length_write_ln179</name>
+						<name>lit_length_write_ln143</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>179</lineNumber>
+						<lineNumber>143</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8952,7 +8952,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>179</second>
+										<second>143</second>
 									</item>
 								</second>
 							</item>
@@ -8991,10 +8991,10 @@
 					<Obj>
 						<type>0</type>
 						<id>178</id>
-						<name>extra_match_len_write_ln184</name>
+						<name>extra_match_len_write_ln148</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>184</lineNumber>
+						<lineNumber>148</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -9010,7 +9010,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>184</second>
+										<second>148</second>
 									</item>
 								</second>
 							</item>
@@ -9049,10 +9049,10 @@
 					<Obj>
 						<type>0</type>
 						<id>179</id>
-						<name>readOffsetFlag_1_write_ln185</name>
+						<name>readOffsetFlag_1_write_ln149</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>185</lineNumber>
+						<lineNumber>149</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -9068,7 +9068,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>185</second>
+										<second>149</second>
 									</item>
 								</second>
 							</item>
@@ -9108,10 +9108,10 @@
 					<Obj>
 						<type>0</type>
 						<id>180</id>
-						<name>inIdx_write_ln209</name>
+						<name>inIdx_write_ln173</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>209</lineNumber>
+						<lineNumber>173</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -9127,7 +9127,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>209</second>
+										<second>173</second>
 									</item>
 								</second>
 							</item>
@@ -9264,10 +9264,10 @@
 					<Obj>
 						<type>0</type>
 						<id>184</id>
-						<name>br_ln376</name>
+						<name>br_ln340</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>376</lineNumber>
+						<lineNumber>340</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -9283,7 +9283,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>376</second>
+										<second>340</second>
 									</item>
 								</second>
 							</item>
@@ -9322,10 +9322,10 @@
 					<Obj>
 						<type>0</type>
 						<id>186</id>
-						<name>lz4Out_write_ln377</name>
+						<name>lz4Out_write_ln341</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>377</lineNumber>
+						<lineNumber>341</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -9341,7 +9341,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>377</second>
+										<second>341</second>
 									</item>
 								</second>
 							</item>
@@ -9380,10 +9380,10 @@
 					<Obj>
 						<type>0</type>
 						<id>187</id>
-						<name>lz4Out_eos_write_ln378</name>
+						<name>lz4Out_eos_write_ln342</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>378</lineNumber>
+						<lineNumber>342</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -9399,7 +9399,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>378</second>
+										<second>342</second>
 									</item>
 								</second>
 							</item>
@@ -9441,7 +9441,7 @@
 						<name>compressedSize_2</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>379</lineNumber>
+						<lineNumber>343</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -9457,7 +9457,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>379</second>
+										<second>343</second>
 									</item>
 								</second>
 							</item>
@@ -9495,10 +9495,10 @@
 					<Obj>
 						<type>0</type>
 						<id>189</id>
-						<name>compressedSize_write_ln177</name>
+						<name>compressedSize_write_ln141</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>177</lineNumber>
+						<lineNumber>141</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -9514,7 +9514,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>177</second>
+										<second>141</second>
 									</item>
 								</second>
 							</item>
@@ -9554,10 +9554,10 @@
 					<Obj>
 						<type>0</type>
 						<id>190</id>
-						<name>br_ln380</name>
+						<name>br_ln344</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>380</lineNumber>
+						<lineNumber>344</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -9573,7 +9573,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>380</second>
+										<second>344</second>
 									</item>
 								</second>
 							</item>
@@ -9610,10 +9610,10 @@
 					<Obj>
 						<type>0</type>
 						<id>192</id>
-						<name>br_ln209</name>
+						<name>br_ln173</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>209</lineNumber>
+						<lineNumber>173</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -9629,7 +9629,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>209</second>
+										<second>173</second>
 									</item>
 								</second>
 							</item>
@@ -9666,10 +9666,10 @@
 					<Obj>
 						<type>0</type>
 						<id>194</id>
-						<name>compressedSize_out_write_ln379</name>
+						<name>compressedSize_out_write_ln343</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config</fileDirectory>
-						<lineNumber>379</lineNumber>
+						<lineNumber>343</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -9685,7 +9685,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>379</second>
+										<second>343</second>
 									</item>
 								</second>
 							</item>
@@ -17822,7 +17822,7 @@
 		<count>82</count>
 		<item_version>0</item_version>
 		<item class_id="48" tracking_level="0" version="0">
-			<first>add_ln255_fu_507</first>
+			<first>add_ln219_fu_507</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -17854,7 +17854,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln209_fu_335</first>
+			<first>icmp_ln173_fu_335</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -17862,7 +17862,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln228_1_fu_433</first>
+			<first>icmp_ln192_1_fu_433</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -17870,7 +17870,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln228_fu_377</first>
+			<first>icmp_ln192_fu_377</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -17878,7 +17878,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln337_fu_492</first>
+			<first>icmp_ln301_fu_492</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18230,7 +18230,7 @@
 			</second>
 		</item>
 		<item>
-			<first>or_ln209_fu_346</first>
+			<first>or_ln173_fu_346</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18238,7 +18238,7 @@
 			</second>
 		</item>
 		<item>
-			<first>or_ln229_fu_383</first>
+			<first>or_ln193_fu_383</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18246,7 +18246,7 @@
 			</second>
 		</item>
 		<item>
-			<first>or_ln273_fu_769</first>
+			<first>or_ln237_fu_769</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18254,7 +18254,7 @@
 			</second>
 		</item>
 		<item>
-			<first>or_ln297_fu_847</first>
+			<first>or_ln261_fu_847</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18350,7 +18350,7 @@
 			</second>
 		</item>
 		<item>
-			<first>select_ln179_fu_731</first>
+			<first>select_ln143_fu_731</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18358,7 +18358,7 @@
 			</second>
 		</item>
 		<item>
-			<first>select_ln180_fu_590</first>
+			<first>select_ln144_fu_590</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18366,7 +18366,7 @@
 			</second>
 		</item>
 		<item>
-			<first>select_ln297_1_fu_839</first>
+			<first>select_ln261_1_fu_839</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18374,7 +18374,7 @@
 			</second>
 		</item>
 		<item>
-			<first>select_ln357_fu_624</first>
+			<first>select_ln321_fu_624</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18398,7 +18398,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln283_fu_781</first>
+			<first>trunc_ln247_fu_781</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18406,7 +18406,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln322_fu_705</first>
+			<first>trunc_ln286_fu_705</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18414,7 +18414,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln363_fu_553</first>
+			<first>trunc_ln327_fu_553</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18438,7 +18438,7 @@
 			</second>
 		</item>
 		<item>
-			<first>xor_ln209_fu_340</first>
+			<first>xor_ln173_fu_340</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18446,7 +18446,7 @@
 			</second>
 		</item>
 		<item>
-			<first>xor_ln365_fu_571</first>
+			<first>xor_ln329_fu_571</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18454,7 +18454,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln178_fu_682</first>
+			<first>zext_ln142_fu_682</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18462,7 +18462,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln264_fu_754</first>
+			<first>zext_ln228_fu_754</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18470,7 +18470,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln296_fu_861</first>
+			<first>zext_ln260_fu_861</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18640,7 +18640,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln177_store_fu_255</first>
+			<first>store_ln141_store_fu_255</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18648,7 +18648,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln177_store_fu_428</first>
+			<first>store_ln141_store_fu_428</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18656,7 +18656,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln178_store_fu_290</first>
+			<first>store_ln142_store_fu_290</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18664,7 +18664,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln178_store_fu_603</first>
+			<first>store_ln142_store_fu_603</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18672,7 +18672,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln178_store_fu_643</first>
+			<first>store_ln142_store_fu_643</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18680,7 +18680,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln178_store_fu_657</first>
+			<first>store_ln142_store_fu_657</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18688,7 +18688,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln178_store_fu_691</first>
+			<first>store_ln142_store_fu_691</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18696,7 +18696,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln178_store_fu_744</first>
+			<first>store_ln142_store_fu_744</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18704,7 +18704,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln178_store_fu_878</first>
+			<first>store_ln142_store_fu_878</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18712,7 +18712,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln179_store_fu_305</first>
+			<first>store_ln143_store_fu_305</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18720,7 +18720,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln179_store_fu_749</first>
+			<first>store_ln143_store_fu_749</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18728,7 +18728,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln179_store_fu_888</first>
+			<first>store_ln143_store_fu_888</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18736,7 +18736,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln180_store_fu_300</first>
+			<first>store_ln144_store_fu_300</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18744,7 +18744,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln180_store_fu_608</first>
+			<first>store_ln144_store_fu_608</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18752,7 +18752,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln180_store_fu_883</first>
+			<first>store_ln144_store_fu_883</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18760,7 +18760,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln181_store_fu_295</first>
+			<first>store_ln145_store_fu_295</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18768,7 +18768,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln181_store_fu_498</first>
+			<first>store_ln145_store_fu_498</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18776,7 +18776,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln181_store_fu_524</first>
+			<first>store_ln145_store_fu_524</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18784,7 +18784,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln184_store_fu_310</first>
+			<first>store_ln148_store_fu_310</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18792,7 +18792,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln184_store_fu_893</first>
+			<first>store_ln148_store_fu_893</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18800,7 +18800,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln185_store_fu_285</first>
+			<first>store_ln149_store_fu_285</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18808,7 +18808,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln185_store_fu_315</first>
+			<first>store_ln149_store_fu_315</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18816,7 +18816,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln185_store_fu_519</first>
+			<first>store_ln149_store_fu_519</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18824,7 +18824,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln185_store_fu_598</first>
+			<first>store_ln149_store_fu_598</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18832,7 +18832,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln185_store_fu_638</first>
+			<first>store_ln149_store_fu_638</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18840,7 +18840,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln185_store_fu_652</first>
+			<first>store_ln149_store_fu_652</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18848,7 +18848,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln185_store_fu_686</first>
+			<first>store_ln149_store_fu_686</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18856,7 +18856,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln185_store_fu_739</first>
+			<first>store_ln149_store_fu_739</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18864,7 +18864,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln185_store_fu_898</first>
+			<first>store_ln149_store_fu_898</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18872,7 +18872,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln189_store_fu_250</first>
+			<first>store_ln153_store_fu_250</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18880,7 +18880,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln189_store_fu_448</first>
+			<first>store_ln153_store_fu_448</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18888,7 +18888,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln192_store_fu_413</first>
+			<first>store_ln156_store_fu_413</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18896,7 +18896,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln193_store_fu_418</first>
+			<first>store_ln157_store_fu_418</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18904,7 +18904,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln195_store_fu_280</first>
+			<first>store_ln159_store_fu_280</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18912,7 +18912,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln195_store_fu_469</first>
+			<first>store_ln159_store_fu_469</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18920,7 +18920,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln196_store_fu_275</first>
+			<first>store_ln160_store_fu_275</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18928,7 +18928,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln196_store_fu_465</first>
+			<first>store_ln160_store_fu_465</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18936,7 +18936,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln197_store_fu_270</first>
+			<first>store_ln161_store_fu_270</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18944,7 +18944,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln197_store_fu_461</first>
+			<first>store_ln161_store_fu_461</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18952,7 +18952,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln198_store_fu_265</first>
+			<first>store_ln162_store_fu_265</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18960,7 +18960,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln198_store_fu_457</first>
+			<first>store_ln162_store_fu_457</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18968,7 +18968,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln199_store_fu_260</first>
+			<first>store_ln163_store_fu_260</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18976,7 +18976,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln199_store_fu_453</first>
+			<first>store_ln163_store_fu_453</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18984,7 +18984,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln209_store_fu_320</first>
+			<first>store_ln173_store_fu_320</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -18992,7 +18992,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln209_store_fu_903</first>
+			<first>store_ln173_store_fu_903</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -19008,7 +19008,7 @@
 			</second>
 		</item>
 		<item>
-			<first>write_ln377_write_fu_200</first>
+			<first>write_ln341_write_fu_200</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -19016,7 +19016,7 @@
 			</second>
 		</item>
 		<item>
-			<first>write_ln378_write_fu_207</first>
+			<first>write_ln342_write_fu_207</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -19024,7 +19024,7 @@
 			</second>
 		</item>
 		<item>
-			<first>write_ln379_write_fu_215</first>
+			<first>write_ln343_write_fu_215</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -19408,7 +19408,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln228_reg_1074</first>
+			<first>icmp_ln192_reg_1074</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -19416,7 +19416,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln337_reg_1114</first>
+			<first>icmp_ln301_reg_1114</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -19608,7 +19608,7 @@
 			</second>
 		</item>
 		<item>
-			<first>or_ln209_reg_1060</first>
+			<first>or_ln173_reg_1060</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

@@ -117,12 +117,12 @@ set RtlHierarchyInfo {[
 				"BlockSignal" : [
 					{"Name" : "compressdStream_blk_n", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135", "Port" : "compressdStream", "Inst_start_state" : "7", "Inst_end_state" : "8"}]},
+					{"ID" : "1", "SubInstance" : "grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135", "Port" : "compressdStream", "Inst_start_state" : "8", "Inst_end_state" : "9"}]},
 			{"Name" : "bestMatchStream", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["0"], "DependentChan" : "0", "DependentChanDepth" : "8", "DependentChanType" : "0",
 				"BlockSignal" : [
 					{"Name" : "bestMatchStream_blk_n", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135", "Port" : "bestMatchStream", "Inst_start_state" : "7", "Inst_end_state" : "8"}]},
+					{"ID" : "1", "SubInstance" : "grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135", "Port" : "bestMatchStream", "Inst_start_state" : "8", "Inst_end_state" : "9"}]},
 			{"Name" : "input_size", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["0"], "DependentChan" : "0", "DependentChanDepth" : "2", "DependentChanType" : "2",
 				"BlockSignal" : [
 					{"Name" : "input_size_blk_n", "Type" : "RtlSignal"}]},
@@ -131,7 +131,7 @@ set RtlHierarchyInfo {[
 					{"Name" : "input_size_c1_blk_n", "Type" : "RtlSignal"}]}],
 		"Loop" : [
 			{"Name" : "lz_bestMatchFilter_left_over", "PipelineType" : "no",
-				"LoopDec" : {"FSMBitwidth" : "10", "FirstState" : "ap_ST_fsm_state10", "LastState" : ["ap_ST_fsm_state10"], "QuitState" : ["ap_ST_fsm_state10"], "PreState" : ["ap_ST_fsm_state1", "ap_ST_fsm_state9"], "PostState" : ["ap_ST_fsm_state1"], "OneDepthLoop" : "1", "OneStateBlock": "ap_ST_fsm_state10_blk"}}]},
+				"LoopDec" : {"FSMBitwidth" : "11", "FirstState" : "ap_ST_fsm_state11", "LastState" : ["ap_ST_fsm_state11"], "QuitState" : ["ap_ST_fsm_state11"], "PreState" : ["ap_ST_fsm_state1", "ap_ST_fsm_state10"], "PostState" : ["ap_ST_fsm_state1"], "OneDepthLoop" : "1", "OneStateBlock": "ap_ST_fsm_state11_blk"}}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135", "Parent" : "0", "Child" : ["2"],
 		"CDFG" : "lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter",
 		"Protocol" : "ap_ctrl_hs",
@@ -168,15 +168,15 @@ set RtlHierarchyInfo {[
 			{"Name" : "compare_window_17_out", "Type" : "Vld", "Direction" : "O"}],
 		"Loop" : [
 			{"Name" : "lz_bestMatchFilter", "PipelineType" : "UPC",
-				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter1", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
 	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.sparsemux_13_3_32_1_1_U59", "Parent" : "0"}]}
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.sparsemux_13_3_32_1_1_U65", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	lzBestMatchFilter_6_65536_s {
-		compressdStream {Type I LastRead 5 FirstWrite -1}
-		bestMatchStream {Type O LastRead -1 FirstWrite 1}
+		compressdStream {Type I LastRead 6 FirstWrite -1}
+		bestMatchStream {Type O LastRead -1 FirstWrite 2}
 		input_size {Type I LastRead 0 FirstWrite -1}
 		input_size_c1 {Type O LastRead -1 FirstWrite 0}}
 	lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter {
@@ -188,7 +188,7 @@ set ArgLastReadFirstWriteLatency {
 		compare_window {Type I LastRead 0 FirstWrite -1}
 		input_size_2 {Type I LastRead 0 FirstWrite -1}
 		compressdStream {Type I LastRead 1 FirstWrite -1}
-		bestMatchStream {Type O LastRead -1 FirstWrite 1}
+		bestMatchStream {Type O LastRead -1 FirstWrite 2}
 		compare_window_12_out {Type O LastRead -1 FirstWrite 1}
 		compare_window_13_out {Type O LastRead -1 FirstWrite 1}
 		compare_window_14_out {Type O LastRead -1 FirstWrite 1}

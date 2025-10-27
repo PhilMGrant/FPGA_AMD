@@ -63,16 +63,6 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ bestMatchStream_dout sc_in sc_lv 32 signal 7 } 
-	{ bestMatchStream_empty_n sc_in sc_logic 1 signal 7 } 
-	{ bestMatchStream_read sc_out sc_logic 1 signal 7 } 
-	{ bestMatchStream_num_data_valid sc_in sc_lv 4 signal 7 } 
-	{ bestMatchStream_fifo_cap sc_in sc_lv 4 signal 7 } 
-	{ boosterStream_din sc_out sc_lv 32 signal 8 } 
-	{ boosterStream_full_n sc_in sc_logic 1 signal 8 } 
-	{ boosterStream_write sc_out sc_logic 1 signal 8 } 
-	{ boosterStream_num_data_valid sc_in sc_lv 32 signal 8 } 
-	{ boosterStream_fifo_cap sc_in sc_lv 32 signal 8 } 
 	{ match_loc_reg_load sc_in sc_lv 32 signal 0 } 
 	{ nextMatchCh_loc_0 sc_in sc_lv 8 signal 1 } 
 	{ matchFlag_reg_load sc_in sc_lv 1 signal 2 } 
@@ -86,6 +76,16 @@ set portList {
 	{ local_mem_ce1 sc_out sc_logic 1 signal 6 } 
 	{ local_mem_we1 sc_out sc_logic 1 signal 6 } 
 	{ local_mem_d1 sc_out sc_lv 8 signal 6 } 
+	{ bestMatchStream_dout sc_in sc_lv 32 signal 7 } 
+	{ bestMatchStream_empty_n sc_in sc_logic 1 signal 7 } 
+	{ bestMatchStream_read sc_out sc_logic 1 signal 7 } 
+	{ bestMatchStream_num_data_valid sc_in sc_lv 4 signal 7 } 
+	{ bestMatchStream_fifo_cap sc_in sc_lv 4 signal 7 } 
+	{ boosterStream_din sc_out sc_lv 32 signal 8 } 
+	{ boosterStream_full_n sc_in sc_logic 1 signal 8 } 
+	{ boosterStream_write sc_out sc_logic 1 signal 8 } 
+	{ boosterStream_num_data_valid sc_in sc_lv 32 signal 8 } 
+	{ boosterStream_fifo_cap sc_in sc_lv 32 signal 8 } 
 	{ new_match_loc_out sc_out sc_lv 32 signal 9 } 
 	{ new_match_loc_out_ap_vld sc_out sc_logic 1 outvld 9 } 
 	{ p_out sc_out sc_lv 8 signal 10 } 
@@ -106,16 +106,6 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "bestMatchStream_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "bestMatchStream", "role": "dout" }} , 
- 	{ "name": "bestMatchStream_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bestMatchStream", "role": "empty_n" }} , 
- 	{ "name": "bestMatchStream_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bestMatchStream", "role": "read" }} , 
- 	{ "name": "bestMatchStream_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "bestMatchStream", "role": "num_data_valid" }} , 
- 	{ "name": "bestMatchStream_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "bestMatchStream", "role": "fifo_cap" }} , 
- 	{ "name": "boosterStream_din", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "boosterStream", "role": "din" }} , 
- 	{ "name": "boosterStream_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "boosterStream", "role": "full_n" }} , 
- 	{ "name": "boosterStream_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "boosterStream", "role": "write" }} , 
- 	{ "name": "boosterStream_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "boosterStream", "role": "num_data_valid" }} , 
- 	{ "name": "boosterStream_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "boosterStream", "role": "fifo_cap" }} , 
  	{ "name": "match_loc_reg_load", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "match_loc_reg_load", "role": "default" }} , 
  	{ "name": "nextMatchCh_loc_0", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "nextMatchCh_loc_0", "role": "default" }} , 
  	{ "name": "matchFlag_reg_load", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "matchFlag_reg_load", "role": "default" }} , 
@@ -129,6 +119,16 @@ set NewPortList {[
  	{ "name": "local_mem_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "local_mem", "role": "ce1" }} , 
  	{ "name": "local_mem_we1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "local_mem", "role": "we1" }} , 
  	{ "name": "local_mem_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "local_mem", "role": "d1" }} , 
+ 	{ "name": "bestMatchStream_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "bestMatchStream", "role": "dout" }} , 
+ 	{ "name": "bestMatchStream_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bestMatchStream", "role": "empty_n" }} , 
+ 	{ "name": "bestMatchStream_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "bestMatchStream", "role": "read" }} , 
+ 	{ "name": "bestMatchStream_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "bestMatchStream", "role": "num_data_valid" }} , 
+ 	{ "name": "bestMatchStream_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "bestMatchStream", "role": "fifo_cap" }} , 
+ 	{ "name": "boosterStream_din", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "boosterStream", "role": "din" }} , 
+ 	{ "name": "boosterStream_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "boosterStream", "role": "full_n" }} , 
+ 	{ "name": "boosterStream_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "boosterStream", "role": "write" }} , 
+ 	{ "name": "boosterStream_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "boosterStream", "role": "num_data_valid" }} , 
+ 	{ "name": "boosterStream_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "boosterStream", "role": "fifo_cap" }} , 
  	{ "name": "new_match_loc_out", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "new_match_loc_out", "role": "default" }} , 
  	{ "name": "new_match_loc_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "new_match_loc_out", "role": "ap_vld" }} , 
  	{ "name": "p_out", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "p_out", "role": "default" }} , 
@@ -179,7 +179,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "outValue_out", "Type" : "Vld", "Direction" : "O"}],
 		"Loop" : [
 			{"Name" : "lz_booster", "PipelineType" : "UPC",
-				"LoopDec" : {"FSMBitwidth" : "3", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage1", "QuitStateIter" : "ap_enable_reg_pp0_iter0", "QuitStateBlock" : "ap_block_pp0_stage1_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+				"LoopDec" : {"FSMBitwidth" : "3", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage2", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage2_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter1", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flow_control_loop_pipe_sequential_init_U", "Parent" : "0"}]}
 
 
@@ -191,15 +191,15 @@ set ArgLastReadFirstWriteLatency {
 		match_len_reg_load {Type I LastRead 0 FirstWrite -1}
 		skip_len_reg_load {Type I LastRead 0 FirstWrite -1}
 		sub {Type I LastRead 0 FirstWrite -1}
-		local_mem {Type IO LastRead 3 FirstWrite 1}
+		local_mem {Type IO LastRead 4 FirstWrite 2}
 		bestMatchStream {Type I LastRead 1 FirstWrite -1}
-		boosterStream {Type O LastRead -1 FirstWrite 2}
-		new_match_loc_out {Type O LastRead -1 FirstWrite 1}
-		p_out {Type O LastRead -1 FirstWrite 1}
-		new_matchFlag_1_0_0_07_out {Type O LastRead -1 FirstWrite 1}
-		new_match_len_out {Type O LastRead -1 FirstWrite 1}
-		p_out1 {Type O LastRead -1 FirstWrite 1}
-		outValue_out {Type O LastRead -1 FirstWrite 1}}}
+		boosterStream {Type O LastRead -1 FirstWrite 4}
+		new_match_loc_out {Type O LastRead -1 FirstWrite 3}
+		p_out {Type O LastRead -1 FirstWrite 3}
+		new_matchFlag_1_0_0_07_out {Type O LastRead -1 FirstWrite 3}
+		new_match_len_out {Type O LastRead -1 FirstWrite 3}
+		p_out1 {Type O LastRead -1 FirstWrite 3}
+		outValue_out {Type O LastRead -1 FirstWrite 3}}}
 
 set hasDtUnsupportedChannel 0
 

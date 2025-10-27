@@ -423,7 +423,7 @@ end
         .token_out_vec(token_out_vec_3),
         .dl_detect_out(dl_in_vec[3]));
 
-    assign proc_3_data_FIFO_blk[0] = 1'b0 | (~AESL_inst_lz4CompressEngineRun.lz4Compress_4096_1_U0.lz4CompressPart1_4096_1_U0.grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140.boosterStream_blk_n) | (~AESL_inst_lz4CompressEngineRun.lz4Compress_4096_1_U0.lz4CompressPart1_4096_1_U0.boosterStream_blk_n) | (~AESL_inst_lz4CompressEngineRun.lz4Compress_4096_1_U0.lz4CompressPart1_4096_1_U0.input_size_blk_n);
+    assign proc_3_data_FIFO_blk[0] = 1'b0 | (~AESL_inst_lz4CompressEngineRun.lz4Compress_4096_1_U0.lz4CompressPart1_4096_1_U0.grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_142.boosterStream_blk_n) | (~AESL_inst_lz4CompressEngineRun.lz4Compress_4096_1_U0.lz4CompressPart1_4096_1_U0.boosterStream_blk_n) | (~AESL_inst_lz4CompressEngineRun.lz4Compress_4096_1_U0.lz4CompressPart1_4096_1_U0.input_size_blk_n);
     assign proc_3_data_PIPO_blk[0] = 1'b0;
     assign proc_3_start_FIFO_blk[0] = 1'b0 | (~AESL_inst_lz4CompressEngineRun.start_for_lz4Compress_4096_1_U0_U.if_empty_n & AESL_inst_lz4CompressEngineRun.lz4Compress_4096_1_U0.ap_idle & ~AESL_inst_lz4CompressEngineRun.start_for_lz4Compress_4096_1_U0_U.if_write);
     assign proc_3_TLF_FIFO_blk[0] = 1'b0;
@@ -461,14 +461,14 @@ end
         .token_out_vec(token_out_vec_4),
         .dl_detect_out(dl_in_vec[4]));
 
-    assign proc_4_data_FIFO_blk[0] = 1'b0 | (~AESL_inst_lz4CompressEngineRun.lz4Compress_4096_1_U0.lz4CompressPart1_4096_1_U0.boosterStream_blk_n) | (~AESL_inst_lz4CompressEngineRun.lz4Compress_4096_1_U0.lz4CompressPart1_4096_1_U0.grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140.boosterStream_blk_n) | (~AESL_inst_lz4CompressEngineRun.lz4Compress_4096_1_U0.lz4CompressPart1_4096_1_U0.input_size_blk_n);
+    assign proc_4_data_FIFO_blk[0] = 1'b0 | (~AESL_inst_lz4CompressEngineRun.lz4Compress_4096_1_U0.lz4CompressPart1_4096_1_U0.boosterStream_blk_n) | (~AESL_inst_lz4CompressEngineRun.lz4Compress_4096_1_U0.lz4CompressPart1_4096_1_U0.grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_142.boosterStream_blk_n) | (~AESL_inst_lz4CompressEngineRun.lz4Compress_4096_1_U0.lz4CompressPart1_4096_1_U0.input_size_blk_n);
     assign proc_4_data_PIPO_blk[0] = 1'b0;
     assign proc_4_start_FIFO_blk[0] = 1'b0;
     assign proc_4_TLF_FIFO_blk[0] = 1'b0;
     assign proc_4_input_sync_blk[0] = 1'b0;
     assign proc_4_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_4[0] = dl_detect_out ? proc_dep_vld_vec_4_reg[0] : (proc_4_data_FIFO_blk[0] | proc_4_data_PIPO_blk[0] | proc_4_start_FIFO_blk[0] | proc_4_TLF_FIFO_blk[0] | proc_4_input_sync_blk[0] | proc_4_output_sync_blk[0]);
-    assign proc_4_data_FIFO_blk[1] = 1'b0 | (~AESL_inst_lz4CompressEngineRun.lz4Compress_4096_1_U0.lz4CompressPart1_4096_1_U0.grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140.lit_outStream_blk_n) | (~AESL_inst_lz4CompressEngineRun.lz4Compress_4096_1_U0.lz4CompressPart1_4096_1_U0.lenOffset_Stream_blk_n) | (~AESL_inst_lz4CompressEngineRun.lz4Compress_4096_1_U0.lz4CompressPart1_4096_1_U0.grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140.lenOffset_Stream_blk_n) | (~AESL_inst_lz4CompressEngineRun.lz4Compress_4096_1_U0.lz4CompressPart1_4096_1_U0.input_size_c_blk_n);
+    assign proc_4_data_FIFO_blk[1] = 1'b0 | (~AESL_inst_lz4CompressEngineRun.lz4Compress_4096_1_U0.lz4CompressPart1_4096_1_U0.grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_142.lit_outStream_blk_n) | (~AESL_inst_lz4CompressEngineRun.lz4Compress_4096_1_U0.lz4CompressPart1_4096_1_U0.lenOffset_Stream_blk_n) | (~AESL_inst_lz4CompressEngineRun.lz4Compress_4096_1_U0.lz4CompressPart1_4096_1_U0.grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_142.lenOffset_Stream_blk_n) | (~AESL_inst_lz4CompressEngineRun.lz4Compress_4096_1_U0.lz4CompressPart1_4096_1_U0.input_size_c_blk_n);
     assign proc_4_data_PIPO_blk[1] = 1'b0;
     assign proc_4_start_FIFO_blk[1] = 1'b0 | (~AESL_inst_lz4CompressEngineRun.lz4Compress_4096_1_U0.start_for_lz4CompressPart2_U0_U.if_full_n & AESL_inst_lz4CompressEngineRun.lz4Compress_4096_1_U0.lz4CompressPart1_4096_1_U0.ap_start & ~AESL_inst_lz4CompressEngineRun.lz4Compress_4096_1_U0.lz4CompressPart1_4096_1_U0.real_start & (trans_in_cnt_3 == trans_out_cnt_3) & ~AESL_inst_lz4CompressEngineRun.lz4Compress_4096_1_U0.start_for_lz4CompressPart2_U0_U.if_read);
     assign proc_4_TLF_FIFO_blk[1] = 1'b0;

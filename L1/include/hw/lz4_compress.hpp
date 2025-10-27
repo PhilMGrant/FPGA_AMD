@@ -50,106 +50,70 @@ static void lz4CompressPart1(hls::stream<ap_uint<32> >& inStream,
                              uint32_t index) {
     if (input_size == 0) return;
 
-    // 优化：使用寄存器减少关键路径
+    // 延迟优化：简化逻辑，减少关键路径
     uint32_t lit_count = 0;
     uint32_t lit_count_flag = 0;
     
-    // 优化：双缓冲预读取，改善数据流平衡
-    ap_uint<32> currentEncodedValue = inStream.read();
-    ap_uint<32> nextEncodedValue;
-    bool has_next_value = (input_size > 1);
-    if (has_next_value) {
-        nextEncodedValue = inStream.read();
+    // 延迟优化：使用更简单的单缓冲预读取，避免复杂的数据依赖
+    ap_uint<32> currentEncodedValue;
+    bool has_next_value = false;
+    
+    // 延迟优化：预读取第一个值
+    if (input_size > 0) {
+        currentEncodedValue = inStream.read();
+        has_next_value = true;
     }
-    
-    // 优化：使用流水线寄存器存储中间值
-    ap_uint<32> tmpEncodedValue_reg;
-    uint8_t tCh_reg;
-    uint8_t tLen_reg;
-    uint16_t tOffset_reg;
-    uint32_t match_offset_reg;
-    bool has_match_reg;
-    bool lit_overflow_reg;
-    
-    // 优化：添加输出决策寄存器，分离关键路径
-    bool should_write_lenOffset = false;
-    bool should_write_literal = false;
-    ap_uint<64> tmpValue_reg;
-    uint8_t literal_value_reg;
-    
-    // 优化：预计算match_len，减少关键路径
-    uint8_t match_len_reg;
     
 lz4_divide:
     for (uint32_t i = 0; i < input_size;) {
-#pragma HLS PIPELINE II = 2  // 保持II=2以避免时序违例
+#pragma HLS PIPELINE II = 2  // 保守优化：回退到II=2确保时序稳定
 #pragma HLS LOOP_FLATTEN off
         
-        // 阶段1: 数据读取和预计算
-        tmpEncodedValue_reg = currentEncodedValue;
+        // 延迟优化：简化数据提取，避免复杂并行操作
+        uint8_t tCh = currentEncodedValue.range(7, 0);
+        uint8_t tLen = currentEncodedValue.range(15, 8);
+        uint16_t tOffset = currentEncodedValue.range(31, 16);
         
-        // 优化：并行提取字段，减少关键路径
-        tCh_reg = tmpEncodedValue_reg.range(7, 0);
-        tLen_reg = tmpEncodedValue_reg.range(15, 8);
-        tOffset_reg = tmpEncodedValue_reg.range(31, 16);
-        match_offset_reg = tOffset_reg;
+        // 延迟优化：简化条件判断
+        bool has_match = (tLen != 0);
+        bool lit_overflow = (lit_count >= MAX_LIT_COUNT);
         
-        // 优化：预计算所有条件判断和值
-        has_match_reg = (tLen_reg != 0);
-        lit_overflow_reg = (lit_count >= MAX_LIT_COUNT);
-        match_len_reg = tLen_reg - 4; // LZ4 standard - 预计算
-        
-        // 优化：双缓冲数据交换，减少读取延迟
-        currentEncodedValue = nextEncodedValue;
-        if (i < (input_size - 2) && has_next_value) {
-            nextEncodedValue = inStream.read();
+        // 延迟优化：预读取下一个值（如果存在）
+        if (i < (input_size - 1) && has_next_value) {
+            currentEncodedValue = inStream.read();
         } else {
             has_next_value = false;
         }
         
-        // 阶段2: 数据处理和输出决策
-        should_write_lenOffset = false;
-        should_write_literal = false;
-        literal_value_reg = tCh_reg;
-        
-        if (lit_overflow_reg) {
+        // 延迟优化：简化输出逻辑，减少条件分支
+        if (lit_overflow) {
             lit_count_flag = 1;
-        } else if (has_match_reg) {
-            // 优化：并行计算所有输出值 - 使用预计算的match_len_reg
-            tmpValue_reg.range(63, 32) = lit_count;
-            tmpValue_reg.range(15, 0) = match_len_reg;
-            tmpValue_reg.range(31, 16) = match_offset_reg;
+        } else if (has_match) {
+            // 延迟优化：直接构造输出值，避免中间寄存器
+            ap_uint<64> tmpValue;
+            tmpValue.range(63, 32) = lit_count;
+            tmpValue.range(15, 0) = tLen - 4;  // LZ4标准
+            tmpValue.range(31, 16) = tOffset;
             
-            should_write_lenOffset = true;
+            lenOffset_Stream << tmpValue;
             lit_count = 0;
         } else {
-            should_write_literal = true;
+            lit_outStream << tCh;
             lit_count++;
         }
         
-        // 阶段3: 输出写入（分离关键路径）
-        if (should_write_lenOffset) {
-            lenOffset_Stream << tmpValue_reg;
-        }
-        
-        if (should_write_literal) {
-            lit_outStream << literal_value_reg;
-        }
-        
-        // 优化：使用条件赋值而不是if-else
-        i += has_match_reg ? tLen_reg : 1;
+        // 延迟优化：简化索引更新
+        i += has_match ? tLen : 1;
     }
     
-    // 优化：简化结束处理逻辑
+    // 延迟优化：简化结束处理
     if (lit_count) {
         ap_uint<64> tmpValue;
         tmpValue.range(63, 32) = lit_count;
         
-        // 优化：并行条件判断
-        bool is_max_lit = (lit_count == MAX_LIT_COUNT);
-        lit_count_flag = lit_count_flag || is_max_lit;
-        
-        if (is_max_lit) {
+        // 延迟优化：简化条件判断
+        if (lit_count == MAX_LIT_COUNT) {
+            lit_count_flag = 1;
             tmpValue.range(15, 0) = 777;
             tmpValue.range(31, 16) = 777;
         } else {
@@ -416,12 +380,12 @@ static void lz4Compress(hls::stream<ap_uint<32> >& inStream,
                         hls::stream<bool>& endOfStream,
                         hls::stream<uint32_t>& compressdSizeStream,
                         uint32_t index) {
-    // 优化：增加FIFO深度以改善数据流平衡
+    // 优化：进一步大幅增加FIFO深度以应对上游数据供应不足
     hls::stream<uint8_t> lit_outStream("lit_outStream");
     hls::stream<ap_uint<64> > lenOffset_Stream("lenOffset_Stream");
 
-#pragma HLS STREAM variable = lit_outStream depth = MAX_LIT_COUNT * 2  // 优化：增加深度以改善数据流
-#pragma HLS STREAM variable = lenOffset_Stream depth = c_gmemBurstSize * 2  // 优化：增加深度
+#pragma HLS STREAM variable = lit_outStream depth = MAX_LIT_COUNT * 32  // 进一步增加深度以应对上游瓶颈
+#pragma HLS STREAM variable = lenOffset_Stream depth = c_gmemBurstSize * 32  // 进一步增加深度
 
 #pragma HLS BIND_STORAGE variable = lit_outStream type = FIFO impl = BRAM  // 优化：使用BRAM改善大容量存储
 #pragma HLS BIND_STORAGE variable = lenOffset_Stream type = FIFO impl = SRL

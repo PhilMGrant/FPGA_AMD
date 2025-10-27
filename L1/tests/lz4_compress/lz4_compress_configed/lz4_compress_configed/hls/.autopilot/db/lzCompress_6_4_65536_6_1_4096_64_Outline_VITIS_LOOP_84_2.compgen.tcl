@@ -10,7 +10,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 3 \
+    id 5 \
     name inStream \
     type fifo \
     dir I \
@@ -25,7 +25,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4 \
+    id 6 \
     name present_window_4_out \
     type other \
     dir O \
@@ -40,7 +40,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 5 \
+    id 7 \
     name present_window_3_out \
     type other \
     dir O \
@@ -55,7 +55,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 6 \
+    id 8 \
     name present_window_2_out \
     type other \
     dir O \
@@ -70,7 +70,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 7 \
+    id 9 \
     name present_window_1_out \
     type other \
     dir O \
@@ -85,7 +85,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 8 \
+    id 10 \
     name present_window_out \
     type other \
     dir O \
@@ -100,45 +100,15 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 9 \
-    name arrayidx48_promoted172_out \
-    type other \
-    dir O \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_arrayidx48_promoted172_out \
-    op interface \
-    ports { arrayidx48_promoted172_out { O 8 vector } arrayidx48_promoted172_out_ap_vld { O 1 bit } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 10 \
-    name arrayidx42_3_promoted170_out \
-    type other \
-    dir O \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_arrayidx42_3_promoted170_out \
-    op interface \
-    ports { arrayidx42_3_promoted170_out { O 8 vector } arrayidx42_3_promoted170_out_ap_vld { O 1 bit } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
     id 11 \
-    name arrayidx71_promoted168_out \
+    name arrayidx48_promoted176_out \
     type other \
     dir O \
     reset_level 1 \
     sync_rst true \
-    corename dc_arrayidx71_promoted168_out \
+    corename dc_arrayidx48_promoted176_out \
     op interface \
-    ports { arrayidx71_promoted168_out { O 8 vector } arrayidx71_promoted168_out_ap_vld { O 1 bit } } \
+    ports { arrayidx48_promoted176_out { O 8 vector } arrayidx48_promoted176_out_ap_vld { O 1 bit } } \
 } "
 }
 
@@ -146,14 +116,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 12 \
-    name arrayidx61_promoted166_out \
+    name arrayidx42_3_promoted174_out \
     type other \
     dir O \
     reset_level 1 \
     sync_rst true \
-    corename dc_arrayidx61_promoted166_out \
+    corename dc_arrayidx42_3_promoted174_out \
     op interface \
-    ports { arrayidx61_promoted166_out { O 8 vector } arrayidx61_promoted166_out_ap_vld { O 1 bit } } \
+    ports { arrayidx42_3_promoted174_out { O 8 vector } arrayidx42_3_promoted174_out_ap_vld { O 1 bit } } \
 } "
 }
 
@@ -161,14 +131,44 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 13 \
-    name arrayidx54_promoted164_out \
+    name arrayidx71_promoted172_out \
     type other \
     dir O \
     reset_level 1 \
     sync_rst true \
-    corename dc_arrayidx54_promoted164_out \
+    corename dc_arrayidx71_promoted172_out \
     op interface \
-    ports { arrayidx54_promoted164_out { O 8 vector } arrayidx54_promoted164_out_ap_vld { O 1 bit } } \
+    ports { arrayidx71_promoted172_out { O 8 vector } arrayidx71_promoted172_out_ap_vld { O 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 14 \
+    name arrayidx61_promoted170_out \
+    type other \
+    dir O \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_arrayidx61_promoted170_out \
+    op interface \
+    ports { arrayidx61_promoted170_out { O 8 vector } arrayidx61_promoted170_out_ap_vld { O 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 15 \
+    name arrayidx54_promoted168_out \
+    type other \
+    dir O \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_arrayidx54_promoted168_out \
+    op interface \
+    ports { arrayidx54_promoted168_out { O 8 vector } arrayidx54_promoted168_out_ap_vld { O 1 bit } } \
 } "
 }
 

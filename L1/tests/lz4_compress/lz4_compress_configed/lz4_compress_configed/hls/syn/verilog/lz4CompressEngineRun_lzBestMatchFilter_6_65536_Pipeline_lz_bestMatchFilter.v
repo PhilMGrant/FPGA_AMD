@@ -96,8 +96,9 @@ reg compare_window_17_out_ap_vld;
 wire    ap_CS_fsm_pp0_stage0;
 wire    ap_enable_reg_pp0_iter0;
 reg    ap_enable_reg_pp0_iter1;
+reg    ap_enable_reg_pp0_iter2;
 reg    ap_idle_pp0;
-reg   [0:0] icmp_ln339_reg_608;
+reg   [0:0] icmp_ln339_reg_605;
 reg    ap_block_state2_pp0_stage0_iter1_grp1;
 reg    ap_block_pp0_stage0_subdone;
 wire   [0:0] icmp_ln339_fu_251_p2;
@@ -108,13 +109,17 @@ reg    compressdStream_blk_n;
 wire    ap_block_pp0_stage0_grp1;
 reg    bestMatchStream_blk_n;
 reg    ap_block_pp0_stage0_11001;
+reg   [31:0] outValue_load_reg_609;
+reg    ap_block_pp0_stage0_11001_grp1;
+wire   [0:0] best_match_1_fu_497_p2;
+reg   [0:0] best_match_1_reg_615;
+reg    ap_condition_exit_pp0_iter1_stage0;
 reg   [31:0] i_fu_88;
 wire   [31:0] i_9_fu_257_p2;
 wire    ap_loop_init;
 reg   [31:0] ap_sig_allocacmp_i_8;
 wire    ap_block_pp0_stage0;
 reg   [31:0] outValue_fu_92;
-reg    ap_block_pp0_stage0_11001_grp1;
 reg    ap_loop_exit_ready_pp0_iter1_reg;
 reg   [31:0] compareValue_fu_96;
 reg   [31:0] compareValue_1_fu_100;
@@ -156,8 +161,7 @@ wire   [0:0] and_ln355_2_fu_485_p2;
 wire   [0:0] xor_ln355_2_fu_407_p2;
 wire   [0:0] and_ln355_3_fu_491_p2;
 wire   [0:0] and_ln355_1_fu_479_p2;
-wire   [0:0] best_match_1_fu_497_p2;
-wire   [31:0] outValue_4_fu_503_p5;
+wire   [31:0] outValue_4_fu_533_p5;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -172,6 +176,7 @@ wire    ap_ce_reg;
 initial begin
 #0 ap_CS_fsm = 1'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
+#0 ap_enable_reg_pp0_iter2 = 1'b0;
 #0 i_fu_88 = 32'd0;
 #0 outValue_fu_92 = 32'd0;
 #0 compareValue_fu_96 = 32'd0;
@@ -228,11 +233,13 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_pp0_stage0)) begin
-        if (((ap_loop_exit_ready == 1'b0) & (1'b0 == ap_block_pp0_stage0_subdone))) begin
-            ap_loop_exit_ready_pp0_iter1_reg <= 1'b0;
-        end else if ((1'b0 == ap_block_pp0_stage0_11001)) begin
-            ap_loop_exit_ready_pp0_iter1_reg <= ap_loop_exit_ready;
+    if (ap_rst == 1'b1) begin
+        ap_enable_reg_pp0_iter2 <= 1'b0;
+    end else begin
+        if ((1'b1 == ap_condition_exit_pp0_iter1_stage0)) begin
+            ap_enable_reg_pp0_iter2 <= 1'b0;
+        end else if ((1'b0 == ap_block_pp0_stage0_subdone)) begin
+            ap_enable_reg_pp0_iter2 <= ap_enable_reg_pp0_iter1;
         end
     end
 end
@@ -241,7 +248,7 @@ always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
             compareValue_1_fu_100 <= compare_window_2;
-        end else if (((icmp_ln339_reg_608 == 1'd1) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
+        end else if (((icmp_ln339_reg_605 == 1'd1) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
             compareValue_1_fu_100 <= compareValue_2_fu_104;
         end
     end
@@ -251,7 +258,7 @@ always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
             compareValue_2_fu_104 <= compare_window_3;
-        end else if (((icmp_ln339_reg_608 == 1'd1) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
+        end else if (((icmp_ln339_reg_605 == 1'd1) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
             compareValue_2_fu_104 <= compareValue_3_fu_108;
         end
     end
@@ -261,7 +268,7 @@ always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
             compareValue_3_fu_108 <= compare_window_4;
-        end else if (((icmp_ln339_reg_608 == 1'd1) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
+        end else if (((icmp_ln339_reg_605 == 1'd1) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
             compareValue_3_fu_108 <= compareValue_4_fu_112;
         end
     end
@@ -271,7 +278,7 @@ always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
             compareValue_4_fu_112 <= compare_window_5;
-        end else if (((icmp_ln339_reg_608 == 1'd1) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
+        end else if (((icmp_ln339_reg_605 == 1'd1) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
             compareValue_4_fu_112 <= compressdStream_dout;
         end
     end
@@ -281,7 +288,7 @@ always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
             compareValue_fu_96 <= compare_window_1;
-        end else if (((icmp_ln339_reg_608 == 1'd1) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
+        end else if (((icmp_ln339_reg_605 == 1'd1) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
             compareValue_fu_96 <= compareValue_1_fu_100;
         end
     end
@@ -301,7 +308,7 @@ always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
             outValue_fu_92 <= compare_window;
-        end else if (((icmp_ln339_reg_608 == 1'd1) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
+        end else if (((icmp_ln339_reg_605 == 1'd1) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
             outValue_fu_92 <= compareValue_fu_96;
         end
     end
@@ -309,7 +316,15 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        icmp_ln339_reg_608 <= icmp_ln339_fu_251_p2;
+        ap_loop_exit_ready_pp0_iter1_reg <= ap_loop_exit_ready;
+        icmp_ln339_reg_605 <= icmp_ln339_fu_251_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        best_match_1_reg_615 <= best_match_1_fu_497_p2;
+        outValue_load_reg_609 <= outValue_fu_92;
     end
 end
 
@@ -318,6 +333,14 @@ always @ (*) begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b1;
     end else begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b0 == ap_block_pp0_stage0_subdone) & (icmp_ln339_reg_605 == 1'd0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        ap_condition_exit_pp0_iter1_stage0 = 1'b1;
+    end else begin
+        ap_condition_exit_pp0_iter1_stage0 = 1'b0;
     end
 end
 
@@ -338,7 +361,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter1 == 1'b0) & (ap_enable_reg_pp0_iter0 == 1'b0))) begin
+    if (((ap_enable_reg_pp0_iter2 == 1'b0) & (ap_enable_reg_pp0_iter1 == 1'b0) & (ap_enable_reg_pp0_iter0 == 1'b0))) begin
         ap_idle_pp0 = 1'b1;
     end else begin
         ap_idle_pp0 = 1'b0;
@@ -362,7 +385,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_grp1) & (icmp_ln339_reg_608 == 1'd1) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((1'b0 == ap_block_pp0_stage0_grp1) & (ap_enable_reg_pp0_iter2 == 1'b1))) begin
         bestMatchStream_blk_n = bestMatchStream_full_n;
     end else begin
         bestMatchStream_blk_n = 1'b1;
@@ -370,7 +393,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (icmp_ln339_reg_608 == 1'd1) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter2 == 1'b1))) begin
         bestMatchStream_write = 1'b1;
     end else begin
         bestMatchStream_write = 1'b0;
@@ -378,7 +401,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (icmp_ln339_reg_608 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_exit_ready_pp0_iter1_reg == 1'b1))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (icmp_ln339_reg_605 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_exit_ready_pp0_iter1_reg == 1'b1))) begin
         compare_window_12_out_ap_vld = 1'b1;
     end else begin
         compare_window_12_out_ap_vld = 1'b0;
@@ -386,7 +409,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (icmp_ln339_reg_608 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_exit_ready_pp0_iter1_reg == 1'b1))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (icmp_ln339_reg_605 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_exit_ready_pp0_iter1_reg == 1'b1))) begin
         compare_window_13_out_ap_vld = 1'b1;
     end else begin
         compare_window_13_out_ap_vld = 1'b0;
@@ -394,7 +417,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (icmp_ln339_reg_608 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_exit_ready_pp0_iter1_reg == 1'b1))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (icmp_ln339_reg_605 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_exit_ready_pp0_iter1_reg == 1'b1))) begin
         compare_window_14_out_ap_vld = 1'b1;
     end else begin
         compare_window_14_out_ap_vld = 1'b0;
@@ -402,7 +425,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (icmp_ln339_reg_608 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_exit_ready_pp0_iter1_reg == 1'b1))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (icmp_ln339_reg_605 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_exit_ready_pp0_iter1_reg == 1'b1))) begin
         compare_window_15_out_ap_vld = 1'b1;
     end else begin
         compare_window_15_out_ap_vld = 1'b0;
@@ -410,7 +433,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (icmp_ln339_reg_608 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_exit_ready_pp0_iter1_reg == 1'b1))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (icmp_ln339_reg_605 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_exit_ready_pp0_iter1_reg == 1'b1))) begin
         compare_window_16_out_ap_vld = 1'b1;
     end else begin
         compare_window_16_out_ap_vld = 1'b0;
@@ -418,7 +441,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (icmp_ln339_reg_608 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_exit_ready_pp0_iter1_reg == 1'b1))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (icmp_ln339_reg_605 == 1'd0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_exit_ready_pp0_iter1_reg == 1'b1))) begin
         compare_window_17_out_ap_vld = 1'b1;
     end else begin
         compare_window_17_out_ap_vld = 1'b0;
@@ -426,7 +449,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_grp1) & (icmp_ln339_reg_608 == 1'd1) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((1'b0 == ap_block_pp0_stage0_grp1) & (icmp_ln339_reg_605 == 1'd1) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         compressdStream_blk_n = compressdStream_empty_n;
     end else begin
         compressdStream_blk_n = 1'b1;
@@ -434,7 +457,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (icmp_ln339_reg_608 == 1'd1) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (icmp_ln339_reg_605 == 1'd1) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         compressdStream_read = 1'b1;
     end else begin
         compressdStream_read = 1'b0;
@@ -475,25 +498,25 @@ assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 assign ap_block_pp0_stage0 = ~(1'b1 == 1'b1);
 
 always @ (*) begin
-    ap_block_pp0_stage0_01001_grp1 = ((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_block_state2_pp0_stage0_iter1_grp1));
+    ap_block_pp0_stage0_01001_grp1 = (((bestMatchStream_full_n == 1'b0) & (ap_enable_reg_pp0_iter2 == 1'b1)) | ((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_block_state2_pp0_stage0_iter1_grp1)));
 end
 
 always @ (*) begin
-    ap_block_pp0_stage0_11001 = ((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_block_state2_pp0_stage0_iter1_grp1));
+    ap_block_pp0_stage0_11001 = (((bestMatchStream_full_n == 1'b0) & (ap_enable_reg_pp0_iter2 == 1'b1)) | ((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_block_state2_pp0_stage0_iter1_grp1)));
 end
 
 always @ (*) begin
-    ap_block_pp0_stage0_11001_grp1 = ((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_block_state2_pp0_stage0_iter1_grp1));
+    ap_block_pp0_stage0_11001_grp1 = (((bestMatchStream_full_n == 1'b0) & (ap_enable_reg_pp0_iter2 == 1'b1)) | ((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_block_state2_pp0_stage0_iter1_grp1)));
 end
 
 assign ap_block_pp0_stage0_grp1 = ~(1'b1 == 1'b1);
 
 always @ (*) begin
-    ap_block_pp0_stage0_subdone = ((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_block_state2_pp0_stage0_iter1_grp1));
+    ap_block_pp0_stage0_subdone = (((bestMatchStream_full_n == 1'b0) & (ap_enable_reg_pp0_iter2 == 1'b1)) | ((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_block_state2_pp0_stage0_iter1_grp1)));
 end
 
 always @ (*) begin
-    ap_block_state2_pp0_stage0_iter1_grp1 = (((icmp_ln339_reg_608 == 1'd1) & (bestMatchStream_full_n == 1'b0)) | ((icmp_ln339_reg_608 == 1'd1) & (compressdStream_empty_n == 1'b0)));
+    ap_block_state2_pp0_stage0_iter1_grp1 = ((icmp_ln339_reg_605 == 1'd1) & (compressdStream_empty_n == 1'b0));
 end
 
 assign ap_done = ap_done_sig;
@@ -506,7 +529,7 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign bestMatchStream_din = ((best_match_1_fu_497_p2[0:0] == 1'b1) ? outValue_fu_92 : outValue_4_fu_503_p5);
+assign bestMatchStream_din = ((best_match_1_reg_615[0:0] == 1'b1) ? outValue_load_reg_609 : outValue_4_fu_533_p5);
 
 assign best_match_1_fu_497_p2 = (and_ln355_3_fu_491_p2 & and_ln355_1_fu_479_p2);
 
@@ -554,7 +577,7 @@ assign icmp_ln355_fu_311_p2 = ((match_length_fu_291_p3 < compareLen_fu_303_p3) ?
 
 assign match_length_fu_291_p3 = {{outValue_fu_92[15:8]}};
 
-assign outValue_4_fu_503_p5 = {{24'd0}, {outValue_fu_92[7:0]}};
+assign outValue_4_fu_533_p5 = {{24'd0}, {outValue_load_reg_609[7:0]}};
 
 assign xor_ln355_1_fu_377_p2 = (icmp_ln355_2_fu_371_p2 ^ 1'd1);
 

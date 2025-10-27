@@ -17,20 +17,26 @@ set cdfgNum 18
 set C_modelName {lzCompress<6, 4, 65536, 6, 1, 4096, 64>_Pipeline_dict_flush}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
-dict set ap_memory_interface_dict dict_1 { MEM_WIDTH 432 MEM_SIZE 110592 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict dict { MEM_WIDTH 432 MEM_SIZE 110592 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict dict_3 { MEM_WIDTH 432 MEM_SIZE 55296 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict dict_2 { MEM_WIDTH 432 MEM_SIZE 55296 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict dict_1 { MEM_WIDTH 432 MEM_SIZE 55296 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict dict { MEM_WIDTH 432 MEM_SIZE 55296 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 set C_modelArgList {
-	{ dict_1 int 432 regular {array 2048 { 0 0 } 0 1 }  }
-	{ dict int 432 regular {array 2048 { 0 0 } 0 1 }  }
+	{ dict_3 int 432 regular {array 1024 { 0 0 } 0 1 }  }
+	{ dict_2 int 432 regular {array 1024 { 0 0 } 0 1 }  }
+	{ dict_1 int 432 regular {array 1024 { 0 0 } 0 1 }  }
+	{ dict int 432 regular {array 1024 { 0 0 } 0 1 }  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
-	{ "Name" : "dict_1", "interface" : "memory", "bitwidth" : 432, "direction" : "WRITEONLY"} , 
+	{ "Name" : "dict_3", "interface" : "memory", "bitwidth" : 432, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "dict_2", "interface" : "memory", "bitwidth" : 432, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "dict_1", "interface" : "memory", "bitwidth" : 432, "direction" : "WRITEONLY"} , 
  	{ "Name" : "dict", "interface" : "memory", "bitwidth" : 432, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
-set portNum 22
+set portNum 38
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -38,22 +44,38 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ dict_1_address0 sc_out sc_lv 11 signal 0 } 
-	{ dict_1_ce0 sc_out sc_logic 1 signal 0 } 
-	{ dict_1_we0 sc_out sc_logic 1 signal 0 } 
-	{ dict_1_d0 sc_out sc_lv 432 signal 0 } 
-	{ dict_1_address1 sc_out sc_lv 11 signal 0 } 
-	{ dict_1_ce1 sc_out sc_logic 1 signal 0 } 
-	{ dict_1_we1 sc_out sc_logic 1 signal 0 } 
-	{ dict_1_d1 sc_out sc_lv 432 signal 0 } 
-	{ dict_address0 sc_out sc_lv 11 signal 1 } 
-	{ dict_ce0 sc_out sc_logic 1 signal 1 } 
-	{ dict_we0 sc_out sc_logic 1 signal 1 } 
-	{ dict_d0 sc_out sc_lv 432 signal 1 } 
-	{ dict_address1 sc_out sc_lv 11 signal 1 } 
-	{ dict_ce1 sc_out sc_logic 1 signal 1 } 
-	{ dict_we1 sc_out sc_logic 1 signal 1 } 
-	{ dict_d1 sc_out sc_lv 432 signal 1 } 
+	{ dict_3_address0 sc_out sc_lv 10 signal 0 } 
+	{ dict_3_ce0 sc_out sc_logic 1 signal 0 } 
+	{ dict_3_we0 sc_out sc_logic 1 signal 0 } 
+	{ dict_3_d0 sc_out sc_lv 432 signal 0 } 
+	{ dict_3_address1 sc_out sc_lv 10 signal 0 } 
+	{ dict_3_ce1 sc_out sc_logic 1 signal 0 } 
+	{ dict_3_we1 sc_out sc_logic 1 signal 0 } 
+	{ dict_3_d1 sc_out sc_lv 432 signal 0 } 
+	{ dict_2_address0 sc_out sc_lv 10 signal 1 } 
+	{ dict_2_ce0 sc_out sc_logic 1 signal 1 } 
+	{ dict_2_we0 sc_out sc_logic 1 signal 1 } 
+	{ dict_2_d0 sc_out sc_lv 432 signal 1 } 
+	{ dict_2_address1 sc_out sc_lv 10 signal 1 } 
+	{ dict_2_ce1 sc_out sc_logic 1 signal 1 } 
+	{ dict_2_we1 sc_out sc_logic 1 signal 1 } 
+	{ dict_2_d1 sc_out sc_lv 432 signal 1 } 
+	{ dict_1_address0 sc_out sc_lv 10 signal 2 } 
+	{ dict_1_ce0 sc_out sc_logic 1 signal 2 } 
+	{ dict_1_we0 sc_out sc_logic 1 signal 2 } 
+	{ dict_1_d0 sc_out sc_lv 432 signal 2 } 
+	{ dict_1_address1 sc_out sc_lv 10 signal 2 } 
+	{ dict_1_ce1 sc_out sc_logic 1 signal 2 } 
+	{ dict_1_we1 sc_out sc_logic 1 signal 2 } 
+	{ dict_1_d1 sc_out sc_lv 432 signal 2 } 
+	{ dict_address0 sc_out sc_lv 10 signal 3 } 
+	{ dict_ce0 sc_out sc_logic 1 signal 3 } 
+	{ dict_we0 sc_out sc_logic 1 signal 3 } 
+	{ dict_d0 sc_out sc_lv 432 signal 3 } 
+	{ dict_address1 sc_out sc_lv 10 signal 3 } 
+	{ dict_ce1 sc_out sc_logic 1 signal 3 } 
+	{ dict_we1 sc_out sc_logic 1 signal 3 } 
+	{ dict_d1 sc_out sc_lv 432 signal 3 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -62,19 +84,35 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "dict_1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "dict_1", "role": "address0" }} , 
+ 	{ "name": "dict_3_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "dict_3", "role": "address0" }} , 
+ 	{ "name": "dict_3_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dict_3", "role": "ce0" }} , 
+ 	{ "name": "dict_3_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dict_3", "role": "we0" }} , 
+ 	{ "name": "dict_3_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":432, "type": "signal", "bundle":{"name": "dict_3", "role": "d0" }} , 
+ 	{ "name": "dict_3_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "dict_3", "role": "address1" }} , 
+ 	{ "name": "dict_3_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dict_3", "role": "ce1" }} , 
+ 	{ "name": "dict_3_we1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dict_3", "role": "we1" }} , 
+ 	{ "name": "dict_3_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":432, "type": "signal", "bundle":{"name": "dict_3", "role": "d1" }} , 
+ 	{ "name": "dict_2_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "dict_2", "role": "address0" }} , 
+ 	{ "name": "dict_2_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dict_2", "role": "ce0" }} , 
+ 	{ "name": "dict_2_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dict_2", "role": "we0" }} , 
+ 	{ "name": "dict_2_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":432, "type": "signal", "bundle":{"name": "dict_2", "role": "d0" }} , 
+ 	{ "name": "dict_2_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "dict_2", "role": "address1" }} , 
+ 	{ "name": "dict_2_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dict_2", "role": "ce1" }} , 
+ 	{ "name": "dict_2_we1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dict_2", "role": "we1" }} , 
+ 	{ "name": "dict_2_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":432, "type": "signal", "bundle":{"name": "dict_2", "role": "d1" }} , 
+ 	{ "name": "dict_1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "dict_1", "role": "address0" }} , 
  	{ "name": "dict_1_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dict_1", "role": "ce0" }} , 
  	{ "name": "dict_1_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dict_1", "role": "we0" }} , 
  	{ "name": "dict_1_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":432, "type": "signal", "bundle":{"name": "dict_1", "role": "d0" }} , 
- 	{ "name": "dict_1_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "dict_1", "role": "address1" }} , 
+ 	{ "name": "dict_1_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "dict_1", "role": "address1" }} , 
  	{ "name": "dict_1_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dict_1", "role": "ce1" }} , 
  	{ "name": "dict_1_we1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dict_1", "role": "we1" }} , 
  	{ "name": "dict_1_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":432, "type": "signal", "bundle":{"name": "dict_1", "role": "d1" }} , 
- 	{ "name": "dict_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "dict", "role": "address0" }} , 
+ 	{ "name": "dict_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "dict", "role": "address0" }} , 
  	{ "name": "dict_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dict", "role": "ce0" }} , 
  	{ "name": "dict_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dict", "role": "we0" }} , 
  	{ "name": "dict_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":432, "type": "signal", "bundle":{"name": "dict", "role": "d0" }} , 
- 	{ "name": "dict_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "dict", "role": "address1" }} , 
+ 	{ "name": "dict_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "dict", "role": "address1" }} , 
  	{ "name": "dict_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dict", "role": "ce1" }} , 
  	{ "name": "dict_we1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dict", "role": "we1" }} , 
  	{ "name": "dict_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":432, "type": "signal", "bundle":{"name": "dict", "role": "d1" }}  ]}
@@ -86,7 +124,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1026", "EstimateLatencyMax" : "1026",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "514", "EstimateLatencyMax" : "514",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -95,6 +133,8 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
+			{"Name" : "dict_3", "Type" : "Memory", "Direction" : "O"},
+			{"Name" : "dict_2", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "dict_1", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "dict", "Type" : "Memory", "Direction" : "O"}],
 		"Loop" : [
@@ -105,20 +145,24 @@ set RtlHierarchyInfo {[
 
 set ArgLastReadFirstWriteLatency {
 	lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush {
+		dict_3 {Type O LastRead -1 FirstWrite 0}
+		dict_2 {Type O LastRead -1 FirstWrite 0}
 		dict_1 {Type O LastRead -1 FirstWrite 0}
 		dict {Type O LastRead -1 FirstWrite 0}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "1026", "Max" : "1026"}
-	, {"Name" : "Interval", "Min" : "1026", "Max" : "1026"}
+	{"Name" : "Latency", "Min" : "514", "Max" : "514"}
+	, {"Name" : "Interval", "Min" : "514", "Max" : "514"}
 ]}
 
 set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	dict_1 { ap_memory {  { dict_1_address0 mem_address 1 11 }  { dict_1_ce0 mem_ce 1 1 }  { dict_1_we0 mem_we 1 1 }  { dict_1_d0 mem_din 1 432 }  { dict_1_address1 MemPortADDR2 1 11 }  { dict_1_ce1 MemPortCE2 1 1 }  { dict_1_we1 MemPortWE2 1 1 }  { dict_1_d1 MemPortDIN2 1 432 } } }
-	dict { ap_memory {  { dict_address0 mem_address 1 11 }  { dict_ce0 mem_ce 1 1 }  { dict_we0 mem_we 1 1 }  { dict_d0 mem_din 1 432 }  { dict_address1 MemPortADDR2 1 11 }  { dict_ce1 MemPortCE2 1 1 }  { dict_we1 MemPortWE2 1 1 }  { dict_d1 MemPortDIN2 1 432 } } }
+	dict_3 { ap_memory {  { dict_3_address0 mem_address 1 10 }  { dict_3_ce0 mem_ce 1 1 }  { dict_3_we0 mem_we 1 1 }  { dict_3_d0 mem_din 1 432 }  { dict_3_address1 MemPortADDR2 1 10 }  { dict_3_ce1 MemPortCE2 1 1 }  { dict_3_we1 MemPortWE2 1 1 }  { dict_3_d1 MemPortDIN2 1 432 } } }
+	dict_2 { ap_memory {  { dict_2_address0 mem_address 1 10 }  { dict_2_ce0 mem_ce 1 1 }  { dict_2_we0 mem_we 1 1 }  { dict_2_d0 mem_din 1 432 }  { dict_2_address1 MemPortADDR2 1 10 }  { dict_2_ce1 MemPortCE2 1 1 }  { dict_2_we1 MemPortWE2 1 1 }  { dict_2_d1 MemPortDIN2 1 432 } } }
+	dict_1 { ap_memory {  { dict_1_address0 mem_address 1 10 }  { dict_1_ce0 mem_ce 1 1 }  { dict_1_we0 mem_we 1 1 }  { dict_1_d0 mem_din 1 432 }  { dict_1_address1 MemPortADDR2 1 10 }  { dict_1_ce1 MemPortCE2 1 1 }  { dict_1_we1 MemPortWE2 1 1 }  { dict_1_d1 MemPortDIN2 1 432 } } }
+	dict { ap_memory {  { dict_address0 mem_address 1 10 }  { dict_ce0 mem_ce 1 1 }  { dict_we0 mem_we 1 1 }  { dict_d0 mem_din 1 432 }  { dict_address1 MemPortADDR2 1 10 }  { dict_ce1 MemPortCE2 1 1 }  { dict_we1 MemPortWE2 1 1 }  { dict_d1 MemPortDIN2 1 432 } } }
 }

@@ -262,7 +262,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>29</item>
+					<item>30</item>
 				</oprand_edges>
 				<opcode>alloca</opcode>
 				<m_Display>0</m_Display>
@@ -281,7 +281,7 @@
 						<name>lit_outStream</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_configed</fileDirectory>
-						<lineNumber>392</lineNumber>
+						<lineNumber>420</lineNumber>
 						<contextFuncName>lz4Compress&amp;lt;4096, 1&amp;gt;</contextFuncName>
 						<contextNormFuncName>lz4Compress_4096_1_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -297,20 +297,20 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4Compress&amp;lt;4096, 1&amp;gt;</second>
 										</first>
-										<second>392</second>
+										<second>420</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
 						<originalName>lit_outStream</originalName>
 						<rtlName></rtlName>
-						<control>auto</control>
+						<control>pragma</control>
 						<opType>fifo</opType>
-						<implIndex>memory</implIndex>
-						<coreName>FIFO</coreName>
+						<implIndex>bram</implIndex>
+						<coreName>FIFO_BRAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>77</coreId>
+						<coreId>78</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -318,7 +318,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>30</item>
+					<item>31</item>
 				</oprand_edges>
 				<opcode>alloca</opcode>
 				<m_Display>0</m_Display>
@@ -337,7 +337,7 @@
 						<name>lenOffset_Stream</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_configed</fileDirectory>
-						<lineNumber>393</lineNumber>
+						<lineNumber>421</lineNumber>
 						<contextFuncName>lz4Compress&amp;lt;4096, 1&amp;gt;</contextFuncName>
 						<contextNormFuncName>lz4Compress_4096_1_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -353,7 +353,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4Compress&amp;lt;4096, 1&amp;gt;</second>
 										</first>
-										<second>393</second>
+										<second>421</second>
 									</item>
 								</second>
 							</item>
@@ -374,7 +374,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>31</item>
+					<item>32</item>
 				</oprand_edges>
 				<opcode>alloca</opcode>
 				<m_Display>0</m_Display>
@@ -389,11 +389,11 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>24</id>
-						<name>_ln401</name>
+						<id>25</id>
+						<name>_ln430</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_configed</fileDirectory>
-						<lineNumber>401</lineNumber>
+						<lineNumber>430</lineNumber>
 						<contextFuncName>lz4Compress&amp;lt;4096, 1&amp;gt;</contextFuncName>
 						<contextNormFuncName>lz4Compress_4096_1_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -409,7 +409,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4Compress&amp;lt;4096, 1&amp;gt;</second>
 										</first>
-										<second>401</second>
+										<second>430</second>
 									</item>
 								</second>
 							</item>
@@ -430,13 +430,13 @@
 				<oprand_edges>
 					<count>7</count>
 					<item_version>0</item_version>
-					<item>33</item>
 					<item>34</item>
 					<item>35</item>
 					<item>36</item>
 					<item>37</item>
 					<item>38</item>
 					<item>39</item>
+					<item>40</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
@@ -451,11 +451,11 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>25</id>
-						<name>_ln403</name>
+						<id>26</id>
+						<name>_ln432</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_configed</fileDirectory>
-						<lineNumber>403</lineNumber>
+						<lineNumber>432</lineNumber>
 						<contextFuncName>lz4Compress&amp;lt;4096, 1&amp;gt;</contextFuncName>
 						<contextNormFuncName>lz4Compress_4096_1_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -471,7 +471,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4Compress&amp;lt;4096, 1&amp;gt;</second>
 										</first>
-										<second>403</second>
+										<second>432</second>
 									</item>
 								</second>
 							</item>
@@ -492,15 +492,15 @@
 				<oprand_edges>
 					<count>9</count>
 					<item_version>0</item_version>
-					<item>41</item>
 					<item>42</item>
 					<item>43</item>
 					<item>44</item>
 					<item>45</item>
 					<item>46</item>
 					<item>47</item>
-					<item>271</item>
-					<item>272</item>
+					<item>48</item>
+					<item>278</item>
+					<item>279</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
@@ -515,11 +515,11 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>26</id>
-						<name>_ln404</name>
+						<id>27</id>
+						<name>_ln433</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_configed</fileDirectory>
-						<lineNumber>404</lineNumber>
+						<lineNumber>433</lineNumber>
 						<contextFuncName>lz4Compress&amp;lt;4096, 1&amp;gt;</contextFuncName>
 						<contextNormFuncName>lz4Compress_4096_1_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -535,7 +535,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4Compress&amp;lt;4096, 1&amp;gt;</second>
 										</first>
-										<second>404</second>
+										<second>433</second>
 									</item>
 								</second>
 							</item>
@@ -574,7 +574,7 @@
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>28</id>
+						<id>29</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -605,7 +605,7 @@
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>32</id>
+						<id>33</id>
 						<name>lz4CompressPart1_4096_1_s</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -636,7 +636,7 @@
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>40</id>
+						<id>41</id>
 						<name>lz4CompressPart2</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -670,7 +670,7 @@
 			<item class_id="18" tracking_level="1" version="0" object_id="_16">
 				<Obj>
 					<type>3</type>
-					<id>27</id>
+					<id>28</id>
 					<name>lz4Compress&lt;4096, 1&gt;</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
@@ -698,9 +698,9 @@
 					<item>8</item>
 					<item>17</item>
 					<item>20</item>
-					<item>24</item>
 					<item>25</item>
 					<item>26</item>
+					<item>27</item>
 				</node_objs>
 			</item>
 		</blocks>
@@ -708,136 +708,136 @@
 			<count>19</count>
 			<item_version>0</item_version>
 			<item class_id="20" tracking_level="1" version="0" object_id="_17">
-				<id>29</id>
+				<id>30</id>
 				<edge_type>1</edge_type>
-				<source_obj>28</source_obj>
+				<source_obj>29</source_obj>
 				<sink_obj>8</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_18">
-				<id>30</id>
+				<id>31</id>
 				<edge_type>1</edge_type>
-				<source_obj>28</source_obj>
+				<source_obj>29</source_obj>
 				<sink_obj>17</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_19">
-				<id>31</id>
+				<id>32</id>
 				<edge_type>1</edge_type>
-				<source_obj>28</source_obj>
+				<source_obj>29</source_obj>
 				<sink_obj>20</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_20">
-				<id>33</id>
+				<id>34</id>
 				<edge_type>1</edge_type>
-				<source_obj>32</source_obj>
-				<sink_obj>24</sink_obj>
+				<source_obj>33</source_obj>
+				<sink_obj>25</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_21">
-				<id>34</id>
+				<id>35</id>
 				<edge_type>1</edge_type>
 				<source_obj>1</source_obj>
-				<sink_obj>24</sink_obj>
+				<sink_obj>25</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_22">
-				<id>35</id>
+				<id>36</id>
 				<edge_type>1</edge_type>
 				<source_obj>17</source_obj>
-				<sink_obj>24</sink_obj>
+				<sink_obj>25</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_23">
-				<id>36</id>
+				<id>37</id>
 				<edge_type>1</edge_type>
 				<source_obj>20</source_obj>
-				<sink_obj>24</sink_obj>
+				<sink_obj>25</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_24">
-				<id>37</id>
+				<id>38</id>
 				<edge_type>1</edge_type>
 				<source_obj>4</source_obj>
-				<sink_obj>24</sink_obj>
+				<sink_obj>25</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_25">
-				<id>38</id>
+				<id>39</id>
 				<edge_type>1</edge_type>
 				<source_obj>3</source_obj>
-				<sink_obj>24</sink_obj>
+				<sink_obj>25</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_26">
-				<id>39</id>
+				<id>40</id>
 				<edge_type>1</edge_type>
 				<source_obj>8</source_obj>
-				<sink_obj>24</sink_obj>
+				<sink_obj>25</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_27">
-				<id>41</id>
+				<id>42</id>
 				<edge_type>1</edge_type>
-				<source_obj>40</source_obj>
-				<sink_obj>25</sink_obj>
+				<source_obj>41</source_obj>
+				<sink_obj>26</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_28">
-				<id>42</id>
+				<id>43</id>
 				<edge_type>1</edge_type>
 				<source_obj>17</source_obj>
-				<sink_obj>25</sink_obj>
+				<sink_obj>26</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_29">
-				<id>43</id>
+				<id>44</id>
 				<edge_type>1</edge_type>
 				<source_obj>20</source_obj>
-				<sink_obj>25</sink_obj>
+				<sink_obj>26</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_30">
-				<id>44</id>
+				<id>45</id>
 				<edge_type>1</edge_type>
 				<source_obj>2</source_obj>
-				<sink_obj>25</sink_obj>
+				<sink_obj>26</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_31">
-				<id>45</id>
+				<id>46</id>
 				<edge_type>1</edge_type>
 				<source_obj>5</source_obj>
-				<sink_obj>25</sink_obj>
+				<sink_obj>26</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_32">
-				<id>46</id>
+				<id>47</id>
 				<edge_type>1</edge_type>
 				<source_obj>6</source_obj>
-				<sink_obj>25</sink_obj>
+				<sink_obj>26</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_33">
-				<id>47</id>
+				<id>48</id>
 				<edge_type>1</edge_type>
 				<source_obj>8</source_obj>
-				<sink_obj>25</sink_obj>
+				<sink_obj>26</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_34">
-				<id>271</id>
+				<id>278</id>
 				<edge_type>4</edge_type>
-				<source_obj>24</source_obj>
-				<sink_obj>25</sink_obj>
+				<source_obj>25</source_obj>
+				<sink_obj>26</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_35">
-				<id>272</id>
+				<id>279</id>
 				<edge_type>4</edge_type>
-				<source_obj>24</source_obj>
-				<sink_obj>25</sink_obj>
+				<source_obj>25</source_obj>
+				<sink_obj>26</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 		</edges>
@@ -857,7 +857,7 @@
 			<basic_blocks>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>27</item>
+				<item>28</item>
 			</basic_blocks>
 			<mII>-1</mII>
 			<mDepth>-1</mDepth>
@@ -925,7 +925,7 @@
 					<item class_id="28" tracking_level="1" version="0" object_id="_44">
 						<type>0</type>
 						<name>lz4CompressPart1_4096_1_U0</name>
-						<ssdmobj_id>24</ssdmobj_id>
+						<ssdmobj_id>25</ssdmobj_id>
 						<pins class_id="29" tracking_level="0" version="0">
 							<count>3</count>
 							<item_version>0</item_version>
@@ -941,7 +941,7 @@
 								<inst class_id="31" tracking_level="1" version="0" object_id="_47">
 									<type>0</type>
 									<name>lz4CompressPart1_4096_1_U0</name>
-									<ssdmobj_id>24</ssdmobj_id>
+									<ssdmobj_id>25</ssdmobj_id>
 								</inst>
 							</item>
 							<item class_id_reference="30" object_id="_48">
@@ -974,7 +974,7 @@
 					<item class_id_reference="28" object_id="_52">
 						<type>0</type>
 						<name>lz4CompressPart2_U0</name>
-						<ssdmobj_id>25</ssdmobj_id>
+						<ssdmobj_id>26</ssdmobj_id>
 						<pins>
 							<count>3</count>
 							<item_version>0</item_version>
@@ -990,7 +990,7 @@
 								<inst class_id_reference="31" object_id="_55">
 									<type>0</type>
 									<name>lz4CompressPart2_U0</name>
-									<ssdmobj_id>25</ssdmobj_id>
+									<ssdmobj_id>26</ssdmobj_id>
 								</inst>
 							</item>
 							<item class_id_reference="30" object_id="_56">
@@ -1029,10 +1029,10 @@
 						<name>lit_outStream</name>
 						<ssdmobj_id>17</ssdmobj_id>
 						<ctype>0</ctype>
-						<depth>4096</depth>
+						<depth>8192</depth>
 						<bitwidth>8</bitwidth>
 						<suggested_type>0</suggested_type>
-						<suggested_depth>4096</suggested_depth>
+						<suggested_depth>8192</suggested_depth>
 						<source_list>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1065,17 +1065,17 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>8 4096 1</storage_size>
+						<storage_size>8 8192 1</storage_size>
 					</item>
 					<item class_id_reference="26" object_id="_65">
 						<type>1</type>
 						<name>lenOffset_Stream</name>
 						<ssdmobj_id>20</ssdmobj_id>
 						<ctype>0</ctype>
-						<depth>32</depth>
+						<depth>64</depth>
 						<bitwidth>64</bitwidth>
 						<suggested_type>0</suggested_type>
-						<suggested_depth>32</suggested_depth>
+						<suggested_depth>64</suggested_depth>
 						<source_list>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1108,7 +1108,7 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>64 32 1</storage_size>
+						<storage_size>64 64 1</storage_size>
 					</item>
 					<item class_id_reference="26" object_id="_70">
 						<type>1</type>
@@ -1186,7 +1186,7 @@
 						<latency>1</latency>
 					</item>
 					<item class_id_reference="38" object_id="_80">
-						<id>24</id>
+						<id>25</id>
 						<stage>2</stage>
 						<latency>2</latency>
 					</item>
@@ -1198,7 +1198,7 @@
 					<count>1</count>
 					<item_version>0</item_version>
 					<item class_id_reference="38" object_id="_82">
-						<id>24</id>
+						<id>25</id>
 						<stage>1</stage>
 						<latency>2</latency>
 					</item>
@@ -1210,7 +1210,7 @@
 					<count>1</count>
 					<item_version>0</item_version>
 					<item class_id_reference="38" object_id="_84">
-						<id>25</id>
+						<id>26</id>
 						<stage>2</stage>
 						<latency>2</latency>
 					</item>
@@ -1219,7 +1219,7 @@
 			<item class_id_reference="36" object_id="_85">
 				<id>4</id>
 				<operations>
-					<count>16</count>
+					<count>17</count>
 					<item_version>0</item_version>
 					<item class_id_reference="38" object_id="_86">
 						<id>7</id>
@@ -1292,12 +1292,17 @@
 						<latency>1</latency>
 					</item>
 					<item class_id_reference="38" object_id="_100">
-						<id>25</id>
+						<id>24</id>
 						<stage>1</stage>
-						<latency>2</latency>
+						<latency>1</latency>
 					</item>
 					<item class_id_reference="38" object_id="_101">
 						<id>26</id>
+						<stage>1</stage>
+						<latency>2</latency>
+					</item>
+					<item class_id_reference="38" object_id="_102">
+						<id>27</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
@@ -1307,7 +1312,7 @@
 		<transitions class_id="39" tracking_level="0" version="0">
 			<count>3</count>
 			<item_version>0</item_version>
-			<item class_id="40" tracking_level="1" version="0" object_id="_102">
+			<item class_id="40" tracking_level="1" version="0" object_id="_103">
 				<inState>1</inState>
 				<outState>2</outState>
 				<condition class_id="41" tracking_level="0" version="0">
@@ -1322,7 +1327,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="40" object_id="_103">
+			<item class_id_reference="40" object_id="_104">
 				<inState>2</inState>
 				<outState>3</outState>
 				<condition>
@@ -1337,7 +1342,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="40" object_id="_104">
+			<item class_id_reference="40" object_id="_105">
 				<inState>3</inState>
 				<outState>4</outState>
 				<condition>
@@ -1380,21 +1385,21 @@
 			</second>
 		</item>
 		<item>
-			<first>24</first>
+			<first>25</first>
 			<second>
 				<first>0</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
-			<first>25</first>
+			<first>26</first>
 			<second>
 				<first>2</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
-			<first>26</first>
+			<first>27</first>
 			<second>
 				<first>3</first>
 				<second>0</second>
@@ -1405,7 +1410,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item class_id="49" tracking_level="0" version="0">
-			<first>27</first>
+			<first>28</first>
 			<second class_id="50" tracking_level="0" version="0">
 				<first>0</first>
 				<second>3</second>
@@ -1415,15 +1420,15 @@
 	<regions class_id="51" tracking_level="0" version="0">
 		<count>1</count>
 		<item_version>0</item_version>
-		<item class_id="52" tracking_level="1" version="0" object_id="_105">
+		<item class_id="52" tracking_level="1" version="0" object_id="_106">
 			<region_name>lz4Compress&lt;4096, 1&gt;</region_name>
 			<basic_blocks>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>27</item>
+				<item>28</item>
 			</basic_blocks>
 			<nodes>
-				<count>20</count>
+				<count>21</count>
 				<item_version>0</item_version>
 				<item>7</item>
 				<item>8</item>
@@ -1445,6 +1450,7 @@
 				<item>24</item>
 				<item>25</item>
 				<item>26</item>
+				<item>27</item>
 			</nodes>
 			<anchor_node>-1</anchor_node>
 			<region_type>16</region_type>
@@ -1460,7 +1466,7 @@
 		<count>5</count>
 		<item_version>0</item_version>
 		<item class_id="55" tracking_level="0" version="0">
-			<first>62</first>
+			<first>64</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1468,7 +1474,7 @@
 			</second>
 		</item>
 		<item>
-			<first>66</first>
+			<first>68</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1476,7 +1482,7 @@
 			</second>
 		</item>
 		<item>
-			<first>70</first>
+			<first>72</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1484,21 +1490,21 @@
 			</second>
 		</item>
 		<item>
-			<first>74</first>
+			<first>76</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
-				<item>24</item>
-				<item>24</item>
+				<item>25</item>
+				<item>25</item>
 			</second>
 		</item>
 		<item>
-			<first>87</first>
+			<first>89</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
-				<item>25</item>
-				<item>25</item>
+				<item>26</item>
+				<item>26</item>
 			</second>
 		</item>
 	</dp_fu_nodes>
@@ -1506,7 +1512,7 @@
 		<count>3</count>
 		<item_version>0</item_version>
 		<item class_id="58" tracking_level="0" version="0">
-			<first>input_size_c_fu_62</first>
+			<first>input_size_c_fu_64</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1514,7 +1520,7 @@
 			</second>
 		</item>
 		<item>
-			<first>lenOffset_Stream_fu_70</first>
+			<first>lenOffset_Stream_fu_72</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1522,7 +1528,7 @@
 			</second>
 		</item>
 		<item>
-			<first>lit_outStream_fu_66</first>
+			<first>lit_outStream_fu_68</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1534,21 +1540,21 @@
 		<count>2</count>
 		<item_version>0</item_version>
 		<item>
-			<first>grp_lz4CompressPart1_4096_1_s_fu_74</first>
+			<first>grp_lz4CompressPart1_4096_1_s_fu_76</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
-				<item>24</item>
-				<item>24</item>
+				<item>25</item>
+				<item>25</item>
 			</second>
 		</item>
 		<item>
-			<first>grp_lz4CompressPart2_fu_87</first>
+			<first>grp_lz4CompressPart2_fu_89</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
-				<item>25</item>
-				<item>25</item>
+				<item>26</item>
+				<item>26</item>
 			</second>
 		</item>
 	</dp_fu_nodes_module>
@@ -1568,7 +1574,7 @@
 		<count>3</count>
 		<item_version>0</item_version>
 		<item>
-			<first>100</first>
+			<first>102</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1576,7 +1582,7 @@
 			</second>
 		</item>
 		<item>
-			<first>106</first>
+			<first>108</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1584,7 +1590,7 @@
 			</second>
 		</item>
 		<item>
-			<first>112</first>
+			<first>114</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1596,7 +1602,7 @@
 		<count>3</count>
 		<item_version>0</item_version>
 		<item>
-			<first>input_size_c_reg_100</first>
+			<first>input_size_c_reg_102</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1604,7 +1610,7 @@
 			</second>
 		</item>
 		<item>
-			<first>lenOffset_Stream_reg_112</first>
+			<first>lenOffset_Stream_reg_114</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1612,7 +1618,7 @@
 			</second>
 		</item>
 		<item>
-			<first>lit_outStream_reg_106</first>
+			<first>lit_outStream_reg_108</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1641,7 +1647,7 @@
 					<second>
 						<count>1</count>
 						<item_version>0</item_version>
-						<item>24</item>
+						<item>25</item>
 					</second>
 				</item>
 			</second>
@@ -1656,7 +1662,7 @@
 					<second>
 						<count>1</count>
 						<item_version>0</item_version>
-						<item>24</item>
+						<item>25</item>
 					</second>
 				</item>
 			</second>
@@ -1671,7 +1677,7 @@
 					<second>
 						<count>1</count>
 						<item_version>0</item_version>
-						<item>25</item>
+						<item>26</item>
 					</second>
 				</item>
 			</second>
@@ -1686,7 +1692,7 @@
 					<second>
 						<count>1</count>
 						<item_version>0</item_version>
-						<item>25</item>
+						<item>26</item>
 					</second>
 				</item>
 			</second>
@@ -1701,7 +1707,7 @@
 					<second>
 						<count>1</count>
 						<item_version>0</item_version>
-						<item>25</item>
+						<item>26</item>
 					</second>
 				</item>
 			</second>
@@ -1716,7 +1722,7 @@
 					<second>
 						<count>1</count>
 						<item_version>0</item_version>
-						<item>24</item>
+						<item>25</item>
 					</second>
 				</item>
 			</second>
@@ -1747,7 +1753,7 @@
 			<first>17</first>
 			<second>
 				<first>666</first>
-				<second>7</second>
+				<second>8</second>
 			</second>
 		</item>
 		<item>
@@ -1758,14 +1764,14 @@
 			</second>
 		</item>
 		<item>
-			<first>24</first>
+			<first>25</first>
 			<second>
 				<first>-1</first>
 				<second>-1</second>
 			</second>
 		</item>
 		<item>
-			<first>25</first>
+			<first>26</first>
 			<second>
 				<first>-1</first>
 				<second>-1</second>

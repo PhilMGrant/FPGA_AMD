@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter'" level="0">
-<item name = "Date">Mon Oct 27 15:59:21 2025
+<item name = "Date">Mon Oct 27 22:55:33 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">lz4CompressEngineRun</item>

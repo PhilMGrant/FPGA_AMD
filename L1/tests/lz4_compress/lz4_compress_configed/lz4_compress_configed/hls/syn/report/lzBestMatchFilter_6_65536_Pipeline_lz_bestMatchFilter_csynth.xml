@@ -9,8 +9,8 @@
 <ProductFamily>zynq</ProductFamily>
 <Part>xc7z020-clg484-1</Part>
 <TopModelName>lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter</TopModelName>
-<TargetClockPeriod>15.00</TargetClockPeriod>
-<ClockUncertainty>1.50</ClockUncertainty>
+<TargetClockPeriod>7.00</TargetClockPeriod>
+<ClockUncertainty>0.70</ClockUncertainty>
 <FlowTarget>vivado</FlowTarget>
 </UserAssignments>
 
@@ -18,7 +18,7 @@
 <PipelineType>loop auto-rewind stp (delay=0 cycles)</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>10.597</EstimatedClockPeriod>
+<EstimatedClockPeriod>5.951</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -33,12 +33,12 @@
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <lz_bestMatchFilter>
-<Slack>13.50</Slack>
+<Slack>6.30</Slack>
 <TripCount>undef</TripCount>
 <Latency>undef</Latency>
 <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>2</PipelineDepth>
+<PipelineDepth>3</PipelineDepth>
 <InstanceList>
 </InstanceList>
 </lz_bestMatchFilter>
@@ -60,7 +60,7 @@
 
 <AreaEstimates>
 <Resources>
-<FF>229</FF>
+<FF>263</FF>
 <LUT>401</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>

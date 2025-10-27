@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'lzBestMatchFilter_6_65536_s'" level="0">
-<item name = "Date">Sun Oct 26 16:56:33 2025
+<item name = "Date">Mon Oct 27 16:28:57 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">lz4_compress_configed</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">15.00 ns, 10.597 ns, 1.50 ns</column>
+<column name="ap_clk">7.00 ns, 6.300 ns, 0.70 ns</column>
 </table>
 </item>
 </section>
@@ -51,10 +51,10 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 67, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, -, 229, 432, -</column>
+<column name="Instance">-, -, 263, 432, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, 0, 159, -</column>
-<column name="Register">-, -, 241, -, -</column>
+<column name="Multiplexer">-, -, 0, 165, -</column>
+<column name="Register">-, -, 242, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, ~0, 1, 0</specialColumn>
 </table>
@@ -63,8 +63,8 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135">lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter, 0, 0, 229, 401, 0</column>
-<column name="sparsemux_13_3_32_1_1_U59">sparsemux_13_3_32_1_1, 0, 0, 0, 31, 0</column>
+<column name="grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135">lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter, 0, 0, 263, 401, 0</column>
+<column name="sparsemux_13_3_32_1_1_U65">sparsemux_13_3_32_1_1, 0, 0, 0, 31, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -82,8 +82,8 @@
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="add_ln367_fu_222_p2">+, 0, 0, 11, 3, 1</column>
-<column name="ap_block_state10">and, 0, 0, 2, 1, 1</column>
-<column name="ap_predicate_op53_write_state10">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state11">and, 0, 0, 2, 1, 1</column>
+<column name="ap_predicate_op54_write_state11">and, 0, 0, 2, 1, 1</column>
 <column name="icmp_ln327_fu_156_p2">icmp, 0, 0, 39, 32, 1</column>
 <column name="icmp_ln367_fu_216_p2">icmp, 0, 0, 11, 3, 3</column>
 <column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
@@ -91,7 +91,7 @@
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">59, 11, 1, 11</column>
+<column name="ap_NS_fsm">65, 12, 1, 12</column>
 <column name="ap_done">9, 2, 1, 2</column>
 <column name="bestMatchStream_blk_n">9, 2, 1, 2</column>
 <column name="bestMatchStream_din">9, 2, 32, 64</column>
@@ -106,7 +106,7 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">10, 0, 10, 0</column>
+<column name="ap_CS_fsm">11, 0, 11, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="compare_window_16_reg_317">32, 0, 32, 0</column>
 <column name="compare_window_17_reg_322">32, 0, 32, 0</column>

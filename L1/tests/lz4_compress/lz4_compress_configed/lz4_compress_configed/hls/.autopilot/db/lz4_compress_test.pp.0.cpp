@@ -33918,7 +33918,7 @@ lzCompress_func_4:;
 dict_flush:
     for (int i = 0; i < LZ_DICT_SIZE; i++) {
 #pragma HLS PIPELINE II = 1
-#pragma HLS UNROLL FACTOR = 4
+#pragma HLS UNROLL FACTOR = 8
 #pragma HLS LOOP_TRIPCOUNT min = LZ_DICT_SIZE max = LZ_DICT_SIZE
  dict[i] = resetValue;
     }
@@ -34115,7 +34115,7 @@ void lzCompress(hls::stream<IntVectorStream_dt<8, 1> >& inStream, hls::stream<In
         dict_flush:
             for (int i = 0; i < LZ_DICT_SIZE; i++) {
 #pragma HLS PIPELINE II = 1
-#pragma HLS UNROLL FACTOR = 4
+#pragma HLS UNROLL FACTOR = 8
 #pragma HLS LOOP_TRIPCOUNT min = LZ_DICT_SIZE max = LZ_DICT_SIZE
  dict[i] = resetValue;
             }
@@ -36932,7 +36932,12 @@ static void lz4CompressPart1(hls::stream<ap_uint<32> >& inStream,
     uint32_t lit_count_flag = 0;
 
 
-    ap_uint<32> nextEncodedValue = inStream.read();
+    ap_uint<32> currentEncodedValue = inStream.read();
+    ap_uint<32> nextEncodedValue;
+    bool has_next_value = (input_size > 1);
+    if (has_next_value) {
+        nextEncodedValue = inStream.read();
+    }
 
 
     ap_uint<32> tmpEncodedValue_reg;
@@ -36943,13 +36948,22 @@ static void lz4CompressPart1(hls::stream<ap_uint<32> >& inStream,
     bool has_match_reg;
     bool lit_overflow_reg;
 
+
+    bool should_write_lenOffset = false;
+    bool should_write_literal = false;
+    ap_uint<64> tmpValue_reg;
+    uint8_t literal_value_reg;
+
+
+    uint8_t match_len_reg;
+
 lz4_divide:
     for (uint32_t i = 0; i < input_size;) {
 #pragma HLS PIPELINE II = 2
 #pragma HLS LOOP_FLATTEN off
 
 
- tmpEncodedValue_reg = nextEncodedValue;
+ tmpEncodedValue_reg = currentEncodedValue;
 
 
         tCh_reg = tmpEncodedValue_reg.range(7, 0);
@@ -36960,30 +36974,43 @@ lz4_divide:
 
         has_match_reg = (tLen_reg != 0);
         lit_overflow_reg = (lit_count >= MAX_LIT_COUNT);
+        match_len_reg = tLen_reg - 4;
 
 
-        if (i < (input_size - 1)) {
+        currentEncodedValue = nextEncodedValue;
+        if (i < (input_size - 2) && has_next_value) {
             nextEncodedValue = inStream.read();
+        } else {
+            has_next_value = false;
         }
 
+
+        should_write_lenOffset = false;
+        should_write_literal = false;
+        literal_value_reg = tCh_reg;
 
         if (lit_overflow_reg) {
             lit_count_flag = 1;
         } else if (has_match_reg) {
 
-            uint8_t match_len = tLen_reg - 4;
-            ap_uint<64> tmpValue;
+            tmpValue_reg.range(63, 32) = lit_count;
+            tmpValue_reg.range(15, 0) = match_len_reg;
+            tmpValue_reg.range(31, 16) = match_offset_reg;
 
-
-            tmpValue.range(63, 32) = lit_count;
-            tmpValue.range(15, 0) = match_len;
-            tmpValue.range(31, 16) = match_offset_reg;
-
-            lenOffset_Stream << tmpValue;
+            should_write_lenOffset = true;
             lit_count = 0;
         } else {
-            lit_outStream << tCh_reg;
+            should_write_literal = true;
             lit_count++;
+        }
+
+
+        if (should_write_lenOffset) {
+            lenOffset_Stream << tmpValue_reg;
+        }
+
+        if (should_write_literal) {
+            lit_outStream << literal_value_reg;
         }
 
 
@@ -37241,7 +37268,7 @@ lz4_compress:
 
 namespace xf {
 namespace compression {
-# 384 "D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\\lz4_compress.hpp"
+# 411 "D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\\lz4_compress.hpp"
 template <int MAX_LIT_COUNT, int PARALLEL_UNITS>
 static void lz4Compress(hls::stream<ap_uint<32> >& inStream,
                         hls::stream<ap_uint<8> >& outStream,
@@ -37250,12 +37277,14 @@ static void lz4Compress(hls::stream<ap_uint<32> >& inStream,
                         hls::stream<bool>& endOfStream,
                         hls::stream<uint32_t>& compressdSizeStream,
                         uint32_t index) {
+
     hls::stream<uint8_t> lit_outStream("lit_outStream");
     hls::stream<ap_uint<64> > lenOffset_Stream("lenOffset_Stream");
 
-#pragma HLS STREAM variable = lit_outStream depth = MAX_LIT_COUNT
-#pragma HLS STREAM variable = lenOffset_Stream depth = c_gmemBurstSize
+#pragma HLS STREAM variable = lit_outStream depth = MAX_LIT_COUNT * 2
+#pragma HLS STREAM variable = lenOffset_Stream depth = c_gmemBurstSize * 2
 
+#pragma HLS BIND_STORAGE variable = lit_outStream type = FIFO impl = BRAM
 #pragma HLS BIND_STORAGE variable = lenOffset_Stream type = FIFO impl = SRL
 
 #pragma HLS dataflow
@@ -37335,7 +37364,7 @@ void hlsLz4(const data_t* in,
  xf::compression::details::mm2multStreamSize<8, NUM_BLOCK, DATAWIDTH, BURST_SIZE>(in, input_idx, inStream,
                                                                                      input_size);
 
-    VITIS_LOOP_477_1: for (uint8_t i = 0; i < NUM_BLOCK; i++) {
+    VITIS_LOOP_506_1: for (uint8_t i = 0; i < NUM_BLOCK; i++) {
 #pragma HLS UNROLL
 
  hlsLz4Core<ap_uint<8>, DATAWIDTH, BURST_SIZE, NUM_BLOCK>(inStream[i], outStream[i], outStreamEos[i],
@@ -37378,13 +37407,13 @@ void lz4CompressMM(const data_t* in, data_t* out, uint32_t* compressd_size, cons
 #pragma HLS ARRAY_PARTITION variable = max_lit_limit dim = 0 complete
 
 
- VITIS_LOOP_520_1: for (uint32_t i = 0; i < no_blocks; i += NUM_BLOCK) {
+ VITIS_LOOP_549_1: for (uint32_t i = 0; i < no_blocks; i += NUM_BLOCK) {
         uint32_t nblocks = NUM_BLOCK;
         if ((i + NUM_BLOCK) > no_blocks) {
             nblocks = no_blocks - i;
         }
 
-        VITIS_LOOP_526_2: for (uint32_t j = 0; j < NUM_BLOCK; j++) {
+        VITIS_LOOP_555_2: for (uint32_t j = 0; j < NUM_BLOCK; j++) {
             if (j < nblocks) {
                 uint32_t inBlockSize = block_length;
                 if (readBlockSize + block_length > input_size) inBlockSize = input_size - readBlockSize;
@@ -37412,7 +37441,7 @@ void lz4CompressMM(const data_t* in, data_t* out, uint32_t* compressd_size, cons
         hlsLz4<data_t, DATAWIDTH, BURST_SIZE, NUM_BLOCK>(in, out, input_idx, output_idx, input_block_size,
                                                          output_block_size, max_lit_limit);
 
-        VITIS_LOOP_554_3: for (uint32_t k = 0; k < nblocks; k++) {
+        VITIS_LOOP_583_3: for (uint32_t k = 0; k < nblocks; k++) {
             if (max_lit_limit[k]) {
                 compressd_size[block_idx] = input_block_size[k];
             } else {

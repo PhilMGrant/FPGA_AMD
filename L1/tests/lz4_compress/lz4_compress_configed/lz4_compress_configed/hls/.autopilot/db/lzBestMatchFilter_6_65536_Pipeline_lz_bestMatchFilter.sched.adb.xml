@@ -3,7 +3,13 @@
 
 <trans_list>
 
-<trans id="103" from="1" to="2">
+<trans id="106" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="109" from="2" to="3">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
@@ -16,7 +22,7 @@
 
 <state id="1" st_id="2">
 
-<operation id="5" st_id="1" stage="1" lat="1">
+<operation id="6" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -31,7 +37,7 @@ newFuncRoot:0 %i = alloca i32 1
 <StgValue><ssdm name="i"/></StgValue>
 </operation>
 
-<operation id="6" st_id="1" stage="1" lat="1">
+<operation id="7" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -46,7 +52,7 @@ newFuncRoot:1 %outValue = alloca i32 1
 <StgValue><ssdm name="outValue"/></StgValue>
 </operation>
 
-<operation id="7" st_id="1" stage="1" lat="1">
+<operation id="8" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -61,7 +67,7 @@ newFuncRoot:2 %compareValue = alloca i32 1
 <StgValue><ssdm name="compareValue"/></StgValue>
 </operation>
 
-<operation id="8" st_id="1" stage="1" lat="1">
+<operation id="9" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -76,7 +82,7 @@ newFuncRoot:3 %compareValue_1 = alloca i32 1
 <StgValue><ssdm name="compareValue_1"/></StgValue>
 </operation>
 
-<operation id="9" st_id="1" stage="1" lat="1">
+<operation id="10" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -91,7 +97,7 @@ newFuncRoot:4 %compareValue_2 = alloca i32 1
 <StgValue><ssdm name="compareValue_2"/></StgValue>
 </operation>
 
-<operation id="10" st_id="1" stage="1" lat="1">
+<operation id="11" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -106,7 +112,7 @@ newFuncRoot:5 %compareValue_3 = alloca i32 1
 <StgValue><ssdm name="compareValue_3"/></StgValue>
 </operation>
 
-<operation id="11" st_id="1" stage="1" lat="1">
+<operation id="12" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -121,7 +127,7 @@ newFuncRoot:6 %compareValue_4 = alloca i32 1
 <StgValue><ssdm name="compareValue_4"/></StgValue>
 </operation>
 
-<operation id="12" st_id="1" stage="1" lat="1">
+<operation id="13" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -136,7 +142,7 @@ newFuncRoot:7 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %co
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
 </operation>
 
-<operation id="13" st_id="1" stage="1" lat="1">
+<operation id="14" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -151,7 +157,7 @@ newFuncRoot:8 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
 </operation>
 
-<operation id="14" st_id="1" stage="1" lat="1">
+<operation id="15" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -166,7 +172,7 @@ newFuncRoot:9 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
 </operation>
 
-<operation id="15" st_id="1" stage="1" lat="1">
+<operation id="16" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -181,7 +187,7 @@ newFuncRoot:10 %input_size_2_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %in
 <StgValue><ssdm name="input_size_2_read"/></StgValue>
 </operation>
 
-<operation id="16" st_id="1" stage="1" lat="1">
+<operation id="17" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -196,7 +202,7 @@ newFuncRoot:11 %compare_window_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %
 <StgValue><ssdm name="compare_window_read"/></StgValue>
 </operation>
 
-<operation id="17" st_id="1" stage="1" lat="1">
+<operation id="18" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -211,7 +217,7 @@ newFuncRoot:12 %compare_window_1_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32
 <StgValue><ssdm name="compare_window_1_read"/></StgValue>
 </operation>
 
-<operation id="18" st_id="1" stage="1" lat="1">
+<operation id="19" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -226,7 +232,7 @@ newFuncRoot:13 %compare_window_2_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32
 <StgValue><ssdm name="compare_window_2_read"/></StgValue>
 </operation>
 
-<operation id="19" st_id="1" stage="1" lat="1">
+<operation id="20" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -241,7 +247,7 @@ newFuncRoot:14 %compare_window_3_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32
 <StgValue><ssdm name="compare_window_3_read"/></StgValue>
 </operation>
 
-<operation id="20" st_id="1" stage="1" lat="1">
+<operation id="21" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -256,7 +262,7 @@ newFuncRoot:15 %compare_window_4_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32
 <StgValue><ssdm name="compare_window_4_read"/></StgValue>
 </operation>
 
-<operation id="21" st_id="1" stage="1" lat="1">
+<operation id="22" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -271,7 +277,7 @@ newFuncRoot:16 %compare_window_5_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32
 <StgValue><ssdm name="compare_window_5_read"/></StgValue>
 </operation>
 
-<operation id="22" st_id="1" stage="1" lat="1">
+<operation id="23" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -286,7 +292,7 @@ newFuncRoot:17 %store_ln353 = store i32 %compare_window_5_read, i32 %compareValu
 <StgValue><ssdm name="store_ln353"/></StgValue>
 </operation>
 
-<operation id="23" st_id="1" stage="1" lat="1">
+<operation id="24" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -301,7 +307,7 @@ newFuncRoot:18 %store_ln353 = store i32 %compare_window_4_read, i32 %compareValu
 <StgValue><ssdm name="store_ln353"/></StgValue>
 </operation>
 
-<operation id="24" st_id="1" stage="1" lat="1">
+<operation id="25" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -316,7 +322,7 @@ newFuncRoot:19 %store_ln353 = store i32 %compare_window_3_read, i32 %compareValu
 <StgValue><ssdm name="store_ln353"/></StgValue>
 </operation>
 
-<operation id="25" st_id="1" stage="1" lat="1">
+<operation id="26" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -331,7 +337,7 @@ newFuncRoot:20 %store_ln353 = store i32 %compare_window_2_read, i32 %compareValu
 <StgValue><ssdm name="store_ln353"/></StgValue>
 </operation>
 
-<operation id="26" st_id="1" stage="1" lat="1">
+<operation id="27" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -346,7 +352,7 @@ newFuncRoot:21 %store_ln353 = store i32 %compare_window_1_read, i32 %compareValu
 <StgValue><ssdm name="store_ln353"/></StgValue>
 </operation>
 
-<operation id="27" st_id="1" stage="1" lat="1">
+<operation id="28" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -361,7 +367,7 @@ newFuncRoot:22 %store_ln342 = store i32 %compare_window_read, i32 %outValue
 <StgValue><ssdm name="store_ln342"/></StgValue>
 </operation>
 
-<operation id="28" st_id="1" stage="1" lat="1">
+<operation id="29" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -376,7 +382,7 @@ newFuncRoot:23 %store_ln339 = store i32 6, i32 %i
 <StgValue><ssdm name="store_ln339"/></StgValue>
 </operation>
 
-<operation id="29" st_id="1" stage="1" lat="1">
+<operation id="30" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -391,7 +397,7 @@ newFuncRoot:24 %br_ln339 = br void %VITIS_LOOP_343_2
 <StgValue><ssdm name="br_ln339"/></StgValue>
 </operation>
 
-<operation id="30" st_id="1" stage="1" lat="1">
+<operation id="31" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -406,7 +412,7 @@ VITIS_LOOP_343_2:0 %i_8 = load i32 %i
 <StgValue><ssdm name="i_8"/></StgValue>
 </operation>
 
-<operation id="31" st_id="1" stage="1" lat="1">
+<operation id="32" st_id="1" stage="1" lat="1">
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -421,7 +427,7 @@ VITIS_LOOP_343_2:6 %icmp_ln339 = icmp_ult  i32 %i_8, i32 %input_size_2_read
 <StgValue><ssdm name="icmp_ln339"/></StgValue>
 </operation>
 
-<operation id="32" st_id="1" stage="1" lat="1">
+<operation id="33" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -436,7 +442,7 @@ VITIS_LOOP_343_2:7 %br_ln339 = br i1 %icmp_ln339, void %for.inc58.preheader.exit
 <StgValue><ssdm name="br_ln339"/></StgValue>
 </operation>
 
-<operation id="33" st_id="1" stage="1" lat="1">
+<operation id="34" st_id="1" stage="1" lat="1">
 <core>Adder</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -452,7 +458,7 @@ VITIS_LOOP_343_2.split_ifconv:42 %i_9 = add i32 %i_8, i32 1
 <StgValue><ssdm name="i_9"/></StgValue>
 </operation>
 
-<operation id="34" st_id="1" stage="1" lat="1">
+<operation id="35" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -471,7 +477,7 @@ VITIS_LOOP_343_2.split_ifconv:49 %store_ln339 = store i32 %i_9, i32 %i
 
 <state id="2" st_id="3">
 
-<operation id="35" st_id="2" stage="1" lat="1">
+<operation id="36" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -486,7 +492,7 @@ VITIS_LOOP_343_2:1 %compare_window_15 = load i32 %compareValue
 <StgValue><ssdm name="compare_window_15"/></StgValue>
 </operation>
 
-<operation id="36" st_id="2" stage="1" lat="1">
+<operation id="37" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -501,7 +507,7 @@ VITIS_LOOP_343_2:2 %compare_window_14 = load i32 %compareValue_1
 <StgValue><ssdm name="compare_window_14"/></StgValue>
 </operation>
 
-<operation id="37" st_id="2" stage="1" lat="1">
+<operation id="38" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -516,7 +522,7 @@ VITIS_LOOP_343_2:3 %compare_window_13 = load i32 %compareValue_2
 <StgValue><ssdm name="compare_window_13"/></StgValue>
 </operation>
 
-<operation id="38" st_id="2" stage="1" lat="1">
+<operation id="39" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -531,7 +537,7 @@ VITIS_LOOP_343_2:4 %compare_window_12 = load i32 %compareValue_3
 <StgValue><ssdm name="compare_window_12"/></StgValue>
 </operation>
 
-<operation id="39" st_id="2" stage="1" lat="1">
+<operation id="40" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -546,7 +552,7 @@ VITIS_LOOP_343_2:5 %compare_window_11 = load i32 %compareValue_4
 <StgValue><ssdm name="compare_window_11"/></StgValue>
 </operation>
 
-<operation id="40" st_id="2" stage="1" lat="1">
+<operation id="41" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -562,39 +568,7 @@ VITIS_LOOP_343_2.split_ifconv:0 %outValue_load = load i32 %outValue
 <StgValue><ssdm name="outValue_load"/></StgValue>
 </operation>
 
-<operation id="41" st_id="2" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln339" val="1"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="52" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
-<![CDATA[
-VITIS_LOOP_343_2.split_ifconv:1 %specpipeline_ln340 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_9
-
-]]></Node>
-<StgValue><ssdm name="specpipeline_ln340"/></StgValue>
-</operation>
-
 <operation id="42" st_id="2" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln339" val="1"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="53" bw="0" op_0_bw="0" op_1_bw="0">
-<![CDATA[
-VITIS_LOOP_343_2.split_ifconv:2 %specloopname_ln339 = specloopname void @_ssdm_op_SpecLoopName, void @empty_0
-
-]]></Node>
-<StgValue><ssdm name="specloopname_ln339"/></StgValue>
-</operation>
-
-<operation id="43" st_id="2" stage="1" lat="1">
 <core>FIFO_SRL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -610,7 +584,7 @@ VITIS_LOOP_343_2.split_ifconv:3 %compareValue_10 = read i32 @_ssdm_op_Read.ap_fi
 <StgValue><ssdm name="compareValue_10"/></StgValue>
 </operation>
 
-<operation id="44" st_id="2" stage="1" lat="1">
+<operation id="43" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -626,7 +600,7 @@ VITIS_LOOP_343_2.split_ifconv:4 %match_length = partselect i8 @_ssdm_op_PartSele
 <StgValue><ssdm name="match_length"/></StgValue>
 </operation>
 
-<operation id="45" st_id="2" stage="1" lat="1">
+<operation id="44" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -642,7 +616,7 @@ VITIS_LOOP_343_2.split_ifconv:5 %zext_ln353 = zext i8 %match_length
 <StgValue><ssdm name="zext_ln353"/></StgValue>
 </operation>
 
-<operation id="46" st_id="2" stage="1" lat="1">
+<operation id="45" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -658,7 +632,7 @@ VITIS_LOOP_343_2.split_ifconv:6 %compareLen = partselect i8 @_ssdm_op_PartSelect
 <StgValue><ssdm name="compareLen"/></StgValue>
 </operation>
 
-<operation id="47" st_id="2" stage="1" lat="1">
+<operation id="46" st_id="2" stage="1" lat="1">
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -674,7 +648,7 @@ VITIS_LOOP_343_2.split_ifconv:7 %icmp_ln355 = icmp_ult  i8 %match_length, i8 %co
 <StgValue><ssdm name="icmp_ln355"/></StgValue>
 </operation>
 
-<operation id="48" st_id="2" stage="1" lat="1">
+<operation id="47" st_id="2" stage="1" lat="1">
 <core>LogicGate</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -690,7 +664,7 @@ VITIS_LOOP_343_2.split_ifconv:8 %best_match = xor i1 %icmp_ln355, i1 1
 <StgValue><ssdm name="best_match"/></StgValue>
 </operation>
 
-<operation id="49" st_id="2" stage="1" lat="1">
+<operation id="48" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -706,7 +680,7 @@ VITIS_LOOP_343_2.split_ifconv:9 %compareLen_1 = partselect i8 @_ssdm_op_PartSele
 <StgValue><ssdm name="compareLen_1"/></StgValue>
 </operation>
 
-<operation id="50" st_id="2" stage="1" lat="1">
+<operation id="49" st_id="2" stage="1" lat="1">
 <core>Adder</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -722,7 +696,7 @@ VITIS_LOOP_343_2.split_ifconv:10 %add_ln355 = add i9 %zext_ln353, i9 1
 <StgValue><ssdm name="add_ln355"/></StgValue>
 </operation>
 
-<operation id="51" st_id="2" stage="1" lat="1">
+<operation id="50" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -738,7 +712,7 @@ VITIS_LOOP_343_2.split_ifconv:11 %zext_ln355 = zext i8 %compareLen_1
 <StgValue><ssdm name="zext_ln355"/></StgValue>
 </operation>
 
-<operation id="52" st_id="2" stage="1" lat="1">
+<operation id="51" st_id="2" stage="1" lat="1">
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -754,7 +728,7 @@ VITIS_LOOP_343_2.split_ifconv:12 %icmp_ln355_1 = icmp_ult  i9 %add_ln355, i9 %ze
 <StgValue><ssdm name="icmp_ln355_1"/></StgValue>
 </operation>
 
-<operation id="53" st_id="2" stage="1" lat="1">
+<operation id="52" st_id="2" stage="1" lat="1">
 <core>LogicGate</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -770,7 +744,7 @@ VITIS_LOOP_343_2.split_ifconv:13 %xor_ln355 = xor i1 %icmp_ln355_1, i1 1
 <StgValue><ssdm name="xor_ln355"/></StgValue>
 </operation>
 
-<operation id="54" st_id="2" stage="1" lat="1">
+<operation id="53" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -786,7 +760,7 @@ VITIS_LOOP_343_2.split_ifconv:14 %compareLen_2 = partselect i8 @_ssdm_op_PartSel
 <StgValue><ssdm name="compareLen_2"/></StgValue>
 </operation>
 
-<operation id="55" st_id="2" stage="1" lat="1">
+<operation id="54" st_id="2" stage="1" lat="1">
 <core>Adder</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -802,7 +776,7 @@ VITIS_LOOP_343_2.split_ifconv:15 %add_ln355_1 = add i9 %zext_ln353, i9 2
 <StgValue><ssdm name="add_ln355_1"/></StgValue>
 </operation>
 
-<operation id="56" st_id="2" stage="1" lat="1">
+<operation id="55" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -818,7 +792,7 @@ VITIS_LOOP_343_2.split_ifconv:16 %zext_ln355_1 = zext i8 %compareLen_2
 <StgValue><ssdm name="zext_ln355_1"/></StgValue>
 </operation>
 
-<operation id="57" st_id="2" stage="1" lat="1">
+<operation id="56" st_id="2" stage="1" lat="1">
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -834,7 +808,7 @@ VITIS_LOOP_343_2.split_ifconv:17 %icmp_ln355_2 = icmp_ult  i9 %add_ln355_1, i9 %
 <StgValue><ssdm name="icmp_ln355_2"/></StgValue>
 </operation>
 
-<operation id="58" st_id="2" stage="1" lat="1">
+<operation id="57" st_id="2" stage="1" lat="1">
 <core>LogicGate</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -850,7 +824,7 @@ VITIS_LOOP_343_2.split_ifconv:18 %xor_ln355_1 = xor i1 %icmp_ln355_2, i1 1
 <StgValue><ssdm name="xor_ln355_1"/></StgValue>
 </operation>
 
-<operation id="59" st_id="2" stage="1" lat="1">
+<operation id="58" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -866,7 +840,7 @@ VITIS_LOOP_343_2.split_ifconv:19 %compareLen_3 = partselect i8 @_ssdm_op_PartSel
 <StgValue><ssdm name="compareLen_3"/></StgValue>
 </operation>
 
-<operation id="60" st_id="2" stage="1" lat="1">
+<operation id="59" st_id="2" stage="1" lat="1">
 <core>Adder</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -882,7 +856,7 @@ VITIS_LOOP_343_2.split_ifconv:20 %add_ln355_2 = add i9 %zext_ln353, i9 3
 <StgValue><ssdm name="add_ln355_2"/></StgValue>
 </operation>
 
-<operation id="61" st_id="2" stage="1" lat="1">
+<operation id="60" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -898,7 +872,7 @@ VITIS_LOOP_343_2.split_ifconv:21 %zext_ln355_2 = zext i8 %compareLen_3
 <StgValue><ssdm name="zext_ln355_2"/></StgValue>
 </operation>
 
-<operation id="62" st_id="2" stage="1" lat="1">
+<operation id="61" st_id="2" stage="1" lat="1">
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -914,7 +888,7 @@ VITIS_LOOP_343_2.split_ifconv:22 %icmp_ln355_3 = icmp_ult  i9 %add_ln355_2, i9 %
 <StgValue><ssdm name="icmp_ln355_3"/></StgValue>
 </operation>
 
-<operation id="63" st_id="2" stage="1" lat="1">
+<operation id="62" st_id="2" stage="1" lat="1">
 <core>LogicGate</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -930,7 +904,7 @@ VITIS_LOOP_343_2.split_ifconv:23 %xor_ln355_2 = xor i1 %icmp_ln355_3, i1 1
 <StgValue><ssdm name="xor_ln355_2"/></StgValue>
 </operation>
 
-<operation id="64" st_id="2" stage="1" lat="1">
+<operation id="63" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -946,7 +920,7 @@ VITIS_LOOP_343_2.split_ifconv:24 %compareLen_4 = partselect i8 @_ssdm_op_PartSel
 <StgValue><ssdm name="compareLen_4"/></StgValue>
 </operation>
 
-<operation id="65" st_id="2" stage="1" lat="1">
+<operation id="64" st_id="2" stage="1" lat="1">
 <core>Adder</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -962,7 +936,7 @@ VITIS_LOOP_343_2.split_ifconv:25 %add_ln355_3 = add i9 %zext_ln353, i9 4
 <StgValue><ssdm name="add_ln355_3"/></StgValue>
 </operation>
 
-<operation id="66" st_id="2" stage="1" lat="1">
+<operation id="65" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -978,7 +952,7 @@ VITIS_LOOP_343_2.split_ifconv:26 %zext_ln355_3 = zext i8 %compareLen_4
 <StgValue><ssdm name="zext_ln355_3"/></StgValue>
 </operation>
 
-<operation id="67" st_id="2" stage="1" lat="1">
+<operation id="66" st_id="2" stage="1" lat="1">
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -994,7 +968,7 @@ VITIS_LOOP_343_2.split_ifconv:27 %icmp_ln355_4 = icmp_ult  i9 %add_ln355_3, i9 %
 <StgValue><ssdm name="icmp_ln355_4"/></StgValue>
 </operation>
 
-<operation id="68" st_id="2" stage="1" lat="1">
+<operation id="67" st_id="2" stage="1" lat="1">
 <core>LogicGate</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1010,7 +984,7 @@ VITIS_LOOP_343_2.split_ifconv:28 %xor_ln355_3 = xor i1 %icmp_ln355_4, i1 1
 <StgValue><ssdm name="xor_ln355_3"/></StgValue>
 </operation>
 
-<operation id="69" st_id="2" stage="1" lat="1">
+<operation id="68" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1026,7 +1000,7 @@ VITIS_LOOP_343_2.split_ifconv:29 %compareLen_5 = partselect i8 @_ssdm_op_PartSel
 <StgValue><ssdm name="compareLen_5"/></StgValue>
 </operation>
 
-<operation id="70" st_id="2" stage="1" lat="1">
+<operation id="69" st_id="2" stage="1" lat="1">
 <core>Adder</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1042,7 +1016,7 @@ VITIS_LOOP_343_2.split_ifconv:30 %add_ln355_4 = add i9 %zext_ln353, i9 5
 <StgValue><ssdm name="add_ln355_4"/></StgValue>
 </operation>
 
-<operation id="71" st_id="2" stage="1" lat="1">
+<operation id="70" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1058,7 +1032,7 @@ VITIS_LOOP_343_2.split_ifconv:31 %zext_ln355_4 = zext i8 %compareLen_5
 <StgValue><ssdm name="zext_ln355_4"/></StgValue>
 </operation>
 
-<operation id="72" st_id="2" stage="1" lat="1">
+<operation id="71" st_id="2" stage="1" lat="1">
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1074,7 +1048,7 @@ VITIS_LOOP_343_2.split_ifconv:32 %icmp_ln355_5 = icmp_ult  i9 %add_ln355_4, i9 %
 <StgValue><ssdm name="icmp_ln355_5"/></StgValue>
 </operation>
 
-<operation id="73" st_id="2" stage="1" lat="1">
+<operation id="72" st_id="2" stage="1" lat="1">
 <core>LogicGate</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1090,7 +1064,7 @@ VITIS_LOOP_343_2.split_ifconv:33 %xor_ln355_4 = xor i1 %icmp_ln355_5, i1 1
 <StgValue><ssdm name="xor_ln355_4"/></StgValue>
 </operation>
 
-<operation id="74" st_id="2" stage="1" lat="1">
+<operation id="73" st_id="2" stage="1" lat="1">
 <core>LogicGate</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1106,7 +1080,7 @@ VITIS_LOOP_343_2.split_ifconv:34 %and_ln355 = and i1 %xor_ln355, i1 %xor_ln355_1
 <StgValue><ssdm name="and_ln355"/></StgValue>
 </operation>
 
-<operation id="75" st_id="2" stage="1" lat="1">
+<operation id="74" st_id="2" stage="1" lat="1">
 <core>LogicGate</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1122,7 +1096,7 @@ VITIS_LOOP_343_2.split_ifconv:35 %and_ln355_1 = and i1 %and_ln355, i1 %best_matc
 <StgValue><ssdm name="and_ln355_1"/></StgValue>
 </operation>
 
-<operation id="76" st_id="2" stage="1" lat="1">
+<operation id="75" st_id="2" stage="1" lat="1">
 <core>LogicGate</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1138,7 +1112,7 @@ VITIS_LOOP_343_2.split_ifconv:36 %and_ln355_2 = and i1 %xor_ln355_3, i1 %xor_ln3
 <StgValue><ssdm name="and_ln355_2"/></StgValue>
 </operation>
 
-<operation id="77" st_id="2" stage="1" lat="1">
+<operation id="76" st_id="2" stage="1" lat="1">
 <core>LogicGate</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1154,7 +1128,7 @@ VITIS_LOOP_343_2.split_ifconv:37 %and_ln355_3 = and i1 %and_ln355_2, i1 %xor_ln3
 <StgValue><ssdm name="and_ln355_3"/></StgValue>
 </operation>
 
-<operation id="78" st_id="2" stage="1" lat="1">
+<operation id="77" st_id="2" stage="1" lat="1">
 <core>LogicGate</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1170,55 +1144,7 @@ VITIS_LOOP_343_2.split_ifconv:38 %best_match_1 = and i1 %and_ln355_3, i1 %and_ln
 <StgValue><ssdm name="best_match_1"/></StgValue>
 </operation>
 
-<operation id="79" st_id="2" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln339" val="1"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="90" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="24" op_3_bw="32" op_4_bw="32">
-<![CDATA[
-VITIS_LOOP_343_2.split_ifconv:39 %outValue_4 = partset i32 @_ssdm_op_PartSet.i32.i32.i24.i32.i32, i32 %outValue_load, i24 0, i32 8, i32 31
-
-]]></Node>
-<StgValue><ssdm name="outValue_4"/></StgValue>
-</operation>
-
-<operation id="80" st_id="2" stage="1" lat="1">
-<core>Sel</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln339" val="1"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="91" bw="32" op_0_bw="1" op_1_bw="32" op_2_bw="32">
-<![CDATA[
-VITIS_LOOP_343_2.split_ifconv:40 %outValue_5 = select i1 %best_match_1, i32 %outValue_load, i32 %outValue_4
-
-]]></Node>
-<StgValue><ssdm name="outValue_5"/></StgValue>
-</operation>
-
-<operation id="81" st_id="2" stage="1" lat="1">
-<core>FIFO_SRL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln339" val="1"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="92" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
-<![CDATA[
-VITIS_LOOP_343_2.split_ifconv:41 %write_ln363 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %bestMatchStream, i32 %outValue_5
-
-]]></Node>
-<StgValue><ssdm name="write_ln363"/></StgValue>
-</operation>
-
-<operation id="82" st_id="2" stage="1" lat="1">
+<operation id="78" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1234,7 +1160,7 @@ VITIS_LOOP_343_2.split_ifconv:43 %store_ln353 = store i32 %compareValue_10, i32 
 <StgValue><ssdm name="store_ln353"/></StgValue>
 </operation>
 
-<operation id="83" st_id="2" stage="1" lat="1">
+<operation id="79" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1250,7 +1176,7 @@ VITIS_LOOP_343_2.split_ifconv:44 %store_ln353 = store i32 %compare_window_11, i3
 <StgValue><ssdm name="store_ln353"/></StgValue>
 </operation>
 
-<operation id="84" st_id="2" stage="1" lat="1">
+<operation id="80" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1266,7 +1192,7 @@ VITIS_LOOP_343_2.split_ifconv:45 %store_ln353 = store i32 %compare_window_12, i3
 <StgValue><ssdm name="store_ln353"/></StgValue>
 </operation>
 
-<operation id="85" st_id="2" stage="1" lat="1">
+<operation id="81" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1282,7 +1208,7 @@ VITIS_LOOP_343_2.split_ifconv:46 %store_ln353 = store i32 %compare_window_13, i3
 <StgValue><ssdm name="store_ln353"/></StgValue>
 </operation>
 
-<operation id="86" st_id="2" stage="1" lat="1">
+<operation id="82" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1298,7 +1224,7 @@ VITIS_LOOP_343_2.split_ifconv:47 %store_ln353 = store i32 %compare_window_14, i3
 <StgValue><ssdm name="store_ln353"/></StgValue>
 </operation>
 
-<operation id="87" st_id="2" stage="1" lat="1">
+<operation id="83" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1314,23 +1240,7 @@ VITIS_LOOP_343_2.split_ifconv:48 %store_ln342 = store i32 %compare_window_15, i3
 <StgValue><ssdm name="store_ln342"/></StgValue>
 </operation>
 
-<operation id="88" st_id="2" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln339" val="1"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="101" bw="0" op_0_bw="0">
-<![CDATA[
-VITIS_LOOP_343_2.split_ifconv:50 %br_ln339 = br void %VITIS_LOOP_343_2
-
-]]></Node>
-<StgValue><ssdm name="br_ln339"/></StgValue>
-</operation>
-
-<operation id="89" st_id="2" stage="1" lat="1">
+<operation id="90" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1346,7 +1256,7 @@ for.inc58.preheader.exitStub:0 %outValue_load_1 = load i32 %outValue
 <StgValue><ssdm name="outValue_load_1"/></StgValue>
 </operation>
 
-<operation id="90" st_id="2" stage="1" lat="1">
+<operation id="91" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1362,7 +1272,7 @@ for.inc58.preheader.exitStub:1 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i
 <StgValue><ssdm name="write_ln0"/></StgValue>
 </operation>
 
-<operation id="91" st_id="2" stage="1" lat="1">
+<operation id="92" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1378,7 +1288,7 @@ for.inc58.preheader.exitStub:2 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i
 <StgValue><ssdm name="write_ln0"/></StgValue>
 </operation>
 
-<operation id="92" st_id="2" stage="1" lat="1">
+<operation id="93" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1394,7 +1304,7 @@ for.inc58.preheader.exitStub:3 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i
 <StgValue><ssdm name="write_ln0"/></StgValue>
 </operation>
 
-<operation id="93" st_id="2" stage="1" lat="1">
+<operation id="94" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1410,7 +1320,7 @@ for.inc58.preheader.exitStub:4 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i
 <StgValue><ssdm name="write_ln0"/></StgValue>
 </operation>
 
-<operation id="94" st_id="2" stage="1" lat="1">
+<operation id="95" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1426,7 +1336,7 @@ for.inc58.preheader.exitStub:5 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i
 <StgValue><ssdm name="write_ln0"/></StgValue>
 </operation>
 
-<operation id="95" st_id="2" stage="1" lat="1">
+<operation id="96" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1442,7 +1352,7 @@ for.inc58.preheader.exitStub:6 %write_ln0 = write void @_ssdm_op_Write.ap_auto.i
 <StgValue><ssdm name="write_ln0"/></StgValue>
 </operation>
 
-<operation id="96" st_id="2" stage="1" lat="1">
+<operation id="97" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1456,6 +1366,100 @@ for.inc58.preheader.exitStub:7 %ret_ln0 = ret
 
 ]]></Node>
 <StgValue><ssdm name="ret_ln0"/></StgValue>
+</operation>
+</state>
+
+<state id="3" st_id="4">
+
+<operation id="84" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="52" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
+<![CDATA[
+VITIS_LOOP_343_2.split_ifconv:1 %specpipeline_ln340 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_9
+
+]]></Node>
+<StgValue><ssdm name="specpipeline_ln340"/></StgValue>
+</operation>
+
+<operation id="85" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="53" bw="0" op_0_bw="0" op_1_bw="0">
+<![CDATA[
+VITIS_LOOP_343_2.split_ifconv:2 %specloopname_ln339 = specloopname void @_ssdm_op_SpecLoopName, void @empty_0
+
+]]></Node>
+<StgValue><ssdm name="specloopname_ln339"/></StgValue>
+</operation>
+
+<operation id="86" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="best_match_1" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="90" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="24" op_3_bw="32" op_4_bw="32">
+<![CDATA[
+VITIS_LOOP_343_2.split_ifconv:39 %outValue_4 = partset i32 @_ssdm_op_PartSet.i32.i32.i24.i32.i32, i32 %outValue_load, i24 0, i32 8, i32 31
+
+]]></Node>
+<StgValue><ssdm name="outValue_4"/></StgValue>
+</operation>
+
+<operation id="87" st_id="3" stage="1" lat="1">
+<core>Sel</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="91" bw="32" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+VITIS_LOOP_343_2.split_ifconv:40 %outValue_5 = select i1 %best_match_1, i32 %outValue_load, i32 %outValue_4
+
+]]></Node>
+<StgValue><ssdm name="outValue_5"/></StgValue>
+</operation>
+
+<operation id="88" st_id="3" stage="1" lat="1">
+<core>FIFO_SRL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="92" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+VITIS_LOOP_343_2.split_ifconv:41 %write_ln363 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %bestMatchStream, i32 %outValue_5
+
+]]></Node>
+<StgValue><ssdm name="write_ln363"/></StgValue>
+</operation>
+
+<operation id="89" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="101" bw="0" op_0_bw="0">
+<![CDATA[
+VITIS_LOOP_343_2.split_ifconv:50 %br_ln339 = br void %VITIS_LOOP_343_2
+
+]]></Node>
+<StgValue><ssdm name="br_ln339"/></StgValue>
 </operation>
 </state>
 </state_list>

@@ -88,7 +88,7 @@ set NewPortList {[
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "14", "18", "22", "33", "34", "35", "36", "37", "38", "39", "40", "41"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "17", "21", "25", "36", "37", "38", "39", "40", "41", "42", "43", "44"],
 		"CDFG" : "lz4CompressEngineRun",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -105,44 +105,44 @@ set RtlHierarchyInfo {[
 		"InputProcess" : [
 			{"ID" : "1", "Name" : "lzCompress_6_4_65536_6_1_4096_64_U0"}],
 		"OutputProcess" : [
-			{"ID" : "22", "Name" : "lz4Compress_4096_1_U0"}],
+			{"ID" : "25", "Name" : "lz4Compress_4096_1_U0"}],
 		"Port" : [
 			{"Name" : "inStream", "Type" : "Fifo", "Direction" : "I",
 				"SubConnect" : [
 					{"ID" : "1", "SubInstance" : "lzCompress_6_4_65536_6_1_4096_64_U0", "Port" : "inStream"}]},
 			{"Name" : "lz4Out", "Type" : "Fifo", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "22", "SubInstance" : "lz4Compress_4096_1_U0", "Port" : "lz4Out"}]},
+					{"ID" : "25", "SubInstance" : "lz4Compress_4096_1_U0", "Port" : "lz4Out"}]},
 			{"Name" : "lz4Out_eos", "Type" : "Fifo", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "22", "SubInstance" : "lz4Compress_4096_1_U0", "Port" : "lz4Out_eos"}]},
+					{"ID" : "25", "SubInstance" : "lz4Compress_4096_1_U0", "Port" : "lz4Out_eos"}]},
 			{"Name" : "lz4OutSize", "Type" : "Fifo", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "22", "SubInstance" : "lz4Compress_4096_1_U0", "Port" : "lz4OutSize"}]},
+					{"ID" : "25", "SubInstance" : "lz4Compress_4096_1_U0", "Port" : "lz4OutSize"}]},
 			{"Name" : "max_lit_limit", "Type" : "Vld", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "22", "SubInstance" : "lz4Compress_4096_1_U0", "Port" : "max_lit_limit"}]},
+					{"ID" : "25", "SubInstance" : "lz4Compress_4096_1_U0", "Port" : "max_lit_limit"}]},
 			{"Name" : "input_size", "Type" : "None", "Direction" : "I"},
 			{"Name" : "core_idx", "Type" : "None", "Direction" : "I"},
 			{"Name" : "guard_variable_for_void_lzBooster_stream_stream_unsigned_int_nextMatchCh", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "18", "SubInstance" : "lzBooster_255_16384_64_U0", "Port" : "guard_variable_for_void_lzBooster_stream_stream_unsigned_int_nextMatchCh"}]},
+					{"ID" : "21", "SubInstance" : "lzBooster_255_16384_64_U0", "Port" : "guard_variable_for_void_lzBooster_stream_stream_unsigned_int_nextMatchCh"}]},
 			{"Name" : "match_loc_reg", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "18", "SubInstance" : "lzBooster_255_16384_64_U0", "Port" : "match_loc_reg"}]},
+					{"ID" : "21", "SubInstance" : "lzBooster_255_16384_64_U0", "Port" : "match_loc_reg"}]},
 			{"Name" : "nextMatchCh", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "18", "SubInstance" : "lzBooster_255_16384_64_U0", "Port" : "nextMatchCh"}]},
+					{"ID" : "21", "SubInstance" : "lzBooster_255_16384_64_U0", "Port" : "nextMatchCh"}]},
 			{"Name" : "skip_len_reg", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "18", "SubInstance" : "lzBooster_255_16384_64_U0", "Port" : "skip_len_reg"}]},
+					{"ID" : "21", "SubInstance" : "lzBooster_255_16384_64_U0", "Port" : "skip_len_reg"}]},
 			{"Name" : "match_len_reg", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "18", "SubInstance" : "lzBooster_255_16384_64_U0", "Port" : "match_len_reg"}]},
+					{"ID" : "21", "SubInstance" : "lzBooster_255_16384_64_U0", "Port" : "match_len_reg"}]},
 			{"Name" : "matchFlag_reg", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "18", "SubInstance" : "lzBooster_255_16384_64_U0", "Port" : "matchFlag_reg"}]}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0", "Parent" : "0", "Child" : ["2", "3", "4", "6", "7", "9", "12"],
+					{"ID" : "21", "SubInstance" : "lzBooster_255_16384_64_U0", "Port" : "matchFlag_reg"}]}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0", "Parent" : "0", "Child" : ["2", "3", "4", "5", "6", "8", "9", "12", "15"],
 		"CDFG" : "lzCompress_6_4_65536_6_1_4096_64_s",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1", "real_start" : "1",
@@ -159,27 +159,29 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "inStream", "Type" : "Fifo", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "6", "SubInstance" : "grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148", "Port" : "inStream", "Inst_start_state" : "2", "Inst_end_state" : "3"},
-					{"ID" : "7", "SubInstance" : "grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164", "Port" : "inStream", "Inst_start_state" : "4", "Inst_end_state" : "5"},
-					{"ID" : "12", "SubInstance" : "grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196", "Port" : "inStream", "Inst_start_state" : "8", "Inst_end_state" : "9"}]},
-			{"Name" : "compressdStream", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["14"], "DependentChan" : "33", "DependentChanDepth" : "8", "DependentChanType" : "0",
+					{"ID" : "8", "SubInstance" : "grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158", "Port" : "inStream", "Inst_start_state" : "2", "Inst_end_state" : "3"},
+					{"ID" : "9", "SubInstance" : "grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174", "Port" : "inStream", "Inst_start_state" : "4", "Inst_end_state" : "5"},
+					{"ID" : "15", "SubInstance" : "grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208", "Port" : "inStream", "Inst_start_state" : "8", "Inst_end_state" : "9"}]},
+			{"Name" : "compressdStream", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["17"], "DependentChan" : "36", "DependentChanDepth" : "8", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "7", "SubInstance" : "grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164", "Port" : "compressdStream", "Inst_start_state" : "4", "Inst_end_state" : "5"},
-					{"ID" : "9", "SubInstance" : "grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185", "Port" : "compressdStream", "Inst_start_state" : "6", "Inst_end_state" : "7"},
-					{"ID" : "12", "SubInstance" : "grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196", "Port" : "compressdStream", "Inst_start_state" : "8", "Inst_end_state" : "9"}]},
+					{"ID" : "9", "SubInstance" : "grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174", "Port" : "compressdStream", "Inst_start_state" : "4", "Inst_end_state" : "5"},
+					{"ID" : "12", "SubInstance" : "grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197", "Port" : "compressdStream", "Inst_start_state" : "6", "Inst_end_state" : "7"},
+					{"ID" : "15", "SubInstance" : "grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208", "Port" : "compressdStream", "Inst_start_state" : "8", "Inst_end_state" : "9"}]},
 			{"Name" : "input_size", "Type" : "None", "Direction" : "I"},
-			{"Name" : "input_size_c2", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["14"], "DependentChan" : "34", "DependentChanDepth" : "2", "DependentChanType" : "2",
+			{"Name" : "input_size_c2", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["17"], "DependentChan" : "37", "DependentChanDepth" : "2", "DependentChanType" : "2",
 				"BlockSignal" : [
 					{"Name" : "input_size_c2_blk_n", "Type" : "RtlSignal"}]}]},
 	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.dict_U", "Parent" : "1"},
 	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.dict_1_U", "Parent" : "1"},
-	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142", "Parent" : "1", "Child" : ["5"],
+	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.dict_2_U", "Parent" : "1"},
+	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.dict_3_U", "Parent" : "1"},
+	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150", "Parent" : "1", "Child" : ["7"],
 		"CDFG" : "lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1026", "EstimateLatencyMax" : "1026",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "514", "EstimateLatencyMax" : "514",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -188,13 +190,15 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
+			{"Name" : "dict_3", "Type" : "Memory", "Direction" : "O"},
+			{"Name" : "dict_2", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "dict_1", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "dict", "Type" : "Memory", "Direction" : "O"}],
 		"Loop" : [
 			{"Name" : "dict_flush", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_state1", "FirstStateIter" : "", "FirstStateBlock" : "ap_ST_fsm_state1_blk", "LastState" : "ap_ST_fsm_state1", "LastStateIter" : "", "LastStateBlock" : "ap_ST_fsm_state1_blk", "QuitState" : "ap_ST_fsm_state1", "QuitStateIter" : "", "QuitStateBlock" : "ap_ST_fsm_state1_blk", "OneDepthLoop" : "1", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "5", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142.flow_control_loop_pipe_sequential_init_U", "Parent" : "4"},
-	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148", "Parent" : "1",
+	{"ID" : "7", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150.flow_control_loop_pipe_sequential_init_U", "Parent" : "6"},
+	{"ID" : "8", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158", "Parent" : "1",
 		"CDFG" : "lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -217,15 +221,15 @@ set RtlHierarchyInfo {[
 			{"Name" : "present_window_2_out", "Type" : "Vld", "Direction" : "O"},
 			{"Name" : "present_window_1_out", "Type" : "Vld", "Direction" : "O"},
 			{"Name" : "present_window_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "arrayidx48_promoted172_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "arrayidx42_3_promoted170_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "arrayidx71_promoted168_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "arrayidx61_promoted166_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "arrayidx54_promoted164_out", "Type" : "Vld", "Direction" : "O"}],
+			{"Name" : "arrayidx48_promoted176_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "arrayidx42_3_promoted174_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "arrayidx71_promoted172_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "arrayidx61_promoted170_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "arrayidx54_promoted168_out", "Type" : "Vld", "Direction" : "O"}],
 		"Loop" : [
 			{"Name" : "VITIS_LOOP_84_2", "PipelineType" : "no",
 				"LoopDec" : {"FSMBitwidth" : "2", "FirstState" : "ap_ST_fsm_state2", "LastState" : ["ap_ST_fsm_state2"], "QuitState" : ["ap_ST_fsm_state2"], "PreState" : ["ap_ST_fsm_state1"], "PostState" : ["ap_ST_fsm_state1"], "OneDepthLoop" : "1", "OneStateBlock": "ap_ST_fsm_state2_blk"}}]},
-	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164", "Parent" : "1", "Child" : ["8"],
+	{"ID" : "9", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174", "Parent" : "1", "Child" : ["10", "11"],
 		"CDFG" : "lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -240,15 +244,17 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "arrayidx48_promoted172_reload", "Type" : "None", "Direction" : "I"},
-			{"Name" : "arrayidx42_3_promoted170_reload", "Type" : "None", "Direction" : "I"},
-			{"Name" : "arrayidx71_promoted168_reload", "Type" : "None", "Direction" : "I"},
-			{"Name" : "arrayidx61_promoted166_reload", "Type" : "None", "Direction" : "I"},
-			{"Name" : "arrayidx54_promoted164_reload", "Type" : "None", "Direction" : "I"},
+			{"Name" : "arrayidx48_promoted176_reload", "Type" : "None", "Direction" : "I"},
+			{"Name" : "arrayidx42_3_promoted174_reload", "Type" : "None", "Direction" : "I"},
+			{"Name" : "arrayidx71_promoted172_reload", "Type" : "None", "Direction" : "I"},
+			{"Name" : "arrayidx61_promoted170_reload", "Type" : "None", "Direction" : "I"},
+			{"Name" : "arrayidx54_promoted168_reload", "Type" : "None", "Direction" : "I"},
 			{"Name" : "sub27", "Type" : "None", "Direction" : "I"},
 			{"Name" : "compressdStream", "Type" : "Fifo", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "compressdStream_blk_n", "Type" : "RtlSignal"}]},
+			{"Name" : "dict_3", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "dict_2", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "dict_1", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "dict", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "inStream", "Type" : "Fifo", "Direction" : "I",
@@ -261,9 +267,10 @@ set RtlHierarchyInfo {[
 			{"Name" : "present_window_11_out", "Type" : "Vld", "Direction" : "O"}],
 		"Loop" : [
 			{"Name" : "lz_compress", "PipelineType" : "UPC",
-				"LoopDec" : {"FSMBitwidth" : "3", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "8", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164.flow_control_loop_pipe_sequential_init_U", "Parent" : "7"},
-	{"ID" : "9", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185", "Parent" : "1", "Child" : ["10", "11"],
+				"LoopDec" : {"FSMBitwidth" : "3", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage2", "LastStateIter" : "ap_enable_reg_pp0_iter3", "LastStateBlock" : "ap_block_pp0_stage2_subdone", "QuitState" : "ap_ST_fsm_pp0_stage2", "QuitStateIter" : "ap_enable_reg_pp0_iter3", "QuitStateBlock" : "ap_block_pp0_stage2_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+	{"ID" : "10", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174.sparsemux_9_2_432_1_1_U16", "Parent" : "9"},
+	{"ID" : "11", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174.flow_control_loop_pipe_sequential_init_U", "Parent" : "9"},
+	{"ID" : "12", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197", "Parent" : "1", "Child" : ["13", "14"],
 		"CDFG" : "lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -289,9 +296,9 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "lz_compress_leftover", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter1", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "10", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185.sparsemux_11_3_8_1_1_U29", "Parent" : "9"},
-	{"ID" : "11", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185.flow_control_loop_pipe_sequential_init_U", "Parent" : "9"},
-	{"ID" : "12", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196", "Parent" : "1", "Child" : ["13"],
+	{"ID" : "13", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197.sparsemux_11_3_8_1_1_U35", "Parent" : "12"},
+	{"ID" : "14", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197.flow_control_loop_pipe_sequential_init_U", "Parent" : "12"},
+	{"ID" : "15", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208", "Parent" : "1", "Child" : ["16"],
 		"CDFG" : "lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -315,8 +322,8 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "lz_left_bytes", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter1", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "13", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196.flow_control_loop_pipe_sequential_init_U", "Parent" : "12"},
-	{"ID" : "14", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.lzBestMatchFilter_6_65536_U0", "Parent" : "0", "Child" : ["15", "17"],
+	{"ID" : "16", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208.flow_control_loop_pipe_sequential_init_U", "Parent" : "15"},
+	{"ID" : "17", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.lzBestMatchFilter_6_65536_U0", "Parent" : "0", "Child" : ["18", "20"],
 		"CDFG" : "lzBestMatchFilter_6_65536_s",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1", "real_start" : "1",
@@ -333,26 +340,26 @@ set RtlHierarchyInfo {[
 		"StartSource" : "1",
 		"StartFifo" : "start_for_lzBestMatchFilter_6_65536_U0_U",
 		"Port" : [
-			{"Name" : "compressdStream", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["1"], "DependentChan" : "33", "DependentChanDepth" : "8", "DependentChanType" : "0",
+			{"Name" : "compressdStream", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["1"], "DependentChan" : "36", "DependentChanDepth" : "8", "DependentChanType" : "0",
 				"BlockSignal" : [
 					{"Name" : "compressdStream_blk_n", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "15", "SubInstance" : "grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135", "Port" : "compressdStream", "Inst_start_state" : "7", "Inst_end_state" : "8"}]},
-			{"Name" : "bestMatchStream", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["18"], "DependentChan" : "35", "DependentChanDepth" : "8", "DependentChanType" : "0",
+					{"ID" : "18", "SubInstance" : "grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135", "Port" : "compressdStream", "Inst_start_state" : "8", "Inst_end_state" : "9"}]},
+			{"Name" : "bestMatchStream", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["21"], "DependentChan" : "38", "DependentChanDepth" : "8", "DependentChanType" : "0",
 				"BlockSignal" : [
 					{"Name" : "bestMatchStream_blk_n", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "15", "SubInstance" : "grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135", "Port" : "bestMatchStream", "Inst_start_state" : "7", "Inst_end_state" : "8"}]},
-			{"Name" : "input_size", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["1"], "DependentChan" : "34", "DependentChanDepth" : "2", "DependentChanType" : "2",
+					{"ID" : "18", "SubInstance" : "grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135", "Port" : "bestMatchStream", "Inst_start_state" : "8", "Inst_end_state" : "9"}]},
+			{"Name" : "input_size", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["1"], "DependentChan" : "37", "DependentChanDepth" : "2", "DependentChanType" : "2",
 				"BlockSignal" : [
 					{"Name" : "input_size_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "input_size_c1", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["18"], "DependentChan" : "36", "DependentChanDepth" : "2", "DependentChanType" : "2",
+			{"Name" : "input_size_c1", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["21"], "DependentChan" : "39", "DependentChanDepth" : "2", "DependentChanType" : "2",
 				"BlockSignal" : [
 					{"Name" : "input_size_c1_blk_n", "Type" : "RtlSignal"}]}],
 		"Loop" : [
 			{"Name" : "lz_bestMatchFilter_left_over", "PipelineType" : "no",
-				"LoopDec" : {"FSMBitwidth" : "10", "FirstState" : "ap_ST_fsm_state10", "LastState" : ["ap_ST_fsm_state10"], "QuitState" : ["ap_ST_fsm_state10"], "PreState" : ["ap_ST_fsm_state1", "ap_ST_fsm_state9"], "PostState" : ["ap_ST_fsm_state1"], "OneDepthLoop" : "1", "OneStateBlock": "ap_ST_fsm_state10_blk"}}]},
-	{"ID" : "15", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lzBestMatchFilter_6_65536_U0.grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135", "Parent" : "14", "Child" : ["16"],
+				"LoopDec" : {"FSMBitwidth" : "11", "FirstState" : "ap_ST_fsm_state11", "LastState" : ["ap_ST_fsm_state11"], "QuitState" : ["ap_ST_fsm_state11"], "PreState" : ["ap_ST_fsm_state1", "ap_ST_fsm_state10"], "PostState" : ["ap_ST_fsm_state1"], "OneDepthLoop" : "1", "OneStateBlock": "ap_ST_fsm_state11_blk"}}]},
+	{"ID" : "18", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lzBestMatchFilter_6_65536_U0.grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135", "Parent" : "17", "Child" : ["19"],
 		"CDFG" : "lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -388,10 +395,10 @@ set RtlHierarchyInfo {[
 			{"Name" : "compare_window_17_out", "Type" : "Vld", "Direction" : "O"}],
 		"Loop" : [
 			{"Name" : "lz_bestMatchFilter", "PipelineType" : "UPC",
-				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter1", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "16", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.lzBestMatchFilter_6_65536_U0.grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135.flow_control_loop_pipe_sequential_init_U", "Parent" : "15"},
-	{"ID" : "17", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lzBestMatchFilter_6_65536_U0.sparsemux_13_3_32_1_1_U59", "Parent" : "14"},
-	{"ID" : "18", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.lzBooster_255_16384_64_U0", "Parent" : "0", "Child" : ["19", "20"],
+				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+	{"ID" : "19", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.lzBestMatchFilter_6_65536_U0.grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135.flow_control_loop_pipe_sequential_init_U", "Parent" : "18"},
+	{"ID" : "20", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lzBestMatchFilter_6_65536_U0.sparsemux_13_3_32_1_1_U65", "Parent" : "17"},
+	{"ID" : "21", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.lzBooster_255_16384_64_U0", "Parent" : "0", "Child" : ["22", "23"],
 		"CDFG" : "lzBooster_255_16384_64_s",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1", "real_start" : "1",
@@ -405,23 +412,23 @@ set RtlHierarchyInfo {[
 		"InDataflowNetwork" : "1",
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
-		"StartSource" : "14",
+		"StartSource" : "17",
 		"StartFifo" : "start_for_lzBooster_255_16384_64_U0_U",
 		"Port" : [
-			{"Name" : "bestMatchStream", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["14"], "DependentChan" : "35", "DependentChanDepth" : "8", "DependentChanType" : "0",
+			{"Name" : "bestMatchStream", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["17"], "DependentChan" : "38", "DependentChanDepth" : "8", "DependentChanType" : "0",
 				"BlockSignal" : [
 					{"Name" : "bestMatchStream_blk_n", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_lzBooster_255_16384_64_Pipeline_lz_booster_fu_207", "Port" : "bestMatchStream", "Inst_start_state" : "3", "Inst_end_state" : "4"}]},
-			{"Name" : "boosterStream", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["22","23"], "DependentChan" : "37", "DependentChanDepth" : "8", "DependentChanType" : "0",
+					{"ID" : "23", "SubInstance" : "grp_lzBooster_255_16384_64_Pipeline_lz_booster_fu_206", "Port" : "bestMatchStream", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
+			{"Name" : "boosterStream", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["25","26"], "DependentChan" : "40", "DependentChanDepth" : "8", "DependentChanType" : "0",
 				"BlockSignal" : [
 					{"Name" : "boosterStream_blk_n", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_lzBooster_255_16384_64_Pipeline_lz_booster_fu_207", "Port" : "boosterStream", "Inst_start_state" : "3", "Inst_end_state" : "4"}]},
-			{"Name" : "input_size", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["14"], "DependentChan" : "36", "DependentChanDepth" : "2", "DependentChanType" : "2",
+					{"ID" : "23", "SubInstance" : "grp_lzBooster_255_16384_64_Pipeline_lz_booster_fu_206", "Port" : "boosterStream", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
+			{"Name" : "input_size", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["17"], "DependentChan" : "39", "DependentChanDepth" : "2", "DependentChanType" : "2",
 				"BlockSignal" : [
 					{"Name" : "input_size_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "input_size_c", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["22","23"], "DependentChan" : "38", "DependentChanDepth" : "2", "DependentChanType" : "2",
+			{"Name" : "input_size_c", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["25","26"], "DependentChan" : "41", "DependentChanDepth" : "2", "DependentChanType" : "2",
 				"BlockSignal" : [
 					{"Name" : "input_size_c_blk_n", "Type" : "RtlSignal"}]},
 			{"Name" : "guard_variable_for_void_lzBooster_stream_stream_unsigned_int_nextMatchCh", "Type" : "OVld", "Direction" : "IO"},
@@ -432,9 +439,9 @@ set RtlHierarchyInfo {[
 			{"Name" : "matchFlag_reg", "Type" : "OVld", "Direction" : "IO"}],
 		"Loop" : [
 			{"Name" : "lz_booster_left_bytes", "PipelineType" : "no",
-				"LoopDec" : {"FSMBitwidth" : "6", "FirstState" : "ap_ST_fsm_state6", "LastState" : ["ap_ST_fsm_state6"], "QuitState" : ["ap_ST_fsm_state6"], "PreState" : ["ap_ST_fsm_state1", "ap_ST_fsm_state5"], "PostState" : ["ap_ST_fsm_state1"], "OneDepthLoop" : "1", "OneStateBlock": "ap_ST_fsm_state6_blk"}}]},
-	{"ID" : "19", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lzBooster_255_16384_64_U0.local_mem_U", "Parent" : "18"},
-	{"ID" : "20", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lzBooster_255_16384_64_U0.grp_lzBooster_255_16384_64_Pipeline_lz_booster_fu_207", "Parent" : "18", "Child" : ["21"],
+				"LoopDec" : {"FSMBitwidth" : "7", "FirstState" : "ap_ST_fsm_state7", "LastState" : ["ap_ST_fsm_state7"], "QuitState" : ["ap_ST_fsm_state7"], "PreState" : ["ap_ST_fsm_state1", "ap_ST_fsm_state6"], "PostState" : ["ap_ST_fsm_state1"], "OneDepthLoop" : "1", "OneStateBlock": "ap_ST_fsm_state7_blk"}}]},
+	{"ID" : "22", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lzBooster_255_16384_64_U0.local_mem_U", "Parent" : "21"},
+	{"ID" : "23", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lzBooster_255_16384_64_U0.grp_lzBooster_255_16384_64_Pipeline_lz_booster_fu_206", "Parent" : "21", "Child" : ["24"],
 		"CDFG" : "lzBooster_255_16384_64_Pipeline_lz_booster",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -470,9 +477,9 @@ set RtlHierarchyInfo {[
 			{"Name" : "outValue_out", "Type" : "Vld", "Direction" : "O"}],
 		"Loop" : [
 			{"Name" : "lz_booster", "PipelineType" : "UPC",
-				"LoopDec" : {"FSMBitwidth" : "3", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage1", "QuitStateIter" : "ap_enable_reg_pp0_iter0", "QuitStateBlock" : "ap_block_pp0_stage1_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "21", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.lzBooster_255_16384_64_U0.grp_lzBooster_255_16384_64_Pipeline_lz_booster_fu_207.flow_control_loop_pipe_sequential_init_U", "Parent" : "20"},
-	{"ID" : "22", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.lz4Compress_4096_1_U0", "Parent" : "0", "Child" : ["23", "26", "29", "30", "31", "32"],
+				"LoopDec" : {"FSMBitwidth" : "3", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage2", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage2_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter1", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+	{"ID" : "24", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.lzBooster_255_16384_64_U0.grp_lzBooster_255_16384_64_Pipeline_lz_booster_fu_206.flow_control_loop_pipe_sequential_init_U", "Parent" : "23"},
+	{"ID" : "25", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.lz4Compress_4096_1_U0", "Parent" : "0", "Child" : ["26", "29", "32", "33", "34", "35"],
 		"CDFG" : "lz4Compress_4096_1_s",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1", "real_start" : "0",
@@ -486,33 +493,33 @@ set RtlHierarchyInfo {[
 		"InDataflowNetwork" : "1",
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
-		"StartSource" : "18",
+		"StartSource" : "21",
 		"StartFifo" : "start_for_lz4Compress_4096_1_U0_U",
 		"InputProcess" : [
-			{"ID" : "23", "Name" : "lz4CompressPart1_4096_1_U0"}],
+			{"ID" : "26", "Name" : "lz4CompressPart1_4096_1_U0"}],
 		"OutputProcess" : [
-			{"ID" : "23", "Name" : "lz4CompressPart1_4096_1_U0"},
-			{"ID" : "26", "Name" : "lz4CompressPart2_U0"}],
+			{"ID" : "26", "Name" : "lz4CompressPart1_4096_1_U0"},
+			{"ID" : "29", "Name" : "lz4CompressPart2_U0"}],
 		"Port" : [
-			{"Name" : "boosterStream", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["18"], "DependentChan" : "37", "DependentChanDepth" : "8", "DependentChanType" : "0",
+			{"Name" : "boosterStream", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["21"], "DependentChan" : "40", "DependentChanDepth" : "8", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "23", "SubInstance" : "lz4CompressPart1_4096_1_U0", "Port" : "boosterStream"}]},
+					{"ID" : "26", "SubInstance" : "lz4CompressPart1_4096_1_U0", "Port" : "boosterStream"}]},
 			{"Name" : "lz4Out", "Type" : "Fifo", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "26", "SubInstance" : "lz4CompressPart2_U0", "Port" : "lz4Out"}]},
+					{"ID" : "29", "SubInstance" : "lz4CompressPart2_U0", "Port" : "lz4Out"}]},
 			{"Name" : "max_lit_limit", "Type" : "Vld", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "23", "SubInstance" : "lz4CompressPart1_4096_1_U0", "Port" : "max_lit_limit"}]},
-			{"Name" : "input_size", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["18"], "DependentChan" : "38", "DependentChanDepth" : "2", "DependentChanType" : "2",
+					{"ID" : "26", "SubInstance" : "lz4CompressPart1_4096_1_U0", "Port" : "max_lit_limit"}]},
+			{"Name" : "input_size", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["21"], "DependentChan" : "41", "DependentChanDepth" : "2", "DependentChanType" : "2",
 				"SubConnect" : [
-					{"ID" : "23", "SubInstance" : "lz4CompressPart1_4096_1_U0", "Port" : "input_size"}]},
+					{"ID" : "26", "SubInstance" : "lz4CompressPart1_4096_1_U0", "Port" : "input_size"}]},
 			{"Name" : "lz4Out_eos", "Type" : "Fifo", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "26", "SubInstance" : "lz4CompressPart2_U0", "Port" : "lz4Out_eos"}]},
+					{"ID" : "29", "SubInstance" : "lz4CompressPart2_U0", "Port" : "lz4Out_eos"}]},
 			{"Name" : "lz4OutSize", "Type" : "Fifo", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "26", "SubInstance" : "lz4CompressPart2_U0", "Port" : "lz4OutSize"}]}]},
-	{"ID" : "23", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lz4Compress_4096_1_U0.lz4CompressPart1_4096_1_U0", "Parent" : "22", "Child" : ["24"],
+					{"ID" : "29", "SubInstance" : "lz4CompressPart2_U0", "Port" : "lz4OutSize"}]}]},
+	{"ID" : "26", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lz4Compress_4096_1_U0.lz4CompressPart1_4096_1_U0", "Parent" : "25", "Child" : ["27"],
 		"CDFG" : "lz4CompressPart1_4096_1_s",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1", "real_start" : "1",
@@ -527,27 +534,27 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "boosterStream", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["18"], "DependentChan" : "37", "DependentChanDepth" : "8", "DependentChanType" : "0",
+			{"Name" : "boosterStream", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["21"], "DependentChan" : "40", "DependentChanDepth" : "8", "DependentChanType" : "0",
 				"BlockSignal" : [
 					{"Name" : "boosterStream_blk_n", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "24", "SubInstance" : "grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_114", "Port" : "boosterStream", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
-			{"Name" : "lit_outStream", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["26"], "DependentChan" : "29", "DependentChanDepth" : "4096", "DependentChanType" : "0",
+					{"ID" : "27", "SubInstance" : "grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140", "Port" : "boosterStream", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
+			{"Name" : "lit_outStream", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["29"], "DependentChan" : "32", "DependentChanDepth" : "8192", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "24", "SubInstance" : "grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_114", "Port" : "lit_outStream", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
-			{"Name" : "lenOffset_Stream", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["26"], "DependentChan" : "30", "DependentChanDepth" : "32", "DependentChanType" : "0",
+					{"ID" : "27", "SubInstance" : "grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140", "Port" : "lit_outStream", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
+			{"Name" : "lenOffset_Stream", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["29"], "DependentChan" : "33", "DependentChanDepth" : "64", "DependentChanType" : "0",
 				"BlockSignal" : [
 					{"Name" : "lenOffset_Stream_blk_n", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "24", "SubInstance" : "grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_114", "Port" : "lenOffset_Stream", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
-			{"Name" : "input_size", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["18"], "DependentChan" : "38", "DependentChanDepth" : "2", "DependentChanType" : "2",
+					{"ID" : "27", "SubInstance" : "grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140", "Port" : "lenOffset_Stream", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
+			{"Name" : "input_size", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["21"], "DependentChan" : "41", "DependentChanDepth" : "2", "DependentChanType" : "2",
 				"BlockSignal" : [
 					{"Name" : "input_size_blk_n", "Type" : "RtlSignal"}]},
 			{"Name" : "max_lit_limit", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "input_size_c", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["26"], "DependentChan" : "31", "DependentChanDepth" : "2", "DependentChanType" : "2",
+			{"Name" : "input_size_c", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["29"], "DependentChan" : "34", "DependentChanDepth" : "2", "DependentChanType" : "2",
 				"BlockSignal" : [
 					{"Name" : "input_size_c_blk_n", "Type" : "RtlSignal"}]}]},
-	{"ID" : "24", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.lz4Compress_4096_1_U0.lz4CompressPart1_4096_1_U0.grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_114", "Parent" : "23", "Child" : ["25"],
+	{"ID" : "27", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.lz4Compress_4096_1_U0.lz4CompressPart1_4096_1_U0.grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140", "Parent" : "26", "Child" : ["28"],
 		"CDFG" : "lz4CompressPart1_4096_1_Pipeline_lz4_divide",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -563,11 +570,13 @@ set RtlHierarchyInfo {[
 		"IsBlackBox" : "0",
 		"Port" : [
 			{"Name" : "empty", "Type" : "None", "Direction" : "I"},
+			{"Name" : "nextEncodedValue", "Type" : "None", "Direction" : "I"},
+			{"Name" : "icmp", "Type" : "None", "Direction" : "I"},
 			{"Name" : "input_size_5", "Type" : "None", "Direction" : "I"},
 			{"Name" : "lenOffset_Stream", "Type" : "Fifo", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "lenOffset_Stream_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "sub", "Type" : "None", "Direction" : "I"},
+			{"Name" : "sub17", "Type" : "None", "Direction" : "I"},
 			{"Name" : "boosterStream", "Type" : "Fifo", "Direction" : "I",
 				"BlockSignal" : [
 					{"Name" : "boosterStream_blk_n", "Type" : "RtlSignal"}]},
@@ -579,8 +588,8 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "lz4_divide", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "2", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage1", "QuitStateIter" : "ap_enable_reg_pp0_iter0", "QuitStateBlock" : "ap_block_pp0_stage1_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "25", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.lz4Compress_4096_1_U0.lz4CompressPart1_4096_1_U0.grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_114.flow_control_loop_pipe_sequential_init_U", "Parent" : "24"},
-	{"ID" : "26", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lz4Compress_4096_1_U0.lz4CompressPart2_U0", "Parent" : "22", "Child" : ["27"],
+	{"ID" : "28", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.lz4Compress_4096_1_U0.lz4CompressPart1_4096_1_U0.grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140.flow_control_loop_pipe_sequential_init_U", "Parent" : "27"},
+	{"ID" : "29", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lz4Compress_4096_1_U0.lz4CompressPart2_U0", "Parent" : "25", "Child" : ["30"],
 		"CDFG" : "lz4CompressPart2",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1", "real_start" : "0",
@@ -594,32 +603,32 @@ set RtlHierarchyInfo {[
 		"InDataflowNetwork" : "1",
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
-		"StartSource" : "23",
+		"StartSource" : "26",
 		"StartFifo" : "start_for_lz4CompressPart2_U0_U",
 		"Port" : [
-			{"Name" : "lit_outStream", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["23"], "DependentChan" : "29", "DependentChanDepth" : "4096", "DependentChanType" : "0",
+			{"Name" : "lit_outStream", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["26"], "DependentChan" : "32", "DependentChanDepth" : "8192", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "27", "SubInstance" : "grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91", "Port" : "lit_outStream", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
-			{"Name" : "lenOffset_Stream", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["23"], "DependentChan" : "30", "DependentChanDepth" : "32", "DependentChanType" : "0",
+					{"ID" : "30", "SubInstance" : "grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93", "Port" : "lit_outStream", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+			{"Name" : "lenOffset_Stream", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["26"], "DependentChan" : "33", "DependentChanDepth" : "64", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "27", "SubInstance" : "grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91", "Port" : "lenOffset_Stream", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+					{"ID" : "30", "SubInstance" : "grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93", "Port" : "lenOffset_Stream", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
 			{"Name" : "lz4Out", "Type" : "Fifo", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "lz4Out_blk_n", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "27", "SubInstance" : "grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91", "Port" : "lz4Out", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+					{"ID" : "30", "SubInstance" : "grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93", "Port" : "lz4Out", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
 			{"Name" : "lz4Out_eos", "Type" : "Fifo", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "lz4Out_eos_blk_n", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "27", "SubInstance" : "grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91", "Port" : "lz4Out_eos", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+					{"ID" : "30", "SubInstance" : "grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93", "Port" : "lz4Out_eos", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
 			{"Name" : "lz4OutSize", "Type" : "Fifo", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "lz4OutSize_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "input_size", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["23"], "DependentChan" : "31", "DependentChanDepth" : "2", "DependentChanType" : "2",
+			{"Name" : "input_size", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["26"], "DependentChan" : "34", "DependentChanDepth" : "2", "DependentChanType" : "2",
 				"BlockSignal" : [
 					{"Name" : "input_size_blk_n", "Type" : "RtlSignal"}]}]},
-	{"ID" : "27", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.lz4Compress_4096_1_U0.lz4CompressPart2_U0.grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91", "Parent" : "26", "Child" : ["28"],
+	{"ID" : "30", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.lz4Compress_4096_1_U0.lz4CompressPart2_U0.grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93", "Parent" : "29", "Child" : ["31"],
 		"CDFG" : "lz4CompressPart2_Pipeline_lz4_compress",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -650,30 +659,30 @@ set RtlHierarchyInfo {[
 			{"Name" : "compressedSize_out", "Type" : "Vld", "Direction" : "O"}],
 		"Loop" : [
 			{"Name" : "lz4_compress", "PipelineType" : "UPC",
-				"LoopDec" : {"FSMBitwidth" : "3", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage2", "QuitStateIter" : "ap_enable_reg_pp0_iter0", "QuitStateBlock" : "ap_block_pp0_stage2_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "28", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.lz4Compress_4096_1_U0.lz4CompressPart2_U0.grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91.flow_control_loop_pipe_sequential_init_U", "Parent" : "27"},
-	{"ID" : "29", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lz4Compress_4096_1_U0.lit_outStream_U", "Parent" : "22"},
-	{"ID" : "30", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lz4Compress_4096_1_U0.lenOffset_Stream_U", "Parent" : "22"},
-	{"ID" : "31", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lz4Compress_4096_1_U0.input_size_c_U", "Parent" : "22"},
-	{"ID" : "32", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lz4Compress_4096_1_U0.start_for_lz4CompressPart2_U0_U", "Parent" : "22"},
-	{"ID" : "33", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.compressdStream_U", "Parent" : "0"},
-	{"ID" : "34", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.input_size_c2_U", "Parent" : "0"},
-	{"ID" : "35", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bestMatchStream_U", "Parent" : "0"},
-	{"ID" : "36", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.input_size_c1_U", "Parent" : "0"},
-	{"ID" : "37", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.boosterStream_U", "Parent" : "0"},
-	{"ID" : "38", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.input_size_c_U", "Parent" : "0"},
-	{"ID" : "39", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.start_for_lzBestMatchFilter_6_65536_U0_U", "Parent" : "0"},
-	{"ID" : "40", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.start_for_lzBooster_255_16384_64_U0_U", "Parent" : "0"},
-	{"ID" : "41", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.start_for_lz4Compress_4096_1_U0_U", "Parent" : "0"}]}
+				"LoopDec" : {"FSMBitwidth" : "4", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage1", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage1_subdone", "QuitState" : "ap_ST_fsm_pp0_stage1", "QuitStateIter" : "ap_enable_reg_pp0_iter1", "QuitStateBlock" : "ap_block_pp0_stage1_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+	{"ID" : "31", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.lz4Compress_4096_1_U0.lz4CompressPart2_U0.grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93.flow_control_loop_pipe_sequential_init_U", "Parent" : "30"},
+	{"ID" : "32", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lz4Compress_4096_1_U0.lit_outStream_U", "Parent" : "25"},
+	{"ID" : "33", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lz4Compress_4096_1_U0.lenOffset_Stream_U", "Parent" : "25"},
+	{"ID" : "34", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lz4Compress_4096_1_U0.input_size_c_U", "Parent" : "25"},
+	{"ID" : "35", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lz4Compress_4096_1_U0.start_for_lz4CompressPart2_U0_U", "Parent" : "25"},
+	{"ID" : "36", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.compressdStream_U", "Parent" : "0"},
+	{"ID" : "37", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.input_size_c2_U", "Parent" : "0"},
+	{"ID" : "38", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bestMatchStream_U", "Parent" : "0"},
+	{"ID" : "39", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.input_size_c1_U", "Parent" : "0"},
+	{"ID" : "40", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.boosterStream_U", "Parent" : "0"},
+	{"ID" : "41", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.input_size_c_U", "Parent" : "0"},
+	{"ID" : "42", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.start_for_lzBestMatchFilter_6_65536_U0_U", "Parent" : "0"},
+	{"ID" : "43", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.start_for_lzBooster_255_16384_64_U0_U", "Parent" : "0"},
+	{"ID" : "44", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.start_for_lz4Compress_4096_1_U0_U", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	lz4CompressEngineRun {
-		inStream {Type I LastRead 3 FirstWrite -1}
+		inStream {Type I LastRead 4 FirstWrite -1}
 		lz4Out {Type O LastRead -1 FirstWrite 3}
 		lz4Out_eos {Type O LastRead -1 FirstWrite 3}
 		lz4OutSize {Type O LastRead -1 FirstWrite 3}
-		max_lit_limit {Type O LastRead -1 FirstWrite 3}
+		max_lit_limit {Type O LastRead -1 FirstWrite 6}
 		input_size {Type I LastRead 0 FirstWrite -1}
 		core_idx {Type I LastRead -1 FirstWrite -1}
 		guard_variable_for_void_lzBooster_stream_stream_unsigned_int_nextMatchCh {Type IO LastRead -1 FirstWrite -1}
@@ -683,11 +692,13 @@ set ArgLastReadFirstWriteLatency {
 		match_len_reg {Type IO LastRead -1 FirstWrite -1}
 		matchFlag_reg {Type IO LastRead -1 FirstWrite -1}}
 	lzCompress_6_4_65536_6_1_4096_64_s {
-		inStream {Type I LastRead 3 FirstWrite -1}
+		inStream {Type I LastRead 4 FirstWrite -1}
 		compressdStream {Type O LastRead -1 FirstWrite 1}
 		input_size {Type I LastRead 0 FirstWrite -1}
 		input_size_c2 {Type O LastRead -1 FirstWrite 0}}
 	lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush {
+		dict_3 {Type O LastRead -1 FirstWrite 0}
+		dict_2 {Type O LastRead -1 FirstWrite 0}
 		dict_1 {Type O LastRead -1 FirstWrite 0}
 		dict {Type O LastRead -1 FirstWrite 0}}
 	lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2 {
@@ -697,27 +708,29 @@ set ArgLastReadFirstWriteLatency {
 		present_window_2_out {Type O LastRead -1 FirstWrite 1}
 		present_window_1_out {Type O LastRead -1 FirstWrite 1}
 		present_window_out {Type O LastRead -1 FirstWrite 1}
-		arrayidx48_promoted172_out {Type O LastRead -1 FirstWrite 1}
-		arrayidx42_3_promoted170_out {Type O LastRead -1 FirstWrite 1}
-		arrayidx71_promoted168_out {Type O LastRead -1 FirstWrite 1}
-		arrayidx61_promoted166_out {Type O LastRead -1 FirstWrite 1}
-		arrayidx54_promoted164_out {Type O LastRead -1 FirstWrite 1}}
+		arrayidx48_promoted176_out {Type O LastRead -1 FirstWrite 1}
+		arrayidx42_3_promoted174_out {Type O LastRead -1 FirstWrite 1}
+		arrayidx71_promoted172_out {Type O LastRead -1 FirstWrite 1}
+		arrayidx61_promoted170_out {Type O LastRead -1 FirstWrite 1}
+		arrayidx54_promoted168_out {Type O LastRead -1 FirstWrite 1}}
 	lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress {
-		arrayidx48_promoted172_reload {Type I LastRead 0 FirstWrite -1}
-		arrayidx42_3_promoted170_reload {Type I LastRead 0 FirstWrite -1}
-		arrayidx71_promoted168_reload {Type I LastRead 0 FirstWrite -1}
-		arrayidx61_promoted166_reload {Type I LastRead 0 FirstWrite -1}
-		arrayidx54_promoted164_reload {Type I LastRead 0 FirstWrite -1}
+		arrayidx48_promoted176_reload {Type I LastRead 0 FirstWrite -1}
+		arrayidx42_3_promoted174_reload {Type I LastRead 0 FirstWrite -1}
+		arrayidx71_promoted172_reload {Type I LastRead 0 FirstWrite -1}
+		arrayidx61_promoted170_reload {Type I LastRead 0 FirstWrite -1}
+		arrayidx54_promoted168_reload {Type I LastRead 0 FirstWrite -1}
 		sub27 {Type I LastRead 0 FirstWrite -1}
-		compressdStream {Type O LastRead -1 FirstWrite 6}
-		dict_1 {Type IO LastRead 2 FirstWrite 3}
-		dict {Type IO LastRead 2 FirstWrite 3}
-		inStream {Type I LastRead 3 FirstWrite -1}
-		present_window_15_out {Type O LastRead -1 FirstWrite 3}
-		present_window_14_out {Type O LastRead -1 FirstWrite 3}
-		present_window_13_out {Type O LastRead -1 FirstWrite 3}
-		present_window_12_out {Type O LastRead -1 FirstWrite 3}
-		present_window_11_out {Type O LastRead -1 FirstWrite 3}}
+		compressdStream {Type O LastRead -1 FirstWrite 11}
+		dict_3 {Type IO LastRead 3 FirstWrite 5}
+		dict_2 {Type IO LastRead 3 FirstWrite 5}
+		dict_1 {Type IO LastRead 3 FirstWrite 5}
+		dict {Type IO LastRead 3 FirstWrite 5}
+		inStream {Type I LastRead 4 FirstWrite -1}
+		present_window_15_out {Type O LastRead -1 FirstWrite 8}
+		present_window_14_out {Type O LastRead -1 FirstWrite 8}
+		present_window_13_out {Type O LastRead -1 FirstWrite 8}
+		present_window_12_out {Type O LastRead -1 FirstWrite 8}
+		present_window_11_out {Type O LastRead -1 FirstWrite 8}}
 	lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover {
 		select_ln82_4 {Type I LastRead 0 FirstWrite -1}
 		select_ln82_3 {Type I LastRead 0 FirstWrite -1}
@@ -729,8 +742,8 @@ set ArgLastReadFirstWriteLatency {
 		inStream {Type I LastRead 1 FirstWrite -1}
 		compressdStream {Type O LastRead -1 FirstWrite 1}}
 	lzBestMatchFilter_6_65536_s {
-		compressdStream {Type I LastRead 5 FirstWrite -1}
-		bestMatchStream {Type O LastRead -1 FirstWrite 1}
+		compressdStream {Type I LastRead 6 FirstWrite -1}
+		bestMatchStream {Type O LastRead -1 FirstWrite 2}
 		input_size {Type I LastRead 0 FirstWrite -1}
 		input_size_c1 {Type O LastRead -1 FirstWrite 0}}
 	lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter {
@@ -742,7 +755,7 @@ set ArgLastReadFirstWriteLatency {
 		compare_window {Type I LastRead 0 FirstWrite -1}
 		input_size_2 {Type I LastRead 0 FirstWrite -1}
 		compressdStream {Type I LastRead 1 FirstWrite -1}
-		bestMatchStream {Type O LastRead -1 FirstWrite 1}
+		bestMatchStream {Type O LastRead -1 FirstWrite 2}
 		compare_window_12_out {Type O LastRead -1 FirstWrite 1}
 		compare_window_13_out {Type O LastRead -1 FirstWrite 1}
 		compare_window_14_out {Type O LastRead -1 FirstWrite 1}
@@ -750,8 +763,8 @@ set ArgLastReadFirstWriteLatency {
 		compare_window_16_out {Type O LastRead -1 FirstWrite 1}
 		compare_window_17_out {Type O LastRead -1 FirstWrite 1}}
 	lzBooster_255_16384_64_s {
-		bestMatchStream {Type I LastRead 5 FirstWrite -1}
-		boosterStream {Type O LastRead -1 FirstWrite 2}
+		bestMatchStream {Type I LastRead 6 FirstWrite -1}
+		boosterStream {Type O LastRead -1 FirstWrite 4}
 		input_size {Type I LastRead 0 FirstWrite -1}
 		input_size_c {Type O LastRead -1 FirstWrite 0}
 		guard_variable_for_void_lzBooster_stream_stream_unsigned_int_nextMatchCh {Type IO LastRead -1 FirstWrite -1}
@@ -767,19 +780,19 @@ set ArgLastReadFirstWriteLatency {
 		match_len_reg_load {Type I LastRead 0 FirstWrite -1}
 		skip_len_reg_load {Type I LastRead 0 FirstWrite -1}
 		sub {Type I LastRead 0 FirstWrite -1}
-		local_mem {Type IO LastRead 3 FirstWrite 1}
+		local_mem {Type IO LastRead 4 FirstWrite 2}
 		bestMatchStream {Type I LastRead 1 FirstWrite -1}
-		boosterStream {Type O LastRead -1 FirstWrite 2}
-		new_match_loc_out {Type O LastRead -1 FirstWrite 1}
-		p_out {Type O LastRead -1 FirstWrite 1}
-		new_matchFlag_1_0_0_07_out {Type O LastRead -1 FirstWrite 1}
-		new_match_len_out {Type O LastRead -1 FirstWrite 1}
-		p_out1 {Type O LastRead -1 FirstWrite 1}
-		outValue_out {Type O LastRead -1 FirstWrite 1}}
+		boosterStream {Type O LastRead -1 FirstWrite 4}
+		new_match_loc_out {Type O LastRead -1 FirstWrite 3}
+		p_out {Type O LastRead -1 FirstWrite 3}
+		new_matchFlag_1_0_0_07_out {Type O LastRead -1 FirstWrite 3}
+		new_match_len_out {Type O LastRead -1 FirstWrite 3}
+		p_out1 {Type O LastRead -1 FirstWrite 3}
+		outValue_out {Type O LastRead -1 FirstWrite 3}}
 	lz4Compress_4096_1_s {
 		boosterStream {Type I LastRead 2 FirstWrite -1}
 		lz4Out {Type O LastRead -1 FirstWrite 3}
-		max_lit_limit {Type O LastRead -1 FirstWrite 3}
+		max_lit_limit {Type O LastRead -1 FirstWrite 6}
 		input_size {Type I LastRead 0 FirstWrite -1}
 		lz4Out_eos {Type O LastRead -1 FirstWrite 3}
 		lz4OutSize {Type O LastRead -1 FirstWrite 3}}
@@ -788,19 +801,21 @@ set ArgLastReadFirstWriteLatency {
 		lit_outStream {Type O LastRead -1 FirstWrite 2}
 		lenOffset_Stream {Type O LastRead -1 FirstWrite 2}
 		input_size {Type I LastRead 0 FirstWrite -1}
-		max_lit_limit {Type O LastRead -1 FirstWrite 3}
+		max_lit_limit {Type O LastRead -1 FirstWrite 6}
 		input_size_c {Type O LastRead -1 FirstWrite 0}}
 	lz4CompressPart1_4096_1_Pipeline_lz4_divide {
 		empty {Type I LastRead 0 FirstWrite -1}
+		nextEncodedValue {Type I LastRead 0 FirstWrite -1}
+		icmp {Type I LastRead 0 FirstWrite -1}
 		input_size_5 {Type I LastRead 0 FirstWrite -1}
 		lenOffset_Stream {Type O LastRead -1 FirstWrite 2}
-		sub {Type I LastRead 0 FirstWrite -1}
+		sub17 {Type I LastRead 0 FirstWrite -1}
 		boosterStream {Type I LastRead 2 FirstWrite -1}
 		lit_outStream {Type O LastRead -1 FirstWrite 2}
 		lit_count_out {Type O LastRead -1 FirstWrite 1}
 		lit_count_flag_out {Type O LastRead -1 FirstWrite 1}}
 	lz4CompressPart2 {
-		lit_outStream {Type I LastRead 3 FirstWrite -1}
+		lit_outStream {Type I LastRead 4 FirstWrite -1}
 		lenOffset_Stream {Type I LastRead 2 FirstWrite -1}
 		lz4Out {Type O LastRead -1 FirstWrite 3}
 		lz4Out_eos {Type O LastRead -1 FirstWrite 3}
@@ -809,10 +824,10 @@ set ArgLastReadFirstWriteLatency {
 	lz4CompressPart2_Pipeline_lz4_compress {
 		input_size_4 {Type I LastRead 0 FirstWrite -1}
 		lenOffset_Stream {Type I LastRead 2 FirstWrite -1}
-		lit_outStream {Type I LastRead 3 FirstWrite -1}
-		lz4Out {Type O LastRead -1 FirstWrite 3}
-		lz4Out_eos {Type O LastRead -1 FirstWrite 3}
-		compressedSize_out {Type O LastRead -1 FirstWrite 2}}}
+		lit_outStream {Type I LastRead 4 FirstWrite -1}
+		lz4Out {Type O LastRead -1 FirstWrite 5}
+		lz4Out_eos {Type O LastRead -1 FirstWrite 5}
+		compressedSize_out {Type O LastRead -1 FirstWrite 1}}}
 
 set hasDtUnsupportedChannel 0
 

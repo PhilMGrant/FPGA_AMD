@@ -48,13 +48,13 @@ set portList {
 	{ lit_outStream_dout sc_in sc_lv 8 signal 0 } 
 	{ lit_outStream_empty_n sc_in sc_logic 1 signal 0 } 
 	{ lit_outStream_read sc_out sc_logic 1 signal 0 } 
-	{ lit_outStream_num_data_valid sc_in sc_lv 13 signal 0 } 
-	{ lit_outStream_fifo_cap sc_in sc_lv 13 signal 0 } 
+	{ lit_outStream_num_data_valid sc_in sc_lv 14 signal 0 } 
+	{ lit_outStream_fifo_cap sc_in sc_lv 14 signal 0 } 
 	{ lenOffset_Stream_dout sc_in sc_lv 64 signal 1 } 
 	{ lenOffset_Stream_empty_n sc_in sc_logic 1 signal 1 } 
 	{ lenOffset_Stream_read sc_out sc_logic 1 signal 1 } 
-	{ lenOffset_Stream_num_data_valid sc_in sc_lv 6 signal 1 } 
-	{ lenOffset_Stream_fifo_cap sc_in sc_lv 6 signal 1 } 
+	{ lenOffset_Stream_num_data_valid sc_in sc_lv 7 signal 1 } 
+	{ lenOffset_Stream_fifo_cap sc_in sc_lv 7 signal 1 } 
 	{ lz4Out_din sc_out sc_lv 8 signal 2 } 
 	{ lz4Out_full_n sc_in sc_logic 1 signal 2 } 
 	{ lz4Out_write sc_out sc_logic 1 signal 2 } 
@@ -81,13 +81,13 @@ set NewPortList {[
  	{ "name": "lit_outStream_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "lit_outStream", "role": "dout" }} , 
  	{ "name": "lit_outStream_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "lit_outStream", "role": "empty_n" }} , 
  	{ "name": "lit_outStream_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "lit_outStream", "role": "read" }} , 
- 	{ "name": "lit_outStream_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":13, "type": "signal", "bundle":{"name": "lit_outStream", "role": "num_data_valid" }} , 
- 	{ "name": "lit_outStream_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":13, "type": "signal", "bundle":{"name": "lit_outStream", "role": "fifo_cap" }} , 
+ 	{ "name": "lit_outStream_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "lit_outStream", "role": "num_data_valid" }} , 
+ 	{ "name": "lit_outStream_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "lit_outStream", "role": "fifo_cap" }} , 
  	{ "name": "lenOffset_Stream_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "lenOffset_Stream", "role": "dout" }} , 
  	{ "name": "lenOffset_Stream_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "lenOffset_Stream", "role": "empty_n" }} , 
  	{ "name": "lenOffset_Stream_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "lenOffset_Stream", "role": "read" }} , 
- 	{ "name": "lenOffset_Stream_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "lenOffset_Stream", "role": "num_data_valid" }} , 
- 	{ "name": "lenOffset_Stream_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "lenOffset_Stream", "role": "fifo_cap" }} , 
+ 	{ "name": "lenOffset_Stream_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "lenOffset_Stream", "role": "num_data_valid" }} , 
+ 	{ "name": "lenOffset_Stream_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "lenOffset_Stream", "role": "fifo_cap" }} , 
  	{ "name": "lz4Out_din", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "lz4Out", "role": "din" }} , 
  	{ "name": "lz4Out_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "lz4Out", "role": "full_n" }} , 
  	{ "name": "lz4Out_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "lz4Out", "role": "write" }} , 
@@ -119,29 +119,29 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "lit_outStream", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["0"], "DependentChan" : "0", "DependentChanDepth" : "4096", "DependentChanType" : "0",
+			{"Name" : "lit_outStream", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["0"], "DependentChan" : "0", "DependentChanDepth" : "8192", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91", "Port" : "lit_outStream", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
-			{"Name" : "lenOffset_Stream", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["0"], "DependentChan" : "0", "DependentChanDepth" : "32", "DependentChanType" : "0",
+					{"ID" : "1", "SubInstance" : "grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93", "Port" : "lit_outStream", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+			{"Name" : "lenOffset_Stream", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["0"], "DependentChan" : "0", "DependentChanDepth" : "64", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91", "Port" : "lenOffset_Stream", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+					{"ID" : "1", "SubInstance" : "grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93", "Port" : "lenOffset_Stream", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
 			{"Name" : "lz4Out", "Type" : "Fifo", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "lz4Out_blk_n", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91", "Port" : "lz4Out", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+					{"ID" : "1", "SubInstance" : "grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93", "Port" : "lz4Out", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
 			{"Name" : "lz4Out_eos", "Type" : "Fifo", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "lz4Out_eos_blk_n", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91", "Port" : "lz4Out_eos", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+					{"ID" : "1", "SubInstance" : "grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93", "Port" : "lz4Out_eos", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
 			{"Name" : "lz4OutSize", "Type" : "Fifo", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "lz4OutSize_blk_n", "Type" : "RtlSignal"}]},
 			{"Name" : "input_size", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["0"], "DependentChan" : "0", "DependentChanDepth" : "2", "DependentChanType" : "2",
 				"BlockSignal" : [
 					{"Name" : "input_size_blk_n", "Type" : "RtlSignal"}]}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91", "Parent" : "0", "Child" : ["2"],
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93", "Parent" : "0", "Child" : ["2"],
 		"CDFG" : "lz4CompressPart2_Pipeline_lz4_compress",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -172,13 +172,13 @@ set RtlHierarchyInfo {[
 			{"Name" : "compressedSize_out", "Type" : "Vld", "Direction" : "O"}],
 		"Loop" : [
 			{"Name" : "lz4_compress", "PipelineType" : "UPC",
-				"LoopDec" : {"FSMBitwidth" : "3", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage2", "QuitStateIter" : "ap_enable_reg_pp0_iter0", "QuitStateBlock" : "ap_block_pp0_stage2_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"}]}
+				"LoopDec" : {"FSMBitwidth" : "4", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage1", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage1_subdone", "QuitState" : "ap_ST_fsm_pp0_stage1", "QuitStateIter" : "ap_enable_reg_pp0_iter1", "QuitStateBlock" : "ap_block_pp0_stage1_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	lz4CompressPart2 {
-		lit_outStream {Type I LastRead 3 FirstWrite -1}
+		lit_outStream {Type I LastRead 4 FirstWrite -1}
 		lenOffset_Stream {Type I LastRead 2 FirstWrite -1}
 		lz4Out {Type O LastRead -1 FirstWrite 3}
 		lz4Out_eos {Type O LastRead -1 FirstWrite 3}
@@ -187,10 +187,10 @@ set ArgLastReadFirstWriteLatency {
 	lz4CompressPart2_Pipeline_lz4_compress {
 		input_size_4 {Type I LastRead 0 FirstWrite -1}
 		lenOffset_Stream {Type I LastRead 2 FirstWrite -1}
-		lit_outStream {Type I LastRead 3 FirstWrite -1}
-		lz4Out {Type O LastRead -1 FirstWrite 3}
-		lz4Out_eos {Type O LastRead -1 FirstWrite 3}
-		compressedSize_out {Type O LastRead -1 FirstWrite 2}}}
+		lit_outStream {Type I LastRead 4 FirstWrite -1}
+		lz4Out {Type O LastRead -1 FirstWrite 5}
+		lz4Out_eos {Type O LastRead -1 FirstWrite 5}
+		compressedSize_out {Type O LastRead -1 FirstWrite 1}}}
 
 set hasDtUnsupportedChannel 0
 
@@ -203,8 +203,8 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	lit_outStream { ap_fifo {  { lit_outStream_dout fifo_data_in 0 8 }  { lit_outStream_empty_n fifo_status 0 1 }  { lit_outStream_read fifo_port_we 1 1 }  { lit_outStream_num_data_valid fifo_status_num_data_valid 0 13 }  { lit_outStream_fifo_cap fifo_update 0 13 } } }
-	lenOffset_Stream { ap_fifo {  { lenOffset_Stream_dout fifo_data_in 0 64 }  { lenOffset_Stream_empty_n fifo_status 0 1 }  { lenOffset_Stream_read fifo_port_we 1 1 }  { lenOffset_Stream_num_data_valid fifo_status_num_data_valid 0 6 }  { lenOffset_Stream_fifo_cap fifo_update 0 6 } } }
+	lit_outStream { ap_fifo {  { lit_outStream_dout fifo_data_in 0 8 }  { lit_outStream_empty_n fifo_status 0 1 }  { lit_outStream_read fifo_port_we 1 1 }  { lit_outStream_num_data_valid fifo_status_num_data_valid 0 14 }  { lit_outStream_fifo_cap fifo_update 0 14 } } }
+	lenOffset_Stream { ap_fifo {  { lenOffset_Stream_dout fifo_data_in 0 64 }  { lenOffset_Stream_empty_n fifo_status 0 1 }  { lenOffset_Stream_read fifo_port_we 1 1 }  { lenOffset_Stream_num_data_valid fifo_status_num_data_valid 0 7 }  { lenOffset_Stream_fifo_cap fifo_update 0 7 } } }
 	lz4Out { ap_fifo {  { lz4Out_din fifo_data_in 1 8 }  { lz4Out_full_n fifo_status 0 1 }  { lz4Out_write fifo_port_we 1 1 } } }
 	lz4Out_eos { ap_fifo {  { lz4Out_eos_din fifo_data_in 1 1 }  { lz4Out_eos_full_n fifo_status 0 1 }  { lz4Out_eos_write fifo_port_we 1 1 } } }
 	lz4OutSize { ap_fifo {  { lz4OutSize_din fifo_data_in 1 32 }  { lz4OutSize_full_n fifo_status 0 1 }  { lz4OutSize_write fifo_port_we 1 1 } } }

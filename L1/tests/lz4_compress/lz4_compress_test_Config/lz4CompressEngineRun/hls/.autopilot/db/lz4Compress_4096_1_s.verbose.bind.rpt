@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'lz4Compress_4096_1_s'
 ================================================================
-* Date:           Mon Oct 27 15:59:25 2025
+* Date:           Mon Oct 27 22:55:38 2025
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        lz4CompressEngineRun
@@ -86,15 +86,15 @@ IsGatedGlobalClock: 0
 
 State 1 <SV = 0> <Delay = 0.00>
 ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%input_size_c = alloca i64 1"   --->   Operation 5 'alloca' 'input_size_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%lit_outStream = alloca i64 1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:420]   --->   Operation 6 'alloca' 'lit_outStream' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_BRAM">   --->   Core 78 'FIFO_BRAM' <Latency = 0> <II = 1> <Delay = 3.50> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 8192> <FIFO>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%lenOffset_Stream = alloca i64 1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:421]   --->   Operation 7 'alloca' 'lenOffset_Stream' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.70> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 64> <FIFO>
-ST_1 : Operation 8 [2/2] (0.00ns)   --->   "%call_ln430 = call void @lz4CompressPart1<4096, 1>, i32 %boosterStream, i8 %lit_outStream, i64 %lenOffset_Stream, i32 %input_size, i32 %max_lit_limit, i32 %input_size_c" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:430]   --->   Operation 8 'call' 'call_ln430' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%lit_outStream = alloca i64 1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:384]   --->   Operation 6 'alloca' 'lit_outStream' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_BRAM">   --->   Core 78 'FIFO_BRAM' <Latency = 0> <II = 1> <Delay = 3.50> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 131072> <FIFO>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%lenOffset_Stream = alloca i64 1" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:385]   --->   Operation 7 'alloca' 'lenOffset_Stream' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.93> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 1024> <FIFO>
+ST_1 : Operation 8 [2/2] (0.00ns)   --->   "%call_ln394 = call void @lz4CompressPart1<4096, 1>, i32 %boosterStream, i8 %lit_outStream, i64 %lenOffset_Stream, i32 %input_size, i32 %max_lit_limit, i32 %input_size_c" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:394]   --->   Operation 8 'call' 'call_ln394' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 2 <SV = 1> <Delay = 5.11>
-ST_2 : Operation 9 [1/2] (5.11ns)   --->   "%call_ln430 = call void @lz4CompressPart1<4096, 1>, i32 %boosterStream, i8 %lit_outStream, i64 %lenOffset_Stream, i32 %input_size, i32 %max_lit_limit, i32 %input_size_c" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:430]   --->   Operation 9 'call' 'call_ln430' <Predicate = true> <Delay = 5.11> <CoreType = "Generic">   --->   Generic Core
+State 2 <SV = 1> <Delay = 1.58>
+ST_2 : Operation 9 [1/2] (1.58ns)   --->   "%call_ln394 = call void @lz4CompressPart1<4096, 1>, i32 %boosterStream, i8 %lit_outStream, i64 %lenOffset_Stream, i32 %input_size, i32 %max_lit_limit, i32 %input_size_c" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:394]   --->   Operation 9 'call' 'call_ln394' <Predicate = true> <Delay = 1.58> <CoreType = "Generic">   --->   Generic Core
 
 State 3 <SV = 2> <Delay = 0.00>
-ST_3 : Operation 10 [2/2] (0.00ns)   --->   "%call_ln432 = call void @lz4CompressPart2, i8 %lit_outStream, i64 %lenOffset_Stream, i8 %lz4Out, i1 %lz4Out_eos, i32 %lz4OutSize, i32 %input_size_c" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:432]   --->   Operation 10 'call' 'call_ln432' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 10 [2/2] (0.00ns)   --->   "%call_ln396 = call void @lz4CompressPart2, i8 %lit_outStream, i64 %lenOffset_Stream, i8 %lz4Out, i1 %lz4Out_eos, i32 %lz4OutSize, i32 %input_size_c" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:396]   --->   Operation 10 'call' 'call_ln396' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 4 <SV = 3> <Delay = 0.00>
 ST_4 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %input_size, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
@@ -106,14 +106,14 @@ ST_4 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface 
 ST_4 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %lz4OutSize, void @empty_8, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %lz4Out_eos, void @empty_8, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %lz4Out, void @empty_8, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 20 [1/1] (0.00ns)   --->   "%empty_46 = specchannel i32 @_ssdm_op_SpecChannel, void @lit_outStream_str, i32 1, void @p_str, void @p_str, i32 8192, i32 8192, i8 %lit_outStream, i8 %lit_outStream"   --->   Operation 20 'specchannel' 'empty_46' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 20 [1/1] (0.00ns)   --->   "%empty_46 = specchannel i32 @_ssdm_op_SpecChannel, void @lit_outStream_str, i32 1, void @p_str, void @p_str, i32 131072, i32 131072, i8 %lit_outStream, i8 %lit_outStream"   --->   Operation 20 'specchannel' 'empty_46' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 21 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %lit_outStream, void @empty_8, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 21 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 22 [1/1] (0.00ns)   --->   "%empty_47 = specchannel i32 @_ssdm_op_SpecChannel, void @lenOffset_Stream_str, i32 1, void @p_str, void @p_str, i32 64, i32 64, i64 %lenOffset_Stream, i64 %lenOffset_Stream"   --->   Operation 22 'specchannel' 'empty_47' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 22 [1/1] (0.00ns)   --->   "%empty_47 = specchannel i32 @_ssdm_op_SpecChannel, void @lenOffset_Stream_str, i32 1, void @p_str, void @p_str, i32 1024, i32 1024, i64 %lenOffset_Stream, i64 %lenOffset_Stream"   --->   Operation 22 'specchannel' 'empty_47' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %lenOffset_Stream, void @empty_8, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 24 [1/1] (0.00ns)   --->   "%specmemcore_ln426 = specmemcore void @_ssdm_op_SpecMemCore, i8 %lit_outStream, i64 666, i64 8, i64 18446744073709551615" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:426]   --->   Operation 24 'specmemcore' 'specmemcore_ln426' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 25 [1/1] (0.00ns)   --->   "%specmemcore_ln427 = specmemcore void @_ssdm_op_SpecMemCore, i64 %lenOffset_Stream, i64 666, i64 10, i64 18446744073709551615" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:427]   --->   Operation 25 'specmemcore' 'specmemcore_ln427' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 26 [1/2] (0.00ns)   --->   "%call_ln432 = call void @lz4CompressPart2, i8 %lit_outStream, i64 %lenOffset_Stream, i8 %lz4Out, i1 %lz4Out_eos, i32 %lz4OutSize, i32 %input_size_c" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:432]   --->   Operation 26 'call' 'call_ln432' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_4 : Operation 27 [1/1] (0.00ns)   --->   "%ret_ln433 = ret" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:433]   --->   Operation 27 'ret' 'ret_ln433' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 24 [1/1] (0.00ns)   --->   "%specmemcore_ln390 = specmemcore void @_ssdm_op_SpecMemCore, i8 %lit_outStream, i64 666, i64 8, i64 18446744073709551615" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:390]   --->   Operation 24 'specmemcore' 'specmemcore_ln390' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 25 [1/1] (0.00ns)   --->   "%specmemcore_ln391 = specmemcore void @_ssdm_op_SpecMemCore, i64 %lenOffset_Stream, i64 666, i64 10, i64 18446744073709551615" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:391]   --->   Operation 25 'specmemcore' 'specmemcore_ln391' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 26 [1/2] (0.00ns)   --->   "%call_ln396 = call void @lz4CompressPart2, i8 %lit_outStream, i64 %lenOffset_Stream, i8 %lz4Out, i1 %lz4Out_eos, i32 %lz4OutSize, i32 %input_size_c" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:396]   --->   Operation 26 'call' 'call_ln396' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 27 [1/1] (0.00ns)   --->   "%ret_ln397 = ret" [D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:397]   --->   Operation 27 'ret' 'ret_ln397' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -142,7 +142,7 @@ Port [ lz4OutSize]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0;
 input_size_c             (alloca              ) [ 01111]
 lit_outStream            (alloca              ) [ 01111]
 lenOffset_Stream         (alloca              ) [ 01111]
-call_ln430               (call                ) [ 00000]
+call_ln394               (call                ) [ 00000]
 specinterface_ln0        (specinterface       ) [ 00000]
 empty                    (specchannel         ) [ 00000]
 specinterface_ln0        (specinterface       ) [ 00000]
@@ -156,10 +156,10 @@ empty_46                 (specchannel         ) [ 00000]
 specinterface_ln0        (specinterface       ) [ 00000]
 empty_47                 (specchannel         ) [ 00000]
 specinterface_ln0        (specinterface       ) [ 00000]
-specmemcore_ln426        (specmemcore         ) [ 00000]
-specmemcore_ln427        (specmemcore         ) [ 00000]
-call_ln432               (call                ) [ 00000]
-ret_ln433                (ret                 ) [ 00000]
+specmemcore_ln390        (specmemcore         ) [ 00000]
+specmemcore_ln391        (specmemcore         ) [ 00000]
+call_ln396               (call                ) [ 00000]
+ret_ln397                (ret                 ) [ 00000]
 </LifeTime>
 
 <model>
@@ -499,7 +499,7 @@ ret_ln433                (ret                 ) [ 00000]
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln430/1 "/>
+<opset="call_ln394/1 "/>
 </bind>
 </comp>
 
@@ -516,7 +516,7 @@ ret_ln433                (ret                 ) [ 00000]
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln432/3 "/>
+<opset="call_ln396/3 "/>
 </bind>
 </comp>
 
@@ -609,7 +609,7 @@ ret_ln433                (ret                 ) [ 00000]
 	Port: lz4Compress<4096, 1> : input_size | {1 2 }
   - Chain level:
 	State 1
-		call_ln430 : 1
+		call_ln394 : 1
 	State 2
 	State 3
 	State 4
@@ -623,10 +623,10 @@ ret_ln433                (ret                 ) [ 00000]
 |----------|-------------------------------------|---------|---------|---------|
 | Operation|           Functional Unit           |  Delay  |    FF   |   LUT   |
 |----------|-------------------------------------|---------|---------|---------|
-|   call   | grp_lz4CompressPart1_4096_1_s_fu_76 |  3.176  |   618   |   544   |
+|   call   | grp_lz4CompressPart1_4096_1_s_fu_76 |  1.588  |   678   |   314   |
 |          |      grp_lz4CompressPart2_fu_89     |    0    |   569   |   762   |
 |----------|-------------------------------------|---------|---------|---------|
-|   Total  |                                     |  3.176  |   1187  |   1306  |
+|   Total  |                                     |  1.588  |   1247  |   1076  |
 |----------|-------------------------------------|---------|---------|---------|
 
 Memories:
@@ -656,10 +656,10 @@ N/A
 +-----------+--------+--------+--------+
 |           |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+
-|  Function |    3   |  1187  |  1306  |
+|  Function |    1   |  1247  |  1076  |
 |   Memory  |    -   |    -   |    -   |
 |Multiplexer|    -   |    -   |    -   |
 |  Register |    -   |   104  |    -   |
 +-----------+--------+--------+--------+
-|   Total   |    3   |  1291  |  1306  |
+|   Total   |    1   |  1351  |  1076  |
 +-----------+--------+--------+--------+

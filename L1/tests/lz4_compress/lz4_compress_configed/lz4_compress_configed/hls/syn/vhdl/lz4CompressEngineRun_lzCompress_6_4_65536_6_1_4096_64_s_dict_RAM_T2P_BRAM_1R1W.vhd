@@ -12,8 +12,8 @@ entity lz4CompressEngineRun_lzCompress_6_4_65536_6_1_4096_64_s_dict_RAM_T2P_BRAM
     generic(
         MEM_TYPE        : string    := "block"; 
         DataWidth       : integer   := 432; 
-        AddressWidth    : integer   := 11;
-        AddressRange    : integer   := 2048
+        AddressWidth    : integer   := 10;
+        AddressRange    : integer   := 1024
     ); 
     port (
         address0    : in std_logic_vector(AddressWidth-1 downto 0); 

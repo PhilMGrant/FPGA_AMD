@@ -46,28 +46,30 @@ end;
 architecture behav of lz4CompressEngineRun_lzBestMatchFilter_6_65536_s is 
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
-    constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (9 downto 0) := "0000000001";
-    constant ap_ST_fsm_state2 : STD_LOGIC_VECTOR (9 downto 0) := "0000000010";
-    constant ap_ST_fsm_state3 : STD_LOGIC_VECTOR (9 downto 0) := "0000000100";
-    constant ap_ST_fsm_state4 : STD_LOGIC_VECTOR (9 downto 0) := "0000001000";
-    constant ap_ST_fsm_state5 : STD_LOGIC_VECTOR (9 downto 0) := "0000010000";
-    constant ap_ST_fsm_state6 : STD_LOGIC_VECTOR (9 downto 0) := "0000100000";
-    constant ap_ST_fsm_state7 : STD_LOGIC_VECTOR (9 downto 0) := "0001000000";
-    constant ap_ST_fsm_state8 : STD_LOGIC_VECTOR (9 downto 0) := "0010000000";
-    constant ap_ST_fsm_state9 : STD_LOGIC_VECTOR (9 downto 0) := "0100000000";
-    constant ap_ST_fsm_state10 : STD_LOGIC_VECTOR (9 downto 0) := "1000000000";
+    constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (10 downto 0) := "00000000001";
+    constant ap_ST_fsm_state2 : STD_LOGIC_VECTOR (10 downto 0) := "00000000010";
+    constant ap_ST_fsm_state3 : STD_LOGIC_VECTOR (10 downto 0) := "00000000100";
+    constant ap_ST_fsm_state4 : STD_LOGIC_VECTOR (10 downto 0) := "00000001000";
+    constant ap_ST_fsm_state5 : STD_LOGIC_VECTOR (10 downto 0) := "00000010000";
+    constant ap_ST_fsm_state6 : STD_LOGIC_VECTOR (10 downto 0) := "00000100000";
+    constant ap_ST_fsm_state7 : STD_LOGIC_VECTOR (10 downto 0) := "00001000000";
+    constant ap_ST_fsm_state8 : STD_LOGIC_VECTOR (10 downto 0) := "00010000000";
+    constant ap_ST_fsm_state9 : STD_LOGIC_VECTOR (10 downto 0) := "00100000000";
+    constant ap_ST_fsm_state10 : STD_LOGIC_VECTOR (10 downto 0) := "01000000000";
+    constant ap_ST_fsm_state11 : STD_LOGIC_VECTOR (10 downto 0) := "10000000000";
     constant ap_const_boolean_1 : BOOLEAN := true;
     constant ap_const_lv32_0 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
-    constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
     constant ap_const_lv32_1 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000001";
     constant ap_const_lv32_2 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000010";
     constant ap_const_lv32_3 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000011";
     constant ap_const_lv32_4 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000100";
     constant ap_const_lv32_5 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000101";
-    constant ap_const_lv32_9 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001001";
-    constant ap_const_boolean_0 : BOOLEAN := false;
     constant ap_const_lv32_6 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000110";
+    constant ap_const_lv32_A : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001010";
+    constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
+    constant ap_const_boolean_0 : BOOLEAN := false;
     constant ap_const_lv32_7 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000111";
+    constant ap_const_lv32_8 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001000";
     constant ap_const_lv3_0 : STD_LOGIC_VECTOR (2 downto 0) := "000";
     constant ap_const_lv3_6 : STD_LOGIC_VECTOR (2 downto 0) := "110";
     constant ap_const_lv3_1 : STD_LOGIC_VECTOR (2 downto 0) := "001";
@@ -78,14 +80,13 @@ attribute shreg_extract : string;
     signal real_start : STD_LOGIC;
     signal start_once_reg : STD_LOGIC := '0';
     signal ap_done_reg : STD_LOGIC := '0';
-    signal ap_CS_fsm : STD_LOGIC_VECTOR (9 downto 0) := "0000000001";
+    signal ap_CS_fsm : STD_LOGIC_VECTOR (10 downto 0) := "00000000001";
     attribute fsm_encoding : string;
     attribute fsm_encoding of ap_CS_fsm : signal is "none";
     signal ap_CS_fsm_state1 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state1 : signal is "none";
     signal internal_ap_ready : STD_LOGIC;
     signal compressdStream_blk_n : STD_LOGIC;
-    signal icmp_ln327_fu_156_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
     signal ap_CS_fsm_state3 : STD_LOGIC;
@@ -96,15 +97,18 @@ attribute shreg_extract : string;
     attribute fsm_encoding of ap_CS_fsm_state5 : signal is "none";
     signal ap_CS_fsm_state6 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state6 : signal is "none";
+    signal ap_CS_fsm_state7 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state7 : signal is "none";
     signal bestMatchStream_blk_n : STD_LOGIC;
-    signal ap_CS_fsm_state10 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state10 : signal is "none";
+    signal ap_CS_fsm_state11 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state11 : signal is "none";
     signal icmp_ln327_reg_301 : STD_LOGIC_VECTOR (0 downto 0);
     signal icmp_ln367_fu_216_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal input_size_blk_n : STD_LOGIC;
     signal input_size_c1_blk_n : STD_LOGIC;
     signal input_size_2_reg_296 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_block_state1 : BOOLEAN;
+    signal icmp_ln327_fu_156_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal compare_window_reg_312 : STD_LOGIC_VECTOR (31 downto 0);
     signal compare_window_16_reg_317 : STD_LOGIC_VECTOR (31 downto 0);
     signal compare_window_17_reg_322 : STD_LOGIC_VECTOR (31 downto 0);
@@ -131,17 +135,17 @@ attribute shreg_extract : string;
     signal grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_compare_window_17_out : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_compare_window_17_out_ap_vld : STD_LOGIC;
     signal grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_ap_start_reg : STD_LOGIC := '0';
-    signal ap_CS_fsm_state7 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state7 : signal is "none";
     signal ap_CS_fsm_state8 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state8 : signal is "none";
+    signal ap_CS_fsm_state9 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state9 : signal is "none";
     signal i_8_fu_104 : STD_LOGIC_VECTOR (2 downto 0) := "000";
     signal add_ln367_fu_222_p2 : STD_LOGIC_VECTOR (2 downto 0);
-    signal ap_predicate_op53_write_state10 : BOOLEAN;
-    signal ap_block_state10 : BOOLEAN;
+    signal ap_predicate_op54_write_state11 : BOOLEAN;
+    signal ap_block_state11 : BOOLEAN;
     signal tmp_s_fu_228_p15 : STD_LOGIC_VECTOR (31 downto 0);
     signal tmp_s_fu_228_p13 : STD_LOGIC_VECTOR (31 downto 0);
-    signal ap_NS_fsm : STD_LOGIC_VECTOR (9 downto 0);
+    signal ap_NS_fsm : STD_LOGIC_VECTOR (10 downto 0);
     signal ap_ST_fsm_state1_blk : STD_LOGIC;
     signal ap_ST_fsm_state2_blk : STD_LOGIC;
     signal ap_ST_fsm_state3_blk : STD_LOGIC;
@@ -152,6 +156,7 @@ attribute shreg_extract : string;
     signal ap_ST_fsm_state8_blk : STD_LOGIC;
     signal ap_ST_fsm_state9_blk : STD_LOGIC;
     signal ap_ST_fsm_state10_blk : STD_LOGIC;
+    signal ap_ST_fsm_state11_blk : STD_LOGIC;
     signal tmp_s_fu_228_p1 : STD_LOGIC_VECTOR (2 downto 0);
     signal tmp_s_fu_228_p3 : STD_LOGIC_VECTOR (2 downto 0);
     signal tmp_s_fu_228_p5 : STD_LOGIC_VECTOR (2 downto 0);
@@ -272,7 +277,7 @@ begin
         compare_window_17_out => grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_compare_window_17_out,
         compare_window_17_out_ap_vld => grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_compare_window_17_out_ap_vld);
 
-    sparsemux_13_3_32_1_1_U59 : component lz4CompressEngineRun_sparsemux_13_3_32_1_1
+    sparsemux_13_3_32_1_1_U65 : component lz4CompressEngineRun_sparsemux_13_3_32_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -326,7 +331,7 @@ begin
             else
                 if ((ap_continue = ap_const_logic_1)) then 
                     ap_done_reg <= ap_const_logic_0;
-                elsif (((ap_const_logic_1 = ap_CS_fsm_state10) and (ap_const_boolean_0 = ap_block_state10) and ((icmp_ln367_fu_216_p2 = ap_const_lv1_1) or (icmp_ln327_reg_301 = ap_const_lv1_1)))) then 
+                elsif (((ap_const_logic_1 = ap_CS_fsm_state11) and (ap_const_boolean_0 = ap_block_state11) and ((icmp_ln367_fu_216_p2 = ap_const_lv1_1) or (icmp_ln327_reg_301 = ap_const_lv1_1)))) then 
                     ap_done_reg <= ap_const_logic_1;
                 end if; 
             end if;
@@ -340,7 +345,7 @@ begin
             if (ap_rst = '1') then
                 grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_ap_start_reg <= ap_const_logic_0;
             else
-                if ((ap_const_logic_1 = ap_CS_fsm_state7)) then 
+                if ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
                     grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_ap_start_reg <= ap_const_logic_1;
                 elsif ((grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_ap_ready = ap_const_logic_1)) then 
                     grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_ap_start_reg <= ap_const_logic_0;
@@ -369,9 +374,9 @@ begin
     i_8_fu_104_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((icmp_ln327_fu_156_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state1) and (ap_const_boolean_0 = ap_block_state1))) then 
+            if (((compressdStream_empty_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
                 i_8_fu_104 <= ap_const_lv3_0;
-            elsif (((ap_const_logic_1 = ap_CS_fsm_state10) and (ap_const_boolean_0 = ap_block_state10) and (icmp_ln367_fu_216_p2 = ap_const_lv1_0) and (icmp_ln327_reg_301 = ap_const_lv1_0))) then 
+            elsif (((ap_const_logic_1 = ap_CS_fsm_state11) and (ap_const_boolean_0 = ap_block_state11) and (icmp_ln367_fu_216_p2 = ap_const_lv1_0) and (icmp_ln327_reg_301 = ap_const_lv1_0))) then 
                 i_8_fu_104 <= add_ln367_fu_222_p2;
             end if; 
         end if;
@@ -379,7 +384,7 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((compressdStream_empty_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
+            if (((compressdStream_empty_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
                 compare_window_16_reg_317 <= compressdStream_dout;
             end if;
         end if;
@@ -387,7 +392,7 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((compressdStream_empty_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
+            if (((compressdStream_empty_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then
                 compare_window_17_reg_322 <= compressdStream_dout;
             end if;
         end if;
@@ -395,7 +400,7 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((compressdStream_empty_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then
+            if (((compressdStream_empty_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state5))) then
                 compare_window_18_reg_327 <= compressdStream_dout;
             end if;
         end if;
@@ -403,7 +408,7 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((compressdStream_empty_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state5))) then
+            if (((compressdStream_empty_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state6))) then
                 compare_window_19_reg_332 <= compressdStream_dout;
             end if;
         end if;
@@ -411,7 +416,7 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((compressdStream_empty_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state6))) then
+            if (((compressdStream_empty_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state7))) then
                 compare_window_20_reg_337 <= compressdStream_dout;
             end if;
         end if;
@@ -419,21 +424,28 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_const_logic_1 = ap_CS_fsm_state1) and (ap_const_boolean_0 = ap_block_state1))) then
+            if (((compressdStream_empty_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
                 compare_window_reg_312 <= compressdStream_dout;
+            end if;
+        end if;
+    end process;
+    process (ap_clk)
+    begin
+        if (ap_clk'event and ap_clk = '1') then
+            if (((ap_const_logic_1 = ap_CS_fsm_state1) and (ap_const_boolean_0 = ap_block_state1))) then
                 icmp_ln327_reg_301 <= icmp_ln327_fu_156_p2;
                 input_size_2_reg_296 <= input_size_dout;
             end if;
         end if;
     end process;
 
-    ap_NS_fsm_assign_proc : process (ap_CS_fsm, ap_CS_fsm_state1, compressdStream_empty_n, icmp_ln327_fu_156_p2, ap_CS_fsm_state2, ap_CS_fsm_state3, ap_CS_fsm_state4, ap_CS_fsm_state5, ap_CS_fsm_state6, ap_CS_fsm_state10, icmp_ln327_reg_301, icmp_ln367_fu_216_p2, ap_block_state1, grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_ap_done, ap_CS_fsm_state8, ap_block_state10)
+    ap_NS_fsm_assign_proc : process (ap_CS_fsm, ap_CS_fsm_state1, compressdStream_empty_n, ap_CS_fsm_state2, ap_CS_fsm_state3, ap_CS_fsm_state4, ap_CS_fsm_state5, ap_CS_fsm_state6, ap_CS_fsm_state7, ap_CS_fsm_state11, icmp_ln327_reg_301, icmp_ln367_fu_216_p2, ap_block_state1, icmp_ln327_fu_156_p2, grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_ap_done, ap_CS_fsm_state9, ap_block_state11)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
-                if (((icmp_ln327_fu_156_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state1) and (ap_const_boolean_0 = ap_block_state1))) then
-                    ap_NS_fsm <= ap_ST_fsm_state10;
-                elsif (((icmp_ln327_fu_156_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state1) and (ap_const_boolean_0 = ap_block_state1))) then
+                if (((ap_const_logic_1 = ap_CS_fsm_state1) and (icmp_ln327_fu_156_p2 = ap_const_lv1_1) and (ap_const_boolean_0 = ap_block_state1))) then
+                    ap_NS_fsm <= ap_ST_fsm_state11;
+                elsif (((ap_const_logic_1 = ap_CS_fsm_state1) and (icmp_ln327_fu_156_p2 = ap_const_lv1_0) and (ap_const_boolean_0 = ap_block_state1))) then
                     ap_NS_fsm <= ap_ST_fsm_state2;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state1;
@@ -469,30 +481,36 @@ begin
                     ap_NS_fsm <= ap_ST_fsm_state6;
                 end if;
             when ap_ST_fsm_state7 => 
-                ap_NS_fsm <= ap_ST_fsm_state8;
-            when ap_ST_fsm_state8 => 
-                if (((ap_const_logic_1 = ap_CS_fsm_state8) and (grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_ap_done = ap_const_logic_1))) then
-                    ap_NS_fsm <= ap_ST_fsm_state9;
-                else
+                if (((compressdStream_empty_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state7))) then
                     ap_NS_fsm <= ap_ST_fsm_state8;
+                else
+                    ap_NS_fsm <= ap_ST_fsm_state7;
                 end if;
+            when ap_ST_fsm_state8 => 
+                ap_NS_fsm <= ap_ST_fsm_state9;
             when ap_ST_fsm_state9 => 
-                ap_NS_fsm <= ap_ST_fsm_state10;
-            when ap_ST_fsm_state10 => 
-                if (((ap_const_logic_1 = ap_CS_fsm_state10) and (ap_const_boolean_0 = ap_block_state10) and ((icmp_ln367_fu_216_p2 = ap_const_lv1_1) or (icmp_ln327_reg_301 = ap_const_lv1_1)))) then
-                    ap_NS_fsm <= ap_ST_fsm_state1;
-                elsif (((ap_const_logic_1 = ap_CS_fsm_state10) and (ap_const_boolean_0 = ap_block_state10) and (icmp_ln367_fu_216_p2 = ap_const_lv1_0) and (icmp_ln327_reg_301 = ap_const_lv1_0))) then
+                if (((ap_const_logic_1 = ap_CS_fsm_state9) and (grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_ap_done = ap_const_logic_1))) then
                     ap_NS_fsm <= ap_ST_fsm_state10;
                 else
-                    ap_NS_fsm <= ap_ST_fsm_state10;
+                    ap_NS_fsm <= ap_ST_fsm_state9;
+                end if;
+            when ap_ST_fsm_state10 => 
+                ap_NS_fsm <= ap_ST_fsm_state11;
+            when ap_ST_fsm_state11 => 
+                if (((ap_const_logic_1 = ap_CS_fsm_state11) and (ap_const_boolean_0 = ap_block_state11) and ((icmp_ln367_fu_216_p2 = ap_const_lv1_1) or (icmp_ln327_reg_301 = ap_const_lv1_1)))) then
+                    ap_NS_fsm <= ap_ST_fsm_state1;
+                elsif (((ap_const_logic_1 = ap_CS_fsm_state11) and (ap_const_boolean_0 = ap_block_state11) and (icmp_ln367_fu_216_p2 = ap_const_lv1_0) and (icmp_ln327_reg_301 = ap_const_lv1_0))) then
+                    ap_NS_fsm <= ap_ST_fsm_state11;
+                else
+                    ap_NS_fsm <= ap_ST_fsm_state11;
                 end if;
             when others =>  
-                ap_NS_fsm <= "XXXXXXXXXX";
+                ap_NS_fsm <= "XXXXXXXXXXX";
         end case;
     end process;
     add_ln367_fu_222_p2 <= std_logic_vector(unsigned(i_8_fu_104) + unsigned(ap_const_lv3_1));
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
-    ap_CS_fsm_state10 <= ap_CS_fsm(9);
+    ap_CS_fsm_state11 <= ap_CS_fsm(10);
     ap_CS_fsm_state2 <= ap_CS_fsm(1);
     ap_CS_fsm_state3 <= ap_CS_fsm(2);
     ap_CS_fsm_state4 <= ap_CS_fsm(3);
@@ -500,13 +518,15 @@ begin
     ap_CS_fsm_state6 <= ap_CS_fsm(5);
     ap_CS_fsm_state7 <= ap_CS_fsm(6);
     ap_CS_fsm_state8 <= ap_CS_fsm(7);
+    ap_CS_fsm_state9 <= ap_CS_fsm(8);
+    ap_ST_fsm_state10_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state10_blk_assign_proc : process(ap_block_state10)
+    ap_ST_fsm_state11_blk_assign_proc : process(ap_block_state11)
     begin
-        if ((ap_const_boolean_1 = ap_block_state10)) then 
-            ap_ST_fsm_state10_blk <= ap_const_logic_1;
+        if ((ap_const_boolean_1 = ap_block_state11)) then 
+            ap_ST_fsm_state11_blk <= ap_const_logic_1;
         else 
-            ap_ST_fsm_state10_blk <= ap_const_logic_0;
+            ap_ST_fsm_state11_blk <= ap_const_logic_0;
         end if; 
     end process;
 
@@ -570,34 +590,43 @@ begin
         end if; 
     end process;
 
-    ap_ST_fsm_state7_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state8_blk_assign_proc : process(grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_ap_done)
+    ap_ST_fsm_state7_blk_assign_proc : process(compressdStream_empty_n)
     begin
-        if ((grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_ap_done = ap_const_logic_0)) then 
-            ap_ST_fsm_state8_blk <= ap_const_logic_1;
+        if ((compressdStream_empty_n = ap_const_logic_0)) then 
+            ap_ST_fsm_state7_blk <= ap_const_logic_1;
         else 
-            ap_ST_fsm_state8_blk <= ap_const_logic_0;
+            ap_ST_fsm_state7_blk <= ap_const_logic_0;
         end if; 
     end process;
 
-    ap_ST_fsm_state9_blk <= ap_const_logic_0;
+    ap_ST_fsm_state8_blk <= ap_const_logic_0;
 
-    ap_block_state1_assign_proc : process(real_start, ap_done_reg, compressdStream_empty_n, input_size_empty_n, input_size_c1_full_n, icmp_ln327_fu_156_p2)
+    ap_ST_fsm_state9_blk_assign_proc : process(grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_ap_done)
     begin
-                ap_block_state1 <= ((input_size_c1_full_n = ap_const_logic_0) or (input_size_empty_n = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1) or (real_start = ap_const_logic_0) or ((icmp_ln327_fu_156_p2 = ap_const_lv1_0) and (compressdStream_empty_n = ap_const_logic_0)));
+        if ((grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_ap_done = ap_const_logic_0)) then 
+            ap_ST_fsm_state9_blk <= ap_const_logic_1;
+        else 
+            ap_ST_fsm_state9_blk <= ap_const_logic_0;
+        end if; 
     end process;
 
 
-    ap_block_state10_assign_proc : process(bestMatchStream_full_n, ap_predicate_op53_write_state10)
+    ap_block_state1_assign_proc : process(real_start, ap_done_reg, input_size_empty_n, input_size_c1_full_n)
     begin
-                ap_block_state10 <= ((bestMatchStream_full_n = ap_const_logic_0) and (ap_predicate_op53_write_state10 = ap_const_boolean_1));
+                ap_block_state1 <= ((input_size_c1_full_n = ap_const_logic_0) or (input_size_empty_n = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1) or (real_start = ap_const_logic_0));
     end process;
 
 
-    ap_done_assign_proc : process(ap_done_reg, ap_CS_fsm_state10, icmp_ln327_reg_301, icmp_ln367_fu_216_p2, ap_block_state10)
+    ap_block_state11_assign_proc : process(bestMatchStream_full_n, ap_predicate_op54_write_state11)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state10) and (ap_const_boolean_0 = ap_block_state10) and ((icmp_ln367_fu_216_p2 = ap_const_lv1_1) or (icmp_ln327_reg_301 = ap_const_lv1_1)))) then 
+                ap_block_state11 <= ((bestMatchStream_full_n = ap_const_logic_0) and (ap_predicate_op54_write_state11 = ap_const_boolean_1));
+    end process;
+
+
+    ap_done_assign_proc : process(ap_done_reg, ap_CS_fsm_state11, icmp_ln327_reg_301, icmp_ln367_fu_216_p2, ap_block_state11)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state11) and (ap_const_boolean_0 = ap_block_state11) and ((icmp_ln367_fu_216_p2 = ap_const_lv1_1) or (icmp_ln327_reg_301 = ap_const_lv1_1)))) then 
             ap_done <= ap_const_logic_1;
         else 
             ap_done <= ap_done_reg;
@@ -615,16 +644,16 @@ begin
     end process;
 
 
-    ap_predicate_op53_write_state10_assign_proc : process(icmp_ln327_reg_301, icmp_ln367_fu_216_p2)
+    ap_predicate_op54_write_state11_assign_proc : process(icmp_ln327_reg_301, icmp_ln367_fu_216_p2)
     begin
-                ap_predicate_op53_write_state10 <= ((icmp_ln367_fu_216_p2 = ap_const_lv1_0) and (icmp_ln327_reg_301 = ap_const_lv1_0));
+                ap_predicate_op54_write_state11 <= ((icmp_ln367_fu_216_p2 = ap_const_lv1_0) and (icmp_ln327_reg_301 = ap_const_lv1_0));
     end process;
 
     ap_ready <= internal_ap_ready;
 
-    bestMatchStream_blk_n_assign_proc : process(bestMatchStream_full_n, ap_CS_fsm_state10, icmp_ln327_reg_301, icmp_ln367_fu_216_p2)
+    bestMatchStream_blk_n_assign_proc : process(bestMatchStream_full_n, ap_CS_fsm_state11, icmp_ln327_reg_301, icmp_ln367_fu_216_p2)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state10) and (icmp_ln367_fu_216_p2 = ap_const_lv1_0) and (icmp_ln327_reg_301 = ap_const_lv1_0))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state11) and (icmp_ln367_fu_216_p2 = ap_const_lv1_0) and (icmp_ln327_reg_301 = ap_const_lv1_0))) then 
             bestMatchStream_blk_n <= bestMatchStream_full_n;
         else 
             bestMatchStream_blk_n <= ap_const_logic_1;
@@ -632,11 +661,11 @@ begin
     end process;
 
 
-    bestMatchStream_din_assign_proc : process(ap_CS_fsm_state10, grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_bestMatchStream_din, ap_CS_fsm_state8, ap_predicate_op53_write_state10, ap_block_state10, tmp_s_fu_228_p15)
+    bestMatchStream_din_assign_proc : process(ap_CS_fsm_state11, grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_bestMatchStream_din, ap_CS_fsm_state9, ap_predicate_op54_write_state11, ap_block_state11, tmp_s_fu_228_p15)
     begin
-        if (((ap_predicate_op53_write_state10 = ap_const_boolean_1) and (ap_const_logic_1 = ap_CS_fsm_state10) and (ap_const_boolean_0 = ap_block_state10))) then 
+        if (((ap_predicate_op54_write_state11 = ap_const_boolean_1) and (ap_const_logic_1 = ap_CS_fsm_state11) and (ap_const_boolean_0 = ap_block_state11))) then 
             bestMatchStream_din <= tmp_s_fu_228_p15;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state9)) then 
             bestMatchStream_din <= grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_bestMatchStream_din;
         else 
             bestMatchStream_din <= grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_bestMatchStream_din;
@@ -644,11 +673,11 @@ begin
     end process;
 
 
-    bestMatchStream_write_assign_proc : process(ap_CS_fsm_state10, grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_bestMatchStream_write, ap_CS_fsm_state8, ap_predicate_op53_write_state10, ap_block_state10)
+    bestMatchStream_write_assign_proc : process(ap_CS_fsm_state11, grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_bestMatchStream_write, ap_CS_fsm_state9, ap_predicate_op54_write_state11, ap_block_state11)
     begin
-        if (((ap_predicate_op53_write_state10 = ap_const_boolean_1) and (ap_const_logic_1 = ap_CS_fsm_state10) and (ap_const_boolean_0 = ap_block_state10))) then 
+        if (((ap_predicate_op54_write_state11 = ap_const_boolean_1) and (ap_const_logic_1 = ap_CS_fsm_state11) and (ap_const_boolean_0 = ap_block_state11))) then 
             bestMatchStream_write <= ap_const_logic_1;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state9)) then 
             bestMatchStream_write <= grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_bestMatchStream_write;
         else 
             bestMatchStream_write <= ap_const_logic_0;
@@ -656,9 +685,9 @@ begin
     end process;
 
 
-    compressdStream_blk_n_assign_proc : process(real_start, ap_done_reg, ap_CS_fsm_state1, compressdStream_empty_n, icmp_ln327_fu_156_p2, ap_CS_fsm_state2, ap_CS_fsm_state3, ap_CS_fsm_state4, ap_CS_fsm_state5, ap_CS_fsm_state6)
+    compressdStream_blk_n_assign_proc : process(compressdStream_empty_n, ap_CS_fsm_state2, ap_CS_fsm_state3, ap_CS_fsm_state4, ap_CS_fsm_state5, ap_CS_fsm_state6, ap_CS_fsm_state7)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state4) or (ap_const_logic_1 = ap_CS_fsm_state3) or (ap_const_logic_1 = ap_CS_fsm_state2) or (ap_const_logic_1 = ap_CS_fsm_state6) or (ap_const_logic_1 = ap_CS_fsm_state5) or (not(((ap_done_reg = ap_const_logic_1) or (real_start = ap_const_logic_0))) and (icmp_ln327_fu_156_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state6) or (ap_const_logic_1 = ap_CS_fsm_state5) or (ap_const_logic_1 = ap_CS_fsm_state4) or (ap_const_logic_1 = ap_CS_fsm_state3) or (ap_const_logic_1 = ap_CS_fsm_state2) or (ap_const_logic_1 = ap_CS_fsm_state7))) then 
             compressdStream_blk_n <= compressdStream_empty_n;
         else 
             compressdStream_blk_n <= ap_const_logic_1;
@@ -666,11 +695,11 @@ begin
     end process;
 
 
-    compressdStream_read_assign_proc : process(ap_CS_fsm_state1, compressdStream_empty_n, icmp_ln327_fu_156_p2, ap_CS_fsm_state2, ap_CS_fsm_state3, ap_CS_fsm_state4, ap_CS_fsm_state5, ap_CS_fsm_state6, ap_block_state1, grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_compressdStream_read, ap_CS_fsm_state8)
+    compressdStream_read_assign_proc : process(compressdStream_empty_n, ap_CS_fsm_state2, ap_CS_fsm_state3, ap_CS_fsm_state4, ap_CS_fsm_state5, ap_CS_fsm_state6, ap_CS_fsm_state7, grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_compressdStream_read, ap_CS_fsm_state9)
     begin
-        if ((((icmp_ln327_fu_156_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state1) and (ap_const_boolean_0 = ap_block_state1)) or ((compressdStream_empty_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4)) or ((compressdStream_empty_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3)) or ((compressdStream_empty_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2)) or ((compressdStream_empty_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state6)) or ((compressdStream_empty_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state5)))) then 
+        if ((((compressdStream_empty_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state6)) or ((compressdStream_empty_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state5)) or ((compressdStream_empty_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4)) or ((compressdStream_empty_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3)) or ((compressdStream_empty_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2)) or ((compressdStream_empty_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state7)))) then 
             compressdStream_read <= ap_const_logic_1;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state9)) then 
             compressdStream_read <= grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_compressdStream_read;
         else 
             compressdStream_read <= ap_const_logic_0;
@@ -722,9 +751,9 @@ begin
     end process;
 
 
-    internal_ap_ready_assign_proc : process(ap_CS_fsm_state10, icmp_ln327_reg_301, icmp_ln367_fu_216_p2, ap_block_state10)
+    internal_ap_ready_assign_proc : process(ap_CS_fsm_state11, icmp_ln327_reg_301, icmp_ln367_fu_216_p2, ap_block_state11)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state10) and (ap_const_boolean_0 = ap_block_state10) and ((icmp_ln367_fu_216_p2 = ap_const_lv1_1) or (icmp_ln327_reg_301 = ap_const_lv1_1)))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state11) and (ap_const_boolean_0 = ap_block_state11) and ((icmp_ln367_fu_216_p2 = ap_const_lv1_1) or (icmp_ln327_reg_301 = ap_const_lv1_1)))) then 
             internal_ap_ready <= ap_const_logic_1;
         else 
             internal_ap_ready <= ap_const_logic_0;

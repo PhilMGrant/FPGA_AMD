@@ -1,6 +1,6 @@
 
 set TopModule "lz4CompressEngineRun"
-set ClockPeriod 15
+set ClockPeriod 7
 set ClockList ap_clk
 set AxiliteClockList {}
 set HasVivadoClockPeriod 0

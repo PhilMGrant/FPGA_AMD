@@ -2,8 +2,8 @@ set clock_constraint { \
     name clk \
     module lz4CompressEngineRun \
     port ap_clk \
-    period 15 \
-    uncertainty 1.5 \
+    period 7 \
+    uncertainty 0.7 \
 }
 
 set all_path {}

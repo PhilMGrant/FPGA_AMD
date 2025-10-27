@@ -79,13 +79,13 @@ attribute shreg_extract : string;
     signal lit_outStream_full_n : STD_LOGIC;
     signal lit_outStream_dout : STD_LOGIC_VECTOR (7 downto 0);
     signal lit_outStream_empty_n : STD_LOGIC;
-    signal lit_outStream_num_data_valid : STD_LOGIC_VECTOR (12 downto 0);
-    signal lit_outStream_fifo_cap : STD_LOGIC_VECTOR (12 downto 0);
+    signal lit_outStream_num_data_valid : STD_LOGIC_VECTOR (13 downto 0);
+    signal lit_outStream_fifo_cap : STD_LOGIC_VECTOR (13 downto 0);
     signal lenOffset_Stream_full_n : STD_LOGIC;
     signal lenOffset_Stream_dout : STD_LOGIC_VECTOR (63 downto 0);
     signal lenOffset_Stream_empty_n : STD_LOGIC;
-    signal lenOffset_Stream_num_data_valid : STD_LOGIC_VECTOR (5 downto 0);
-    signal lenOffset_Stream_fifo_cap : STD_LOGIC_VECTOR (5 downto 0);
+    signal lenOffset_Stream_num_data_valid : STD_LOGIC_VECTOR (6 downto 0);
+    signal lenOffset_Stream_fifo_cap : STD_LOGIC_VECTOR (6 downto 0);
     signal input_size_c_full_n : STD_LOGIC;
     signal input_size_c_dout : STD_LOGIC_VECTOR (31 downto 0);
     signal input_size_c_empty_n : STD_LOGIC;
@@ -117,13 +117,13 @@ attribute shreg_extract : string;
         lit_outStream_din : OUT STD_LOGIC_VECTOR (7 downto 0);
         lit_outStream_full_n : IN STD_LOGIC;
         lit_outStream_write : OUT STD_LOGIC;
-        lit_outStream_num_data_valid : IN STD_LOGIC_VECTOR (12 downto 0);
-        lit_outStream_fifo_cap : IN STD_LOGIC_VECTOR (12 downto 0);
+        lit_outStream_num_data_valid : IN STD_LOGIC_VECTOR (13 downto 0);
+        lit_outStream_fifo_cap : IN STD_LOGIC_VECTOR (13 downto 0);
         lenOffset_Stream_din : OUT STD_LOGIC_VECTOR (63 downto 0);
         lenOffset_Stream_full_n : IN STD_LOGIC;
         lenOffset_Stream_write : OUT STD_LOGIC;
-        lenOffset_Stream_num_data_valid : IN STD_LOGIC_VECTOR (5 downto 0);
-        lenOffset_Stream_fifo_cap : IN STD_LOGIC_VECTOR (5 downto 0);
+        lenOffset_Stream_num_data_valid : IN STD_LOGIC_VECTOR (6 downto 0);
+        lenOffset_Stream_fifo_cap : IN STD_LOGIC_VECTOR (6 downto 0);
         input_size_dout : IN STD_LOGIC_VECTOR (31 downto 0);
         input_size_empty_n : IN STD_LOGIC;
         input_size_read : OUT STD_LOGIC;
@@ -151,13 +151,13 @@ attribute shreg_extract : string;
         lit_outStream_dout : IN STD_LOGIC_VECTOR (7 downto 0);
         lit_outStream_empty_n : IN STD_LOGIC;
         lit_outStream_read : OUT STD_LOGIC;
-        lit_outStream_num_data_valid : IN STD_LOGIC_VECTOR (12 downto 0);
-        lit_outStream_fifo_cap : IN STD_LOGIC_VECTOR (12 downto 0);
+        lit_outStream_num_data_valid : IN STD_LOGIC_VECTOR (13 downto 0);
+        lit_outStream_fifo_cap : IN STD_LOGIC_VECTOR (13 downto 0);
         lenOffset_Stream_dout : IN STD_LOGIC_VECTOR (63 downto 0);
         lenOffset_Stream_empty_n : IN STD_LOGIC;
         lenOffset_Stream_read : OUT STD_LOGIC;
-        lenOffset_Stream_num_data_valid : IN STD_LOGIC_VECTOR (5 downto 0);
-        lenOffset_Stream_fifo_cap : IN STD_LOGIC_VECTOR (5 downto 0);
+        lenOffset_Stream_num_data_valid : IN STD_LOGIC_VECTOR (6 downto 0);
+        lenOffset_Stream_fifo_cap : IN STD_LOGIC_VECTOR (6 downto 0);
         lz4Out_din : OUT STD_LOGIC_VECTOR (7 downto 0);
         lz4Out_full_n : IN STD_LOGIC;
         lz4Out_write : OUT STD_LOGIC;
@@ -175,7 +175,7 @@ attribute shreg_extract : string;
     end component;
 
 
-    component lz4CompressEngineRun_fifo_w8_d4096_A IS
+    component lz4CompressEngineRun_fifo_w8_d8192_B IS
     port (
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
@@ -187,12 +187,12 @@ attribute shreg_extract : string;
         if_dout : OUT STD_LOGIC_VECTOR (7 downto 0);
         if_empty_n : OUT STD_LOGIC;
         if_read : IN STD_LOGIC;
-        if_num_data_valid : OUT STD_LOGIC_VECTOR (12 downto 0);
-        if_fifo_cap : OUT STD_LOGIC_VECTOR (12 downto 0) );
+        if_num_data_valid : OUT STD_LOGIC_VECTOR (13 downto 0);
+        if_fifo_cap : OUT STD_LOGIC_VECTOR (13 downto 0) );
     end component;
 
 
-    component lz4CompressEngineRun_fifo_w64_d32_S IS
+    component lz4CompressEngineRun_fifo_w64_d64_S IS
     port (
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
@@ -204,8 +204,8 @@ attribute shreg_extract : string;
         if_dout : OUT STD_LOGIC_VECTOR (63 downto 0);
         if_empty_n : OUT STD_LOGIC;
         if_read : IN STD_LOGIC;
-        if_num_data_valid : OUT STD_LOGIC_VECTOR (5 downto 0);
-        if_fifo_cap : OUT STD_LOGIC_VECTOR (5 downto 0) );
+        if_num_data_valid : OUT STD_LOGIC_VECTOR (6 downto 0);
+        if_fifo_cap : OUT STD_LOGIC_VECTOR (6 downto 0) );
     end component;
 
 
@@ -317,7 +317,7 @@ begin
         input_size_num_data_valid => input_size_c_num_data_valid,
         input_size_fifo_cap => input_size_c_fifo_cap);
 
-    lit_outStream_U : component lz4CompressEngineRun_fifo_w8_d4096_A
+    lit_outStream_U : component lz4CompressEngineRun_fifo_w8_d8192_B
     port map (
         clk => ap_clk,
         reset => ap_rst,
@@ -332,7 +332,7 @@ begin
         if_num_data_valid => lit_outStream_num_data_valid,
         if_fifo_cap => lit_outStream_fifo_cap);
 
-    lenOffset_Stream_U : component lz4CompressEngineRun_fifo_w64_d32_S
+    lenOffset_Stream_U : component lz4CompressEngineRun_fifo_w64_d64_S
     port map (
         clk => ap_clk,
         reset => ap_rst,

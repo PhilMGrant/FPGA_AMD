@@ -20,13 +20,13 @@ port (
     lit_outStream_dout : IN STD_LOGIC_VECTOR (7 downto 0);
     lit_outStream_empty_n : IN STD_LOGIC;
     lit_outStream_read : OUT STD_LOGIC;
-    lit_outStream_num_data_valid : IN STD_LOGIC_VECTOR (13 downto 0);
-    lit_outStream_fifo_cap : IN STD_LOGIC_VECTOR (13 downto 0);
+    lit_outStream_num_data_valid : IN STD_LOGIC_VECTOR (17 downto 0);
+    lit_outStream_fifo_cap : IN STD_LOGIC_VECTOR (17 downto 0);
     lenOffset_Stream_dout : IN STD_LOGIC_VECTOR (63 downto 0);
     lenOffset_Stream_empty_n : IN STD_LOGIC;
     lenOffset_Stream_read : OUT STD_LOGIC;
-    lenOffset_Stream_num_data_valid : IN STD_LOGIC_VECTOR (6 downto 0);
-    lenOffset_Stream_fifo_cap : IN STD_LOGIC_VECTOR (6 downto 0);
+    lenOffset_Stream_num_data_valid : IN STD_LOGIC_VECTOR (10 downto 0);
+    lenOffset_Stream_fifo_cap : IN STD_LOGIC_VECTOR (10 downto 0);
     lz4Out_din : OUT STD_LOGIC_VECTOR (7 downto 0);
     lz4Out_full_n : IN STD_LOGIC;
     lz4Out_write : OUT STD_LOGIC;
@@ -59,8 +59,8 @@ architecture behav of lz4CompressEngineRun_lz4CompressPart2 is
     constant ap_const_lv32_2 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000010";
     constant ap_const_lv8_0 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
     constant ap_const_lv1_1 : STD_LOGIC_VECTOR (0 downto 0) := "1";
-    constant ap_const_lv14_0 : STD_LOGIC_VECTOR (13 downto 0) := "00000000000000";
-    constant ap_const_lv7_0 : STD_LOGIC_VECTOR (6 downto 0) := "0000000";
+    constant ap_const_lv18_0 : STD_LOGIC_VECTOR (17 downto 0) := "000000000000000000";
+    constant ap_const_lv11_0 : STD_LOGIC_VECTOR (10 downto 0) := "00000000000";
 
 attribute shreg_extract : string;
     signal ap_done_reg : STD_LOGIC := '0';
@@ -112,8 +112,8 @@ attribute shreg_extract : string;
         lit_outStream_dout : IN STD_LOGIC_VECTOR (7 downto 0);
         lit_outStream_empty_n : IN STD_LOGIC;
         lit_outStream_read : OUT STD_LOGIC;
-        lit_outStream_num_data_valid : IN STD_LOGIC_VECTOR (13 downto 0);
-        lit_outStream_fifo_cap : IN STD_LOGIC_VECTOR (13 downto 0);
+        lit_outStream_num_data_valid : IN STD_LOGIC_VECTOR (17 downto 0);
+        lit_outStream_fifo_cap : IN STD_LOGIC_VECTOR (17 downto 0);
         lz4Out_din : OUT STD_LOGIC_VECTOR (7 downto 0);
         lz4Out_full_n : IN STD_LOGIC;
         lz4Out_write : OUT STD_LOGIC;
@@ -123,8 +123,8 @@ attribute shreg_extract : string;
         lenOffset_Stream_dout : IN STD_LOGIC_VECTOR (63 downto 0);
         lenOffset_Stream_empty_n : IN STD_LOGIC;
         lenOffset_Stream_read : OUT STD_LOGIC;
-        lenOffset_Stream_num_data_valid : IN STD_LOGIC_VECTOR (6 downto 0);
-        lenOffset_Stream_fifo_cap : IN STD_LOGIC_VECTOR (6 downto 0);
+        lenOffset_Stream_num_data_valid : IN STD_LOGIC_VECTOR (10 downto 0);
+        lenOffset_Stream_fifo_cap : IN STD_LOGIC_VECTOR (10 downto 0);
         input_size_4 : IN STD_LOGIC_VECTOR (31 downto 0);
         compressedSize_out : OUT STD_LOGIC_VECTOR (31 downto 0);
         compressedSize_out_ap_vld : OUT STD_LOGIC );
@@ -144,8 +144,8 @@ begin
         lit_outStream_dout => lit_outStream_dout,
         lit_outStream_empty_n => lit_outStream_empty_n,
         lit_outStream_read => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lit_outStream_read,
-        lit_outStream_num_data_valid => ap_const_lv14_0,
-        lit_outStream_fifo_cap => ap_const_lv14_0,
+        lit_outStream_num_data_valid => ap_const_lv18_0,
+        lit_outStream_fifo_cap => ap_const_lv18_0,
         lz4Out_din => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lz4Out_din,
         lz4Out_full_n => lz4Out_full_n,
         lz4Out_write => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lz4Out_write,
@@ -155,8 +155,8 @@ begin
         lenOffset_Stream_dout => lenOffset_Stream_dout,
         lenOffset_Stream_empty_n => lenOffset_Stream_empty_n,
         lenOffset_Stream_read => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lenOffset_Stream_read,
-        lenOffset_Stream_num_data_valid => ap_const_lv7_0,
-        lenOffset_Stream_fifo_cap => ap_const_lv7_0,
+        lenOffset_Stream_num_data_valid => ap_const_lv11_0,
+        lenOffset_Stream_fifo_cap => ap_const_lv11_0,
         input_size_4 => input_size_3_reg_153,
         compressedSize_out => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_compressedSize_out,
         compressedSize_out_ap_vld => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_compressedSize_out_ap_vld);

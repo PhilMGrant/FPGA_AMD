@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover'
 ================================================================
-* Date:           Mon Oct 27 15:59:19 2025
+* Date:           Mon Oct 27 22:55:32 2025
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        lz4CompressEngineRun
@@ -121,7 +121,7 @@ Target clock period: 7.000ns, clock uncertainty: 0.700ns.
 The critical path consists of the following:
 	'store' operation 0 bit ('store_ln205', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:205) of constant 1 on local variable 'm', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:205 [15]  (1.588 ns)
 	'load' operation 3 bit ('m', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:205) on local variable 'm', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:205 [18]  (0.000 ns)
-	'icmp' operation 1 bit ('icmp_ln205', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:205) [19]  (1.650 ns)
+	'add' operation 3 bit ('add_ln205', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:205) [28]  (1.650 ns)
 	'store' operation 0 bit ('store_ln205', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:205) of variable 'add_ln205', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:205 on local variable 'm', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:205 [29]  (1.588 ns)
 
  <State 2>: 3.150ns

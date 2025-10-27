@@ -24,7 +24,7 @@
         <args ARG_PragmaFunction="lzCompress" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:77:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="lzCompress" ARG_PragmaIsValid="1" ARG_PragmaOptions="FACTOR = 4" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="lzCompress" ARG_PragmaIsValid="1" ARG_PragmaOptions="FACTOR = 8" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:78:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="lzCompress" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = LZ_DICT_SIZE max = LZ_DICT_SIZE" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
@@ -90,7 +90,7 @@
         <args ARG_PragmaFunction="lzCompress" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:287:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="lzCompress" ARG_PragmaIsValid="1" ARG_PragmaOptions="FACTOR = 4" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="lzCompress" ARG_PragmaIsValid="1" ARG_PragmaOptions="FACTOR = 8" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:288:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="lzCompress" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = LZ_DICT_SIZE max = LZ_DICT_SIZE" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
@@ -599,85 +599,88 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/s2mm.hpp:794:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="s2mm" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:71:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:85:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="lz4CompressPart1" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 2" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:72:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:86:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="lz4CompressPart1" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="loop_flatten" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:183:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:210:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="lz4CompressPart2" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 4" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:184:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:211:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="lz4CompressPart2" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="loop_flatten" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:395:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="lz4Compress" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = lit_outStream depth = MAX_LIT_COUNT" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:423:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lz4Compress" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = lit_outStream depth = MAX_LIT_COUNT * 2" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:396:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="lz4Compress" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = lenOffset_Stream depth = c_gmemBurstSize" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:424:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lz4Compress" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = lenOffset_Stream depth = c_gmemBurstSize * 2" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:398:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="lz4Compress" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = lenOffset_Stream type = FIFO impl = SRL" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:400:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="lz4Compress" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:426:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lz4Compress" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = lit_outStream type = FIFO impl = BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:427:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="hlsLz4Core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = compressdStream depth = 8" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:428:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="hlsLz4Core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bestMatchStream depth = 8" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="lz4Compress" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = lenOffset_Stream type = FIFO impl = SRL" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:429:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lz4Compress" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:456:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="hlsLz4Core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = compressdStream depth = 8" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:457:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="hlsLz4Core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bestMatchStream depth = 8" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:458:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="hlsLz4Core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = boosterStream depth = 8" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:431:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:460:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="hlsLz4Core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = compressdStream type = FIFO impl = SRL" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:432:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:461:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="hlsLz4Core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = boosterStream type = FIFO impl = SRL" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:434:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:463:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="hlsLz4Core" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:463:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:492:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="hlsLz4" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = outStreamEos depth = 2" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:464:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:493:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="hlsLz4" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = inStream depth = c_gmemBurstSize" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:465:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:494:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="hlsLz4" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = outStream depth = c_gmemBurstSize" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:467:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:496:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="hlsLz4" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = outStreamEos type = FIFO impl = SRL" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:468:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:497:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="hlsLz4" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = inStream type = FIFO impl = SRL" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:469:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:498:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="hlsLz4" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = outStream type = FIFO impl = SRL" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:473:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:502:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="hlsLz4" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:478:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:507:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="hlsLz4" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:513:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:542:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="lz4CompressMM" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = input_block_size dim = 0 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:514:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:543:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="lz4CompressMM" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = input_idx dim = 0 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:515:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:544:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="lz4CompressMM" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = output_idx dim = 0 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:516:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:545:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="lz4CompressMM" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = output_block_size dim = 0 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:517:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:546:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="lz4CompressMM" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = max_lit_limit dim = 0 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
@@ -752,8 +755,8 @@
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:58:0" msg_body="Unrolling loop 'VITIS_LOOP_189_8' (D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:189:27) in function 'xf::compression::lzCompress&lt;6, 4, 65536, 6, 1, 4096, 64&gt;' completely with a factor of 6">
         <args Factor="6" LoopLoc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:189:27" LoopName="VITIS_LOOP_189_8"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:58:0" msg_body="Unrolling loop 'dict_flush' (D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:75:5) in function 'xf::compression::lzCompress&lt;6, 4, 65536, 6, 1, 4096, 64&gt;' partially with a factor of 4">
-        <args Factor="4" LoopLoc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:75:5" LoopName="dict_flush"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:58:0" msg_body="Unrolling loop 'dict_flush' (D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:75:5) in function 'xf::compression::lzCompress&lt;6, 4, 65536, 6, 1, 4096, 64&gt;' partially with a factor of 8">
+        <args Factor="8" LoopLoc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:75:5" LoopName="dict_flush"/>
     </msg>
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:58:0" msg_body="Unrolling loop 'VITIS_LOOP_69_1' (D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:69:22) in function 'xf::compression::lzCompress&lt;6, 4, 65536, 6, 1, 4096, 64&gt;' completely with a factor of 6">
         <args Factor="6" LoopLoc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:69:22" LoopName="VITIS_LOOP_69_1"/>
@@ -764,14 +767,14 @@
     <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:329:18" msg_body="Applying array_partition to 'compare_window': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="compare_window"/>
     </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:66:17" msg_body="array_partition dim=1 type=cyclic factor=2 variable=dict 1 xf::compression::lzCompress&lt;6, 4, 65536, 6, 1, 4096, 64&gt; D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:66:17 D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:76:9dict">
-        <args PragmaFunction="xf::compression::lzCompress&lt;6, 4, 65536, 6, 1, 4096, 64&gt;" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=dict" PragmaSrcLoc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:76:9" PragmaSrcLoc-DebugLoc="File D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp Line 76 Column 9" PragmaType="array_partition" VarName="dict" varLoc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:66:17"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:66:17" msg_body="array_partition dim=1 type=cyclic factor=4 variable=dict 1 xf::compression::lzCompress&lt;6, 4, 65536, 6, 1, 4096, 64&gt; D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:66:17 D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:76:9dict">
+        <args PragmaFunction="xf::compression::lzCompress&lt;6, 4, 65536, 6, 1, 4096, 64&gt;" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=4 variable=dict" PragmaSrcLoc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:76:9" PragmaSrcLoc-DebugLoc="File D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp Line 76 Column 9" PragmaType="array_partition" VarName="dict" varLoc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:66:17"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:76:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'dict' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="dict" PragmaType="array_partition"/>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:76:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=4 dim=1' for array 'dict' due to pipeline pragma">
+        <args Dim="1" Factor="4" Mode="cyclic" Name="dict" PragmaType="array_partition"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:66:17" msg_body="Applying array_partition to 'dict': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="dict"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:66:17" msg_body="Applying array_partition to 'dict': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="dict"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

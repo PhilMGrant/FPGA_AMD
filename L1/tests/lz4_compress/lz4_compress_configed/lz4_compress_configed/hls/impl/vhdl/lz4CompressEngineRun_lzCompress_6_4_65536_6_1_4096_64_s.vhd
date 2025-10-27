@@ -75,152 +75,190 @@ attribute shreg_extract : string;
     attribute fsm_encoding of ap_CS_fsm_state1 : signal is "none";
     signal internal_ap_ready : STD_LOGIC;
     signal input_size_c2_blk_n : STD_LOGIC;
-    signal input_size_read_reg_402 : STD_LOGIC_VECTOR (31 downto 0);
+    signal input_size_read_reg_414 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_block_state1 : BOOLEAN;
-    signal icmp_ln64_fu_204_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal icmp_ln64_reg_497 : STD_LOGIC_VECTOR (0 downto 0);
-    signal sub27_fu_264_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal sub27_reg_516 : STD_LOGIC_VECTOR (31 downto 0);
+    signal icmp_ln64_fu_216_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln64_reg_509 : STD_LOGIC_VECTOR (0 downto 0);
+    signal sub27_fu_276_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal sub27_reg_528 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state4 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state4 : signal is "none";
-    signal icmp_ln93_fu_270_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal icmp_ln93_reg_521 : STD_LOGIC_VECTOR (0 downto 0);
-    signal select_ln82_fu_320_p3 : STD_LOGIC_VECTOR (7 downto 0);
-    signal select_ln82_reg_530 : STD_LOGIC_VECTOR (7 downto 0);
+    signal icmp_ln93_fu_282_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln93_reg_533 : STD_LOGIC_VECTOR (0 downto 0);
+    signal select_ln82_fu_332_p3 : STD_LOGIC_VECTOR (7 downto 0);
+    signal select_ln82_reg_542 : STD_LOGIC_VECTOR (7 downto 0);
     signal ap_CS_fsm_state6 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state6 : signal is "none";
-    signal select_ln82_1_fu_328_p3 : STD_LOGIC_VECTOR (7 downto 0);
-    signal select_ln82_1_reg_535 : STD_LOGIC_VECTOR (7 downto 0);
-    signal select_ln82_2_fu_336_p3 : STD_LOGIC_VECTOR (7 downto 0);
-    signal select_ln82_2_reg_540 : STD_LOGIC_VECTOR (7 downto 0);
-    signal select_ln82_3_fu_344_p3 : STD_LOGIC_VECTOR (7 downto 0);
-    signal select_ln82_3_reg_545 : STD_LOGIC_VECTOR (7 downto 0);
-    signal select_ln82_4_fu_352_p3 : STD_LOGIC_VECTOR (7 downto 0);
-    signal select_ln82_4_reg_550 : STD_LOGIC_VECTOR (7 downto 0);
-    signal dict_address0 : STD_LOGIC_VECTOR (10 downto 0);
+    signal select_ln82_1_fu_340_p3 : STD_LOGIC_VECTOR (7 downto 0);
+    signal select_ln82_1_reg_547 : STD_LOGIC_VECTOR (7 downto 0);
+    signal select_ln82_2_fu_348_p3 : STD_LOGIC_VECTOR (7 downto 0);
+    signal select_ln82_2_reg_552 : STD_LOGIC_VECTOR (7 downto 0);
+    signal select_ln82_3_fu_356_p3 : STD_LOGIC_VECTOR (7 downto 0);
+    signal select_ln82_3_reg_557 : STD_LOGIC_VECTOR (7 downto 0);
+    signal select_ln82_4_fu_364_p3 : STD_LOGIC_VECTOR (7 downto 0);
+    signal select_ln82_4_reg_562 : STD_LOGIC_VECTOR (7 downto 0);
+    signal dict_address0 : STD_LOGIC_VECTOR (9 downto 0);
     signal dict_ce0 : STD_LOGIC;
     signal dict_we0 : STD_LOGIC;
     signal dict_d0 : STD_LOGIC_VECTOR (431 downto 0);
     signal dict_q0 : STD_LOGIC_VECTOR (431 downto 0);
     signal dict_ce1 : STD_LOGIC;
     signal dict_we1 : STD_LOGIC;
-    signal dict_1_address0 : STD_LOGIC_VECTOR (10 downto 0);
+    signal dict_1_address0 : STD_LOGIC_VECTOR (9 downto 0);
     signal dict_1_ce0 : STD_LOGIC;
     signal dict_1_we0 : STD_LOGIC;
     signal dict_1_d0 : STD_LOGIC_VECTOR (431 downto 0);
     signal dict_1_q0 : STD_LOGIC_VECTOR (431 downto 0);
     signal dict_1_ce1 : STD_LOGIC;
     signal dict_1_we1 : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_ap_start : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_ap_done : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_ap_idle : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_ap_ready : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_address0 : STD_LOGIC_VECTOR (10 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_ce0 : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_we0 : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_d0 : STD_LOGIC_VECTOR (431 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_address1 : STD_LOGIC_VECTOR (10 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_ce1 : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_we1 : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_d1 : STD_LOGIC_VECTOR (431 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_address0 : STD_LOGIC_VECTOR (10 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_ce0 : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_we0 : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_d0 : STD_LOGIC_VECTOR (431 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_address1 : STD_LOGIC_VECTOR (10 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_ce1 : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_we1 : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_d1 : STD_LOGIC_VECTOR (431 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_ap_start : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_ap_done : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_ap_idle : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_ap_ready : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_inStream_read : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_4_out : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_4_out_ap_vld : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_3_out : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_3_out_ap_vld : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_2_out : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_2_out_ap_vld : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_1_out : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_1_out_ap_vld : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_out : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_out_ap_vld : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx48_promoted172_out : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx48_promoted172_out_ap_vld : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx42_3_promoted170_out : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx42_3_promoted170_out_ap_vld : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx71_promoted168_out : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx71_promoted168_out_ap_vld : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx61_promoted166_out : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx61_promoted166_out_ap_vld : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx54_promoted164_out : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx54_promoted164_out_ap_vld : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_ap_start : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_ap_done : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_ap_idle : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_ap_ready : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_din : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_write : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_num_data_valid : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_fifo_cap : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_1_address0 : STD_LOGIC_VECTOR (10 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_1_ce0 : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_1_we0 : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_1_d0 : STD_LOGIC_VECTOR (431 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_address0 : STD_LOGIC_VECTOR (10 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_ce0 : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_we0 : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_d0 : STD_LOGIC_VECTOR (431 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_inStream_read : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_present_window_15_out : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_present_window_15_out_ap_vld : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_present_window_14_out : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_present_window_14_out_ap_vld : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_present_window_13_out : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_present_window_13_out_ap_vld : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_present_window_12_out : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_present_window_12_out_ap_vld : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_present_window_11_out : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_present_window_11_out_ap_vld : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185_ap_start : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185_ap_done : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185_ap_idle : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185_ap_ready : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185_compressdStream_din : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185_compressdStream_write : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_ap_start : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_ap_done : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_ap_idle : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_ap_ready : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_inStream_read : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_din : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_write : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_num_data_valid : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_fifo_cap : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_ap_start_reg : STD_LOGIC := '0';
+    signal dict_2_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal dict_2_ce0 : STD_LOGIC;
+    signal dict_2_we0 : STD_LOGIC;
+    signal dict_2_d0 : STD_LOGIC_VECTOR (431 downto 0);
+    signal dict_2_q0 : STD_LOGIC_VECTOR (431 downto 0);
+    signal dict_2_ce1 : STD_LOGIC;
+    signal dict_2_we1 : STD_LOGIC;
+    signal dict_3_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal dict_3_ce0 : STD_LOGIC;
+    signal dict_3_we0 : STD_LOGIC;
+    signal dict_3_d0 : STD_LOGIC_VECTOR (431 downto 0);
+    signal dict_3_q0 : STD_LOGIC_VECTOR (431 downto 0);
+    signal dict_3_ce1 : STD_LOGIC;
+    signal dict_3_we1 : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_ap_start : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_ap_done : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_ap_idle : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_ap_ready : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_ce0 : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_we0 : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_d0 : STD_LOGIC_VECTOR (431 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_ce1 : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_we1 : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_d1 : STD_LOGIC_VECTOR (431 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_ce0 : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_we0 : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_d0 : STD_LOGIC_VECTOR (431 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_ce1 : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_we1 : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_d1 : STD_LOGIC_VECTOR (431 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_ce0 : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_we0 : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_d0 : STD_LOGIC_VECTOR (431 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_ce1 : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_we1 : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_d1 : STD_LOGIC_VECTOR (431 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_ce0 : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_we0 : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_d0 : STD_LOGIC_VECTOR (431 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_ce1 : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_we1 : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_d1 : STD_LOGIC_VECTOR (431 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_ap_start : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_ap_done : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_ap_idle : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_ap_ready : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_inStream_read : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_4_out : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_4_out_ap_vld : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_3_out : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_3_out_ap_vld : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_2_out : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_2_out_ap_vld : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_1_out : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_1_out_ap_vld : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_out : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_out_ap_vld : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx48_promoted176_out : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx48_promoted176_out_ap_vld : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx42_3_promoted174_out : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx42_3_promoted174_out_ap_vld : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx71_promoted172_out : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx71_promoted172_out_ap_vld : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx61_promoted170_out : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx61_promoted170_out_ap_vld : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx54_promoted168_out : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx54_promoted168_out_ap_vld : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_ap_start : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_ap_done : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_ap_idle : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_ap_ready : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_inStream_read : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_din : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_write : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_num_data_valid : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_fifo_cap : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_3_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_3_ce0 : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_3_we0 : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_3_d0 : STD_LOGIC_VECTOR (431 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_2_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_2_ce0 : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_2_we0 : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_2_d0 : STD_LOGIC_VECTOR (431 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_1_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_1_ce0 : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_1_we0 : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_1_d0 : STD_LOGIC_VECTOR (431 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_ce0 : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_we0 : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_d0 : STD_LOGIC_VECTOR (431 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_present_window_15_out : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_present_window_15_out_ap_vld : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_present_window_14_out : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_present_window_14_out_ap_vld : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_present_window_13_out : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_present_window_13_out_ap_vld : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_present_window_12_out : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_present_window_12_out_ap_vld : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_present_window_11_out : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_present_window_11_out_ap_vld : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197_ap_start : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197_ap_done : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197_ap_idle : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197_ap_ready : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197_compressdStream_din : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197_compressdStream_write : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_ap_start : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_ap_done : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_ap_idle : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_ap_ready : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_inStream_read : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_din : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_write : STD_LOGIC;
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_num_data_valid : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_fifo_cap : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
     signal ap_CS_fsm_state3 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state3 : signal is "none";
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_ap_start_reg : STD_LOGIC := '0';
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_ap_start_reg : STD_LOGIC := '0';
     signal present_window_4_loc_fu_116 : STD_LOGIC_VECTOR (7 downto 0);
     signal present_window_3_loc_fu_112 : STD_LOGIC_VECTOR (7 downto 0);
     signal present_window_2_loc_fu_108 : STD_LOGIC_VECTOR (7 downto 0);
     signal present_window_1_loc_fu_104 : STD_LOGIC_VECTOR (7 downto 0);
     signal present_window_loc_fu_100 : STD_LOGIC_VECTOR (7 downto 0);
-    signal arrayidx48_promoted172_loc_fu_96 : STD_LOGIC_VECTOR (7 downto 0);
-    signal arrayidx42_3_promoted170_loc_fu_92 : STD_LOGIC_VECTOR (7 downto 0);
-    signal arrayidx71_promoted168_loc_fu_88 : STD_LOGIC_VECTOR (7 downto 0);
-    signal arrayidx61_promoted166_loc_fu_84 : STD_LOGIC_VECTOR (7 downto 0);
-    signal arrayidx54_promoted164_loc_fu_80 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_ap_start_reg : STD_LOGIC := '0';
+    signal arrayidx48_promoted176_loc_fu_96 : STD_LOGIC_VECTOR (7 downto 0);
+    signal arrayidx42_3_promoted174_loc_fu_92 : STD_LOGIC_VECTOR (7 downto 0);
+    signal arrayidx71_promoted172_loc_fu_88 : STD_LOGIC_VECTOR (7 downto 0);
+    signal arrayidx61_promoted170_loc_fu_84 : STD_LOGIC_VECTOR (7 downto 0);
+    signal arrayidx54_promoted168_loc_fu_80 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state5 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state5 : signal is "none";
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185_ap_start_reg : STD_LOGIC := '0';
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state7 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state7 : signal is "none";
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_ap_start_reg : STD_LOGIC := '0';
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state8 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state8 : signal is "none";
     signal ap_CS_fsm_state9 : STD_LOGIC;
@@ -237,10 +275,10 @@ attribute shreg_extract : string;
     signal ap_ST_fsm_state7_blk : STD_LOGIC;
     signal ap_ST_fsm_state8_blk : STD_LOGIC;
     signal ap_ST_fsm_state9_blk : STD_LOGIC;
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_fifo_cap0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_num_data_valid0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_fifo_cap0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_num_data_valid0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_fifo_cap0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_num_data_valid0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_fifo_cap0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_num_data_valid0 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_ce_reg : STD_LOGIC;
 
     component lz4CompressEngineRun_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush IS
@@ -251,19 +289,35 @@ attribute shreg_extract : string;
         ap_done : OUT STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        dict_1_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
+        dict_3_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        dict_3_ce0 : OUT STD_LOGIC;
+        dict_3_we0 : OUT STD_LOGIC;
+        dict_3_d0 : OUT STD_LOGIC_VECTOR (431 downto 0);
+        dict_3_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        dict_3_ce1 : OUT STD_LOGIC;
+        dict_3_we1 : OUT STD_LOGIC;
+        dict_3_d1 : OUT STD_LOGIC_VECTOR (431 downto 0);
+        dict_2_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        dict_2_ce0 : OUT STD_LOGIC;
+        dict_2_we0 : OUT STD_LOGIC;
+        dict_2_d0 : OUT STD_LOGIC_VECTOR (431 downto 0);
+        dict_2_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        dict_2_ce1 : OUT STD_LOGIC;
+        dict_2_we1 : OUT STD_LOGIC;
+        dict_2_d1 : OUT STD_LOGIC_VECTOR (431 downto 0);
+        dict_1_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
         dict_1_ce0 : OUT STD_LOGIC;
         dict_1_we0 : OUT STD_LOGIC;
         dict_1_d0 : OUT STD_LOGIC_VECTOR (431 downto 0);
-        dict_1_address1 : OUT STD_LOGIC_VECTOR (10 downto 0);
+        dict_1_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
         dict_1_ce1 : OUT STD_LOGIC;
         dict_1_we1 : OUT STD_LOGIC;
         dict_1_d1 : OUT STD_LOGIC_VECTOR (431 downto 0);
-        dict_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
+        dict_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
         dict_ce0 : OUT STD_LOGIC;
         dict_we0 : OUT STD_LOGIC;
         dict_d0 : OUT STD_LOGIC_VECTOR (431 downto 0);
-        dict_address1 : OUT STD_LOGIC_VECTOR (10 downto 0);
+        dict_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
         dict_ce1 : OUT STD_LOGIC;
         dict_we1 : OUT STD_LOGIC;
         dict_d1 : OUT STD_LOGIC_VECTOR (431 downto 0) );
@@ -291,16 +345,16 @@ attribute shreg_extract : string;
         present_window_1_out_ap_vld : OUT STD_LOGIC;
         present_window_out : OUT STD_LOGIC_VECTOR (7 downto 0);
         present_window_out_ap_vld : OUT STD_LOGIC;
-        arrayidx48_promoted172_out : OUT STD_LOGIC_VECTOR (7 downto 0);
-        arrayidx48_promoted172_out_ap_vld : OUT STD_LOGIC;
-        arrayidx42_3_promoted170_out : OUT STD_LOGIC_VECTOR (7 downto 0);
-        arrayidx42_3_promoted170_out_ap_vld : OUT STD_LOGIC;
-        arrayidx71_promoted168_out : OUT STD_LOGIC_VECTOR (7 downto 0);
-        arrayidx71_promoted168_out_ap_vld : OUT STD_LOGIC;
-        arrayidx61_promoted166_out : OUT STD_LOGIC_VECTOR (7 downto 0);
-        arrayidx61_promoted166_out_ap_vld : OUT STD_LOGIC;
-        arrayidx54_promoted164_out : OUT STD_LOGIC_VECTOR (7 downto 0);
-        arrayidx54_promoted164_out_ap_vld : OUT STD_LOGIC );
+        arrayidx48_promoted176_out : OUT STD_LOGIC_VECTOR (7 downto 0);
+        arrayidx48_promoted176_out_ap_vld : OUT STD_LOGIC;
+        arrayidx42_3_promoted174_out : OUT STD_LOGIC_VECTOR (7 downto 0);
+        arrayidx42_3_promoted174_out_ap_vld : OUT STD_LOGIC;
+        arrayidx71_promoted172_out : OUT STD_LOGIC_VECTOR (7 downto 0);
+        arrayidx71_promoted172_out_ap_vld : OUT STD_LOGIC;
+        arrayidx61_promoted170_out : OUT STD_LOGIC_VECTOR (7 downto 0);
+        arrayidx61_promoted170_out_ap_vld : OUT STD_LOGIC;
+        arrayidx54_promoted168_out : OUT STD_LOGIC_VECTOR (7 downto 0);
+        arrayidx54_promoted168_out_ap_vld : OUT STD_LOGIC );
     end component;
 
 
@@ -312,30 +366,40 @@ attribute shreg_extract : string;
         ap_done : OUT STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        arrayidx48_promoted172_reload : IN STD_LOGIC_VECTOR (7 downto 0);
-        arrayidx42_3_promoted170_reload : IN STD_LOGIC_VECTOR (7 downto 0);
-        arrayidx71_promoted168_reload : IN STD_LOGIC_VECTOR (7 downto 0);
-        arrayidx61_promoted166_reload : IN STD_LOGIC_VECTOR (7 downto 0);
-        arrayidx54_promoted164_reload : IN STD_LOGIC_VECTOR (7 downto 0);
-        sub27 : IN STD_LOGIC_VECTOR (31 downto 0);
+        inStream_dout : IN STD_LOGIC_VECTOR (7 downto 0);
+        inStream_empty_n : IN STD_LOGIC;
+        inStream_read : OUT STD_LOGIC;
         compressdStream_din : OUT STD_LOGIC_VECTOR (31 downto 0);
         compressdStream_full_n : IN STD_LOGIC;
         compressdStream_write : OUT STD_LOGIC;
         compressdStream_num_data_valid : IN STD_LOGIC_VECTOR (3 downto 0);
         compressdStream_fifo_cap : IN STD_LOGIC_VECTOR (3 downto 0);
-        dict_1_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
+        arrayidx48_promoted176_reload : IN STD_LOGIC_VECTOR (7 downto 0);
+        arrayidx42_3_promoted174_reload : IN STD_LOGIC_VECTOR (7 downto 0);
+        arrayidx71_promoted172_reload : IN STD_LOGIC_VECTOR (7 downto 0);
+        arrayidx61_promoted170_reload : IN STD_LOGIC_VECTOR (7 downto 0);
+        arrayidx54_promoted168_reload : IN STD_LOGIC_VECTOR (7 downto 0);
+        sub27 : IN STD_LOGIC_VECTOR (31 downto 0);
+        dict_3_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        dict_3_ce0 : OUT STD_LOGIC;
+        dict_3_we0 : OUT STD_LOGIC;
+        dict_3_d0 : OUT STD_LOGIC_VECTOR (431 downto 0);
+        dict_3_q0 : IN STD_LOGIC_VECTOR (431 downto 0);
+        dict_2_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        dict_2_ce0 : OUT STD_LOGIC;
+        dict_2_we0 : OUT STD_LOGIC;
+        dict_2_d0 : OUT STD_LOGIC_VECTOR (431 downto 0);
+        dict_2_q0 : IN STD_LOGIC_VECTOR (431 downto 0);
+        dict_1_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
         dict_1_ce0 : OUT STD_LOGIC;
         dict_1_we0 : OUT STD_LOGIC;
         dict_1_d0 : OUT STD_LOGIC_VECTOR (431 downto 0);
         dict_1_q0 : IN STD_LOGIC_VECTOR (431 downto 0);
-        dict_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
+        dict_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
         dict_ce0 : OUT STD_LOGIC;
         dict_we0 : OUT STD_LOGIC;
         dict_d0 : OUT STD_LOGIC_VECTOR (431 downto 0);
         dict_q0 : IN STD_LOGIC_VECTOR (431 downto 0);
-        inStream_dout : IN STD_LOGIC_VECTOR (7 downto 0);
-        inStream_empty_n : IN STD_LOGIC;
-        inStream_read : OUT STD_LOGIC;
         present_window_15_out : OUT STD_LOGIC_VECTOR (7 downto 0);
         present_window_15_out_ap_vld : OUT STD_LOGIC;
         present_window_14_out : OUT STD_LOGIC_VECTOR (7 downto 0);
@@ -397,12 +461,12 @@ attribute shreg_extract : string;
     port (
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
-        address0 : IN STD_LOGIC_VECTOR (10 downto 0);
+        address0 : IN STD_LOGIC_VECTOR (9 downto 0);
         ce0 : IN STD_LOGIC;
         we0 : IN STD_LOGIC;
         d0 : IN STD_LOGIC_VECTOR (431 downto 0);
         q0 : OUT STD_LOGIC_VECTOR (431 downto 0);
-        address1 : IN STD_LOGIC_VECTOR (10 downto 0);
+        address1 : IN STD_LOGIC_VECTOR (9 downto 0);
         ce1 : IN STD_LOGIC;
         we1 : IN STD_LOGIC;
         d1 : IN STD_LOGIC_VECTOR (431 downto 0) );
@@ -414,8 +478,8 @@ begin
     dict_U : component lz4CompressEngineRun_lzCompress_6_4_65536_6_1_4096_64_s_dict_RAM_T2P_BRAM_1R1W
     generic map (
         DataWidth => 432,
-        AddressRange => 2048,
-        AddressWidth => 11)
+        AddressRange => 1024,
+        AddressWidth => 10)
     port map (
         clk => ap_clk,
         reset => ap_rst,
@@ -424,16 +488,16 @@ begin
         we0 => dict_we0,
         d0 => dict_d0,
         q0 => dict_q0,
-        address1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_address1,
+        address1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_address1,
         ce1 => dict_ce1,
         we1 => dict_we1,
-        d1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_d1);
+        d1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_d1);
 
     dict_1_U : component lz4CompressEngineRun_lzCompress_6_4_65536_6_1_4096_64_s_dict_RAM_T2P_BRAM_1R1W
     generic map (
         DataWidth => 432,
-        AddressRange => 2048,
-        AddressWidth => 11)
+        AddressRange => 1024,
+        AddressWidth => 10)
     port map (
         clk => ap_clk,
         reset => ap_rst,
@@ -442,146 +506,208 @@ begin
         we0 => dict_1_we0,
         d0 => dict_1_d0,
         q0 => dict_1_q0,
-        address1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_address1,
+        address1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_address1,
         ce1 => dict_1_ce1,
         we1 => dict_1_we1,
-        d1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_d1);
+        d1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_d1);
 
-    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142 : component lz4CompressEngineRun_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush
+    dict_2_U : component lz4CompressEngineRun_lzCompress_6_4_65536_6_1_4096_64_s_dict_RAM_T2P_BRAM_1R1W
+    generic map (
+        DataWidth => 432,
+        AddressRange => 1024,
+        AddressWidth => 10)
+    port map (
+        clk => ap_clk,
+        reset => ap_rst,
+        address0 => dict_2_address0,
+        ce0 => dict_2_ce0,
+        we0 => dict_2_we0,
+        d0 => dict_2_d0,
+        q0 => dict_2_q0,
+        address1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_address1,
+        ce1 => dict_2_ce1,
+        we1 => dict_2_we1,
+        d1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_d1);
+
+    dict_3_U : component lz4CompressEngineRun_lzCompress_6_4_65536_6_1_4096_64_s_dict_RAM_T2P_BRAM_1R1W
+    generic map (
+        DataWidth => 432,
+        AddressRange => 1024,
+        AddressWidth => 10)
+    port map (
+        clk => ap_clk,
+        reset => ap_rst,
+        address0 => dict_3_address0,
+        ce0 => dict_3_ce0,
+        we0 => dict_3_we0,
+        d0 => dict_3_d0,
+        q0 => dict_3_q0,
+        address1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_address1,
+        ce1 => dict_3_ce1,
+        we1 => dict_3_we1,
+        d1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_d1);
+
+    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150 : component lz4CompressEngineRun_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_ap_start,
-        ap_done => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_ap_done,
-        ap_idle => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_ap_idle,
-        ap_ready => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_ap_ready,
-        dict_1_address0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_address0,
-        dict_1_ce0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_ce0,
-        dict_1_we0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_we0,
-        dict_1_d0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_d0,
-        dict_1_address1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_address1,
-        dict_1_ce1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_ce1,
-        dict_1_we1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_we1,
-        dict_1_d1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_d1,
-        dict_address0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_address0,
-        dict_ce0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_ce0,
-        dict_we0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_we0,
-        dict_d0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_d0,
-        dict_address1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_address1,
-        dict_ce1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_ce1,
-        dict_we1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_we1,
-        dict_d1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_d1);
+        ap_start => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_ap_start,
+        ap_done => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_ap_done,
+        ap_idle => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_ap_idle,
+        ap_ready => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_ap_ready,
+        dict_3_address0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_address0,
+        dict_3_ce0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_ce0,
+        dict_3_we0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_we0,
+        dict_3_d0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_d0,
+        dict_3_address1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_address1,
+        dict_3_ce1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_ce1,
+        dict_3_we1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_we1,
+        dict_3_d1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_d1,
+        dict_2_address0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_address0,
+        dict_2_ce0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_ce0,
+        dict_2_we0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_we0,
+        dict_2_d0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_d0,
+        dict_2_address1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_address1,
+        dict_2_ce1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_ce1,
+        dict_2_we1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_we1,
+        dict_2_d1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_d1,
+        dict_1_address0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_address0,
+        dict_1_ce0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_ce0,
+        dict_1_we0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_we0,
+        dict_1_d0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_d0,
+        dict_1_address1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_address1,
+        dict_1_ce1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_ce1,
+        dict_1_we1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_we1,
+        dict_1_d1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_d1,
+        dict_address0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_address0,
+        dict_ce0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_ce0,
+        dict_we0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_we0,
+        dict_d0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_d0,
+        dict_address1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_address1,
+        dict_ce1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_ce1,
+        dict_we1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_we1,
+        dict_d1 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_d1);
 
-    grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148 : component lz4CompressEngineRun_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2
+    grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158 : component lz4CompressEngineRun_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_ap_start,
-        ap_done => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_ap_done,
-        ap_idle => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_ap_idle,
-        ap_ready => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_ap_ready,
+        ap_start => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_ap_start,
+        ap_done => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_ap_done,
+        ap_idle => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_ap_idle,
+        ap_ready => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_ap_ready,
         inStream_dout => inStream_dout,
         inStream_empty_n => inStream_empty_n,
-        inStream_read => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_inStream_read,
-        present_window_4_out => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_4_out,
-        present_window_4_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_4_out_ap_vld,
-        present_window_3_out => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_3_out,
-        present_window_3_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_3_out_ap_vld,
-        present_window_2_out => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_2_out,
-        present_window_2_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_2_out_ap_vld,
-        present_window_1_out => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_1_out,
-        present_window_1_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_1_out_ap_vld,
-        present_window_out => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_out,
-        present_window_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_out_ap_vld,
-        arrayidx48_promoted172_out => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx48_promoted172_out,
-        arrayidx48_promoted172_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx48_promoted172_out_ap_vld,
-        arrayidx42_3_promoted170_out => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx42_3_promoted170_out,
-        arrayidx42_3_promoted170_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx42_3_promoted170_out_ap_vld,
-        arrayidx71_promoted168_out => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx71_promoted168_out,
-        arrayidx71_promoted168_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx71_promoted168_out_ap_vld,
-        arrayidx61_promoted166_out => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx61_promoted166_out,
-        arrayidx61_promoted166_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx61_promoted166_out_ap_vld,
-        arrayidx54_promoted164_out => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx54_promoted164_out,
-        arrayidx54_promoted164_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx54_promoted164_out_ap_vld);
+        inStream_read => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_inStream_read,
+        present_window_4_out => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_4_out,
+        present_window_4_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_4_out_ap_vld,
+        present_window_3_out => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_3_out,
+        present_window_3_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_3_out_ap_vld,
+        present_window_2_out => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_2_out,
+        present_window_2_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_2_out_ap_vld,
+        present_window_1_out => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_1_out,
+        present_window_1_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_1_out_ap_vld,
+        present_window_out => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_out,
+        present_window_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_out_ap_vld,
+        arrayidx48_promoted176_out => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx48_promoted176_out,
+        arrayidx48_promoted176_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx48_promoted176_out_ap_vld,
+        arrayidx42_3_promoted174_out => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx42_3_promoted174_out,
+        arrayidx42_3_promoted174_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx42_3_promoted174_out_ap_vld,
+        arrayidx71_promoted172_out => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx71_promoted172_out,
+        arrayidx71_promoted172_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx71_promoted172_out_ap_vld,
+        arrayidx61_promoted170_out => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx61_promoted170_out,
+        arrayidx61_promoted170_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx61_promoted170_out_ap_vld,
+        arrayidx54_promoted168_out => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx54_promoted168_out,
+        arrayidx54_promoted168_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx54_promoted168_out_ap_vld);
 
-    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164 : component lz4CompressEngineRun_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress
+    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174 : component lz4CompressEngineRun_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_ap_start,
-        ap_done => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_ap_done,
-        ap_idle => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_ap_idle,
-        ap_ready => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_ap_ready,
-        arrayidx48_promoted172_reload => arrayidx48_promoted172_loc_fu_96,
-        arrayidx42_3_promoted170_reload => arrayidx42_3_promoted170_loc_fu_92,
-        arrayidx71_promoted168_reload => arrayidx71_promoted168_loc_fu_88,
-        arrayidx61_promoted166_reload => arrayidx61_promoted166_loc_fu_84,
-        arrayidx54_promoted164_reload => arrayidx54_promoted164_loc_fu_80,
-        sub27 => sub27_reg_516,
-        compressdStream_din => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_din,
+        ap_start => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_ap_start,
+        ap_done => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_ap_done,
+        ap_idle => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_ap_idle,
+        ap_ready => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_ap_ready,
+        inStream_dout => inStream_dout,
+        inStream_empty_n => inStream_empty_n,
+        inStream_read => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_inStream_read,
+        compressdStream_din => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_din,
         compressdStream_full_n => compressdStream_full_n,
-        compressdStream_write => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_write,
-        compressdStream_num_data_valid => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_num_data_valid,
-        compressdStream_fifo_cap => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_fifo_cap,
-        dict_1_address0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_1_address0,
-        dict_1_ce0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_1_ce0,
-        dict_1_we0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_1_we0,
-        dict_1_d0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_1_d0,
+        compressdStream_write => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_write,
+        compressdStream_num_data_valid => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_num_data_valid,
+        compressdStream_fifo_cap => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_fifo_cap,
+        arrayidx48_promoted176_reload => arrayidx48_promoted176_loc_fu_96,
+        arrayidx42_3_promoted174_reload => arrayidx42_3_promoted174_loc_fu_92,
+        arrayidx71_promoted172_reload => arrayidx71_promoted172_loc_fu_88,
+        arrayidx61_promoted170_reload => arrayidx61_promoted170_loc_fu_84,
+        arrayidx54_promoted168_reload => arrayidx54_promoted168_loc_fu_80,
+        sub27 => sub27_reg_528,
+        dict_3_address0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_3_address0,
+        dict_3_ce0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_3_ce0,
+        dict_3_we0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_3_we0,
+        dict_3_d0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_3_d0,
+        dict_3_q0 => dict_3_q0,
+        dict_2_address0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_2_address0,
+        dict_2_ce0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_2_ce0,
+        dict_2_we0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_2_we0,
+        dict_2_d0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_2_d0,
+        dict_2_q0 => dict_2_q0,
+        dict_1_address0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_1_address0,
+        dict_1_ce0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_1_ce0,
+        dict_1_we0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_1_we0,
+        dict_1_d0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_1_d0,
         dict_1_q0 => dict_1_q0,
-        dict_address0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_address0,
-        dict_ce0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_ce0,
-        dict_we0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_we0,
-        dict_d0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_d0,
+        dict_address0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_address0,
+        dict_ce0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_ce0,
+        dict_we0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_we0,
+        dict_d0 => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_d0,
         dict_q0 => dict_q0,
-        inStream_dout => inStream_dout,
-        inStream_empty_n => inStream_empty_n,
-        inStream_read => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_inStream_read,
-        present_window_15_out => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_present_window_15_out,
-        present_window_15_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_present_window_15_out_ap_vld,
-        present_window_14_out => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_present_window_14_out,
-        present_window_14_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_present_window_14_out_ap_vld,
-        present_window_13_out => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_present_window_13_out,
-        present_window_13_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_present_window_13_out_ap_vld,
-        present_window_12_out => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_present_window_12_out,
-        present_window_12_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_present_window_12_out_ap_vld,
-        present_window_11_out => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_present_window_11_out,
-        present_window_11_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_present_window_11_out_ap_vld);
+        present_window_15_out => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_present_window_15_out,
+        present_window_15_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_present_window_15_out_ap_vld,
+        present_window_14_out => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_present_window_14_out,
+        present_window_14_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_present_window_14_out_ap_vld,
+        present_window_13_out => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_present_window_13_out,
+        present_window_13_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_present_window_13_out_ap_vld,
+        present_window_12_out => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_present_window_12_out,
+        present_window_12_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_present_window_12_out_ap_vld,
+        present_window_11_out => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_present_window_11_out,
+        present_window_11_out_ap_vld => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_present_window_11_out_ap_vld);
 
-    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185 : component lz4CompressEngineRun_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover
+    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197 : component lz4CompressEngineRun_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185_ap_start,
-        ap_done => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185_ap_done,
-        ap_idle => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185_ap_idle,
-        ap_ready => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185_ap_ready,
-        compressdStream_din => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185_compressdStream_din,
+        ap_start => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197_ap_start,
+        ap_done => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197_ap_done,
+        ap_idle => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197_ap_idle,
+        ap_ready => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197_ap_ready,
+        compressdStream_din => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197_compressdStream_din,
         compressdStream_full_n => compressdStream_full_n,
-        compressdStream_write => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185_compressdStream_write,
+        compressdStream_write => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197_compressdStream_write,
         compressdStream_num_data_valid => compressdStream_num_data_valid,
         compressdStream_fifo_cap => compressdStream_fifo_cap,
-        select_ln82_4 => select_ln82_4_reg_550,
-        select_ln82_3 => select_ln82_3_reg_545,
-        select_ln82_2 => select_ln82_2_reg_540,
-        select_ln82_1 => select_ln82_1_reg_535,
-        select_ln82 => select_ln82_reg_530);
+        select_ln82_4 => select_ln82_4_reg_562,
+        select_ln82_3 => select_ln82_3_reg_557,
+        select_ln82_2 => select_ln82_2_reg_552,
+        select_ln82_1 => select_ln82_1_reg_547,
+        select_ln82 => select_ln82_reg_542);
 
-    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196 : component lz4CompressEngineRun_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes
+    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208 : component lz4CompressEngineRun_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_ap_start,
-        ap_done => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_ap_done,
-        ap_idle => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_ap_idle,
-        ap_ready => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_ap_ready,
+        ap_start => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_ap_start,
+        ap_done => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_ap_done,
+        ap_idle => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_ap_idle,
+        ap_ready => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_ap_ready,
         inStream_dout => inStream_dout,
         inStream_empty_n => inStream_empty_n,
-        inStream_read => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_inStream_read,
-        compressdStream_din => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_din,
+        inStream_read => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_inStream_read,
+        compressdStream_din => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_din,
         compressdStream_full_n => compressdStream_full_n,
-        compressdStream_write => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_write,
-        compressdStream_num_data_valid => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_num_data_valid,
-        compressdStream_fifo_cap => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_fifo_cap);
+        compressdStream_write => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_write,
+        compressdStream_num_data_valid => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_num_data_valid,
+        compressdStream_fifo_cap => grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_fifo_cap);
 
 
 
@@ -615,80 +741,80 @@ begin
     end process;
 
 
-    grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_ap_start_reg_assign_proc : process(ap_clk)
+    grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_ap_start_reg <= ap_const_logic_0;
+                grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-                    grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_ap_ready = ap_const_logic_1)) then 
-                    grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_ap_start_reg <= ap_const_logic_0;
+                    grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_ap_ready = ap_const_logic_1)) then 
+                    grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_ap_start_reg_assign_proc : process(ap_clk)
+    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_ap_start_reg <= ap_const_logic_0;
+                grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-                    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_ap_ready = ap_const_logic_1)) then 
-                    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_ap_start_reg <= ap_const_logic_0;
+                    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_ap_ready = ap_const_logic_1)) then 
+                    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_ap_start_reg_assign_proc : process(ap_clk)
+    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_ap_start_reg <= ap_const_logic_0;
+                grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
-                    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_ap_ready = ap_const_logic_1)) then 
-                    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_ap_start_reg <= ap_const_logic_0;
+                    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_ap_ready = ap_const_logic_1)) then 
+                    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185_ap_start_reg_assign_proc : process(ap_clk)
+    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185_ap_start_reg <= ap_const_logic_0;
+                grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state6)) then 
-                    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185_ap_ready = ap_const_logic_1)) then 
-                    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185_ap_start_reg <= ap_const_logic_0;
+                    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197_ap_ready = ap_const_logic_1)) then 
+                    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_ap_start_reg_assign_proc : process(ap_clk)
+    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_ap_start_reg <= ap_const_logic_0;
+                grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
-                    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_ap_ready = ap_const_logic_1)) then 
-                    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_ap_start_reg <= ap_const_logic_0;
+                    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_ap_ready = ap_const_logic_1)) then 
+                    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
@@ -713,40 +839,40 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_const_logic_1 = ap_CS_fsm_state3) and (grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx42_3_promoted170_out_ap_vld = ap_const_logic_1))) then
-                arrayidx42_3_promoted170_loc_fu_92 <= grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx42_3_promoted170_out;
+            if (((grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx42_3_promoted174_out_ap_vld = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
+                arrayidx42_3_promoted174_loc_fu_92 <= grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx42_3_promoted174_out;
             end if;
         end if;
     end process;
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_const_logic_1 = ap_CS_fsm_state3) and (grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx48_promoted172_out_ap_vld = ap_const_logic_1))) then
-                arrayidx48_promoted172_loc_fu_96 <= grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx48_promoted172_out;
+            if (((grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx48_promoted176_out_ap_vld = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
+                arrayidx48_promoted176_loc_fu_96 <= grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx48_promoted176_out;
             end if;
         end if;
     end process;
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_const_logic_1 = ap_CS_fsm_state3) and (grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx54_promoted164_out_ap_vld = ap_const_logic_1))) then
-                arrayidx54_promoted164_loc_fu_80 <= grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx54_promoted164_out;
+            if (((grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx54_promoted168_out_ap_vld = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
+                arrayidx54_promoted168_loc_fu_80 <= grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx54_promoted168_out;
             end if;
         end if;
     end process;
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_const_logic_1 = ap_CS_fsm_state3) and (grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx61_promoted166_out_ap_vld = ap_const_logic_1))) then
-                arrayidx61_promoted166_loc_fu_84 <= grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx61_promoted166_out;
+            if (((grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx61_promoted170_out_ap_vld = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
+                arrayidx61_promoted170_loc_fu_84 <= grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx61_promoted170_out;
             end if;
         end if;
     end process;
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_const_logic_1 = ap_CS_fsm_state3) and (grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx71_promoted168_out_ap_vld = ap_const_logic_1))) then
-                arrayidx71_promoted168_loc_fu_88 <= grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_arrayidx71_promoted168_out;
+            if (((grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx71_promoted172_out_ap_vld = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
+                arrayidx71_promoted172_loc_fu_88 <= grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_arrayidx71_promoted172_out;
             end if;
         end if;
     end process;
@@ -754,8 +880,8 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_boolean_0 = ap_block_state1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then
-                icmp_ln64_reg_497 <= icmp_ln64_fu_204_p2;
-                input_size_read_reg_402 <= input_size;
+                icmp_ln64_reg_509 <= icmp_ln64_fu_216_p2;
+                input_size_read_reg_414 <= input_size;
             end if;
         end if;
     end process;
@@ -763,48 +889,48 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state4)) then
-                icmp_ln93_reg_521 <= icmp_ln93_fu_270_p2;
-                sub27_reg_516 <= sub27_fu_264_p2;
+                icmp_ln93_reg_533 <= icmp_ln93_fu_282_p2;
+                sub27_reg_528 <= sub27_fu_276_p2;
             end if;
         end if;
     end process;
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_const_logic_1 = ap_CS_fsm_state3) and (grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_1_out_ap_vld = ap_const_logic_1))) then
-                present_window_1_loc_fu_104 <= grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_1_out;
+            if (((grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_1_out_ap_vld = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
+                present_window_1_loc_fu_104 <= grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_1_out;
             end if;
         end if;
     end process;
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_const_logic_1 = ap_CS_fsm_state3) and (grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_2_out_ap_vld = ap_const_logic_1))) then
-                present_window_2_loc_fu_108 <= grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_2_out;
+            if (((grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_2_out_ap_vld = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
+                present_window_2_loc_fu_108 <= grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_2_out;
             end if;
         end if;
     end process;
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_const_logic_1 = ap_CS_fsm_state3) and (grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_3_out_ap_vld = ap_const_logic_1))) then
-                present_window_3_loc_fu_112 <= grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_3_out;
+            if (((grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_3_out_ap_vld = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
+                present_window_3_loc_fu_112 <= grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_3_out;
             end if;
         end if;
     end process;
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_const_logic_1 = ap_CS_fsm_state3) and (grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_4_out_ap_vld = ap_const_logic_1))) then
-                present_window_4_loc_fu_116 <= grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_4_out;
+            if (((grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_4_out_ap_vld = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
+                present_window_4_loc_fu_116 <= grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_4_out;
             end if;
         end if;
     end process;
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_const_logic_1 = ap_CS_fsm_state3) and (grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_out_ap_vld = ap_const_logic_1))) then
-                present_window_loc_fu_100 <= grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_present_window_out;
+            if (((grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_out_ap_vld = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
+                present_window_loc_fu_100 <= grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_present_window_out;
             end if;
         end if;
     end process;
@@ -812,22 +938,22 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state6)) then
-                select_ln82_1_reg_535 <= select_ln82_1_fu_328_p3;
-                select_ln82_2_reg_540 <= select_ln82_2_fu_336_p3;
-                select_ln82_3_reg_545 <= select_ln82_3_fu_344_p3;
-                select_ln82_4_reg_550 <= select_ln82_4_fu_352_p3;
-                select_ln82_reg_530 <= select_ln82_fu_320_p3;
+                select_ln82_1_reg_547 <= select_ln82_1_fu_340_p3;
+                select_ln82_2_reg_552 <= select_ln82_2_fu_348_p3;
+                select_ln82_3_reg_557 <= select_ln82_3_fu_356_p3;
+                select_ln82_4_reg_562 <= select_ln82_4_fu_364_p3;
+                select_ln82_reg_542 <= select_ln82_fu_332_p3;
             end if;
         end if;
     end process;
 
-    ap_NS_fsm_assign_proc : process (ap_CS_fsm, ap_CS_fsm_state1, ap_block_state1, icmp_ln64_fu_204_p2, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_ap_done, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185_ap_done, ap_CS_fsm_state3, ap_CS_fsm_state5, ap_CS_fsm_state7, ap_CS_fsm_state9, ap_block_state9_on_subcall_done, ap_block_state3_on_subcall_done)
+    ap_NS_fsm_assign_proc : process (ap_CS_fsm, ap_CS_fsm_state1, ap_block_state1, icmp_ln64_fu_216_p2, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_ap_done, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197_ap_done, ap_CS_fsm_state3, ap_CS_fsm_state5, ap_CS_fsm_state7, ap_CS_fsm_state9, ap_block_state9_on_subcall_done, ap_block_state3_on_subcall_done)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
-                if (((icmp_ln64_fu_204_p2 = ap_const_lv1_1) and (ap_const_boolean_0 = ap_block_state1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then
+                if (((icmp_ln64_fu_216_p2 = ap_const_lv1_1) and (ap_const_boolean_0 = ap_block_state1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then
                     ap_NS_fsm <= ap_ST_fsm_state9;
-                elsif (((icmp_ln64_fu_204_p2 = ap_const_lv1_0) and (ap_const_boolean_0 = ap_block_state1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then
+                elsif (((icmp_ln64_fu_216_p2 = ap_const_lv1_0) and (ap_const_boolean_0 = ap_block_state1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then
                     ap_NS_fsm <= ap_ST_fsm_state2;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state1;
@@ -843,7 +969,7 @@ begin
             when ap_ST_fsm_state4 => 
                 ap_NS_fsm <= ap_ST_fsm_state5;
             when ap_ST_fsm_state5 => 
-                if (((ap_const_logic_1 = ap_CS_fsm_state5) and (grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_ap_done = ap_const_logic_1))) then
+                if (((grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state5))) then
                     ap_NS_fsm <= ap_ST_fsm_state6;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state5;
@@ -851,7 +977,7 @@ begin
             when ap_ST_fsm_state6 => 
                 ap_NS_fsm <= ap_ST_fsm_state7;
             when ap_ST_fsm_state7 => 
-                if (((grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state7))) then
+                if (((grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state7))) then
                     ap_NS_fsm <= ap_ST_fsm_state8;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state7;
@@ -900,9 +1026,9 @@ begin
 
     ap_ST_fsm_state4_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state5_blk_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_ap_done)
+    ap_ST_fsm_state5_blk_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_ap_done)
     begin
-        if ((grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_ap_done = ap_const_logic_0)) then 
+        if ((grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_ap_done = ap_const_logic_0)) then 
             ap_ST_fsm_state5_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state5_blk <= ap_const_logic_0;
@@ -911,9 +1037,9 @@ begin
 
     ap_ST_fsm_state6_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state7_blk_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185_ap_done)
+    ap_ST_fsm_state7_blk_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197_ap_done)
     begin
-        if ((grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185_ap_done = ap_const_logic_0)) then 
+        if ((grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197_ap_done = ap_const_logic_0)) then 
             ap_ST_fsm_state7_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state7_blk <= ap_const_logic_0;
@@ -938,15 +1064,15 @@ begin
     end process;
 
 
-    ap_block_state3_on_subcall_done_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_ap_done, grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_ap_done)
+    ap_block_state3_on_subcall_done_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_ap_done, grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_ap_done)
     begin
-                ap_block_state3_on_subcall_done <= ((grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_ap_done = ap_const_logic_0) or (grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_ap_done = ap_const_logic_0));
+                ap_block_state3_on_subcall_done <= ((grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_ap_done = ap_const_logic_0) or (grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_ap_done = ap_const_logic_0));
     end process;
 
 
-    ap_block_state9_on_subcall_done_assign_proc : process(icmp_ln64_reg_497, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_ap_done)
+    ap_block_state9_on_subcall_done_assign_proc : process(icmp_ln64_reg_509, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_ap_done)
     begin
-                ap_block_state9_on_subcall_done <= ((icmp_ln64_reg_497 = ap_const_lv1_0) and (grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_ap_done = ap_const_logic_0));
+                ap_block_state9_on_subcall_done <= ((icmp_ln64_reg_509 = ap_const_lv1_0) and (grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_ap_done = ap_const_logic_0));
     end process;
 
 
@@ -971,179 +1097,315 @@ begin
 
     ap_ready <= internal_ap_ready;
 
-    compressdStream_din_assign_proc : process(icmp_ln64_reg_497, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_din, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185_compressdStream_din, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_din, ap_CS_fsm_state5, ap_CS_fsm_state7, ap_CS_fsm_state9)
+    compressdStream_din_assign_proc : process(icmp_ln64_reg_509, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_din, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197_compressdStream_din, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_din, ap_CS_fsm_state5, ap_CS_fsm_state7, ap_CS_fsm_state9)
     begin
-        if (((icmp_ln64_reg_497 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state9))) then 
-            compressdStream_din <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_din;
+        if (((icmp_ln64_reg_509 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state9))) then 
+            compressdStream_din <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_din;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state7)) then 
-            compressdStream_din <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185_compressdStream_din;
+            compressdStream_din <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197_compressdStream_din;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
-            compressdStream_din <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_din;
+            compressdStream_din <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_din;
         else 
-            compressdStream_din <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_din;
+            compressdStream_din <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_din;
         end if; 
     end process;
 
 
-    compressdStream_write_assign_proc : process(icmp_ln64_reg_497, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_write, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185_compressdStream_write, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_write, ap_CS_fsm_state5, ap_CS_fsm_state7, ap_CS_fsm_state9)
+    compressdStream_write_assign_proc : process(icmp_ln64_reg_509, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_write, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197_compressdStream_write, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_write, ap_CS_fsm_state5, ap_CS_fsm_state7, ap_CS_fsm_state9)
     begin
-        if (((icmp_ln64_reg_497 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state9))) then 
-            compressdStream_write <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_write;
+        if (((icmp_ln64_reg_509 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state9))) then 
+            compressdStream_write <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_write;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state7)) then 
-            compressdStream_write <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185_compressdStream_write;
+            compressdStream_write <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197_compressdStream_write;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
-            compressdStream_write <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_write;
+            compressdStream_write <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_write;
         else 
             compressdStream_write <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    dict_1_address0_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_address0, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_1_address0, ap_CS_fsm_state3, ap_CS_fsm_state5)
+    dict_1_address0_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_address0, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_1_address0, ap_CS_fsm_state3, ap_CS_fsm_state5)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
-            dict_1_address0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_1_address0;
+            dict_1_address0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_1_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            dict_1_address0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_address0;
+            dict_1_address0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_address0;
         else 
-            dict_1_address0 <= "XXXXXXXXXXX";
+            dict_1_address0 <= "XXXXXXXXXX";
         end if; 
     end process;
 
 
-    dict_1_ce0_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_ce0, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_1_ce0, ap_CS_fsm_state3, ap_CS_fsm_state5)
+    dict_1_ce0_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_ce0, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_1_ce0, ap_CS_fsm_state3, ap_CS_fsm_state5)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
-            dict_1_ce0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_1_ce0;
+            dict_1_ce0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_1_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            dict_1_ce0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_ce0;
+            dict_1_ce0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_ce0;
         else 
             dict_1_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    dict_1_ce1_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_ce1, ap_CS_fsm_state3)
+    dict_1_ce1_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_ce1, ap_CS_fsm_state3)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            dict_1_ce1 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_ce1;
+            dict_1_ce1 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_ce1;
         else 
             dict_1_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    dict_1_d0_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_d0, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_1_d0, ap_CS_fsm_state3, ap_CS_fsm_state5)
+    dict_1_d0_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_d0, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_1_d0, ap_CS_fsm_state3, ap_CS_fsm_state5)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
-            dict_1_d0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_1_d0;
+            dict_1_d0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_1_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            dict_1_d0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_d0;
+            dict_1_d0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_d0;
         else 
             dict_1_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    dict_1_we0_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_we0, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_1_we0, ap_CS_fsm_state3, ap_CS_fsm_state5)
+    dict_1_we0_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_we0, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_1_we0, ap_CS_fsm_state3, ap_CS_fsm_state5)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
-            dict_1_we0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_1_we0;
+            dict_1_we0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_1_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            dict_1_we0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_we0;
+            dict_1_we0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_we0;
         else 
             dict_1_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    dict_1_we1_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_we1, ap_CS_fsm_state3)
+    dict_1_we1_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_we1, ap_CS_fsm_state3)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            dict_1_we1 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_1_we1;
+            dict_1_we1 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_1_we1;
         else 
             dict_1_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    dict_address0_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_address0, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_address0, ap_CS_fsm_state3, ap_CS_fsm_state5)
+    dict_2_address0_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_address0, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_2_address0, ap_CS_fsm_state3, ap_CS_fsm_state5)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
-            dict_address0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_address0;
+            dict_2_address0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_2_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            dict_address0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_address0;
+            dict_2_address0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_address0;
         else 
-            dict_address0 <= "XXXXXXXXXXX";
+            dict_2_address0 <= "XXXXXXXXXX";
         end if; 
     end process;
 
 
-    dict_ce0_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_ce0, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_ce0, ap_CS_fsm_state3, ap_CS_fsm_state5)
+    dict_2_ce0_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_ce0, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_2_ce0, ap_CS_fsm_state3, ap_CS_fsm_state5)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
-            dict_ce0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_ce0;
+            dict_2_ce0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_2_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            dict_ce0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_ce0;
+            dict_2_ce0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_ce0;
+        else 
+            dict_2_ce0 <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    dict_2_ce1_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_ce1, ap_CS_fsm_state3)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            dict_2_ce1 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_ce1;
+        else 
+            dict_2_ce1 <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    dict_2_d0_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_d0, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_2_d0, ap_CS_fsm_state3, ap_CS_fsm_state5)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            dict_2_d0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_2_d0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            dict_2_d0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_d0;
+        else 
+            dict_2_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+        end if; 
+    end process;
+
+
+    dict_2_we0_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_we0, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_2_we0, ap_CS_fsm_state3, ap_CS_fsm_state5)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            dict_2_we0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_2_we0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            dict_2_we0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_we0;
+        else 
+            dict_2_we0 <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    dict_2_we1_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_we1, ap_CS_fsm_state3)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            dict_2_we1 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_2_we1;
+        else 
+            dict_2_we1 <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    dict_3_address0_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_address0, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_3_address0, ap_CS_fsm_state3, ap_CS_fsm_state5)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            dict_3_address0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_3_address0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            dict_3_address0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_address0;
+        else 
+            dict_3_address0 <= "XXXXXXXXXX";
+        end if; 
+    end process;
+
+
+    dict_3_ce0_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_ce0, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_3_ce0, ap_CS_fsm_state3, ap_CS_fsm_state5)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            dict_3_ce0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_3_ce0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            dict_3_ce0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_ce0;
+        else 
+            dict_3_ce0 <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    dict_3_ce1_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_ce1, ap_CS_fsm_state3)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            dict_3_ce1 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_ce1;
+        else 
+            dict_3_ce1 <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    dict_3_d0_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_d0, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_3_d0, ap_CS_fsm_state3, ap_CS_fsm_state5)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            dict_3_d0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_3_d0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            dict_3_d0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_d0;
+        else 
+            dict_3_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+        end if; 
+    end process;
+
+
+    dict_3_we0_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_we0, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_3_we0, ap_CS_fsm_state3, ap_CS_fsm_state5)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            dict_3_we0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_3_we0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            dict_3_we0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_we0;
+        else 
+            dict_3_we0 <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    dict_3_we1_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_we1, ap_CS_fsm_state3)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            dict_3_we1 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_3_we1;
+        else 
+            dict_3_we1 <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    dict_address0_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_address0, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_address0, ap_CS_fsm_state3, ap_CS_fsm_state5)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            dict_address0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_address0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            dict_address0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_address0;
+        else 
+            dict_address0 <= "XXXXXXXXXX";
+        end if; 
+    end process;
+
+
+    dict_ce0_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_ce0, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_ce0, ap_CS_fsm_state3, ap_CS_fsm_state5)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            dict_ce0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_ce0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            dict_ce0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_ce0;
         else 
             dict_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    dict_ce1_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_ce1, ap_CS_fsm_state3)
+    dict_ce1_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_ce1, ap_CS_fsm_state3)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            dict_ce1 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_ce1;
+            dict_ce1 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_ce1;
         else 
             dict_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    dict_d0_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_d0, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_d0, ap_CS_fsm_state3, ap_CS_fsm_state5)
+    dict_d0_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_d0, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_d0, ap_CS_fsm_state3, ap_CS_fsm_state5)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
-            dict_d0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_d0;
+            dict_d0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            dict_d0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_d0;
+            dict_d0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_d0;
         else 
             dict_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    dict_we0_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_we0, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_we0, ap_CS_fsm_state3, ap_CS_fsm_state5)
+    dict_we0_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_we0, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_we0, ap_CS_fsm_state3, ap_CS_fsm_state5)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
-            dict_we0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_dict_we0;
+            dict_we0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_dict_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            dict_we0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_we0;
+            dict_we0 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_we0;
         else 
             dict_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    dict_we1_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_we1, ap_CS_fsm_state3)
+    dict_we1_assign_proc : process(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_we1, ap_CS_fsm_state3)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            dict_we1 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_dict_we1;
+            dict_we1 <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_dict_we1;
         else 
             dict_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
-    grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_ap_start <= grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_ap_start_reg;
-    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_ap_start <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_142_ap_start_reg;
-    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_ap_start <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_ap_start_reg;
-    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_fifo_cap <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_fifo_cap0(4 - 1 downto 0);
+    grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_ap_start <= grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_ap_start_reg;
+    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_ap_start <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush_fu_150_ap_start_reg;
+    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_ap_start <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_ap_start_reg;
+    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_fifo_cap <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_fifo_cap0(4 - 1 downto 0);
     
-    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_fifo_cap0_proc : process(compressdStream_fifo_cap)
+    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_fifo_cap0_proc : process(compressdStream_fifo_cap)
     variable vlo_cpy : STD_LOGIC_VECTOR(32+32 - 1 downto 0);
     variable vhi_cpy : STD_LOGIC_VECTOR(32+32 - 1 downto 0);
     variable v0_cpy : STD_LOGIC_VECTOR(32 - 1 downto 0);
-    variable grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_fifo_cap0_i : integer;
+    variable grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_fifo_cap0_i : integer;
     variable section : STD_LOGIC_VECTOR(32 - 1 downto 0);
     variable tmp_mask : STD_LOGIC_VECTOR(32 - 1 downto 0);
     variable resvalue, res_value, res_mask : STD_LOGIC_VECTOR(32 - 1 downto 0);
@@ -1156,8 +1418,8 @@ begin
         if (vlo_cpy(5 - 1 downto 0) > vhi_cpy(5 - 1 downto 0)) then
             vhi_cpy(5-1 downto 0) := std_logic_vector(32-1-unsigned(ap_const_lv32_3(5-1 downto 0)));
             vlo_cpy(5-1 downto 0) := std_logic_vector(32-1-unsigned(ap_const_lv32_0(5-1 downto 0)));
-            for grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_fifo_cap0_i in 0 to 32-1 loop
-                v0_cpy(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_fifo_cap0_i) := compressdStream_fifo_cap(32-1-grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_fifo_cap0_i);
+            for grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_fifo_cap0_i in 0 to 32-1 loop
+                v0_cpy(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_fifo_cap0_i) := compressdStream_fifo_cap(32-1-grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_fifo_cap0_i);
             end loop;
         end if;
         res_value := std_logic_vector(shift_right(unsigned(v0_cpy), to_integer(unsigned('0' & vlo_cpy(5-1 downto 0)))));
@@ -1168,16 +1430,16 @@ begin
         res_mask := std_logic_vector(shift_left(unsigned(tmp_mask),to_integer(unsigned('0' & section(31-1 downto 0)))));
         res_mask := res_mask(32-2 downto 0) & '0';
         resvalue := res_value and not res_mask;
-        grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_fifo_cap0 <= resvalue(32-1 downto 0);
+        grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_fifo_cap0 <= resvalue(32-1 downto 0);
     end process;
 
-    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_num_data_valid <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_num_data_valid0(4 - 1 downto 0);
+    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_num_data_valid <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_num_data_valid0(4 - 1 downto 0);
     
-    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_num_data_valid0_proc : process(compressdStream_num_data_valid)
+    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_num_data_valid0_proc : process(compressdStream_num_data_valid)
     variable vlo_cpy : STD_LOGIC_VECTOR(32+32 - 1 downto 0);
     variable vhi_cpy : STD_LOGIC_VECTOR(32+32 - 1 downto 0);
     variable v0_cpy : STD_LOGIC_VECTOR(32 - 1 downto 0);
-    variable grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_num_data_valid0_i : integer;
+    variable grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_num_data_valid0_i : integer;
     variable section : STD_LOGIC_VECTOR(32 - 1 downto 0);
     variable tmp_mask : STD_LOGIC_VECTOR(32 - 1 downto 0);
     variable resvalue, res_value, res_mask : STD_LOGIC_VECTOR(32 - 1 downto 0);
@@ -1190,8 +1452,8 @@ begin
         if (vlo_cpy(5 - 1 downto 0) > vhi_cpy(5 - 1 downto 0)) then
             vhi_cpy(5-1 downto 0) := std_logic_vector(32-1-unsigned(ap_const_lv32_3(5-1 downto 0)));
             vlo_cpy(5-1 downto 0) := std_logic_vector(32-1-unsigned(ap_const_lv32_0(5-1 downto 0)));
-            for grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_num_data_valid0_i in 0 to 32-1 loop
-                v0_cpy(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_num_data_valid0_i) := compressdStream_num_data_valid(32-1-grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_num_data_valid0_i);
+            for grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_num_data_valid0_i in 0 to 32-1 loop
+                v0_cpy(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_num_data_valid0_i) := compressdStream_num_data_valid(32-1-grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_num_data_valid0_i);
             end loop;
         end if;
         res_value := std_logic_vector(shift_right(unsigned(v0_cpy), to_integer(unsigned('0' & vlo_cpy(5-1 downto 0)))));
@@ -1202,18 +1464,18 @@ begin
         res_mask := std_logic_vector(shift_left(unsigned(tmp_mask),to_integer(unsigned('0' & section(31-1 downto 0)))));
         res_mask := res_mask(32-2 downto 0) & '0';
         resvalue := res_value and not res_mask;
-        grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_compressdStream_num_data_valid0 <= resvalue(32-1 downto 0);
+        grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_compressdStream_num_data_valid0 <= resvalue(32-1 downto 0);
     end process;
 
-    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185_ap_start <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_185_ap_start_reg;
-    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_ap_start <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_ap_start_reg;
-    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_fifo_cap <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_fifo_cap0(4 - 1 downto 0);
+    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197_ap_start <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_leftover_fu_197_ap_start_reg;
+    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_ap_start <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_ap_start_reg;
+    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_fifo_cap <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_fifo_cap0(4 - 1 downto 0);
     
-    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_fifo_cap0_proc : process(compressdStream_fifo_cap)
+    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_fifo_cap0_proc : process(compressdStream_fifo_cap)
     variable vlo_cpy : STD_LOGIC_VECTOR(32+32 - 1 downto 0);
     variable vhi_cpy : STD_LOGIC_VECTOR(32+32 - 1 downto 0);
     variable v0_cpy : STD_LOGIC_VECTOR(32 - 1 downto 0);
-    variable grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_fifo_cap0_i : integer;
+    variable grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_fifo_cap0_i : integer;
     variable section : STD_LOGIC_VECTOR(32 - 1 downto 0);
     variable tmp_mask : STD_LOGIC_VECTOR(32 - 1 downto 0);
     variable resvalue, res_value, res_mask : STD_LOGIC_VECTOR(32 - 1 downto 0);
@@ -1226,8 +1488,8 @@ begin
         if (vlo_cpy(5 - 1 downto 0) > vhi_cpy(5 - 1 downto 0)) then
             vhi_cpy(5-1 downto 0) := std_logic_vector(32-1-unsigned(ap_const_lv32_3(5-1 downto 0)));
             vlo_cpy(5-1 downto 0) := std_logic_vector(32-1-unsigned(ap_const_lv32_0(5-1 downto 0)));
-            for grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_fifo_cap0_i in 0 to 32-1 loop
-                v0_cpy(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_fifo_cap0_i) := compressdStream_fifo_cap(32-1-grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_fifo_cap0_i);
+            for grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_fifo_cap0_i in 0 to 32-1 loop
+                v0_cpy(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_fifo_cap0_i) := compressdStream_fifo_cap(32-1-grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_fifo_cap0_i);
             end loop;
         end if;
         res_value := std_logic_vector(shift_right(unsigned(v0_cpy), to_integer(unsigned('0' & vlo_cpy(5-1 downto 0)))));
@@ -1238,16 +1500,16 @@ begin
         res_mask := std_logic_vector(shift_left(unsigned(tmp_mask),to_integer(unsigned('0' & section(31-1 downto 0)))));
         res_mask := res_mask(32-2 downto 0) & '0';
         resvalue := res_value and not res_mask;
-        grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_fifo_cap0 <= resvalue(32-1 downto 0);
+        grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_fifo_cap0 <= resvalue(32-1 downto 0);
     end process;
 
-    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_num_data_valid <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_num_data_valid0(4 - 1 downto 0);
+    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_num_data_valid <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_num_data_valid0(4 - 1 downto 0);
     
-    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_num_data_valid0_proc : process(compressdStream_num_data_valid)
+    grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_num_data_valid0_proc : process(compressdStream_num_data_valid)
     variable vlo_cpy : STD_LOGIC_VECTOR(32+32 - 1 downto 0);
     variable vhi_cpy : STD_LOGIC_VECTOR(32+32 - 1 downto 0);
     variable v0_cpy : STD_LOGIC_VECTOR(32 - 1 downto 0);
-    variable grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_num_data_valid0_i : integer;
+    variable grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_num_data_valid0_i : integer;
     variable section : STD_LOGIC_VECTOR(32 - 1 downto 0);
     variable tmp_mask : STD_LOGIC_VECTOR(32 - 1 downto 0);
     variable resvalue, res_value, res_mask : STD_LOGIC_VECTOR(32 - 1 downto 0);
@@ -1260,8 +1522,8 @@ begin
         if (vlo_cpy(5 - 1 downto 0) > vhi_cpy(5 - 1 downto 0)) then
             vhi_cpy(5-1 downto 0) := std_logic_vector(32-1-unsigned(ap_const_lv32_3(5-1 downto 0)));
             vlo_cpy(5-1 downto 0) := std_logic_vector(32-1-unsigned(ap_const_lv32_0(5-1 downto 0)));
-            for grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_num_data_valid0_i in 0 to 32-1 loop
-                v0_cpy(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_num_data_valid0_i) := compressdStream_num_data_valid(32-1-grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_num_data_valid0_i);
+            for grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_num_data_valid0_i in 0 to 32-1 loop
+                v0_cpy(grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_num_data_valid0_i) := compressdStream_num_data_valid(32-1-grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_num_data_valid0_i);
             end loop;
         end if;
         res_value := std_logic_vector(shift_right(unsigned(v0_cpy), to_integer(unsigned('0' & vlo_cpy(5-1 downto 0)))));
@@ -1272,20 +1534,20 @@ begin
         res_mask := std_logic_vector(shift_left(unsigned(tmp_mask),to_integer(unsigned('0' & section(31-1 downto 0)))));
         res_mask := res_mask(32-2 downto 0) & '0';
         resvalue := res_value and not res_mask;
-        grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_compressdStream_num_data_valid0 <= resvalue(32-1 downto 0);
+        grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_compressdStream_num_data_valid0 <= resvalue(32-1 downto 0);
     end process;
 
-    icmp_ln64_fu_204_p2 <= "1" when (input_size = ap_const_lv32_0) else "0";
-    icmp_ln93_fu_270_p2 <= "1" when (unsigned(sub27_fu_264_p2) > unsigned(ap_const_lv32_5)) else "0";
+    icmp_ln64_fu_216_p2 <= "1" when (input_size = ap_const_lv32_0) else "0";
+    icmp_ln93_fu_282_p2 <= "1" when (unsigned(sub27_fu_276_p2) > unsigned(ap_const_lv32_5)) else "0";
 
-    inStream_read_assign_proc : process(icmp_ln64_reg_497, grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_inStream_read, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_inStream_read, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_inStream_read, ap_CS_fsm_state3, ap_CS_fsm_state5, ap_CS_fsm_state9)
+    inStream_read_assign_proc : process(icmp_ln64_reg_509, grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_inStream_read, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_inStream_read, grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_inStream_read, ap_CS_fsm_state3, ap_CS_fsm_state5, ap_CS_fsm_state9)
     begin
-        if (((icmp_ln64_reg_497 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state9))) then 
-            inStream_read <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_196_inStream_read;
+        if (((icmp_ln64_reg_509 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state9))) then 
+            inStream_read <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes_fu_208_inStream_read;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
-            inStream_read <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_inStream_read;
+            inStream_read <= grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_inStream_read;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            inStream_read <= grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_148_inStream_read;
+            inStream_read <= grp_lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2_fu_158_inStream_read;
         else 
             inStream_read <= ap_const_logic_0;
         end if; 
@@ -1332,20 +1594,20 @@ begin
         end if; 
     end process;
 
-    select_ln82_1_fu_328_p3 <= 
-        grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_present_window_14_out when (icmp_ln93_reg_521(0) = '1') else 
+    select_ln82_1_fu_340_p3 <= 
+        grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_present_window_14_out when (icmp_ln93_reg_533(0) = '1') else 
         present_window_3_loc_fu_112;
-    select_ln82_2_fu_336_p3 <= 
-        grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_present_window_13_out when (icmp_ln93_reg_521(0) = '1') else 
+    select_ln82_2_fu_348_p3 <= 
+        grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_present_window_13_out when (icmp_ln93_reg_533(0) = '1') else 
         present_window_2_loc_fu_108;
-    select_ln82_3_fu_344_p3 <= 
-        grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_present_window_12_out when (icmp_ln93_reg_521(0) = '1') else 
+    select_ln82_3_fu_356_p3 <= 
+        grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_present_window_12_out when (icmp_ln93_reg_533(0) = '1') else 
         present_window_1_loc_fu_104;
-    select_ln82_4_fu_352_p3 <= 
-        grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_present_window_11_out when (icmp_ln93_reg_521(0) = '1') else 
+    select_ln82_4_fu_364_p3 <= 
+        grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_present_window_11_out when (icmp_ln93_reg_533(0) = '1') else 
         present_window_loc_fu_100;
-    select_ln82_fu_320_p3 <= 
-        grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164_present_window_15_out when (icmp_ln93_reg_521(0) = '1') else 
+    select_ln82_fu_332_p3 <= 
+        grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174_present_window_15_out when (icmp_ln93_reg_533(0) = '1') else 
         present_window_4_loc_fu_116;
     start_out <= real_start;
 
@@ -1358,5 +1620,5 @@ begin
         end if; 
     end process;
 
-    sub27_fu_264_p2 <= std_logic_vector(unsigned(input_size_read_reg_402) + unsigned(ap_const_lv32_FFFFFFC0));
+    sub27_fu_276_p2 <= std_logic_vector(unsigned(input_size_read_reg_414) + unsigned(ap_const_lv32_FFFFFFC0));
 end behav;

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2'" level="0">
-<item name = "Date">Sun Oct 26 16:56:21 2025
+<item name = "Date">Mon Oct 27 16:28:44 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">lz4_compress_configed</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">15.00 ns, 5.127 ns, 1.50 ns</column>
+<column name="ap_clk">7.00 ns, 4.800 ns, 0.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">6, 6, 90.000 ns, 90.000 ns, 6, 6, no</column>
+<column name="">6, 6, 42.000 ns, 42.000 ns, 6, 6, no</column>
 </table>
 </item>
 <item name = "Detail">

@@ -82680,30 +82680,14 @@ static void lz4CompressPart1(hls::stream<ap_uint<32> >& inStream,
     uint32_t lit_count_flag = 0;
 
 
-    ap_uint<32> currentEncodedValue = inStream.read();
-    ap_uint<32> nextEncodedValue;
-    bool has_next_value = (input_size > 1);
-    if (has_next_value) {
-        nextEncodedValue = inStream.read();
+    ap_uint<32> currentEncodedValue;
+    bool has_next_value = false;
+
+
+    if (input_size > 0) {
+        currentEncodedValue = inStream.read();
+        has_next_value = true;
     }
-
-
-    ap_uint<32> tmpEncodedValue_reg;
-    uint8_t tCh_reg;
-    uint8_t tLen_reg;
-    uint16_t tOffset_reg;
-    uint32_t match_offset_reg;
-    bool has_match_reg;
-    bool lit_overflow_reg;
-
-
-    bool should_write_lenOffset = false;
-    bool should_write_literal = false;
-    ap_uint<64> tmpValue_reg;
-    uint8_t literal_value_reg;
-
-
-    uint8_t match_len_reg;
 
 lz4_divide:
     for (uint32_t i = 0; i < input_size;) {
@@ -82711,58 +82695,40 @@ lz4_divide:
 #pragma HLS LOOP_FLATTEN off
 
 
-        tmpEncodedValue_reg = currentEncodedValue;
+        uint8_t tCh = currentEncodedValue.range(7, 0);
+        uint8_t tLen = currentEncodedValue.range(15, 8);
+        uint16_t tOffset = currentEncodedValue.range(31, 16);
 
 
-        tCh_reg = tmpEncodedValue_reg.range(7, 0);
-        tLen_reg = tmpEncodedValue_reg.range(15, 8);
-        tOffset_reg = tmpEncodedValue_reg.range(31, 16);
-        match_offset_reg = tOffset_reg;
+        bool has_match = (tLen != 0);
+        bool lit_overflow = (lit_count >= MAX_LIT_COUNT);
 
 
-        has_match_reg = (tLen_reg != 0);
-        lit_overflow_reg = (lit_count >= MAX_LIT_COUNT);
-        match_len_reg = tLen_reg - 4;
-
-
-        currentEncodedValue = nextEncodedValue;
-        if (i < (input_size - 2) && has_next_value) {
-            nextEncodedValue = inStream.read();
+        if (i < (input_size - 1) && has_next_value) {
+            currentEncodedValue = inStream.read();
         } else {
             has_next_value = false;
         }
 
 
-        should_write_lenOffset = false;
-        should_write_literal = false;
-        literal_value_reg = tCh_reg;
-
-        if (lit_overflow_reg) {
+        if (lit_overflow) {
             lit_count_flag = 1;
-        } else if (has_match_reg) {
+        } else if (has_match) {
 
-            tmpValue_reg.range(63, 32) = lit_count;
-            tmpValue_reg.range(15, 0) = match_len_reg;
-            tmpValue_reg.range(31, 16) = match_offset_reg;
+            ap_uint<64> tmpValue;
+            tmpValue.range(63, 32) = lit_count;
+            tmpValue.range(15, 0) = tLen - 4;
+            tmpValue.range(31, 16) = tOffset;
 
-            should_write_lenOffset = true;
+            lenOffset_Stream << tmpValue;
             lit_count = 0;
         } else {
-            should_write_literal = true;
+            lit_outStream << tCh;
             lit_count++;
         }
 
 
-        if (should_write_lenOffset) {
-            lenOffset_Stream << tmpValue_reg;
-        }
-
-        if (should_write_literal) {
-            lit_outStream << literal_value_reg;
-        }
-
-
-        i += has_match_reg ? tLen_reg : 1;
+        i += has_match ? tLen : 1;
     }
 
 
@@ -82771,10 +82737,8 @@ lz4_divide:
         tmpValue.range(63, 32) = lit_count;
 
 
-        bool is_max_lit = (lit_count == MAX_LIT_COUNT);
-        lit_count_flag = lit_count_flag || is_max_lit;
-
-        if (is_max_lit) {
+        if (lit_count == MAX_LIT_COUNT) {
+            lit_count_flag = 1;
             tmpValue.range(15, 0) = 777;
             tmpValue.range(31, 16) = 777;
         } else {
@@ -83016,7 +82980,7 @@ lz4_compress:
 
 namespace xf {
 namespace compression {
-# 411 "D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz4_compress.hpp"
+# 375 "D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz4_compress.hpp"
 template <int MAX_LIT_COUNT, int PARALLEL_UNITS>
 static void lz4Compress(hls::stream<ap_uint<32> >& inStream,
                         hls::stream<ap_uint<8> >& outStream,
@@ -83029,8 +82993,8 @@ static void lz4Compress(hls::stream<ap_uint<32> >& inStream,
     hls::stream<uint8_t> lit_outStream("lit_outStream");
     hls::stream<ap_uint<64> > lenOffset_Stream("lenOffset_Stream");
 
-#pragma HLS STREAM variable = lit_outStream depth = MAX_LIT_COUNT * 2
-#pragma HLS STREAM variable = lenOffset_Stream depth = c_gmemBurstSize * 2
+#pragma HLS STREAM variable = lit_outStream depth = MAX_LIT_COUNT * 32
+#pragma HLS STREAM variable = lenOffset_Stream depth = c_gmemBurstSize * 32
 
 #pragma HLS BIND_STORAGE variable = lit_outStream type = FIFO impl = BRAM
 #pragma HLS BIND_STORAGE variable = lenOffset_Stream type = FIFO impl = SRL

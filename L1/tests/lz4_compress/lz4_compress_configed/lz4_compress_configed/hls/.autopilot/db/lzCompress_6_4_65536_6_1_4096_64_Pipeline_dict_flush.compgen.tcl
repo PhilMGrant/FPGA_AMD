@@ -12,13 +12,51 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     id 1 \
+    name dict_3 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename dict_3 \
+    op interface \
+    ports { dict_3_address0 { O 10 vector } dict_3_ce0 { O 1 bit } dict_3_we0 { O 1 bit } dict_3_d0 { O 432 vector } dict_3_address1 { O 10 vector } dict_3_ce1 { O 1 bit } dict_3_we1 { O 1 bit } dict_3_d1 { O 432 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'dict_3'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 2 \
+    name dict_2 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename dict_2 \
+    op interface \
+    ports { dict_2_address0 { O 10 vector } dict_2_ce0 { O 1 bit } dict_2_we0 { O 1 bit } dict_2_d0 { O 432 vector } dict_2_address1 { O 10 vector } dict_2_ce1 { O 1 bit } dict_2_we1 { O 1 bit } dict_2_d1 { O 432 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'dict_2'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 3 \
     name dict_1 \
     reset_level 1 \
     sync_rst true \
     dir O \
     corename dict_1 \
     op interface \
-    ports { dict_1_address0 { O 11 vector } dict_1_ce0 { O 1 bit } dict_1_we0 { O 1 bit } dict_1_d0 { O 432 vector } dict_1_address1 { O 11 vector } dict_1_ce1 { O 1 bit } dict_1_we1 { O 1 bit } dict_1_d1 { O 432 vector } } \
+    ports { dict_1_address0 { O 10 vector } dict_1_ce0 { O 1 bit } dict_1_we0 { O 1 bit } dict_1_d0 { O 432 vector } dict_1_address1 { O 10 vector } dict_1_ce1 { O 1 bit } dict_1_we1 { O 1 bit } dict_1_d1 { O 432 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'dict_1'"
@@ -30,14 +68,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 2 \
+    id 4 \
     name dict \
     reset_level 1 \
     sync_rst true \
     dir O \
     corename dict \
     op interface \
-    ports { dict_address0 { O 11 vector } dict_ce0 { O 1 bit } dict_we0 { O 1 bit } dict_d0 { O 432 vector } dict_address1 { O 11 vector } dict_ce1 { O 1 bit } dict_we1 { O 1 bit } dict_d1 { O 432 vector } } \
+    ports { dict_address0 { O 10 vector } dict_ce0 { O 1 bit } dict_we0 { O 1 bit } dict_d0 { O 432 vector } dict_address1 { O 10 vector } dict_ce1 { O 1 bit } dict_we1 { O 1 bit } dict_d1 { O 432 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'dict'"

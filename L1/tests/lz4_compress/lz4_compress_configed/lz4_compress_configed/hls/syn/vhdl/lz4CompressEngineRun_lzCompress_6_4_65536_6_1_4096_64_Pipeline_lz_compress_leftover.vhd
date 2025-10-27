@@ -131,7 +131,7 @@ attribute shreg_extract : string;
 
 
 begin
-    sparsemux_11_3_8_1_1_U29 : component lz4CompressEngineRun_sparsemux_11_3_8_1_1
+    sparsemux_11_3_8_1_1_U35 : component lz4CompressEngineRun_sparsemux_11_3_8_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,

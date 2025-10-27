@@ -9,8 +9,8 @@
 <ProductFamily>zynq</ProductFamily>
 <Part>xc7z020-clg484-1</Part>
 <TopModelName>lzBooster_255_16384_64_s</TopModelName>
-<TargetClockPeriod>15.00</TargetClockPeriod>
-<ClockUncertainty>1.50</ClockUncertainty>
+<TargetClockPeriod>7.00</TargetClockPeriod>
+<ClockUncertainty>0.70</ClockUncertainty>
 <FlowTarget>vivado</FlowTarget>
 </UserAssignments>
 
@@ -18,7 +18,7 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>9.517</EstimatedClockPeriod>
+<EstimatedClockPeriod>6.300</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -33,10 +33,10 @@
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <lz_booster_left_bytes>
-<Slack>13.50</Slack>
+<Slack>6.30</Slack>
 <TripCount>64</TripCount>
 <Latency>64</Latency>
-<AbsoluteTimeLatency>960</AbsoluteTimeLatency>
+<AbsoluteTimeLatency>448</AbsoluteTimeLatency>
 <IterationLatency>1</IterationLatency>
 <InstanceList>
 </InstanceList>
@@ -60,8 +60,8 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>8</BRAM_18K>
-<FF>505</FF>
-<LUT>992</LUT>
+<FF>488</FF>
+<LUT>1009</LUT>
 <DSP>0</DSP>
 <URAM>0</URAM>
 </Resources>

@@ -1,4 +1,4 @@
-# 2025-10-27T13:52:17.663493
+# 2025-10-27T22:45:51.306944500
 import vitis
 
 client = vitis.create_client()
@@ -8,30 +8,6 @@ comp = client.get_component(name="lz4_compress_test_Config")
 comp.run(operation="C_SIMULATION")
 
 comp.run(operation="SYNTHESIS")
-
-comp.run(operation="CO_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="SYNTHESIS")
-
-comp.run(operation="CO_SIMULATION")
-
-comp.run(operation="SYNTHESIS")
-
-comp.run(operation="CO_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
-
-comp.run(operation="SYNTHESIS")
-
-comp.run(operation="CO_SIMULATION")
-
-comp.run(operation="SYNTHESIS")
-
-comp.run(operation="CO_SIMULATION")
-
-comp.run(operation="C_SIMULATION")
 
 comp.run(operation="C_SIMULATION")
 

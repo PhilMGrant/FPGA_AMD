@@ -39,16 +39,17 @@ module lz4CompressEngineRun_lzBestMatchFilter_6_65536_s (
         input_size_c1_fifo_cap
 );
 
-parameter    ap_ST_fsm_state1 = 10'd1;
-parameter    ap_ST_fsm_state2 = 10'd2;
-parameter    ap_ST_fsm_state3 = 10'd4;
-parameter    ap_ST_fsm_state4 = 10'd8;
-parameter    ap_ST_fsm_state5 = 10'd16;
-parameter    ap_ST_fsm_state6 = 10'd32;
-parameter    ap_ST_fsm_state7 = 10'd64;
-parameter    ap_ST_fsm_state8 = 10'd128;
-parameter    ap_ST_fsm_state9 = 10'd256;
-parameter    ap_ST_fsm_state10 = 10'd512;
+parameter    ap_ST_fsm_state1 = 11'd1;
+parameter    ap_ST_fsm_state2 = 11'd2;
+parameter    ap_ST_fsm_state3 = 11'd4;
+parameter    ap_ST_fsm_state4 = 11'd8;
+parameter    ap_ST_fsm_state5 = 11'd16;
+parameter    ap_ST_fsm_state6 = 11'd32;
+parameter    ap_ST_fsm_state7 = 11'd64;
+parameter    ap_ST_fsm_state8 = 11'd128;
+parameter    ap_ST_fsm_state9 = 11'd256;
+parameter    ap_ST_fsm_state10 = 11'd512;
+parameter    ap_ST_fsm_state11 = 11'd1024;
 
 input   ap_clk;
 input   ap_rst;
@@ -93,24 +94,25 @@ reg input_size_c1_write;
 reg    real_start;
 reg    start_once_reg;
 reg    ap_done_reg;
-(* fsm_encoding = "none" *) reg   [9:0] ap_CS_fsm;
+(* fsm_encoding = "none" *) reg   [10:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
 reg    internal_ap_ready;
 reg    compressdStream_blk_n;
-wire   [0:0] icmp_ln327_fu_156_p2;
 wire    ap_CS_fsm_state2;
 wire    ap_CS_fsm_state3;
 wire    ap_CS_fsm_state4;
 wire    ap_CS_fsm_state5;
 wire    ap_CS_fsm_state6;
+wire    ap_CS_fsm_state7;
 reg    bestMatchStream_blk_n;
-wire    ap_CS_fsm_state10;
+wire    ap_CS_fsm_state11;
 reg   [0:0] icmp_ln327_reg_301;
 wire   [0:0] icmp_ln367_fu_216_p2;
 reg    input_size_blk_n;
 reg    input_size_c1_blk_n;
 reg   [31:0] input_size_2_reg_296;
 reg    ap_block_state1;
+wire   [0:0] icmp_ln327_fu_156_p2;
 reg   [31:0] compare_window_reg_312;
 reg   [31:0] compare_window_16_reg_317;
 reg   [31:0] compare_window_17_reg_322;
@@ -137,25 +139,26 @@ wire    grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_compare
 wire   [31:0] grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_compare_window_17_out;
 wire    grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_compare_window_17_out_ap_vld;
 reg    grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_ap_start_reg;
-wire    ap_CS_fsm_state7;
 wire    ap_CS_fsm_state8;
+wire    ap_CS_fsm_state9;
 reg   [2:0] i_8_fu_104;
 wire   [2:0] add_ln367_fu_222_p2;
-reg    ap_predicate_op53_write_state10;
-reg    ap_block_state10;
+reg    ap_predicate_op54_write_state11;
+reg    ap_block_state11;
 wire   [31:0] tmp_s_fu_228_p15;
 wire   [31:0] tmp_s_fu_228_p13;
-reg   [9:0] ap_NS_fsm;
+reg   [10:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 reg    ap_ST_fsm_state2_blk;
 reg    ap_ST_fsm_state3_blk;
 reg    ap_ST_fsm_state4_blk;
 reg    ap_ST_fsm_state5_blk;
 reg    ap_ST_fsm_state6_blk;
-wire    ap_ST_fsm_state7_blk;
-reg    ap_ST_fsm_state8_blk;
-wire    ap_ST_fsm_state9_blk;
-reg    ap_ST_fsm_state10_blk;
+reg    ap_ST_fsm_state7_blk;
+wire    ap_ST_fsm_state8_blk;
+reg    ap_ST_fsm_state9_blk;
+wire    ap_ST_fsm_state10_blk;
+reg    ap_ST_fsm_state11_blk;
 wire   [2:0] tmp_s_fu_228_p1;
 wire   [2:0] tmp_s_fu_228_p3;
 wire   [2:0] tmp_s_fu_228_p5;
@@ -168,7 +171,7 @@ wire    ap_ce_reg;
 initial begin
 #0 start_once_reg = 1'b0;
 #0 ap_done_reg = 1'b0;
-#0 ap_CS_fsm = 10'd1;
+#0 ap_CS_fsm = 11'd1;
 #0 grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_ap_start_reg = 1'b0;
 #0 i_8_fu_104 = 3'd0;
 end
@@ -229,7 +232,7 @@ lz4CompressEngineRun_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter grp_l
     .def_WIDTH( 32 ),
     .sel_WIDTH( 3 ),
     .dout_WIDTH( 32 ))
-sparsemux_13_3_32_1_1_U59(
+sparsemux_13_3_32_1_1_U65(
     .din0(grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_compare_window_17_out),
     .din1(grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_compare_window_16_out),
     .din2(grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_compare_window_15_out),
@@ -255,7 +258,7 @@ always @ (posedge ap_clk) begin
     end else begin
         if ((ap_continue == 1'b1)) begin
             ap_done_reg <= 1'b0;
-        end else if (((1'b1 == ap_CS_fsm_state10) & (1'b0 == ap_block_state10) & ((icmp_ln367_fu_216_p2 == 1'd1) | (icmp_ln327_reg_301 == 1'd1)))) begin
+        end else if (((1'b1 == ap_CS_fsm_state11) & (1'b0 == ap_block_state11) & ((icmp_ln367_fu_216_p2 == 1'd1) | (icmp_ln327_reg_301 == 1'd1)))) begin
             ap_done_reg <= 1'b1;
         end
     end
@@ -265,7 +268,7 @@ always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
         grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_ap_start_reg <= 1'b0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state7)) begin
+        if ((1'b1 == ap_CS_fsm_state8)) begin
             grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_ap_start_reg <= 1'b1;
         end else if ((grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_ap_ready == 1'b1)) begin
             grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_ap_start_reg <= 1'b0;
@@ -286,56 +289,63 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln327_fu_156_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1) & (1'b0 == ap_block_state1))) begin
+    if (((compressdStream_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
         i_8_fu_104 <= 3'd0;
-    end else if (((1'b1 == ap_CS_fsm_state10) & (1'b0 == ap_block_state10) & (icmp_ln367_fu_216_p2 == 1'd0) & (icmp_ln327_reg_301 == 1'd0))) begin
+    end else if (((1'b1 == ap_CS_fsm_state11) & (1'b0 == ap_block_state11) & (icmp_ln367_fu_216_p2 == 1'd0) & (icmp_ln327_reg_301 == 1'd0))) begin
         i_8_fu_104 <= add_ln367_fu_222_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((compressdStream_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((compressdStream_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
         compare_window_16_reg_317 <= compressdStream_dout;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((compressdStream_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
+    if (((compressdStream_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
         compare_window_17_reg_322 <= compressdStream_dout;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((compressdStream_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
+    if (((compressdStream_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
         compare_window_18_reg_327 <= compressdStream_dout;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((compressdStream_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
+    if (((compressdStream_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
         compare_window_19_reg_332 <= compressdStream_dout;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((compressdStream_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
+    if (((compressdStream_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state7))) begin
         compare_window_20_reg_337 <= compressdStream_dout;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state1) & (1'b0 == ap_block_state1))) begin
+    if (((compressdStream_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
         compare_window_reg_312 <= compressdStream_dout;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((1'b1 == ap_CS_fsm_state1) & (1'b0 == ap_block_state1))) begin
         icmp_ln327_reg_301 <= icmp_ln327_fu_156_p2;
         input_size_2_reg_296 <= input_size_dout;
     end
 end
 
+assign ap_ST_fsm_state10_blk = 1'b0;
+
 always @ (*) begin
-    if ((1'b1 == ap_block_state10)) begin
-        ap_ST_fsm_state10_blk = 1'b1;
+    if ((1'b1 == ap_block_state11)) begin
+        ap_ST_fsm_state11_blk = 1'b1;
     end else begin
-        ap_ST_fsm_state10_blk = 1'b0;
+        ap_ST_fsm_state11_blk = 1'b0;
     end
 end
 
@@ -387,20 +397,26 @@ always @ (*) begin
     end
 end
 
-assign ap_ST_fsm_state7_blk = 1'b0;
-
 always @ (*) begin
-    if ((grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_ap_done == 1'b0)) begin
-        ap_ST_fsm_state8_blk = 1'b1;
+    if ((compressdStream_empty_n == 1'b0)) begin
+        ap_ST_fsm_state7_blk = 1'b1;
     end else begin
-        ap_ST_fsm_state8_blk = 1'b0;
+        ap_ST_fsm_state7_blk = 1'b0;
     end
 end
 
-assign ap_ST_fsm_state9_blk = 1'b0;
+assign ap_ST_fsm_state8_blk = 1'b0;
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state10) & (1'b0 == ap_block_state10) & ((icmp_ln367_fu_216_p2 == 1'd1) | (icmp_ln327_reg_301 == 1'd1)))) begin
+    if ((grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_ap_done == 1'b0)) begin
+        ap_ST_fsm_state9_blk = 1'b1;
+    end else begin
+        ap_ST_fsm_state9_blk = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b1 == ap_CS_fsm_state11) & (1'b0 == ap_block_state11) & ((icmp_ln367_fu_216_p2 == 1'd1) | (icmp_ln327_reg_301 == 1'd1)))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = ap_done_reg;
@@ -416,7 +432,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state10) & (icmp_ln367_fu_216_p2 == 1'd0) & (icmp_ln327_reg_301 == 1'd0))) begin
+    if (((1'b1 == ap_CS_fsm_state11) & (icmp_ln367_fu_216_p2 == 1'd0) & (icmp_ln327_reg_301 == 1'd0))) begin
         bestMatchStream_blk_n = bestMatchStream_full_n;
     end else begin
         bestMatchStream_blk_n = 1'b1;
@@ -424,9 +440,9 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_predicate_op53_write_state10 == 1'b1) & (1'b1 == ap_CS_fsm_state10) & (1'b0 == ap_block_state10))) begin
+    if (((ap_predicate_op54_write_state11 == 1'b1) & (1'b1 == ap_CS_fsm_state11) & (1'b0 == ap_block_state11))) begin
         bestMatchStream_din = tmp_s_fu_228_p15;
-    end else if ((1'b1 == ap_CS_fsm_state8)) begin
+    end else if ((1'b1 == ap_CS_fsm_state9)) begin
         bestMatchStream_din = grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_bestMatchStream_din;
     end else begin
         bestMatchStream_din = grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_bestMatchStream_din;
@@ -434,9 +450,9 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_predicate_op53_write_state10 == 1'b1) & (1'b1 == ap_CS_fsm_state10) & (1'b0 == ap_block_state10))) begin
+    if (((ap_predicate_op54_write_state11 == 1'b1) & (1'b1 == ap_CS_fsm_state11) & (1'b0 == ap_block_state11))) begin
         bestMatchStream_write = 1'b1;
-    end else if ((1'b1 == ap_CS_fsm_state8)) begin
+    end else if ((1'b1 == ap_CS_fsm_state9)) begin
         bestMatchStream_write = grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_bestMatchStream_write;
     end else begin
         bestMatchStream_write = 1'b0;
@@ -444,7 +460,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state4) | (1'b1 == ap_CS_fsm_state3) | (1'b1 == ap_CS_fsm_state2) | (1'b1 == ap_CS_fsm_state6) | (1'b1 == ap_CS_fsm_state5) | (~((ap_done_reg == 1'b1) | (real_start == 1'b0)) & (icmp_ln327_fu_156_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if (((1'b1 == ap_CS_fsm_state6) | (1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4) | (1'b1 == ap_CS_fsm_state3) | (1'b1 == ap_CS_fsm_state2) | (1'b1 == ap_CS_fsm_state7))) begin
         compressdStream_blk_n = compressdStream_empty_n;
     end else begin
         compressdStream_blk_n = 1'b1;
@@ -452,9 +468,9 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((((icmp_ln327_fu_156_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1) & (1'b0 == ap_block_state1)) | ((compressdStream_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state4)) | ((compressdStream_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state3)) | ((compressdStream_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state2)) | ((compressdStream_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state6)) | ((compressdStream_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state5)))) begin
+    if ((((compressdStream_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state6)) | ((compressdStream_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state5)) | ((compressdStream_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state4)) | ((compressdStream_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state3)) | ((compressdStream_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state2)) | ((compressdStream_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state7)))) begin
         compressdStream_read = 1'b1;
-    end else if ((1'b1 == ap_CS_fsm_state8)) begin
+    end else if ((1'b1 == ap_CS_fsm_state9)) begin
         compressdStream_read = grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_compressdStream_read;
     end else begin
         compressdStream_read = 1'b0;
@@ -494,7 +510,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state10) & (1'b0 == ap_block_state10) & ((icmp_ln367_fu_216_p2 == 1'd1) | (icmp_ln327_reg_301 == 1'd1)))) begin
+    if (((1'b1 == ap_CS_fsm_state11) & (1'b0 == ap_block_state11) & ((icmp_ln367_fu_216_p2 == 1'd1) | (icmp_ln327_reg_301 == 1'd1)))) begin
         internal_ap_ready = 1'b1;
     end else begin
         internal_ap_ready = 1'b0;
@@ -520,9 +536,9 @@ end
 always @ (*) begin
     case (ap_CS_fsm)
         ap_ST_fsm_state1 : begin
-            if (((icmp_ln327_fu_156_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1) & (1'b0 == ap_block_state1))) begin
-                ap_NS_fsm = ap_ST_fsm_state10;
-            end else if (((icmp_ln327_fu_156_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1) & (1'b0 == ap_block_state1))) begin
+            if (((1'b1 == ap_CS_fsm_state1) & (icmp_ln327_fu_156_p2 == 1'd1) & (1'b0 == ap_block_state1))) begin
+                ap_NS_fsm = ap_ST_fsm_state11;
+            end else if (((1'b1 == ap_CS_fsm_state1) & (icmp_ln327_fu_156_p2 == 1'd0) & (1'b0 == ap_block_state1))) begin
                 ap_NS_fsm = ap_ST_fsm_state2;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state1;
@@ -564,25 +580,32 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_state7 : begin
-            ap_NS_fsm = ap_ST_fsm_state8;
-        end
-        ap_ST_fsm_state8 : begin
-            if (((1'b1 == ap_CS_fsm_state8) & (grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state9;
-            end else begin
+            if (((compressdStream_empty_n == 1'b1) & (1'b1 == ap_CS_fsm_state7))) begin
                 ap_NS_fsm = ap_ST_fsm_state8;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state7;
             end
         end
-        ap_ST_fsm_state9 : begin
-            ap_NS_fsm = ap_ST_fsm_state10;
+        ap_ST_fsm_state8 : begin
+            ap_NS_fsm = ap_ST_fsm_state9;
         end
-        ap_ST_fsm_state10 : begin
-            if (((1'b1 == ap_CS_fsm_state10) & (1'b0 == ap_block_state10) & ((icmp_ln367_fu_216_p2 == 1'd1) | (icmp_ln327_reg_301 == 1'd1)))) begin
-                ap_NS_fsm = ap_ST_fsm_state1;
-            end else if (((1'b1 == ap_CS_fsm_state10) & (1'b0 == ap_block_state10) & (icmp_ln367_fu_216_p2 == 1'd0) & (icmp_ln327_reg_301 == 1'd0))) begin
+        ap_ST_fsm_state9 : begin
+            if (((1'b1 == ap_CS_fsm_state9) & (grp_lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter_fu_135_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state10;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state10;
+                ap_NS_fsm = ap_ST_fsm_state9;
+            end
+        end
+        ap_ST_fsm_state10 : begin
+            ap_NS_fsm = ap_ST_fsm_state11;
+        end
+        ap_ST_fsm_state11 : begin
+            if (((1'b1 == ap_CS_fsm_state11) & (1'b0 == ap_block_state11) & ((icmp_ln367_fu_216_p2 == 1'd1) | (icmp_ln327_reg_301 == 1'd1)))) begin
+                ap_NS_fsm = ap_ST_fsm_state1;
+            end else if (((1'b1 == ap_CS_fsm_state11) & (1'b0 == ap_block_state11) & (icmp_ln367_fu_216_p2 == 1'd0) & (icmp_ln327_reg_301 == 1'd0))) begin
+                ap_NS_fsm = ap_ST_fsm_state11;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state11;
             end
         end
         default : begin
@@ -595,7 +618,7 @@ assign add_ln367_fu_222_p2 = (i_8_fu_104 + 3'd1);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
-assign ap_CS_fsm_state10 = ap_CS_fsm[32'd9];
+assign ap_CS_fsm_state11 = ap_CS_fsm[32'd10];
 
 assign ap_CS_fsm_state2 = ap_CS_fsm[32'd1];
 
@@ -611,16 +634,18 @@ assign ap_CS_fsm_state7 = ap_CS_fsm[32'd6];
 
 assign ap_CS_fsm_state8 = ap_CS_fsm[32'd7];
 
+assign ap_CS_fsm_state9 = ap_CS_fsm[32'd8];
+
 always @ (*) begin
-    ap_block_state1 = ((input_size_c1_full_n == 1'b0) | (input_size_empty_n == 1'b0) | (ap_done_reg == 1'b1) | (real_start == 1'b0) | ((icmp_ln327_fu_156_p2 == 1'd0) & (compressdStream_empty_n == 1'b0)));
+    ap_block_state1 = ((input_size_c1_full_n == 1'b0) | (input_size_empty_n == 1'b0) | (ap_done_reg == 1'b1) | (real_start == 1'b0));
 end
 
 always @ (*) begin
-    ap_block_state10 = ((bestMatchStream_full_n == 1'b0) & (ap_predicate_op53_write_state10 == 1'b1));
+    ap_block_state11 = ((bestMatchStream_full_n == 1'b0) & (ap_predicate_op54_write_state11 == 1'b1));
 end
 
 always @ (*) begin
-    ap_predicate_op53_write_state10 = ((icmp_ln367_fu_216_p2 == 1'd0) & (icmp_ln327_reg_301 == 1'd0));
+    ap_predicate_op54_write_state11 = ((icmp_ln367_fu_216_p2 == 1'd0) & (icmp_ln327_reg_301 == 1'd0));
 end
 
 assign ap_ready = internal_ap_ready;

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'lz4CompressEngineRun'" level="0">
-<item name = "Date">Sun Oct 26 16:56:29 2025
+<item name = "Date">Mon Oct 27 16:28:51 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">lz4_compress_configed</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">15.00 ns, 13.456 ns, 1.50 ns</column>
+<column name="ap_clk">7.00 ns, 6.300 ns, 0.70 ns</column>
 </table>
 </item>
 </section>

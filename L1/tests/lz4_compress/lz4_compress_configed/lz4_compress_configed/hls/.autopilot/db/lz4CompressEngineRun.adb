@@ -716,7 +716,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.63</m_delay>
+          <m_delay>3.15</m_delay>
           <m_topoIndex>8</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -2367,15 +2367,15 @@
             <item_version>0</item_version>
             <item class_id="48" tracking_level="0" version="0">
               <first>BRAM</first>
-              <second>2</second>
+              <second>4</second>
             </item>
             <item>
               <first>FF</first>
-              <second>1008</second>
+              <second>1253</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>2244</second>
+              <second>2395</second>
             </item>
           </second>
         </item>
@@ -2386,11 +2386,11 @@
             <item_version>0</item_version>
             <item>
               <first>FF</first>
-              <second>470</second>
+              <second>505</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>658</second>
+              <second>664</second>
             </item>
           </second>
         </item>
@@ -2405,11 +2405,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>505</second>
+              <second>488</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>992</second>
+              <second>1009</second>
             </item>
           </second>
         </item>
@@ -2424,11 +2424,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>961</second>
+              <second>2367</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>4139</second>
+              <second>4055</second>
             </item>
           </second>
         </item>

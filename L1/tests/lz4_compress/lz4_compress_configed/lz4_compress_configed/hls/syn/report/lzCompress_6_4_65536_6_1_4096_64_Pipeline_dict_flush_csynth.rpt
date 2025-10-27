@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'lzCompress_6_4_65536_6_1_4096_64_Pipeline_dict_flush'
 ================================================================
-* Date:           Sun Oct 26 16:56:29 2025
+* Date:           Mon Oct 27 16:28:52 2025
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        lz4_compress_configed
@@ -17,20 +17,20 @@
 ================================================================
 + Timing: 
     * Summary: 
-    +--------+----------+----------+------------+
-    |  Clock |  Target  | Estimated| Uncertainty|
-    +--------+----------+----------+------------+
-    |ap_clk  |  15.00 ns|  4.856 ns|     1.50 ns|
-    +--------+----------+----------+------------+
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  7.00 ns|  4.856 ns|     0.70 ns|
+    +--------+---------+----------+------------+
 
 + Latency: 
     * Summary: 
-    +---------+---------+-----------+-----------+------+------+------------------------------------------------+
-    |  Latency (cycles) |   Latency (absolute)  |   Interval  |                    Pipeline                    |
-    |   min   |   max   |    min    |    max    |  min |  max |                      Type                      |
-    +---------+---------+-----------+-----------+------+------+------------------------------------------------+
-    |     1026|     1026|  15.390 us|  15.390 us|  1025|  1025|  loop auto-rewind stp (delay=0 clock cycles(s))|
-    +---------+---------+-----------+-----------+------+------+------------------------------------------------+
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |      514|      514|  3.598 us|  3.598 us|  513|  513|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
 
     + Detail: 
         * Instance: 
@@ -41,7 +41,7 @@
         |              |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
         |   Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
         +--------------+---------+---------+----------+-----------+-----------+------+----------+
-        |- dict_flush  |     1024|     1024|         1|          1|          1|  1024|       yes|
+        |- dict_flush  |      512|      512|         1|          1|          1|   512|       yes|
         +--------------+---------+---------+----------+-----------+-----------+------+----------+
 
 
@@ -85,9 +85,9 @@
     +--------------------+----------+----+---+----+------------+------------+
     |    Variable Name   | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +--------------------+----------+----+---+----+------------+------------+
-    |add_ln75_fu_166_p2  |         +|   0|  0|  14|          13|           3|
+    |add_ln75_fu_230_p2  |         +|   0|  0|  14|          13|           4|
     +--------------------+----------+----+---+----+------------+------------+
-    |Total               |          |   0|  0|  14|          13|           3|
+    |Total               |          |   0|  0|  14|          13|           4|
     +--------------------+----------+----+---+----+------------+------------+
 
     * Multiplexer: 
@@ -96,7 +96,7 @@
     +----------------------+----+-----------+-----+-----------+
     |ap_done_int           |   9|          2|    1|          2|
     |ap_sig_allocacmp_i_3  |   9|          2|   13|         26|
-    |i_fu_52               |   9|          2|   13|         26|
+    |i_fu_58               |   9|          2|   13|         26|
     +----------------------+----+-----------+-----+-----------+
     |Total                 |  27|          6|   27|         54|
     +----------------------+----+-----------+-----+-----------+
@@ -107,7 +107,7 @@
     +-------------+----+----+-----+-----------+
     |ap_CS_fsm    |   1|   0|    1|          0|
     |ap_done_reg  |   1|   0|    1|          0|
-    |i_fu_52      |  13|   0|   13|          0|
+    |i_fu_58      |  13|   0|   13|          0|
     +-------------+----+----+-----+-----------+
     |Total        |  15|   0|   15|          0|
     +-------------+----+----+-----+-----------+
@@ -127,19 +127,35 @@
 |ap_done          |  out|    1|  ap_ctrl_hs|  lzCompress<6, 4, 65536, 6, 1, 4096, 64>_Pipeline_dict_flush|  return value|
 |ap_idle          |  out|    1|  ap_ctrl_hs|  lzCompress<6, 4, 65536, 6, 1, 4096, 64>_Pipeline_dict_flush|  return value|
 |ap_ready         |  out|    1|  ap_ctrl_hs|  lzCompress<6, 4, 65536, 6, 1, 4096, 64>_Pipeline_dict_flush|  return value|
-|dict_1_address0  |  out|   11|   ap_memory|                                                       dict_1|         array|
+|dict_3_address0  |  out|   10|   ap_memory|                                                       dict_3|         array|
+|dict_3_ce0       |  out|    1|   ap_memory|                                                       dict_3|         array|
+|dict_3_we0       |  out|    1|   ap_memory|                                                       dict_3|         array|
+|dict_3_d0        |  out|  432|   ap_memory|                                                       dict_3|         array|
+|dict_3_address1  |  out|   10|   ap_memory|                                                       dict_3|         array|
+|dict_3_ce1       |  out|    1|   ap_memory|                                                       dict_3|         array|
+|dict_3_we1       |  out|    1|   ap_memory|                                                       dict_3|         array|
+|dict_3_d1        |  out|  432|   ap_memory|                                                       dict_3|         array|
+|dict_2_address0  |  out|   10|   ap_memory|                                                       dict_2|         array|
+|dict_2_ce0       |  out|    1|   ap_memory|                                                       dict_2|         array|
+|dict_2_we0       |  out|    1|   ap_memory|                                                       dict_2|         array|
+|dict_2_d0        |  out|  432|   ap_memory|                                                       dict_2|         array|
+|dict_2_address1  |  out|   10|   ap_memory|                                                       dict_2|         array|
+|dict_2_ce1       |  out|    1|   ap_memory|                                                       dict_2|         array|
+|dict_2_we1       |  out|    1|   ap_memory|                                                       dict_2|         array|
+|dict_2_d1        |  out|  432|   ap_memory|                                                       dict_2|         array|
+|dict_1_address0  |  out|   10|   ap_memory|                                                       dict_1|         array|
 |dict_1_ce0       |  out|    1|   ap_memory|                                                       dict_1|         array|
 |dict_1_we0       |  out|    1|   ap_memory|                                                       dict_1|         array|
 |dict_1_d0        |  out|  432|   ap_memory|                                                       dict_1|         array|
-|dict_1_address1  |  out|   11|   ap_memory|                                                       dict_1|         array|
+|dict_1_address1  |  out|   10|   ap_memory|                                                       dict_1|         array|
 |dict_1_ce1       |  out|    1|   ap_memory|                                                       dict_1|         array|
 |dict_1_we1       |  out|    1|   ap_memory|                                                       dict_1|         array|
 |dict_1_d1        |  out|  432|   ap_memory|                                                       dict_1|         array|
-|dict_address0    |  out|   11|   ap_memory|                                                         dict|         array|
+|dict_address0    |  out|   10|   ap_memory|                                                         dict|         array|
 |dict_ce0         |  out|    1|   ap_memory|                                                         dict|         array|
 |dict_we0         |  out|    1|   ap_memory|                                                         dict|         array|
 |dict_d0          |  out|  432|   ap_memory|                                                         dict|         array|
-|dict_address1    |  out|   11|   ap_memory|                                                         dict|         array|
+|dict_address1    |  out|   10|   ap_memory|                                                         dict|         array|
 |dict_ce1         |  out|    1|   ap_memory|                                                         dict|         array|
 |dict_we1         |  out|    1|   ap_memory|                                                         dict|         array|
 |dict_d1          |  out|  432|   ap_memory|                                                         dict|         array|

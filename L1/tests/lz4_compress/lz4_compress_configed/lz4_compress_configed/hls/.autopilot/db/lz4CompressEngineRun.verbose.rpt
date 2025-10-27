@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'lz4CompressEngineRun'
 ================================================================
-* Date:           Sun Oct 26 16:56:39 2025
+* Date:           Mon Oct 27 16:29:01 2025
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        lz4_compress_configed
@@ -17,11 +17,11 @@
 ================================================================
 + Timing: 
     * Summary: 
-    +--------+----------+-----------+------------+
-    |  Clock |  Target  | Estimated | Uncertainty|
-    +--------+----------+-----------+------------+
-    |ap_clk  |  15.00 ns|  13.456 ns|     1.50 ns|
-    +--------+----------+-----------+------------+
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  7.00 ns|  6.300 ns|     0.70 ns|
+    +--------+---------+----------+------------+
 
 + Latency: 
     * Summary: 
@@ -59,16 +59,16 @@
 |DSP              |        -|    -|       -|      -|    -|
 |Expression       |        -|    -|       0|      2|    -|
 |FIFO             |        -|    -|     594|    405|    -|
-|Instance         |      106|    -|    2944|   8033|    -|
+|Instance         |      108|    -|    4613|   8123|    -|
 |Memory           |        -|    -|       -|      -|    -|
 |Multiplexer      |        -|    -|       -|      -|    -|
 |Register         |        -|    -|       -|      -|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |      106|    0|    3538|   8440|    0|
+|Total            |      108|    0|    5207|   8530|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      280|  220|  106400|  53200|    0|
 +-----------------+---------+-----+--------+-------+-----+
-|Utilization (%)  |       37|    0|       3|     15|    0|
+|Utilization (%)  |       38|    0|       4|     16|    0|
 +-----------------+---------+-----+--------+-------+-----+
 
 + Detail: 
@@ -76,12 +76,12 @@
     +-------------------------------------+------------------------------------+---------+----+------+------+-----+
     |               Instance              |               Module               | BRAM_18K| DSP|  FF  |  LUT | URAM|
     +-------------------------------------+------------------------------------+---------+----+------+------+-----+
-    |lz4Compress_4096_1_U0                |lz4Compress_4096_1_s                |        2|   0|  1008|  2244|    0|
-    |lzBestMatchFilter_6_65536_U0         |lzBestMatchFilter_6_65536_s         |        0|   0|   470|   658|    0|
-    |lzBooster_255_16384_64_U0            |lzBooster_255_16384_64_s            |        8|   0|   505|   992|    0|
-    |lzCompress_6_4_65536_6_1_4096_64_U0  |lzCompress_6_4_65536_6_1_4096_64_s  |       96|   0|   961|  4139|    0|
+    |lz4Compress_4096_1_U0                |lz4Compress_4096_1_s                |        4|   0|  1253|  2395|    0|
+    |lzBestMatchFilter_6_65536_U0         |lzBestMatchFilter_6_65536_s         |        0|   0|   505|   664|    0|
+    |lzBooster_255_16384_64_U0            |lzBooster_255_16384_64_s            |        8|   0|   488|  1009|    0|
+    |lzCompress_6_4_65536_6_1_4096_64_U0  |lzCompress_6_4_65536_6_1_4096_64_s  |       96|   0|  2367|  4055|    0|
     +-------------------------------------+------------------------------------+---------+----+------+------+-----+
-    |Total                                |                                    |      106|   0|  2944|  8033|    0|
+    |Total                                |                                    |      108|   0|  4613|  8123|    0|
     +-------------------------------------+------------------------------------+---------+----+------+------+-----+
 
     * DSP: 
@@ -195,7 +195,7 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 3.63>
+State 1 <SV = 0> <Delay = 3.15>
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%input_size_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %input_size" [../lz4_compress_test.cpp:65]   --->   Operation 9 'read' 'input_size_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%input_size_c2 = alloca i64 1" [../lz4_compress_test.cpp:65]   --->   Operation 10 'alloca' 'input_size_c2' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%input_size_c1 = alloca i64 1" [../lz4_compress_test.cpp:65]   --->   Operation 11 'alloca' 'input_size_c1' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
@@ -203,7 +203,7 @@ ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%input_size_c = alloca i64 1" [../l
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%compressdStream = alloca i64 1" [../lz4_compress_test.cpp:54]   --->   Operation 13 'alloca' 'compressdStream' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.54> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 8> <FIFO>
 ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%bestMatchStream = alloca i64 1" [../lz4_compress_test.cpp:55]   --->   Operation 14 'alloca' 'bestMatchStream' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.54> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 8> <FIFO>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%boosterStream = alloca i64 1" [../lz4_compress_test.cpp:56]   --->   Operation 15 'alloca' 'boosterStream' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.54> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 8> <FIFO>
-ST_1 : Operation 16 [2/2] (3.63ns)   --->   "%call_ln66 = call void @lzCompress<6, 4, 65536, 6, 1, 4096, 64>, i8 %inStream, i32 %compressdStream, i32 %input_size_read, i32 %input_size_c2" [../lz4_compress_test.cpp:66]   --->   Operation 16 'call' 'call_ln66' <Predicate = true> <Delay = 3.63> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 16 [2/2] (3.15ns)   --->   "%call_ln66 = call void @lzCompress<6, 4, 65536, 6, 1, 4096, 64>, i8 %inStream, i32 %compressdStream, i32 %input_size_read, i32 %input_size_c2" [../lz4_compress_test.cpp:66]   --->   Operation 16 'call' 'call_ln66' <Predicate = true> <Delay = 3.15> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 0.00>
 ST_2 : Operation 17 [1/2] (0.00ns)   --->   "%call_ln66 = call void @lzCompress<6, 4, 65536, 6, 1, 4096, 64>, i8 %inStream, i32 %compressdStream, i32 %input_size_read, i32 %input_size_c2" [../lz4_compress_test.cpp:66]   --->   Operation 17 'call' 'call_ln66' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
@@ -1102,14 +1102,14 @@ ret_ln72                  (ret                 ) [ 000000000]
 |----------|-----------------------------------------------|---------|---------|---------|---------|
 | Operation|                Functional Unit                |   BRAM  |  Delay  |    FF   |   LUT   |
 |----------|-----------------------------------------------|---------|---------|---------|---------|
-|          | grp_lzCompress_6_4_65536_6_1_4096_64_s_fu_122 |    96   |  12.704 |   992   |   3557  |
-|   call   |     grp_lzBestMatchFilter_6_65536_s_fu_132    |    0    |    0    |   645   |   384   |
-|          |      grp_lzBooster_255_16384_64_s_fu_140      |    8    |  8.4172 |   600   |   593   |
-|          |        grp_lz4Compress_4096_1_s_fu_160        |    0    |  1.588  |   1008  |   1340  |
+|          | grp_lzCompress_6_4_65536_6_1_4096_64_s_fu_122 |    96   |  15.88  |   2039  |   3163  |
+|   call   |     grp_lzBestMatchFilter_6_65536_s_fu_132    |    0    |    0    |   678   |   384   |
+|          |      grp_lzBooster_255_16384_64_s_fu_140      |    8    |  8.4172 |   579   |   593   |
+|          |        grp_lz4Compress_4096_1_s_fu_160        |    0    |  3.176  |   1291  |   1393  |
 |----------|-----------------------------------------------|---------|---------|---------|---------|
 |   read   |          input_size_read_read_fu_116          |    0    |    0    |    0    |    0    |
 |----------|-----------------------------------------------|---------|---------|---------|---------|
-|   Total  |                                               |   104   | 22.7092 |   3245  |   5874  |
+|   Total  |                                               |   104   | 27.4732 |   4587  |   5533  |
 |----------|-----------------------------------------------|---------|---------|---------|---------|
 
 Memories:
@@ -1145,10 +1145,10 @@ N/A
 +-----------+--------+--------+--------+--------+
 |           |  BRAM  |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+
-|  Function |   104  |   22   |  3245  |  5874  |
+|  Function |   104  |   27   |  4587  |  5533  |
 |   Memory  |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |    1   |    0   |    9   |
 |  Register |    -   |    -   |   224  |    -   |
 +-----------+--------+--------+--------+--------+
-|   Total   |   104  |   24   |  3469  |  5883  |
+|   Total   |   104  |   29   |  4811  |  5542  |
 +-----------+--------+--------+--------+--------+

@@ -15,7 +15,7 @@
 `define AUTOTB_PER_RESULT_TRANS_FILE "lz4CompressEngineRun.performance.result.transaction.xml"
 `define AUTOTB_TOP_INST AESL_inst_apatb_lz4CompressEngineRun_top
 `define AUTOTB_MAX_ALLOW_LATENCY  15000000
-`define AUTOTB_CLOCK_PERIOD_DIV2 7.50
+`define AUTOTB_CLOCK_PERIOD_DIV2 3.50
 
 `define AESL_FIFO_inStream AESL_autofifo_inStream
 `define AESL_FIFO_INST_inStream AESL_autofifo_inst_inStream
@@ -1095,25 +1095,33 @@ endtask
 
 `ifndef POST_SYN
 
-// Dependence Check (WAR) "ap_enable_operation_74"(R:SV2-3) -> "ap_enable_operation_80"(W:SV3-3) @ `AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164
+// Dependence Check (WAR) "ap_enable_operation_89"(R:SV3-4) -> "ap_enable_operation_105"(W:SV5-5) @ `AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174
 
-// Dependence Check (WAR) "ap_enable_operation_75"(R:SV2-3) -> "ap_enable_operation_82"(W:SV3-3) @ `AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164
+// Dependence Check (WAR) "ap_enable_operation_90"(R:SV3-4) -> "ap_enable_operation_103"(W:SV5-5) @ `AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174
 
-// Dependence Check (RAW) "ap_enable_operation_80"(W:SV3-3) -> "ap_enable_operation_67"(R:SV2-3) @ `AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164
+// Dependence Check (WAR) "ap_enable_operation_91"(R:SV3-4) -> "ap_enable_operation_101"(W:SV5-5) @ `AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174
 
-// Dependence Check (RAW) "ap_enable_operation_82"(W:SV3-3) -> "ap_enable_operation_68"(R:SV2-3) @ `AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_164
+// Dependence Check (WAR) "ap_enable_operation_92"(R:SV3-4) -> "ap_enable_operation_107"(W:SV5-5) @ `AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174
 
-// Dependence Check (RAW) "ap_enable_operation_48"(W:SV1-1) -> "ap_enable_operation_80"(R:SV2-3) @ `AUTOTB_DUT_INST.lzBooster_255_16384_64_U0.grp_lzBooster_255_16384_64_Pipeline_lz_booster_fu_207
+// Dependence Check (RAW) "ap_enable_operation_101"(W:SV5-5) -> "ap_enable_operation_79"(R:SV3-4) @ `AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174
 
-// Dependence Check (RAW) "ap_enable_operation_48"(W:SV1-1) -> "ap_enable_operation_84"(R:SV2-3) @ `AUTOTB_DUT_INST.lzBooster_255_16384_64_U0.grp_lzBooster_255_16384_64_Pipeline_lz_booster_fu_207
+// Dependence Check (RAW) "ap_enable_operation_103"(W:SV5-5) -> "ap_enable_operation_78"(R:SV3-4) @ `AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174
 
-// Dependence Check (RAW) "ap_enable_operation_48"(W:SV1-1) -> "ap_enable_operation_93"(R:SV2-3) @ `AUTOTB_DUT_INST.lzBooster_255_16384_64_U0.grp_lzBooster_255_16384_64_Pipeline_lz_booster_fu_207
+// Dependence Check (RAW) "ap_enable_operation_105"(W:SV5-5) -> "ap_enable_operation_77"(R:SV3-4) @ `AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174
 
-// Dependence Check (WAR) "ap_enable_operation_99"(R:SV2-3) -> "ap_enable_operation_48"(W:SV1-1) @ `AUTOTB_DUT_INST.lzBooster_255_16384_64_U0.grp_lzBooster_255_16384_64_Pipeline_lz_booster_fu_207
+// Dependence Check (RAW) "ap_enable_operation_107"(W:SV5-5) -> "ap_enable_operation_80"(R:SV3-4) @ `AUTOTB_DUT_INST.lzCompress_6_4_65536_6_1_4096_64_U0.grp_lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress_fu_174
 
-// Dependence Check (WAR) "ap_enable_operation_101"(R:SV2-3) -> "ap_enable_operation_48"(W:SV1-1) @ `AUTOTB_DUT_INST.lzBooster_255_16384_64_U0.grp_lzBooster_255_16384_64_Pipeline_lz_booster_fu_207
+// Dependence Check (RAW) "ap_enable_operation_46"(W:SV2-2) -> "ap_enable_operation_66"(R:SV3-4) @ `AUTOTB_DUT_INST.lzBooster_255_16384_64_U0.grp_lzBooster_255_16384_64_Pipeline_lz_booster_fu_206
 
-// Dependence Check (WAR) "ap_enable_operation_104"(R:SV2-3) -> "ap_enable_operation_48"(W:SV1-1) @ `AUTOTB_DUT_INST.lzBooster_255_16384_64_U0.grp_lzBooster_255_16384_64_Pipeline_lz_booster_fu_207
+// Dependence Check (RAW) "ap_enable_operation_46"(W:SV2-2) -> "ap_enable_operation_81"(R:SV3-4) @ `AUTOTB_DUT_INST.lzBooster_255_16384_64_U0.grp_lzBooster_255_16384_64_Pipeline_lz_booster_fu_206
+
+// Dependence Check (RAW) "ap_enable_operation_46"(W:SV2-2) -> "ap_enable_operation_94"(R:SV3-4) @ `AUTOTB_DUT_INST.lzBooster_255_16384_64_U0.grp_lzBooster_255_16384_64_Pipeline_lz_booster_fu_206
+
+// Dependence Check (WAR) "ap_enable_operation_100"(R:SV3-4) -> "ap_enable_operation_46"(W:SV2-2) @ `AUTOTB_DUT_INST.lzBooster_255_16384_64_U0.grp_lzBooster_255_16384_64_Pipeline_lz_booster_fu_206
+
+// Dependence Check (WAR) "ap_enable_operation_102"(R:SV3-4) -> "ap_enable_operation_46"(W:SV2-2) @ `AUTOTB_DUT_INST.lzBooster_255_16384_64_U0.grp_lzBooster_255_16384_64_Pipeline_lz_booster_fu_206
+
+// Dependence Check (WAR) "ap_enable_operation_106"(R:SV3-4) -> "ap_enable_operation_46"(W:SV2-2) @ `AUTOTB_DUT_INST.lzBooster_255_16384_64_U0.grp_lzBooster_255_16384_64_Pipeline_lz_booster_fu_206
 
 `endif
 
