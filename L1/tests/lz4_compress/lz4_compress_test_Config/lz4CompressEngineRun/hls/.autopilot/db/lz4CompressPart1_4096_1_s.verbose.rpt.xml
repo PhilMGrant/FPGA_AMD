@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'lz4CompressPart1_4096_1_s'" level="0">
-<item name = "Date">Mon Oct 27 15:27:29 2025
+<item name = "Date">Mon Oct 27 15:59:32 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">lz4CompressEngineRun</item>
@@ -79,13 +79,13 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="sub_fu_179_p2">+, 0, 0, 39, 32, 3</column>
+<column name="sub17_fu_179_p2">+, 0, 0, 39, 32, 3</column>
 <column name="ap_block_state3">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state7">and, 0, 0, 2, 1, 1</column>
 <column name="ap_predicate_op44_write_state7">and, 0, 0, 2, 1, 1</column>
 <column name="has_next_value_fu_173_p2">icmp, 0, 0, 38, 31, 1</column>
-<column name="icmp_ln143_fu_223_p2">icmp, 0, 0, 39, 32, 1</column>
-<column name="icmp_ln149_fu_235_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln144_fu_223_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln150_fu_235_p2">icmp, 0, 0, 39, 32, 1</column>
 <column name="icmp_ln51_fu_158_p2">icmp, 0, 0, 39, 32, 1</column>
 <column name="is_max_lit_fu_229_p2">icmp, 0, 0, 39, 32, 13</column>
 <column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
@@ -117,7 +117,7 @@
 <column name="boosterStream_read_reg_288">32, 0, 32, 0</column>
 <column name="grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_ap_start_reg">1, 0, 1, 0</column>
 <column name="has_next_value_reg_293">1, 0, 1, 0</column>
-<column name="icmp_ln143_reg_314">1, 0, 1, 0</column>
+<column name="icmp_ln144_reg_314">1, 0, 1, 0</column>
 <column name="icmp_ln51_reg_284">1, 0, 1, 0</column>
 <column name="input_size_4_reg_277">32, 0, 32, 0</column>
 <column name="is_max_lit_reg_318">1, 0, 1, 0</column>
@@ -125,7 +125,7 @@
 <column name="max_lit_limit_preg">32, 0, 32, 0</column>
 <column name="nextEncodedValue_reg_118">32, 0, 32, 0</column>
 <column name="start_once_reg">1, 0, 1, 0</column>
-<column name="sub_reg_303">32, 0, 32, 0</column>
+<column name="sub17_reg_303">32, 0, 32, 0</column>
 </table>
 </item>
 </section>

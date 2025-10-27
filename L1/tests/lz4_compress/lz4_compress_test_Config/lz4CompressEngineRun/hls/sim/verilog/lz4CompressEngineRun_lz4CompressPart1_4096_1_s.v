@@ -116,7 +116,7 @@ wire   [0:0] has_next_value_fu_173_p2;
 reg    lenOffset_Stream_blk_n;
 wire    ap_CS_fsm_state7;
 reg   [0:0] icmp_ln51_reg_284;
-reg   [0:0] icmp_ln143_reg_314;
+reg   [0:0] icmp_ln144_reg_314;
 reg    input_size_blk_n;
 reg    input_size_c_blk_n;
 reg   [31:0] input_size_4_reg_277;
@@ -125,10 +125,10 @@ wire   [0:0] icmp_ln51_fu_158_p2;
 reg   [31:0] boosterStream_read_reg_288;
 reg   [0:0] has_next_value_reg_293;
 reg    ap_block_state3;
-wire   [31:0] sub_fu_179_p2;
-reg   [31:0] sub_reg_303;
+wire   [31:0] sub17_fu_179_p2;
+reg   [31:0] sub17_reg_303;
 wire    ap_CS_fsm_state4;
-wire   [0:0] icmp_ln143_fu_223_p2;
+wire   [0:0] icmp_ln144_fu_223_p2;
 wire    ap_CS_fsm_state6;
 wire   [0:0] is_max_lit_fu_229_p2;
 reg   [0:0] is_max_lit_reg_318;
@@ -146,7 +146,7 @@ wire    grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_lit_count_out_ap_
 wire   [31:0] grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_lit_count_flag_out;
 wire    grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_lit_count_flag_out_ap_vld;
 reg   [31:0] nextEncodedValue_reg_118;
-wire   [31:0] zext_ln149_fu_245_p1;
+wire   [31:0] zext_ln150_fu_245_p1;
 reg   [31:0] ap_phi_mux_lit_count_flag_1_phi_fu_133_p4;
 reg   [31:0] lit_count_flag_1_reg_130;
 reg    ap_predicate_op44_write_state7;
@@ -156,7 +156,7 @@ wire    ap_CS_fsm_state5;
 wire   [63:0] tmpValue_1_fu_257_p3;
 reg   [31:0] max_lit_limit_preg;
 wire   [30:0] tmp_fu_164_p4;
-wire   [0:0] icmp_ln149_fu_235_p2;
+wire   [0:0] icmp_ln150_fu_235_p2;
 wire   [0:0] lit_count_flag_fu_240_p2;
 wire   [63:0] tmpValue_fu_250_p3;
 reg   [6:0] ap_NS_fsm;
@@ -194,7 +194,7 @@ lz4CompressEngineRun_lz4CompressPart1_4096_1_Pipeline_lz4_divide grp_lz4Compress
     .lenOffset_Stream_write(grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_lenOffset_Stream_write),
     .lenOffset_Stream_num_data_valid(7'd0),
     .lenOffset_Stream_fifo_cap(7'd0),
-    .sub(sub_reg_303),
+    .sub17(sub17_reg_303),
     .boosterStream_dout(boosterStream_dout),
     .boosterStream_empty_n(boosterStream_empty_n),
     .boosterStream_read(grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_boosterStream_read),
@@ -266,10 +266,10 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state6) & (icmp_ln143_fu_223_p2 == 1'd1))) begin
+    if (((1'b1 == ap_CS_fsm_state6) & (icmp_ln144_fu_223_p2 == 1'd1))) begin
         lit_count_flag_1_reg_130 <= grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_lit_count_flag_out;
-    end else if (((icmp_ln51_reg_284 == 1'd0) & (1'b1 == ap_CS_fsm_state7) & (1'b0 == ap_block_state7) & (icmp_ln143_reg_314 == 1'd0))) begin
-        lit_count_flag_1_reg_130 <= zext_ln149_fu_245_p1;
+    end else if (((icmp_ln51_reg_284 == 1'd0) & (1'b1 == ap_CS_fsm_state7) & (1'b0 == ap_block_state7) & (icmp_ln144_reg_314 == 1'd0))) begin
+        lit_count_flag_1_reg_130 <= zext_ln150_fu_245_p1;
     end
 end
 
@@ -287,7 +287,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
-        icmp_ln143_reg_314 <= icmp_ln143_fu_223_p2;
+        icmp_ln144_reg_314 <= icmp_ln144_fu_223_p2;
         is_max_lit_reg_318 <= is_max_lit_fu_229_p2;
     end
 end
@@ -307,7 +307,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        sub_reg_303 <= sub_fu_179_p2;
+        sub17_reg_303 <= sub17_fu_179_p2;
     end
 end
 
@@ -372,8 +372,8 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln51_reg_284 == 1'd0) & (1'b1 == ap_CS_fsm_state7) & (icmp_ln143_reg_314 == 1'd0))) begin
-        ap_phi_mux_lit_count_flag_1_phi_fu_133_p4 = zext_ln149_fu_245_p1;
+    if (((icmp_ln51_reg_284 == 1'd0) & (1'b1 == ap_CS_fsm_state7) & (icmp_ln144_reg_314 == 1'd0))) begin
+        ap_phi_mux_lit_count_flag_1_phi_fu_133_p4 = zext_ln150_fu_245_p1;
     end else begin
         ap_phi_mux_lit_count_flag_1_phi_fu_133_p4 = lit_count_flag_1_reg_130;
     end
@@ -438,7 +438,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln51_reg_284 == 1'd0) & (1'b1 == ap_CS_fsm_state7) & (icmp_ln143_reg_314 == 1'd0))) begin
+    if (((icmp_ln51_reg_284 == 1'd0) & (1'b1 == ap_CS_fsm_state7) & (icmp_ln144_reg_314 == 1'd0))) begin
         lenOffset_Stream_blk_n = lenOffset_Stream_full_n;
     end else begin
         lenOffset_Stream_blk_n = 1'b1;
@@ -575,7 +575,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    ap_predicate_op44_write_state7 = ((icmp_ln51_reg_284 == 1'd0) & (icmp_ln143_reg_314 == 1'd0));
+    ap_predicate_op44_write_state7 = ((icmp_ln51_reg_284 == 1'd0) & (icmp_ln144_reg_314 == 1'd0));
 end
 
 assign ap_ready = internal_ap_ready;
@@ -584,9 +584,9 @@ assign grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_ap_start = grp_lz4
 
 assign has_next_value_fu_173_p2 = ((tmp_fu_164_p4 != 31'd0) ? 1'b1 : 1'b0);
 
-assign icmp_ln143_fu_223_p2 = ((grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_lit_count_out == 32'd0) ? 1'b1 : 1'b0);
+assign icmp_ln144_fu_223_p2 = ((grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_lit_count_out == 32'd0) ? 1'b1 : 1'b0);
 
-assign icmp_ln149_fu_235_p2 = ((grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_lit_count_flag_out != 32'd0) ? 1'b1 : 1'b0);
+assign icmp_ln150_fu_235_p2 = ((grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_lit_count_flag_out != 32'd0) ? 1'b1 : 1'b0);
 
 assign icmp_ln51_fu_158_p2 = ((input_size_dout == 32'd0) ? 1'b1 : 1'b0);
 
@@ -594,7 +594,7 @@ assign input_size_c_din = input_size_dout;
 
 assign is_max_lit_fu_229_p2 = ((grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_lit_count_out == 32'd4096) ? 1'b1 : 1'b0);
 
-assign lit_count_flag_fu_240_p2 = (is_max_lit_reg_318 | icmp_ln149_fu_235_p2);
+assign lit_count_flag_fu_240_p2 = (is_max_lit_reg_318 | icmp_ln150_fu_235_p2);
 
 assign lit_outStream_din = grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_lit_outStream_din;
 
@@ -602,7 +602,7 @@ assign lit_outStream_write = grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_
 
 assign start_out = real_start;
 
-assign sub_fu_179_p2 = ($signed(input_size_4_reg_277) + $signed(32'd4294967294));
+assign sub17_fu_179_p2 = ($signed(input_size_4_reg_277) + $signed(32'd4294967294));
 
 assign tmpValue_1_fu_257_p3 = ((is_max_lit_reg_318[0:0] == 1'b1) ? 64'd17592236966665 : tmpValue_fu_250_p3);
 
@@ -610,6 +610,6 @@ assign tmpValue_fu_250_p3 = {{grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu
 
 assign tmp_fu_164_p4 = {{input_size_4_reg_277[31:1]}};
 
-assign zext_ln149_fu_245_p1 = lit_count_flag_fu_240_p2;
+assign zext_ln150_fu_245_p1 = lit_count_flag_fu_240_p2;
 
 endmodule //lz4CompressEngineRun_lz4CompressPart1_4096_1_s

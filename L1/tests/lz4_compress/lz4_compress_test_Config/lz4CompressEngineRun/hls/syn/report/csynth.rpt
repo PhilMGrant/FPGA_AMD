@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'lz4CompressEngineRun'
 ================================================================
 + General Information: 
-    * Date:           Mon Oct 27 15:27:32 2025
+    * Date:           Mon Oct 27 15:59:35 2025
     * Version:        2024.2 (Build 5238294 on Nov  8 2024)
     * Project:        lz4CompressEngineRun
     * Solution:       hls (Vivado IP Flow Target)
@@ -446,34 +446,34 @@
 |   + lz4CompressPart1_4096_1_s                                      | 0   |        |                         |           |                          |         |
 |     icmp_ln51_fu_158_p2                                            |     |        | icmp_ln51               | seteq     | auto                     | 0       |
 |     has_next_value_fu_173_p2                                       |     |        | has_next_value          | setne     | auto                     | 0       |
-|     sub_fu_179_p2                                                  |     |        | sub                     | add       | fabric                   | 0       |
-|     icmp_ln143_fu_223_p2                                           |     |        | icmp_ln143              | seteq     | auto                     | 0       |
+|     sub17_fu_179_p2                                                |     |        | sub17                   | add       | fabric                   | 0       |
+|     icmp_ln144_fu_223_p2                                           |     |        | icmp_ln144              | seteq     | auto                     | 0       |
 |     is_max_lit_fu_229_p2                                           |     |        | is_max_lit              | seteq     | auto                     | 0       |
-|     icmp_ln149_fu_235_p2                                           |     |        | icmp_ln149              | setne     | auto                     | 0       |
+|     icmp_ln150_fu_235_p2                                           |     |        | icmp_ln150              | setne     | auto                     | 0       |
 |     lit_count_flag_fu_240_p2                                       |     |        | lit_count_flag          | or        | auto                     | 0       |
 |     tmpValue_1_fu_257_p3                                           |     |        | tmpValue_1              | select    | auto_sel                 | 0       |
 |    + lz4CompressPart1_4096_1_Pipeline_lz4_divide                   | 0   |        |                         |           |                          |         |
-|      icmp_ln81_fu_234_p2                                           |     |        | icmp_ln81               | setlt     | auto                     | 0       |
+|      icmp_ln84_fu_234_p2                                           |     |        | icmp_ln84               | setlt     | auto                     | 0       |
 |      has_match_reg_fu_259_p2                                       |     |        | has_match_reg           | setne     | auto                     | 0       |
 |      lit_overflow_reg_fu_275_p2                                    |     |        | lit_overflow_reg        | seteq     | auto                     | 0       |
-|      icmp_ln100_fu_281_p2                                          |     |        | icmp_ln100              | setlt     | auto                     | 0       |
-|      xor_ln100_1_fu_286_p2                                         |     |        | xor_ln100_1             | xor       | auto                     | 0       |
-|      xor_ln100_fu_292_p2                                           |     |        | xor_ln100               | xor       | auto                     | 0       |
-|      or_ln100_fu_298_p2                                            |     |        | or_ln100                | or        | auto                     | 0       |
-|      lit_count_3_fu_314_p2                                         |     |        | lit_count_3             | add       | fabric                   | 0       |
-|      match_len_fu_324_p2                                           |     |        | match_len               | add       | fabric                   | 0       |
-|      select_ln139_fu_347_p3                                        |     |        | select_ln139            | select    | auto_sel                 | 0       |
+|      match_len_reg_1_fu_304_p2                                     |     |        | match_len_reg_1         | add       | fabric                   | 0       |
+|      icmp_ln104_fu_281_p2                                          |     |        | icmp_ln104              | setlt     | auto                     | 0       |
+|      xor_ln104_1_fu_286_p2                                         |     |        | xor_ln104_1             | xor       | auto                     | 0       |
+|      xor_ln104_fu_292_p2                                           |     |        | xor_ln104               | xor       | auto                     | 0       |
+|      or_ln104_fu_298_p2                                            |     |        | or_ln104                | or        | auto                     | 0       |
+|      lit_count_3_fu_319_p2                                         |     |        | lit_count_3             | add       | fabric                   | 0       |
+|      select_ln140_fu_347_p3                                        |     |        | select_ln140            | select    | auto_sel                 | 0       |
 |      i_11_fu_357_p2                                                |     |        | i_11                    | add       | fabric                   | 0       |
 |   + lz4CompressPart2                                               | 0   |        |                         |           |                          |         |
 |    + lz4CompressPart2_Pipeline_lz4_compress                        | 0   |        |                         |           |                          |         |
-|      icmp_ln208_fu_335_p2                                          |     |        | icmp_ln208              | setlt     | auto                     | 0       |
-|      xor_ln208_fu_340_p2                                           |     |        | xor_ln208               | xor       | auto                     | 0       |
-|      or_ln208_fu_346_p2                                            |     |        | or_ln208                | or        | auto                     | 0       |
+|      icmp_ln209_fu_335_p2                                          |     |        | icmp_ln209              | setlt     | auto                     | 0       |
+|      xor_ln209_fu_340_p2                                           |     |        | xor_ln209               | xor       | auto                     | 0       |
+|      or_ln209_fu_346_p2                                            |     |        | or_ln209                | or        | auto                     | 0       |
 |      should_write_fu_352_p2                                        |     |        | should_write            | setlt     | auto                     | 0       |
-|      icmp_ln227_fu_377_p2                                          |     |        | icmp_ln227              | seteq     | auto                     | 0       |
-|      icmp_ln227_1_fu_433_p2                                        |     |        | icmp_ln227_1            | seteq     | auto                     | 0       |
+|      icmp_ln228_fu_377_p2                                          |     |        | icmp_ln228              | seteq     | auto                     | 0       |
+|      icmp_ln228_1_fu_433_p2                                        |     |        | icmp_ln228_1            | seteq     | auto                     | 0       |
 |      is_special_end_1_fu_438_p2                                    |     |        | is_special_end_1        | and       | auto                     | 0       |
-|      or_ln228_fu_383_p2                                            |     |        | or_ln228                | or        | auto                     | 0       |
+|      or_ln229_fu_383_p2                                            |     |        | or_ln229                | or        | auto                     | 0       |
 |      is_normal_end_1_fu_389_p2                                     |     |        | is_normal_end_1         | seteq     | auto                     | 0       |
 |      lit_len_ge_15_1_fu_395_p2                                     |     |        | lit_len_ge_15_1         | setgt     | auto                     | 0       |
 |      lit_len_gt_0_1_fu_401_p2                                      |     |        | lit_len_gt_0_1          | setne     | auto                     | 0       |
@@ -482,14 +482,14 @@
 |      match_len_ge_255_fu_547_p2                                    |     |        | match_len_ge_255        | setgt     | auto                     | 0       |
 |      outValue_10_fu_557_p3                                         |     |        | outValue_10             | select    | auto_sel                 | 0       |
 |      match_length_15_fu_565_p2                                     |     |        | match_length_15         | add       | fabric                   | 0       |
-|      xor_ln364_fu_571_p2                                           |     |        | xor_ln364               | xor       | auto                     | 0       |
+|      xor_ln365_fu_571_p2                                           |     |        | xor_ln365               | xor       | auto                     | 0       |
 |      readOffsetFlag_8_fu_577_p2                                    |     |        | readOffsetFlag_8        | or        | auto                     | 0       |
 |      match_length_16_fu_582_p3                                     |     |        | match_length_16         | select    | auto_sel                 | 0       |
-|      select_ln179_fu_590_p3                                        |     |        | select_ln179            | select    | auto_sel                 | 0       |
-|      select_ln356_fu_624_p3                                        |     |        | select_ln356            | select    | auto_sel                 | 0       |
+|      select_ln180_fu_590_p3                                        |     |        | select_ln180            | select    | auto_sel                 | 0       |
+|      select_ln357_fu_624_p3                                        |     |        | select_ln357            | select    | auto_sel                 | 0       |
 |      readOffsetFlag_7_fu_632_p2                                    |     |        | readOffsetFlag_7        | xor       | auto                     | 0       |
 |      write_lit_length_2_fu_486_p2                                  |     |        | write_lit_length_2      | add       | fabric                   | 0       |
-|      icmp_ln336_fu_492_p2                                          |     |        | icmp_ln336              | seteq     | auto                     | 0       |
+|      icmp_ln337_fu_492_p2                                          |     |        | icmp_ln337              | seteq     | auto                     | 0       |
 |      next_state_2_fu_662_p3                                        |     |        | next_state_2            | select    | auto_sel                 | 0       |
 |      readOffsetFlag_6_fu_670_p2                                    |     |        | readOffsetFlag_6        | and       | auto                     | 0       |
 |      next_state_3_fu_675_p3                                        |     |        | next_state_3            | select    | auto_sel                 | 0       |
@@ -497,10 +497,10 @@
 |      outValue_6_fu_709_p3                                          |     |        | outValue_6              | select    | auto_sel                 | 0       |
 |      lit_length_5_fu_717_p2                                        |     |        | lit_length_5            | add       | fabric                   | 0       |
 |      lit_length_6_fu_723_p3                                        |     |        | lit_length_6            | select    | auto_sel                 | 0       |
-|      select_ln178_fu_731_p3                                        |     |        | select_ln178            | select    | auto_sel                 | 0       |
+|      select_ln179_fu_731_p3                                        |     |        | select_ln179            | select    | auto_sel                 | 0       |
 |      inIdx_3_fu_757_p2                                             |     |        | inIdx_3                 | add       | fabric                   | 0       |
 |      inIdx_4_fu_762_p3                                             |     |        | inIdx_4                 | select    | auto_sel                 | 0       |
-|      or_ln272_fu_769_p2                                            |     |        | or_ln272                | or        | auto                     | 0       |
+|      or_ln273_fu_769_p2                                            |     |        | or_ln273                | or        | auto                     | 0       |
 |      lit_ending_fu_775_p2                                          |     |        | lit_ending              | or        | auto                     | 0       |
 |      lit_token_fu_784_p3                                           |     |        | lit_token               | select    | auto_sel                 | 0       |
 |      lit_token_1_fu_792_p3                                         |     |        | lit_token_1             | select    | auto_sel                 | 0       |
@@ -508,8 +508,8 @@
 |      lit_length_2_fu_819_p2                                        |     |        | lit_length_2            | add       | fabric                   | 0       |
 |      lit_length_3_fu_824_p3                                        |     |        | lit_length_3            | select    | auto_sel                 | 0       |
 |      lit_length_4_fu_831_p3                                        |     |        | lit_length_4            | select    | auto_sel                 | 0       |
-|      select_ln296_1_fu_839_p3                                      |     |        | select_ln296_1          | select    | auto_sel                 | 0       |
-|      or_ln296_fu_847_p2                                            |     |        | or_ln296                | or        | auto                     | 0       |
+|      select_ln297_1_fu_839_p3                                      |     |        | select_ln297_1          | select    | auto_sel                 | 0       |
+|      or_ln297_fu_847_p2                                            |     |        | or_ln297                | or        | auto                     | 0       |
 |      next_state_tmp_fu_853_p3                                      |     |        | next_state_tmp          | select    | auto_sel                 | 0       |
 |      match_length_13_fu_865_p2                                     |     |        | match_length_13         | add       | fabric                   | 0       |
 |      match_length_14_fu_870_p3                                     |     |        | match_length_14         | select    | auto_sel                 | 0       |
@@ -553,34 +553,34 @@
 | Type            | Options                                                 | Location                                                               |
 +-----------------+---------------------------------------------------------+------------------------------------------------------------------------+
 | unroll          |                                                         | ../../../include/hw/compress_utils.hpp:42 in countsetbits              |
-| pipeline        | II = 2                                                  | ../../../include/hw/lz4_compress.hpp:82 in lz4compresspart1            |
-| loop_flatten    | off                                                     | ../../../include/hw/lz4_compress.hpp:83 in lz4compresspart1            |
-| pipeline        | II = 4                                                  | ../../../include/hw/lz4_compress.hpp:209 in lz4compresspart2           |
-| loop_flatten    | off                                                     | ../../../include/hw/lz4_compress.hpp:210 in lz4compresspart2           |
-| stream          | variable = lit_outStream depth = MAX_LIT_COUNT * 2      | ../../../include/hw/lz4_compress.hpp:422 in lz4compress                |
-| stream          | variable = lenOffset_Stream depth = c_gmemBurstSize * 2 | ../../../include/hw/lz4_compress.hpp:423 in lz4compress                |
-| bind_storage    | variable = lit_outStream type = FIFO impl = BRAM        | ../../../include/hw/lz4_compress.hpp:425 in lz4compress                |
-| bind_storage    | variable = lenOffset_Stream type = FIFO impl = SRL      | ../../../include/hw/lz4_compress.hpp:426 in lz4compress                |
-| dataflow        |                                                         | ../../../include/hw/lz4_compress.hpp:428 in lz4compress                |
-| stream          | variable = compressdStream depth = 8                    | ../../../include/hw/lz4_compress.hpp:455 in hlslz4core                 |
-| stream          | variable = bestMatchStream depth = 8                    | ../../../include/hw/lz4_compress.hpp:456 in hlslz4core                 |
-| stream          | variable = boosterStream depth = 8                      | ../../../include/hw/lz4_compress.hpp:457 in hlslz4core                 |
-| bind_storage    | variable = compressdStream type = FIFO impl = SRL       | ../../../include/hw/lz4_compress.hpp:459 in hlslz4core                 |
-| bind_storage    | variable = boosterStream type = FIFO impl = SRL         | ../../../include/hw/lz4_compress.hpp:460 in hlslz4core                 |
-| dataflow        |                                                         | ../../../include/hw/lz4_compress.hpp:462 in hlslz4core                 |
-| stream          | variable = outStreamEos depth = 2                       | ../../../include/hw/lz4_compress.hpp:491 in hlslz4                     |
-| stream          | variable = inStream depth = c_gmemBurstSize             | ../../../include/hw/lz4_compress.hpp:492 in hlslz4                     |
-| stream          | variable = outStream depth = c_gmemBurstSize            | ../../../include/hw/lz4_compress.hpp:493 in hlslz4                     |
-| bind_storage    | variable = outStreamEos type = FIFO impl = SRL          | ../../../include/hw/lz4_compress.hpp:495 in hlslz4                     |
-| bind_storage    | variable = inStream type = FIFO impl = SRL              | ../../../include/hw/lz4_compress.hpp:496 in hlslz4                     |
-| bind_storage    | variable = outStream type = FIFO impl = SRL             | ../../../include/hw/lz4_compress.hpp:497 in hlslz4                     |
-| dataflow        |                                                         | ../../../include/hw/lz4_compress.hpp:501 in hlslz4                     |
-| unroll          |                                                         | ../../../include/hw/lz4_compress.hpp:506 in hlslz4                     |
-| array_partition | variable = input_block_size dim = 0 complete            | ../../../include/hw/lz4_compress.hpp:541 in lz4compressmm              |
-| array_partition | variable = input_idx dim = 0 complete                   | ../../../include/hw/lz4_compress.hpp:542 in lz4compressmm              |
-| array_partition | variable = output_idx dim = 0 complete                  | ../../../include/hw/lz4_compress.hpp:543 in lz4compressmm              |
-| array_partition | variable = output_block_size dim = 0 complete           | ../../../include/hw/lz4_compress.hpp:544 in lz4compressmm              |
-| array_partition | variable = max_lit_limit dim = 0 complete               | ../../../include/hw/lz4_compress.hpp:545 in lz4compressmm              |
+| pipeline        | II = 2                                                  | ../../../include/hw/lz4_compress.hpp:85 in lz4compresspart1            |
+| loop_flatten    | off                                                     | ../../../include/hw/lz4_compress.hpp:86 in lz4compresspart1            |
+| pipeline        | II = 4                                                  | ../../../include/hw/lz4_compress.hpp:210 in lz4compresspart2           |
+| loop_flatten    | off                                                     | ../../../include/hw/lz4_compress.hpp:211 in lz4compresspart2           |
+| stream          | variable = lit_outStream depth = MAX_LIT_COUNT * 2      | ../../../include/hw/lz4_compress.hpp:423 in lz4compress                |
+| stream          | variable = lenOffset_Stream depth = c_gmemBurstSize * 2 | ../../../include/hw/lz4_compress.hpp:424 in lz4compress                |
+| bind_storage    | variable = lit_outStream type = FIFO impl = BRAM        | ../../../include/hw/lz4_compress.hpp:426 in lz4compress                |
+| bind_storage    | variable = lenOffset_Stream type = FIFO impl = SRL      | ../../../include/hw/lz4_compress.hpp:427 in lz4compress                |
+| dataflow        |                                                         | ../../../include/hw/lz4_compress.hpp:429 in lz4compress                |
+| stream          | variable = compressdStream depth = 8                    | ../../../include/hw/lz4_compress.hpp:456 in hlslz4core                 |
+| stream          | variable = bestMatchStream depth = 8                    | ../../../include/hw/lz4_compress.hpp:457 in hlslz4core                 |
+| stream          | variable = boosterStream depth = 8                      | ../../../include/hw/lz4_compress.hpp:458 in hlslz4core                 |
+| bind_storage    | variable = compressdStream type = FIFO impl = SRL       | ../../../include/hw/lz4_compress.hpp:460 in hlslz4core                 |
+| bind_storage    | variable = boosterStream type = FIFO impl = SRL         | ../../../include/hw/lz4_compress.hpp:461 in hlslz4core                 |
+| dataflow        |                                                         | ../../../include/hw/lz4_compress.hpp:463 in hlslz4core                 |
+| stream          | variable = outStreamEos depth = 2                       | ../../../include/hw/lz4_compress.hpp:492 in hlslz4                     |
+| stream          | variable = inStream depth = c_gmemBurstSize             | ../../../include/hw/lz4_compress.hpp:493 in hlslz4                     |
+| stream          | variable = outStream depth = c_gmemBurstSize            | ../../../include/hw/lz4_compress.hpp:494 in hlslz4                     |
+| bind_storage    | variable = outStreamEos type = FIFO impl = SRL          | ../../../include/hw/lz4_compress.hpp:496 in hlslz4                     |
+| bind_storage    | variable = inStream type = FIFO impl = SRL              | ../../../include/hw/lz4_compress.hpp:497 in hlslz4                     |
+| bind_storage    | variable = outStream type = FIFO impl = SRL             | ../../../include/hw/lz4_compress.hpp:498 in hlslz4                     |
+| dataflow        |                                                         | ../../../include/hw/lz4_compress.hpp:502 in hlslz4                     |
+| unroll          |                                                         | ../../../include/hw/lz4_compress.hpp:507 in hlslz4                     |
+| array_partition | variable = input_block_size dim = 0 complete            | ../../../include/hw/lz4_compress.hpp:542 in lz4compressmm              |
+| array_partition | variable = input_idx dim = 0 complete                   | ../../../include/hw/lz4_compress.hpp:543 in lz4compressmm              |
+| array_partition | variable = output_idx dim = 0 complete                  | ../../../include/hw/lz4_compress.hpp:544 in lz4compressmm              |
+| array_partition | variable = output_block_size dim = 0 complete           | ../../../include/hw/lz4_compress.hpp:545 in lz4compressmm              |
+| array_partition | variable = max_lit_limit dim = 0 complete               | ../../../include/hw/lz4_compress.hpp:546 in lz4compressmm              |
 | bind_storage    | variable = dict type = RAM_T2P impl = BRAM              | ../../../include/hw/lz_compress.hpp:67 in lzcompress                   |
 | unroll          |                                                         | ../../../include/hw/lz_compress.hpp:70 in lzcompress                   |
 | pipeline        | II = 1                                                  | ../../../include/hw/lz_compress.hpp:76 in lzcompress                   |

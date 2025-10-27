@@ -82702,6 +82702,9 @@ static void lz4CompressPart1(hls::stream<ap_uint<32> >& inStream,
     ap_uint<64> tmpValue_reg;
     uint8_t literal_value_reg;
 
+
+    uint8_t match_len_reg;
+
 lz4_divide:
     for (uint32_t i = 0; i < input_size;) {
 #pragma HLS PIPELINE II = 2
@@ -82719,6 +82722,7 @@ lz4_divide:
 
         has_match_reg = (tLen_reg != 0);
         lit_overflow_reg = (lit_count >= MAX_LIT_COUNT);
+        match_len_reg = tLen_reg - 4;
 
 
         currentEncodedValue = nextEncodedValue;
@@ -82737,11 +82741,8 @@ lz4_divide:
             lit_count_flag = 1;
         } else if (has_match_reg) {
 
-            uint8_t match_len = tLen_reg - 4;
-
-
             tmpValue_reg.range(63, 32) = lit_count;
-            tmpValue_reg.range(15, 0) = match_len;
+            tmpValue_reg.range(15, 0) = match_len_reg;
             tmpValue_reg.range(31, 16) = match_offset_reg;
 
             should_write_lenOffset = true;
@@ -83015,7 +83016,7 @@ lz4_compress:
 
 namespace xf {
 namespace compression {
-# 410 "D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz4_compress.hpp"
+# 411 "D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz4_compress.hpp"
 template <int MAX_LIT_COUNT, int PARALLEL_UNITS>
 static void lz4Compress(hls::stream<ap_uint<32> >& inStream,
                         hls::stream<ap_uint<8> >& outStream,

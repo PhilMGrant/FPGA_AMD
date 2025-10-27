@@ -82,10 +82,10 @@ entry:13 %lenOffset_Stream = alloca i64 1
 
 <Node id="25" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8" op_3_bw="64" op_4_bw="32" op_5_bw="32" op_6_bw="32">
 <![CDATA[
-entry:18 %call_ln429 = call void @lz4CompressPart1<4096, 1>, i32 %boosterStream, i8 %lit_outStream, i64 %lenOffset_Stream, i32 %input_size, i32 %max_lit_limit, i32 %input_size_c
+entry:18 %call_ln430 = call void @lz4CompressPart1<4096, 1>, i32 %boosterStream, i8 %lit_outStream, i64 %lenOffset_Stream, i32 %input_size, i32 %max_lit_limit, i32 %input_size_c
 
 ]]></Node>
-<StgValue><ssdm name="call_ln429"/></StgValue>
+<StgValue><ssdm name="call_ln430"/></StgValue>
 </operation>
 </state>
 
@@ -100,10 +100,10 @@ entry:18 %call_ln429 = call void @lz4CompressPart1<4096, 1>, i32 %boosterStream,
 
 <Node id="25" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8" op_3_bw="64" op_4_bw="32" op_5_bw="32" op_6_bw="32">
 <![CDATA[
-entry:18 %call_ln429 = call void @lz4CompressPart1<4096, 1>, i32 %boosterStream, i8 %lit_outStream, i64 %lenOffset_Stream, i32 %input_size, i32 %max_lit_limit, i32 %input_size_c
+entry:18 %call_ln430 = call void @lz4CompressPart1<4096, 1>, i32 %boosterStream, i8 %lit_outStream, i64 %lenOffset_Stream, i32 %input_size, i32 %max_lit_limit, i32 %input_size_c
 
 ]]></Node>
-<StgValue><ssdm name="call_ln429"/></StgValue>
+<StgValue><ssdm name="call_ln430"/></StgValue>
 </operation>
 </state>
 
@@ -118,10 +118,10 @@ entry:18 %call_ln429 = call void @lz4CompressPart1<4096, 1>, i32 %boosterStream,
 
 <Node id="26" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="8" op_4_bw="1" op_5_bw="32" op_6_bw="32" op_7_bw="0" op_8_bw="0">
 <![CDATA[
-entry:19 %call_ln431 = call void @lz4CompressPart2, i8 %lit_outStream, i64 %lenOffset_Stream, i8 %lz4Out, i1 %lz4Out_eos, i32 %lz4OutSize, i32 %input_size_c
+entry:19 %call_ln432 = call void @lz4CompressPart2, i8 %lit_outStream, i64 %lenOffset_Stream, i8 %lz4Out, i1 %lz4Out_eos, i32 %lz4OutSize, i32 %input_size_c
 
 ]]></Node>
-<StgValue><ssdm name="call_ln431"/></StgValue>
+<StgValue><ssdm name="call_ln432"/></StgValue>
 </operation>
 </state>
 
@@ -331,10 +331,10 @@ entry:15 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %l
 
 <Node id="23" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:16 %specmemcore_ln425 = specmemcore void @_ssdm_op_SpecMemCore, i8 %lit_outStream, i64 666, i64 8, i64 18446744073709551615
+entry:16 %specmemcore_ln426 = specmemcore void @_ssdm_op_SpecMemCore, i8 %lit_outStream, i64 666, i64 8, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln425"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln426"/></StgValue>
 </operation>
 
 <operation id="25" st_id="4" stage="1" lat="1">
@@ -346,10 +346,10 @@ entry:16 %specmemcore_ln425 = specmemcore void @_ssdm_op_SpecMemCore, i8 %lit_ou
 
 <Node id="24" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:17 %specmemcore_ln426 = specmemcore void @_ssdm_op_SpecMemCore, i64 %lenOffset_Stream, i64 666, i64 10, i64 18446744073709551615
+entry:17 %specmemcore_ln427 = specmemcore void @_ssdm_op_SpecMemCore, i64 %lenOffset_Stream, i64 666, i64 10, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln426"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln427"/></StgValue>
 </operation>
 
 <operation id="26" st_id="4" stage="1" lat="2">
@@ -361,10 +361,10 @@ entry:17 %specmemcore_ln426 = specmemcore void @_ssdm_op_SpecMemCore, i64 %lenOf
 
 <Node id="26" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="8" op_4_bw="1" op_5_bw="32" op_6_bw="32" op_7_bw="0" op_8_bw="0">
 <![CDATA[
-entry:19 %call_ln431 = call void @lz4CompressPart2, i8 %lit_outStream, i64 %lenOffset_Stream, i8 %lz4Out, i1 %lz4Out_eos, i32 %lz4OutSize, i32 %input_size_c
+entry:19 %call_ln432 = call void @lz4CompressPart2, i8 %lit_outStream, i64 %lenOffset_Stream, i8 %lz4Out, i1 %lz4Out_eos, i32 %lz4OutSize, i32 %input_size_c
 
 ]]></Node>
-<StgValue><ssdm name="call_ln431"/></StgValue>
+<StgValue><ssdm name="call_ln432"/></StgValue>
 </operation>
 
 <operation id="27" st_id="4" stage="1" lat="1">
@@ -376,10 +376,10 @@ entry:19 %call_ln431 = call void @lz4CompressPart2, i8 %lit_outStream, i64 %lenO
 
 <Node id="27" bw="0">
 <![CDATA[
-entry:20 %ret_ln432 = ret
+entry:20 %ret_ln433 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln432"/></StgValue>
+<StgValue><ssdm name="ret_ln433"/></StgValue>
 </operation>
 </state>
 </state_list>

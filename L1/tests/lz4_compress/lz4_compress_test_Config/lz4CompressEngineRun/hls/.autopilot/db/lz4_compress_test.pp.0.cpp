@@ -36954,6 +36954,9 @@ static void lz4CompressPart1(hls::stream<ap_uint<32> >& inStream,
     ap_uint<64> tmpValue_reg;
     uint8_t literal_value_reg;
 
+
+    uint8_t match_len_reg;
+
 lz4_divide:
     for (uint32_t i = 0; i < input_size;) {
 #pragma HLS PIPELINE II = 2
@@ -36971,6 +36974,7 @@ lz4_divide:
 
         has_match_reg = (tLen_reg != 0);
         lit_overflow_reg = (lit_count >= MAX_LIT_COUNT);
+        match_len_reg = tLen_reg - 4;
 
 
         currentEncodedValue = nextEncodedValue;
@@ -36989,11 +36993,8 @@ lz4_divide:
             lit_count_flag = 1;
         } else if (has_match_reg) {
 
-            uint8_t match_len = tLen_reg - 4;
-
-
             tmpValue_reg.range(63, 32) = lit_count;
-            tmpValue_reg.range(15, 0) = match_len;
+            tmpValue_reg.range(15, 0) = match_len_reg;
             tmpValue_reg.range(31, 16) = match_offset_reg;
 
             should_write_lenOffset = true;
@@ -37267,7 +37268,7 @@ lz4_compress:
 
 namespace xf {
 namespace compression {
-# 410 "D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\\lz4_compress.hpp"
+# 411 "D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\\lz4_compress.hpp"
 template <int MAX_LIT_COUNT, int PARALLEL_UNITS>
 static void lz4Compress(hls::stream<ap_uint<32> >& inStream,
                         hls::stream<ap_uint<8> >& outStream,
@@ -37363,7 +37364,7 @@ void hlsLz4(const data_t* in,
  xf::compression::details::mm2multStreamSize<8, NUM_BLOCK, DATAWIDTH, BURST_SIZE>(in, input_idx, inStream,
                                                                                      input_size);
 
-    VITIS_LOOP_505_1: for (uint8_t i = 0; i < NUM_BLOCK; i++) {
+    VITIS_LOOP_506_1: for (uint8_t i = 0; i < NUM_BLOCK; i++) {
 #pragma HLS UNROLL
 
  hlsLz4Core<ap_uint<8>, DATAWIDTH, BURST_SIZE, NUM_BLOCK>(inStream[i], outStream[i], outStreamEos[i],
@@ -37406,13 +37407,13 @@ void lz4CompressMM(const data_t* in, data_t* out, uint32_t* compressd_size, cons
 #pragma HLS ARRAY_PARTITION variable = max_lit_limit dim = 0 complete
 
 
- VITIS_LOOP_548_1: for (uint32_t i = 0; i < no_blocks; i += NUM_BLOCK) {
+ VITIS_LOOP_549_1: for (uint32_t i = 0; i < no_blocks; i += NUM_BLOCK) {
         uint32_t nblocks = NUM_BLOCK;
         if ((i + NUM_BLOCK) > no_blocks) {
             nblocks = no_blocks - i;
         }
 
-        VITIS_LOOP_554_2: for (uint32_t j = 0; j < NUM_BLOCK; j++) {
+        VITIS_LOOP_555_2: for (uint32_t j = 0; j < NUM_BLOCK; j++) {
             if (j < nblocks) {
                 uint32_t inBlockSize = block_length;
                 if (readBlockSize + block_length > input_size) inBlockSize = input_size - readBlockSize;
@@ -37440,7 +37441,7 @@ void lz4CompressMM(const data_t* in, data_t* out, uint32_t* compressd_size, cons
         hlsLz4<data_t, DATAWIDTH, BURST_SIZE, NUM_BLOCK>(in, out, input_idx, output_idx, input_block_size,
                                                          output_block_size, max_lit_limit);
 
-        VITIS_LOOP_582_3: for (uint32_t k = 0; k < nblocks; k++) {
+        VITIS_LOOP_583_3: for (uint32_t k = 0; k < nblocks; k++) {
             if (max_lit_limit[k]) {
                 compressd_size[block_idx] = input_block_size[k];
             } else {

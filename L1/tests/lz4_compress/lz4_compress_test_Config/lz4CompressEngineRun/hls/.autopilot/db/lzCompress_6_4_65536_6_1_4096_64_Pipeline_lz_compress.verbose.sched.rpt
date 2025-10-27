@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress'
 ================================================================
-* Date:           Mon Oct 27 15:27:16 2025
+* Date:           Mon Oct 27 15:59:19 2025
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        lz4CompressEngineRun
@@ -566,7 +566,7 @@ The critical path consists of the following:
  <State 6>: 5.806ns
 The critical path consists of the following:
 	'add' operation 32 bit ('currIdx', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:99) [56]  (2.552 ns)
-	'store' operation 0 bit ('store_ln134', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:134) of variable 'dictWriteValue', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:132 on array 'dict_2' [96]  (3.254 ns)
+	'store' operation 0 bit ('store_ln134', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:134) of variable 'dictWriteValue', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:132 on array 'dict_1' [99]  (3.254 ns)
 
  <State 7>: 6.168ns
 The critical path consists of the following:

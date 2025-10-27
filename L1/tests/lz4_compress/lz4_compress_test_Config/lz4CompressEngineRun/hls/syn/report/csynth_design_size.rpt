@@ -40,9 +40,9 @@
 |    lzCompress<6, 4, 65536, 6, 1... | lz_compress.hpp:58       | 1,087        | 462           | 480          | 512         |  531          |
 |    lzBestMatchFilter<6, 65536>     | lz_optional.hpp:325      |  314         |  93           |  81          |  73         |   91          |
 |    lzBooster<255, 16384, 64>       | lz_optional.hpp:586      | 1,552        | 112           | 114          | 108         |  122          |
-|  + lz4Compress<4096, 1>            | lz4_compress.hpp:411     | 3,270        | 224           | 219          | 216         |  242          |
+|  + lz4Compress<4096, 1>            | lz4_compress.hpp:412     | 3,270        | 224           | 219          | 216         |  242          |
 |     lz4CompressPart1<4096, 1>      | lz4_compress.hpp:45      |  665         |  77           |  71          |  69         |   78          |
-|     lz4CompressPart2               | lz4_compress.hpp:165     | 2,584        | 136           | 137          | 136         |  151          |
+|     lz4CompressPart2               | lz4_compress.hpp:166     | 2,584        | 136           | 137          | 136         |  151          |
 +------------------------------------+--------------------------+--------------+---------------+--------------+-------------+---------------+
 
 * Design Size Message Settings

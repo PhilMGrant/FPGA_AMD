@@ -70,10 +70,10 @@ entry:2 %input_size_3 = read i32 @_ssdm_op_Read.ap_fifo.i32P0A, i32 %input_size
 
 <Node id="17" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="64" op_4_bw="8" op_5_bw="8" op_6_bw="1" op_7_bw="0">
 <![CDATA[
-entry:10 %fence_ln208 = fence void @_ssdm_op_Fence, i32 %input_size, i32 4294967295, i64 %lenOffset_Stream, i8 %lit_outStream, i8 %lz4Out, i1 %lz4Out_eos
+entry:10 %fence_ln209 = fence void @_ssdm_op_Fence, i32 %input_size, i32 4294967295, i64 %lenOffset_Stream, i8 %lit_outStream, i8 %lz4Out, i1 %lz4Out_eos
 
 ]]></Node>
-<StgValue><ssdm name="fence_ln208"/></StgValue>
+<StgValue><ssdm name="fence_ln209"/></StgValue>
 </operation>
 
 <operation id="8" st_id="2" stage="2" lat="2">
@@ -241,10 +241,10 @@ entry:9 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %lz
 
 <Node id="19" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="8" op_3_bw="8" op_4_bw="1" op_5_bw="32" op_6_bw="32" op_7_bw="8" op_8_bw="1" op_9_bw="0">
 <![CDATA[
-entry:12 %fence_ln382 = fence void @_ssdm_op_Fence, i64 %lenOffset_Stream, i8 %lit_outStream, i8 %lz4Out, i1 %lz4Out_eos, i32 4294967295, i32 %lz4OutSize, i8 %lz4Out, i1 %lz4Out_eos
+entry:12 %fence_ln383 = fence void @_ssdm_op_Fence, i64 %lenOffset_Stream, i8 %lit_outStream, i8 %lz4Out, i1 %lz4Out_eos, i32 4294967295, i32 %lz4OutSize, i8 %lz4Out, i1 %lz4Out_eos
 
 ]]></Node>
-<StgValue><ssdm name="fence_ln382"/></StgValue>
+<StgValue><ssdm name="fence_ln383"/></StgValue>
 </operation>
 
 <operation id="19" st_id="4" stage="1" lat="1">
@@ -271,10 +271,10 @@ entry:13 %compressedSize_loc_load = load i32 %compressedSize_loc
 
 <Node id="21" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0">
 <![CDATA[
-entry:14 %write_ln382 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %lz4OutSize, i32 %compressedSize_loc_load
+entry:14 %write_ln383 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %lz4OutSize, i32 %compressedSize_loc_load
 
 ]]></Node>
-<StgValue><ssdm name="write_ln382"/></StgValue>
+<StgValue><ssdm name="write_ln383"/></StgValue>
 </operation>
 
 <operation id="21" st_id="4" stage="1" lat="1">
@@ -286,10 +286,10 @@ entry:14 %write_ln382 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 
 
 <Node id="22" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="0" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:15 %write_ln383 = write void @_ssdm_op_Write.ap_fifo.volatile.i8P0A, i8 %lz4Out, i8 0
+entry:15 %write_ln384 = write void @_ssdm_op_Write.ap_fifo.volatile.i8P0A, i8 %lz4Out, i8 0
 
 ]]></Node>
-<StgValue><ssdm name="write_ln383"/></StgValue>
+<StgValue><ssdm name="write_ln384"/></StgValue>
 </operation>
 
 <operation id="22" st_id="4" stage="1" lat="1">
@@ -301,10 +301,10 @@ entry:15 %write_ln383 = write void @_ssdm_op_Write.ap_fifo.volatile.i8P0A, i8 %l
 
 <Node id="23" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1" op_3_bw="0" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:16 %write_ln384 = write void @_ssdm_op_Write.ap_fifo.volatile.i1P0A, i1 %lz4Out_eos, i1 1
+entry:16 %write_ln385 = write void @_ssdm_op_Write.ap_fifo.volatile.i1P0A, i1 %lz4Out_eos, i1 1
 
 ]]></Node>
-<StgValue><ssdm name="write_ln384"/></StgValue>
+<StgValue><ssdm name="write_ln385"/></StgValue>
 </operation>
 
 <operation id="23" st_id="4" stage="1" lat="1">
@@ -316,10 +316,10 @@ entry:16 %write_ln384 = write void @_ssdm_op_Write.ap_fifo.volatile.i1P0A, i1 %l
 
 <Node id="24" bw="0">
 <![CDATA[
-entry:17 %ret_ln385 = ret
+entry:17 %ret_ln386 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln385"/></StgValue>
+<StgValue><ssdm name="ret_ln386"/></StgValue>
 </operation>
 </state>
 </state_list>
@@ -354,19 +354,19 @@ entry:17 %ret_ln385 = ret
 </dataflow>
 <dataflow id="37" from="input_size" to="input_size_3" fromId="32" toId="6">
 </dataflow>
-<dataflow id="39" from="_ssdm_op_Fence" to="fence_ln208" fromId="38" toId="7">
+<dataflow id="39" from="_ssdm_op_Fence" to="fence_ln209" fromId="38" toId="7">
 </dataflow>
-<dataflow id="40" from="input_size" to="fence_ln208" fromId="32" toId="7">
+<dataflow id="40" from="input_size" to="fence_ln209" fromId="32" toId="7">
 </dataflow>
-<dataflow id="42" from="StgValue_41" to="fence_ln208" fromId="41" toId="7">
+<dataflow id="42" from="StgValue_41" to="fence_ln209" fromId="41" toId="7">
 </dataflow>
-<dataflow id="43" from="lenOffset_Stream" to="fence_ln208" fromId="28" toId="7">
+<dataflow id="43" from="lenOffset_Stream" to="fence_ln209" fromId="28" toId="7">
 </dataflow>
-<dataflow id="44" from="lit_outStream" to="fence_ln208" fromId="27" toId="7">
+<dataflow id="44" from="lit_outStream" to="fence_ln209" fromId="27" toId="7">
 </dataflow>
-<dataflow id="45" from="lz4Out" to="fence_ln208" fromId="29" toId="7">
+<dataflow id="45" from="lz4Out" to="fence_ln209" fromId="29" toId="7">
 </dataflow>
-<dataflow id="46" from="lz4Out_eos" to="fence_ln208" fromId="30" toId="7">
+<dataflow id="46" from="lz4Out_eos" to="fence_ln209" fromId="30" toId="7">
 </dataflow>
 <dataflow id="48" from="lz4CompressPart2_Pipeline_lz4_compress" to="call_ln0" fromId="47" toId="8">
 </dataflow>
@@ -656,43 +656,43 @@ entry:17 %ret_ln385 = ret
 </dataflow>
 <dataflow id="205" from="StgValue_67" to="specinterface_ln0" fromId="67" toId="17">
 </dataflow>
-<dataflow id="206" from="_ssdm_op_Fence" to="fence_ln382" fromId="38" toId="18">
+<dataflow id="206" from="_ssdm_op_Fence" to="fence_ln383" fromId="38" toId="18">
 </dataflow>
-<dataflow id="207" from="lenOffset_Stream" to="fence_ln382" fromId="28" toId="18">
+<dataflow id="207" from="lenOffset_Stream" to="fence_ln383" fromId="28" toId="18">
 </dataflow>
-<dataflow id="208" from="lit_outStream" to="fence_ln382" fromId="27" toId="18">
+<dataflow id="208" from="lit_outStream" to="fence_ln383" fromId="27" toId="18">
 </dataflow>
-<dataflow id="209" from="lz4Out" to="fence_ln382" fromId="29" toId="18">
+<dataflow id="209" from="lz4Out" to="fence_ln383" fromId="29" toId="18">
 </dataflow>
-<dataflow id="210" from="lz4Out_eos" to="fence_ln382" fromId="30" toId="18">
+<dataflow id="210" from="lz4Out_eos" to="fence_ln383" fromId="30" toId="18">
 </dataflow>
-<dataflow id="211" from="StgValue_41" to="fence_ln382" fromId="41" toId="18">
+<dataflow id="211" from="StgValue_41" to="fence_ln383" fromId="41" toId="18">
 </dataflow>
-<dataflow id="212" from="lz4OutSize" to="fence_ln382" fromId="31" toId="18">
+<dataflow id="212" from="lz4OutSize" to="fence_ln383" fromId="31" toId="18">
 </dataflow>
-<dataflow id="213" from="lz4Out" to="fence_ln382" fromId="29" toId="18">
+<dataflow id="213" from="lz4Out" to="fence_ln383" fromId="29" toId="18">
 </dataflow>
-<dataflow id="214" from="lz4Out_eos" to="fence_ln382" fromId="30" toId="18">
+<dataflow id="214" from="lz4Out_eos" to="fence_ln383" fromId="30" toId="18">
 </dataflow>
 <dataflow id="215" from="compressedSize_loc" to="compressedSize_loc_load" fromId="5" toId="19">
 </dataflow>
-<dataflow id="217" from="_ssdm_op_Write.ap_fifo.volatile.i32P0A" to="write_ln382" fromId="216" toId="20">
+<dataflow id="217" from="_ssdm_op_Write.ap_fifo.volatile.i32P0A" to="write_ln383" fromId="216" toId="20">
 </dataflow>
-<dataflow id="218" from="lz4OutSize" to="write_ln382" fromId="31" toId="20">
+<dataflow id="218" from="lz4OutSize" to="write_ln383" fromId="31" toId="20">
 </dataflow>
-<dataflow id="219" from="compressedSize_loc_load" to="write_ln382" fromId="19" toId="20">
+<dataflow id="219" from="compressedSize_loc_load" to="write_ln383" fromId="19" toId="20">
 </dataflow>
-<dataflow id="221" from="_ssdm_op_Write.ap_fifo.volatile.i8P0A" to="write_ln383" fromId="220" toId="21">
+<dataflow id="221" from="_ssdm_op_Write.ap_fifo.volatile.i8P0A" to="write_ln384" fromId="220" toId="21">
 </dataflow>
-<dataflow id="222" from="lz4Out" to="write_ln383" fromId="29" toId="21">
+<dataflow id="222" from="lz4Out" to="write_ln384" fromId="29" toId="21">
 </dataflow>
-<dataflow id="224" from="StgValue_223" to="write_ln383" fromId="223" toId="21">
+<dataflow id="224" from="StgValue_223" to="write_ln384" fromId="223" toId="21">
 </dataflow>
-<dataflow id="226" from="_ssdm_op_Write.ap_fifo.volatile.i1P0A" to="write_ln384" fromId="225" toId="22">
+<dataflow id="226" from="_ssdm_op_Write.ap_fifo.volatile.i1P0A" to="write_ln385" fromId="225" toId="22">
 </dataflow>
-<dataflow id="227" from="lz4Out_eos" to="write_ln384" fromId="30" toId="22">
+<dataflow id="227" from="lz4Out_eos" to="write_ln385" fromId="30" toId="22">
 </dataflow>
-<dataflow id="229" from="StgValue_228" to="write_ln384" fromId="228" toId="22">
+<dataflow id="229" from="StgValue_228" to="write_ln385" fromId="228" toId="22">
 </dataflow>
 </dataflows>
 

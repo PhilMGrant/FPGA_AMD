@@ -82,10 +82,10 @@ entry:13 %lenOffset_Stream = alloca i64 1
 
 <Node id="25" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8" op_3_bw="64" op_4_bw="32" op_5_bw="32" op_6_bw="32">
 <![CDATA[
-entry:18 %call_ln429 = call void @lz4CompressPart1<4096, 1>, i32 %boosterStream, i8 %lit_outStream, i64 %lenOffset_Stream, i32 %input_size, i32 %max_lit_limit, i32 %input_size_c
+entry:18 %call_ln430 = call void @lz4CompressPart1<4096, 1>, i32 %boosterStream, i8 %lit_outStream, i64 %lenOffset_Stream, i32 %input_size, i32 %max_lit_limit, i32 %input_size_c
 
 ]]></Node>
-<StgValue><ssdm name="call_ln429"/></StgValue>
+<StgValue><ssdm name="call_ln430"/></StgValue>
 </operation>
 </state>
 
@@ -100,10 +100,10 @@ entry:18 %call_ln429 = call void @lz4CompressPart1<4096, 1>, i32 %boosterStream,
 
 <Node id="25" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8" op_3_bw="64" op_4_bw="32" op_5_bw="32" op_6_bw="32">
 <![CDATA[
-entry:18 %call_ln429 = call void @lz4CompressPart1<4096, 1>, i32 %boosterStream, i8 %lit_outStream, i64 %lenOffset_Stream, i32 %input_size, i32 %max_lit_limit, i32 %input_size_c
+entry:18 %call_ln430 = call void @lz4CompressPart1<4096, 1>, i32 %boosterStream, i8 %lit_outStream, i64 %lenOffset_Stream, i32 %input_size, i32 %max_lit_limit, i32 %input_size_c
 
 ]]></Node>
-<StgValue><ssdm name="call_ln429"/></StgValue>
+<StgValue><ssdm name="call_ln430"/></StgValue>
 </operation>
 </state>
 
@@ -118,10 +118,10 @@ entry:18 %call_ln429 = call void @lz4CompressPart1<4096, 1>, i32 %boosterStream,
 
 <Node id="26" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="8" op_4_bw="1" op_5_bw="32" op_6_bw="32" op_7_bw="0" op_8_bw="0">
 <![CDATA[
-entry:19 %call_ln431 = call void @lz4CompressPart2, i8 %lit_outStream, i64 %lenOffset_Stream, i8 %lz4Out, i1 %lz4Out_eos, i32 %lz4OutSize, i32 %input_size_c
+entry:19 %call_ln432 = call void @lz4CompressPart2, i8 %lit_outStream, i64 %lenOffset_Stream, i8 %lz4Out, i1 %lz4Out_eos, i32 %lz4OutSize, i32 %input_size_c
 
 ]]></Node>
-<StgValue><ssdm name="call_ln431"/></StgValue>
+<StgValue><ssdm name="call_ln432"/></StgValue>
 </operation>
 </state>
 
@@ -331,10 +331,10 @@ entry:15 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %l
 
 <Node id="23" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:16 %specmemcore_ln425 = specmemcore void @_ssdm_op_SpecMemCore, i8 %lit_outStream, i64 666, i64 8, i64 18446744073709551615
+entry:16 %specmemcore_ln426 = specmemcore void @_ssdm_op_SpecMemCore, i8 %lit_outStream, i64 666, i64 8, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln425"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln426"/></StgValue>
 </operation>
 
 <operation id="25" st_id="4" stage="1" lat="1">
@@ -346,10 +346,10 @@ entry:16 %specmemcore_ln425 = specmemcore void @_ssdm_op_SpecMemCore, i8 %lit_ou
 
 <Node id="24" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:17 %specmemcore_ln426 = specmemcore void @_ssdm_op_SpecMemCore, i64 %lenOffset_Stream, i64 666, i64 10, i64 18446744073709551615
+entry:17 %specmemcore_ln427 = specmemcore void @_ssdm_op_SpecMemCore, i64 %lenOffset_Stream, i64 666, i64 10, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln426"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln427"/></StgValue>
 </operation>
 
 <operation id="26" st_id="4" stage="1" lat="2">
@@ -361,10 +361,10 @@ entry:17 %specmemcore_ln426 = specmemcore void @_ssdm_op_SpecMemCore, i64 %lenOf
 
 <Node id="26" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="8" op_4_bw="1" op_5_bw="32" op_6_bw="32" op_7_bw="0" op_8_bw="0">
 <![CDATA[
-entry:19 %call_ln431 = call void @lz4CompressPart2, i8 %lit_outStream, i64 %lenOffset_Stream, i8 %lz4Out, i1 %lz4Out_eos, i32 %lz4OutSize, i32 %input_size_c
+entry:19 %call_ln432 = call void @lz4CompressPart2, i8 %lit_outStream, i64 %lenOffset_Stream, i8 %lz4Out, i1 %lz4Out_eos, i32 %lz4OutSize, i32 %input_size_c
 
 ]]></Node>
-<StgValue><ssdm name="call_ln431"/></StgValue>
+<StgValue><ssdm name="call_ln432"/></StgValue>
 </operation>
 
 <operation id="27" st_id="4" stage="1" lat="1">
@@ -376,10 +376,10 @@ entry:19 %call_ln431 = call void @lz4CompressPart2, i8 %lit_outStream, i64 %lenO
 
 <Node id="27" bw="0">
 <![CDATA[
-entry:20 %ret_ln432 = ret
+entry:20 %ret_ln433 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln432"/></StgValue>
+<StgValue><ssdm name="ret_ln433"/></StgValue>
 </operation>
 </state>
 </state_list>
@@ -414,47 +414,47 @@ entry:20 %ret_ln432 = ret
 </dataflow>
 <dataflow id="41" from="StgValue_38" to="lenOffset_Stream" fromId="38" toId="7">
 </dataflow>
-<dataflow id="43" from="lz4CompressPart1<4096, 1>" to="call_ln429" fromId="42" toId="8">
+<dataflow id="43" from="lz4CompressPart1<4096, 1>" to="call_ln430" fromId="42" toId="8">
 </dataflow>
-<dataflow id="44" from="boosterStream" to="call_ln429" fromId="32" toId="8">
+<dataflow id="44" from="boosterStream" to="call_ln430" fromId="32" toId="8">
 </dataflow>
-<dataflow id="45" from="lit_outStream" to="call_ln429" fromId="6" toId="8">
+<dataflow id="45" from="lit_outStream" to="call_ln430" fromId="6" toId="8">
 </dataflow>
-<dataflow id="46" from="lenOffset_Stream" to="call_ln429" fromId="7" toId="8">
+<dataflow id="46" from="lenOffset_Stream" to="call_ln430" fromId="7" toId="8">
 </dataflow>
-<dataflow id="47" from="input_size" to="call_ln429" fromId="35" toId="8">
+<dataflow id="47" from="input_size" to="call_ln430" fromId="35" toId="8">
 </dataflow>
-<dataflow id="48" from="max_lit_limit" to="call_ln429" fromId="34" toId="8">
+<dataflow id="48" from="max_lit_limit" to="call_ln430" fromId="34" toId="8">
 </dataflow>
-<dataflow id="49" from="input_size_c" to="call_ln429" fromId="5" toId="8">
+<dataflow id="49" from="input_size_c" to="call_ln430" fromId="5" toId="8">
 </dataflow>
-<dataflow id="50" from="lz4CompressPart1<4096, 1>" to="call_ln429" fromId="42" toId="9">
+<dataflow id="50" from="lz4CompressPart1<4096, 1>" to="call_ln430" fromId="42" toId="9">
 </dataflow>
-<dataflow id="51" from="boosterStream" to="call_ln429" fromId="32" toId="9">
+<dataflow id="51" from="boosterStream" to="call_ln430" fromId="32" toId="9">
 </dataflow>
-<dataflow id="52" from="lit_outStream" to="call_ln429" fromId="6" toId="9">
+<dataflow id="52" from="lit_outStream" to="call_ln430" fromId="6" toId="9">
 </dataflow>
-<dataflow id="53" from="lenOffset_Stream" to="call_ln429" fromId="7" toId="9">
+<dataflow id="53" from="lenOffset_Stream" to="call_ln430" fromId="7" toId="9">
 </dataflow>
-<dataflow id="54" from="input_size" to="call_ln429" fromId="35" toId="9">
+<dataflow id="54" from="input_size" to="call_ln430" fromId="35" toId="9">
 </dataflow>
-<dataflow id="55" from="max_lit_limit" to="call_ln429" fromId="34" toId="9">
+<dataflow id="55" from="max_lit_limit" to="call_ln430" fromId="34" toId="9">
 </dataflow>
-<dataflow id="56" from="input_size_c" to="call_ln429" fromId="5" toId="9">
+<dataflow id="56" from="input_size_c" to="call_ln430" fromId="5" toId="9">
 </dataflow>
-<dataflow id="58" from="lz4CompressPart2" to="call_ln431" fromId="57" toId="10">
+<dataflow id="58" from="lz4CompressPart2" to="call_ln432" fromId="57" toId="10">
 </dataflow>
-<dataflow id="59" from="lit_outStream" to="call_ln431" fromId="6" toId="10">
+<dataflow id="59" from="lit_outStream" to="call_ln432" fromId="6" toId="10">
 </dataflow>
-<dataflow id="60" from="lenOffset_Stream" to="call_ln431" fromId="7" toId="10">
+<dataflow id="60" from="lenOffset_Stream" to="call_ln432" fromId="7" toId="10">
 </dataflow>
-<dataflow id="61" from="lz4Out" to="call_ln431" fromId="33" toId="10">
+<dataflow id="61" from="lz4Out" to="call_ln432" fromId="33" toId="10">
 </dataflow>
-<dataflow id="62" from="lz4Out_eos" to="call_ln431" fromId="36" toId="10">
+<dataflow id="62" from="lz4Out_eos" to="call_ln432" fromId="36" toId="10">
 </dataflow>
-<dataflow id="63" from="lz4OutSize" to="call_ln431" fromId="37" toId="10">
+<dataflow id="63" from="lz4OutSize" to="call_ln432" fromId="37" toId="10">
 </dataflow>
-<dataflow id="64" from="input_size_c" to="call_ln431" fromId="5" toId="10">
+<dataflow id="64" from="input_size_c" to="call_ln432" fromId="5" toId="10">
 </dataflow>
 <dataflow id="66" from="_ssdm_op_SpecInterface" to="specinterface_ln0" fromId="65" toId="11">
 </dataflow>
@@ -848,39 +848,39 @@ entry:20 %ret_ln432 = ret
 </dataflow>
 <dataflow id="282" from="StgValue_70" to="specinterface_ln0" fromId="70" toId="23">
 </dataflow>
-<dataflow id="283" from="_ssdm_op_SpecMemCore" to="specmemcore_ln425" fromId="131" toId="24">
+<dataflow id="283" from="_ssdm_op_SpecMemCore" to="specmemcore_ln426" fromId="131" toId="24">
 </dataflow>
-<dataflow id="284" from="lit_outStream" to="specmemcore_ln425" fromId="6" toId="24">
+<dataflow id="284" from="lit_outStream" to="specmemcore_ln426" fromId="6" toId="24">
 </dataflow>
-<dataflow id="285" from="StgValue_134" to="specmemcore_ln425" fromId="134" toId="24">
+<dataflow id="285" from="StgValue_134" to="specmemcore_ln426" fromId="134" toId="24">
 </dataflow>
-<dataflow id="287" from="StgValue_286" to="specmemcore_ln425" fromId="286" toId="24">
+<dataflow id="287" from="StgValue_286" to="specmemcore_ln426" fromId="286" toId="24">
 </dataflow>
-<dataflow id="288" from="StgValue_138" to="specmemcore_ln425" fromId="138" toId="24">
+<dataflow id="288" from="StgValue_138" to="specmemcore_ln426" fromId="138" toId="24">
 </dataflow>
-<dataflow id="289" from="_ssdm_op_SpecMemCore" to="specmemcore_ln426" fromId="131" toId="25">
+<dataflow id="289" from="_ssdm_op_SpecMemCore" to="specmemcore_ln427" fromId="131" toId="25">
 </dataflow>
-<dataflow id="290" from="lenOffset_Stream" to="specmemcore_ln426" fromId="7" toId="25">
+<dataflow id="290" from="lenOffset_Stream" to="specmemcore_ln427" fromId="7" toId="25">
 </dataflow>
-<dataflow id="291" from="StgValue_134" to="specmemcore_ln426" fromId="134" toId="25">
+<dataflow id="291" from="StgValue_134" to="specmemcore_ln427" fromId="134" toId="25">
 </dataflow>
-<dataflow id="292" from="StgValue_136" to="specmemcore_ln426" fromId="136" toId="25">
+<dataflow id="292" from="StgValue_136" to="specmemcore_ln427" fromId="136" toId="25">
 </dataflow>
-<dataflow id="293" from="StgValue_138" to="specmemcore_ln426" fromId="138" toId="25">
+<dataflow id="293" from="StgValue_138" to="specmemcore_ln427" fromId="138" toId="25">
 </dataflow>
-<dataflow id="294" from="lz4CompressPart2" to="call_ln431" fromId="57" toId="26">
+<dataflow id="294" from="lz4CompressPart2" to="call_ln432" fromId="57" toId="26">
 </dataflow>
-<dataflow id="295" from="lit_outStream" to="call_ln431" fromId="6" toId="26">
+<dataflow id="295" from="lit_outStream" to="call_ln432" fromId="6" toId="26">
 </dataflow>
-<dataflow id="296" from="lenOffset_Stream" to="call_ln431" fromId="7" toId="26">
+<dataflow id="296" from="lenOffset_Stream" to="call_ln432" fromId="7" toId="26">
 </dataflow>
-<dataflow id="297" from="lz4Out" to="call_ln431" fromId="33" toId="26">
+<dataflow id="297" from="lz4Out" to="call_ln432" fromId="33" toId="26">
 </dataflow>
-<dataflow id="298" from="lz4Out_eos" to="call_ln431" fromId="36" toId="26">
+<dataflow id="298" from="lz4Out_eos" to="call_ln432" fromId="36" toId="26">
 </dataflow>
-<dataflow id="299" from="lz4OutSize" to="call_ln431" fromId="37" toId="26">
+<dataflow id="299" from="lz4OutSize" to="call_ln432" fromId="37" toId="26">
 </dataflow>
-<dataflow id="300" from="input_size_c" to="call_ln431" fromId="5" toId="26">
+<dataflow id="300" from="input_size_c" to="call_ln432" fromId="5" toId="26">
 </dataflow>
 </dataflows>
 

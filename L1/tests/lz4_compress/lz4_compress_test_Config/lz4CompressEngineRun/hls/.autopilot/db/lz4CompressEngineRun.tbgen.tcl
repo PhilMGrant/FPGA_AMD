@@ -576,7 +576,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "lenOffset_Stream", "Type" : "Fifo", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "lenOffset_Stream_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "sub", "Type" : "None", "Direction" : "I"},
+			{"Name" : "sub17", "Type" : "None", "Direction" : "I"},
 			{"Name" : "boosterStream", "Type" : "Fifo", "Direction" : "I",
 				"BlockSignal" : [
 					{"Name" : "boosterStream_blk_n", "Type" : "RtlSignal"}]},
@@ -809,7 +809,7 @@ set ArgLastReadFirstWriteLatency {
 		icmp {Type I LastRead 0 FirstWrite -1}
 		input_size_5 {Type I LastRead 0 FirstWrite -1}
 		lenOffset_Stream {Type O LastRead -1 FirstWrite 2}
-		sub {Type I LastRead 0 FirstWrite -1}
+		sub17 {Type I LastRead 0 FirstWrite -1}
 		boosterStream {Type I LastRead 2 FirstWrite -1}
 		lit_outStream {Type O LastRead -1 FirstWrite 2}
 		lit_count_out {Type O LastRead -1 FirstWrite 1}

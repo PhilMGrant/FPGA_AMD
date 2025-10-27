@@ -33,12 +33,12 @@
             <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
             <rows>
                 <row id="0" col0="lz4CompressEngineRun" col1="lz4_compress_test.cpp:47" col2="6258" col3="907" col4="910" col5="925" col6="1023">
-                    <row id="6" col0="lzCompress&lt;6, 4, 65536, 6, 1, 4096, 64&gt;" col1="lz_compress.hpp:58" col2="1087" col3="462" col4="480" col5="512" col6="531"/>
-                    <row id="5" col0="lzBestMatchFilter&lt;6, 65536&gt;" col1="lz_optional.hpp:325" col2="314" col3="93" col4="81" col5="73" col6="91"/>
+                    <row id="4" col0="lzCompress&lt;6, 4, 65536, 6, 1, 4096, 64&gt;" col1="lz_compress.hpp:58" col2="1087" col3="462" col4="480" col5="512" col6="531"/>
+                    <row id="1" col0="lzBestMatchFilter&lt;6, 65536&gt;" col1="lz_optional.hpp:325" col2="314" col3="93" col4="81" col5="73" col6="91"/>
                     <row id="2" col0="lzBooster&lt;255, 16384, 64&gt;" col1="lz_optional.hpp:586" col2="1552" col3="112" col4="114" col5="108" col6="122"/>
-                    <row id="3" col0="lz4Compress&lt;4096, 1&gt;" col1="lz4_compress.hpp:411" col2="3270" col3="224" col4="219" col5="216" col6="242">
-                        <row id="4" col0="lz4CompressPart1&lt;4096, 1&gt;" col1="lz4_compress.hpp:45" col2="665" col3="77" col4="71" col5="69" col6="78"/>
-                        <row id="1" col0="lz4CompressPart2" col1="lz4_compress.hpp:165" col2="2584" col3="136" col4="137" col5="136" col6="151"/>
+                    <row id="6" col0="lz4Compress&lt;4096, 1&gt;" col1="lz4_compress.hpp:412" col2="3270" col3="224" col4="219" col5="216" col6="242">
+                        <row id="5" col0="lz4CompressPart1&lt;4096, 1&gt;" col1="lz4_compress.hpp:45" col2="665" col3="77" col4="71" col5="69" col6="78"/>
+                        <row id="3" col0="lz4CompressPart2" col1="lz4_compress.hpp:166" col2="2584" col3="136" col4="137" col5="136" col6="151"/>
                     </row>
                 </row>
             </rows>

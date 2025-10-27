@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "4 3 5 6",
+    "calls": "1 6 4 5",
     "file": "lz4_compress_test.cpp",
     "fileloc": 47,
     "instructions": 16,
@@ -9,42 +9,6 @@
     "total_instructions": 907
   },
   "1": {
-    "basicblocks": 22,
-    "calls": "",
-    "file": "lz4_compress.hpp",
-    "fileloc": 45,
-    "instructions": 77,
-    "name": "lz4CompressPart1<4096, 1>",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 77
-  },
-  "2": {
-    "basicblocks": 15,
-    "calls": "",
-    "file": "lz4_compress.hpp",
-    "fileloc": 165,
-    "instructions": 136,
-    "name": "lz4CompressPart2",
-    "total_instructions": 136
-  },
-  "3": {
-    "basicblocks": 11,
-    "calls": "",
-    "file": "lz_optional.hpp",
-    "fileloc": 325,
-    "instructions": 93,
-    "loads": {
-      "L": 1
-    },
-    "name": "lzBestMatchFilter<6, 65536>",
-    "stores": {
-      "L": 12
-    },
-    "total_instructions": 93
-  },
-  "4": {
     "basicblocks": 15,
     "calls": "",
     "file": "lz_compress.hpp",
@@ -59,7 +23,28 @@
     },
     "total_instructions": 462
   },
-  "5": {
+  "2": {
+    "basicblocks": 22,
+    "calls": "",
+    "file": "lz4_compress.hpp",
+    "fileloc": 45,
+    "instructions": 77,
+    "name": "lz4CompressPart1<4096, 1>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 77
+  },
+  "3": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "lz4_compress.hpp",
+    "fileloc": 166,
+    "instructions": 136,
+    "name": "lz4CompressPart2",
+    "total_instructions": 136
+  },
+  "4": {
     "basicblocks": 18,
     "calls": "",
     "file": "lz_optional.hpp",
@@ -76,13 +61,28 @@
     },
     "total_instructions": 112
   },
-  "6": {
+  "5": {
     "basicblocks": 1,
-    "calls": "1 2",
+    "calls": "2 3",
     "file": "lz4_compress.hpp",
-    "fileloc": 411,
+    "fileloc": 412,
     "instructions": 11,
     "name": "lz4Compress<4096, 1>",
     "total_instructions": 224
+  },
+  "6": {
+    "basicblocks": 11,
+    "calls": "",
+    "file": "lz_optional.hpp",
+    "fileloc": 325,
+    "instructions": 93,
+    "loads": {
+      "L": 1
+    },
+    "name": "lzBestMatchFilter<6, 65536>",
+    "stores": {
+      "L": 12
+    },
+    "total_instructions": 93
   }
 }

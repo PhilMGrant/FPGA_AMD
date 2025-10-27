@@ -100,7 +100,7 @@ attribute shreg_extract : string;
     signal ap_CS_fsm_state7 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state7 : signal is "none";
     signal icmp_ln51_reg_284 : STD_LOGIC_VECTOR (0 downto 0);
-    signal icmp_ln143_reg_314 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln144_reg_314 : STD_LOGIC_VECTOR (0 downto 0);
     signal input_size_blk_n : STD_LOGIC;
     signal input_size_c_blk_n : STD_LOGIC;
     signal input_size_4_reg_277 : STD_LOGIC_VECTOR (31 downto 0);
@@ -109,11 +109,11 @@ attribute shreg_extract : string;
     signal boosterStream_read_reg_288 : STD_LOGIC_VECTOR (31 downto 0);
     signal has_next_value_reg_293 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_block_state3 : BOOLEAN;
-    signal sub_fu_179_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal sub_reg_303 : STD_LOGIC_VECTOR (31 downto 0);
+    signal sub17_fu_179_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal sub17_reg_303 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state4 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state4 : signal is "none";
-    signal icmp_ln143_fu_223_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln144_fu_223_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_CS_fsm_state6 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state6 : signal is "none";
     signal is_max_lit_fu_229_p2 : STD_LOGIC_VECTOR (0 downto 0);
@@ -132,7 +132,7 @@ attribute shreg_extract : string;
     signal grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_lit_count_flag_out : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_lit_count_flag_out_ap_vld : STD_LOGIC;
     signal nextEncodedValue_reg_118 : STD_LOGIC_VECTOR (31 downto 0);
-    signal zext_ln149_fu_245_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal zext_ln150_fu_245_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_phi_mux_lit_count_flag_1_phi_fu_133_p4 : STD_LOGIC_VECTOR (31 downto 0);
     signal lit_count_flag_1_reg_130 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_predicate_op44_write_state7 : BOOLEAN;
@@ -143,7 +143,7 @@ attribute shreg_extract : string;
     signal tmpValue_1_fu_257_p3 : STD_LOGIC_VECTOR (63 downto 0);
     signal max_lit_limit_preg : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     signal tmp_fu_164_p4 : STD_LOGIC_VECTOR (30 downto 0);
-    signal icmp_ln149_fu_235_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln150_fu_235_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal lit_count_flag_fu_240_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal tmpValue_fu_250_p3 : STD_LOGIC_VECTOR (63 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (6 downto 0);
@@ -173,7 +173,7 @@ attribute shreg_extract : string;
         lenOffset_Stream_write : OUT STD_LOGIC;
         lenOffset_Stream_num_data_valid : IN STD_LOGIC_VECTOR (6 downto 0);
         lenOffset_Stream_fifo_cap : IN STD_LOGIC_VECTOR (6 downto 0);
-        sub : IN STD_LOGIC_VECTOR (31 downto 0);
+        sub17 : IN STD_LOGIC_VECTOR (31 downto 0);
         boosterStream_dout : IN STD_LOGIC_VECTOR (31 downto 0);
         boosterStream_empty_n : IN STD_LOGIC;
         boosterStream_read : OUT STD_LOGIC;
@@ -210,7 +210,7 @@ begin
         lenOffset_Stream_write => grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_lenOffset_Stream_write,
         lenOffset_Stream_num_data_valid => ap_const_lv7_0,
         lenOffset_Stream_fifo_cap => ap_const_lv7_0,
-        sub => sub_reg_303,
+        sub17 => sub17_reg_303,
         boosterStream_dout => boosterStream_dout,
         boosterStream_empty_n => boosterStream_empty_n,
         boosterStream_read => grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_boosterStream_read,
@@ -307,10 +307,10 @@ begin
     lit_count_flag_1_reg_130_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_const_logic_1 = ap_CS_fsm_state6) and (icmp_ln143_fu_223_p2 = ap_const_lv1_1))) then 
+            if (((ap_const_logic_1 = ap_CS_fsm_state6) and (icmp_ln144_fu_223_p2 = ap_const_lv1_1))) then 
                 lit_count_flag_1_reg_130 <= grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_lit_count_flag_out;
-            elsif (((icmp_ln51_reg_284 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state7) and (ap_const_boolean_0 = ap_block_state7) and (icmp_ln143_reg_314 = ap_const_lv1_0))) then 
-                lit_count_flag_1_reg_130 <= zext_ln149_fu_245_p1;
+            elsif (((icmp_ln51_reg_284 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state7) and (ap_const_boolean_0 = ap_block_state7) and (icmp_ln144_reg_314 = ap_const_lv1_0))) then 
+                lit_count_flag_1_reg_130 <= zext_ln150_fu_245_p1;
             end if; 
         end if;
     end process;
@@ -334,7 +334,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state6)) then
-                icmp_ln143_reg_314 <= icmp_ln143_fu_223_p2;
+                icmp_ln144_reg_314 <= icmp_ln144_fu_223_p2;
                 is_max_lit_reg_318 <= is_max_lit_fu_229_p2;
             end if;
         end if;
@@ -360,7 +360,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state4)) then
-                sub_reg_303 <= sub_fu_179_p2;
+                sub17_reg_303 <= sub17_fu_179_p2;
             end if;
         end if;
     end process;
@@ -506,19 +506,19 @@ begin
     end process;
 
 
-    ap_phi_mux_lit_count_flag_1_phi_fu_133_p4_assign_proc : process(ap_CS_fsm_state7, icmp_ln51_reg_284, icmp_ln143_reg_314, zext_ln149_fu_245_p1, lit_count_flag_1_reg_130)
+    ap_phi_mux_lit_count_flag_1_phi_fu_133_p4_assign_proc : process(ap_CS_fsm_state7, icmp_ln51_reg_284, icmp_ln144_reg_314, zext_ln150_fu_245_p1, lit_count_flag_1_reg_130)
     begin
-        if (((icmp_ln51_reg_284 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state7) and (icmp_ln143_reg_314 = ap_const_lv1_0))) then 
-            ap_phi_mux_lit_count_flag_1_phi_fu_133_p4 <= zext_ln149_fu_245_p1;
+        if (((icmp_ln51_reg_284 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state7) and (icmp_ln144_reg_314 = ap_const_lv1_0))) then 
+            ap_phi_mux_lit_count_flag_1_phi_fu_133_p4 <= zext_ln150_fu_245_p1;
         else 
             ap_phi_mux_lit_count_flag_1_phi_fu_133_p4 <= lit_count_flag_1_reg_130;
         end if; 
     end process;
 
 
-    ap_predicate_op44_write_state7_assign_proc : process(icmp_ln51_reg_284, icmp_ln143_reg_314)
+    ap_predicate_op44_write_state7_assign_proc : process(icmp_ln51_reg_284, icmp_ln144_reg_314)
     begin
-                ap_predicate_op44_write_state7 <= ((icmp_ln51_reg_284 = ap_const_lv1_0) and (icmp_ln143_reg_314 = ap_const_lv1_0));
+                ap_predicate_op44_write_state7 <= ((icmp_ln51_reg_284 = ap_const_lv1_0) and (icmp_ln144_reg_314 = ap_const_lv1_0));
     end process;
 
     ap_ready <= internal_ap_ready;
@@ -546,8 +546,8 @@ begin
 
     grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_ap_start <= grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_ap_start_reg;
     has_next_value_fu_173_p2 <= "0" when (tmp_fu_164_p4 = ap_const_lv31_0) else "1";
-    icmp_ln143_fu_223_p2 <= "1" when (grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_lit_count_out = ap_const_lv32_0) else "0";
-    icmp_ln149_fu_235_p2 <= "0" when (grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_lit_count_flag_out = ap_const_lv32_0) else "1";
+    icmp_ln144_fu_223_p2 <= "1" when (grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_lit_count_out = ap_const_lv32_0) else "0";
+    icmp_ln150_fu_235_p2 <= "0" when (grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_lit_count_flag_out = ap_const_lv32_0) else "1";
     icmp_ln51_fu_158_p2 <= "1" when (input_size_dout = ap_const_lv32_0) else "0";
 
     input_size_blk_n_assign_proc : process(real_start, ap_done_reg, ap_CS_fsm_state1, input_size_empty_n)
@@ -602,9 +602,9 @@ begin
 
     is_max_lit_fu_229_p2 <= "1" when (grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_lit_count_out = ap_const_lv32_1000) else "0";
 
-    lenOffset_Stream_blk_n_assign_proc : process(lenOffset_Stream_full_n, ap_CS_fsm_state7, icmp_ln51_reg_284, icmp_ln143_reg_314)
+    lenOffset_Stream_blk_n_assign_proc : process(lenOffset_Stream_full_n, ap_CS_fsm_state7, icmp_ln51_reg_284, icmp_ln144_reg_314)
     begin
-        if (((icmp_ln51_reg_284 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state7) and (icmp_ln143_reg_314 = ap_const_lv1_0))) then 
+        if (((icmp_ln51_reg_284 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state7) and (icmp_ln144_reg_314 = ap_const_lv1_0))) then 
             lenOffset_Stream_blk_n <= lenOffset_Stream_full_n;
         else 
             lenOffset_Stream_blk_n <= ap_const_logic_1;
@@ -635,7 +635,7 @@ begin
         end if; 
     end process;
 
-    lit_count_flag_fu_240_p2 <= (is_max_lit_reg_318 or icmp_ln149_fu_235_p2);
+    lit_count_flag_fu_240_p2 <= (is_max_lit_reg_318 or icmp_ln150_fu_235_p2);
     lit_outStream_din <= grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_lit_outStream_din;
     lit_outStream_write <= grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_lit_outStream_write;
 
@@ -679,11 +679,11 @@ begin
         end if; 
     end process;
 
-    sub_fu_179_p2 <= std_logic_vector(unsigned(input_size_4_reg_277) + unsigned(ap_const_lv32_FFFFFFFE));
+    sub17_fu_179_p2 <= std_logic_vector(unsigned(input_size_4_reg_277) + unsigned(ap_const_lv32_FFFFFFFE));
     tmpValue_1_fu_257_p3 <= 
         ap_const_lv64_100003090309 when (is_max_lit_reg_318(0) = '1') else 
         tmpValue_fu_250_p3;
     tmpValue_fu_250_p3 <= (grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140_lit_count_out & ap_const_lv32_0);
     tmp_fu_164_p4 <= input_size_4_reg_277(31 downto 1);
-    zext_ln149_fu_245_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(lit_count_flag_fu_240_p2),32));
+    zext_ln150_fu_245_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(lit_count_flag_fu_240_p2),32));
 end behav;

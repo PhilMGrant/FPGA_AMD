@@ -77,9 +77,12 @@ static void lz4CompressPart1(hls::stream<ap_uint<32> >& inStream,
     ap_uint<64> tmpValue_reg;
     uint8_t literal_value_reg;
     
+    // 优化：预计算match_len，减少关键路径
+    uint8_t match_len_reg;
+    
 lz4_divide:
     for (uint32_t i = 0; i < input_size;) {
-#pragma HLS PIPELINE II = 2  // 保守优化：保持II=2以避免时序违例
+#pragma HLS PIPELINE II = 2  // 保持II=2以避免时序违例
 #pragma HLS LOOP_FLATTEN off
         
         // 阶段1: 数据读取和预计算
@@ -91,11 +94,12 @@ lz4_divide:
         tOffset_reg = tmpEncodedValue_reg.range(31, 16);
         match_offset_reg = tOffset_reg;
         
-        // 优化：预计算条件判断
+        // 优化：预计算所有条件判断和值
         has_match_reg = (tLen_reg != 0);
         lit_overflow_reg = (lit_count >= MAX_LIT_COUNT);
+        match_len_reg = tLen_reg - 4; // LZ4 standard - 预计算
         
-        // 优化：双缓冲数据交换
+        // 优化：双缓冲数据交换，减少读取延迟
         currentEncodedValue = nextEncodedValue;
         if (i < (input_size - 2) && has_next_value) {
             nextEncodedValue = inStream.read();
@@ -111,12 +115,9 @@ lz4_divide:
         if (lit_overflow_reg) {
             lit_count_flag = 1;
         } else if (has_match_reg) {
-            // 优化：并行计算所有输出值
-            uint8_t match_len = tLen_reg - 4; // LZ4 standard
-            
-            // 优化：并行位域赋值
+            // 优化：并行计算所有输出值 - 使用预计算的match_len_reg
             tmpValue_reg.range(63, 32) = lit_count;
-            tmpValue_reg.range(15, 0) = match_len;
+            tmpValue_reg.range(15, 0) = match_len_reg;
             tmpValue_reg.range(31, 16) = match_offset_reg;
             
             should_write_lenOffset = true;

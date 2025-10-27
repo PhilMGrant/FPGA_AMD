@@ -802,17 +802,12 @@ Diagnostics:
         ReplacementText: 'VITIS_LOOP_791_1: '
   - DiagnosticName:  clang-diagnostic-error
     Message:         'Invalid Directive: for current device, FIFO + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
-    FileOffset:      425
-    FilePath:        'D:\Xillinx_Project\PROJECT\data_compression\L1\include\hw\lz4_compress.hpp'
-    Replacements:    
-  - DiagnosticName:  clang-diagnostic-error
-    Message:         'Invalid Directive: for current device, FIFO + SRL is invalid combination for BIND_STORAGE''s option ''type + impl'''
     FileOffset:      426
     FilePath:        'D:\Xillinx_Project\PROJECT\data_compression\L1\include\hw\lz4_compress.hpp'
     Replacements:    
   - DiagnosticName:  clang-diagnostic-error
     Message:         'Invalid Directive: for current device, FIFO + SRL is invalid combination for BIND_STORAGE''s option ''type + impl'''
-    FileOffset:      459
+    FileOffset:      427
     FilePath:        'D:\Xillinx_Project\PROJECT\data_compression\L1\include\hw\lz4_compress.hpp'
     Replacements:    
   - DiagnosticName:  clang-diagnostic-error
@@ -822,7 +817,7 @@ Diagnostics:
     Replacements:    
   - DiagnosticName:  clang-diagnostic-error
     Message:         'Invalid Directive: for current device, FIFO + SRL is invalid combination for BIND_STORAGE''s option ''type + impl'''
-    FileOffset:      495
+    FileOffset:      461
     FilePath:        'D:\Xillinx_Project\PROJECT\data_compression\L1\include\hw\lz4_compress.hpp'
     Replacements:    
   - DiagnosticName:  clang-diagnostic-error
@@ -835,42 +830,47 @@ Diagnostics:
     FileOffset:      497
     FilePath:        'D:\Xillinx_Project\PROJECT\data_compression\L1\include\hw\lz4_compress.hpp'
     Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, FIFO + SRL is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      498
+    FilePath:        'D:\Xillinx_Project\PROJECT\data_compression\L1\include\hw\lz4_compress.hpp'
+    Replacements:    
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_505_1:  '
-    FileOffset:      505
+    Message:         'Added loop label VITIS_LOOP_506_1:  '
+    FileOffset:      506
     FilePath:        'D:\Xillinx_Project\PROJECT\data_compression\L1\include\hw\lz4_compress.hpp'
     Replacements:    
       - FilePath:        'D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config\lz4CompressEngineRun\hls\.autopilot\db\lz4_compress_test.pp.0.cpp'
-        Offset:          1870210
+        Offset:          1870233
         Length:          0
-        ReplacementText: 'VITIS_LOOP_505_1: '
+        ReplacementText: 'VITIS_LOOP_506_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_548_1:  '
-    FileOffset:      548
+    Message:         'Added loop label VITIS_LOOP_549_1:  '
+    FileOffset:      549
     FilePath:        'D:\Xillinx_Project\PROJECT\data_compression\L1\include\hw\lz4_compress.hpp'
     Replacements:    
       - FilePath:        'D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config\lz4CompressEngineRun\hls\.autopilot\db\lz4_compress_test.pp.0.cpp'
-        Offset:          1871936
+        Offset:          1871959
         Length:          0
-        ReplacementText: 'VITIS_LOOP_548_1: '
+        ReplacementText: 'VITIS_LOOP_549_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_554_2:  '
-    FileOffset:      554
+    Message:         'Added loop label VITIS_LOOP_555_2:  '
+    FileOffset:      555
     FilePath:        'D:\Xillinx_Project\PROJECT\data_compression\L1\include\hw\lz4_compress.hpp'
     Replacements:    
       - FilePath:        'D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config\lz4CompressEngineRun\hls\.autopilot\db\lz4_compress_test.pp.0.cpp'
-        Offset:          1872127
+        Offset:          1872150
         Length:          0
-        ReplacementText: 'VITIS_LOOP_554_2: '
+        ReplacementText: 'VITIS_LOOP_555_2: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_582_3:  '
-    FileOffset:      582
+    Message:         'Added loop label VITIS_LOOP_583_3:  '
+    FileOffset:      583
     FilePath:        'D:\Xillinx_Project\PROJECT\data_compression\L1\include\hw\lz4_compress.hpp'
     Replacements:    
       - FilePath:        'D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config\lz4CompressEngineRun\hls\.autopilot\db\lz4_compress_test.pp.0.cpp'
-        Offset:          1873300
+        Offset:          1873323
         Length:          0
-        ReplacementText: 'VITIS_LOOP_582_3: '
+        ReplacementText: 'VITIS_LOOP_583_3: '
   - DiagnosticName:  clang-diagnostic-error
     Message:         'Invalid Directive: for current device, FIFO + SRL is invalid combination for BIND_STORAGE''s option ''type + impl'''
     FileOffset:      62
@@ -887,7 +887,7 @@ Diagnostics:
     FilePath:        'D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test.cpp'
     Replacements:    
       - FilePath:        'D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config\lz4CompressEngineRun\hls\.autopilot\db\lz4_compress_test.pp.0.cpp'
-        Offset:          1876317
+        Offset:          1876340
         Length:          0
         ReplacementText: 'VITIS_LOOP_100_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -896,7 +896,7 @@ Diagnostics:
     FilePath:        'D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test.cpp'
     Replacements:    
       - FilePath:        'D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config\lz4CompressEngineRun\hls\.autopilot\db\lz4_compress_test.pp.0.cpp'
-        Offset:          1876995
+        Offset:          1877018
         Length:          0
         ReplacementText: 'VITIS_LOOP_123_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -905,7 +905,7 @@ Diagnostics:
     FilePath:        'D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test.cpp'
     Replacements:    
       - FilePath:        'D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_test_Config\lz4CompressEngineRun\hls\.autopilot\db\lz4_compress_test.pp.0.cpp'
-        Offset:          1877025
+        Offset:          1877048
         Length:          0
         ReplacementText: 'VITIS_LOOP_124_3: '
 ...
