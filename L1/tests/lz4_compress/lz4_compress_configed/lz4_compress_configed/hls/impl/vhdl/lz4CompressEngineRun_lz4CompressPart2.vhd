@@ -20,13 +20,13 @@ port (
     lit_outStream_dout : IN STD_LOGIC_VECTOR (7 downto 0);
     lit_outStream_empty_n : IN STD_LOGIC;
     lit_outStream_read : OUT STD_LOGIC;
-    lit_outStream_num_data_valid : IN STD_LOGIC_VECTOR (13 downto 0);
-    lit_outStream_fifo_cap : IN STD_LOGIC_VECTOR (13 downto 0);
+    lit_outStream_num_data_valid : IN STD_LOGIC_VECTOR (18 downto 0);
+    lit_outStream_fifo_cap : IN STD_LOGIC_VECTOR (18 downto 0);
     lenOffset_Stream_dout : IN STD_LOGIC_VECTOR (63 downto 0);
     lenOffset_Stream_empty_n : IN STD_LOGIC;
     lenOffset_Stream_read : OUT STD_LOGIC;
-    lenOffset_Stream_num_data_valid : IN STD_LOGIC_VECTOR (6 downto 0);
-    lenOffset_Stream_fifo_cap : IN STD_LOGIC_VECTOR (6 downto 0);
+    lenOffset_Stream_num_data_valid : IN STD_LOGIC_VECTOR (11 downto 0);
+    lenOffset_Stream_fifo_cap : IN STD_LOGIC_VECTOR (11 downto 0);
     lz4Out_din : OUT STD_LOGIC_VECTOR (7 downto 0);
     lz4Out_full_n : IN STD_LOGIC;
     lz4Out_write : OUT STD_LOGIC;
@@ -59,8 +59,8 @@ architecture behav of lz4CompressEngineRun_lz4CompressPart2 is
     constant ap_const_lv32_2 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000010";
     constant ap_const_lv8_0 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
     constant ap_const_lv1_1 : STD_LOGIC_VECTOR (0 downto 0) := "1";
-    constant ap_const_lv14_0 : STD_LOGIC_VECTOR (13 downto 0) := "00000000000000";
-    constant ap_const_lv7_0 : STD_LOGIC_VECTOR (6 downto 0) := "0000000";
+    constant ap_const_lv19_0 : STD_LOGIC_VECTOR (18 downto 0) := "0000000000000000000";
+    constant ap_const_lv12_0 : STD_LOGIC_VECTOR (11 downto 0) := "000000000000";
 
 attribute shreg_extract : string;
     signal ap_done_reg : STD_LOGIC := '0';
@@ -75,21 +75,21 @@ attribute shreg_extract : string;
     signal lz4Out_eos_blk_n : STD_LOGIC;
     signal lz4OutSize_blk_n : STD_LOGIC;
     signal input_size_blk_n : STD_LOGIC;
-    signal input_size_3_reg_153 : STD_LOGIC_VECTOR (31 downto 0);
+    signal input_size_3_reg_151 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_block_state1 : BOOLEAN;
-    signal grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_ap_start : STD_LOGIC;
-    signal grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_ap_done : STD_LOGIC;
-    signal grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_ap_idle : STD_LOGIC;
-    signal grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_ap_ready : STD_LOGIC;
-    signal grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lit_outStream_read : STD_LOGIC;
-    signal grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lz4Out_din : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lz4Out_write : STD_LOGIC;
-    signal grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lz4Out_eos_din : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lz4Out_eos_write : STD_LOGIC;
-    signal grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lenOffset_Stream_read : STD_LOGIC;
-    signal grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_compressedSize_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_compressedSize_out_ap_vld : STD_LOGIC;
-    signal grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_ap_start_reg : STD_LOGIC := '0';
+    signal grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_ap_start : STD_LOGIC;
+    signal grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_ap_done : STD_LOGIC;
+    signal grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_ap_idle : STD_LOGIC;
+    signal grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_ap_ready : STD_LOGIC;
+    signal grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_lit_outStream_read : STD_LOGIC;
+    signal grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_lz4Out_din : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_lz4Out_write : STD_LOGIC;
+    signal grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_lz4Out_eos_din : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_lz4Out_eos_write : STD_LOGIC;
+    signal grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_lenOffset_Stream_read : STD_LOGIC;
+    signal grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_compressedSize_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_compressedSize_out_ap_vld : STD_LOGIC;
+    signal grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_ap_start_reg : STD_LOGIC := '0';
     signal ap_NS_fsm : STD_LOGIC_VECTOR (3 downto 0);
     signal ap_NS_fsm_state2 : STD_LOGIC;
     signal ap_CS_fsm_state3 : STD_LOGIC;
@@ -112,8 +112,8 @@ attribute shreg_extract : string;
         lit_outStream_dout : IN STD_LOGIC_VECTOR (7 downto 0);
         lit_outStream_empty_n : IN STD_LOGIC;
         lit_outStream_read : OUT STD_LOGIC;
-        lit_outStream_num_data_valid : IN STD_LOGIC_VECTOR (13 downto 0);
-        lit_outStream_fifo_cap : IN STD_LOGIC_VECTOR (13 downto 0);
+        lit_outStream_num_data_valid : IN STD_LOGIC_VECTOR (18 downto 0);
+        lit_outStream_fifo_cap : IN STD_LOGIC_VECTOR (18 downto 0);
         lz4Out_din : OUT STD_LOGIC_VECTOR (7 downto 0);
         lz4Out_full_n : IN STD_LOGIC;
         lz4Out_write : OUT STD_LOGIC;
@@ -123,8 +123,8 @@ attribute shreg_extract : string;
         lenOffset_Stream_dout : IN STD_LOGIC_VECTOR (63 downto 0);
         lenOffset_Stream_empty_n : IN STD_LOGIC;
         lenOffset_Stream_read : OUT STD_LOGIC;
-        lenOffset_Stream_num_data_valid : IN STD_LOGIC_VECTOR (6 downto 0);
-        lenOffset_Stream_fifo_cap : IN STD_LOGIC_VECTOR (6 downto 0);
+        lenOffset_Stream_num_data_valid : IN STD_LOGIC_VECTOR (11 downto 0);
+        lenOffset_Stream_fifo_cap : IN STD_LOGIC_VECTOR (11 downto 0);
         input_size_4 : IN STD_LOGIC_VECTOR (31 downto 0);
         compressedSize_out : OUT STD_LOGIC_VECTOR (31 downto 0);
         compressedSize_out_ap_vld : OUT STD_LOGIC );
@@ -133,33 +133,33 @@ attribute shreg_extract : string;
 
 
 begin
-    grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93 : component lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress
+    grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91 : component lz4CompressEngineRun_lz4CompressPart2_Pipeline_lz4_compress
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_ap_start,
-        ap_done => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_ap_done,
-        ap_idle => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_ap_idle,
-        ap_ready => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_ap_ready,
+        ap_start => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_ap_start,
+        ap_done => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_ap_done,
+        ap_idle => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_ap_idle,
+        ap_ready => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_ap_ready,
         lit_outStream_dout => lit_outStream_dout,
         lit_outStream_empty_n => lit_outStream_empty_n,
-        lit_outStream_read => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lit_outStream_read,
-        lit_outStream_num_data_valid => ap_const_lv14_0,
-        lit_outStream_fifo_cap => ap_const_lv14_0,
-        lz4Out_din => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lz4Out_din,
+        lit_outStream_read => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_lit_outStream_read,
+        lit_outStream_num_data_valid => ap_const_lv19_0,
+        lit_outStream_fifo_cap => ap_const_lv19_0,
+        lz4Out_din => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_lz4Out_din,
         lz4Out_full_n => lz4Out_full_n,
-        lz4Out_write => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lz4Out_write,
-        lz4Out_eos_din => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lz4Out_eos_din,
+        lz4Out_write => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_lz4Out_write,
+        lz4Out_eos_din => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_lz4Out_eos_din,
         lz4Out_eos_full_n => lz4Out_eos_full_n,
-        lz4Out_eos_write => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lz4Out_eos_write,
+        lz4Out_eos_write => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_lz4Out_eos_write,
         lenOffset_Stream_dout => lenOffset_Stream_dout,
         lenOffset_Stream_empty_n => lenOffset_Stream_empty_n,
-        lenOffset_Stream_read => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lenOffset_Stream_read,
-        lenOffset_Stream_num_data_valid => ap_const_lv7_0,
-        lenOffset_Stream_fifo_cap => ap_const_lv7_0,
-        input_size_4 => input_size_3_reg_153,
-        compressedSize_out => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_compressedSize_out,
-        compressedSize_out_ap_vld => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_compressedSize_out_ap_vld);
+        lenOffset_Stream_read => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_lenOffset_Stream_read,
+        lenOffset_Stream_num_data_valid => ap_const_lv12_0,
+        lenOffset_Stream_fifo_cap => ap_const_lv12_0,
+        input_size_4 => input_size_3_reg_151,
+        compressedSize_out => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_compressedSize_out,
+        compressedSize_out_ap_vld => grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_compressedSize_out_ap_vld);
 
 
 
@@ -193,16 +193,16 @@ begin
     end process;
 
 
-    grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_ap_start_reg_assign_proc : process(ap_clk)
+    grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_ap_start_reg <= ap_const_logic_0;
+                grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_ap_start_reg <= ap_const_logic_0;
             else
                 if (((ap_const_logic_1 = ap_CS_fsm_state1) and (ap_const_logic_1 = ap_NS_fsm_state2))) then 
-                    grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_ap_ready = ap_const_logic_1)) then 
-                    grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_ap_start_reg <= ap_const_logic_0;
+                    grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_ap_ready = ap_const_logic_1)) then 
+                    grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
@@ -212,12 +212,12 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_boolean_0 = ap_block_state1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then
-                input_size_3_reg_153 <= input_size_dout;
+                input_size_3_reg_151 <= input_size_dout;
             end if;
         end if;
     end process;
 
-    ap_NS_fsm_assign_proc : process (ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state4, ap_block_state1, grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_ap_done, ap_CS_fsm_state3, ap_block_state4)
+    ap_NS_fsm_assign_proc : process (ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state4, ap_block_state1, grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_ap_done, ap_CS_fsm_state3, ap_block_state4)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
@@ -229,7 +229,7 @@ begin
             when ap_ST_fsm_state2 => 
                 ap_NS_fsm <= ap_ST_fsm_state3;
             when ap_ST_fsm_state3 => 
-                if (((grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
+                if (((grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
                     ap_NS_fsm <= ap_ST_fsm_state4;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state3;
@@ -260,9 +260,9 @@ begin
 
     ap_ST_fsm_state2_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state3_blk_assign_proc : process(grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_ap_done)
+    ap_ST_fsm_state3_blk_assign_proc : process(grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_ap_done)
     begin
-        if ((grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_ap_done = ap_const_logic_0)) then 
+        if ((grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_ap_done = ap_const_logic_0)) then 
             ap_ST_fsm_state3_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state3_blk <= ap_const_logic_0;
@@ -321,7 +321,7 @@ begin
         end if; 
     end process;
 
-    grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_ap_start <= grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_ap_start_reg;
+    grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_ap_start <= grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_ap_start_reg;
 
     input_size_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, input_size_empty_n)
     begin
@@ -342,8 +342,8 @@ begin
         end if; 
     end process;
 
-    lenOffset_Stream_read <= grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lenOffset_Stream_read;
-    lit_outStream_read <= grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lit_outStream_read;
+    lenOffset_Stream_read <= grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_lenOffset_Stream_read;
+    lit_outStream_read <= grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_lit_outStream_read;
 
     lz4OutSize_blk_n_assign_proc : process(lz4OutSize_full_n, ap_CS_fsm_state4)
     begin
@@ -354,7 +354,7 @@ begin
         end if; 
     end process;
 
-    lz4OutSize_din <= grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_compressedSize_out;
+    lz4OutSize_din <= grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_compressedSize_out;
 
     lz4OutSize_write_assign_proc : process(ap_CS_fsm_state4, ap_block_state4)
     begin
@@ -376,14 +376,14 @@ begin
     end process;
 
 
-    lz4Out_din_assign_proc : process(ap_CS_fsm_state4, grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lz4Out_din, ap_CS_fsm_state3, ap_block_state4)
+    lz4Out_din_assign_proc : process(ap_CS_fsm_state4, grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_lz4Out_din, ap_CS_fsm_state3, ap_block_state4)
     begin
         if (((ap_const_boolean_0 = ap_block_state4) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
             lz4Out_din <= ap_const_lv8_0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            lz4Out_din <= grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lz4Out_din;
+            lz4Out_din <= grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_lz4Out_din;
         else 
-            lz4Out_din <= grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lz4Out_din;
+            lz4Out_din <= grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_lz4Out_din;
         end if; 
     end process;
 
@@ -398,36 +398,36 @@ begin
     end process;
 
 
-    lz4Out_eos_din_assign_proc : process(ap_CS_fsm_state4, grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lz4Out_eos_din, ap_CS_fsm_state3, ap_block_state4)
+    lz4Out_eos_din_assign_proc : process(ap_CS_fsm_state4, grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_lz4Out_eos_din, ap_CS_fsm_state3, ap_block_state4)
     begin
         if (((ap_const_boolean_0 = ap_block_state4) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
             lz4Out_eos_din <= ap_const_lv1_1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            lz4Out_eos_din <= grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lz4Out_eos_din;
+            lz4Out_eos_din <= grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_lz4Out_eos_din;
         else 
-            lz4Out_eos_din <= grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lz4Out_eos_din;
+            lz4Out_eos_din <= grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_lz4Out_eos_din;
         end if; 
     end process;
 
 
-    lz4Out_eos_write_assign_proc : process(ap_CS_fsm_state4, grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lz4Out_eos_write, ap_CS_fsm_state3, ap_block_state4)
+    lz4Out_eos_write_assign_proc : process(ap_CS_fsm_state4, grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_lz4Out_eos_write, ap_CS_fsm_state3, ap_block_state4)
     begin
         if (((ap_const_boolean_0 = ap_block_state4) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
             lz4Out_eos_write <= ap_const_logic_1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            lz4Out_eos_write <= grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lz4Out_eos_write;
+            lz4Out_eos_write <= grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_lz4Out_eos_write;
         else 
             lz4Out_eos_write <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    lz4Out_write_assign_proc : process(ap_CS_fsm_state4, grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lz4Out_write, ap_CS_fsm_state3, ap_block_state4)
+    lz4Out_write_assign_proc : process(ap_CS_fsm_state4, grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_lz4Out_write, ap_CS_fsm_state3, ap_block_state4)
     begin
         if (((ap_const_boolean_0 = ap_block_state4) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
             lz4Out_write <= ap_const_logic_1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            lz4Out_write <= grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93_lz4Out_write;
+            lz4Out_write <= grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91_lz4Out_write;
         else 
             lz4Out_write <= ap_const_logic_0;
         end if; 

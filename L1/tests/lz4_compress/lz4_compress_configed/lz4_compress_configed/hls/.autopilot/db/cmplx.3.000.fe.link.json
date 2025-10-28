@@ -1,42 +1,18 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "6 4 5 1",
+    "calls": "3 2 5 6",
     "file": "lz4_compress_test.cpp",
     "fileloc": 47,
     "instructions": 32,
     "name": "lz4CompressEngineRun",
-    "total_instructions": 6258
+    "total_instructions": 6229
   },
   "1": {
-    "basicblocks": 1,
-    "calls": "2 3",
-    "file": "lz4_compress.hpp",
-    "fileloc": 412,
-    "instructions": 19,
-    "name": "lz4Compress<4096, 1>",
-    "total_instructions": 3270
-  },
-  "2": {
-    "basicblocks": 35,
-    "calls": "",
-    "file": "lz4_compress.hpp",
-    "fileloc": 45,
-    "instructions": 167,
-    "loads": {
-      "L": 3
-    },
-    "name": "lz4CompressPart1<4096, 1>",
-    "stores": {
-      "L": 4
-    },
-    "total_instructions": 665
-  },
-  "3": {
     "basicblocks": 67,
     "calls": "",
     "file": "lz4_compress.hpp",
-    "fileloc": 166,
+    "fileloc": 130,
     "instructions": 577,
     "loads": {
       "L": 18
@@ -47,7 +23,7 @@
     },
     "total_instructions": 2584
   },
-  "4": {
+  "2": {
     "basicblocks": 40,
     "calls": "",
     "file": "lz_optional.hpp",
@@ -61,6 +37,36 @@
       "L": 5
     },
     "total_instructions": 314
+  },
+  "3": {
+    "basicblocks": 94,
+    "calls": "",
+    "file": "lz_compress.hpp",
+    "fileloc": 58,
+    "instructions": 464,
+    "loads": {
+      "L": 28
+    },
+    "name": "lzCompress<6, 4, 65536, 6, 1, 4096, 64>",
+    "stores": {
+      "L": 12
+    },
+    "total_instructions": 1087
+  },
+  "4": {
+    "basicblocks": 29,
+    "calls": "",
+    "file": "lz4_compress.hpp",
+    "fileloc": 45,
+    "instructions": 144,
+    "loads": {
+      "L": 2
+    },
+    "name": "lz4CompressPart1<4096, 1>",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 636
   },
   "5": {
     "basicblocks": 37,
@@ -80,18 +86,12 @@
     "total_instructions": 1552
   },
   "6": {
-    "basicblocks": 94,
-    "calls": "",
-    "file": "lz_compress.hpp",
-    "fileloc": 58,
-    "instructions": 464,
-    "loads": {
-      "L": 28
-    },
-    "name": "lzCompress<6, 4, 65536, 6, 1, 4096, 64>",
-    "stores": {
-      "L": 12
-    },
-    "total_instructions": 1087
+    "basicblocks": 1,
+    "calls": "4 1",
+    "file": "lz4_compress.hpp",
+    "fileloc": 376,
+    "instructions": 19,
+    "name": "lz4Compress<4096, 1>",
+    "total_instructions": 3241
   }
 }

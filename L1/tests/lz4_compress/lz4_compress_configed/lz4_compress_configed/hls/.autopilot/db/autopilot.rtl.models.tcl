@@ -39,8 +39,8 @@ set SynModuleInfo {
   {SRCNAME lz4CompressPart2 MODELNAME lz4CompressPart2 RTLNAME lz4CompressEngineRun_lz4CompressPart2}
   {SRCNAME {lz4Compress<4096, 1>} MODELNAME lz4Compress_4096_1_s RTLNAME lz4CompressEngineRun_lz4Compress_4096_1_s
     SUBMODULES {
-      {MODELNAME lz4CompressEngineRun_fifo_w8_d8192_B RTLNAME lz4CompressEngineRun_fifo_w8_d8192_B BINDTYPE storage TYPE fifo IMPL bram ALLOW_PRAGMA 1 INSTNAME lit_outStream_U}
-      {MODELNAME lz4CompressEngineRun_fifo_w64_d64_S RTLNAME lz4CompressEngineRun_fifo_w64_d64_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME lenOffset_Stream_U}
+      {MODELNAME lz4CompressEngineRun_fifo_w8_d262144_B RTLNAME lz4CompressEngineRun_fifo_w8_d262144_B BINDTYPE storage TYPE fifo IMPL bram ALLOW_PRAGMA 1 INSTNAME lit_outStream_U}
+      {MODELNAME lz4CompressEngineRun_fifo_w64_d2048_B RTLNAME lz4CompressEngineRun_fifo_w64_d2048_B BINDTYPE storage TYPE fifo IMPL bram ALLOW_PRAGMA 1 INSTNAME lenOffset_Stream_U}
       {MODELNAME lz4CompressEngineRun_fifo_w32_d2_S RTLNAME lz4CompressEngineRun_fifo_w32_d2_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME input_size_c_U}
       {MODELNAME lz4CompressEngineRun_start_for_lz4CompressPart2_U0 RTLNAME lz4CompressEngineRun_start_for_lz4CompressPart2_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_lz4CompressPart2_U0_U}
     }

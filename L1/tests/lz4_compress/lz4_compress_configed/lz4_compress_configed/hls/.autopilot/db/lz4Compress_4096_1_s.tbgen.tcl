@@ -147,15 +147,15 @@ set RtlHierarchyInfo {[
 				"BlockSignal" : [
 					{"Name" : "boosterStream_blk_n", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140", "Port" : "boosterStream", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
-			{"Name" : "lit_outStream", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["4"], "DependentChan" : "7", "DependentChanDepth" : "8192", "DependentChanType" : "0",
+					{"ID" : "2", "SubInstance" : "grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_142", "Port" : "boosterStream", "Inst_start_state" : "3", "Inst_end_state" : "4"}]},
+			{"Name" : "lit_outStream", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["4"], "DependentChan" : "7", "DependentChanDepth" : "262144", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140", "Port" : "lit_outStream", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
-			{"Name" : "lenOffset_Stream", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["4"], "DependentChan" : "8", "DependentChanDepth" : "64", "DependentChanType" : "0",
+					{"ID" : "2", "SubInstance" : "grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_142", "Port" : "lit_outStream", "Inst_start_state" : "3", "Inst_end_state" : "4"}]},
+			{"Name" : "lenOffset_Stream", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["4"], "DependentChan" : "8", "DependentChanDepth" : "2048", "DependentChanType" : "0",
 				"BlockSignal" : [
 					{"Name" : "lenOffset_Stream_blk_n", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140", "Port" : "lenOffset_Stream", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
+					{"ID" : "2", "SubInstance" : "grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_142", "Port" : "lenOffset_Stream", "Inst_start_state" : "3", "Inst_end_state" : "4"}]},
 			{"Name" : "input_size", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["0"], "DependentChan" : "0", "DependentChanDepth" : "2", "DependentChanType" : "2",
 				"BlockSignal" : [
 					{"Name" : "input_size_blk_n", "Type" : "RtlSignal"}]},
@@ -163,7 +163,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "input_size_c", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["4"], "DependentChan" : "9", "DependentChanDepth" : "2", "DependentChanType" : "2",
 				"BlockSignal" : [
 					{"Name" : "input_size_c_blk_n", "Type" : "RtlSignal"}]}]},
-	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lz4CompressPart1_4096_1_U0.grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140", "Parent" : "1", "Child" : ["3"],
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lz4CompressPart1_4096_1_U0.grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_142", "Parent" : "1", "Child" : ["3"],
 		"CDFG" : "lz4CompressPart1_4096_1_Pipeline_lz4_divide",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -178,14 +178,12 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "empty", "Type" : "None", "Direction" : "I"},
-			{"Name" : "nextEncodedValue", "Type" : "None", "Direction" : "I"},
-			{"Name" : "icmp", "Type" : "None", "Direction" : "I"},
+			{"Name" : "currentEncodedValue", "Type" : "None", "Direction" : "I"},
 			{"Name" : "input_size_5", "Type" : "None", "Direction" : "I"},
 			{"Name" : "lenOffset_Stream", "Type" : "Fifo", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "lenOffset_Stream_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "sub17", "Type" : "None", "Direction" : "I"},
+			{"Name" : "sub", "Type" : "None", "Direction" : "I"},
 			{"Name" : "boosterStream", "Type" : "Fifo", "Direction" : "I",
 				"BlockSignal" : [
 					{"Name" : "boosterStream_blk_n", "Type" : "RtlSignal"}]},
@@ -197,7 +195,7 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "lz4_divide", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "2", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage1", "QuitStateIter" : "ap_enable_reg_pp0_iter0", "QuitStateBlock" : "ap_block_pp0_stage1_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "3", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.lz4CompressPart1_4096_1_U0.grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_140.flow_control_loop_pipe_sequential_init_U", "Parent" : "2"},
+	{"ID" : "3", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.lz4CompressPart1_4096_1_U0.grp_lz4CompressPart1_4096_1_Pipeline_lz4_divide_fu_142.flow_control_loop_pipe_sequential_init_U", "Parent" : "2"},
 	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.lz4CompressPart2_U0", "Parent" : "0", "Child" : ["5"],
 		"CDFG" : "lz4CompressPart2",
 		"Protocol" : "ap_ctrl_hs",
@@ -215,29 +213,29 @@ set RtlHierarchyInfo {[
 		"StartSource" : "1",
 		"StartFifo" : "start_for_lz4CompressPart2_U0_U",
 		"Port" : [
-			{"Name" : "lit_outStream", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["1"], "DependentChan" : "7", "DependentChanDepth" : "8192", "DependentChanType" : "0",
+			{"Name" : "lit_outStream", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["1"], "DependentChan" : "7", "DependentChanDepth" : "262144", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "5", "SubInstance" : "grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93", "Port" : "lit_outStream", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
-			{"Name" : "lenOffset_Stream", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["1"], "DependentChan" : "8", "DependentChanDepth" : "64", "DependentChanType" : "0",
+					{"ID" : "5", "SubInstance" : "grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91", "Port" : "lit_outStream", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+			{"Name" : "lenOffset_Stream", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["1"], "DependentChan" : "8", "DependentChanDepth" : "2048", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "5", "SubInstance" : "grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93", "Port" : "lenOffset_Stream", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+					{"ID" : "5", "SubInstance" : "grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91", "Port" : "lenOffset_Stream", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
 			{"Name" : "lz4Out", "Type" : "Fifo", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "lz4Out_blk_n", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "5", "SubInstance" : "grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93", "Port" : "lz4Out", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+					{"ID" : "5", "SubInstance" : "grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91", "Port" : "lz4Out", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
 			{"Name" : "lz4Out_eos", "Type" : "Fifo", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "lz4Out_eos_blk_n", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "5", "SubInstance" : "grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93", "Port" : "lz4Out_eos", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+					{"ID" : "5", "SubInstance" : "grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91", "Port" : "lz4Out_eos", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
 			{"Name" : "lz4OutSize", "Type" : "Fifo", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "lz4OutSize_blk_n", "Type" : "RtlSignal"}]},
 			{"Name" : "input_size", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["1"], "DependentChan" : "9", "DependentChanDepth" : "2", "DependentChanType" : "2",
 				"BlockSignal" : [
 					{"Name" : "input_size_blk_n", "Type" : "RtlSignal"}]}]},
-	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lz4CompressPart2_U0.grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93", "Parent" : "4", "Child" : ["6"],
+	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.lz4CompressPart2_U0.grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91", "Parent" : "4", "Child" : ["6"],
 		"CDFG" : "lz4CompressPart2_Pipeline_lz4_compress",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -269,7 +267,7 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "lz4_compress", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "4", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage1", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage1_subdone", "QuitState" : "ap_ST_fsm_pp0_stage1", "QuitStateIter" : "ap_enable_reg_pp0_iter1", "QuitStateBlock" : "ap_block_pp0_stage1_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "6", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.lz4CompressPart2_U0.grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93.flow_control_loop_pipe_sequential_init_U", "Parent" : "5"},
+	{"ID" : "6", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.lz4CompressPart2_U0.grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91.flow_control_loop_pipe_sequential_init_U", "Parent" : "5"},
 	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.lit_outStream_U", "Parent" : "0"},
 	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.lenOffset_Stream_U", "Parent" : "0"},
 	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.input_size_c_U", "Parent" : "0"},
@@ -280,7 +278,7 @@ set ArgLastReadFirstWriteLatency {
 	lz4Compress_4096_1_s {
 		boosterStream {Type I LastRead 2 FirstWrite -1}
 		lz4Out {Type O LastRead -1 FirstWrite 3}
-		max_lit_limit {Type O LastRead -1 FirstWrite 6}
+		max_lit_limit {Type O LastRead -1 FirstWrite 5}
 		input_size {Type I LastRead 0 FirstWrite -1}
 		lz4Out_eos {Type O LastRead -1 FirstWrite 3}
 		lz4OutSize {Type O LastRead -1 FirstWrite 3}}
@@ -289,15 +287,13 @@ set ArgLastReadFirstWriteLatency {
 		lit_outStream {Type O LastRead -1 FirstWrite 2}
 		lenOffset_Stream {Type O LastRead -1 FirstWrite 2}
 		input_size {Type I LastRead 0 FirstWrite -1}
-		max_lit_limit {Type O LastRead -1 FirstWrite 6}
+		max_lit_limit {Type O LastRead -1 FirstWrite 5}
 		input_size_c {Type O LastRead -1 FirstWrite 0}}
 	lz4CompressPart1_4096_1_Pipeline_lz4_divide {
-		empty {Type I LastRead 0 FirstWrite -1}
-		nextEncodedValue {Type I LastRead 0 FirstWrite -1}
-		icmp {Type I LastRead 0 FirstWrite -1}
+		currentEncodedValue {Type I LastRead 0 FirstWrite -1}
 		input_size_5 {Type I LastRead 0 FirstWrite -1}
 		lenOffset_Stream {Type O LastRead -1 FirstWrite 2}
-		sub17 {Type I LastRead 0 FirstWrite -1}
+		sub {Type I LastRead 0 FirstWrite -1}
 		boosterStream {Type I LastRead 2 FirstWrite -1}
 		lit_outStream {Type O LastRead -1 FirstWrite 2}
 		lit_count_out {Type O LastRead -1 FirstWrite 1}

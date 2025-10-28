@@ -380,15 +380,15 @@ static void lz4Compress(hls::stream<ap_uint<32> >& inStream,
                         hls::stream<bool>& endOfStream,
                         hls::stream<uint32_t>& compressdSizeStream,
                         uint32_t index) {
-    // 优化：进一步大幅增加FIFO深度以应对上游数据供应不足
+    // 优化：大幅增加FIFO深度以应对上游数据供应不足
     hls::stream<uint8_t> lit_outStream("lit_outStream");
     hls::stream<ap_uint<64> > lenOffset_Stream("lenOffset_Stream");
 
-#pragma HLS STREAM variable = lit_outStream depth = MAX_LIT_COUNT * 32  // 进一步增加深度以应对上游瓶颈
-#pragma HLS STREAM variable = lenOffset_Stream depth = c_gmemBurstSize * 32  // 进一步增加深度
+#pragma HLS STREAM variable = lit_outStream depth = MAX_LIT_COUNT * 64  // 大幅增加深度以应对上游瓶颈
+#pragma HLS STREAM variable = lenOffset_Stream depth = c_gmemBurstSize * 64  // 大幅增加深度
 
 #pragma HLS BIND_STORAGE variable = lit_outStream type = FIFO impl = BRAM  // 优化：使用BRAM改善大容量存储
-#pragma HLS BIND_STORAGE variable = lenOffset_Stream type = FIFO impl = SRL
+#pragma HLS BIND_STORAGE variable = lenOffset_Stream type = FIFO impl = BRAM  // 优化：使用BRAM改善大容量存储
 
 #pragma HLS dataflow
     details::lz4CompressPart1<MAX_LIT_COUNT, PARALLEL_UNITS>(inStream, lit_outStream, lenOffset_Stream, input_size,

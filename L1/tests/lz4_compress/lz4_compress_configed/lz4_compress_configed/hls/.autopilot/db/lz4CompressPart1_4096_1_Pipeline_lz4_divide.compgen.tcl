@@ -11,14 +11,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 91 \
-    name empty \
+    name currentEncodedValue \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_empty \
+    corename dc_currentEncodedValue \
     op interface \
-    ports { empty { I 32 vector } } \
+    ports { currentEncodedValue { I 32 vector } } \
 } "
 }
 
@@ -26,36 +26,6 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 92 \
-    name nextEncodedValue \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_nextEncodedValue \
-    op interface \
-    ports { nextEncodedValue { I 32 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 93 \
-    name icmp \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_icmp \
-    op interface \
-    ports { icmp { I 1 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 94 \
     name input_size_5 \
     type other \
     dir I \
@@ -70,7 +40,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 95 \
+    id 93 \
     name lenOffset_Stream \
     type fifo \
     dir O \
@@ -78,29 +48,29 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_lenOffset_Stream \
     op interface \
-    ports { lenOffset_Stream_din { O 64 vector } lenOffset_Stream_full_n { I 1 bit } lenOffset_Stream_write { O 1 bit } lenOffset_Stream_num_data_valid { I 7 vector } lenOffset_Stream_fifo_cap { I 7 vector } } \
+    ports { lenOffset_Stream_din { O 64 vector } lenOffset_Stream_full_n { I 1 bit } lenOffset_Stream_write { O 1 bit } lenOffset_Stream_num_data_valid { I 12 vector } lenOffset_Stream_fifo_cap { I 12 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 96 \
-    name sub17 \
+    id 94 \
+    name sub \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_sub17 \
+    corename dc_sub \
     op interface \
-    ports { sub17 { I 32 vector } } \
+    ports { sub { I 32 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 97 \
+    id 95 \
     name boosterStream \
     type fifo \
     dir I \
@@ -115,7 +85,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 98 \
+    id 96 \
     name lit_outStream \
     type fifo \
     dir O \
@@ -123,14 +93,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_lit_outStream \
     op interface \
-    ports { lit_outStream_din { O 8 vector } lit_outStream_full_n { I 1 bit } lit_outStream_write { O 1 bit } lit_outStream_num_data_valid { I 14 vector } lit_outStream_fifo_cap { I 14 vector } } \
+    ports { lit_outStream_din { O 8 vector } lit_outStream_full_n { I 1 bit } lit_outStream_write { O 1 bit } lit_outStream_num_data_valid { I 19 vector } lit_outStream_fifo_cap { I 19 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 99 \
+    id 97 \
     name lit_count_out \
     type other \
     dir O \
@@ -145,7 +115,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 100 \
+    id 98 \
     name lit_count_flag_out \
     type other \
     dir O \

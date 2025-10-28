@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_compress'
 ================================================================
-* Date:           Mon Oct 27 16:28:45 2025
+* Date:           Tue Oct 28 20:41:39 2025
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        lz4_compress_configed
@@ -566,7 +566,7 @@ The critical path consists of the following:
  <State 6>: 5.806ns
 The critical path consists of the following:
 	'add' operation 32 bit ('currIdx', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:99) [56]  (2.552 ns)
-	'store' operation 0 bit ('store_ln134', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:134) of variable 'dictWriteValue', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:132 on array 'dict_2' [96]  (3.254 ns)
+	'store' operation 0 bit ('store_ln134', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:134) of variable 'dictWriteValue', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:132 on array 'dict_3' [105]  (3.254 ns)
 
  <State 7>: 6.168ns
 The critical path consists of the following:
@@ -602,9 +602,7 @@ The critical path consists of the following:
  <State 10>: 6.082ns
 The critical path consists of the following:
 	'add' operation 32 bit ('match_offset', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:183) [312]  (2.552 ns)
-	'icmp' operation 1 bit ('icmp_ln185_9', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:185) [315]  (2.552 ns)
-	'or' operation 1 bit ('or_ln185_4', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:185) [316]  (0.000 ns)
-	'and' operation 1 bit ('and_ln191_21', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:191) [387]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln180_4', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:180) [313]  (2.552 ns)
 	'and' operation 1 bit ('and_ln191_22', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:191) [388]  (0.978 ns)
 
  <State 11>: 6.236ns

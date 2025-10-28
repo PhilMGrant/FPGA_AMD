@@ -67,7 +67,7 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName>FIFO_SRL</coreName>
+						<coreName>FIFO_BRAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
 						<coreId>4294967295</coreId>
@@ -321,10 +321,10 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>_ln209</name>
+						<name>_ln173</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_configed</fileDirectory>
-						<lineNumber>209</lineNumber>
+						<lineNumber>173</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -340,7 +340,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>209</second>
+										<second>173</second>
 									</item>
 								</second>
 							</item>
@@ -368,7 +368,7 @@
 					<item>37</item>
 					<item>38</item>
 					<item>39</item>
-					<item>216</item>
+					<item>215</item>
 				</oprand_edges>
 				<opcode>fence</opcode>
 				<m_Display>0</m_Display>
@@ -417,7 +417,7 @@
 					<item>45</item>
 					<item>46</item>
 					<item>47</item>
-					<item>217</item>
+					<item>216</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
@@ -433,10 +433,10 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>_ln383</name>
+						<name>_ln347</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_configed</fileDirectory>
-						<lineNumber>383</lineNumber>
+						<lineNumber>347</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -452,7 +452,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>383</second>
+										<second>347</second>
 									</item>
 								</second>
 							</item>
@@ -482,7 +482,7 @@
 					<item>54</item>
 					<item>55</item>
 					<item>56</item>
-					<item>220</item>
+					<item>219</item>
 				</oprand_edges>
 				<opcode>fence</opcode>
 				<m_Display>0</m_Display>
@@ -525,7 +525,7 @@
 					<count>2</count>
 					<item_version>0</item_version>
 					<item>57</item>
-					<item>224</item>
+					<item>223</item>
 				</oprand_edges>
 				<opcode>load</opcode>
 				<m_Display>0</m_Display>
@@ -541,10 +541,10 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>lz4OutSize_write_ln383</name>
+						<name>lz4OutSize_write_ln347</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_configed</fileDirectory>
-						<lineNumber>383</lineNumber>
+						<lineNumber>347</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -560,7 +560,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>383</second>
+										<second>347</second>
 									</item>
 								</second>
 							</item>
@@ -584,7 +584,7 @@
 					<item>59</item>
 					<item>60</item>
 					<item>61</item>
-					<item>221</item>
+					<item>220</item>
 				</oprand_edges>
 				<opcode>write</opcode>
 				<m_Display>0</m_Display>
@@ -600,10 +600,10 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>lz4Out_write_ln384</name>
+						<name>lz4Out_write_ln348</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_configed</fileDirectory>
-						<lineNumber>384</lineNumber>
+						<lineNumber>348</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -619,7 +619,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>384</second>
+										<second>348</second>
 									</item>
 								</second>
 							</item>
@@ -643,9 +643,9 @@
 					<item>63</item>
 					<item>64</item>
 					<item>66</item>
-					<item>218</item>
-					<item>222</item>
-					<item>225</item>
+					<item>217</item>
+					<item>221</item>
+					<item>224</item>
 				</oprand_edges>
 				<opcode>write</opcode>
 				<m_Display>0</m_Display>
@@ -661,10 +661,10 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>lz4Out_eos_write_ln385</name>
+						<name>lz4Out_eos_write_ln349</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_configed</fileDirectory>
-						<lineNumber>385</lineNumber>
+						<lineNumber>349</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -680,7 +680,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>385</second>
+										<second>349</second>
 									</item>
 								</second>
 							</item>
@@ -704,9 +704,9 @@
 					<item>68</item>
 					<item>69</item>
 					<item>71</item>
-					<item>219</item>
-					<item>223</item>
-					<item>226</item>
+					<item>218</item>
+					<item>222</item>
+					<item>225</item>
 				</oprand_edges>
 				<opcode>write</opcode>
 				<m_Display>0</m_Display>
@@ -722,10 +722,10 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>_ln386</name>
+						<name>_ln350</name>
 						<fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
 						<fileDirectory>D:\Xillinx_Project\PROJECT\data_compression\L1\tests\lz4_compress\lz4_compress_configed</fileDirectory>
-						<lineNumber>386</lineNumber>
+						<lineNumber>350</lineNumber>
 						<contextFuncName>lz4CompressPart2</contextFuncName>
 						<contextNormFuncName>lz4CompressPart2</contextNormFuncName>
 						<inlineStackInfo>
@@ -741,7 +741,7 @@
 											<first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
 											<second>lz4CompressPart2</second>
 										</first>
-										<second>386</second>
+										<second>350</second>
 									</item>
 								</second>
 							</item>
@@ -1190,77 +1190,77 @@
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_53">
-				<id>216</id>
+				<id>215</id>
 				<edge_type>4</edge_type>
 				<source_obj>9</source_obj>
 				<sink_obj>17</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_54">
-				<id>217</id>
+				<id>216</id>
 				<edge_type>4</edge_type>
 				<source_obj>17</source_obj>
 				<sink_obj>18</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_55">
-				<id>218</id>
+				<id>217</id>
 				<edge_type>4</edge_type>
 				<source_obj>17</source_obj>
 				<sink_obj>22</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_56">
-				<id>219</id>
+				<id>218</id>
 				<edge_type>4</edge_type>
 				<source_obj>17</source_obj>
 				<sink_obj>23</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_57">
-				<id>220</id>
+				<id>219</id>
 				<edge_type>4</edge_type>
 				<source_obj>18</source_obj>
 				<sink_obj>19</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_58">
-				<id>221</id>
+				<id>220</id>
 				<edge_type>4</edge_type>
 				<source_obj>19</source_obj>
 				<sink_obj>21</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_59">
-				<id>222</id>
+				<id>221</id>
 				<edge_type>4</edge_type>
 				<source_obj>19</source_obj>
 				<sink_obj>22</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_60">
-				<id>223</id>
+				<id>222</id>
 				<edge_type>4</edge_type>
 				<source_obj>19</source_obj>
 				<sink_obj>23</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_61">
-				<id>224</id>
+				<id>223</id>
 				<edge_type>4</edge_type>
 				<source_obj>18</source_obj>
 				<sink_obj>20</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_62">
-				<id>225</id>
+				<id>224</id>
 				<edge_type>4</edge_type>
 				<source_obj>18</source_obj>
 				<sink_obj>22</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_63">
-				<id>226</id>
+				<id>225</id>
 				<edge_type>4</edge_type>
 				<source_obj>18</source_obj>
 				<sink_obj>23</sink_obj>
@@ -1567,7 +1567,7 @@
 		<count>9</count>
 		<item_version>0</item_version>
 		<item class_id="43" tracking_level="0" version="0">
-			<first>60</first>
+			<first>58</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1575,7 +1575,7 @@
 			</second>
 		</item>
 		<item>
-			<first>64</first>
+			<first>62</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1583,7 +1583,7 @@
 			</second>
 		</item>
 		<item>
-			<first>70</first>
+			<first>68</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1591,7 +1591,7 @@
 			</second>
 		</item>
 		<item>
-			<first>77</first>
+			<first>75</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1599,7 +1599,7 @@
 			</second>
 		</item>
 		<item>
-			<first>85</first>
+			<first>83</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1607,7 +1607,7 @@
 			</second>
 		</item>
 		<item>
-			<first>93</first>
+			<first>91</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -1616,7 +1616,7 @@
 			</second>
 		</item>
 		<item>
-			<first>107</first>
+			<first>105</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1624,7 +1624,7 @@
 			</second>
 		</item>
 		<item>
-			<first>123</first>
+			<first>121</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1632,7 +1632,7 @@
 			</second>
 		</item>
 		<item>
-			<first>143</first>
+			<first>141</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1644,7 +1644,7 @@
 		<count>3</count>
 		<item_version>0</item_version>
 		<item class_id="46" tracking_level="0" version="0">
-			<first>compressedSize_loc_fu_60</first>
+			<first>compressedSize_loc_fu_58</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1652,7 +1652,7 @@
 			</second>
 		</item>
 		<item>
-			<first>fence_ln209_fu_107</first>
+			<first>fence_ln173_fu_105</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1660,7 +1660,7 @@
 			</second>
 		</item>
 		<item>
-			<first>fence_ln383_fu_123</first>
+			<first>fence_ln347_fu_121</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1672,7 +1672,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item>
-			<first>grp_lz4CompressPart2_Pipeline_lz4_compress_fu_93</first>
+			<first>grp_lz4CompressPart2_Pipeline_lz4_compress_fu_91</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -1685,7 +1685,7 @@
 		<count>5</count>
 		<item_version>0</item_version>
 		<item>
-			<first>compressedSize_loc_load_load_fu_143</first>
+			<first>compressedSize_loc_load_load_fu_141</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1693,7 +1693,7 @@
 			</second>
 		</item>
 		<item>
-			<first>input_size_3_read_fu_64</first>
+			<first>input_size_3_read_fu_62</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1701,7 +1701,7 @@
 			</second>
 		</item>
 		<item>
-			<first>write_ln383_write_fu_70</first>
+			<first>write_ln347_write_fu_68</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1709,7 +1709,7 @@
 			</second>
 		</item>
 		<item>
-			<first>write_ln384_write_fu_77</first>
+			<first>write_ln348_write_fu_75</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1717,7 +1717,7 @@
 			</second>
 		</item>
 		<item>
-			<first>write_ln385_write_fu_85</first>
+			<first>write_ln349_write_fu_83</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1737,7 +1737,7 @@
 		<count>2</count>
 		<item_version>0</item_version>
 		<item>
-			<first>147</first>
+			<first>145</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1745,7 +1745,7 @@
 			</second>
 		</item>
 		<item>
-			<first>153</first>
+			<first>151</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1757,7 +1757,7 @@
 		<count>2</count>
 		<item_version>0</item_version>
 		<item>
-			<first>compressedSize_loc_reg_147</first>
+			<first>compressedSize_loc_reg_145</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1765,7 +1765,7 @@
 			</second>
 		</item>
 		<item>
-			<first>input_size_3_reg_153</first>
+			<first>input_size_3_reg_151</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1905,7 +1905,7 @@
 			<first>2</first>
 			<second>
 				<first>666</first>
-				<second>10</second>
+				<second>8</second>
 			</second>
 		</item>
 		<item>

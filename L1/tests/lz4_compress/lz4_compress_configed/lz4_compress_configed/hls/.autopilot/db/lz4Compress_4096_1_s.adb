@@ -281,7 +281,7 @@
               <name>lit_outStream</name>
               <fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>420</lineNumber>
+              <lineNumber>384</lineNumber>
               <contextFuncName>lz4Compress&amp;lt;4096, 1&amp;gt;</contextFuncName>
               <contextNormFuncName>lz4Compress_4096_1_s</contextNormFuncName>
               <inlineStackInfo>
@@ -297,7 +297,7 @@
                         <first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
                         <second>lz4Compress&amp;lt;4096, 1&amp;gt;</second>
                       </first>
-                      <second>420</second>
+                      <second>384</second>
                     </item>
                   </second>
                 </item>
@@ -309,9 +309,9 @@
               <implIndex>bram</implIndex>
               <coreName>FIFO_BRAM</coreName>
               <isStorage>1</isStorage>
-              <storageDepth>8192</storageDepth>
+              <storageDepth>262144</storageDepth>
               <coreId>78</coreId>
-              <rtlModuleName>lz4CompressEngineRun_fifo_w8_d8192_B</rtlModuleName>
+              <rtlModuleName>lz4CompressEngineRun_fifo_w8_d262144_B</rtlModuleName>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -337,7 +337,7 @@
               <name>lenOffset_Stream</name>
               <fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>421</lineNumber>
+              <lineNumber>385</lineNumber>
               <contextFuncName>lz4Compress&amp;lt;4096, 1&amp;gt;</contextFuncName>
               <contextNormFuncName>lz4Compress_4096_1_s</contextNormFuncName>
               <inlineStackInfo>
@@ -353,7 +353,7 @@
                         <first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
                         <second>lz4Compress&amp;lt;4096, 1&amp;gt;</second>
                       </first>
-                      <second>421</second>
+                      <second>385</second>
                     </item>
                   </second>
                 </item>
@@ -362,12 +362,12 @@
               <rtlName>lenOffset_Stream_U</rtlName>
               <control>pragma</control>
               <opType>fifo</opType>
-              <implIndex>srl</implIndex>
-              <coreName>FIFO_SRL</coreName>
+              <implIndex>bram</implIndex>
+              <coreName>FIFO_BRAM</coreName>
               <isStorage>1</isStorage>
-              <storageDepth>64</storageDepth>
-              <coreId>80</coreId>
-              <rtlModuleName>lz4CompressEngineRun_fifo_w64_d64_S</rtlModuleName>
+              <storageDepth>2048</storageDepth>
+              <coreId>78</coreId>
+              <rtlModuleName>lz4CompressEngineRun_fifo_w64_d2048_B</rtlModuleName>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -390,10 +390,10 @@
             <Obj>
               <type>0</type>
               <id>25</id>
-              <name>_ln430</name>
+              <name>_ln394</name>
               <fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>430</lineNumber>
+              <lineNumber>394</lineNumber>
               <contextFuncName>lz4Compress&amp;lt;4096, 1&amp;gt;</contextFuncName>
               <contextNormFuncName>lz4Compress_4096_1_s</contextNormFuncName>
               <inlineStackInfo>
@@ -409,7 +409,7 @@
                         <first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
                         <second>lz4Compress&amp;lt;4096, 1&amp;gt;</second>
                       </first>
-                      <second>430</second>
+                      <second>394</second>
                     </item>
                   </second>
                 </item>
@@ -452,10 +452,10 @@
             <Obj>
               <type>0</type>
               <id>26</id>
-              <name>_ln432</name>
+              <name>_ln396</name>
               <fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>432</lineNumber>
+              <lineNumber>396</lineNumber>
               <contextFuncName>lz4Compress&amp;lt;4096, 1&amp;gt;</contextFuncName>
               <contextNormFuncName>lz4Compress_4096_1_s</contextNormFuncName>
               <inlineStackInfo>
@@ -471,7 +471,7 @@
                         <first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
                         <second>lz4Compress&amp;lt;4096, 1&amp;gt;</second>
                       </first>
-                      <second>432</second>
+                      <second>396</second>
                     </item>
                   </second>
                 </item>
@@ -516,10 +516,10 @@
             <Obj>
               <type>0</type>
               <id>27</id>
-              <name>_ln433</name>
+              <name>_ln397</name>
               <fileName>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>433</lineNumber>
+              <lineNumber>397</lineNumber>
               <contextFuncName>lz4Compress&amp;lt;4096, 1&amp;gt;</contextFuncName>
               <contextNormFuncName>lz4Compress_4096_1_s</contextNormFuncName>
               <inlineStackInfo>
@@ -535,7 +535,7 @@
                         <first>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</first>
                         <second>lz4Compress&amp;lt;4096, 1&amp;gt;</second>
                       </first>
-                      <second>433</second>
+                      <second>397</second>
                     </item>
                   </second>
                 </item>
@@ -1029,10 +1029,10 @@
               <name>lit_outStream</name>
               <ssdmobj_id>17</ssdmobj_id>
               <ctype>0</ctype>
-              <depth>8192</depth>
+              <depth>262144</depth>
               <bitwidth>8</bitwidth>
               <suggested_type>0</suggested_type>
-              <suggested_depth>8192</suggested_depth>
+              <suggested_depth>262144</suggested_depth>
               <source_list>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -1063,19 +1063,19 @@
                   <inst class_id_reference="31" object_id_reference="_55"/>
                 </item>
               </sink_list>
-              <bram_cost>4</bram_cost>
+              <bram_cost>128</bram_cost>
               <uram_cost>0</uram_cost>
-              <storage_size>8 8192 1</storage_size>
+              <storage_size>8 262144 1</storage_size>
             </item>
             <item class_id_reference="26" object_id="_65">
               <type>1</type>
               <name>lenOffset_Stream</name>
               <ssdmobj_id>20</ssdmobj_id>
               <ctype>0</ctype>
-              <depth>64</depth>
+              <depth>2048</depth>
               <bitwidth>64</bitwidth>
               <suggested_type>0</suggested_type>
-              <suggested_depth>64</suggested_depth>
+              <suggested_depth>2048</suggested_depth>
               <source_list>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -1106,9 +1106,9 @@
                   <inst class_id_reference="31" object_id_reference="_55"/>
                 </item>
               </sink_list>
-              <bram_cost>0</bram_cost>
+              <bram_cost>8</bram_cost>
               <uram_cost>0</uram_cost>
-              <storage_size>64 64 1</storage_size>
+              <storage_size>64 2048 1</storage_size>
             </item>
             <item class_id_reference="26" object_id="_70">
               <type>1</type>
@@ -1370,11 +1370,11 @@
             <item_version>0</item_version>
             <item class_id="48" tracking_level="0" version="0">
               <first>FF</first>
-              <second>476</second>
+              <second>480</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>849</second>
+              <second>629</second>
             </item>
           </second>
         </item>
@@ -1507,11 +1507,11 @@
         <item>
           <first>lenOffset_Stream_U</first>
           <second>
-            <count>5</count>
+            <count>6</count>
             <item_version>0</item_version>
             <item>
               <first>(0Depth)</first>
-              <second>64</second>
+              <second>2048</second>
             </item>
             <item>
               <first>(1Bits)</first>
@@ -1519,15 +1519,19 @@
             </item>
             <item>
               <first>(2Size:D*B)</first>
-              <second>4096</second>
+              <second>131072</second>
+            </item>
+            <item>
+              <first>BRAM</first>
+              <second>8</second>
             </item>
             <item>
               <first>FF</first>
-              <second>99</second>
+              <second>163</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>119</second>
+              <second>82</second>
             </item>
           </second>
         </item>
@@ -1538,7 +1542,7 @@
             <item_version>0</item_version>
             <item>
               <first>(0Depth)</first>
-              <second>8192</second>
+              <second>262144</second>
             </item>
             <item>
               <first>(1Bits)</first>
@@ -1546,11 +1550,11 @@
             </item>
             <item>
               <first>(2Size:D*B)</first>
-              <second>65536</second>
+              <second>2097152</second>
             </item>
             <item>
               <first>BRAM</first>
-              <second>4</second>
+              <second>128</second>
             </item>
             <item>
               <first>FF</first>
@@ -2057,7 +2061,7 @@
         <first>20</first>
         <second>
           <first>666</first>
-          <second>10</second>
+          <second>8</second>
         </second>
       </item>
       <item>

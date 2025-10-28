@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'lzCompress_6_4_65536_6_1_4096_64_Outline_VITIS_LOOP_84_2'
 ================================================================
-* Date:           Mon Oct 27 16:28:44 2025
+* Date:           Tue Oct 28 20:41:39 2025
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        lz4_compress_configed
@@ -159,7 +159,7 @@ The critical path consists of the following:
  <State 2>: 4.800ns
 The critical path consists of the following:
 	'load' operation 3 bit ('i', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:84) on local variable 'i', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:84 [27]  (0.000 ns)
-	'add' operation 3 bit ('add_ln84', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:84) [57]  (1.650 ns)
+	'icmp' operation 1 bit ('icmp_ln84', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:84) [28]  (1.650 ns)
 	'store' operation 0 bit ('store_ln84', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:84) of variable 'add_ln84', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:84 on local variable 'i', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:84 [58]  (1.588 ns)
 	blocking operation 1.562 ns on control path)
 

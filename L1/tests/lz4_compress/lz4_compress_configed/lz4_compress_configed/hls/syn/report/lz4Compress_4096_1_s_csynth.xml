@@ -35,15 +35,15 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:420</SourceLocation>
+<SourceLocation>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp:384</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>4</BRAM_18K>
-<FF>1253</FF>
-<LUT>2395</LUT>
+<BRAM_18K>136</BRAM_18K>
+<FF>1321</FF>
+<LUT>2138</LUT>
 <DSP>0</DSP>
 <URAM>0</URAM>
 </Resources>

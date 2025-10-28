@@ -10,12 +10,12 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 --RAW latency 2 
  
-entity lz4CompressEngineRun_fifo_w8_d8192_B is
+entity lz4CompressEngineRun_fifo_w8_d262144_B is
     generic (
         MEM_STYLE         : string  := "block";
         DATA_WIDTH        : integer := 8;
-        ADDR_WIDTH        : integer := 13;
-        DEPTH             : integer := 8192);
+        ADDR_WIDTH        : integer := 18;
+        DEPTH             : integer := 262144);
     port (
         clk               : in  std_logic;
         reset             : in  std_logic;
@@ -37,7 +37,7 @@ entity lz4CompressEngineRun_fifo_w8_d8192_B is
     );
 end entity;
 
-architecture arch of lz4CompressEngineRun_fifo_w8_d8192_B is
+architecture arch of lz4CompressEngineRun_fifo_w8_d262144_B is
 ------------------------Task and function--------------
     function clog2 (x : INTEGER) return INTEGER is
         variable n, m : INTEGER;
@@ -54,12 +54,12 @@ architecture arch of lz4CompressEngineRun_fifo_w8_d8192_B is
     constant MEM_DEPTH  : INTEGER := DEPTH - 1;
     constant MEM_AWIDTH : INTEGER := clog2(MEM_DEPTH);
     ------------------------Component----------------------
-    component lz4CompressEngineRun_fifo_w8_d8192_B_ram is
+    component lz4CompressEngineRun_fifo_w8_d262144_B_ram is
     generic (
         MEM_STYLE  : string  := "block";
         DATA_WIDTH : integer := 8;
-        ADDR_WIDTH : integer := 13;
-        DEPTH      : integer := 8192);
+        ADDR_WIDTH : integer := 18;
+        DEPTH      : integer := 262144);
     port (
         clk        : in std_logic;
         reset      : in std_logic;
@@ -89,7 +89,7 @@ architecture arch of lz4CompressEngineRun_fifo_w8_d8192_B is
     signal dout_vld : std_logic := '0';
 begin
 ----------------------- Instantiation -----------------------
-    U_lz4CompressEngineRun_fifo_w8_d8192_B_ram : lz4CompressEngineRun_fifo_w8_d8192_B_ram
+    U_lz4CompressEngineRun_fifo_w8_d262144_B_ram : lz4CompressEngineRun_fifo_w8_d262144_B_ram
     generic map (
         MEM_STYLE  => MEM_STYLE,
         DATA_WIDTH => DATA_WIDTH,
@@ -255,12 +255,12 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
-entity lz4CompressEngineRun_fifo_w8_d8192_B_ram is
+entity lz4CompressEngineRun_fifo_w8_d262144_B_ram is
     generic (
         MEM_STYLE   : string  := "block";
         DATA_WIDTH  : integer := 8;
-        ADDR_WIDTH  : integer := 13;
-        DEPTH       : integer := 8192);
+        ADDR_WIDTH  : integer := 18;
+        DEPTH       : integer := 262144);
     port (
         clk         : in std_logic;
         reset       : in std_logic;
@@ -273,7 +273,7 @@ entity lz4CompressEngineRun_fifo_w8_d8192_B_ram is
     );
 end entity;
 
-architecture arch of lz4CompressEngineRun_fifo_w8_d8192_B_ram is
+architecture arch of lz4CompressEngineRun_fifo_w8_d262144_B_ram is
     type memtype is array (0 to DEPTH - 1) of std_logic_vector(DATA_WIDTH - 1 downto 0);
     signal mem : memtype;
     attribute ram_style: string;

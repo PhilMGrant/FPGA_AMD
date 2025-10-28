@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'lzBestMatchFilter_6_65536_Pipeline_lz_bestMatchFilter'
 ================================================================
-* Date:           Mon Oct 27 16:28:47 2025
+* Date:           Tue Oct 28 20:41:41 2025
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        lz4_compress_configed
@@ -193,7 +193,7 @@ Target clock period: 7.000ns, clock uncertainty: 0.700ns.
 The critical path consists of the following:
 	'store' operation 0 bit ('store_ln339', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:339) of constant 6 on local variable 'i', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:339 [39]  (1.588 ns)
 	'load' operation 32 bit ('i', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:339) on local variable 'i', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:339 [42]  (0.000 ns)
-	'icmp' operation 1 bit ('icmp_ln339', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:339) [48]  (2.552 ns)
+	'add' operation 32 bit ('i', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:339) [93]  (2.552 ns)
 	'store' operation 0 bit ('store_ln339', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:339) of variable 'i', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:339 on local variable 'i', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_optional.hpp:339 [100]  (1.588 ns)
 
  <State 2>: 5.951ns

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes'
 ================================================================
-* Date:           Mon Oct 27 16:28:46 2025
+* Date:           Tue Oct 28 20:41:41 2025
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        lz4_compress_configed
@@ -117,7 +117,7 @@ Target clock period: 7.000ns, clock uncertainty: 0.700ns.
 The critical path consists of the following:
 	'store' operation 0 bit ('store_ln212', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:212) of constant 0 on local variable 'l', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:212 [7]  (1.588 ns)
 	'load' operation 7 bit ('l', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:212) on local variable 'l', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:212 [10]  (0.000 ns)
-	'add' operation 7 bit ('l', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:212) [12]  (1.870 ns)
+	'icmp' operation 1 bit ('icmp_ln212', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:212) [11]  (1.870 ns)
 	'store' operation 0 bit ('store_ln212', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:212) of variable 'l', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:212 on local variable 'l', D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw/lz_compress.hpp:212 [21]  (1.588 ns)
 
  <State 2>: 6.300ns

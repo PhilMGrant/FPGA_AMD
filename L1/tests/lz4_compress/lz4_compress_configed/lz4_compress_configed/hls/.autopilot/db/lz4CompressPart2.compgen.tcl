@@ -10,7 +10,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 113 \
+    id 111 \
     name lit_outStream \
     type fifo \
     dir I \
@@ -18,14 +18,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_lit_outStream \
     op interface \
-    ports { lit_outStream_dout { I 8 vector } lit_outStream_empty_n { I 1 bit } lit_outStream_read { O 1 bit } lit_outStream_num_data_valid { I 14 vector } lit_outStream_fifo_cap { I 14 vector } } \
+    ports { lit_outStream_dout { I 8 vector } lit_outStream_empty_n { I 1 bit } lit_outStream_read { O 1 bit } lit_outStream_num_data_valid { I 19 vector } lit_outStream_fifo_cap { I 19 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 114 \
+    id 112 \
     name lenOffset_Stream \
     type fifo \
     dir I \
@@ -33,14 +33,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_lenOffset_Stream \
     op interface \
-    ports { lenOffset_Stream_dout { I 64 vector } lenOffset_Stream_empty_n { I 1 bit } lenOffset_Stream_read { O 1 bit } lenOffset_Stream_num_data_valid { I 7 vector } lenOffset_Stream_fifo_cap { I 7 vector } } \
+    ports { lenOffset_Stream_dout { I 64 vector } lenOffset_Stream_empty_n { I 1 bit } lenOffset_Stream_read { O 1 bit } lenOffset_Stream_num_data_valid { I 12 vector } lenOffset_Stream_fifo_cap { I 12 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 115 \
+    id 113 \
     name lz4Out \
     type fifo \
     dir O \
@@ -55,7 +55,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 116 \
+    id 114 \
     name lz4Out_eos \
     type fifo \
     dir O \
@@ -70,7 +70,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 117 \
+    id 115 \
     name lz4OutSize \
     type fifo \
     dir O \
@@ -85,7 +85,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 118 \
+    id 116 \
     name input_size \
     type fifo \
     dir I \

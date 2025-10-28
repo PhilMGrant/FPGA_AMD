@@ -3161,7 +3161,7 @@
       <key>filename</key>
       <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</string>
       <key>line</key>
-      <integer>85</integer>
+      <integer>69</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3177,7 +3177,7 @@
       <key>filename</key>
       <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</string>
       <key>line</key>
-      <integer>86</integer>
+      <integer>70</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3193,7 +3193,7 @@
       <key>filename</key>
       <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</string>
       <key>line</key>
-      <integer>210</integer>
+      <integer>174</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3209,7 +3209,7 @@
       <key>filename</key>
       <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</string>
       <key>line</key>
-      <integer>211</integer>
+      <integer>175</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3225,11 +3225,11 @@
       <key>filename</key>
       <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</string>
       <key>line</key>
-      <integer>423</integer>
+      <integer>387</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=lz4Compress_XLX_SEP_ PragmaOptions=variable = lit_outStream depth = MAX_LIT_COUNT * 2_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=lz4Compress_XLX_SEP_ PragmaOptions=variable = lit_outStream depth = MAX_LIT_COUNT * 64_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -3241,11 +3241,11 @@
       <key>filename</key>
       <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</string>
       <key>line</key>
-      <integer>424</integer>
+      <integer>388</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=lz4Compress_XLX_SEP_ PragmaOptions=variable = lenOffset_Stream depth = c_gmemBurstSize * 2_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=lz4Compress_XLX_SEP_ PragmaOptions=variable = lenOffset_Stream depth = c_gmemBurstSize * 64_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -3257,7 +3257,7 @@
       <key>filename</key>
       <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</string>
       <key>line</key>
-      <integer>426</integer>
+      <integer>390</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3273,11 +3273,11 @@
       <key>filename</key>
       <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</string>
       <key>line</key>
-      <integer>427</integer>
+      <integer>391</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=lz4Compress_XLX_SEP_ PragmaOptions=variable = lenOffset_Stream type = FIFO impl = SRL_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=lz4Compress_XLX_SEP_ PragmaOptions=variable = lenOffset_Stream type = FIFO impl = BRAM_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -3289,7 +3289,7 @@
       <key>filename</key>
       <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</string>
       <key>line</key>
-      <integer>429</integer>
+      <integer>393</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3305,7 +3305,7 @@
       <key>filename</key>
       <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</string>
       <key>line</key>
-      <integer>456</integer>
+      <integer>420</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3321,7 +3321,7 @@
       <key>filename</key>
       <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</string>
       <key>line</key>
-      <integer>457</integer>
+      <integer>421</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3337,7 +3337,7 @@
       <key>filename</key>
       <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</string>
       <key>line</key>
-      <integer>458</integer>
+      <integer>422</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3353,7 +3353,7 @@
       <key>filename</key>
       <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</string>
       <key>line</key>
-      <integer>460</integer>
+      <integer>424</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3369,7 +3369,7 @@
       <key>filename</key>
       <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</string>
       <key>line</key>
-      <integer>461</integer>
+      <integer>425</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3385,7 +3385,7 @@
       <key>filename</key>
       <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</string>
       <key>line</key>
-      <integer>463</integer>
+      <integer>427</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3401,7 +3401,7 @@
       <key>filename</key>
       <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</string>
       <key>line</key>
-      <integer>492</integer>
+      <integer>456</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3417,7 +3417,7 @@
       <key>filename</key>
       <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</string>
       <key>line</key>
-      <integer>493</integer>
+      <integer>457</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3433,7 +3433,7 @@
       <key>filename</key>
       <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</string>
       <key>line</key>
-      <integer>494</integer>
+      <integer>458</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3449,7 +3449,7 @@
       <key>filename</key>
       <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</string>
       <key>line</key>
-      <integer>496</integer>
+      <integer>460</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3465,7 +3465,7 @@
       <key>filename</key>
       <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</string>
       <key>line</key>
-      <integer>497</integer>
+      <integer>461</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3481,7 +3481,7 @@
       <key>filename</key>
       <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</string>
       <key>line</key>
-      <integer>498</integer>
+      <integer>462</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3497,7 +3497,7 @@
       <key>filename</key>
       <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</string>
       <key>line</key>
-      <integer>502</integer>
+      <integer>466</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3513,7 +3513,7 @@
       <key>filename</key>
       <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</string>
       <key>line</key>
-      <integer>507</integer>
+      <integer>471</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3529,7 +3529,7 @@
       <key>filename</key>
       <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</string>
       <key>line</key>
-      <integer>542</integer>
+      <integer>506</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3545,7 +3545,7 @@
       <key>filename</key>
       <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</string>
       <key>line</key>
-      <integer>543</integer>
+      <integer>507</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3561,7 +3561,7 @@
       <key>filename</key>
       <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</string>
       <key>line</key>
-      <integer>544</integer>
+      <integer>508</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3577,7 +3577,7 @@
       <key>filename</key>
       <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</string>
       <key>line</key>
-      <integer>545</integer>
+      <integer>509</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3593,7 +3593,7 @@
       <key>filename</key>
       <string>D:/Xillinx_Project/PROJECT/data_compression/L1/tests/lz4_compress/../../../L1/include/hw\lz4_compress.hpp</string>
       <key>line</key>
-      <integer>546</integer>
+      <integer>510</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
